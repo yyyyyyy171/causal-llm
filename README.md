@@ -111,5 +111,9 @@ $text = [System.IO.File]::ReadAllText($path, [System.Text.Encoding]::UTF8)
 
 * 本机是 RTX 3060 Laptop（6GB），只能用 4B 模型的 4bit 量化。
   文档假设的 8B 模型与 vLLM 需要 4090（原生 Windows 装不了 vLLM，见使用约定）。
-* 方向准确率只能在有 DAG 真值的网络上报告（目前 ALARM 与 ASIA）；
-  其余网络需要用 R 从 bnlearn 的 rds 导出边表。
+* 方向准确率原先受限于"以为没有 R 就拿不到 DAG"。
+  实际上 R 是装了的（`D:\R\R-4.6.1`，含 bnlearn），而我最初没找到它。
+  现在 `src/mb/rds_dag.py` 直接解析 `rds` 里的 bn.fit 对象恢复有向图，
+  并由 bnlearn（`scripts/verify_dag_bnlearn.R`）与
+  "道德图 vs 真值马尔可夫毯矩阵"（`scripts/export_dags.py`）两路独立验证，
+  5 个网络全部一致。

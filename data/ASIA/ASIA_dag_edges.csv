@@ -1,0 +1,9 @@
+parent,child
+asia,tub
+bronc,dysp
+either,dysp
+either,xray
+lung,either
+smoke,bronc
+smoke,lung
+tub,either

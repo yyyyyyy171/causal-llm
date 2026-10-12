@@ -9,10 +9,10 @@
   同时报告"覆盖率"（模型敢不敢在这些边上给方向）。
 * 一致性：5 次采样中多数意见的占比。
 
-真值来源：
-    ALARM  ——  E:\\Causal-Learner-main\\...\\Code\\data\\alarm_graph.txt
-    ASIA   ——  手写的标准 DAG（8 条边，结构简单，见下）
-    其它网络 —— 本机没有 DAG 文本文件，需要用 bnlearn 导出（见报告中的说明）
+真值来源：全部 5 个网络的 DAG 都由 `src/mb/rds_dag.py` 从
+`data/<网络>/<网络>.rds` 里的 bn.fit 对象解析得到（ALARM 用仓库里的
+`alarm_graph.txt`）。解析结果已做交叉验证：由 DAG 算出的道德图与
+`<网络>_true_MB_matrix.txt` 逐位一致。可用 `scripts/export_dags.py` 复查。
 """
 
 from __future__ import annotations
@@ -28,44 +28,16 @@ import numpy as np
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(PROJECT_ROOT))
 
-from src.mb.data_io import load_data  # noqa: E402
 from src.common.run_log import finish_run, start_run  # noqa: E402
-
-
-ALARM_GRAPH = Path(
-    r"E:\Causal-Learner-main\Causal-Learner-main\Code\data\alarm_graph.txt"
-)
-
-
-# ASIA 的标准结构（bnlearn），仅 8 条边，逐条人工核对过
-ASIA_EDGES = [
-    ("asia", "tub"),
-    ("smoke", "lung"),
-    ("smoke", "bronc"),
-    ("tub", "either"),
-    ("lung", "either"),
-    ("either", "xray"),
-    ("either", "dysp"),
-    ("bronc", "dysp"),
-]
+from src.mb.data_io import load_data  # noqa: E402
+from src.mb.rds_dag import load_dag as load_dag_truth  # noqa: E402
 
 
 def load_dag(network: str, variables: list[str]):
     """返回有向边集合 {(parent, child)}。"""
 
-    if network == "ASIA":
-        return set(ASIA_EDGES)
-
-    if network == "ALARM":
-        matrix = np.loadtxt(ALARM_GRAPH, dtype=int)
-        edges = set()
-        for i in range(matrix.shape[0]):
-            for j in range(matrix.shape[1]):
-                if matrix[i, j]:
-                    edges.add((variables[i], variables[j]))
-        return edges
-
-    return None
+    _, arcs = load_dag_truth(network, variables)
+    return arcs
 
 
 def read_prior(network: str, mode: str):
@@ -183,13 +155,18 @@ def main() -> int:
         dag_edges = load_dag(network, variables)
 
         if dag_edges is None:
-            print(f"{network}: 本机没有 DAG 真值，跳过（需要 bnlearn 导出）")
+            print(f"{network}: 没有 DAG 真值，跳过")
             continue
 
         for mode in [x.strip() for x in args.modes.split(",") if x.strip()]:
             result = evaluate(network, mode, dag_edges)
             if result:
                 results.append(result)
+            else:
+                print(
+                    f"{network:10s} {mode:5s} 语言模型先验还没跑，"
+                    f"先执行 run_llm_prior.py --network {network} --mode {mode}"
+                )
 
     if args.out and results:
         path = PROJECT_ROOT / "results" / args.out

@@ -7,14 +7,45 @@
     {
       "type": "bullets",
       "items": [
+        "补做周 1 的环境与规范：Git 首次提交与个人分支、README、配置文件、日志落盘、4090 使用约定与实验日志。",
+        "补做周 2 的共用特征选择工具箱：数据/方法/评测三层拆开的可复用框架，外加一张“方法 × 数据集”结果表。",
         "核对选题二的实验计划，把已有代码与文档要求逐条对齐，列出进度与缺口。",
         "用 Python 重写 IAMB 与 HITON-MB，作为后续融合方法的可改造基线；在 ASIA n=5000 上复算的平均 F1 = 0.79643，与仓库里 MATLAB 的结果 0.796428571 逐位一致。",
         "补齐语言模型先验的整条管道：5 个网络共 148 个变量的语义字典、真实名/匿名两种 Prompt、批量推理（磁盘缓存 + 断点续跑）、先验聚合（多数投票 + 一致性）。",
-        "修掉两个会让周 5 实验完全失效的缺陷，详见第四节。",
-        "实现先验融合方法并完成 ASIA 上的小样本验证实验（含随机先验对照与匿名消融）。"
+        "修掉两个会让周 5 实验完全失效的缺陷，详见第六节；实现先验融合方法并完成 ASIA 上的小样本验证实验。",
+        "解决 DAG 真值来源问题：直接解析 rds 里的 bn.fit 对象恢复有向图，并用 bnlearn 与既有真值矩阵两路独立验证，5 个网络全部一致。"
       ]
     },
-    {"type": "heading", "text": "二、基线的样本量–恢复质量（周 4 产出）"},
+    {"type": "heading", "text": "二、周 1 欠账补齐：环境与规范"},
+    {
+      "type": "bullets",
+      "items": [
+        "Git：建立首次提交与个人分支，.gitignore 排除缓存与试跑产物；提交由 scripts/init_git.ps1 一键完成（Codex 沙箱对 .git 只读，必须在自己的终端执行）。",
+        "配置文件：会变的参数全部外置到 configs/（llm_prior.json、mb_discovery.json、feature_selection.json），脚本按“配置做默认值、命令行只做覆盖”的方式读取。",
+        "日志落盘：src/common/run_log.py 把每次运行的命令、配置、git 提交、环境与显卡信息写进 logs/ 下的日志，结尾记录耗时与退出码。",
+        "README、4090 使用约定、实验日志模板与周 1 验收清单已补齐。",
+        "编码问题：PowerShell 5.1 在没有 BOM 时按 GBK 解码 .ps1，中文会直接导致语法错误，两个脚本已补 UTF-8 BOM 并写进 README。",
+        "transformers 已跑通 4B 模型；“用 vLLM 再跑一遍”这条在本机不可行——vLLM 没有原生 Windows 发行版，需要 WSL2 或 Linux。"
+      ]
+    },
+    {"type": "heading", "text": "三、周 2 欠账补齐：共用特征选择工具箱"},
+    {
+      "type": "para",
+      "text": "固定划分（60/20/20，划分索引落盘）、固定下游模型（标准化 + 逻辑回归）、统一预处理；五个方法都返回完整排序，可按任意预算截取，供选题 1、2、4 复用。下表为选定 10 个特征时的准确率。"
+    },
+    {
+      "type": "csv_table",
+      "path": "results/fs_method_by_dataset.csv"
+    },
+    {
+      "type": "bullets",
+      "items": [
+        "10 个特征常常够用甚至更好：credit-g 上 L1 用 10 个特征拿到 0.7600，高于全部 61 个特征的 0.7400；segment 上 L1 的 0.9502 也高于全特征的 0.9459。",
+        "方法排序随数据集变化，没有哪个方法在所有数据集上占优，这正是后面需要“按模型与数据自适应选特征”的动机。",
+        "数据集体检很有必要：多数类基线必须一起报；steel-plates-fault（OpenML 1504）全特征准确率达 1.0000 且特征是匿名的 V1…V33，判定为退化版本，已剔除。"
+      ]
+    },
+    {"type": "heading", "text": "四、基线的样本量–恢复质量（周 4 产出）"},
     {
       "type": "para",
       "text": "5 个 bnlearn 网络，样本量 100 / 500 / 1000 / 5000，IAMB 与 HITON-MB 的马尔可夫毯恢复 F1："
@@ -27,29 +58,29 @@
       "round": 4
     },
     {"type": "image", "path": "results/BN_F1_sample_size_curve.png", "width_inches": 6.0},
-    {"type": "heading", "text": "三、语言模型因果判断的质量（周 5 产出）"},
+    {"type": "heading", "text": "五、语言模型因果判断的质量（周 5 产出）"},
     {
       "type": "para",
-      "text": "真实名模式给出完整语义，匿名模式只给 V01、V02 这样的编号且不提供任何含义。指标含义：edge 系列是把“模型认为直接相连”当作预测边与真实 DAG 比较；dirAcc 是在真实存在的边上、模型给出方向时的方向准确率；cons 是 5 次采样的一致比例。"
+      "text": "真实名模式给出完整语义，匿名模式只给 V01、V02 这样的编号且不提供任何含义。指标含义：edge 系列是把“模型认为直接相连”当作预测边与真实 DAG 比较；dirAcc 是在真实存在的边上、模型给出方向时的方向准确率；cons 是 5 次采样的一致比例。目前已完成 ASIA，其余网络在跑。"
     },
     {
       "type": "csv_table",
       "path": "results/llm_prior_eval.csv",
-      "columns": ["network", "mode", "pairs", "true_edges", "edge_precision", "edge_recall", "edge_f1", "direction_correct", "direction_attempted", "direction_undecided", "direction_accuracy", "mean_consistency"],
       "round": 3
     },
-    {"type": "heading", "text": "四、关键发现与问题"},
+    {"type": "heading", "text": "六、关键发现与问题"},
     {
       "type": "bullets",
       "items": [
         "缺陷一：旧 Prompt 只定义了 ALARM 的 11 个变量，其余 26 个变量全部退化成“未提供含义”。模型因此把医学缩写猜错——它把中心静脉压 CVP 当成“本量利分析（Cost-Volume-Profit）”，并据此输出“不确定”。这是旧管道 666 对里只跑通 1 对的根本原因。",
         "缺陷二：旧 Prompt 的 JSON 示例里字面写着 confidence 为 0.0，模型直接照抄，导致所有先验置信度恒为 0，先验无法被使用。已改为说明性示例并明确要求给出 0 到 1 的数值。",
         "发现三：模型判断“有没有直接边”时存在系统性偏差。要求它不要虚构中间变量后，它对存在间接通路的变量对（如 smoke–xray）也判成直接相连，表现为召回 1.00、精确率 0.40。这一点在论文里必须写清楚：语言模型提供的是“可能相关”的弱信号，不是精确的邻接判断。",
-        "发现四：模型的方向判断反而很可靠。在 ASIA 上，模型真正给出方向的 7 条真实边上全部判对（7/7）。它的弱项是邻接判断，不是方向判断。这提示融合方法更应该利用方向信号，而不是直接拿邻接判断当边约束。",
-        "发现五：匿名后模型对 28 对变量全部判“没有直接边”，平均置信度 0.915，先验退化成常数，融合效果随之消失。这正好验证了文档的通过标准——起作用的是语义知识，不是先验这个形式本身。"
+        "发现四：模型的方向判断反而很可靠。在 ASIA 上，模型真正给出方向的 7 条真实边上全部判对（7/7）。它的弱项是邻接判断，不是方向判断，这提示融合方法更应该利用方向信号。",
+        "发现五：匿名后模型对 28 对变量全部判“没有直接边”，平均置信度 0.915，先验退化成常数，融合效果随之消失，正好验证文档的通过标准：起作用的是语义知识，不是先验这个形式本身。",
+        "工程上的一课：结论的可靠性取决于两个体检。OpenML 那个退化数据集如果没剔除，会直接得出错误结论；方向准确率如果建立在没有交叉验证的 DAG 解析上，同样是空中楼阁。两者都已补上。"
       ]
     },
-    {"type": "heading", "text": "五、小样本融合实验（周 6–7 第一部分，以 ASIA 为例）"},
+    {"type": "heading", "text": "七、小样本融合实验（周 6–7 第一部分，以 ASIA 为例）"},
     {
       "type": "para",
       "text": "样本从 n=5000 无放回抽样，每个设定重复 5 次，指标为各目标变量 F1 的平均值。baseline 为纯数据；prior-thresh 用先验调节条件独立检验阈值；prior-search 把先验作为搜索优先级；random-thresh 把先验强度打乱后使用，作为对照。"
@@ -95,26 +126,27 @@
       "items": [
         "n=100（小样本）：IAMB 从 0.5029 提升到 0.5379（两处信号同时使用）或 0.5429（只用搜索优先级）；HITON-MB 从 0.5070 提升到 0.5720，提升约 6.5 个百分点。",
         "随机先验对照明显更差：n=100 时 HITON-MB 从 0.5070 掉到 0.4636，IAMB 从 0.5029 掉到 0.4995。说明提升来自先验的具体内容，不是随便扰动阈值就能拿到。",
-        "n=500：先验带来的变化在正负 0.03 以内，没有稳定收益（IAMB 0.6864 对 0.6898，HITON-MB 0.6006 对 0.5806）。与文档预期一致——先验的价值集中在小样本区间。",
+        "n=500：先验带来的变化在正负 0.03 以内，没有稳定收益。与文档预期一致——先验的价值集中在小样本区间。",
         "匿名后提升消失：n=100 时 IAMB 从 0.5029 变为 0.4895（略降），HITON-MB 从 0.5070 变为 0.5052；搜索优先级变体因为匿名先验是常数，结果与基线完全相同。",
         "目前只在 ASIA 上验证，而 ASIA 只有 8 个变量、8 条真实边，结论还需要在 CHILD、INSURANCE、ALARM、HAILFINDER 上重复。"
       ]
     },
-    {"type": "heading", "text": "六、下周计划"},
+    {"type": "heading", "text": "八、下周计划"},
     {
       "type": "bullets",
       "items": [
         "把语言模型先验扩到 CHILD 与 INSURANCE（真实名 + 匿名），再按夜间整段跑的方式做 ALARM；HAILFINDER 变量对多达 1540 对，先只对与目标马尔可夫毯相关的对采样。",
         "在 4 至 5 个网络上重复小样本融合实验，检验“至少一半网络上先验提高恢复 F1、匿名后提升消失”这条通过标准。",
+        "方向准确率表将覆盖全部 5 个网络：DAG 真值已能直接从 data/<网络>/<网络>.rds 解析得到，并用 bnlearn 与既有真值矩阵两路交叉验证通过，原计划里“需要有 R 的机器”这一条不再需要。",
+        "用 bnlearn 的参考实现（iamb、hiton.mb）在同一批数据上复核自研的 Python 实现，作为实现正确性的证据。",
         "调 beta 与 gamma 两个先验强度参数，给出参数敏感度曲线；把“只用方向信号”作为一种新变体加进对比。",
-        "用 bnlearn 把 CHILD / INSURANCE / HAILFINDER 的 rds 结构导出成边表（本机没有 R，需要在实验室机器上做），否则方向准确率表只能停留在 ALARM 和 ASIA。",
         "开始 TableShift 部分的准备：确定 3 个任务与数据获取方式。"
       ]
     },
-    {"type": "heading", "text": "七、论文阅读"},
+    {"type": "heading", "text": "九、论文阅读"},
     {
       "type": "para",
-      "text": "按文档要求，本选题必读：Causality-based Feature Selection: Methods and Evaluations（Yu 等，ACM Computing Surveys 2020）；IAMB 与 HITON-MB 原始论文；Invariant Causal Prediction（Peters 等，2016）；Causal Reasoning and Large Language Models（Kıcıman 等）；TableShift；另外自行检索 2 至 3 篇 2025 年以后“语言模型辅助因果发现”的工作，重点看它们如何处理模型记忆经典因果图的问题。"
+      "text": "按文档要求，本选题必读：Causality-based Feature Selection: Methods and Evaluations（Yu 等，ACM Computing Surveys 2020）；IAMB 与 HITON-MB 原始论文；Invariant Causal Prediction（Peters 等，2016）；Causal Reasoning and Large Language Models（Kıcıman 等）；TableShift；另外自行检索 2 至 3 篇 2025 年以后“语言模型辅助因果发现”的工作，重点看它们如何对待“模型记住经典因果图”这件事。"
     },
     {
       "type": "para",

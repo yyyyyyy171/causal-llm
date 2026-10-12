@@ -1,3 +1,2 @@
 network,mode,pairs,true_edges,edge_precision,edge_recall,edge_f1,direction_correct,direction_attempted,direction_undecided,direction_accuracy,mean_consistency
 ASIA,real,28,8,0.4,1.0,0.5714285714285715,7,7,1,1.0,0.9785714285714285
-ASIA,anon,28,8,0.0,0.0,0.0,0,0,8,0.0,1.0
