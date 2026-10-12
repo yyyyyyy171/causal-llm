@@ -1,0 +1,24 @@
+{
+  "alpha": 0.05,
+  "max_k": 3,
+  "source_size": 5000,
+  "repeats": 5,
+  "sizes": [100, 500, 1000, 5000],
+  "seed": 20261012,
+  "methods": ["IAMB", "HITON-MB"],
+  "variants": [
+    {"name": "baseline", "beta": 0.0, "gamma": 0.0, "prior": "none"},
+    {"name": "prior-thresh", "beta": 1.0, "gamma": 0.0, "prior": "real"},
+    {"name": "prior-search", "beta": 0.0, "gamma": 1.5, "prior": "real"},
+    {"name": "prior-thresh+search", "beta": 1.0, "gamma": 1.5, "prior": "real"},
+    {"name": "random-thresh", "beta": 1.0, "gamma": 0.0, "prior": "random"}
+  ],
+  "notes": {
+    "alpha": "条件独立检验的基线显著性水平。",
+    "max_k": "条件集大小上限，IAMB 不使用，HITON-MB 用它剪枝。",
+    "source_size": "重复实验从 n=5000 无放回抽样，避免只用一份固定的 n100 文件。",
+    "beta": "先验作为阈值调节项的强度，alpha_eff = alpha * exp(beta * score)。",
+    "gamma": "先验作为搜索优先级的强度，得分 = -log10(p) + gamma * score。",
+    "prior": "real = 真实名先验；anon 模式单独用 --mode anon 指定；random = 打乱强度分布的对照。"
+  }
+}

@@ -1,0 +1,443 @@
+"network","sample_size","target","predicted_MB","true_MB","Precision","Recall","F1"
+"ASIA",100,"asia","","tub",0,0,0
+"ASIA",100,"smoke","dysp, xray","lung, bronc",0,0,0
+"ASIA",100,"lung","either","tub, smoke, either",1,0.333333333333333,0.5
+"ASIA",100,"bronc","dysp","smoke, either, dysp",1,0.333333333333333,0.5
+"ASIA",100,"either","lung","tub, lung, bronc, xray, dysp",1,0.2,0.333333333333333
+"ASIA",100,"xray","lung","either",0,0,0
+"ASIA",100,"dysp","bronc, smoke","bronc, either",0.5,0.5,0.5
+"ASIA",500,"asia","","tub",0,0,0
+"ASIA",500,"tub","either, lung","asia, lung, either",1,0.666666666666667,0.8
+"ASIA",500,"smoke","lung, bronc","lung, bronc",1,1,1
+"ASIA",500,"lung","either, tub","tub, smoke, either",1,0.666666666666667,0.8
+"ASIA",500,"bronc","dysp, smoke, xray","smoke, either, dysp",0.666666666666667,0.666666666666667,0.666666666666667
+"ASIA",500,"either","lung, tub","tub, lung, bronc, xray, dysp",1,0.4,0.571428571428572
+"ASIA",500,"xray","either","either",1,1,1
+"ASIA",500,"dysp","bronc, either","bronc, either",1,1,1
+"ASIA",1000,"asia","","tub",0,0,0
+"ASIA",1000,"tub","either, lung","asia, lung, either",1,0.666666666666667,0.8
+"ASIA",1000,"smoke","bronc, lung","lung, bronc",1,1,1
+"ASIA",1000,"lung","either, tub","tub, smoke, either",1,0.666666666666667,0.8
+"ASIA",1000,"bronc","dysp, smoke, either","smoke, either, dysp",1,1,1
+"ASIA",1000,"either","lung, tub","tub, lung, bronc, xray, dysp",1,0.4,0.571428571428572
+"ASIA",1000,"xray","either","either",1,1,1
+"ASIA",1000,"dysp","bronc, either","bronc, either",1,1,1
+"ASIA",5000,"asia","dysp","tub",0,0,0
+"ASIA",5000,"tub","either, lung","asia, lung, either",1,0.666666666666667,0.8
+"ASIA",5000,"smoke","bronc, lung","lung, bronc",1,1,1
+"ASIA",5000,"lung","either, tub, smoke","tub, smoke, either",1,1,1
+"ASIA",5000,"bronc","dysp, smoke, either","smoke, either, dysp",1,1,1
+"ASIA",5000,"either","lung, tub","tub, lung, bronc, xray, dysp",1,0.4,0.571428571428572
+"ASIA",5000,"xray","either","either",1,1,1
+"ASIA",5000,"dysp","bronc, either","bronc, either",1,1,1
+"CHILD",100,"BirthAsphyxia","","Disease",0,0,0
+"CHILD",100,"HypDistrib","DuctFlow, LVHreport","HypoxiaInO2, LowerBodyO2, DuctFlow, CardiacMixing",0.5,0.25,0.333333333333333
+"CHILD",100,"HypoxiaInO2","CardiacMixing","HypDistrib, LowerBodyO2, RUQO2, CardiacMixing, LungParench",1,0.2,0.333333333333333
+"CHILD",100,"CO2","CO2Report","CO2Report, LungParench",1,0.5,0.666666666666667
+"CHILD",100,"ChestXray","XrayReport, LungFlow","XrayReport, LungParench, LungFlow",1,0.666666666666667,0.8
+"CHILD",100,"Grunting","GruntingReport, Sick","GruntingReport, LungParench, Sick",1,0.666666666666667,0.8
+"CHILD",100,"LVHreport","LVH, RUQO2","LVH",0.5,1,0.666666666666667
+"CHILD",100,"LowerBodyO2","HypoxiaInO2, XrayReport","HypDistrib, HypoxiaInO2",0.5,0.5,0.5
+"CHILD",100,"RUQO2","HypoxiaInO2, LVHreport","HypoxiaInO2",0.5,1,0.666666666666667
+"CHILD",100,"CO2Report","CO2","CO2",1,1,1
+"CHILD",100,"XrayReport","ChestXray","ChestXray",1,1,1
+"CHILD",100,"Disease","CardiacMixing, LVH","BirthAsphyxia, Age, LVH, DuctFlow, CardiacMixing, LungParench, LungFlow, Sick",1,0.25,0.4
+"CHILD",100,"GruntingReport","Grunting, LVHreport","Grunting",0.5,1,0.666666666666667
+"CHILD",100,"Age","Disease","Disease, Sick",1,0.5,0.666666666666667
+"CHILD",100,"LVH","LVHreport, LungFlow","LVHreport, Disease",0.5,0.5,0.5
+"CHILD",100,"DuctFlow","Disease","HypDistrib, Disease, CardiacMixing",1,0.333333333333333,0.5
+"CHILD",100,"CardiacMixing","Disease","HypDistrib, HypoxiaInO2, Disease, DuctFlow, LungParench",1,0.2,0.333333333333333
+"CHILD",100,"LungParench","ChestXray, LungFlow","HypoxiaInO2, CO2, ChestXray, Grunting, Disease, CardiacMixing, LungFlow, Sick",1,0.25,0.4
+"CHILD",100,"LungFlow","ChestXray, LungParench","ChestXray, Disease, LungParench",1,0.666666666666667,0.8
+"CHILD",100,"Sick","Grunting, LowerBodyO2","Grunting, Disease, Age, LungParench",0.5,0.25,0.333333333333333
+"CHILD",500,"BirthAsphyxia","Disease","Disease",1,1,1
+"CHILD",500,"HypDistrib","DuctFlow, CardiacMixing","HypoxiaInO2, LowerBodyO2, DuctFlow, CardiacMixing",1,0.5,0.666666666666667
+"CHILD",500,"HypoxiaInO2","CardiacMixing, LowerBodyO2, RUQO2","HypDistrib, LowerBodyO2, RUQO2, CardiacMixing, LungParench",1,0.6,0.75
+"CHILD",500,"CO2","CO2Report, LungParench","CO2Report, LungParench",1,1,1
+"CHILD",500,"ChestXray","XrayReport, LungParench, LungFlow","XrayReport, LungParench, LungFlow",1,1,1
+"CHILD",500,"Grunting","GruntingReport, LungParench, Sick, LVHreport","GruntingReport, LungParench, Sick",0.75,1,0.857142857142857
+"CHILD",500,"LVHreport","LVH, CardiacMixing, RUQO2","LVH",0.333333333333333,1,0.5
+"CHILD",500,"LowerBodyO2","HypoxiaInO2","HypDistrib, HypoxiaInO2",1,0.5,0.666666666666667
+"CHILD",500,"RUQO2","HypoxiaInO2, Age","HypoxiaInO2",0.5,1,0.666666666666667
+"CHILD",500,"CO2Report","CO2","CO2",1,1,1
+"CHILD",500,"XrayReport","ChestXray, Grunting","ChestXray",0.5,1,0.666666666666667
+"CHILD",500,"Disease","DuctFlow, CardiacMixing, LVH","BirthAsphyxia, Age, LVH, DuctFlow, CardiacMixing, LungParench, LungFlow, Sick",1,0.375,0.545454545454545
+"CHILD",500,"GruntingReport","Grunting, HypDistrib","Grunting",0.5,1,0.666666666666667
+"CHILD",500,"Age","Disease, Sick","Disease, Sick",1,1,1
+"CHILD",500,"LVH","LVHreport, Disease","LVHreport, Disease",1,1,1
+"CHILD",500,"DuctFlow","Disease, HypDistrib","HypDistrib, Disease, CardiacMixing",1,0.666666666666667,0.8
+"CHILD",500,"CardiacMixing","Disease, HypoxiaInO2","HypDistrib, HypoxiaInO2, Disease, DuctFlow, LungParench",1,0.4,0.571428571428572
+"CHILD",500,"LungParench","ChestXray, LungFlow, Grunting","HypoxiaInO2, CO2, ChestXray, Grunting, Disease, CardiacMixing, LungFlow, Sick",1,0.375,0.545454545454545
+"CHILD",500,"LungFlow","ChestXray, Disease","ChestXray, Disease, LungParench",1,0.666666666666667,0.8
+"CHILD",500,"Sick","Grunting, Age, LVH, RUQO2","Grunting, Disease, Age, LungParench",0.5,0.5,0.5
+"CHILD",1000,"BirthAsphyxia","Disease","Disease",1,1,1
+"CHILD",1000,"HypDistrib","DuctFlow, CardiacMixing, LowerBodyO2","HypoxiaInO2, LowerBodyO2, DuctFlow, CardiacMixing",1,0.75,0.857142857142857
+"CHILD",1000,"HypoxiaInO2","CardiacMixing, LowerBodyO2, RUQO2","HypDistrib, LowerBodyO2, RUQO2, CardiacMixing, LungParench",1,0.6,0.75
+"CHILD",1000,"CO2","CO2Report, LungParench","CO2Report, LungParench",1,1,1
+"CHILD",1000,"ChestXray","XrayReport, LungFlow, LungParench","XrayReport, LungParench, LungFlow",1,1,1
+"CHILD",1000,"Grunting","GruntingReport, LungParench, Sick, CO2Report","GruntingReport, LungParench, Sick",0.75,1,0.857142857142857
+"CHILD",1000,"LVHreport","LVH","LVH",1,1,1
+"CHILD",1000,"LowerBodyO2","HypoxiaInO2, HypDistrib, RUQO2","HypDistrib, HypoxiaInO2",0.666666666666667,1,0.8
+"CHILD",1000,"RUQO2","HypoxiaInO2, Sick","HypoxiaInO2",0.5,1,0.666666666666667
+"CHILD",1000,"CO2Report","CO2","CO2",1,1,1
+"CHILD",1000,"XrayReport","ChestXray","ChestXray",1,1,1
+"CHILD",1000,"Disease","CardiacMixing, DuctFlow, LVH, LungFlow","BirthAsphyxia, Age, LVH, DuctFlow, CardiacMixing, LungParench, LungFlow, Sick",1,0.5,0.666666666666667
+"CHILD",1000,"GruntingReport","Grunting","Grunting",1,1,1
+"CHILD",1000,"Age","Disease, Sick","Disease, Sick",1,1,1
+"CHILD",1000,"LVH","LVHreport, Disease","LVHreport, Disease",1,1,1
+"CHILD",1000,"DuctFlow","Disease, HypDistrib","HypDistrib, Disease, CardiacMixing",1,0.666666666666667,0.8
+"CHILD",1000,"CardiacMixing","Disease, HypoxiaInO2","HypDistrib, HypoxiaInO2, Disease, DuctFlow, LungParench",1,0.4,0.571428571428572
+"CHILD",1000,"LungParench","ChestXray, LungFlow, Grunting","HypoxiaInO2, CO2, ChestXray, Grunting, Disease, CardiacMixing, LungFlow, Sick",1,0.375,0.545454545454545
+"CHILD",1000,"LungFlow","ChestXray, Disease","ChestXray, Disease, LungParench",1,0.666666666666667,0.8
+"CHILD",1000,"Sick","Grunting, Age, Disease","Grunting, Disease, Age, LungParench",1,0.75,0.857142857142857
+"CHILD",5000,"BirthAsphyxia","Disease, ChestXray, GruntingReport","Disease",0.333333333333333,1,0.5
+"CHILD",5000,"HypDistrib","DuctFlow, CardiacMixing, LowerBodyO2, LVH","HypoxiaInO2, LowerBodyO2, DuctFlow, CardiacMixing",0.75,0.75,0.75
+"CHILD",5000,"HypoxiaInO2","CardiacMixing, RUQO2, LowerBodyO2, LungParench","HypDistrib, LowerBodyO2, RUQO2, CardiacMixing, LungParench",1,0.8,0.888888888888889
+"CHILD",5000,"CO2","CO2Report, LungParench, DuctFlow","CO2Report, LungParench",0.666666666666667,1,0.8
+"CHILD",5000,"ChestXray","XrayReport, LungFlow, LungParench","XrayReport, LungParench, LungFlow",1,1,1
+"CHILD",5000,"Grunting","GruntingReport, LungParench, Sick, LungFlow","GruntingReport, LungParench, Sick",0.75,1,0.857142857142857
+"CHILD",5000,"LVHreport","LVH, LowerBodyO2","LVH",0.5,1,0.666666666666667
+"CHILD",5000,"LowerBodyO2","HypoxiaInO2, HypDistrib","HypDistrib, HypoxiaInO2",1,1,1
+"CHILD",5000,"RUQO2","HypoxiaInO2, DuctFlow, XrayReport","HypoxiaInO2",0.333333333333333,1,0.5
+"CHILD",5000,"CO2Report","CO2, Disease","CO2",0.5,1,0.666666666666667
+"CHILD",5000,"XrayReport","ChestXray, CardiacMixing, DuctFlow","ChestXray",0.333333333333333,1,0.5
+"CHILD",5000,"Disease","ChestXray, DuctFlow, CardiacMixing, LVH","BirthAsphyxia, Age, LVH, DuctFlow, CardiacMixing, LungParench, LungFlow, Sick",0.75,0.375,0.5
+"CHILD",5000,"GruntingReport","Grunting, HypoxiaInO2, LVH, HypDistrib, LVHreport","Grunting",0.2,1,0.333333333333333
+"CHILD",5000,"Age","Disease, Sick","Disease, Sick",1,1,1
+"CHILD",5000,"LVH","LVHreport, Disease, HypDistrib","LVHreport, Disease",0.666666666666667,1,0.8
+"CHILD",5000,"DuctFlow","Disease, HypDistrib, CardiacMixing","HypDistrib, Disease, CardiacMixing",1,1,1
+"CHILD",5000,"CardiacMixing","HypoxiaInO2, Disease, HypDistrib","HypDistrib, HypoxiaInO2, Disease, DuctFlow, LungParench",1,0.6,0.75
+"CHILD",5000,"LungParench","ChestXray, Disease, Grunting, LungFlow","HypoxiaInO2, CO2, ChestXray, Grunting, Disease, CardiacMixing, LungFlow, Sick",1,0.5,0.666666666666667
+"CHILD",5000,"LungFlow","ChestXray, Disease, LungParench","ChestXray, Disease, LungParench",1,1,1
+"CHILD",5000,"Sick","Disease, Age, Grunting, LungParench","Grunting, Disease, Age, LungParench",1,1,1
+"INSURANCE",100,"GoodStudent","OtherCarCost","Age, SocioEcon",0,0,0
+"INSURANCE",100,"Age","SeniorTrain, DrivHist, Antilock","GoodStudent, SocioEcon, RiskAversion, Accident, DrivingSkill, SeniorTrain, MedCost, Cushioning",0.333333333333333,0.125,0.181818181818182
+"INSURANCE",100,"SocioEcon","HomeBase, Airbag","GoodStudent, Age, RiskAversion, VehicleYear, MakeModel, HomeBase, AntiTheft, OtherCar",0.5,0.125,0.2
+"INSURANCE",100,"RiskAversion","AntiTheft, DrivHist","Age, SocioEcon, VehicleYear, MakeModel, DrivQuality, DrivingSkill, SeniorTrain, HomeBase, AntiTheft, DrivHist",1,0.2,0.333333333333333
+"INSURANCE",100,"VehicleYear","Airbag","SocioEcon, RiskAversion, RuggedAuto, MakeModel, Mileage, Antilock, CarValue, Airbag",1,0.125,0.222222222222222
+"INSURANCE",100,"ThisCarDam","Accident","RuggedAuto, Accident, ThisCarCost, Theft, CarValue",1,0.2,0.333333333333333
+"INSURANCE",100,"RuggedAuto","Cushioning","VehicleYear, ThisCarDam, Accident, MakeModel, OtherCarCost, Cushioning, Airbag",1,0.142857142857143,0.25
+"INSURANCE",100,"Accident","ThisCarDam","Age, ThisCarDam, RuggedAuto, DrivQuality, Mileage, Antilock, OtherCarCost, MedCost, Cushioning, ILiCost",1,0.1,0.181818181818182
+"INSURANCE",100,"MakeModel","CarValue, RuggedAuto","SocioEcon, RiskAversion, VehicleYear, RuggedAuto, Mileage, Antilock, CarValue, Airbag",1,0.25,0.4
+"INSURANCE",100,"DrivQuality","DrivingSkill, RiskAversion","RiskAversion, Accident, Mileage, Antilock, DrivingSkill",1,0.4,0.571428571428572
+"INSURANCE",100,"Mileage","","VehicleYear, Accident, MakeModel, DrivQuality, Antilock, CarValue",0,0,0
+"INSURANCE",100,"Antilock","CarValue, VehicleYear","VehicleYear, Accident, MakeModel, DrivQuality, Mileage",0.5,0.2,0.285714285714286
+"INSURANCE",100,"DrivingSkill","DrivQuality","Age, RiskAversion, DrivQuality, SeniorTrain, DrivHist",1,0.2,0.333333333333333
+"INSURANCE",100,"SeniorTrain","Age, DrivQuality","Age, RiskAversion, DrivingSkill",0.5,0.333333333333333,0.4
+"INSURANCE",100,"ThisCarCost","ThisCarDam, Antilock","ThisCarDam, Theft, CarValue, PropCost, OtherCarCost",0.5,0.2,0.285714285714286
+"INSURANCE",100,"Theft","","ThisCarDam, ThisCarCost, CarValue, HomeBase, AntiTheft",0,0,0
+"INSURANCE",100,"CarValue","MakeModel, VehicleYear","VehicleYear, ThisCarDam, MakeModel, Mileage, ThisCarCost, Theft, HomeBase, AntiTheft",1,0.25,0.4
+"INSURANCE",100,"HomeBase","SocioEcon, AntiTheft","SocioEcon, RiskAversion, Theft, CarValue, AntiTheft",1,0.4,0.571428571428572
+"INSURANCE",100,"AntiTheft","RiskAversion, Antilock","SocioEcon, RiskAversion, Theft, CarValue, HomeBase",0.5,0.2,0.285714285714286
+"INSURANCE",100,"PropCost","ThisCarCost, OtherCarCost","ThisCarCost, OtherCarCost",1,1,1
+"INSURANCE",100,"OtherCarCost","PropCost","RuggedAuto, Accident, ThisCarCost, PropCost",1,0.25,0.4
+"INSURANCE",100,"OtherCar","SocioEcon","SocioEcon",1,1,1
+"INSURANCE",100,"MedCost","Accident","Age, Accident, Cushioning",1,0.333333333333333,0.5
+"INSURANCE",100,"Cushioning","RuggedAuto, Airbag","Age, RuggedAuto, Accident, MedCost, Airbag",1,0.4,0.571428571428572
+"INSURANCE",100,"Airbag","VehicleYear, Antilock","VehicleYear, RuggedAuto, MakeModel, Cushioning",0.5,0.25,0.333333333333333
+"INSURANCE",100,"ILiCost","Accident","Accident",1,1,1
+"INSURANCE",100,"DrivHist","DrivQuality, RiskAversion","RiskAversion, DrivingSkill",0.5,0.5,0.5
+"INSURANCE",500,"GoodStudent","Age","Age, SocioEcon",1,0.5,0.666666666666667
+"INSURANCE",500,"Age","SeniorTrain, GoodStudent, RiskAversion","GoodStudent, SocioEcon, RiskAversion, Accident, DrivingSkill, SeniorTrain, MedCost, Cushioning",1,0.375,0.545454545454545
+"INSURANCE",500,"SocioEcon","HomeBase, MakeModel, VehicleYear","GoodStudent, Age, RiskAversion, VehicleYear, MakeModel, HomeBase, AntiTheft, OtherCar",1,0.375,0.545454545454545
+"INSURANCE",500,"RiskAversion","AntiTheft, HomeBase, DrivQuality","Age, SocioEcon, VehicleYear, MakeModel, DrivQuality, DrivingSkill, SeniorTrain, HomeBase, AntiTheft, DrivHist",1,0.3,0.461538461538462
+"INSURANCE",500,"VehicleYear","Airbag, CarValue","SocioEcon, RiskAversion, RuggedAuto, MakeModel, Mileage, Antilock, CarValue, Airbag",1,0.25,0.4
+"INSURANCE",500,"ThisCarDam","Accident, RuggedAuto","RuggedAuto, Accident, ThisCarCost, Theft, CarValue",1,0.4,0.571428571428572
+"INSURANCE",500,"RuggedAuto","Cushioning, MakeModel, Airbag","VehicleYear, ThisCarDam, Accident, MakeModel, OtherCarCost, Cushioning, Airbag",1,0.428571428571429,0.6
+"INSURANCE",500,"Accident","ThisCarDam, RuggedAuto","Age, ThisCarDam, RuggedAuto, DrivQuality, Mileage, Antilock, OtherCarCost, MedCost, Cushioning, ILiCost",1,0.2,0.333333333333333
+"INSURANCE",500,"MakeModel","CarValue, RuggedAuto, Antilock","SocioEcon, RiskAversion, VehicleYear, RuggedAuto, Mileage, Antilock, CarValue, Airbag",1,0.375,0.545454545454545
+"INSURANCE",500,"DrivQuality","DrivingSkill, RiskAversion","RiskAversion, Accident, Mileage, Antilock, DrivingSkill",1,0.4,0.571428571428572
+"INSURANCE",500,"Mileage","CarValue, VehicleYear","VehicleYear, Accident, MakeModel, DrivQuality, Antilock, CarValue",1,0.333333333333333,0.5
+"INSURANCE",500,"Antilock","CarValue, Airbag, MakeModel","VehicleYear, Accident, MakeModel, DrivQuality, Mileage",0.333333333333333,0.2,0.25
+"INSURANCE",500,"DrivingSkill","DrivQuality, RiskAversion, DrivHist","Age, RiskAversion, DrivQuality, SeniorTrain, DrivHist",1,0.6,0.75
+"INSURANCE",500,"SeniorTrain","Age, RiskAversion","Age, RiskAversion, DrivingSkill",1,0.666666666666667,0.8
+"INSURANCE",500,"ThisCarCost","ThisCarDam, VehicleYear","ThisCarDam, Theft, CarValue, PropCost, OtherCarCost",0.5,0.2,0.285714285714286
+"INSURANCE",500,"CarValue","MakeModel, VehicleYear, Mileage","VehicleYear, ThisCarDam, MakeModel, Mileage, ThisCarCost, Theft, HomeBase, AntiTheft",1,0.375,0.545454545454545
+"INSURANCE",500,"HomeBase","SocioEcon, RiskAversion","SocioEcon, RiskAversion, Theft, CarValue, AntiTheft",1,0.4,0.571428571428572
+"INSURANCE",500,"AntiTheft","RiskAversion, SocioEcon","SocioEcon, RiskAversion, Theft, CarValue, HomeBase",1,0.4,0.571428571428572
+"INSURANCE",500,"PropCost","ThisCarCost, OtherCarCost","ThisCarCost, OtherCarCost",1,1,1
+"INSURANCE",500,"OtherCarCost","Accident, PropCost","RuggedAuto, Accident, ThisCarCost, PropCost",1,0.5,0.666666666666667
+"INSURANCE",500,"OtherCar","SocioEcon","SocioEcon",1,1,1
+"INSURANCE",500,"MedCost","ThisCarDam","Age, Accident, Cushioning",0,0,0
+"INSURANCE",500,"Cushioning","RuggedAuto, Airbag","Age, RuggedAuto, Accident, MedCost, Airbag",1,0.4,0.571428571428572
+"INSURANCE",500,"Airbag","VehicleYear, Cushioning","VehicleYear, RuggedAuto, MakeModel, Cushioning",1,0.5,0.666666666666667
+"INSURANCE",500,"ILiCost","OtherCarCost","Accident",0,0,0
+"INSURANCE",500,"DrivHist","DrivingSkill, RiskAversion","RiskAversion, DrivingSkill",1,1,1
+"INSURANCE",1000,"GoodStudent","Age, SocioEcon","Age, SocioEcon",1,1,1
+"INSURANCE",1000,"Age","SeniorTrain, GoodStudent, DrivHist","GoodStudent, SocioEcon, RiskAversion, Accident, DrivingSkill, SeniorTrain, MedCost, Cushioning",0.666666666666667,0.25,0.363636363636364
+"INSURANCE",1000,"SocioEcon","HomeBase, MakeModel, VehicleYear","GoodStudent, Age, RiskAversion, VehicleYear, MakeModel, HomeBase, AntiTheft, OtherCar",1,0.375,0.545454545454545
+"INSURANCE",1000,"RiskAversion","AntiTheft, HomeBase, SocioEcon","Age, SocioEcon, VehicleYear, MakeModel, DrivQuality, DrivingSkill, SeniorTrain, HomeBase, AntiTheft, DrivHist",1,0.3,0.461538461538462
+"INSURANCE",1000,"VehicleYear","Airbag, CarValue, Antilock","SocioEcon, RiskAversion, RuggedAuto, MakeModel, Mileage, Antilock, CarValue, Airbag",1,0.375,0.545454545454545
+"INSURANCE",1000,"ThisCarDam","Accident, RuggedAuto","RuggedAuto, Accident, ThisCarCost, Theft, CarValue",1,0.4,0.571428571428572
+"INSURANCE",1000,"RuggedAuto","Cushioning, MakeModel, Airbag","VehicleYear, ThisCarDam, Accident, MakeModel, OtherCarCost, Cushioning, Airbag",1,0.428571428571429,0.6
+"INSURANCE",1000,"Accident","ThisCarDam, RuggedAuto","Age, ThisCarDam, RuggedAuto, DrivQuality, Mileage, Antilock, OtherCarCost, MedCost, Cushioning, ILiCost",1,0.2,0.333333333333333
+"INSURANCE",1000,"MakeModel","CarValue, RuggedAuto, VehicleYear, Antilock","SocioEcon, RiskAversion, VehicleYear, RuggedAuto, Mileage, Antilock, CarValue, Airbag",1,0.5,0.666666666666667
+"INSURANCE",1000,"DrivQuality","DrivingSkill, RiskAversion","RiskAversion, Accident, Mileage, Antilock, DrivingSkill",1,0.4,0.571428571428572
+"INSURANCE",1000,"Mileage","CarValue, VehicleYear","VehicleYear, Accident, MakeModel, DrivQuality, Antilock, CarValue",1,0.333333333333333,0.5
+"INSURANCE",1000,"Antilock","VehicleYear, MakeModel","VehicleYear, Accident, MakeModel, DrivQuality, Mileage",1,0.4,0.571428571428572
+"INSURANCE",1000,"DrivingSkill","DrivQuality, RiskAversion, DrivHist","Age, RiskAversion, DrivQuality, SeniorTrain, DrivHist",1,0.6,0.75
+"INSURANCE",1000,"SeniorTrain","Age, DrivHist, RiskAversion","Age, RiskAversion, DrivingSkill",0.666666666666667,0.666666666666667,0.666666666666667
+"INSURANCE",1000,"ThisCarCost","ThisCarDam, CarValue","ThisCarDam, Theft, CarValue, PropCost, OtherCarCost",1,0.4,0.571428571428572
+"INSURANCE",1000,"Theft","","ThisCarDam, ThisCarCost, CarValue, HomeBase, AntiTheft",0,0,0
+"INSURANCE",1000,"CarValue","MakeModel, VehicleYear, Mileage","VehicleYear, ThisCarDam, MakeModel, Mileage, ThisCarCost, Theft, HomeBase, AntiTheft",1,0.375,0.545454545454545
+"INSURANCE",1000,"HomeBase","SocioEcon, RiskAversion","SocioEcon, RiskAversion, Theft, CarValue, AntiTheft",1,0.4,0.571428571428572
+"INSURANCE",1000,"AntiTheft","RiskAversion, SocioEcon","SocioEcon, RiskAversion, Theft, CarValue, HomeBase",1,0.4,0.571428571428572
+"INSURANCE",1000,"PropCost","ThisCarCost, OtherCarCost","ThisCarCost, OtherCarCost",1,1,1
+"INSURANCE",1000,"OtherCarCost","Accident, PropCost","RuggedAuto, Accident, ThisCarCost, PropCost",1,0.5,0.666666666666667
+"INSURANCE",1000,"OtherCar","SocioEcon, Antilock","SocioEcon",0.5,1,0.666666666666667
+"INSURANCE",1000,"MedCost","Accident, Cushioning","Age, Accident, Cushioning",1,0.666666666666667,0.8
+"INSURANCE",1000,"Cushioning","RuggedAuto, Airbag","Age, RuggedAuto, Accident, MedCost, Airbag",1,0.4,0.571428571428572
+"INSURANCE",1000,"Airbag","VehicleYear, Cushioning, RuggedAuto","VehicleYear, RuggedAuto, MakeModel, Cushioning",1,0.75,0.857142857142857
+"INSURANCE",1000,"ILiCost","ThisCarDam","Accident",0,0,0
+"INSURANCE",1000,"DrivHist","DrivingSkill, RiskAversion","RiskAversion, DrivingSkill",1,1,1
+"INSURANCE",5000,"GoodStudent","Age, SocioEcon","Age, SocioEcon",1,1,1
+"INSURANCE",5000,"Age","SeniorTrain, GoodStudent, RiskAversion, DrivingSkill","GoodStudent, SocioEcon, RiskAversion, Accident, DrivingSkill, SeniorTrain, MedCost, Cushioning",1,0.5,0.666666666666667
+"INSURANCE",5000,"SocioEcon","MakeModel, HomeBase, VehicleYear, RiskAversion","GoodStudent, Age, RiskAversion, VehicleYear, MakeModel, HomeBase, AntiTheft, OtherCar",1,0.5,0.666666666666667
+"INSURANCE",5000,"RiskAversion","AntiTheft, HomeBase, SocioEcon, SeniorTrain, DrivQuality","Age, SocioEcon, VehicleYear, MakeModel, DrivQuality, DrivingSkill, SeniorTrain, HomeBase, AntiTheft, DrivHist",1,0.5,0.666666666666667
+"INSURANCE",5000,"VehicleYear","Antilock, Airbag, CarValue, MakeModel","SocioEcon, RiskAversion, RuggedAuto, MakeModel, Mileage, Antilock, CarValue, Airbag",1,0.5,0.666666666666667
+"INSURANCE",5000,"ThisCarDam","Accident, RuggedAuto, ThisCarCost","RuggedAuto, Accident, ThisCarCost, Theft, CarValue",1,0.6,0.75
+"INSURANCE",5000,"RuggedAuto","MakeModel, Cushioning, Airbag","VehicleYear, ThisCarDam, Accident, MakeModel, OtherCarCost, Cushioning, Airbag",1,0.428571428571429,0.6
+"INSURANCE",5000,"Accident","ThisCarDam, RuggedAuto, OtherCarCost","Age, ThisCarDam, RuggedAuto, DrivQuality, Mileage, Antilock, OtherCarCost, MedCost, Cushioning, ILiCost",1,0.3,0.461538461538462
+"INSURANCE",5000,"MakeModel","SocioEcon, RuggedAuto, CarValue, VehicleYear","SocioEcon, RiskAversion, VehicleYear, RuggedAuto, Mileage, Antilock, CarValue, Airbag",1,0.5,0.666666666666667
+"INSURANCE",5000,"DrivQuality","ThisCarDam, DrivingSkill, RiskAversion","RiskAversion, Accident, Mileage, Antilock, DrivingSkill",0.666666666666667,0.4,0.5
+"INSURANCE",5000,"Mileage","CarValue, VehicleYear, MakeModel","VehicleYear, Accident, MakeModel, DrivQuality, Antilock, CarValue",1,0.5,0.666666666666667
+"INSURANCE",5000,"Antilock","VehicleYear, MakeModel","VehicleYear, Accident, MakeModel, DrivQuality, Mileage",1,0.4,0.571428571428572
+"INSURANCE",5000,"DrivingSkill","DrivQuality, RiskAversion, DrivHist","Age, RiskAversion, DrivQuality, SeniorTrain, DrivHist",1,0.6,0.75
+"INSURANCE",5000,"SeniorTrain","Age, RiskAversion, DrivingSkill","Age, RiskAversion, DrivingSkill",1,1,1
+"INSURANCE",5000,"ThisCarCost","ThisCarDam, CarValue","ThisCarDam, Theft, CarValue, PropCost, OtherCarCost",1,0.4,0.571428571428572
+"INSURANCE",5000,"Theft","ThisCarCost, ThisCarDam","ThisCarDam, ThisCarCost, CarValue, HomeBase, AntiTheft",1,0.4,0.571428571428572
+"INSURANCE",5000,"CarValue","VehicleYear, MakeModel, Mileage","VehicleYear, ThisCarDam, MakeModel, Mileage, ThisCarCost, Theft, HomeBase, AntiTheft",1,0.375,0.545454545454545
+"INSURANCE",5000,"HomeBase","SocioEcon, RiskAversion","SocioEcon, RiskAversion, Theft, CarValue, AntiTheft",1,0.4,0.571428571428572
+"INSURANCE",5000,"AntiTheft","RiskAversion, SocioEcon","SocioEcon, RiskAversion, Theft, CarValue, HomeBase",1,0.4,0.571428571428572
+"INSURANCE",5000,"PropCost","OtherCarCost, ThisCarCost","ThisCarCost, OtherCarCost",1,1,1
+"INSURANCE",5000,"OtherCarCost","PropCost, Accident","RuggedAuto, Accident, ThisCarCost, PropCost",1,0.5,0.666666666666667
+"INSURANCE",5000,"OtherCar","SocioEcon, ThisCarDam","SocioEcon",0.5,1,0.666666666666667
+"INSURANCE",5000,"MedCost","Accident, Cushioning","Age, Accident, Cushioning",1,0.666666666666667,0.8
+"INSURANCE",5000,"Cushioning","RuggedAuto, Airbag, MedCost","Age, RuggedAuto, Accident, MedCost, Airbag",1,0.6,0.75
+"INSURANCE",5000,"Airbag","VehicleYear, Cushioning, RuggedAuto, MakeModel","VehicleYear, RuggedAuto, MakeModel, Cushioning",1,1,1
+"INSURANCE",5000,"ILiCost","Accident","Accident",1,1,1
+"INSURANCE",5000,"DrivHist","RiskAversion, DrivingSkill","RiskAversion, DrivingSkill",1,1,1
+"HAILFINDER",100,"N0_7muVerMo","CombVerMo","SubjVertMo, QGVertMotion, CombVerMo",1,0.333333333333333,0.5
+"HAILFINDER",100,"SubjVertMo","CombVerMo, WindFieldMt","N0_7muVerMo, QGVertMotion, CombVerMo",0.5,0.333333333333333,0.4
+"HAILFINDER",100,"QGVertMotion","CombVerMo","N0_7muVerMo, SubjVertMo, CombVerMo",1,0.333333333333333,0.5
+"HAILFINDER",100,"CombVerMo","AreaMeso_ALS","N0_7muVerMo, SubjVertMo, QGVertMotion, AreaMeso_ALS",1,0.25,0.4
+"HAILFINDER",100,"AreaMeso_ALS","CombVerMo","CombVerMo, CombMoisture, AreaMoDryAir, CombClouds, CldShadeOth, Boundaries, CldShadeConv, CompPlFcst",1,0.125,0.222222222222222
+"HAILFINDER",100,"SatContMoist","CombMoisture, InsChange","RaoContMoist, CombMoisture",0.5,0.5,0.5
+"HAILFINDER",100,"RaoContMoist","CombMoisture, AMInsWliScen","SatContMoist, CombMoisture",0.5,0.5,0.5
+"HAILFINDER",100,"CombMoisture","AreaMoDryAir","AreaMeso_ALS, SatContMoist, RaoContMoist, AreaMoDryAir",1,0.25,0.4
+"HAILFINDER",100,"AreaMoDryAir","CombMoisture","AreaMeso_ALS, CombMoisture, CombClouds, CldShadeOth",1,0.25,0.4
+"HAILFINDER",100,"VISCloudCov","CombClouds, IRCloudCover","IRCloudCover, CombClouds",1,1,1
+"HAILFINDER",100,"IRCloudCover","CombClouds, InsSclInScen","VISCloudCov, CombClouds",0.5,0.5,0.5
+"HAILFINDER",100,"CombClouds","CldShadeOth, VISCloudCov","AreaMeso_ALS, AreaMoDryAir, VISCloudCov, IRCloudCover, CldShadeOth",1,0.4,0.571428571428572
+"HAILFINDER",100,"CldShadeOth","CombClouds, AreaMoDryAir","AreaMeso_ALS, AreaMoDryAir, CombClouds, AMInstabMt, InsInMt, Boundaries, CldShadeConv, CompPlFcst",1,0.25,0.4
+"HAILFINDER",100,"AMInstabMt","InsInMt, CombClouds","CldShadeOth, InsInMt",0.5,0.5,0.5
+"HAILFINDER",100,"InsInMt","CldShadeConv, MountainFcst","CldShadeOth, AMInstabMt, WndHodograph, OutflowFrMt, CldShadeConv, MountainFcst",1,0.333333333333333,0.5
+"HAILFINDER",100,"WndHodograph","OutflowFrMt, LLIW","InsInMt, OutflowFrMt, MorningBound, Boundaries, CldShadeConv",0.5,0.2,0.285714285714286
+"HAILFINDER",100,"OutflowFrMt","CldShadeConv, Boundaries","InsInMt, WndHodograph, MorningBound, Boundaries",0.5,0.25,0.333333333333333
+"HAILFINDER",100,"MorningBound","Boundaries, CldShadeOth","WndHodograph, OutflowFrMt, Boundaries",0.5,0.333333333333333,0.4
+"HAILFINDER",100,"Boundaries","OutflowFrMt, MorningBound","AreaMeso_ALS, CldShadeOth, WndHodograph, OutflowFrMt, MorningBound, CldShadeConv, CompPlFcst",1,0.285714285714286,0.444444444444444
+"HAILFINDER",100,"CldShadeConv","InsInMt, WndHodograph","AreaMeso_ALS, CldShadeOth, InsInMt, WndHodograph, Boundaries, CompPlFcst",1,0.333333333333333,0.5
+"HAILFINDER",100,"CompPlFcst","CapChange","AreaMeso_ALS, CldShadeOth, Boundaries, CldShadeConv, CapChange, LoLevMoistAd, InsChange",1,0.142857142857143,0.25
+"HAILFINDER",100,"CapChange","CompPlFcst","CompPlFcst, AMCINInScen, CapInScen",1,0.333333333333333,0.5
+"HAILFINDER",100,"LoLevMoistAd","InsChange","CompPlFcst, InsChange",1,0.5,0.666666666666667
+"HAILFINDER",100,"InsChange","LoLevMoistAd, InsSclInScen","CompPlFcst, LoLevMoistAd, AMInsWliScen, InsSclInScen",1,0.5,0.666666666666667
+"HAILFINDER",100,"MountainFcst","R5Fcst, N34StarFcst","InsInMt, N34StarFcst, R5Fcst",1,0.666666666666667,0.8
+"HAILFINDER",100,"Date","MorningCIN, IRCloudCover","Scenario",0,0,0
+"HAILFINDER",100,"Scenario","ScnRelPlFcst","Date, ScenRelAMCIN, ScenRelAMIns, ScenRel3_4, ScnRelPlFcst, Dewpoints, LowLLapse, MeanRH, MidLLapse, MvmtFeatures, RHRatio, SfcWndShfDis, SynForcng, TempDis, WindAloft, WindFieldMt, WindFieldPln",1,0.0588235294117647,0.111111111111111
+"HAILFINDER",100,"ScenRelAMCIN","Scenario","Scenario, MorningCIN, AMCINInScen",1,0.333333333333333,0.5
+"HAILFINDER",100,"MorningCIN","AMCINInScen","ScenRelAMCIN, AMCINInScen",1,0.5,0.666666666666667
+"HAILFINDER",100,"AMCINInScen","MorningCIN, CapInScen","CapChange, ScenRelAMCIN, MorningCIN, CapInScen",1,0.5,0.666666666666667
+"HAILFINDER",100,"CapInScen","CompPlFcst, AMCINInScen","CapChange, AMCINInScen, InsSclInScen, CurPropConv, ScnRelPlFcst, PlainsFcst",0.5,0.166666666666667,0.25
+"HAILFINDER",100,"ScenRelAMIns","Scenario","Scenario, LIfr12ZDENSd, AMDewptCalPl, AMInsWliScen",1,0.25,0.4
+"HAILFINDER",100,"LIfr12ZDENSd","AMInsWliScen, VISCloudCov","ScenRelAMIns, AMDewptCalPl, AMInsWliScen",0.5,0.333333333333333,0.4
+"HAILFINDER",100,"AMDewptCalPl","CombVerMo, Boundaries","ScenRelAMIns, LIfr12ZDENSd, AMInsWliScen",0,0,0
+"HAILFINDER",100,"AMInsWliScen","InsSclInScen, InsChange","InsChange, ScenRelAMIns, LIfr12ZDENSd, AMDewptCalPl, InsSclInScen",1,0.4,0.571428571428572
+"HAILFINDER",100,"InsSclInScen","AMInsWliScen, InsChange","InsChange, CapInScen, AMInsWliScen, CurPropConv, ScnRelPlFcst, PlainsFcst",1,0.333333333333333,0.5
+"HAILFINDER",100,"ScenRel3_4","Scenario","Scenario, PlainsFcst, N34StarFcst",1,0.333333333333333,0.5
+"HAILFINDER",100,"LatestCIN","CurPropConv","LLIW, CurPropConv",1,0.5,0.666666666666667
+"HAILFINDER",100,"LLIW","CurPropConv, MeanRH","LatestCIN, CurPropConv",0.5,0.5,0.5
+"HAILFINDER",100,"CurPropConv","LLIW, CldShadeOth","CapInScen, InsSclInScen, LatestCIN, LLIW, ScnRelPlFcst, PlainsFcst",0.5,0.166666666666667,0.25
+"HAILFINDER",100,"ScnRelPlFcst","Scenario","Scenario, CapInScen, InsSclInScen, CurPropConv, PlainsFcst",1,0.2,0.333333333333333
+"HAILFINDER",100,"PlainsFcst","N34StarFcst","CapInScen, InsSclInScen, ScenRel3_4, CurPropConv, ScnRelPlFcst, N34StarFcst",1,0.166666666666667,0.285714285714286
+"HAILFINDER",100,"N34StarFcst","PlainsFcst","MountainFcst, ScenRel3_4, PlainsFcst, R5Fcst",1,0.25,0.4
+"HAILFINDER",100,"R5Fcst","MountainFcst, N34StarFcst","MountainFcst, N34StarFcst",1,1,1
+"HAILFINDER",100,"Dewpoints","ScenRelAMIns","Scenario",0,0,0
+"HAILFINDER",100,"LowLLapse","ScenRelAMIns","Scenario",0,0,0
+"HAILFINDER",100,"MeanRH","Scenario","Scenario",1,1,1
+"HAILFINDER",100,"MidLLapse","Scenario","Scenario",1,1,1
+"HAILFINDER",100,"MvmtFeatures","Scenario","Scenario",1,1,1
+"HAILFINDER",100,"RHRatio","ScenRelAMIns","Scenario",0,0,0
+"HAILFINDER",100,"SfcWndShfDis","Scenario","Scenario",1,1,1
+"HAILFINDER",100,"SynForcng","Scenario","Scenario",1,1,1
+"HAILFINDER",100,"TempDis","Scenario","Scenario",1,1,1
+"HAILFINDER",100,"WindAloft","Scenario","Scenario",1,1,1
+"HAILFINDER",100,"WindFieldMt","Scenario","Scenario",1,1,1
+"HAILFINDER",100,"WindFieldPln","Scenario","Scenario",1,1,1
+"HAILFINDER",500,"N0_7muVerMo","CombVerMo, QGVertMotion","SubjVertMo, QGVertMotion, CombVerMo",1,0.666666666666667,0.8
+"HAILFINDER",500,"SubjVertMo","CombVerMo, N0_7muVerMo","N0_7muVerMo, QGVertMotion, CombVerMo",1,0.666666666666667,0.8
+"HAILFINDER",500,"QGVertMotion","CombVerMo, N0_7muVerMo","N0_7muVerMo, SubjVertMo, CombVerMo",1,0.666666666666667,0.8
+"HAILFINDER",500,"CombVerMo","AreaMeso_ALS","N0_7muVerMo, SubjVertMo, QGVertMotion, AreaMeso_ALS",1,0.25,0.4
+"HAILFINDER",500,"AreaMeso_ALS","CombVerMo","CombVerMo, CombMoisture, AreaMoDryAir, CombClouds, CldShadeOth, Boundaries, CldShadeConv, CompPlFcst",1,0.125,0.222222222222222
+"HAILFINDER",500,"SatContMoist","CombMoisture, RaoContMoist","RaoContMoist, CombMoisture",1,1,1
+"HAILFINDER",500,"RaoContMoist","CombMoisture, SatContMoist","SatContMoist, CombMoisture",1,1,1
+"HAILFINDER",500,"CombMoisture","AreaMoDryAir, SatContMoist, RaoContMoist","AreaMeso_ALS, SatContMoist, RaoContMoist, AreaMoDryAir",1,0.75,0.857142857142857
+"HAILFINDER",500,"AreaMoDryAir","CombMoisture, CombVerMo","AreaMeso_ALS, CombMoisture, CombClouds, CldShadeOth",0.5,0.25,0.333333333333333
+"HAILFINDER",500,"VISCloudCov","CombClouds, IRCloudCover","IRCloudCover, CombClouds",1,1,1
+"HAILFINDER",500,"IRCloudCover","CombClouds, VISCloudCov","VISCloudCov, CombClouds",1,1,1
+"HAILFINDER",500,"CombClouds","CldShadeOth, VISCloudCov, IRCloudCover","AreaMeso_ALS, AreaMoDryAir, VISCloudCov, IRCloudCover, CldShadeOth",1,0.6,0.75
+"HAILFINDER",500,"CldShadeOth","CombClouds, CombVerMo","AreaMeso_ALS, AreaMoDryAir, CombClouds, AMInstabMt, InsInMt, Boundaries, CldShadeConv, CompPlFcst",0.5,0.125,0.2
+"HAILFINDER",500,"AMInstabMt","InsInMt, CldShadeOth","CldShadeOth, InsInMt",1,1,1
+"HAILFINDER",500,"InsInMt","AMInstabMt, CldShadeConv, MountainFcst","CldShadeOth, AMInstabMt, WndHodograph, OutflowFrMt, CldShadeConv, MountainFcst",1,0.5,0.666666666666667
+"HAILFINDER",500,"WndHodograph","CldShadeConv, InsInMt, OutflowFrMt","InsInMt, OutflowFrMt, MorningBound, Boundaries, CldShadeConv",1,0.6,0.75
+"HAILFINDER",500,"OutflowFrMt","InsInMt, Boundaries, WndHodograph","InsInMt, WndHodograph, MorningBound, Boundaries",1,0.75,0.857142857142857
+"HAILFINDER",500,"MorningBound","Boundaries, CldShadeConv, PlainsFcst","WndHodograph, OutflowFrMt, Boundaries",0.333333333333333,0.333333333333333,0.333333333333333
+"HAILFINDER",500,"Boundaries","OutflowFrMt, MorningBound, PlainsFcst","AreaMeso_ALS, CldShadeOth, WndHodograph, OutflowFrMt, MorningBound, CldShadeConv, CompPlFcst",0.666666666666667,0.285714285714286,0.4
+"HAILFINDER",500,"CldShadeConv","InsInMt, WndHodograph","AreaMeso_ALS, CldShadeOth, InsInMt, WndHodograph, Boundaries, CompPlFcst",1,0.333333333333333,0.5
+"HAILFINDER",500,"CompPlFcst","CapChange","AreaMeso_ALS, CldShadeOth, Boundaries, CldShadeConv, CapChange, LoLevMoistAd, InsChange",1,0.142857142857143,0.25
+"HAILFINDER",500,"CapChange","CompPlFcst","CompPlFcst, AMCINInScen, CapInScen",1,0.333333333333333,0.5
+"HAILFINDER",500,"LoLevMoistAd","InsChange, OutflowFrMt, CompPlFcst","CompPlFcst, InsChange",0.666666666666667,1,0.8
+"HAILFINDER",500,"InsChange","LoLevMoistAd, InsSclInScen, AMInsWliScen","CompPlFcst, LoLevMoistAd, AMInsWliScen, InsSclInScen",1,0.75,0.857142857142857
+"HAILFINDER",500,"MountainFcst","R5Fcst, InsInMt, N34StarFcst","InsInMt, N34StarFcst, R5Fcst",1,1,1
+"HAILFINDER",500,"Date","Scenario, VISCloudCov","Scenario",0.5,1,0.666666666666667
+"HAILFINDER",500,"Scenario","ScnRelPlFcst","Date, ScenRelAMCIN, ScenRelAMIns, ScenRel3_4, ScnRelPlFcst, Dewpoints, LowLLapse, MeanRH, MidLLapse, MvmtFeatures, RHRatio, SfcWndShfDis, SynForcng, TempDis, WindAloft, WindFieldMt, WindFieldPln",1,0.0588235294117647,0.111111111111111
+"HAILFINDER",500,"ScenRelAMCIN","Scenario","Scenario, MorningCIN, AMCINInScen",1,0.333333333333333,0.5
+"HAILFINDER",500,"MorningCIN","AMCINInScen, ScenRelAMCIN","ScenRelAMCIN, AMCINInScen",1,1,1
+"HAILFINDER",500,"AMCINInScen","CapInScen, CompPlFcst, MorningCIN","CapChange, ScenRelAMCIN, MorningCIN, CapInScen",0.666666666666667,0.5,0.571428571428572
+"HAILFINDER",500,"CapInScen","AMCINInScen, CompPlFcst","CapChange, AMCINInScen, InsSclInScen, CurPropConv, ScnRelPlFcst, PlainsFcst",0.5,0.166666666666667,0.25
+"HAILFINDER",500,"ScenRelAMIns","Scenario","Scenario, LIfr12ZDENSd, AMDewptCalPl, AMInsWliScen",1,0.25,0.4
+"HAILFINDER",500,"LIfr12ZDENSd","AMInsWliScen, AMDewptCalPl","ScenRelAMIns, AMDewptCalPl, AMInsWliScen",1,0.666666666666667,0.8
+"HAILFINDER",500,"AMDewptCalPl","AMInsWliScen, LIfr12ZDENSd, WndHodograph","ScenRelAMIns, LIfr12ZDENSd, AMInsWliScen",0.666666666666667,0.666666666666667,0.666666666666667
+"HAILFINDER",500,"AMInsWliScen","InsSclInScen, InsChange, AMDewptCalPl","InsChange, ScenRelAMIns, LIfr12ZDENSd, AMDewptCalPl, InsSclInScen",1,0.6,0.75
+"HAILFINDER",500,"InsSclInScen","AMInsWliScen, InsChange","InsChange, CapInScen, AMInsWliScen, CurPropConv, ScnRelPlFcst, PlainsFcst",1,0.333333333333333,0.5
+"HAILFINDER",500,"ScenRel3_4","Scenario","Scenario, PlainsFcst, N34StarFcst",1,0.333333333333333,0.5
+"HAILFINDER",500,"LatestCIN","CurPropConv, LLIW","LLIW, CurPropConv",1,1,1
+"HAILFINDER",500,"LLIW","CurPropConv, LatestCIN","LatestCIN, CurPropConv",1,1,1
+"HAILFINDER",500,"CurPropConv","LLIW, LatestCIN","CapInScen, InsSclInScen, LatestCIN, LLIW, ScnRelPlFcst, PlainsFcst",1,0.333333333333333,0.5
+"HAILFINDER",500,"ScnRelPlFcst","Scenario","Scenario, CapInScen, InsSclInScen, CurPropConv, PlainsFcst",1,0.2,0.333333333333333
+"HAILFINDER",500,"PlainsFcst","N34StarFcst","CapInScen, InsSclInScen, ScenRel3_4, CurPropConv, ScnRelPlFcst, N34StarFcst",1,0.166666666666667,0.285714285714286
+"HAILFINDER",500,"N34StarFcst","PlainsFcst, R5Fcst, MountainFcst","MountainFcst, ScenRel3_4, PlainsFcst, R5Fcst",1,0.75,0.857142857142857
+"HAILFINDER",500,"R5Fcst","MountainFcst, N34StarFcst","MountainFcst, N34StarFcst",1,1,1
+"HAILFINDER",500,"Dewpoints","Scenario","Scenario",1,1,1
+"HAILFINDER",500,"LowLLapse","Scenario","Scenario",1,1,1
+"HAILFINDER",500,"MeanRH","ScenRelAMIns","Scenario",0,0,0
+"HAILFINDER",500,"MidLLapse","Scenario, CapInScen","Scenario",0.5,1,0.666666666666667
+"HAILFINDER",500,"MvmtFeatures","Scenario","Scenario",1,1,1
+"HAILFINDER",500,"RHRatio","Scenario","Scenario",1,1,1
+"HAILFINDER",500,"SfcWndShfDis","Scenario","Scenario",1,1,1
+"HAILFINDER",500,"SynForcng","Scenario, CombMoisture","Scenario",0.5,1,0.666666666666667
+"HAILFINDER",500,"TempDis","Scenario, IRCloudCover","Scenario",0.5,1,0.666666666666667
+"HAILFINDER",500,"WindAloft","Scenario","Scenario",1,1,1
+"HAILFINDER",500,"WindFieldMt","Scenario, AreaMoDryAir","Scenario",0.5,1,0.666666666666667
+"HAILFINDER",500,"WindFieldPln","Scenario","Scenario",1,1,1
+"HAILFINDER",1000,"N0_7muVerMo","CombVerMo, QGVertMotion, SubjVertMo","SubjVertMo, QGVertMotion, CombVerMo",1,1,1
+"HAILFINDER",1000,"SubjVertMo","CombVerMo, QGVertMotion, N0_7muVerMo","N0_7muVerMo, QGVertMotion, CombVerMo",1,1,1
+"HAILFINDER",1000,"QGVertMotion","CombVerMo, N0_7muVerMo, SubjVertMo","N0_7muVerMo, SubjVertMo, CombVerMo",1,1,1
+"HAILFINDER",1000,"CombVerMo","AreaMeso_ALS","N0_7muVerMo, SubjVertMo, QGVertMotion, AreaMeso_ALS",1,0.25,0.4
+"HAILFINDER",1000,"AreaMeso_ALS","CombVerMo","CombVerMo, CombMoisture, AreaMoDryAir, CombClouds, CldShadeOth, Boundaries, CldShadeConv, CompPlFcst",1,0.125,0.222222222222222
+"HAILFINDER",1000,"SatContMoist","CombMoisture, RaoContMoist","RaoContMoist, CombMoisture",1,1,1
+"HAILFINDER",1000,"RaoContMoist","CombMoisture, SatContMoist","SatContMoist, CombMoisture",1,1,1
+"HAILFINDER",1000,"CombMoisture","AreaMoDryAir, CombVerMo, RaoContMoist","AreaMeso_ALS, SatContMoist, RaoContMoist, AreaMoDryAir",0.666666666666667,0.5,0.571428571428572
+"HAILFINDER",1000,"AreaMoDryAir","CombMoisture, CombVerMo","AreaMeso_ALS, CombMoisture, CombClouds, CldShadeOth",0.5,0.25,0.333333333333333
+"HAILFINDER",1000,"VISCloudCov","CombClouds, IRCloudCover, InsInMt","IRCloudCover, CombClouds",0.666666666666667,1,0.8
+"HAILFINDER",1000,"IRCloudCover","CombClouds, VISCloudCov","VISCloudCov, CombClouds",1,1,1
+"HAILFINDER",1000,"CombClouds","CldShadeOth, VISCloudCov, IRCloudCover","AreaMeso_ALS, AreaMoDryAir, VISCloudCov, IRCloudCover, CldShadeOth",1,0.6,0.75
+"HAILFINDER",1000,"CldShadeOth","CombClouds, CombVerMo, AreaMoDryAir","AreaMeso_ALS, AreaMoDryAir, CombClouds, AMInstabMt, InsInMt, Boundaries, CldShadeConv, CompPlFcst",0.666666666666667,0.25,0.363636363636364
+"HAILFINDER",1000,"AMInstabMt","InsInMt, CldShadeOth","CldShadeOth, InsInMt",1,1,1
+"HAILFINDER",1000,"InsInMt","AMInstabMt, CldShadeConv, MountainFcst","CldShadeOth, AMInstabMt, WndHodograph, OutflowFrMt, CldShadeConv, MountainFcst",1,0.5,0.666666666666667
+"HAILFINDER",1000,"WndHodograph","OutflowFrMt, CldShadeConv, InsInMt","InsInMt, OutflowFrMt, MorningBound, Boundaries, CldShadeConv",1,0.6,0.75
+"HAILFINDER",1000,"OutflowFrMt","InsInMt, WndHodograph, Boundaries","InsInMt, WndHodograph, MorningBound, Boundaries",1,0.75,0.857142857142857
+"HAILFINDER",1000,"MorningBound","Boundaries, OutflowFrMt, WndHodograph","WndHodograph, OutflowFrMt, Boundaries",1,1,1
+"HAILFINDER",1000,"Boundaries","OutflowFrMt, MorningBound, WndHodograph","AreaMeso_ALS, CldShadeOth, WndHodograph, OutflowFrMt, MorningBound, CldShadeConv, CompPlFcst",1,0.428571428571429,0.6
+"HAILFINDER",1000,"CldShadeConv","InsInMt, WndHodograph","AreaMeso_ALS, CldShadeOth, InsInMt, WndHodograph, Boundaries, CompPlFcst",1,0.333333333333333,0.5
+"HAILFINDER",1000,"CompPlFcst","CapChange","AreaMeso_ALS, CldShadeOth, Boundaries, CldShadeConv, CapChange, LoLevMoistAd, InsChange",1,0.142857142857143,0.25
+"HAILFINDER",1000,"CapChange","CompPlFcst","CompPlFcst, AMCINInScen, CapInScen",1,0.333333333333333,0.5
+"HAILFINDER",1000,"LoLevMoistAd","InsChange, CompPlFcst, R5Fcst, MidLLapse","CompPlFcst, InsChange",0.5,1,0.666666666666667
+"HAILFINDER",1000,"InsChange","LoLevMoistAd, InsSclInScen, AMInsWliScen","CompPlFcst, LoLevMoistAd, AMInsWliScen, InsSclInScen",1,0.75,0.857142857142857
+"HAILFINDER",1000,"MountainFcst","R5Fcst, N34StarFcst, InsInMt","InsInMt, N34StarFcst, R5Fcst",1,1,1
+"HAILFINDER",1000,"Date","Scenario, CombMoisture, CompPlFcst","Scenario",0.333333333333333,1,0.5
+"HAILFINDER",1000,"Scenario","ScenRelAMIns, ScenRel3_4","Date, ScenRelAMCIN, ScenRelAMIns, ScenRel3_4, ScnRelPlFcst, Dewpoints, LowLLapse, MeanRH, MidLLapse, MvmtFeatures, RHRatio, SfcWndShfDis, SynForcng, TempDis, WindAloft, WindFieldMt, WindFieldPln",1,0.117647058823529,0.210526315789474
+"HAILFINDER",1000,"ScenRelAMCIN","Scenario","Scenario, MorningCIN, AMCINInScen",1,0.333333333333333,0.5
+"HAILFINDER",1000,"MorningCIN","AMCINInScen, ScenRelAMCIN","ScenRelAMCIN, AMCINInScen",1,1,1
+"HAILFINDER",1000,"AMCINInScen","MorningCIN, CapInScen, CompPlFcst","CapChange, ScenRelAMCIN, MorningCIN, CapInScen",0.666666666666667,0.5,0.571428571428572
+"HAILFINDER",1000,"CapInScen","AMCINInScen, CompPlFcst","CapChange, AMCINInScen, InsSclInScen, CurPropConv, ScnRelPlFcst, PlainsFcst",0.5,0.166666666666667,0.25
+"HAILFINDER",1000,"ScenRelAMIns","Scenario","Scenario, LIfr12ZDENSd, AMDewptCalPl, AMInsWliScen",1,0.25,0.4
+"HAILFINDER",1000,"LIfr12ZDENSd","AMInsWliScen, AMDewptCalPl, LoLevMoistAd","ScenRelAMIns, AMDewptCalPl, AMInsWliScen",0.666666666666667,0.666666666666667,0.666666666666667
+"HAILFINDER",1000,"AMDewptCalPl","AMInsWliScen, ScenRelAMIns, AMCINInScen","ScenRelAMIns, LIfr12ZDENSd, AMInsWliScen",0.666666666666667,0.666666666666667,0.666666666666667
+"HAILFINDER",1000,"AMInsWliScen","InsSclInScen, InsChange, AMDewptCalPl","InsChange, ScenRelAMIns, LIfr12ZDENSd, AMDewptCalPl, InsSclInScen",1,0.6,0.75
+"HAILFINDER",1000,"InsSclInScen","AMInsWliScen, InsChange","InsChange, CapInScen, AMInsWliScen, CurPropConv, ScnRelPlFcst, PlainsFcst",1,0.333333333333333,0.5
+"HAILFINDER",1000,"ScenRel3_4","Scenario","Scenario, PlainsFcst, N34StarFcst",1,0.333333333333333,0.5
+"HAILFINDER",1000,"LatestCIN","CurPropConv, LLIW","LLIW, CurPropConv",1,1,1
+"HAILFINDER",1000,"LLIW","CurPropConv, LatestCIN","LatestCIN, CurPropConv",1,1,1
+"HAILFINDER",1000,"CurPropConv","LLIW, LatestCIN","CapInScen, InsSclInScen, LatestCIN, LLIW, ScnRelPlFcst, PlainsFcst",1,0.333333333333333,0.5
+"HAILFINDER",1000,"ScnRelPlFcst","Scenario","Scenario, CapInScen, InsSclInScen, CurPropConv, PlainsFcst",1,0.2,0.333333333333333
+"HAILFINDER",1000,"PlainsFcst","N34StarFcst, WindFieldMt, AMInstabMt","CapInScen, InsSclInScen, ScenRel3_4, CurPropConv, ScnRelPlFcst, N34StarFcst",0.333333333333333,0.166666666666667,0.222222222222222
+"HAILFINDER",1000,"N34StarFcst","PlainsFcst, R5Fcst, MountainFcst","MountainFcst, ScenRel3_4, PlainsFcst, R5Fcst",1,0.75,0.857142857142857
+"HAILFINDER",1000,"R5Fcst","MountainFcst, N34StarFcst","MountainFcst, N34StarFcst",1,1,1
+"HAILFINDER",1000,"Dewpoints","Scenario","Scenario",1,1,1
+"HAILFINDER",1000,"LowLLapse","Scenario, InsSclInScen","Scenario",0.5,1,0.666666666666667
+"HAILFINDER",1000,"MeanRH","Scenario","Scenario",1,1,1
+"HAILFINDER",1000,"MidLLapse","Scenario, MorningCIN","Scenario",0.5,1,0.666666666666667
+"HAILFINDER",1000,"MvmtFeatures","Scenario, R5Fcst","Scenario",0.5,1,0.666666666666667
+"HAILFINDER",1000,"RHRatio","Scenario, CurPropConv","Scenario",0.5,1,0.666666666666667
+"HAILFINDER",1000,"SfcWndShfDis","Scenario","Scenario",1,1,1
+"HAILFINDER",1000,"SynForcng","Scenario, CombVerMo","Scenario",0.5,1,0.666666666666667
+"HAILFINDER",1000,"TempDis","Scenario, N0_7muVerMo","Scenario",0.5,1,0.666666666666667
+"HAILFINDER",1000,"WindAloft","Scenario, WindFieldMt","Scenario",0.5,1,0.666666666666667
+"HAILFINDER",1000,"WindFieldMt","Scenario, IRCloudCover","Scenario",0.5,1,0.666666666666667
+"HAILFINDER",1000,"WindFieldPln","Scenario, AMDewptCalPl","Scenario",0.5,1,0.666666666666667
+"HAILFINDER",5000,"N0_7muVerMo","CombVerMo, QGVertMotion, SubjVertMo","SubjVertMo, QGVertMotion, CombVerMo",1,1,1
+"HAILFINDER",5000,"SubjVertMo","CombVerMo, N0_7muVerMo, QGVertMotion","N0_7muVerMo, QGVertMotion, CombVerMo",1,1,1
+"HAILFINDER",5000,"QGVertMotion","CombVerMo, N0_7muVerMo, SubjVertMo","N0_7muVerMo, SubjVertMo, CombVerMo",1,1,1
+"HAILFINDER",5000,"CombVerMo","AreaMeso_ALS","N0_7muVerMo, SubjVertMo, QGVertMotion, AreaMeso_ALS",1,0.25,0.4
+"HAILFINDER",5000,"AreaMeso_ALS","CombVerMo","CombVerMo, CombMoisture, AreaMoDryAir, CombClouds, CldShadeOth, Boundaries, CldShadeConv, CompPlFcst",1,0.125,0.222222222222222
+"HAILFINDER",5000,"SatContMoist","CombMoisture, RaoContMoist","RaoContMoist, CombMoisture",1,1,1
+"HAILFINDER",5000,"RaoContMoist","CombMoisture, SatContMoist","SatContMoist, CombMoisture",1,1,1
+"HAILFINDER",5000,"CombMoisture","AreaMoDryAir, CombVerMo, SatContMoist, RaoContMoist","AreaMeso_ALS, SatContMoist, RaoContMoist, AreaMoDryAir",0.75,0.75,0.75
+"HAILFINDER",5000,"AreaMoDryAir","CombMoisture, CombVerMo, CldShadeOth","AreaMeso_ALS, CombMoisture, CombClouds, CldShadeOth",0.666666666666667,0.5,0.571428571428572
+"HAILFINDER",5000,"VISCloudCov","CombClouds, IRCloudCover, ScenRelAMCIN","IRCloudCover, CombClouds",0.666666666666667,1,0.8
+"HAILFINDER",5000,"IRCloudCover","CombClouds, VISCloudCov, CombMoisture, ScenRelAMCIN","VISCloudCov, CombClouds",0.5,1,0.666666666666667
+"HAILFINDER",5000,"CombClouds","VISCloudCov, CldShadeOth, IRCloudCover, CombVerMo","AreaMeso_ALS, AreaMoDryAir, VISCloudCov, IRCloudCover, CldShadeOth",0.75,0.6,0.666666666666667
+"HAILFINDER",5000,"CldShadeOth","CombClouds, CombVerMo, AreaMoDryAir, CompPlFcst","AreaMeso_ALS, AreaMoDryAir, CombClouds, AMInstabMt, InsInMt, Boundaries, CldShadeConv, CompPlFcst",0.75,0.375,0.5
+"HAILFINDER",5000,"AMInstabMt","InsInMt, CldShadeOth","CldShadeOth, InsInMt",1,1,1
+"HAILFINDER",5000,"InsInMt","AMInstabMt, CldShadeConv, MountainFcst, OutflowFrMt, WndHodograph","CldShadeOth, AMInstabMt, WndHodograph, OutflowFrMt, CldShadeConv, MountainFcst",1,0.833333333333333,0.909090909090909
+"HAILFINDER",5000,"WndHodograph","OutflowFrMt, InsInMt, CldShadeConv","InsInMt, OutflowFrMt, MorningBound, Boundaries, CldShadeConv",1,0.6,0.75
+"HAILFINDER",5000,"OutflowFrMt","Boundaries, InsInMt, WndHodograph","InsInMt, WndHodograph, MorningBound, Boundaries",1,0.75,0.857142857142857
+"HAILFINDER",5000,"MorningBound","Boundaries, OutflowFrMt, WndHodograph","WndHodograph, OutflowFrMt, Boundaries",1,1,1
+"HAILFINDER",5000,"Boundaries","OutflowFrMt, MorningBound, WndHodograph, CompPlFcst","AreaMeso_ALS, CldShadeOth, WndHodograph, OutflowFrMt, MorningBound, CldShadeConv, CompPlFcst",1,0.571428571428571,0.727272727272727
+"HAILFINDER",5000,"CldShadeConv","InsInMt, WndHodograph, CompPlFcst","AreaMeso_ALS, CldShadeOth, InsInMt, WndHodograph, Boundaries, CompPlFcst",1,0.5,0.666666666666667
+"HAILFINDER",5000,"CompPlFcst","CapChange","AreaMeso_ALS, CldShadeOth, Boundaries, CldShadeConv, CapChange, LoLevMoistAd, InsChange",1,0.142857142857143,0.25
+"HAILFINDER",5000,"CapChange","CompPlFcst","CompPlFcst, AMCINInScen, CapInScen",1,0.333333333333333,0.5
+"HAILFINDER",5000,"LoLevMoistAd","InsChange, CompPlFcst, MidLLapse","CompPlFcst, InsChange",0.666666666666667,1,0.8
+"HAILFINDER",5000,"InsChange","LoLevMoistAd, CompPlFcst, InsSclInScen, AMInsWliScen","CompPlFcst, LoLevMoistAd, AMInsWliScen, InsSclInScen",1,1,1
+"HAILFINDER",5000,"MountainFcst","R5Fcst, N34StarFcst, InsInMt","InsInMt, N34StarFcst, R5Fcst",1,1,1
+"HAILFINDER",5000,"Date","Scenario, AreaMoDryAir, InsSclInScen, AMCINInScen","Scenario",0.25,1,0.4
+"HAILFINDER",5000,"Scenario","ScenRelAMIns, ScenRel3_4","Date, ScenRelAMCIN, ScenRelAMIns, ScenRel3_4, ScnRelPlFcst, Dewpoints, LowLLapse, MeanRH, MidLLapse, MvmtFeatures, RHRatio, SfcWndShfDis, SynForcng, TempDis, WindAloft, WindFieldMt, WindFieldPln",1,0.117647058823529,0.210526315789474
+"HAILFINDER",5000,"ScenRelAMCIN","Scenario","Scenario, MorningCIN, AMCINInScen",1,0.333333333333333,0.5
+"HAILFINDER",5000,"MorningCIN","AMCINInScen, ScenRelAMCIN","ScenRelAMCIN, AMCINInScen",1,1,1
+"HAILFINDER",5000,"AMCINInScen","MorningCIN, CapInScen, CompPlFcst, ScenRelAMCIN","CapChange, ScenRelAMCIN, MorningCIN, CapInScen",0.75,0.75,0.75
+"HAILFINDER",5000,"CapInScen","CompPlFcst, AMCINInScen","CapChange, AMCINInScen, InsSclInScen, CurPropConv, ScnRelPlFcst, PlainsFcst",0.5,0.166666666666667,0.25
+"HAILFINDER",5000,"ScenRelAMIns","Scenario","Scenario, LIfr12ZDENSd, AMDewptCalPl, AMInsWliScen",1,0.25,0.4
+"HAILFINDER",5000,"LIfr12ZDENSd","AMInsWliScen, AMDewptCalPl, ScenRelAMIns","ScenRelAMIns, AMDewptCalPl, AMInsWliScen",1,1,1
+"HAILFINDER",5000,"AMDewptCalPl","AMInsWliScen, LIfr12ZDENSd, ScenRelAMIns","ScenRelAMIns, LIfr12ZDENSd, AMInsWliScen",1,1,1
+"HAILFINDER",5000,"AMInsWliScen","InsSclInScen, InsChange, AMDewptCalPl, LIfr12ZDENSd","InsChange, ScenRelAMIns, LIfr12ZDENSd, AMDewptCalPl, InsSclInScen",1,0.8,0.888888888888889
+"HAILFINDER",5000,"InsSclInScen","AMInsWliScen, InsChange, PlainsFcst","InsChange, CapInScen, AMInsWliScen, CurPropConv, ScnRelPlFcst, PlainsFcst",1,0.5,0.666666666666667
+"HAILFINDER",5000,"ScenRel3_4","Scenario","Scenario, PlainsFcst, N34StarFcst",1,0.333333333333333,0.5
+"HAILFINDER",5000,"LatestCIN","CurPropConv, LLIW","LLIW, CurPropConv",1,1,1
+"HAILFINDER",5000,"LLIW","CurPropConv, LatestCIN","LatestCIN, CurPropConv",1,1,1
+"HAILFINDER",5000,"CurPropConv","LLIW, LatestCIN, PlainsFcst","CapInScen, InsSclInScen, LatestCIN, LLIW, ScnRelPlFcst, PlainsFcst",1,0.5,0.666666666666667
+"HAILFINDER",5000,"ScnRelPlFcst","Scenario","Scenario, CapInScen, InsSclInScen, CurPropConv, PlainsFcst",1,0.2,0.333333333333333
+"HAILFINDER",5000,"PlainsFcst","N34StarFcst, Scenario, CurPropConv","CapInScen, InsSclInScen, ScenRel3_4, CurPropConv, ScnRelPlFcst, N34StarFcst",0.666666666666667,0.333333333333333,0.444444444444444
+"HAILFINDER",5000,"N34StarFcst","PlainsFcst, R5Fcst, MountainFcst","MountainFcst, ScenRel3_4, PlainsFcst, R5Fcst",1,0.75,0.857142857142857
+"HAILFINDER",5000,"R5Fcst","MountainFcst, N34StarFcst","MountainFcst, N34StarFcst",1,1,1
+"HAILFINDER",5000,"Dewpoints","Scenario","Scenario",1,1,1
+"HAILFINDER",5000,"LowLLapse","Scenario, SubjVertMo, LLIW","Scenario",0.333333333333333,1,0.5
+"HAILFINDER",5000,"MeanRH","Scenario, Date","Scenario",0.5,1,0.666666666666667
+"HAILFINDER",5000,"MidLLapse","Scenario, CldShadeConv, AMInstabMt","Scenario",0.333333333333333,1,0.5
+"HAILFINDER",5000,"MvmtFeatures","Scenario, MorningCIN, LLIW","Scenario",0.333333333333333,1,0.5
+"HAILFINDER",5000,"RHRatio","Scenario","Scenario",1,1,1
+"HAILFINDER",5000,"SfcWndShfDis","Scenario, SubjVertMo","Scenario",0.5,1,0.666666666666667
+"HAILFINDER",5000,"SynForcng","Scenario, Date, AMDewptCalPl","Scenario",0.333333333333333,1,0.5
+"HAILFINDER",5000,"TempDis","Scenario, LLIW, CombMoisture","Scenario",0.333333333333333,1,0.5
+"HAILFINDER",5000,"WindAloft","Scenario, CurPropConv","Scenario",0.5,1,0.666666666666667
+"HAILFINDER",5000,"WindFieldMt","Scenario, AreaMoDryAir, WndHodograph, MorningBound","Scenario",0.25,1,0.4
+"HAILFINDER",5000,"WindFieldPln","Scenario","Scenario",1,1,1

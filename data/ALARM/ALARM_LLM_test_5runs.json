@@ -1,0 +1,66 @@
+{
+  "variable_a": "HISTORY",
+  "variable_b": "CVP",
+  "runs": [
+    {
+      "run_id": 1,
+      "raw_response": "{\n  \"variable_a\": \"HISTORY\",\n  \"variable_b\": \"CVP\",\n  \"relation\": \"uncertain\",\n  \"confidence\": 0.0,\n  \"reason\": \"HISTORY refers to past events or records, while CVP (Central Venous Pressure) is a medical measurement. There is no direct causal relationship between historical data and a physiological parameter like CVP. The connection is not clear without additional context.\"\n}",
+      "parsed": {
+        "variable_a": "HISTORY",
+        "variable_b": "CVP",
+        "relation": "uncertain",
+        "confidence": 0.0,
+        "reason": "HISTORY refers to past events or records, while CVP (Central Venous Pressure) is a medical measurement. There is no direct causal relationship between historical data and a physiological parameter like CVP. The connection is not clear without additional context."
+      },
+      "parse_status": "success"
+    },
+    {
+      "run_id": 2,
+      "raw_response": "{\n  \"variable_a\": \"HISTORY\",\n  \"variable_b\": \"CVP\",\n  \"relation\": \"uncertain\",\n  \"confidence\": 0.0,\n  \"reason\": \"HISTORY typically refers to past events or records, while CVP (Central Venous Pressure) is a medical measurement. There is no direct causal relationship between the two variables based on their semantic meanings. Further context or data would be needed to determine any potential indirect relationship.\"\n}",
+      "parsed": {
+        "variable_a": "HISTORY",
+        "variable_b": "CVP",
+        "relation": "uncertain",
+        "confidence": 0.0,
+        "reason": "HISTORY typically refers to past events or records, while CVP (Central Venous Pressure) is a medical measurement. There is no direct causal relationship between the two variables based on their semantic meanings. Further context or data would be needed to determine any potential indirect relationship."
+      },
+      "parse_status": "success"
+    },
+    {
+      "run_id": 3,
+      "raw_response": "{\n  \"variable_a\": \"HISTORY\",\n  \"variable_b\": \"CVP\",\n  \"relation\": \"uncertain\",\n  \"confidence\": 0.0,\n  \"reason\": \"HISTORY refers to past events or records, while CVP (Central Venous Pressure) is a medical measurement related to blood pressure in the venous system. There is no direct causal link between historical data and a physiological parameter like CVP without additional context.\"\n}",
+      "parsed": {
+        "variable_a": "HISTORY",
+        "variable_b": "CVP",
+        "relation": "uncertain",
+        "confidence": 0.0,
+        "reason": "HISTORY refers to past events or records, while CVP (Central Venous Pressure) is a medical measurement related to blood pressure in the venous system. There is no direct causal link between historical data and a physiological parameter like CVP without additional context."
+      },
+      "parse_status": "success"
+    },
+    {
+      "run_id": 4,
+      "raw_response": "{\n  \"variable_a\": \"HISTORY\",\n  \"variable_b\": \"CVP\",\n  \"relation\": \"uncertain\",\n  \"confidence\": 0.0,\n  \"reason\": \"HISTORY typically refers to past events or records, while CVP (Central Venous Pressure) is a medical measurement. There is no direct semantic or causal link between the two variables based on their typical meanings.\"\n}",
+      "parsed": {
+        "variable_a": "HISTORY",
+        "variable_b": "CVP",
+        "relation": "uncertain",
+        "confidence": 0.0,
+        "reason": "HISTORY typically refers to past events or records, while CVP (Central Venous Pressure) is a medical measurement. There is no direct semantic or causal link between the two variables based on their typical meanings."
+      },
+      "parse_status": "success"
+    },
+    {
+      "run_id": 5,
+      "raw_response": "{\n  \"variable_a\": \"HISTORY\",\n  \"variable_b\": \"CVP\",\n  \"relation\": \"uncertain\",\n  \"confidence\": 0.0,\n  \"reason\": \"HISTORY refers to past events or records, while CVP (Central Venous Pressure) is a physiological measure. There is no clear or direct causal link between the two based on their definitions. The relationship is not well-defined without additional context.\"\n}",
+      "parsed": {
+        "variable_a": "HISTORY",
+        "variable_b": "CVP",
+        "relation": "uncertain",
+        "confidence": 0.0,
+        "reason": "HISTORY refers to past events or records, while CVP (Central Venous Pressure) is a physiological measure. There is no clear or direct causal link between the two based on their definitions. The relationship is not well-defined without additional context."
+      },
+      "parse_status": "success"
+    }
+  ]
+}

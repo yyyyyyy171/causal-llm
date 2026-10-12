@@ -1,0 +1,78 @@
+[
+  {
+    "variable_a": "HISTORY",
+    "variable_b": "CVP",
+    "runs": [
+      {
+        "run_id": 1,
+        "seed": 20261104,
+        "raw_response": "{\n  \"variable_a\": \"HISTORY\",\n  \"variable_b\": \"CVP\",\n  \"relation\": \"uncertain\",\n  \"confidence\": 0.0,\n  \"reason\": \"HISTORY（历史）通常指过去事件的记录，而CVP（成本-体积-利润分析，Cost-Volume-Profit Analysis）是财务和管理决策中的一个模型，用于分析成本、销量与利润之间的关系。两者在语义上没有直接的因果联系。历史数据可能影响CVP模型的参数设定（如成本结构），但这种影响是间接且依赖于具体情境的。在缺乏具体上下文或领域知识的情况下，无法确定因果方向，因此判断为不确定。\"\n}",
+        "parsed": {
+          "variable_a": "HISTORY",
+          "variable_b": "CVP",
+          "relation": "uncertain",
+          "confidence": 0.0,
+          "reason": "HISTORY（历史）通常指过去事件的记录，而CVP（成本-体积-利润分析，Cost-Volume-Profit Analysis）是财务和管理决策中的一个模型，用于分析成本、销量与利润之间的关系。两者在语义上没有直接的因果联系。历史数据可能影响CVP模型的参数设定（如成本结构），但这种影响是间接且依赖于具体情境的。在缺乏具体上下文或领域知识的情况下，无法确定因果方向，因此判断为不确定。"
+        },
+        "parse_status": "success"
+      },
+      {
+        "run_id": 2,
+        "seed": 20261105,
+        "raw_response": "{\n  \"variable_a\": \"HISTORY\",\n  \"variable_b\": \"CVP\",\n  \"relation\": \"uncertain\",\n  \"confidence\": 0.0,\n  \"reason\": \"HISTORY（历史）通常指过去事件的记录或背景，而CVP（成本-体积-利润分析中的CVP，或在医学中指中心静脉压）是具体的技术或经济模型中的一个指标。两者在语义上没有直接的、可推导的因果关系。历史可能影响CVP的某些背景因素（如政策、市场环境），但这种关系依赖于具体上下文，且缺乏明确的机制支持。因此，在没有具体领域或情境定义的情况下，无法确定因果方向，只能判断为不确定。\"\n}",
+        "parsed": {
+          "variable_a": "HISTORY",
+          "variable_b": "CVP",
+          "relation": "uncertain",
+          "confidence": 0.0,
+          "reason": "HISTORY（历史）通常指过去事件的记录或背景，而CVP（成本-体积-利润分析中的CVP，或在医学中指中心静脉压）是具体的技术或经济模型中的一个指标。两者在语义上没有直接的、可推导的因果关系。历史可能影响CVP的某些背景因素（如政策、市场环境），但这种关系依赖于具体上下文，且缺乏明确的机制支持。因此，在没有具体领域或情境定义的情况下，无法确定因果方向，只能判断为不确定。"
+        },
+        "parse_status": "success"
+      },
+      {
+        "run_id": 3,
+        "seed": 20261106,
+        "raw_response": "{\n  \"variable_a\": \"HISTORY\",\n  \"variable_b\": \"CVP\",\n  \"relation\": \"uncertain\",\n  \"confidence\": 0.0,\n  \"reason\": \"HISTORY（历史）和CVP（循环静脉压，或称循环血流压）在医学或生理学语境中并无直接的因果联系。HISTORY通常指个人或事件的历史记录，而CVP是生理参数，反映心血管系统的状态。在缺乏具体上下文（如历史事件对生理参数的影响）的情况下，两者之间不存在明确的因果路径。因此，无法确定存在直接因果关系，判断为不确定。\"\n}",
+        "parsed": {
+          "variable_a": "HISTORY",
+          "variable_b": "CVP",
+          "relation": "uncertain",
+          "confidence": 0.0,
+          "reason": "HISTORY（历史）和CVP（循环静脉压，或称循环血流压）在医学或生理学语境中并无直接的因果联系。HISTORY通常指个人或事件的历史记录，而CVP是生理参数，反映心血管系统的状态。在缺乏具体上下文（如历史事件对生理参数的影响）的情况下，两者之间不存在明确的因果路径。因此，无法确定存在直接因果关系，判断为不确定。"
+        },
+        "parse_status": "success"
+      },
+      {
+        "run_id": 4,
+        "seed": 20261107,
+        "raw_response": "{\n  \"variable_a\": \"HISTORY\",\n  \"variable_b\": \"CVP\",\n  \"relation\": \"uncertain\",\n  \"confidence\": 0.0,\n  \"reason\": \"HISTORY（历史）通常指过去事件或背景，而CVP（Cost-Volume-Profit，成本-销量-利润分析）是财务和管理决策中的一个模型，用于分析成本与利润关系。虽然历史数据可能影响CVP模型的参数设定，但历史本身并不直接导致CVP的产生或变化。两者之间缺乏明确的因果路径，因此无法确定存在直接因果关系。在没有具体上下文或领域定义的情况下，该关系属于不确定。\"\n}",
+        "parsed": {
+          "variable_a": "HISTORY",
+          "variable_b": "CVP",
+          "relation": "uncertain",
+          "confidence": 0.0,
+          "reason": "HISTORY（历史）通常指过去事件或背景，而CVP（Cost-Volume-Profit，成本-销量-利润分析）是财务和管理决策中的一个模型，用于分析成本与利润关系。虽然历史数据可能影响CVP模型的参数设定，但历史本身并不直接导致CVP的产生或变化。两者之间缺乏明确的因果路径，因此无法确定存在直接因果关系。在没有具体上下文或领域定义的情况下，该关系属于不确定。"
+        },
+        "parse_status": "success"
+      },
+      {
+        "run_id": 5,
+        "seed": 20261108,
+        "raw_response": "{\n  \"variable_a\": \"HISTORY\",\n  \"variable_b\": \"CVP\",\n  \"relation\": \"uncertain\",\n  \"confidence\": 0.0,\n  \"reason\": \"HISTORY（历史）通常指过去事件或背景，而CVP（成本-体积-利润分析中的CVP，或在某些语境下指中心静脉压）是财务或医学中的一个具体概念。在缺乏具体上下文的情况下，无法确定历史对CVP有直接影响，或CVP对历史有因果影响。两者在语义上没有明显的直接因果路径，因此关系无法明确判断。\"\n}",
+        "parsed": {
+          "variable_a": "HISTORY",
+          "variable_b": "CVP",
+          "relation": "uncertain",
+          "confidence": 0.0,
+          "reason": "HISTORY（历史）通常指过去事件或背景，而CVP（成本-体积-利润分析中的CVP，或在某些语境下指中心静脉压）是财务或医学中的一个具体概念。在缺乏具体上下文的情况下，无法确定历史对CVP有直接影响，或CVP对历史有因果影响。两者在语义上没有明显的直接因果路径，因此关系无法明确判断。"
+        },
+        "parse_status": "success"
+      }
+    ],
+    "final_relation": "uncertain",
+    "final_confidence": 0.0,
+    "relation_count": {
+      "uncertain": 5
+    }
+  }
+]

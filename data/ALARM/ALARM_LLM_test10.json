@@ -1,0 +1,42 @@
+﻿[
+    {
+        "variable_a": "HISTORY",
+        "variable_b": "CVP"
+    },
+    {
+        "variable_a": "HISTORY",
+        "variable_b": "PCWP"
+    },
+    {
+        "variable_a": "HISTORY",
+        "variable_b": "LVFAILURE"
+    },
+    {
+        "variable_a": "CVP",
+        "variable_b": "PCWP"
+    },
+    {
+        "variable_a": "CVP",
+        "variable_b": "HYPOVOLEMIA"
+    },
+    {
+        "variable_a": "PCWP",
+        "variable_b": "LVEDVOLUME"
+    },
+    {
+        "variable_a": "HYPOVOLEMIA",
+        "variable_b": "LVEDVOLUME"
+    },
+    {
+        "variable_a": "LVEDVOLUME",
+        "variable_b": "LVFAILURE"
+    },
+    {
+        "variable_a": "LVFAILURE",
+        "variable_b": "STROKEVOLUME"
+    },
+    {
+        "variable_a": "STROKEVOLUME",
+        "variable_b": "CO"
+    }
+]

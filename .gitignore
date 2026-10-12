@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# 编辑器
+.idea/
+.vscode/
+*.swp
+
+# 运行产物：日志与语言模型缓存
+# 日志只保留目录，不进版本库（要留证据就把关键片段写进周报或 results/）
+logs/*.log
+!logs/.gitkeep
+
+# 语言模型输入输出缓存。最终聚合结果已经保存在
+# data/<NET>/<NET>_LLM_prior_<mode>.json 里（含每次采样的原始输出），
+# 这里的大 JSONL 只是断点续跑用的本地缓存，不必进版本库。
+data/*/llm_cache/
+
+# OpenML 原始数据可以重新下载，不进版本库；
+# 但固定划分（*_splits.json）与列类型（*_schema.json）必须进，
+# 它们决定了实验结果的可复现性。
+data/openml/*.csv
+data/openml/_sklearn_cache/
+
+# 临时文件
+*.tmp
+*.bak
+
+# 试跑产物。正式实验用 --tag <正式名字>，试跑一律用 --tag scratch-xxx，
+# 这样试跑文件不会混进版本库。
+results/*scratch*

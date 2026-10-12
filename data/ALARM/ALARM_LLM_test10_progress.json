@@ -1,0 +1,382 @@
+[
+  {
+    "variable_a": "HISTORY",
+    "variable_b": "CVP",
+    "runs": [
+      {
+        "run_id": 1,
+        "seed": 20261104,
+        "raw_response": "{\n    \"variable_a\": \"HISTORY\",\n    \"variable_b\": \"CVP\",\n    \"relation\": \"uncertain\",\n    \"confidence\": 0.0,\n    \"reason\": \"Medical history (HISTORY) may influence central venous pressure (CVP) indirectly through pre-existing conditions or comorbidities, but there is no direct causal mechanism established. CVP can also be affected by other factors such as fluid status, heart function, and vascular tone, which are not directly related to medical history. Therefore, the causal direction cannot be determined reliably.\"\n}",
+        "parsed": {
+          "variable_a": "HISTORY",
+          "variable_b": "CVP",
+          "relation": "uncertain",
+          "confidence": 0.0,
+          "reason": "Medical history (HISTORY) may influence central venous pressure (CVP) indirectly through pre-existing conditions or comorbidities, but there is no direct causal mechanism established. CVP can also be affected by other factors such as fluid status, heart function, and vascular tone, which are not directly related to medical history. Therefore, the causal direction cannot be determined reliably."
+        },
+        "parse_status": "success"
+      },
+      {
+        "run_id": 2,
+        "seed": 20261105,
+        "raw_response": "{\n    \"variable_a\": \"HISTORY\",\n    \"variable_b\": \"CVP\",\n    \"relation\": \"uncertain\",\n    \"confidence\": 0.0,\n    \"reason\": \"Medical history (HISTORY) may influence central venous pressure (CVP) indirectly through underlying conditions, but there is no direct causal mechanism established. CVP can also be affected by other factors such as fluid status, heart function, and vasomotor tone, making a direct causal link between HISTORY and CVP uncertain.\"\n}",
+        "parsed": {
+          "variable_a": "HISTORY",
+          "variable_b": "CVP",
+          "relation": "uncertain",
+          "confidence": 0.0,
+          "reason": "Medical history (HISTORY) may influence central venous pressure (CVP) indirectly through underlying conditions, but there is no direct causal mechanism established. CVP can also be affected by other factors such as fluid status, heart function, and vasomotor tone, making a direct causal link between HISTORY and CVP uncertain."
+        },
+        "parse_status": "success"
+      },
+      {
+        "run_id": 3,
+        "seed": 20261106,
+        "raw_response": "{\n    \"variable_a\": \"HISTORY\",\n    \"variable_b\": \"CVP\",\n    \"relation\": \"uncertain\",\n    \"confidence\": 0.0,\n    \"reason\": \"Medical history (HISTORY) may influence central venous pressure (CVP) through underlying conditions, but there is no direct causal mechanism established. CVP can also be affected by other factors like fluid status, heart function, and vascular tone. Without specific clinical context or evidence, the causal direction cannot be determined reliably.\"\n}",
+        "parsed": {
+          "variable_a": "HISTORY",
+          "variable_b": "CVP",
+          "relation": "uncertain",
+          "confidence": 0.0,
+          "reason": "Medical history (HISTORY) may influence central venous pressure (CVP) through underlying conditions, but there is no direct causal mechanism established. CVP can also be affected by other factors like fluid status, heart function, and vascular tone. Without specific clinical context or evidence, the causal direction cannot be determined reliably."
+        },
+        "parse_status": "success"
+      },
+      {
+        "run_id": 4,
+        "seed": 20261107,
+        "raw_response": "{\n    \"variable_a\": \"HISTORY\",\n    \"variable_b\": \"CVP\",\n    \"relation\": \"uncertain\",\n    \"confidence\": 0.0,\n    \"reason\": \"Medical history (HISTORY) may influence central venous pressure (CVP) through underlying conditions or comorbidities, but there is no direct causal mechanism established. CVP can also be affected by other factors such as fluid status, heart function, and vasculature, which may or may not be captured in the medical history. Therefore, the causal direction cannot be determined reliably without further evidence.\"\n}",
+        "parsed": {
+          "variable_a": "HISTORY",
+          "variable_b": "CVP",
+          "relation": "uncertain",
+          "confidence": 0.0,
+          "reason": "Medical history (HISTORY) may influence central venous pressure (CVP) through underlying conditions or comorbidities, but there is no direct causal mechanism established. CVP can also be affected by other factors such as fluid status, heart function, and vasculature, which may or may not be captured in the medical history. Therefore, the causal direction cannot be determined reliably without further evidence."
+        },
+        "parse_status": "success"
+      },
+      {
+        "run_id": 5,
+        "seed": 20261108,
+        "raw_response": "{\n    \"variable_a\": \"HISTORY\",\n    \"variable_b\": \"CVP\",\n    \"relation\": \"uncertain\",\n    \"confidence\": 0.0,\n    \"reason\": \"Medical history may influence central venous pressure indirectly through underlying conditions, but there is no direct causal mechanism established. The relationship is not clearly defined in the absence of a ground-truth causal graph.\"\n}",
+        "parsed": {
+          "variable_a": "HISTORY",
+          "variable_b": "CVP",
+          "relation": "uncertain",
+          "confidence": 0.0,
+          "reason": "Medical history may influence central venous pressure indirectly through underlying conditions, but there is no direct causal mechanism established. The relationship is not clearly defined in the absence of a ground-truth causal graph."
+        },
+        "parse_status": "success"
+      }
+    ],
+    "final_relation": "uncertain",
+    "final_confidence": 0.0,
+    "relation_count": {
+      "uncertain": 5
+    }
+  },
+  {
+    "variable_a": "HISTORY",
+    "variable_b": "PCWP",
+    "runs": [
+      {
+        "run_id": 1,
+        "seed": 20261204,
+        "raw_response": "{\n    \"variable_a\": \"HISTORY\",\n    \"variable_b\": \"PCWP\",\n    \"relation\": \"uncertain\",\n    \"confidence\": 0.0,\n    \"reason\": \"Medical history (HISTORY) may provide context for a patient's condition, which could indirectly influence PCWP. However, PCWP is a direct physiological measurement and is not typically directly caused by medical history. There is no clear direct causal mechanism or evidence to establish a reliable direction of causality.\"\n}",
+        "parsed": {
+          "variable_a": "HISTORY",
+          "variable_b": "PCWP",
+          "relation": "uncertain",
+          "confidence": 0.0,
+          "reason": "Medical history (HISTORY) may provide context for a patient's condition, which could indirectly influence PCWP. However, PCWP is a direct physiological measurement and is not typically directly caused by medical history. There is no clear direct causal mechanism or evidence to establish a reliable direction of causality."
+        },
+        "parse_status": "success"
+      },
+      {
+        "run_id": 2,
+        "seed": 20261205,
+        "raw_response": "{\n    \"variable_a\": \"HISTORY\",\n    \"variable_b\": \"PCWP\",\n    \"relation\": \"uncertain\",\n    \"confidence\": 0.0,\n    \"reason\": \"Medical history may influence PCWP indirectly through underlying conditions, but there is no direct causal mechanism or evidence to establish a clear direction of causality.\"\n}",
+        "parsed": {
+          "variable_a": "HISTORY",
+          "variable_b": "PCWP",
+          "relation": "uncertain",
+          "confidence": 0.0,
+          "reason": "Medical history may influence PCWP indirectly through underlying conditions, but there is no direct causal mechanism or evidence to establish a clear direction of causality."
+        },
+        "parse_status": "success"
+      },
+      {
+        "run_id": 3,
+        "seed": 20261206,
+        "raw_response": "{\n    \"variable_a\": \"HISTORY\",\n    \"variable_b\": \"PCWP\",\n    \"relation\": \"uncertain\",\n    \"confidence\": 0.0,\n    \"reason\": \"Medical history (HISTORY) may influence pulmonary capillary wedge pressure (PCWP) through underlying conditions, but there is no direct causal mechanism established. PCWP is primarily a physiological measure, while HISTORY is a historical factor. The causal direction cannot be determined without further domain knowledge.\"\n}",
+        "parsed": {
+          "variable_a": "HISTORY",
+          "variable_b": "PCWP",
+          "relation": "uncertain",
+          "confidence": 0.0,
+          "reason": "Medical history (HISTORY) may influence pulmonary capillary wedge pressure (PCWP) through underlying conditions, but there is no direct causal mechanism established. PCWP is primarily a physiological measure, while HISTORY is a historical factor. The causal direction cannot be determined without further domain knowledge."
+        },
+        "parse_status": "success"
+      },
+      {
+        "run_id": 4,
+        "seed": 20261207,
+        "raw_response": "{\n    \"variable_a\": \"HISTORY\",\n    \"variable_b\": \"PCWP\",\n    \"relation\": \"uncertain\",\n    \"confidence\": 0.0,\n    \"reason\": \"Medical history (HISTORY) may provide context for a patient's condition, which could indirectly influence pulmonary capillary wedge pressure (PCWP). However, PCWP is a direct physiological measurement and is not directly caused by medical history. There is no clear causal mechanism or evidence to determine a direct causal direction between the two variables.\"\n}",
+        "parsed": {
+          "variable_a": "HISTORY",
+          "variable_b": "PCWP",
+          "relation": "uncertain",
+          "confidence": 0.0,
+          "reason": "Medical history (HISTORY) may provide context for a patient's condition, which could indirectly influence pulmonary capillary wedge pressure (PCWP). However, PCWP is a direct physiological measurement and is not directly caused by medical history. There is no clear causal mechanism or evidence to determine a direct causal direction between the two variables."
+        },
+        "parse_status": "success"
+      },
+      {
+        "run_id": 5,
+        "seed": 20261208,
+        "raw_response": "{\n    \"variable_a\": \"HISTORY\",\n    \"variable_b\": \"PCWP\",\n    \"relation\": \"uncertain\",\n    \"confidence\": 0.0,\n    \"reason\": \"Medical history (HISTORY) may influence pulmonary capillary wedge pressure (PCWP) through underlying conditions, but there is no direct causal mechanism established. PCWP is primarily a physiological measurement influenced by cardiac function and hemodynamics, which may be indirectly related to medical history. However, without explicit evidence of a direct causal pathway, the relationship remains uncertain.\"\n}",
+        "parsed": {
+          "variable_a": "HISTORY",
+          "variable_b": "PCWP",
+          "relation": "uncertain",
+          "confidence": 0.0,
+          "reason": "Medical history (HISTORY) may influence pulmonary capillary wedge pressure (PCWP) through underlying conditions, but there is no direct causal mechanism established. PCWP is primarily a physiological measurement influenced by cardiac function and hemodynamics, which may be indirectly related to medical history. However, without explicit evidence of a direct causal pathway, the relationship remains uncertain."
+        },
+        "parse_status": "success"
+      }
+    ],
+    "final_relation": "uncertain",
+    "final_confidence": 0.0,
+    "relation_count": {
+      "uncertain": 5
+    }
+  },
+  {
+    "variable_a": "HISTORY",
+    "variable_b": "LVFAILURE",
+    "runs": [
+      {
+        "run_id": 1,
+        "seed": 20261304,
+        "raw_response": "{\n    \"variable_a\": \"HISTORY\",\n    \"variable_b\": \"LVFAILURE\",\n    \"relation\": \"uncertain\",\n    \"confidence\": 0.0,\n    \"reason\": \"Medical history can provide context that may influence the likelihood of left ventricular failure, but there is no direct causal relationship established without further clinical evidence. The direction of causality cannot be reliably determined based on semantic reasoning alone.\"\n}",
+        "parsed": {
+          "variable_a": "HISTORY",
+          "variable_b": "LVFAILURE",
+          "relation": "uncertain",
+          "confidence": 0.0,
+          "reason": "Medical history can provide context that may influence the likelihood of left ventricular failure, but there is no direct causal relationship established without further clinical evidence. The direction of causality cannot be reliably determined based on semantic reasoning alone."
+        },
+        "parse_status": "success"
+      },
+      {
+        "run_id": 2,
+        "seed": 20261305,
+        "raw_response": "{\n    \"variable_a\": \"HISTORY\",\n    \"variable_b\": \"LVFAILURE\",\n    \"relation\": \"uncertain\",\n    \"confidence\": 0.0,\n    \"reason\": \"Medical history can provide context that may influence the likelihood of left ventricular failure, but there is no direct causal relationship established without further evidence. The presence of a medical condition in history may be a risk factor, but causation cannot be inferred without additional data.\"\n}",
+        "parsed": {
+          "variable_a": "HISTORY",
+          "variable_b": "LVFAILURE",
+          "relation": "uncertain",
+          "confidence": 0.0,
+          "reason": "Medical history can provide context that may influence the likelihood of left ventricular failure, but there is no direct causal relationship established without further evidence. The presence of a medical condition in history may be a risk factor, but causation cannot be inferred without additional data."
+        },
+        "parse_status": "success"
+      },
+      {
+        "run_id": 3,
+        "seed": 20261306,
+        "raw_response": "{\n    \"variable_a\": \"HISTORY\",\n    \"variable_b\": \"LVFAILURE\",\n    \"relation\": \"uncertain\",\n    \"confidence\": 0.0,\n    \"reason\": \"Medical history may provide indirect information about risk factors for left ventricular failure, but there is no direct causal relationship implied by the variable definitions. The presence of a medical history does not necessarily cause left ventricular failure, and left ventricular failure does not necessarily alter the medical history. A direct causal edge cannot be reliably determined without additional context.\"\n}",
+        "parsed": {
+          "variable_a": "HISTORY",
+          "variable_b": "LVFAILURE",
+          "relation": "uncertain",
+          "confidence": 0.0,
+          "reason": "Medical history may provide indirect information about risk factors for left ventricular failure, but there is no direct causal relationship implied by the variable definitions. The presence of a medical history does not necessarily cause left ventricular failure, and left ventricular failure does not necessarily alter the medical history. A direct causal edge cannot be reliably determined without additional context."
+        },
+        "parse_status": "success"
+      },
+      {
+        "run_id": 4,
+        "seed": 20261307,
+        "raw_response": "{\n    \"variable_a\": \"HISTORY\",\n    \"variable_b\": \"LVFAILURE\",\n    \"relation\": \"uncertain\",\n    \"confidence\": 0.0,\n    \"reason\": \"Medical history can provide context that may influence the likelihood of left ventricular failure, but there is no direct causal mechanism implied by the variable definitions. The relationship could be indirect or mediated by other factors, and without additional domain knowledge, a reliable causal direction cannot be determined.\"\n}",
+        "parsed": {
+          "variable_a": "HISTORY",
+          "variable_b": "LVFAILURE",
+          "relation": "uncertain",
+          "confidence": 0.0,
+          "reason": "Medical history can provide context that may influence the likelihood of left ventricular failure, but there is no direct causal mechanism implied by the variable definitions. The relationship could be indirect or mediated by other factors, and without additional domain knowledge, a reliable causal direction cannot be determined."
+        },
+        "parse_status": "success"
+      },
+      {
+        "run_id": 5,
+        "seed": 20261308,
+        "raw_response": "{\n    \"variable_a\": \"HISTORY\",\n    \"variable_b\": \"LVFAILURE\",\n    \"relation\": \"uncertain\",\n    \"confidence\": 0.0,\n    \"reason\": \"Medical history may provide information that contributes to the risk of left ventricular failure, but there is no direct causal relationship established without further context. The presence of a medical condition in the history could be a risk factor, but it does not necessarily imply a direct causal link to LVFAILURE.\"\n}",
+        "parsed": {
+          "variable_a": "HISTORY",
+          "variable_b": "LVFAILURE",
+          "relation": "uncertain",
+          "confidence": 0.0,
+          "reason": "Medical history may provide information that contributes to the risk of left ventricular failure, but there is no direct causal relationship established without further context. The presence of a medical condition in the history could be a risk factor, but it does not necessarily imply a direct causal link to LVFAILURE."
+        },
+        "parse_status": "success"
+      }
+    ],
+    "final_relation": "uncertain",
+    "final_confidence": 0.0,
+    "relation_count": {
+      "uncertain": 5
+    }
+  },
+  {
+    "variable_a": "CVP",
+    "variable_b": "PCWP",
+    "runs": [
+      {
+        "run_id": 1,
+        "seed": 20261404,
+        "raw_response": "{\n    \"variable_a\": \"CVP\",\n    \"variable_b\": \"PCWP\",\n    \"relation\": \"uncertain\",\n    \"confidence\": 0.0,\n    \"reason\": \"CVP and PCWP are both measures of intravascular pressure but are not directly causally related. CVP reflects right atrial pressure, while PCWP reflects left atrial pressure. Their relationship is indirect and context-dependent, influenced by factors like heart function and fluid status. Therefore, the causal direction cannot be determined reliably without further medical context.\"\n}",
+        "parsed": {
+          "variable_a": "CVP",
+          "variable_b": "PCWP",
+          "relation": "uncertain",
+          "confidence": 0.0,
+          "reason": "CVP and PCWP are both measures of intravascular pressure but are not directly causally related. CVP reflects right atrial pressure, while PCWP reflects left atrial pressure. Their relationship is indirect and context-dependent, influenced by factors like heart function and fluid status. Therefore, the causal direction cannot be determined reliably without further medical context."
+        },
+        "parse_status": "success"
+      },
+      {
+        "run_id": 2,
+        "seed": 20261405,
+        "raw_response": "{\n    \"variable_a\": \"CVP\",\n    \"variable_b\": \"PCWP\",\n    \"relation\": \"uncertain\",\n    \"confidence\": 0.0,\n    \"reason\": \"CVP and PCWP are both measures of intravascular pressure, but their causal relationship is not definitively established. CVP reflects right atrial pressure, while PCWP reflects left atrial pressure. Although they are related through systemic hemodynamics, the direction of causation cannot be determined without further medical context or evidence.\"\n}",
+        "parsed": {
+          "variable_a": "CVP",
+          "variable_b": "PCWP",
+          "relation": "uncertain",
+          "confidence": 0.0,
+          "reason": "CVP and PCWP are both measures of intravascular pressure, but their causal relationship is not definitively established. CVP reflects right atrial pressure, while PCWP reflects left atrial pressure. Although they are related through systemic hemodynamics, the direction of causation cannot be determined without further medical context or evidence."
+        },
+        "parse_status": "success"
+      },
+      {
+        "run_id": 3,
+        "seed": 20261406,
+        "raw_response": "{\n    \"variable_a\": \"CVP\",\n    \"variable_b\": \"PCWP\",\n    \"relation\": \"uncertain\",\n    \"confidence\": 0.0,\n    \"reason\": \"CVP and PCWP are both measures of intravascular pressure, but their causal relationship is not directly established by medical theory. While CVP can influence PCWP, the relationship is not deterministic and may depend on other factors such as left ventricular function. Therefore, the causal direction cannot be determined reliably without further evidence.\"\n}",
+        "parsed": {
+          "variable_a": "CVP",
+          "variable_b": "PCWP",
+          "relation": "uncertain",
+          "confidence": 0.0,
+          "reason": "CVP and PCWP are both measures of intravascular pressure, but their causal relationship is not directly established by medical theory. While CVP can influence PCWP, the relationship is not deterministic and may depend on other factors such as left ventricular function. Therefore, the causal direction cannot be determined reliably without further evidence."
+        },
+        "parse_status": "success"
+      },
+      {
+        "run_id": 4,
+        "seed": 20261407,
+        "raw_response": "{\n    \"variable_a\": \"CVP\",\n    \"variable_b\": \"PCWP\",\n    \"relation\": \"uncertain\",\n    \"confidence\": 0.0,\n    \"reason\": \"CVP and PCWP are both measures of intravascular pressure, but their causal relationship is not clearly defined in the absence of a specific medical context or mechanism. CVP reflects right atrial pressure, while PCWP reflects left atrial pressure, and they may be influenced by different physiological factors. A direct causal relationship cannot be reliably determined without additional information.\"\n}",
+        "parsed": {
+          "variable_a": "CVP",
+          "variable_b": "PCWP",
+          "relation": "uncertain",
+          "confidence": 0.0,
+          "reason": "CVP and PCWP are both measures of intravascular pressure, but their causal relationship is not clearly defined in the absence of a specific medical context or mechanism. CVP reflects right atrial pressure, while PCWP reflects left atrial pressure, and they may be influenced by different physiological factors. A direct causal relationship cannot be reliably determined without additional information."
+        },
+        "parse_status": "success"
+      },
+      {
+        "run_id": 5,
+        "seed": 20261408,
+        "raw_response": "{\n    \"variable_a\": \"CVP\",\n    \"variable_b\": \"PCWP\",\n    \"relation\": \"uncertain\",\n    \"confidence\": 0.0,\n    \"reason\": \"CVP and PCWP are both hemodynamic measurements, but their direct causal relationship is not clearly defined in the absence of a specific medical context. CVP reflects right atrial pressure, while PCWP reflects left atrial pressure. Although they are related through the cardiovascular system, the direction of causality cannot be determined without additional physiological or clinical evidence.\"\n}",
+        "parsed": {
+          "variable_a": "CVP",
+          "variable_b": "PCWP",
+          "relation": "uncertain",
+          "confidence": 0.0,
+          "reason": "CVP and PCWP are both hemodynamic measurements, but their direct causal relationship is not clearly defined in the absence of a specific medical context. CVP reflects right atrial pressure, while PCWP reflects left atrial pressure. Although they are related through the cardiovascular system, the direction of causality cannot be determined without additional physiological or clinical evidence."
+        },
+        "parse_status": "success"
+      }
+    ],
+    "final_relation": "uncertain",
+    "final_confidence": 0.0,
+    "relation_count": {
+      "uncertain": 5
+    }
+  },
+  {
+    "variable_a": "CVP",
+    "variable_b": "HYPOVOLEMIA",
+    "runs": [
+      {
+        "run_id": 1,
+        "seed": 20261504,
+        "raw_response": "{\n    \"variable_a\": \"CVP\",\n    \"variable_b\": \"HYPOVOLEMIA\",\n    \"relation\": \"uncertain\",\n    \"confidence\": 0.0,\n    \"reason\": \"CVP and HYPOVOLEMIA are both related to blood volume, but the direction of causality cannot be determined without further medical knowledge. HYPOVOLEMIA may lead to decreased CVP, or CVP may be a symptom or indicator of HYPOVOLEMIA. A direct causal relationship is not reliably established based on variable definitions alone.\"\n}",
+        "parsed": {
+          "variable_a": "CVP",
+          "variable_b": "HYPOVOLEMIA",
+          "relation": "uncertain",
+          "confidence": 0.0,
+          "reason": "CVP and HYPOVOLEMIA are both related to blood volume, but the direction of causality cannot be determined without further medical knowledge. HYPOVOLEMIA may lead to decreased CVP, or CVP may be a symptom or indicator of HYPOVOLEMIA. A direct causal relationship is not reliably established based on variable definitions alone."
+        },
+        "parse_status": "success"
+      },
+      {
+        "run_id": 2,
+        "seed": 20261505,
+        "raw_response": "{\n    \"variable_a\": \"CVP\",\n    \"variable_b\": \"HYPOVOLEMIA\",\n    \"relation\": \"uncertain\",\n    \"confidence\": 0.5,\n    \"reason\": \"CVP can be affected by HYPOVOLEMIA, but CVP can also influence HYPOVOLEMIA indirectly through fluid status. Without additional context, the direct causal direction cannot be reliably determined.\"\n}",
+        "parsed": {
+          "variable_a": "CVP",
+          "variable_b": "HYPOVOLEMIA",
+          "relation": "uncertain",
+          "confidence": 0.5,
+          "reason": "CVP can be affected by HYPOVOLEMIA, but CVP can also influence HYPOVOLEMIA indirectly through fluid status. Without additional context, the direct causal direction cannot be reliably determined."
+        },
+        "parse_status": "success"
+      },
+      {
+        "run_id": 3,
+        "seed": 20261506,
+        "raw_response": "{\n    \"variable_a\": \"CVP\",\n    \"variable_b\": \"HYPOVOLEMIA\",\n    \"relation\": \"uncertain\",\n    \"confidence\": 0.0,\n    \"reason\": \"CVP and HYPOVOLEMIA are related but do not necessarily have a direct causal relationship. HYPOVOLEMIA can lead to decreased CVP, while CVP changes may reflect HYPOVOLEMIA, but the direction of causation is not reliably determined without further medical context.\"\n}",
+        "parsed": {
+          "variable_a": "CVP",
+          "variable_b": "HYPOVOLEMIA",
+          "relation": "uncertain",
+          "confidence": 0.0,
+          "reason": "CVP and HYPOVOLEMIA are related but do not necessarily have a direct causal relationship. HYPOVOLEMIA can lead to decreased CVP, while CVP changes may reflect HYPOVOLEMIA, but the direction of causation is not reliably determined without further medical context."
+        },
+        "parse_status": "success"
+      },
+      {
+        "run_id": 4,
+        "seed": 20261507,
+        "raw_response": "{\n    \"variable_a\": \"CVP\",\n    \"variable_b\": \"HYPOVOLEMIA\",\n    \"relation\": \"uncertain\",\n    \"confidence\": 0.5,\n    \"reason\": \"CVP and HYPOVOLEMIA are related through fluid balance, but the direction of causation is not clear. HYPOVOLEMIA could lower CVP, or CVP could be a marker of HYPOVOLEMIA. Without further context, a direct causal direction cannot be reliably determined.\"\n}",
+        "parsed": {
+          "variable_a": "CVP",
+          "variable_b": "HYPOVOLEMIA",
+          "relation": "uncertain",
+          "confidence": 0.5,
+          "reason": "CVP and HYPOVOLEMIA are related through fluid balance, but the direction of causation is not clear. HYPOVOLEMIA could lower CVP, or CVP could be a marker of HYPOVOLEMIA. Without further context, a direct causal direction cannot be reliably determined."
+        },
+        "parse_status": "success"
+      },
+      {
+        "run_id": 5,
+        "seed": 20261508,
+        "raw_response": "{\n    \"variable_a\": \"CVP\",\n    \"variable_b\": \"HYPOVOLEMIA\",\n    \"relation\": \"uncertain\",\n    \"confidence\": 0.0,\n    \"reason\": \"CVP and HYPOVOLEMIA are related through blood volume, but the direction of causality cannot be determined without additional medical context. HYPOVOLEMIA may lower CVP, while CVP may reflect HYPOVOLEMIA. No direct causal edge is assumed without further evidence.\"\n}",
+        "parsed": {
+          "variable_a": "CVP",
+          "variable_b": "HYPOVOLEMIA",
+          "relation": "uncertain",
+          "confidence": 0.0,
+          "reason": "CVP and HYPOVOLEMIA are related through blood volume, but the direction of causality cannot be determined without additional medical context. HYPOVOLEMIA may lower CVP, while CVP may reflect HYPOVOLEMIA. No direct causal edge is assumed without further evidence."
+        },
+        "parse_status": "success"
+      }
+    ],
+    "final_relation": "uncertain",
+    "final_confidence": 0.2,
+    "relation_count": {
+      "uncertain": 5
+    }
+  }
+]

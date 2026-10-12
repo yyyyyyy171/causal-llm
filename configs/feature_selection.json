@@ -1,0 +1,29 @@
+{
+  "seed": 20261012,
+  "val_size": 0.2,
+  "test_size": 0.2,
+  "primary_k": 10,
+  "k_ratios": [0.1, 0.25, 0.5],
+  "downstream_model": "logistic_regression",
+  "datasets": [
+    {"name": "credit-g", "openml_id": 31},
+    {"name": "segment", "openml_id": 36},
+    {"name": "kr-vs-kp", "openml_id": 3},
+    {"name": "spambase", "openml_id": 44},
+    {"name": "ionosphere", "openml_id": 59}
+  ],
+  "methods": [
+    "mutual_info",
+    "mrmr",
+    "tree_importance",
+    "l1",
+    "forward_selection"
+  ],
+  "notes": {
+    "seed": "固定划分（60/20/20）与所有随机过程的种子。划分索引会落盘，之后不再变化。",
+    "primary_k": "主结果表使用的特征数。",
+    "k_ratios": "额外按比例取特征，供选题 1、2、4 复用（10% / 25% / 50%）。",
+    "datasets": "5 个 OpenML 数据集，用 data_id 固定版本。选型覆盖：混合类型（credit-g）、多分类（segment，7 类）、全类别特征（kr-vs-kp）、较大规模全数值（spambase）、小样本（ionosphere）。全部特征数都大于 primary_k，避免主结果表出现『选定特征数 = 全部特征』的退化行；另外每个数据集都会报多数类基线，全特征准确率等于 1.0 的数据集视为可疑并剔除（steel-plates-fault/1504 就是这样被排除的）。",
+    "downstream_model": "固定下游模型，目前是标准化 + 逻辑回归。"
+  }
+}

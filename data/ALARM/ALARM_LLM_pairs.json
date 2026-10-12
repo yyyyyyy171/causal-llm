@@ -1,0 +1,2666 @@
+[
+  {
+    "variable_a": "HISTORY",
+    "variable_b": "CVP"
+  },
+  {
+    "variable_a": "HISTORY",
+    "variable_b": "PCWP"
+  },
+  {
+    "variable_a": "HISTORY",
+    "variable_b": "HYPOVOLEMIA"
+  },
+  {
+    "variable_a": "HISTORY",
+    "variable_b": "LVEDVOLUME"
+  },
+  {
+    "variable_a": "HISTORY",
+    "variable_b": "LVFAILURE"
+  },
+  {
+    "variable_a": "HISTORY",
+    "variable_b": "STROKEVOLUME"
+  },
+  {
+    "variable_a": "HISTORY",
+    "variable_b": "ERRLOWOUTPUT"
+  },
+  {
+    "variable_a": "HISTORY",
+    "variable_b": "HRBP"
+  },
+  {
+    "variable_a": "HISTORY",
+    "variable_b": "HREKG"
+  },
+  {
+    "variable_a": "HISTORY",
+    "variable_b": "ERRCAUTER"
+  },
+  {
+    "variable_a": "HISTORY",
+    "variable_b": "HRSAT"
+  },
+  {
+    "variable_a": "HISTORY",
+    "variable_b": "INSUFFANESTH"
+  },
+  {
+    "variable_a": "HISTORY",
+    "variable_b": "ANAPHYLAXIS"
+  },
+  {
+    "variable_a": "HISTORY",
+    "variable_b": "TPR"
+  },
+  {
+    "variable_a": "HISTORY",
+    "variable_b": "EXPCO2"
+  },
+  {
+    "variable_a": "HISTORY",
+    "variable_b": "KINKEDTUBE"
+  },
+  {
+    "variable_a": "HISTORY",
+    "variable_b": "MINVOL"
+  },
+  {
+    "variable_a": "HISTORY",
+    "variable_b": "FIO2"
+  },
+  {
+    "variable_a": "HISTORY",
+    "variable_b": "PVSAT"
+  },
+  {
+    "variable_a": "HISTORY",
+    "variable_b": "SAO2"
+  },
+  {
+    "variable_a": "HISTORY",
+    "variable_b": "PAP"
+  },
+  {
+    "variable_a": "HISTORY",
+    "variable_b": "PULMEMBOLUS"
+  },
+  {
+    "variable_a": "HISTORY",
+    "variable_b": "SHUNT"
+  },
+  {
+    "variable_a": "HISTORY",
+    "variable_b": "INTUBATION"
+  },
+  {
+    "variable_a": "HISTORY",
+    "variable_b": "PRESS"
+  },
+  {
+    "variable_a": "HISTORY",
+    "variable_b": "DISCONNECT"
+  },
+  {
+    "variable_a": "HISTORY",
+    "variable_b": "MINVOLSET"
+  },
+  {
+    "variable_a": "HISTORY",
+    "variable_b": "VENTMACH"
+  },
+  {
+    "variable_a": "HISTORY",
+    "variable_b": "VENTTUBE"
+  },
+  {
+    "variable_a": "HISTORY",
+    "variable_b": "VENTLUNG"
+  },
+  {
+    "variable_a": "HISTORY",
+    "variable_b": "VENTALV"
+  },
+  {
+    "variable_a": "HISTORY",
+    "variable_b": "ARTCO2"
+  },
+  {
+    "variable_a": "HISTORY",
+    "variable_b": "CATECHOL"
+  },
+  {
+    "variable_a": "HISTORY",
+    "variable_b": "HR"
+  },
+  {
+    "variable_a": "HISTORY",
+    "variable_b": "CO"
+  },
+  {
+    "variable_a": "HISTORY",
+    "variable_b": "BP"
+  },
+  {
+    "variable_a": "CVP",
+    "variable_b": "PCWP"
+  },
+  {
+    "variable_a": "CVP",
+    "variable_b": "HYPOVOLEMIA"
+  },
+  {
+    "variable_a": "CVP",
+    "variable_b": "LVEDVOLUME"
+  },
+  {
+    "variable_a": "CVP",
+    "variable_b": "LVFAILURE"
+  },
+  {
+    "variable_a": "CVP",
+    "variable_b": "STROKEVOLUME"
+  },
+  {
+    "variable_a": "CVP",
+    "variable_b": "ERRLOWOUTPUT"
+  },
+  {
+    "variable_a": "CVP",
+    "variable_b": "HRBP"
+  },
+  {
+    "variable_a": "CVP",
+    "variable_b": "HREKG"
+  },
+  {
+    "variable_a": "CVP",
+    "variable_b": "ERRCAUTER"
+  },
+  {
+    "variable_a": "CVP",
+    "variable_b": "HRSAT"
+  },
+  {
+    "variable_a": "CVP",
+    "variable_b": "INSUFFANESTH"
+  },
+  {
+    "variable_a": "CVP",
+    "variable_b": "ANAPHYLAXIS"
+  },
+  {
+    "variable_a": "CVP",
+    "variable_b": "TPR"
+  },
+  {
+    "variable_a": "CVP",
+    "variable_b": "EXPCO2"
+  },
+  {
+    "variable_a": "CVP",
+    "variable_b": "KINKEDTUBE"
+  },
+  {
+    "variable_a": "CVP",
+    "variable_b": "MINVOL"
+  },
+  {
+    "variable_a": "CVP",
+    "variable_b": "FIO2"
+  },
+  {
+    "variable_a": "CVP",
+    "variable_b": "PVSAT"
+  },
+  {
+    "variable_a": "CVP",
+    "variable_b": "SAO2"
+  },
+  {
+    "variable_a": "CVP",
+    "variable_b": "PAP"
+  },
+  {
+    "variable_a": "CVP",
+    "variable_b": "PULMEMBOLUS"
+  },
+  {
+    "variable_a": "CVP",
+    "variable_b": "SHUNT"
+  },
+  {
+    "variable_a": "CVP",
+    "variable_b": "INTUBATION"
+  },
+  {
+    "variable_a": "CVP",
+    "variable_b": "PRESS"
+  },
+  {
+    "variable_a": "CVP",
+    "variable_b": "DISCONNECT"
+  },
+  {
+    "variable_a": "CVP",
+    "variable_b": "MINVOLSET"
+  },
+  {
+    "variable_a": "CVP",
+    "variable_b": "VENTMACH"
+  },
+  {
+    "variable_a": "CVP",
+    "variable_b": "VENTTUBE"
+  },
+  {
+    "variable_a": "CVP",
+    "variable_b": "VENTLUNG"
+  },
+  {
+    "variable_a": "CVP",
+    "variable_b": "VENTALV"
+  },
+  {
+    "variable_a": "CVP",
+    "variable_b": "ARTCO2"
+  },
+  {
+    "variable_a": "CVP",
+    "variable_b": "CATECHOL"
+  },
+  {
+    "variable_a": "CVP",
+    "variable_b": "HR"
+  },
+  {
+    "variable_a": "CVP",
+    "variable_b": "CO"
+  },
+  {
+    "variable_a": "CVP",
+    "variable_b": "BP"
+  },
+  {
+    "variable_a": "PCWP",
+    "variable_b": "HYPOVOLEMIA"
+  },
+  {
+    "variable_a": "PCWP",
+    "variable_b": "LVEDVOLUME"
+  },
+  {
+    "variable_a": "PCWP",
+    "variable_b": "LVFAILURE"
+  },
+  {
+    "variable_a": "PCWP",
+    "variable_b": "STROKEVOLUME"
+  },
+  {
+    "variable_a": "PCWP",
+    "variable_b": "ERRLOWOUTPUT"
+  },
+  {
+    "variable_a": "PCWP",
+    "variable_b": "HRBP"
+  },
+  {
+    "variable_a": "PCWP",
+    "variable_b": "HREKG"
+  },
+  {
+    "variable_a": "PCWP",
+    "variable_b": "ERRCAUTER"
+  },
+  {
+    "variable_a": "PCWP",
+    "variable_b": "HRSAT"
+  },
+  {
+    "variable_a": "PCWP",
+    "variable_b": "INSUFFANESTH"
+  },
+  {
+    "variable_a": "PCWP",
+    "variable_b": "ANAPHYLAXIS"
+  },
+  {
+    "variable_a": "PCWP",
+    "variable_b": "TPR"
+  },
+  {
+    "variable_a": "PCWP",
+    "variable_b": "EXPCO2"
+  },
+  {
+    "variable_a": "PCWP",
+    "variable_b": "KINKEDTUBE"
+  },
+  {
+    "variable_a": "PCWP",
+    "variable_b": "MINVOL"
+  },
+  {
+    "variable_a": "PCWP",
+    "variable_b": "FIO2"
+  },
+  {
+    "variable_a": "PCWP",
+    "variable_b": "PVSAT"
+  },
+  {
+    "variable_a": "PCWP",
+    "variable_b": "SAO2"
+  },
+  {
+    "variable_a": "PCWP",
+    "variable_b": "PAP"
+  },
+  {
+    "variable_a": "PCWP",
+    "variable_b": "PULMEMBOLUS"
+  },
+  {
+    "variable_a": "PCWP",
+    "variable_b": "SHUNT"
+  },
+  {
+    "variable_a": "PCWP",
+    "variable_b": "INTUBATION"
+  },
+  {
+    "variable_a": "PCWP",
+    "variable_b": "PRESS"
+  },
+  {
+    "variable_a": "PCWP",
+    "variable_b": "DISCONNECT"
+  },
+  {
+    "variable_a": "PCWP",
+    "variable_b": "MINVOLSET"
+  },
+  {
+    "variable_a": "PCWP",
+    "variable_b": "VENTMACH"
+  },
+  {
+    "variable_a": "PCWP",
+    "variable_b": "VENTTUBE"
+  },
+  {
+    "variable_a": "PCWP",
+    "variable_b": "VENTLUNG"
+  },
+  {
+    "variable_a": "PCWP",
+    "variable_b": "VENTALV"
+  },
+  {
+    "variable_a": "PCWP",
+    "variable_b": "ARTCO2"
+  },
+  {
+    "variable_a": "PCWP",
+    "variable_b": "CATECHOL"
+  },
+  {
+    "variable_a": "PCWP",
+    "variable_b": "HR"
+  },
+  {
+    "variable_a": "PCWP",
+    "variable_b": "CO"
+  },
+  {
+    "variable_a": "PCWP",
+    "variable_b": "BP"
+  },
+  {
+    "variable_a": "HYPOVOLEMIA",
+    "variable_b": "LVEDVOLUME"
+  },
+  {
+    "variable_a": "HYPOVOLEMIA",
+    "variable_b": "LVFAILURE"
+  },
+  {
+    "variable_a": "HYPOVOLEMIA",
+    "variable_b": "STROKEVOLUME"
+  },
+  {
+    "variable_a": "HYPOVOLEMIA",
+    "variable_b": "ERRLOWOUTPUT"
+  },
+  {
+    "variable_a": "HYPOVOLEMIA",
+    "variable_b": "HRBP"
+  },
+  {
+    "variable_a": "HYPOVOLEMIA",
+    "variable_b": "HREKG"
+  },
+  {
+    "variable_a": "HYPOVOLEMIA",
+    "variable_b": "ERRCAUTER"
+  },
+  {
+    "variable_a": "HYPOVOLEMIA",
+    "variable_b": "HRSAT"
+  },
+  {
+    "variable_a": "HYPOVOLEMIA",
+    "variable_b": "INSUFFANESTH"
+  },
+  {
+    "variable_a": "HYPOVOLEMIA",
+    "variable_b": "ANAPHYLAXIS"
+  },
+  {
+    "variable_a": "HYPOVOLEMIA",
+    "variable_b": "TPR"
+  },
+  {
+    "variable_a": "HYPOVOLEMIA",
+    "variable_b": "EXPCO2"
+  },
+  {
+    "variable_a": "HYPOVOLEMIA",
+    "variable_b": "KINKEDTUBE"
+  },
+  {
+    "variable_a": "HYPOVOLEMIA",
+    "variable_b": "MINVOL"
+  },
+  {
+    "variable_a": "HYPOVOLEMIA",
+    "variable_b": "FIO2"
+  },
+  {
+    "variable_a": "HYPOVOLEMIA",
+    "variable_b": "PVSAT"
+  },
+  {
+    "variable_a": "HYPOVOLEMIA",
+    "variable_b": "SAO2"
+  },
+  {
+    "variable_a": "HYPOVOLEMIA",
+    "variable_b": "PAP"
+  },
+  {
+    "variable_a": "HYPOVOLEMIA",
+    "variable_b": "PULMEMBOLUS"
+  },
+  {
+    "variable_a": "HYPOVOLEMIA",
+    "variable_b": "SHUNT"
+  },
+  {
+    "variable_a": "HYPOVOLEMIA",
+    "variable_b": "INTUBATION"
+  },
+  {
+    "variable_a": "HYPOVOLEMIA",
+    "variable_b": "PRESS"
+  },
+  {
+    "variable_a": "HYPOVOLEMIA",
+    "variable_b": "DISCONNECT"
+  },
+  {
+    "variable_a": "HYPOVOLEMIA",
+    "variable_b": "MINVOLSET"
+  },
+  {
+    "variable_a": "HYPOVOLEMIA",
+    "variable_b": "VENTMACH"
+  },
+  {
+    "variable_a": "HYPOVOLEMIA",
+    "variable_b": "VENTTUBE"
+  },
+  {
+    "variable_a": "HYPOVOLEMIA",
+    "variable_b": "VENTLUNG"
+  },
+  {
+    "variable_a": "HYPOVOLEMIA",
+    "variable_b": "VENTALV"
+  },
+  {
+    "variable_a": "HYPOVOLEMIA",
+    "variable_b": "ARTCO2"
+  },
+  {
+    "variable_a": "HYPOVOLEMIA",
+    "variable_b": "CATECHOL"
+  },
+  {
+    "variable_a": "HYPOVOLEMIA",
+    "variable_b": "HR"
+  },
+  {
+    "variable_a": "HYPOVOLEMIA",
+    "variable_b": "CO"
+  },
+  {
+    "variable_a": "HYPOVOLEMIA",
+    "variable_b": "BP"
+  },
+  {
+    "variable_a": "LVEDVOLUME",
+    "variable_b": "LVFAILURE"
+  },
+  {
+    "variable_a": "LVEDVOLUME",
+    "variable_b": "STROKEVOLUME"
+  },
+  {
+    "variable_a": "LVEDVOLUME",
+    "variable_b": "ERRLOWOUTPUT"
+  },
+  {
+    "variable_a": "LVEDVOLUME",
+    "variable_b": "HRBP"
+  },
+  {
+    "variable_a": "LVEDVOLUME",
+    "variable_b": "HREKG"
+  },
+  {
+    "variable_a": "LVEDVOLUME",
+    "variable_b": "ERRCAUTER"
+  },
+  {
+    "variable_a": "LVEDVOLUME",
+    "variable_b": "HRSAT"
+  },
+  {
+    "variable_a": "LVEDVOLUME",
+    "variable_b": "INSUFFANESTH"
+  },
+  {
+    "variable_a": "LVEDVOLUME",
+    "variable_b": "ANAPHYLAXIS"
+  },
+  {
+    "variable_a": "LVEDVOLUME",
+    "variable_b": "TPR"
+  },
+  {
+    "variable_a": "LVEDVOLUME",
+    "variable_b": "EXPCO2"
+  },
+  {
+    "variable_a": "LVEDVOLUME",
+    "variable_b": "KINKEDTUBE"
+  },
+  {
+    "variable_a": "LVEDVOLUME",
+    "variable_b": "MINVOL"
+  },
+  {
+    "variable_a": "LVEDVOLUME",
+    "variable_b": "FIO2"
+  },
+  {
+    "variable_a": "LVEDVOLUME",
+    "variable_b": "PVSAT"
+  },
+  {
+    "variable_a": "LVEDVOLUME",
+    "variable_b": "SAO2"
+  },
+  {
+    "variable_a": "LVEDVOLUME",
+    "variable_b": "PAP"
+  },
+  {
+    "variable_a": "LVEDVOLUME",
+    "variable_b": "PULMEMBOLUS"
+  },
+  {
+    "variable_a": "LVEDVOLUME",
+    "variable_b": "SHUNT"
+  },
+  {
+    "variable_a": "LVEDVOLUME",
+    "variable_b": "INTUBATION"
+  },
+  {
+    "variable_a": "LVEDVOLUME",
+    "variable_b": "PRESS"
+  },
+  {
+    "variable_a": "LVEDVOLUME",
+    "variable_b": "DISCONNECT"
+  },
+  {
+    "variable_a": "LVEDVOLUME",
+    "variable_b": "MINVOLSET"
+  },
+  {
+    "variable_a": "LVEDVOLUME",
+    "variable_b": "VENTMACH"
+  },
+  {
+    "variable_a": "LVEDVOLUME",
+    "variable_b": "VENTTUBE"
+  },
+  {
+    "variable_a": "LVEDVOLUME",
+    "variable_b": "VENTLUNG"
+  },
+  {
+    "variable_a": "LVEDVOLUME",
+    "variable_b": "VENTALV"
+  },
+  {
+    "variable_a": "LVEDVOLUME",
+    "variable_b": "ARTCO2"
+  },
+  {
+    "variable_a": "LVEDVOLUME",
+    "variable_b": "CATECHOL"
+  },
+  {
+    "variable_a": "LVEDVOLUME",
+    "variable_b": "HR"
+  },
+  {
+    "variable_a": "LVEDVOLUME",
+    "variable_b": "CO"
+  },
+  {
+    "variable_a": "LVEDVOLUME",
+    "variable_b": "BP"
+  },
+  {
+    "variable_a": "LVFAILURE",
+    "variable_b": "STROKEVOLUME"
+  },
+  {
+    "variable_a": "LVFAILURE",
+    "variable_b": "ERRLOWOUTPUT"
+  },
+  {
+    "variable_a": "LVFAILURE",
+    "variable_b": "HRBP"
+  },
+  {
+    "variable_a": "LVFAILURE",
+    "variable_b": "HREKG"
+  },
+  {
+    "variable_a": "LVFAILURE",
+    "variable_b": "ERRCAUTER"
+  },
+  {
+    "variable_a": "LVFAILURE",
+    "variable_b": "HRSAT"
+  },
+  {
+    "variable_a": "LVFAILURE",
+    "variable_b": "INSUFFANESTH"
+  },
+  {
+    "variable_a": "LVFAILURE",
+    "variable_b": "ANAPHYLAXIS"
+  },
+  {
+    "variable_a": "LVFAILURE",
+    "variable_b": "TPR"
+  },
+  {
+    "variable_a": "LVFAILURE",
+    "variable_b": "EXPCO2"
+  },
+  {
+    "variable_a": "LVFAILURE",
+    "variable_b": "KINKEDTUBE"
+  },
+  {
+    "variable_a": "LVFAILURE",
+    "variable_b": "MINVOL"
+  },
+  {
+    "variable_a": "LVFAILURE",
+    "variable_b": "FIO2"
+  },
+  {
+    "variable_a": "LVFAILURE",
+    "variable_b": "PVSAT"
+  },
+  {
+    "variable_a": "LVFAILURE",
+    "variable_b": "SAO2"
+  },
+  {
+    "variable_a": "LVFAILURE",
+    "variable_b": "PAP"
+  },
+  {
+    "variable_a": "LVFAILURE",
+    "variable_b": "PULMEMBOLUS"
+  },
+  {
+    "variable_a": "LVFAILURE",
+    "variable_b": "SHUNT"
+  },
+  {
+    "variable_a": "LVFAILURE",
+    "variable_b": "INTUBATION"
+  },
+  {
+    "variable_a": "LVFAILURE",
+    "variable_b": "PRESS"
+  },
+  {
+    "variable_a": "LVFAILURE",
+    "variable_b": "DISCONNECT"
+  },
+  {
+    "variable_a": "LVFAILURE",
+    "variable_b": "MINVOLSET"
+  },
+  {
+    "variable_a": "LVFAILURE",
+    "variable_b": "VENTMACH"
+  },
+  {
+    "variable_a": "LVFAILURE",
+    "variable_b": "VENTTUBE"
+  },
+  {
+    "variable_a": "LVFAILURE",
+    "variable_b": "VENTLUNG"
+  },
+  {
+    "variable_a": "LVFAILURE",
+    "variable_b": "VENTALV"
+  },
+  {
+    "variable_a": "LVFAILURE",
+    "variable_b": "ARTCO2"
+  },
+  {
+    "variable_a": "LVFAILURE",
+    "variable_b": "CATECHOL"
+  },
+  {
+    "variable_a": "LVFAILURE",
+    "variable_b": "HR"
+  },
+  {
+    "variable_a": "LVFAILURE",
+    "variable_b": "CO"
+  },
+  {
+    "variable_a": "LVFAILURE",
+    "variable_b": "BP"
+  },
+  {
+    "variable_a": "STROKEVOLUME",
+    "variable_b": "ERRLOWOUTPUT"
+  },
+  {
+    "variable_a": "STROKEVOLUME",
+    "variable_b": "HRBP"
+  },
+  {
+    "variable_a": "STROKEVOLUME",
+    "variable_b": "HREKG"
+  },
+  {
+    "variable_a": "STROKEVOLUME",
+    "variable_b": "ERRCAUTER"
+  },
+  {
+    "variable_a": "STROKEVOLUME",
+    "variable_b": "HRSAT"
+  },
+  {
+    "variable_a": "STROKEVOLUME",
+    "variable_b": "INSUFFANESTH"
+  },
+  {
+    "variable_a": "STROKEVOLUME",
+    "variable_b": "ANAPHYLAXIS"
+  },
+  {
+    "variable_a": "STROKEVOLUME",
+    "variable_b": "TPR"
+  },
+  {
+    "variable_a": "STROKEVOLUME",
+    "variable_b": "EXPCO2"
+  },
+  {
+    "variable_a": "STROKEVOLUME",
+    "variable_b": "KINKEDTUBE"
+  },
+  {
+    "variable_a": "STROKEVOLUME",
+    "variable_b": "MINVOL"
+  },
+  {
+    "variable_a": "STROKEVOLUME",
+    "variable_b": "FIO2"
+  },
+  {
+    "variable_a": "STROKEVOLUME",
+    "variable_b": "PVSAT"
+  },
+  {
+    "variable_a": "STROKEVOLUME",
+    "variable_b": "SAO2"
+  },
+  {
+    "variable_a": "STROKEVOLUME",
+    "variable_b": "PAP"
+  },
+  {
+    "variable_a": "STROKEVOLUME",
+    "variable_b": "PULMEMBOLUS"
+  },
+  {
+    "variable_a": "STROKEVOLUME",
+    "variable_b": "SHUNT"
+  },
+  {
+    "variable_a": "STROKEVOLUME",
+    "variable_b": "INTUBATION"
+  },
+  {
+    "variable_a": "STROKEVOLUME",
+    "variable_b": "PRESS"
+  },
+  {
+    "variable_a": "STROKEVOLUME",
+    "variable_b": "DISCONNECT"
+  },
+  {
+    "variable_a": "STROKEVOLUME",
+    "variable_b": "MINVOLSET"
+  },
+  {
+    "variable_a": "STROKEVOLUME",
+    "variable_b": "VENTMACH"
+  },
+  {
+    "variable_a": "STROKEVOLUME",
+    "variable_b": "VENTTUBE"
+  },
+  {
+    "variable_a": "STROKEVOLUME",
+    "variable_b": "VENTLUNG"
+  },
+  {
+    "variable_a": "STROKEVOLUME",
+    "variable_b": "VENTALV"
+  },
+  {
+    "variable_a": "STROKEVOLUME",
+    "variable_b": "ARTCO2"
+  },
+  {
+    "variable_a": "STROKEVOLUME",
+    "variable_b": "CATECHOL"
+  },
+  {
+    "variable_a": "STROKEVOLUME",
+    "variable_b": "HR"
+  },
+  {
+    "variable_a": "STROKEVOLUME",
+    "variable_b": "CO"
+  },
+  {
+    "variable_a": "STROKEVOLUME",
+    "variable_b": "BP"
+  },
+  {
+    "variable_a": "ERRLOWOUTPUT",
+    "variable_b": "HRBP"
+  },
+  {
+    "variable_a": "ERRLOWOUTPUT",
+    "variable_b": "HREKG"
+  },
+  {
+    "variable_a": "ERRLOWOUTPUT",
+    "variable_b": "ERRCAUTER"
+  },
+  {
+    "variable_a": "ERRLOWOUTPUT",
+    "variable_b": "HRSAT"
+  },
+  {
+    "variable_a": "ERRLOWOUTPUT",
+    "variable_b": "INSUFFANESTH"
+  },
+  {
+    "variable_a": "ERRLOWOUTPUT",
+    "variable_b": "ANAPHYLAXIS"
+  },
+  {
+    "variable_a": "ERRLOWOUTPUT",
+    "variable_b": "TPR"
+  },
+  {
+    "variable_a": "ERRLOWOUTPUT",
+    "variable_b": "EXPCO2"
+  },
+  {
+    "variable_a": "ERRLOWOUTPUT",
+    "variable_b": "KINKEDTUBE"
+  },
+  {
+    "variable_a": "ERRLOWOUTPUT",
+    "variable_b": "MINVOL"
+  },
+  {
+    "variable_a": "ERRLOWOUTPUT",
+    "variable_b": "FIO2"
+  },
+  {
+    "variable_a": "ERRLOWOUTPUT",
+    "variable_b": "PVSAT"
+  },
+  {
+    "variable_a": "ERRLOWOUTPUT",
+    "variable_b": "SAO2"
+  },
+  {
+    "variable_a": "ERRLOWOUTPUT",
+    "variable_b": "PAP"
+  },
+  {
+    "variable_a": "ERRLOWOUTPUT",
+    "variable_b": "PULMEMBOLUS"
+  },
+  {
+    "variable_a": "ERRLOWOUTPUT",
+    "variable_b": "SHUNT"
+  },
+  {
+    "variable_a": "ERRLOWOUTPUT",
+    "variable_b": "INTUBATION"
+  },
+  {
+    "variable_a": "ERRLOWOUTPUT",
+    "variable_b": "PRESS"
+  },
+  {
+    "variable_a": "ERRLOWOUTPUT",
+    "variable_b": "DISCONNECT"
+  },
+  {
+    "variable_a": "ERRLOWOUTPUT",
+    "variable_b": "MINVOLSET"
+  },
+  {
+    "variable_a": "ERRLOWOUTPUT",
+    "variable_b": "VENTMACH"
+  },
+  {
+    "variable_a": "ERRLOWOUTPUT",
+    "variable_b": "VENTTUBE"
+  },
+  {
+    "variable_a": "ERRLOWOUTPUT",
+    "variable_b": "VENTLUNG"
+  },
+  {
+    "variable_a": "ERRLOWOUTPUT",
+    "variable_b": "VENTALV"
+  },
+  {
+    "variable_a": "ERRLOWOUTPUT",
+    "variable_b": "ARTCO2"
+  },
+  {
+    "variable_a": "ERRLOWOUTPUT",
+    "variable_b": "CATECHOL"
+  },
+  {
+    "variable_a": "ERRLOWOUTPUT",
+    "variable_b": "HR"
+  },
+  {
+    "variable_a": "ERRLOWOUTPUT",
+    "variable_b": "CO"
+  },
+  {
+    "variable_a": "ERRLOWOUTPUT",
+    "variable_b": "BP"
+  },
+  {
+    "variable_a": "HRBP",
+    "variable_b": "HREKG"
+  },
+  {
+    "variable_a": "HRBP",
+    "variable_b": "ERRCAUTER"
+  },
+  {
+    "variable_a": "HRBP",
+    "variable_b": "HRSAT"
+  },
+  {
+    "variable_a": "HRBP",
+    "variable_b": "INSUFFANESTH"
+  },
+  {
+    "variable_a": "HRBP",
+    "variable_b": "ANAPHYLAXIS"
+  },
+  {
+    "variable_a": "HRBP",
+    "variable_b": "TPR"
+  },
+  {
+    "variable_a": "HRBP",
+    "variable_b": "EXPCO2"
+  },
+  {
+    "variable_a": "HRBP",
+    "variable_b": "KINKEDTUBE"
+  },
+  {
+    "variable_a": "HRBP",
+    "variable_b": "MINVOL"
+  },
+  {
+    "variable_a": "HRBP",
+    "variable_b": "FIO2"
+  },
+  {
+    "variable_a": "HRBP",
+    "variable_b": "PVSAT"
+  },
+  {
+    "variable_a": "HRBP",
+    "variable_b": "SAO2"
+  },
+  {
+    "variable_a": "HRBP",
+    "variable_b": "PAP"
+  },
+  {
+    "variable_a": "HRBP",
+    "variable_b": "PULMEMBOLUS"
+  },
+  {
+    "variable_a": "HRBP",
+    "variable_b": "SHUNT"
+  },
+  {
+    "variable_a": "HRBP",
+    "variable_b": "INTUBATION"
+  },
+  {
+    "variable_a": "HRBP",
+    "variable_b": "PRESS"
+  },
+  {
+    "variable_a": "HRBP",
+    "variable_b": "DISCONNECT"
+  },
+  {
+    "variable_a": "HRBP",
+    "variable_b": "MINVOLSET"
+  },
+  {
+    "variable_a": "HRBP",
+    "variable_b": "VENTMACH"
+  },
+  {
+    "variable_a": "HRBP",
+    "variable_b": "VENTTUBE"
+  },
+  {
+    "variable_a": "HRBP",
+    "variable_b": "VENTLUNG"
+  },
+  {
+    "variable_a": "HRBP",
+    "variable_b": "VENTALV"
+  },
+  {
+    "variable_a": "HRBP",
+    "variable_b": "ARTCO2"
+  },
+  {
+    "variable_a": "HRBP",
+    "variable_b": "CATECHOL"
+  },
+  {
+    "variable_a": "HRBP",
+    "variable_b": "HR"
+  },
+  {
+    "variable_a": "HRBP",
+    "variable_b": "CO"
+  },
+  {
+    "variable_a": "HRBP",
+    "variable_b": "BP"
+  },
+  {
+    "variable_a": "HREKG",
+    "variable_b": "ERRCAUTER"
+  },
+  {
+    "variable_a": "HREKG",
+    "variable_b": "HRSAT"
+  },
+  {
+    "variable_a": "HREKG",
+    "variable_b": "INSUFFANESTH"
+  },
+  {
+    "variable_a": "HREKG",
+    "variable_b": "ANAPHYLAXIS"
+  },
+  {
+    "variable_a": "HREKG",
+    "variable_b": "TPR"
+  },
+  {
+    "variable_a": "HREKG",
+    "variable_b": "EXPCO2"
+  },
+  {
+    "variable_a": "HREKG",
+    "variable_b": "KINKEDTUBE"
+  },
+  {
+    "variable_a": "HREKG",
+    "variable_b": "MINVOL"
+  },
+  {
+    "variable_a": "HREKG",
+    "variable_b": "FIO2"
+  },
+  {
+    "variable_a": "HREKG",
+    "variable_b": "PVSAT"
+  },
+  {
+    "variable_a": "HREKG",
+    "variable_b": "SAO2"
+  },
+  {
+    "variable_a": "HREKG",
+    "variable_b": "PAP"
+  },
+  {
+    "variable_a": "HREKG",
+    "variable_b": "PULMEMBOLUS"
+  },
+  {
+    "variable_a": "HREKG",
+    "variable_b": "SHUNT"
+  },
+  {
+    "variable_a": "HREKG",
+    "variable_b": "INTUBATION"
+  },
+  {
+    "variable_a": "HREKG",
+    "variable_b": "PRESS"
+  },
+  {
+    "variable_a": "HREKG",
+    "variable_b": "DISCONNECT"
+  },
+  {
+    "variable_a": "HREKG",
+    "variable_b": "MINVOLSET"
+  },
+  {
+    "variable_a": "HREKG",
+    "variable_b": "VENTMACH"
+  },
+  {
+    "variable_a": "HREKG",
+    "variable_b": "VENTTUBE"
+  },
+  {
+    "variable_a": "HREKG",
+    "variable_b": "VENTLUNG"
+  },
+  {
+    "variable_a": "HREKG",
+    "variable_b": "VENTALV"
+  },
+  {
+    "variable_a": "HREKG",
+    "variable_b": "ARTCO2"
+  },
+  {
+    "variable_a": "HREKG",
+    "variable_b": "CATECHOL"
+  },
+  {
+    "variable_a": "HREKG",
+    "variable_b": "HR"
+  },
+  {
+    "variable_a": "HREKG",
+    "variable_b": "CO"
+  },
+  {
+    "variable_a": "HREKG",
+    "variable_b": "BP"
+  },
+  {
+    "variable_a": "ERRCAUTER",
+    "variable_b": "HRSAT"
+  },
+  {
+    "variable_a": "ERRCAUTER",
+    "variable_b": "INSUFFANESTH"
+  },
+  {
+    "variable_a": "ERRCAUTER",
+    "variable_b": "ANAPHYLAXIS"
+  },
+  {
+    "variable_a": "ERRCAUTER",
+    "variable_b": "TPR"
+  },
+  {
+    "variable_a": "ERRCAUTER",
+    "variable_b": "EXPCO2"
+  },
+  {
+    "variable_a": "ERRCAUTER",
+    "variable_b": "KINKEDTUBE"
+  },
+  {
+    "variable_a": "ERRCAUTER",
+    "variable_b": "MINVOL"
+  },
+  {
+    "variable_a": "ERRCAUTER",
+    "variable_b": "FIO2"
+  },
+  {
+    "variable_a": "ERRCAUTER",
+    "variable_b": "PVSAT"
+  },
+  {
+    "variable_a": "ERRCAUTER",
+    "variable_b": "SAO2"
+  },
+  {
+    "variable_a": "ERRCAUTER",
+    "variable_b": "PAP"
+  },
+  {
+    "variable_a": "ERRCAUTER",
+    "variable_b": "PULMEMBOLUS"
+  },
+  {
+    "variable_a": "ERRCAUTER",
+    "variable_b": "SHUNT"
+  },
+  {
+    "variable_a": "ERRCAUTER",
+    "variable_b": "INTUBATION"
+  },
+  {
+    "variable_a": "ERRCAUTER",
+    "variable_b": "PRESS"
+  },
+  {
+    "variable_a": "ERRCAUTER",
+    "variable_b": "DISCONNECT"
+  },
+  {
+    "variable_a": "ERRCAUTER",
+    "variable_b": "MINVOLSET"
+  },
+  {
+    "variable_a": "ERRCAUTER",
+    "variable_b": "VENTMACH"
+  },
+  {
+    "variable_a": "ERRCAUTER",
+    "variable_b": "VENTTUBE"
+  },
+  {
+    "variable_a": "ERRCAUTER",
+    "variable_b": "VENTLUNG"
+  },
+  {
+    "variable_a": "ERRCAUTER",
+    "variable_b": "VENTALV"
+  },
+  {
+    "variable_a": "ERRCAUTER",
+    "variable_b": "ARTCO2"
+  },
+  {
+    "variable_a": "ERRCAUTER",
+    "variable_b": "CATECHOL"
+  },
+  {
+    "variable_a": "ERRCAUTER",
+    "variable_b": "HR"
+  },
+  {
+    "variable_a": "ERRCAUTER",
+    "variable_b": "CO"
+  },
+  {
+    "variable_a": "ERRCAUTER",
+    "variable_b": "BP"
+  },
+  {
+    "variable_a": "HRSAT",
+    "variable_b": "INSUFFANESTH"
+  },
+  {
+    "variable_a": "HRSAT",
+    "variable_b": "ANAPHYLAXIS"
+  },
+  {
+    "variable_a": "HRSAT",
+    "variable_b": "TPR"
+  },
+  {
+    "variable_a": "HRSAT",
+    "variable_b": "EXPCO2"
+  },
+  {
+    "variable_a": "HRSAT",
+    "variable_b": "KINKEDTUBE"
+  },
+  {
+    "variable_a": "HRSAT",
+    "variable_b": "MINVOL"
+  },
+  {
+    "variable_a": "HRSAT",
+    "variable_b": "FIO2"
+  },
+  {
+    "variable_a": "HRSAT",
+    "variable_b": "PVSAT"
+  },
+  {
+    "variable_a": "HRSAT",
+    "variable_b": "SAO2"
+  },
+  {
+    "variable_a": "HRSAT",
+    "variable_b": "PAP"
+  },
+  {
+    "variable_a": "HRSAT",
+    "variable_b": "PULMEMBOLUS"
+  },
+  {
+    "variable_a": "HRSAT",
+    "variable_b": "SHUNT"
+  },
+  {
+    "variable_a": "HRSAT",
+    "variable_b": "INTUBATION"
+  },
+  {
+    "variable_a": "HRSAT",
+    "variable_b": "PRESS"
+  },
+  {
+    "variable_a": "HRSAT",
+    "variable_b": "DISCONNECT"
+  },
+  {
+    "variable_a": "HRSAT",
+    "variable_b": "MINVOLSET"
+  },
+  {
+    "variable_a": "HRSAT",
+    "variable_b": "VENTMACH"
+  },
+  {
+    "variable_a": "HRSAT",
+    "variable_b": "VENTTUBE"
+  },
+  {
+    "variable_a": "HRSAT",
+    "variable_b": "VENTLUNG"
+  },
+  {
+    "variable_a": "HRSAT",
+    "variable_b": "VENTALV"
+  },
+  {
+    "variable_a": "HRSAT",
+    "variable_b": "ARTCO2"
+  },
+  {
+    "variable_a": "HRSAT",
+    "variable_b": "CATECHOL"
+  },
+  {
+    "variable_a": "HRSAT",
+    "variable_b": "HR"
+  },
+  {
+    "variable_a": "HRSAT",
+    "variable_b": "CO"
+  },
+  {
+    "variable_a": "HRSAT",
+    "variable_b": "BP"
+  },
+  {
+    "variable_a": "INSUFFANESTH",
+    "variable_b": "ANAPHYLAXIS"
+  },
+  {
+    "variable_a": "INSUFFANESTH",
+    "variable_b": "TPR"
+  },
+  {
+    "variable_a": "INSUFFANESTH",
+    "variable_b": "EXPCO2"
+  },
+  {
+    "variable_a": "INSUFFANESTH",
+    "variable_b": "KINKEDTUBE"
+  },
+  {
+    "variable_a": "INSUFFANESTH",
+    "variable_b": "MINVOL"
+  },
+  {
+    "variable_a": "INSUFFANESTH",
+    "variable_b": "FIO2"
+  },
+  {
+    "variable_a": "INSUFFANESTH",
+    "variable_b": "PVSAT"
+  },
+  {
+    "variable_a": "INSUFFANESTH",
+    "variable_b": "SAO2"
+  },
+  {
+    "variable_a": "INSUFFANESTH",
+    "variable_b": "PAP"
+  },
+  {
+    "variable_a": "INSUFFANESTH",
+    "variable_b": "PULMEMBOLUS"
+  },
+  {
+    "variable_a": "INSUFFANESTH",
+    "variable_b": "SHUNT"
+  },
+  {
+    "variable_a": "INSUFFANESTH",
+    "variable_b": "INTUBATION"
+  },
+  {
+    "variable_a": "INSUFFANESTH",
+    "variable_b": "PRESS"
+  },
+  {
+    "variable_a": "INSUFFANESTH",
+    "variable_b": "DISCONNECT"
+  },
+  {
+    "variable_a": "INSUFFANESTH",
+    "variable_b": "MINVOLSET"
+  },
+  {
+    "variable_a": "INSUFFANESTH",
+    "variable_b": "VENTMACH"
+  },
+  {
+    "variable_a": "INSUFFANESTH",
+    "variable_b": "VENTTUBE"
+  },
+  {
+    "variable_a": "INSUFFANESTH",
+    "variable_b": "VENTLUNG"
+  },
+  {
+    "variable_a": "INSUFFANESTH",
+    "variable_b": "VENTALV"
+  },
+  {
+    "variable_a": "INSUFFANESTH",
+    "variable_b": "ARTCO2"
+  },
+  {
+    "variable_a": "INSUFFANESTH",
+    "variable_b": "CATECHOL"
+  },
+  {
+    "variable_a": "INSUFFANESTH",
+    "variable_b": "HR"
+  },
+  {
+    "variable_a": "INSUFFANESTH",
+    "variable_b": "CO"
+  },
+  {
+    "variable_a": "INSUFFANESTH",
+    "variable_b": "BP"
+  },
+  {
+    "variable_a": "ANAPHYLAXIS",
+    "variable_b": "TPR"
+  },
+  {
+    "variable_a": "ANAPHYLAXIS",
+    "variable_b": "EXPCO2"
+  },
+  {
+    "variable_a": "ANAPHYLAXIS",
+    "variable_b": "KINKEDTUBE"
+  },
+  {
+    "variable_a": "ANAPHYLAXIS",
+    "variable_b": "MINVOL"
+  },
+  {
+    "variable_a": "ANAPHYLAXIS",
+    "variable_b": "FIO2"
+  },
+  {
+    "variable_a": "ANAPHYLAXIS",
+    "variable_b": "PVSAT"
+  },
+  {
+    "variable_a": "ANAPHYLAXIS",
+    "variable_b": "SAO2"
+  },
+  {
+    "variable_a": "ANAPHYLAXIS",
+    "variable_b": "PAP"
+  },
+  {
+    "variable_a": "ANAPHYLAXIS",
+    "variable_b": "PULMEMBOLUS"
+  },
+  {
+    "variable_a": "ANAPHYLAXIS",
+    "variable_b": "SHUNT"
+  },
+  {
+    "variable_a": "ANAPHYLAXIS",
+    "variable_b": "INTUBATION"
+  },
+  {
+    "variable_a": "ANAPHYLAXIS",
+    "variable_b": "PRESS"
+  },
+  {
+    "variable_a": "ANAPHYLAXIS",
+    "variable_b": "DISCONNECT"
+  },
+  {
+    "variable_a": "ANAPHYLAXIS",
+    "variable_b": "MINVOLSET"
+  },
+  {
+    "variable_a": "ANAPHYLAXIS",
+    "variable_b": "VENTMACH"
+  },
+  {
+    "variable_a": "ANAPHYLAXIS",
+    "variable_b": "VENTTUBE"
+  },
+  {
+    "variable_a": "ANAPHYLAXIS",
+    "variable_b": "VENTLUNG"
+  },
+  {
+    "variable_a": "ANAPHYLAXIS",
+    "variable_b": "VENTALV"
+  },
+  {
+    "variable_a": "ANAPHYLAXIS",
+    "variable_b": "ARTCO2"
+  },
+  {
+    "variable_a": "ANAPHYLAXIS",
+    "variable_b": "CATECHOL"
+  },
+  {
+    "variable_a": "ANAPHYLAXIS",
+    "variable_b": "HR"
+  },
+  {
+    "variable_a": "ANAPHYLAXIS",
+    "variable_b": "CO"
+  },
+  {
+    "variable_a": "ANAPHYLAXIS",
+    "variable_b": "BP"
+  },
+  {
+    "variable_a": "TPR",
+    "variable_b": "EXPCO2"
+  },
+  {
+    "variable_a": "TPR",
+    "variable_b": "KINKEDTUBE"
+  },
+  {
+    "variable_a": "TPR",
+    "variable_b": "MINVOL"
+  },
+  {
+    "variable_a": "TPR",
+    "variable_b": "FIO2"
+  },
+  {
+    "variable_a": "TPR",
+    "variable_b": "PVSAT"
+  },
+  {
+    "variable_a": "TPR",
+    "variable_b": "SAO2"
+  },
+  {
+    "variable_a": "TPR",
+    "variable_b": "PAP"
+  },
+  {
+    "variable_a": "TPR",
+    "variable_b": "PULMEMBOLUS"
+  },
+  {
+    "variable_a": "TPR",
+    "variable_b": "SHUNT"
+  },
+  {
+    "variable_a": "TPR",
+    "variable_b": "INTUBATION"
+  },
+  {
+    "variable_a": "TPR",
+    "variable_b": "PRESS"
+  },
+  {
+    "variable_a": "TPR",
+    "variable_b": "DISCONNECT"
+  },
+  {
+    "variable_a": "TPR",
+    "variable_b": "MINVOLSET"
+  },
+  {
+    "variable_a": "TPR",
+    "variable_b": "VENTMACH"
+  },
+  {
+    "variable_a": "TPR",
+    "variable_b": "VENTTUBE"
+  },
+  {
+    "variable_a": "TPR",
+    "variable_b": "VENTLUNG"
+  },
+  {
+    "variable_a": "TPR",
+    "variable_b": "VENTALV"
+  },
+  {
+    "variable_a": "TPR",
+    "variable_b": "ARTCO2"
+  },
+  {
+    "variable_a": "TPR",
+    "variable_b": "CATECHOL"
+  },
+  {
+    "variable_a": "TPR",
+    "variable_b": "HR"
+  },
+  {
+    "variable_a": "TPR",
+    "variable_b": "CO"
+  },
+  {
+    "variable_a": "TPR",
+    "variable_b": "BP"
+  },
+  {
+    "variable_a": "EXPCO2",
+    "variable_b": "KINKEDTUBE"
+  },
+  {
+    "variable_a": "EXPCO2",
+    "variable_b": "MINVOL"
+  },
+  {
+    "variable_a": "EXPCO2",
+    "variable_b": "FIO2"
+  },
+  {
+    "variable_a": "EXPCO2",
+    "variable_b": "PVSAT"
+  },
+  {
+    "variable_a": "EXPCO2",
+    "variable_b": "SAO2"
+  },
+  {
+    "variable_a": "EXPCO2",
+    "variable_b": "PAP"
+  },
+  {
+    "variable_a": "EXPCO2",
+    "variable_b": "PULMEMBOLUS"
+  },
+  {
+    "variable_a": "EXPCO2",
+    "variable_b": "SHUNT"
+  },
+  {
+    "variable_a": "EXPCO2",
+    "variable_b": "INTUBATION"
+  },
+  {
+    "variable_a": "EXPCO2",
+    "variable_b": "PRESS"
+  },
+  {
+    "variable_a": "EXPCO2",
+    "variable_b": "DISCONNECT"
+  },
+  {
+    "variable_a": "EXPCO2",
+    "variable_b": "MINVOLSET"
+  },
+  {
+    "variable_a": "EXPCO2",
+    "variable_b": "VENTMACH"
+  },
+  {
+    "variable_a": "EXPCO2",
+    "variable_b": "VENTTUBE"
+  },
+  {
+    "variable_a": "EXPCO2",
+    "variable_b": "VENTLUNG"
+  },
+  {
+    "variable_a": "EXPCO2",
+    "variable_b": "VENTALV"
+  },
+  {
+    "variable_a": "EXPCO2",
+    "variable_b": "ARTCO2"
+  },
+  {
+    "variable_a": "EXPCO2",
+    "variable_b": "CATECHOL"
+  },
+  {
+    "variable_a": "EXPCO2",
+    "variable_b": "HR"
+  },
+  {
+    "variable_a": "EXPCO2",
+    "variable_b": "CO"
+  },
+  {
+    "variable_a": "EXPCO2",
+    "variable_b": "BP"
+  },
+  {
+    "variable_a": "KINKEDTUBE",
+    "variable_b": "MINVOL"
+  },
+  {
+    "variable_a": "KINKEDTUBE",
+    "variable_b": "FIO2"
+  },
+  {
+    "variable_a": "KINKEDTUBE",
+    "variable_b": "PVSAT"
+  },
+  {
+    "variable_a": "KINKEDTUBE",
+    "variable_b": "SAO2"
+  },
+  {
+    "variable_a": "KINKEDTUBE",
+    "variable_b": "PAP"
+  },
+  {
+    "variable_a": "KINKEDTUBE",
+    "variable_b": "PULMEMBOLUS"
+  },
+  {
+    "variable_a": "KINKEDTUBE",
+    "variable_b": "SHUNT"
+  },
+  {
+    "variable_a": "KINKEDTUBE",
+    "variable_b": "INTUBATION"
+  },
+  {
+    "variable_a": "KINKEDTUBE",
+    "variable_b": "PRESS"
+  },
+  {
+    "variable_a": "KINKEDTUBE",
+    "variable_b": "DISCONNECT"
+  },
+  {
+    "variable_a": "KINKEDTUBE",
+    "variable_b": "MINVOLSET"
+  },
+  {
+    "variable_a": "KINKEDTUBE",
+    "variable_b": "VENTMACH"
+  },
+  {
+    "variable_a": "KINKEDTUBE",
+    "variable_b": "VENTTUBE"
+  },
+  {
+    "variable_a": "KINKEDTUBE",
+    "variable_b": "VENTLUNG"
+  },
+  {
+    "variable_a": "KINKEDTUBE",
+    "variable_b": "VENTALV"
+  },
+  {
+    "variable_a": "KINKEDTUBE",
+    "variable_b": "ARTCO2"
+  },
+  {
+    "variable_a": "KINKEDTUBE",
+    "variable_b": "CATECHOL"
+  },
+  {
+    "variable_a": "KINKEDTUBE",
+    "variable_b": "HR"
+  },
+  {
+    "variable_a": "KINKEDTUBE",
+    "variable_b": "CO"
+  },
+  {
+    "variable_a": "KINKEDTUBE",
+    "variable_b": "BP"
+  },
+  {
+    "variable_a": "MINVOL",
+    "variable_b": "FIO2"
+  },
+  {
+    "variable_a": "MINVOL",
+    "variable_b": "PVSAT"
+  },
+  {
+    "variable_a": "MINVOL",
+    "variable_b": "SAO2"
+  },
+  {
+    "variable_a": "MINVOL",
+    "variable_b": "PAP"
+  },
+  {
+    "variable_a": "MINVOL",
+    "variable_b": "PULMEMBOLUS"
+  },
+  {
+    "variable_a": "MINVOL",
+    "variable_b": "SHUNT"
+  },
+  {
+    "variable_a": "MINVOL",
+    "variable_b": "INTUBATION"
+  },
+  {
+    "variable_a": "MINVOL",
+    "variable_b": "PRESS"
+  },
+  {
+    "variable_a": "MINVOL",
+    "variable_b": "DISCONNECT"
+  },
+  {
+    "variable_a": "MINVOL",
+    "variable_b": "MINVOLSET"
+  },
+  {
+    "variable_a": "MINVOL",
+    "variable_b": "VENTMACH"
+  },
+  {
+    "variable_a": "MINVOL",
+    "variable_b": "VENTTUBE"
+  },
+  {
+    "variable_a": "MINVOL",
+    "variable_b": "VENTLUNG"
+  },
+  {
+    "variable_a": "MINVOL",
+    "variable_b": "VENTALV"
+  },
+  {
+    "variable_a": "MINVOL",
+    "variable_b": "ARTCO2"
+  },
+  {
+    "variable_a": "MINVOL",
+    "variable_b": "CATECHOL"
+  },
+  {
+    "variable_a": "MINVOL",
+    "variable_b": "HR"
+  },
+  {
+    "variable_a": "MINVOL",
+    "variable_b": "CO"
+  },
+  {
+    "variable_a": "MINVOL",
+    "variable_b": "BP"
+  },
+  {
+    "variable_a": "FIO2",
+    "variable_b": "PVSAT"
+  },
+  {
+    "variable_a": "FIO2",
+    "variable_b": "SAO2"
+  },
+  {
+    "variable_a": "FIO2",
+    "variable_b": "PAP"
+  },
+  {
+    "variable_a": "FIO2",
+    "variable_b": "PULMEMBOLUS"
+  },
+  {
+    "variable_a": "FIO2",
+    "variable_b": "SHUNT"
+  },
+  {
+    "variable_a": "FIO2",
+    "variable_b": "INTUBATION"
+  },
+  {
+    "variable_a": "FIO2",
+    "variable_b": "PRESS"
+  },
+  {
+    "variable_a": "FIO2",
+    "variable_b": "DISCONNECT"
+  },
+  {
+    "variable_a": "FIO2",
+    "variable_b": "MINVOLSET"
+  },
+  {
+    "variable_a": "FIO2",
+    "variable_b": "VENTMACH"
+  },
+  {
+    "variable_a": "FIO2",
+    "variable_b": "VENTTUBE"
+  },
+  {
+    "variable_a": "FIO2",
+    "variable_b": "VENTLUNG"
+  },
+  {
+    "variable_a": "FIO2",
+    "variable_b": "VENTALV"
+  },
+  {
+    "variable_a": "FIO2",
+    "variable_b": "ARTCO2"
+  },
+  {
+    "variable_a": "FIO2",
+    "variable_b": "CATECHOL"
+  },
+  {
+    "variable_a": "FIO2",
+    "variable_b": "HR"
+  },
+  {
+    "variable_a": "FIO2",
+    "variable_b": "CO"
+  },
+  {
+    "variable_a": "FIO2",
+    "variable_b": "BP"
+  },
+  {
+    "variable_a": "PVSAT",
+    "variable_b": "SAO2"
+  },
+  {
+    "variable_a": "PVSAT",
+    "variable_b": "PAP"
+  },
+  {
+    "variable_a": "PVSAT",
+    "variable_b": "PULMEMBOLUS"
+  },
+  {
+    "variable_a": "PVSAT",
+    "variable_b": "SHUNT"
+  },
+  {
+    "variable_a": "PVSAT",
+    "variable_b": "INTUBATION"
+  },
+  {
+    "variable_a": "PVSAT",
+    "variable_b": "PRESS"
+  },
+  {
+    "variable_a": "PVSAT",
+    "variable_b": "DISCONNECT"
+  },
+  {
+    "variable_a": "PVSAT",
+    "variable_b": "MINVOLSET"
+  },
+  {
+    "variable_a": "PVSAT",
+    "variable_b": "VENTMACH"
+  },
+  {
+    "variable_a": "PVSAT",
+    "variable_b": "VENTTUBE"
+  },
+  {
+    "variable_a": "PVSAT",
+    "variable_b": "VENTLUNG"
+  },
+  {
+    "variable_a": "PVSAT",
+    "variable_b": "VENTALV"
+  },
+  {
+    "variable_a": "PVSAT",
+    "variable_b": "ARTCO2"
+  },
+  {
+    "variable_a": "PVSAT",
+    "variable_b": "CATECHOL"
+  },
+  {
+    "variable_a": "PVSAT",
+    "variable_b": "HR"
+  },
+  {
+    "variable_a": "PVSAT",
+    "variable_b": "CO"
+  },
+  {
+    "variable_a": "PVSAT",
+    "variable_b": "BP"
+  },
+  {
+    "variable_a": "SAO2",
+    "variable_b": "PAP"
+  },
+  {
+    "variable_a": "SAO2",
+    "variable_b": "PULMEMBOLUS"
+  },
+  {
+    "variable_a": "SAO2",
+    "variable_b": "SHUNT"
+  },
+  {
+    "variable_a": "SAO2",
+    "variable_b": "INTUBATION"
+  },
+  {
+    "variable_a": "SAO2",
+    "variable_b": "PRESS"
+  },
+  {
+    "variable_a": "SAO2",
+    "variable_b": "DISCONNECT"
+  },
+  {
+    "variable_a": "SAO2",
+    "variable_b": "MINVOLSET"
+  },
+  {
+    "variable_a": "SAO2",
+    "variable_b": "VENTMACH"
+  },
+  {
+    "variable_a": "SAO2",
+    "variable_b": "VENTTUBE"
+  },
+  {
+    "variable_a": "SAO2",
+    "variable_b": "VENTLUNG"
+  },
+  {
+    "variable_a": "SAO2",
+    "variable_b": "VENTALV"
+  },
+  {
+    "variable_a": "SAO2",
+    "variable_b": "ARTCO2"
+  },
+  {
+    "variable_a": "SAO2",
+    "variable_b": "CATECHOL"
+  },
+  {
+    "variable_a": "SAO2",
+    "variable_b": "HR"
+  },
+  {
+    "variable_a": "SAO2",
+    "variable_b": "CO"
+  },
+  {
+    "variable_a": "SAO2",
+    "variable_b": "BP"
+  },
+  {
+    "variable_a": "PAP",
+    "variable_b": "PULMEMBOLUS"
+  },
+  {
+    "variable_a": "PAP",
+    "variable_b": "SHUNT"
+  },
+  {
+    "variable_a": "PAP",
+    "variable_b": "INTUBATION"
+  },
+  {
+    "variable_a": "PAP",
+    "variable_b": "PRESS"
+  },
+  {
+    "variable_a": "PAP",
+    "variable_b": "DISCONNECT"
+  },
+  {
+    "variable_a": "PAP",
+    "variable_b": "MINVOLSET"
+  },
+  {
+    "variable_a": "PAP",
+    "variable_b": "VENTMACH"
+  },
+  {
+    "variable_a": "PAP",
+    "variable_b": "VENTTUBE"
+  },
+  {
+    "variable_a": "PAP",
+    "variable_b": "VENTLUNG"
+  },
+  {
+    "variable_a": "PAP",
+    "variable_b": "VENTALV"
+  },
+  {
+    "variable_a": "PAP",
+    "variable_b": "ARTCO2"
+  },
+  {
+    "variable_a": "PAP",
+    "variable_b": "CATECHOL"
+  },
+  {
+    "variable_a": "PAP",
+    "variable_b": "HR"
+  },
+  {
+    "variable_a": "PAP",
+    "variable_b": "CO"
+  },
+  {
+    "variable_a": "PAP",
+    "variable_b": "BP"
+  },
+  {
+    "variable_a": "PULMEMBOLUS",
+    "variable_b": "SHUNT"
+  },
+  {
+    "variable_a": "PULMEMBOLUS",
+    "variable_b": "INTUBATION"
+  },
+  {
+    "variable_a": "PULMEMBOLUS",
+    "variable_b": "PRESS"
+  },
+  {
+    "variable_a": "PULMEMBOLUS",
+    "variable_b": "DISCONNECT"
+  },
+  {
+    "variable_a": "PULMEMBOLUS",
+    "variable_b": "MINVOLSET"
+  },
+  {
+    "variable_a": "PULMEMBOLUS",
+    "variable_b": "VENTMACH"
+  },
+  {
+    "variable_a": "PULMEMBOLUS",
+    "variable_b": "VENTTUBE"
+  },
+  {
+    "variable_a": "PULMEMBOLUS",
+    "variable_b": "VENTLUNG"
+  },
+  {
+    "variable_a": "PULMEMBOLUS",
+    "variable_b": "VENTALV"
+  },
+  {
+    "variable_a": "PULMEMBOLUS",
+    "variable_b": "ARTCO2"
+  },
+  {
+    "variable_a": "PULMEMBOLUS",
+    "variable_b": "CATECHOL"
+  },
+  {
+    "variable_a": "PULMEMBOLUS",
+    "variable_b": "HR"
+  },
+  {
+    "variable_a": "PULMEMBOLUS",
+    "variable_b": "CO"
+  },
+  {
+    "variable_a": "PULMEMBOLUS",
+    "variable_b": "BP"
+  },
+  {
+    "variable_a": "SHUNT",
+    "variable_b": "INTUBATION"
+  },
+  {
+    "variable_a": "SHUNT",
+    "variable_b": "PRESS"
+  },
+  {
+    "variable_a": "SHUNT",
+    "variable_b": "DISCONNECT"
+  },
+  {
+    "variable_a": "SHUNT",
+    "variable_b": "MINVOLSET"
+  },
+  {
+    "variable_a": "SHUNT",
+    "variable_b": "VENTMACH"
+  },
+  {
+    "variable_a": "SHUNT",
+    "variable_b": "VENTTUBE"
+  },
+  {
+    "variable_a": "SHUNT",
+    "variable_b": "VENTLUNG"
+  },
+  {
+    "variable_a": "SHUNT",
+    "variable_b": "VENTALV"
+  },
+  {
+    "variable_a": "SHUNT",
+    "variable_b": "ARTCO2"
+  },
+  {
+    "variable_a": "SHUNT",
+    "variable_b": "CATECHOL"
+  },
+  {
+    "variable_a": "SHUNT",
+    "variable_b": "HR"
+  },
+  {
+    "variable_a": "SHUNT",
+    "variable_b": "CO"
+  },
+  {
+    "variable_a": "SHUNT",
+    "variable_b": "BP"
+  },
+  {
+    "variable_a": "INTUBATION",
+    "variable_b": "PRESS"
+  },
+  {
+    "variable_a": "INTUBATION",
+    "variable_b": "DISCONNECT"
+  },
+  {
+    "variable_a": "INTUBATION",
+    "variable_b": "MINVOLSET"
+  },
+  {
+    "variable_a": "INTUBATION",
+    "variable_b": "VENTMACH"
+  },
+  {
+    "variable_a": "INTUBATION",
+    "variable_b": "VENTTUBE"
+  },
+  {
+    "variable_a": "INTUBATION",
+    "variable_b": "VENTLUNG"
+  },
+  {
+    "variable_a": "INTUBATION",
+    "variable_b": "VENTALV"
+  },
+  {
+    "variable_a": "INTUBATION",
+    "variable_b": "ARTCO2"
+  },
+  {
+    "variable_a": "INTUBATION",
+    "variable_b": "CATECHOL"
+  },
+  {
+    "variable_a": "INTUBATION",
+    "variable_b": "HR"
+  },
+  {
+    "variable_a": "INTUBATION",
+    "variable_b": "CO"
+  },
+  {
+    "variable_a": "INTUBATION",
+    "variable_b": "BP"
+  },
+  {
+    "variable_a": "PRESS",
+    "variable_b": "DISCONNECT"
+  },
+  {
+    "variable_a": "PRESS",
+    "variable_b": "MINVOLSET"
+  },
+  {
+    "variable_a": "PRESS",
+    "variable_b": "VENTMACH"
+  },
+  {
+    "variable_a": "PRESS",
+    "variable_b": "VENTTUBE"
+  },
+  {
+    "variable_a": "PRESS",
+    "variable_b": "VENTLUNG"
+  },
+  {
+    "variable_a": "PRESS",
+    "variable_b": "VENTALV"
+  },
+  {
+    "variable_a": "PRESS",
+    "variable_b": "ARTCO2"
+  },
+  {
+    "variable_a": "PRESS",
+    "variable_b": "CATECHOL"
+  },
+  {
+    "variable_a": "PRESS",
+    "variable_b": "HR"
+  },
+  {
+    "variable_a": "PRESS",
+    "variable_b": "CO"
+  },
+  {
+    "variable_a": "PRESS",
+    "variable_b": "BP"
+  },
+  {
+    "variable_a": "DISCONNECT",
+    "variable_b": "MINVOLSET"
+  },
+  {
+    "variable_a": "DISCONNECT",
+    "variable_b": "VENTMACH"
+  },
+  {
+    "variable_a": "DISCONNECT",
+    "variable_b": "VENTTUBE"
+  },
+  {
+    "variable_a": "DISCONNECT",
+    "variable_b": "VENTLUNG"
+  },
+  {
+    "variable_a": "DISCONNECT",
+    "variable_b": "VENTALV"
+  },
+  {
+    "variable_a": "DISCONNECT",
+    "variable_b": "ARTCO2"
+  },
+  {
+    "variable_a": "DISCONNECT",
+    "variable_b": "CATECHOL"
+  },
+  {
+    "variable_a": "DISCONNECT",
+    "variable_b": "HR"
+  },
+  {
+    "variable_a": "DISCONNECT",
+    "variable_b": "CO"
+  },
+  {
+    "variable_a": "DISCONNECT",
+    "variable_b": "BP"
+  },
+  {
+    "variable_a": "MINVOLSET",
+    "variable_b": "VENTMACH"
+  },
+  {
+    "variable_a": "MINVOLSET",
+    "variable_b": "VENTTUBE"
+  },
+  {
+    "variable_a": "MINVOLSET",
+    "variable_b": "VENTLUNG"
+  },
+  {
+    "variable_a": "MINVOLSET",
+    "variable_b": "VENTALV"
+  },
+  {
+    "variable_a": "MINVOLSET",
+    "variable_b": "ARTCO2"
+  },
+  {
+    "variable_a": "MINVOLSET",
+    "variable_b": "CATECHOL"
+  },
+  {
+    "variable_a": "MINVOLSET",
+    "variable_b": "HR"
+  },
+  {
+    "variable_a": "MINVOLSET",
+    "variable_b": "CO"
+  },
+  {
+    "variable_a": "MINVOLSET",
+    "variable_b": "BP"
+  },
+  {
+    "variable_a": "VENTMACH",
+    "variable_b": "VENTTUBE"
+  },
+  {
+    "variable_a": "VENTMACH",
+    "variable_b": "VENTLUNG"
+  },
+  {
+    "variable_a": "VENTMACH",
+    "variable_b": "VENTALV"
+  },
+  {
+    "variable_a": "VENTMACH",
+    "variable_b": "ARTCO2"
+  },
+  {
+    "variable_a": "VENTMACH",
+    "variable_b": "CATECHOL"
+  },
+  {
+    "variable_a": "VENTMACH",
+    "variable_b": "HR"
+  },
+  {
+    "variable_a": "VENTMACH",
+    "variable_b": "CO"
+  },
+  {
+    "variable_a": "VENTMACH",
+    "variable_b": "BP"
+  },
+  {
+    "variable_a": "VENTTUBE",
+    "variable_b": "VENTLUNG"
+  },
+  {
+    "variable_a": "VENTTUBE",
+    "variable_b": "VENTALV"
+  },
+  {
+    "variable_a": "VENTTUBE",
+    "variable_b": "ARTCO2"
+  },
+  {
+    "variable_a": "VENTTUBE",
+    "variable_b": "CATECHOL"
+  },
+  {
+    "variable_a": "VENTTUBE",
+    "variable_b": "HR"
+  },
+  {
+    "variable_a": "VENTTUBE",
+    "variable_b": "CO"
+  },
+  {
+    "variable_a": "VENTTUBE",
+    "variable_b": "BP"
+  },
+  {
+    "variable_a": "VENTLUNG",
+    "variable_b": "VENTALV"
+  },
+  {
+    "variable_a": "VENTLUNG",
+    "variable_b": "ARTCO2"
+  },
+  {
+    "variable_a": "VENTLUNG",
+    "variable_b": "CATECHOL"
+  },
+  {
+    "variable_a": "VENTLUNG",
+    "variable_b": "HR"
+  },
+  {
+    "variable_a": "VENTLUNG",
+    "variable_b": "CO"
+  },
+  {
+    "variable_a": "VENTLUNG",
+    "variable_b": "BP"
+  },
+  {
+    "variable_a": "VENTALV",
+    "variable_b": "ARTCO2"
+  },
+  {
+    "variable_a": "VENTALV",
+    "variable_b": "CATECHOL"
+  },
+  {
+    "variable_a": "VENTALV",
+    "variable_b": "HR"
+  },
+  {
+    "variable_a": "VENTALV",
+    "variable_b": "CO"
+  },
+  {
+    "variable_a": "VENTALV",
+    "variable_b": "BP"
+  },
+  {
+    "variable_a": "ARTCO2",
+    "variable_b": "CATECHOL"
+  },
+  {
+    "variable_a": "ARTCO2",
+    "variable_b": "HR"
+  },
+  {
+    "variable_a": "ARTCO2",
+    "variable_b": "CO"
+  },
+  {
+    "variable_a": "ARTCO2",
+    "variable_b": "BP"
+  },
+  {
+    "variable_a": "CATECHOL",
+    "variable_b": "HR"
+  },
+  {
+    "variable_a": "CATECHOL",
+    "variable_b": "CO"
+  },
+  {
+    "variable_a": "CATECHOL",
+    "variable_b": "BP"
+  },
+  {
+    "variable_a": "HR",
+    "variable_b": "CO"
+  },
+  {
+    "variable_a": "HR",
+    "variable_b": "BP"
+  },
+  {
+    "variable_a": "CO",
+    "variable_b": "BP"
+  }
+]

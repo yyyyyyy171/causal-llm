@@ -1,0 +1,19 @@
+{
+  "model": "Qwen/Qwen3-4B-Instruct-2507",
+  "quant": "4bit",
+  "local_files_only": true,
+  "runs": 5,
+  "batch_size": 12,
+  "temperature": 0.7,
+  "top_p": 0.9,
+  "max_new_tokens": 192,
+  "base_seed": 20261010,
+  "modes": ["real", "anon"],
+  "networks": ["ASIA", "CHILD", "INSURANCE", "ALARM", "HAILFINDER"],
+  "notes": {
+    "model": "文档要求本地 4B-8B 开源模型。本机是 RTX 3060 Laptop 6GB，实测只能跑 Qwen3-4B-Instruct-2507 的 4bit；换成 8B 需要 4090 或 WSL2。",
+    "runs": "每对变量采样 5 次，取多数投票；一致性（consistency）写进结果表。",
+    "batch_size": "12 在 6GB 上稳定。若出现显存不足，先降到 8，再降到 4。",
+    "base_seed": "每一次采样的种子 = base_seed + 批次起点，保证可复现。"
+  }
+}
