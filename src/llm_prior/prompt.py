@@ -35,6 +35,27 @@ ALLOWED_RELATIONS = (
 PROMPT_VERSION = "v3-no-invented-mediators"
 
 
+# 第二次提问方式：直接问马尔可夫毯成员资格。
+#
+# 为什么需要它：第一种 Prompt 问的是"有没有直接边"，而马尔可夫毯 =
+# 父子 + 配偶，配偶并不是邻居。诊断结果显示模型对配偶的判断在两个网络上
+# 完全相反（ASIA 0/2 判成有边、CHILD 5/5 判成有边），而且它声称的"边"里
+# 真正属于毯的只有 40% / 22%。问题问错了，再精巧的融合方式也救不回来。
+#
+# 这一版把问题改成"给定模型里其余所有变量之后，A 与 B 是否仍然相互依赖"，
+# 也就是"B 是否在 A 的马尔可夫毯里"——直接对准任务的对象。
+MB_PROMPT_VERSION = "mb-v1-blanket-membership"
+
+
+FORMAT_EXAMPLE_MB = """{
+    "variable_a": "NAME_A",
+    "variable_b": "NAME_B",
+    "in_markov_blanket": true,
+    "confidence": 0.75,
+    "reason": "one sentence"
+}"""
+
+
 FORMAT_EXAMPLE = """{
     "variable_a": "NAME_A",
     "variable_b": "NAME_B",
@@ -161,6 +182,105 @@ format illustration: replace every field with your own answer, and use
 the real variable names {name_a} and {name_b}.
 
 {FORMAT_EXAMPLE}
+"""
+
+    return prompt
+
+
+def build_markov_blanket_prompt(
+    variable_a: str,
+    variable_b: str,
+    network: str = "ALARM",
+    anonymous: bool = False,
+) -> str:
+    """
+    直接询问马尔可夫毯成员资格的 Prompt。
+
+    与 build_causal_prompt 的区别：不再问"有没有直接边"，而是问
+    "给定模型里其余所有变量之后，A 与 B 是否仍然相互依赖"，
+    这正是马尔可夫毯的定义（父子 + 配偶），也就是下游算法真正需要的东西。
+    """
+
+    if anonymous:
+
+        mapping = anonymous_names(network)
+        name_a = mapping.get(variable_a, "V??")
+        name_b = mapping.get(variable_b, "V??")
+
+        setting = (
+            "You are analyzing a probabilistic graphical model.\n"
+            "The variables have been anonymized: their real names and\n"
+            "meanings are hidden from you. You only know the two labels."
+        )
+
+        meaning_a = "hidden"
+        meaning_b = "hidden"
+
+    else:
+
+        name_a = variable_a
+        name_b = variable_b
+
+        setting = (
+            "You are analyzing the following Bayesian network:\n"
+            f"{NETWORK_DOMAIN.get(network, network)}."
+        )
+
+        meaning_a = variable_meaning(network, variable_a)
+        meaning_b = variable_meaning(network, variable_b)
+
+    prompt = f"""
+You are a causal analysis assistant.
+
+{setting}
+
+Answer one question about two of its variables.
+
+Background. In a causal model, the Markov blanket of a variable is the
+smallest set of variables that makes it independent of everything else.
+It consists of three kinds of variables:
+
+  * its parents, which cause it directly;
+  * its children, which it causes directly;
+  * the other parents of its children, called its spouses, which share a
+    common effect with it.
+
+Two variables belong to each other's Markov blanket exactly when they
+remain dependent after you condition on every other variable in the
+model - that is, when knowing one still tells you something about the
+other even after everything else is known.
+
+Question. Is variable B in the Markov blanket of variable A?
+(The relation is symmetric, so this is the same as asking whether A is in
+the Markov blanket of B.)
+
+Rules:
+
+1. Answer from the meaning of the variables and the structure this implies.
+   Never use a dataset, a published graph, or remembered experimental
+   results.
+2. Answer YES when the two variables influence each other directly, or when
+   they share a common effect (one is a cause of the other's effect).
+   Answer NO when they are connected only through a chain, or only through
+   a common cause, with nothing left over once everything else is known.
+3. Do not invent intermediate variables.
+4. "confidence" must be a number between 0 and 1. Do not output 0 unless you
+   truly have no information at all.
+5. Output ONLY valid JSON, with no markdown and no extra text.
+
+Variable A:
+Name: {name_a}
+Meaning: {meaning_a}
+
+Variable B:
+Name: {name_b}
+Meaning: {meaning_b}
+
+Return exactly this JSON structure. The example values are only a format
+illustration: replace every field with your own answer, and use the real
+variable names {name_a} and {name_b}.
+
+{FORMAT_EXAMPLE_MB}
 """
 
     return prompt

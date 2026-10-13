@@ -1,0 +1,2 @@
+variable_a,variable_b,in_markov_blanket,positive_ratio,consistency,final_confidence,relation_count
+asia,tub,True,1.000,1.000,0.900,"{"uncertain": 1}"

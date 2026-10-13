@@ -1,0 +1,84 @@
+{
+  "title": "第 1 周产出：环境与规范",
+  "subtitle": "选题二 · 语言模型先验引导的因果特征选择",
+  "out": "E:\\汇报\\周产出\\第01周_环境与规范.docx",
+  "sections": [
+    {
+      "type": "para",
+      "text": "文档对第 1 周的要求：环境与规范——Git、conda、远程用 4090（ssh、tmux、nvidia-smi）；统一实验规范（固定随机种子、配置文件、日志落盘、结果表由脚本生成）；用 transformers 和 vLLM 各跑通一个 4B–8B 的开源模型，并让它按指定的 JSON 格式输出。验收产出：个人分支、README、一段结构化输出的结果、4090 使用约定。"
+    },
+    {"type": "heading", "text": "一、Git 与个人分支"},
+    {
+      "type": "bullets",
+      "items": [
+        "仓库：E:\\Causal-LLM，首次提交 eced6ec，个人分支 yyyyyyy171/topic2。",
+        "首次提交由 scripts/init_git.ps1 一键完成（Codex 沙箱对 .git 只读，必须在自己的终端执行）。",
+        ".gitignore 排除 __pycache__、logs/*.log、data/*/llm_cache/、OpenML 原始 CSV 与试跑产物；固定划分与列类型文件必须进版本库，因为它们决定可复现性。"
+      ]
+    },
+    {"type": "heading", "text": "二、conda 环境"},
+    {
+      "type": "table",
+      "header": ["环境", "用途", "关键依赖"],
+      "rows": [
+        ["D:\\Anaconda（base）", "CPU 分析：马尔可夫毯发现、融合实验、评测、画图", "numpy、scipy、pandas、matplotlib"],
+        ["D:\\Anaconda\\envs\\llm_causal_fs", "GPU 推理：加载本地 Qwen 模型", "torch 2.5.1+cu121、transformers、bitsandbytes"],
+        ["D:\\R\\R-4.6.1", "bnlearn 基线、先验融合实验", "bnlearn 5.2.1"],
+        ["C:\\Program Files\\MATLAB\\R2023a", "HITON-MB 基线（Causal-Learner 工具箱）", "—"]
+      ]
+    },
+    {"type": "heading", "text": "三、统一实验规范"},
+    {
+      "type": "bullets",
+      "items": [
+        "固定随机种子：推理种子 = base_seed + 批次起点；抽样种子 = seed + 重复编号，全部写在 configs/ 里。",
+        "配置文件：configs/llm_prior.json、configs/mb_discovery.json、configs/feature_selection.json；脚本按“配置做默认值、命令行只做覆盖”读取。",
+        "日志落盘：src/common/run_log.py 把命令、配置、git 提交、Python 与显卡信息写进 logs/<脚本>_<时间戳>.log，结尾记录耗时与退出码。",
+        "结果表由脚本生成：results/ 下每一张表都能用一条命令重跑，不手工改 CSV。"
+      ]
+    },
+    {"type": "heading", "text": "四、模型跑通情况"},
+    {
+      "type": "table",
+      "header": ["要求", "状态", "说明"],
+      "rows": [
+        ["transformers 跑通 4B–8B 开源模型", "完成", "Qwen3-4B-Instruct-2507（4bit）与 Qwen/Qwen3-8B（4bit）都能加载；8B 加载 33 秒、显存 6002 MiB"],
+        ["按指定 JSON 格式输出", "完成", "Prompt 强制输出 in_markov_blanket / direct_edge / relation / confidence / reason；解析器容错（去代码围栏、截取花括号）"],
+        ["vLLM 跑通", "本机不可行", "pip download vllm 返回 No matching distribution found：vLLM 只提供 Linux 发行版，需 WSL2 或 Linux 的 4090"]
+      ]
+    },
+    {"type": "heading", "text": "五、一段结构化输出的结果"},
+    {
+      "type": "para",
+      "text": "下面是 ASIA 网络一个变量对的真实模型输出（真实名、每条采样 5 次后聚合），可以直接看出模型按指定结构返回："
+    },
+    {
+      "type": "table",
+      "header": ["字段", "取值"],
+      "rows": [
+        ["variable_a", "asia"],
+        ["variable_b", "tub"],
+        ["direct_edge", "true"],
+        ["relation", "A_to_B"],
+        ["confidence", "0.85"],
+        ["consistency", "1.000（5 次采样全部一致）"],
+        ["reason", "visiting Asia is a direct risk factor for tuberculosis, so tub is a child of asia"]
+      ]
+    },
+    {"type": "heading", "text": "六、4090 使用约定（摘要）"},
+    {
+      "type": "table",
+      "header": ["约定", "内容"],
+      "rows": [
+        ["共享排期表", "长于一小时的任务提前登记；跑之前先 nvidia-smi 看一眼"],
+        ["缓存约束", "语言模型的输入输出全部落盘，同一输入不重复计算（已实现：data/<网络>/llm_cache/）"],
+        ["调试验证", "小数据、小模型在本机完成；4090 只跑正式实验"],
+        ["长任务", "放 tmux 里跑，日志落盘，被打断后能续跑（已实现：一次生成落一次盘，重跑自动跳过）"]
+      ]
+    },
+    {
+      "type": "para",
+      "text": "本机能力对照：RTX 3060 Laptop 6GB。8B 4bit 能加载但长跑会退化（实测 1.75 小时/条），ASIA 一个提问方式按正常速度约 1.9 小时，CHILD 约 12.7 小时，INSURANCE 约 23 小时，ALARM 约 44 小时，HAILFINDER 约 102 小时——大网络必须用共用的 4090，这是文档假设的前提。"
+    }
+  ]
+}

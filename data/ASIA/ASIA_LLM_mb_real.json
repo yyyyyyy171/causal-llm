@@ -1,0 +1,2616 @@
+[
+  {
+    "variable_a": "asia",
+    "variable_b": "bronc",
+    "runs": [
+      {
+        "variable_a": "asia",
+        "variable_b": "bronc",
+        "run_id": 1,
+        "seed": 20261022,
+        "prompt_version": "mb-v1-blanket-membership",
+        "raw_response": "{\n    \"variable_a\": \"asia\",\n    \"variable_b\": \"bronc\",\n    \"in_markov_blanket\": false,\n    \"confidence\": 0.95,\n    \"reason\": \"Asia is a background factor that may influence bronchitis indirectly through other variables like tobacco use or lung disease, but there is no direct causal link or shared effect between asia and bronc; thus, they do not belong to each other's Markov blanket.\"\n}",
+        "parsed": {
+          "variable_a": "asia",
+          "variable_b": "bronc",
+          "in_markov_blanket": false,
+          "confidence": 0.95,
+          "reason": "Asia is a background factor that may influence bronchitis indirectly through other variables like tobacco use or lung disease, but there is no direct causal link or shared effect between asia and bronc; thus, they do not belong to each other's Markov blanket."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "asia",
+        "variable_b": "bronc",
+        "run_id": 2,
+        "seed": 20261022,
+        "prompt_version": "mb-v1-blanket-membership",
+        "raw_response": "{\n    \"variable_a\": \"asia\",\n    \"variable_b\": \"bronc\",\n    \"in_markov_blanket\": false,\n    \"confidence\": 0.95,\n    \"reason\": \"Asia is a background factor that may influence bronchitis indirectly through other variables like tobacco use or lung disease, but there is no direct causal link or shared effect between asia and bronc; they are connected only through common causes (e.g., smoking) or indirect paths, with no mutual influence or shared effect that would place them in each other's Markov blanket.\"\n}",
+        "parsed": {
+          "variable_a": "asia",
+          "variable_b": "bronc",
+          "in_markov_blanket": false,
+          "confidence": 0.95,
+          "reason": "Asia is a background factor that may influence bronchitis indirectly through other variables like tobacco use or lung disease, but there is no direct causal link or shared effect between asia and bronc; they are connected only through common causes (e.g., smoking) or indirect paths, with no mutual influence or shared effect that would place them in each other's Markov blanket."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "asia",
+        "variable_b": "bronc",
+        "run_id": 3,
+        "seed": 20261022,
+        "prompt_version": "mb-v1-blanket-membership",
+        "raw_response": "{\n    \"variable_a\": \"asia\",\n    \"variable_b\": \"bronc\",\n    \"in_markov_blanket\": false,\n    \"confidence\": 0.95,\n    \"reason\": \"Asia is a potential risk factor for bronchitis, but there is no direct causal link or shared effect between the two variables. Bronchitis is caused by factors like smoking or air pollution, not directly by visiting Asia. The only path from asia to bronc is through other variables like tobacco use or emphysema, which are not directly shared with bronc in a common effect or parent-child relationship. Thus, they are not in each other's Markov blanket.\"\n}",
+        "parsed": {
+          "variable_a": "asia",
+          "variable_b": "bronc",
+          "in_markov_blanket": false,
+          "confidence": 0.95,
+          "reason": "Asia is a potential risk factor for bronchitis, but there is no direct causal link or shared effect between the two variables. Bronchitis is caused by factors like smoking or air pollution, not directly by visiting Asia. The only path from asia to bronc is through other variables like tobacco use or emphysema, which are not directly shared with bronc in a common effect or parent-child relationship. Thus, they are not in each other's Markov blanket."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "asia",
+        "variable_b": "bronc",
+        "run_id": 4,
+        "seed": 20261022,
+        "prompt_version": "mb-v1-blanket-membership",
+        "raw_response": "{\n    \"variable_a\": \"asia\",\n    \"variable_b\": \"bronc\",\n    \"in_markov_blanket\": false,\n    \"confidence\": 0.95,\n    \"reason\": \"Asia is a background factor that may indirectly influence bronchitis through other variables like smoker, but there is no direct causal link or shared effect between asia and bronc, and neither are parents or children of each other; thus, they do not belong to each other's Markov blanket.\"\n}",
+        "parsed": {
+          "variable_a": "asia",
+          "variable_b": "bronc",
+          "in_markov_blanket": false,
+          "confidence": 0.95,
+          "reason": "Asia is a background factor that may indirectly influence bronchitis through other variables like smoker, but there is no direct causal link or shared effect between asia and bronc, and neither are parents or children of each other; thus, they do not belong to each other's Markov blanket."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "asia",
+        "variable_b": "bronc",
+        "run_id": 5,
+        "seed": 20261022,
+        "prompt_version": "mb-v1-blanket-membership",
+        "raw_response": "{\n    \"variable_a\": \"asia\",\n    \"variable_b\": \"bronc\",\n    \"in_markov_blanket\": false,\n    \"confidence\": 0.95,\n    \"reason\": \"Asia is a background factor that may influence bronchitis indirectly through other variables like smoking or lung disease, but there is no direct causal link or shared effect between asia and bronc; thus, they are not in each other's Markov blanket.\"\n}",
+        "parsed": {
+          "variable_a": "asia",
+          "variable_b": "bronc",
+          "in_markov_blanket": false,
+          "confidence": 0.95,
+          "reason": "Asia is a background factor that may influence bronchitis indirectly through other variables like smoking or lung disease, but there is no direct causal link or shared effect between asia and bronc; thus, they are not in each other's Markov blanket."
+        },
+        "parse_status": "success"
+      }
+    ],
+    "final_relation": "uncertain",
+    "final_confidence": 0.95,
+    "consistency": 1.0,
+    "relation_count": {
+      "uncertain": 5
+    },
+    "in_markov_blanket": false,
+    "positive_ratio": 0.0
+  },
+  {
+    "variable_a": "asia",
+    "variable_b": "dysp",
+    "runs": [
+      {
+        "variable_a": "asia",
+        "variable_b": "dysp",
+        "run_id": 1,
+        "seed": 20261034,
+        "prompt_version": "mb-v1-blanket-membership",
+        "raw_response": "{\n    \"variable_a\": \"asia\",\n    \"variable_b\": \"dysp\",\n    \"in_markov_blanket\": false,\n    \"confidence\": 0.95,\n    \"reason\": \"Asia does not directly cause dyspnea, and there is no common effect or shared parent structure between them; dyspnea is influenced by other variables like lung cancer or tuberculosis, which may be influenced by Asia, but asia and dyspnea are not directly or indirectly connected through a common cause, effect, or spouse relationship that would place them in each other's Markov blanket.\"\n}",
+        "parsed": {
+          "variable_a": "asia",
+          "variable_b": "dysp",
+          "in_markov_blanket": false,
+          "confidence": 0.95,
+          "reason": "Asia does not directly cause dyspnea, and there is no common effect or shared parent structure between them; dyspnea is influenced by other variables like lung cancer or tuberculosis, which may be influenced by Asia, but asia and dyspnea are not directly or indirectly connected through a common cause, effect, or spouse relationship that would place them in each other's Markov blanket."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "asia",
+        "variable_b": "dysp",
+        "run_id": 2,
+        "seed": 20261034,
+        "prompt_version": "mb-v1-blanket-membership",
+        "raw_response": "{\n    \"variable_a\": \"asia\",\n    \"variable_b\": \"dysp\",\n    \"in_markov_blanket\": false,\n    \"confidence\": 0.95,\n    \"reason\": \"Asia does not directly cause dyspnea, and there is no common effect or shared parent relationship between the two variables; dyspnea is caused by lung conditions like lung cancer or emphysema, which may be influenced by smoking or exposure, not directly by visiting Asia. Therefore, they are not in each other's Markov blanket.\"\n}",
+        "parsed": {
+          "variable_a": "asia",
+          "variable_b": "dysp",
+          "in_markov_blanket": false,
+          "confidence": 0.95,
+          "reason": "Asia does not directly cause dyspnea, and there is no common effect or shared parent relationship between the two variables; dyspnea is caused by lung conditions like lung cancer or emphysema, which may be influenced by smoking or exposure, not directly by visiting Asia. Therefore, they are not in each other's Markov blanket."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "asia",
+        "variable_b": "dysp",
+        "run_id": 3,
+        "seed": 20261034,
+        "prompt_version": "mb-v1-blanket-membership",
+        "raw_response": "{\n    \"variable_a\": \"asia\",\n    \"variable_b\": \"dysp\",\n    \"in_markov_blanket\": false,\n    \"confidence\": 0.95,\n    \"reason\": \"Asia does not directly cause dyspnea, and there is no common effect or shared parent relationship between the two variables; dyspnea is influenced by other variables like lung cancer or tuberculosis, which are not directly connected to asia in a way that forms a Markov blanket relationship.\"\n}",
+        "parsed": {
+          "variable_a": "asia",
+          "variable_b": "dysp",
+          "in_markov_blanket": false,
+          "confidence": 0.95,
+          "reason": "Asia does not directly cause dyspnea, and there is no common effect or shared parent relationship between the two variables; dyspnea is influenced by other variables like lung cancer or tuberculosis, which are not directly connected to asia in a way that forms a Markov blanket relationship."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "asia",
+        "variable_b": "dysp",
+        "run_id": 4,
+        "seed": 20261034,
+        "prompt_version": "mb-v1-blanket-membership",
+        "raw_response": "{\n    \"variable_a\": \"asia\",\n    \"variable_b\": \"dysp\",\n    \"in_markov_blanket\": false,\n    \"confidence\": 0.95,\n    \"reason\": \"Asia does not directly cause dyspnea, and there is no common effect or shared parent relationship between the two variables; dyspnea is influenced by other variables like lung disease, which are not directly connected to Asia in a way that forms a Markov blanket relationship.\"\n}",
+        "parsed": {
+          "variable_a": "asia",
+          "variable_b": "dysp",
+          "in_markov_blanket": false,
+          "confidence": 0.95,
+          "reason": "Asia does not directly cause dyspnea, and there is no common effect or shared parent relationship between the two variables; dyspnea is influenced by other variables like lung disease, which are not directly connected to Asia in a way that forms a Markov blanket relationship."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "asia",
+        "variable_b": "dysp",
+        "run_id": 5,
+        "seed": 20261034,
+        "prompt_version": "mb-v1-blanket-membership",
+        "raw_response": "{\n    \"variable_a\": \"asia\",\n    \"variable_b\": \"dysp\",\n    \"in_markov_blanket\": false,\n    \"confidence\": 0.95,\n    \"reason\": \"Asia does not directly cause dyspnea, and there is no common effect or shared parent relationship between the two variables; dyspnea is caused by lung diseases such as lung cancer or emphysema, which may be influenced by smoking or exposure, not directly by visiting Asia. Thus, they are not in each other's Markov blanket.\"\n}",
+        "parsed": {
+          "variable_a": "asia",
+          "variable_b": "dysp",
+          "in_markov_blanket": false,
+          "confidence": 0.95,
+          "reason": "Asia does not directly cause dyspnea, and there is no common effect or shared parent relationship between the two variables; dyspnea is caused by lung diseases such as lung cancer or emphysema, which may be influenced by smoking or exposure, not directly by visiting Asia. Thus, they are not in each other's Markov blanket."
+        },
+        "parse_status": "success"
+      }
+    ],
+    "final_relation": "uncertain",
+    "final_confidence": 0.95,
+    "consistency": 1.0,
+    "relation_count": {
+      "uncertain": 5
+    },
+    "in_markov_blanket": false,
+    "positive_ratio": 0.0
+  },
+  {
+    "variable_a": "asia",
+    "variable_b": "either",
+    "runs": [
+      {
+        "variable_a": "asia",
+        "variable_b": "either",
+        "run_id": 1,
+        "seed": 20261022,
+        "prompt_version": "mb-v1-blanket-membership",
+        "raw_response": "{\n    \"variable_a\": \"asia\",\n    \"variable_b\": \"either\",\n    \"in_markov_blanket\": false,\n    \"confidence\": 0.95,\n    \"reason\": \"Variable 'asia' is a cause of 'tuberculosis' and 'lung cancer', but 'either' is a disjunction representing the presence of either tuberculosis or lung cancer, not a direct cause or effect of 'asia'. There is no direct causal link or shared effect between 'asia' and 'either', and they do not share parents, children, or spouses in the network structure. Therefore, they are not in each other's Markov blanket.\"\n}",
+        "parsed": {
+          "variable_a": "asia",
+          "variable_b": "either",
+          "in_markov_blanket": false,
+          "confidence": 0.95,
+          "reason": "Variable 'asia' is a cause of 'tuberculosis' and 'lung cancer', but 'either' is a disjunction representing the presence of either tuberculosis or lung cancer, not a direct cause or effect of 'asia'. There is no direct causal link or shared effect between 'asia' and 'either', and they do not share parents, children, or spouses in the network structure. Therefore, they are not in each other's Markov blanket."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "asia",
+        "variable_b": "either",
+        "run_id": 2,
+        "seed": 20261022,
+        "prompt_version": "mb-v1-blanket-membership",
+        "raw_response": "{\n    \"variable_a\": \"asia\",\n    \"variable_b\": \"either\",\n    \"in_markov_blanket\": false,\n    \"confidence\": 0.95,\n    \"reason\": \"Variable 'asia' is a cause of 'tuberculosis' and 'lung cancer', but 'either' is a disjunction representing the presence of either tuberculosis or lung cancer. 'asia' does not directly cause 'either' in a way that forms a parent-child or spouse relationship, and there is no common effect between 'asia' and 'either'. 'either' is not a child of 'asia', nor are they spouses because 'asia' does not share a common effect with 'either'. Thus, they are not in each other's Markov blanket.\"\n}",
+        "parsed": {
+          "variable_a": "asia",
+          "variable_b": "either",
+          "in_markov_blanket": false,
+          "confidence": 0.95,
+          "reason": "Variable 'asia' is a cause of 'tuberculosis' and 'lung cancer', but 'either' is a disjunction representing the presence of either tuberculosis or lung cancer. 'asia' does not directly cause 'either' in a way that forms a parent-child or spouse relationship, and there is no common effect between 'asia' and 'either'. 'either' is not a child of 'asia', nor are they spouses because 'asia' does not share a common effect with 'either'. Thus, they are not in each other's Markov blanket."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "asia",
+        "variable_b": "either",
+        "run_id": 3,
+        "seed": 20261022,
+        "prompt_version": "mb-v1-blanket-membership",
+        "raw_response": "{\n    \"variable_a\": \"asia\",\n    \"variable_b\": \"either\",\n    \"in_markov_blanket\": false,\n    \"confidence\": 0.95,\n    \"reason\": \"Variable 'asia' is a cause of 'tuberculosis' and 'lung cancer', but 'either' is a disjunction indicating the presence of one of those two conditions. There is no direct causal link or shared effect between 'asia' and 'either' as a whole; 'asia' influences the individual components (tuberculosis and lung cancer) that together form 'either', but 'either' is not a common cause or effect shared with 'asia'. Therefore, 'asia' is not in the Markov blanket of 'either'.\"\n}",
+        "parsed": {
+          "variable_a": "asia",
+          "variable_b": "either",
+          "in_markov_blanket": false,
+          "confidence": 0.95,
+          "reason": "Variable 'asia' is a cause of 'tuberculosis' and 'lung cancer', but 'either' is a disjunction indicating the presence of one of those two conditions. There is no direct causal link or shared effect between 'asia' and 'either' as a whole; 'asia' influences the individual components (tuberculosis and lung cancer) that together form 'either', but 'either' is not a common cause or effect shared with 'asia'. Therefore, 'asia' is not in the Markov blanket of 'either'."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "asia",
+        "variable_b": "either",
+        "run_id": 4,
+        "seed": 20261022,
+        "prompt_version": "mb-v1-blanket-membership",
+        "raw_response": "{\n    \"variable_a\": \"asia\",\n    \"variable_b\": \"either\",\n    \"in_markov_blanket\": false,\n    \"confidence\": 0.95,\n    \"reason\": \"Variable 'asia' is a cause of 'tuberculosis' and 'lung cancer', but 'either' is a disjunction representing the presence of either tuberculosis or lung cancer, not a direct cause or effect of 'asia'. There is no direct causal link or shared effect between 'asia' and 'either'; 'asia' influences the individual causes (tuberculosis and lung cancer), but 'either' is a logical combination of those causes. Thus, 'asia' is not in the Markov blanket of 'either'.\"\n}",
+        "parsed": {
+          "variable_a": "asia",
+          "variable_b": "either",
+          "in_markov_blanket": false,
+          "confidence": 0.95,
+          "reason": "Variable 'asia' is a cause of 'tuberculosis' and 'lung cancer', but 'either' is a disjunction representing the presence of either tuberculosis or lung cancer, not a direct cause or effect of 'asia'. There is no direct causal link or shared effect between 'asia' and 'either'; 'asia' influences the individual causes (tuberculosis and lung cancer), but 'either' is a logical combination of those causes. Thus, 'asia' is not in the Markov blanket of 'either'."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "asia",
+        "variable_b": "either",
+        "run_id": 5,
+        "seed": 20261022,
+        "prompt_version": "mb-v1-blanket-membership",
+        "raw_response": "{\n    \"variable_a\": \"asia\",\n    \"variable_b\": \"either\",\n    \"in_markov_blanket\": false,\n    \"confidence\": 0.95,\n    \"reason\": \"Variable 'asia' is a potential cause of tuberculosis, and 'either' represents the presence of either tuberculosis or lung cancer. However, 'asia' does not directly cause or share a common effect with 'either' in a way that creates mutual dependence in the Markov blanket. 'asia' influences tuberculosis, which is a component of 'either', but 'either' is a disjunction (logical OR) of two conditions, not a direct child or spouse of 'asia'. There is no common effect between 'asia' and 'either', and 'asia' does not share a common cause with 'either' in a way that creates mutual dependency. Thus, 'asia' is not in the Markov blanket of 'either'.\"\n}",
+        "parsed": {
+          "variable_a": "asia",
+          "variable_b": "either",
+          "in_markov_blanket": false,
+          "confidence": 0.95,
+          "reason": "Variable 'asia' is a potential cause of tuberculosis, and 'either' represents the presence of either tuberculosis or lung cancer. However, 'asia' does not directly cause or share a common effect with 'either' in a way that creates mutual dependence in the Markov blanket. 'asia' influences tuberculosis, which is a component of 'either', but 'either' is a disjunction (logical OR) of two conditions, not a direct child or spouse of 'asia'. There is no common effect between 'asia' and 'either', and 'asia' does not share a common cause with 'either' in a way that creates mutual dependency. Thus, 'asia' is not in the Markov blanket of 'either'."
+        },
+        "parse_status": "success"
+      }
+    ],
+    "final_relation": "uncertain",
+    "final_confidence": 0.95,
+    "consistency": 1.0,
+    "relation_count": {
+      "uncertain": 5
+    },
+    "in_markov_blanket": false,
+    "positive_ratio": 0.0
+  },
+  {
+    "variable_a": "asia",
+    "variable_b": "lung",
+    "runs": [
+      {
+        "variable_a": "asia",
+        "variable_b": "lung",
+        "run_id": 1,
+        "seed": 20261010,
+        "prompt_version": "mb-v1-blanket-membership",
+        "raw_response": "{\n    \"variable_a\": \"asia\",\n    \"variable_b\": \"lung\",\n    \"in_markov_blanket\": false,\n    \"confidence\": 0.95,\n    \"reason\": \"Asia is a potential risk factor for lung cancer, but it does not directly cause lung cancer, and there is no common effect or shared parent relationship between the two variables. Lung cancer is caused by factors like smoking or genetic predisposition, not directly by visiting Asia. Therefore, asia and lung are not in each other's Markov blanket.\"\n}",
+        "parsed": {
+          "variable_a": "asia",
+          "variable_b": "lung",
+          "in_markov_blanket": false,
+          "confidence": 0.95,
+          "reason": "Asia is a potential risk factor for lung cancer, but it does not directly cause lung cancer, and there is no common effect or shared parent relationship between the two variables. Lung cancer is caused by factors like smoking or genetic predisposition, not directly by visiting Asia. Therefore, asia and lung are not in each other's Markov blanket."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "asia",
+        "variable_b": "lung",
+        "run_id": 2,
+        "seed": 20261010,
+        "prompt_version": "mb-v1-blanket-membership",
+        "raw_response": "{\n    \"variable_a\": \"asia\",\n    \"variable_b\": \"lung\",\n    \"in_markov_blanket\": false,\n    \"confidence\": 0.95,\n    \"reason\": \"Asia is a background factor that may influence lung cancer through other variables like smoking or exposure, but there is no direct causal link or shared effect between asia and lung; lung cancer is caused by factors such as smoking or genetic predisposition, not directly by visiting Asia. Thus, they do not share a common cause, effect, or mutual influence in the Markov blanket structure.\"\n}",
+        "parsed": {
+          "variable_a": "asia",
+          "variable_b": "lung",
+          "in_markov_blanket": false,
+          "confidence": 0.95,
+          "reason": "Asia is a background factor that may influence lung cancer through other variables like smoking or exposure, but there is no direct causal link or shared effect between asia and lung; lung cancer is caused by factors such as smoking or genetic predisposition, not directly by visiting Asia. Thus, they do not share a common cause, effect, or mutual influence in the Markov blanket structure."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "asia",
+        "variable_b": "lung",
+        "run_id": 3,
+        "seed": 20261010,
+        "prompt_version": "mb-v1-blanket-membership",
+        "raw_response": "{\n    \"variable_a\": \"asia\",\n    \"variable_b\": \"lung\",\n    \"in_markov_blanket\": false,\n    \"confidence\": 0.95,\n    \"reason\": \"Asia is a potential risk factor for lung cancer, but it does not directly cause lung cancer; instead, lung cancer is caused by factors like smoking or genetic predisposition. Asia is not a parent, child, or spouse of lung in the causal structure. There is no common effect between asia and lung, and no shared causal pathway that would place them in each other's Markov blanket.\"\n}",
+        "parsed": {
+          "variable_a": "asia",
+          "variable_b": "lung",
+          "in_markov_blanket": false,
+          "confidence": 0.95,
+          "reason": "Asia is a potential risk factor for lung cancer, but it does not directly cause lung cancer; instead, lung cancer is caused by factors like smoking or genetic predisposition. Asia is not a parent, child, or spouse of lung in the causal structure. There is no common effect between asia and lung, and no shared causal pathway that would place them in each other's Markov blanket."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "asia",
+        "variable_b": "lung",
+        "run_id": 4,
+        "seed": 20261010,
+        "prompt_version": "mb-v1-blanket-membership",
+        "raw_response": "{\n    \"variable_a\": \"asia\",\n    \"variable_b\": \"lung\",\n    \"in_markov_blanket\": false,\n    \"confidence\": 0.95,\n    \"reason\": \"Asia is a potential risk factor for lung cancer, but it does not directly cause lung cancer, and there is no common effect or shared parent relationship between the two variables. Lung cancer is caused by factors like smoking or genetic predisposition, not directly by visiting Asia. Therefore, they are not in each other's Markov blanket.\"\n}",
+        "parsed": {
+          "variable_a": "asia",
+          "variable_b": "lung",
+          "in_markov_blanket": false,
+          "confidence": 0.95,
+          "reason": "Asia is a potential risk factor for lung cancer, but it does not directly cause lung cancer, and there is no common effect or shared parent relationship between the two variables. Lung cancer is caused by factors like smoking or genetic predisposition, not directly by visiting Asia. Therefore, they are not in each other's Markov blanket."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "asia",
+        "variable_b": "lung",
+        "run_id": 5,
+        "seed": 20261022,
+        "prompt_version": "mb-v1-blanket-membership",
+        "raw_response": "{\n    \"variable_a\": \"asia\",\n    \"variable_b\": \"lung\",\n    \"in_markov_blanket\": false,\n    \"confidence\": 0.95,\n    \"reason\": \"Asia is a potential risk factor for lung cancer, but it does not directly cause lung cancer; instead, lung cancer is caused by other factors like smoking or genetic predisposition. Asia is not a parent, child, or spouse of lung in the causal structure, and there is no shared effect between them. Therefore, they are not in each other's Markov blanket.\"\n}",
+        "parsed": {
+          "variable_a": "asia",
+          "variable_b": "lung",
+          "in_markov_blanket": false,
+          "confidence": 0.95,
+          "reason": "Asia is a potential risk factor for lung cancer, but it does not directly cause lung cancer; instead, lung cancer is caused by other factors like smoking or genetic predisposition. Asia is not a parent, child, or spouse of lung in the causal structure, and there is no shared effect between them. Therefore, they are not in each other's Markov blanket."
+        },
+        "parse_status": "success"
+      }
+    ],
+    "final_relation": "uncertain",
+    "final_confidence": 0.95,
+    "consistency": 1.0,
+    "relation_count": {
+      "uncertain": 5
+    },
+    "in_markov_blanket": false,
+    "positive_ratio": 0.0
+  },
+  {
+    "variable_a": "asia",
+    "variable_b": "smoke",
+    "runs": [
+      {
+        "variable_a": "asia",
+        "variable_b": "smoke",
+        "run_id": 1,
+        "seed": 20261010,
+        "prompt_version": "mb-v1-blanket-membership",
+        "raw_response": "{\n    \"variable_a\": \"asia\",\n    \"variable_b\": \"smoke\",\n    \"in_markov_blanket\": false,\n    \"confidence\": 0.95,\n    \"reason\": \"Asia and smoking are unrelated in the causal structure; neither is a parent, child, or spouse of the other, and there is no common effect or shared causal pathway between them.\"\n}",
+        "parsed": {
+          "variable_a": "asia",
+          "variable_b": "smoke",
+          "in_markov_blanket": false,
+          "confidence": 0.95,
+          "reason": "Asia and smoking are unrelated in the causal structure; neither is a parent, child, or spouse of the other, and there is no common effect or shared causal pathway between them."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "asia",
+        "variable_b": "smoke",
+        "run_id": 2,
+        "seed": 20261010,
+        "prompt_version": "mb-v1-blanket-membership",
+        "raw_response": "{\n    \"variable_a\": \"asia\",\n    \"variable_b\": \"smoke\",\n    \"in_markov_blanket\": false,\n    \"confidence\": 0.95,\n    \"reason\": \"Asia and smoking are independent variables with no direct causal links or shared effects; neither is a parent, child, or spouse of the other, and they do not share a common cause or effect, so they are not in each other's Markov blanket.\"\n}",
+        "parsed": {
+          "variable_a": "asia",
+          "variable_b": "smoke",
+          "in_markov_blanket": false,
+          "confidence": 0.95,
+          "reason": "Asia and smoking are independent variables with no direct causal links or shared effects; neither is a parent, child, or spouse of the other, and they do not share a common cause or effect, so they are not in each other's Markov blanket."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "asia",
+        "variable_b": "smoke",
+        "run_id": 3,
+        "seed": 20261010,
+        "prompt_version": "mb-v1-blanket-membership",
+        "raw_response": "{\n    \"variable_a\": \"asia\",\n    \"variable_b\": \"smoke\",\n    \"in_markov_blanket\": false,\n    \"confidence\": 0.95,\n    \"reason\": \"Asia and smoking are independent variables with no direct causal link or shared effects; neither is a parent or child of the other, and there is no common effect or spouse relationship between them.\"\n}",
+        "parsed": {
+          "variable_a": "asia",
+          "variable_b": "smoke",
+          "in_markov_blanket": false,
+          "confidence": 0.95,
+          "reason": "Asia and smoking are independent variables with no direct causal link or shared effects; neither is a parent or child of the other, and there is no common effect or spouse relationship between them."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "asia",
+        "variable_b": "smoke",
+        "run_id": 4,
+        "seed": 20261010,
+        "prompt_version": "mb-v1-blanket-membership",
+        "raw_response": "{\n    \"variable_a\": \"asia\",\n    \"variable_b\": \"smoke\",\n    \"in_markov_blanket\": false,\n    \"confidence\": 0.95,\n    \"reason\": \"Asia and smoking are independent variables with no direct causal connection or shared effects; they do not share common children or spouses, and there is no structural path that would place one in the other's Markov blanket.\"\n}",
+        "parsed": {
+          "variable_a": "asia",
+          "variable_b": "smoke",
+          "in_markov_blanket": false,
+          "confidence": 0.95,
+          "reason": "Asia and smoking are independent variables with no direct causal connection or shared effects; they do not share common children or spouses, and there is no structural path that would place one in the other's Markov blanket."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "asia",
+        "variable_b": "smoke",
+        "run_id": 5,
+        "seed": 20261010,
+        "prompt_version": "mb-v1-blanket-membership",
+        "raw_response": "{\n    \"variable_a\": \"asia\",\n    \"variable_b\": \"smoke\",\n    \"in_markov_blanket\": false,\n    \"confidence\": 0.95,\n    \"reason\": \"Asia and smoking are unrelated in the causal structure; neither is a parent, child, or spouse of the other, and they do not share a common effect or common cause. Therefore, they are not in each other's Markov blanket.\"\n}",
+        "parsed": {
+          "variable_a": "asia",
+          "variable_b": "smoke",
+          "in_markov_blanket": false,
+          "confidence": 0.95,
+          "reason": "Asia and smoking are unrelated in the causal structure; neither is a parent, child, or spouse of the other, and they do not share a common effect or common cause. Therefore, they are not in each other's Markov blanket."
+        },
+        "parse_status": "success"
+      }
+    ],
+    "final_relation": "uncertain",
+    "final_confidence": 0.95,
+    "consistency": 1.0,
+    "relation_count": {
+      "uncertain": 5
+    },
+    "in_markov_blanket": false,
+    "positive_ratio": 0.0
+  },
+  {
+    "variable_a": "asia",
+    "variable_b": "tub",
+    "runs": [
+      {
+        "variable_a": "asia",
+        "variable_b": "tub",
+        "run_id": 1,
+        "seed": 20261010,
+        "prompt_version": "mb-v1-blanket-membership",
+        "raw_response": "{\n    \"variable_a\": \"asia\",\n    \"variable_b\": \"tub\",\n    \"in_markov_blanket\": true,\n    \"confidence\": 0.9,\n    \"reason\": \"The variable 'asia' is a cause of 'tub' through the causal path asia → smokes → tub, and 'tub' is a child of 'asia' in the network, meaning they share a direct causal relationship. Since 'tub' is a child of 'asia', 'asia' is in the Markov blanket of 'tub' as a parent, and 'tub' is in the Markov blanket of 'asia' as a child. This direct parent-child relationship ensures mutual membership in the Markov blanket.\"\n}",
+        "parsed": {
+          "variable_a": "asia",
+          "variable_b": "tub",
+          "in_markov_blanket": true,
+          "confidence": 0.9,
+          "reason": "The variable 'asia' is a cause of 'tub' through the causal path asia → smokes → tub, and 'tub' is a child of 'asia' in the network, meaning they share a direct causal relationship. Since 'tub' is a child of 'asia', 'asia' is in the Markov blanket of 'tub' as a parent, and 'tub' is in the Markov blanket of 'asia' as a child. This direct parent-child relationship ensures mutual membership in the Markov blanket."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "asia",
+        "variable_b": "tub",
+        "run_id": 2,
+        "seed": 20261010,
+        "prompt_version": "mb-v1-blanket-membership",
+        "raw_response": "{\n    \"variable_a\": \"asia\",\n    \"variable_b\": \"tub\",\n    \"in_markov_blanket\": true,\n    \"confidence\": 0.9,\n    \"reason\": \"Asia is a potential risk factor for tuberculosis, and tuberculosis is caused by the bacterium Mycobacterium tuberculosis, which can be contracted in Asia. Therefore, asia and tub are connected directly through causality, with asia influencing the probability of tub, making them directly related and thus in each other's Markov blanket.\"\n}",
+        "parsed": {
+          "variable_a": "asia",
+          "variable_b": "tub",
+          "in_markov_blanket": true,
+          "confidence": 0.9,
+          "reason": "Asia is a potential risk factor for tuberculosis, and tuberculosis is caused by the bacterium Mycobacterium tuberculosis, which can be contracted in Asia. Therefore, asia and tub are connected directly through causality, with asia influencing the probability of tub, making them directly related and thus in each other's Markov blanket."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "asia",
+        "variable_b": "tub",
+        "run_id": 3,
+        "seed": 20261010,
+        "prompt_version": "mb-v1-blanket-membership",
+        "raw_response": "{\n    \"variable_a\": \"asia\",\n    \"variable_b\": \"tub\",\n    \"in_markov_blanket\": true,\n    \"confidence\": 0.9,\n    \"reason\": \"Asia is a potential risk factor for tuberculosis, and tuberculosis is caused by the bacterium Mycobacterium tuberculosis, which can be contracted in regions like Asia. Therefore, asia and tub are connected directly through causal influence: visiting Asia increases the risk of tuberculosis. This direct causal link means that tub is a descendant of asia, and thus tub is in the Markov blanket of asia (as a child), and asia is in the Markov blanket of tub (as a parent). This mutual inclusion satisfies the definition of being in each other's Markov blanket.\"\n}",
+        "parsed": {
+          "variable_a": "asia",
+          "variable_b": "tub",
+          "in_markov_blanket": true,
+          "confidence": 0.9,
+          "reason": "Asia is a potential risk factor for tuberculosis, and tuberculosis is caused by the bacterium Mycobacterium tuberculosis, which can be contracted in regions like Asia. Therefore, asia and tub are connected directly through causal influence: visiting Asia increases the risk of tuberculosis. This direct causal link means that tub is a descendant of asia, and thus tub is in the Markov blanket of asia (as a child), and asia is in the Markov blanket of tub (as a parent). This mutual inclusion satisfies the definition of being in each other's Markov blanket."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "asia",
+        "variable_b": "tub",
+        "run_id": 4,
+        "seed": 20261010,
+        "prompt_version": "mb-v1-blanket-membership",
+        "raw_response": "{\n    \"variable_a\": \"asia\",\n    \"variable_b\": \"tub\",\n    \"in_markov_blanket\": true,\n    \"confidence\": 0.9,\n    \"reason\": \"Asia is a potential risk factor for tuberculosis, and tuberculosis is caused by the bacterium Mycobacterium tuberculosis, which can be influenced by travel history. The variable 'asia' (visit to Asia) is a risk factor for 'tub' (tuberculosis), meaning 'asia' directly influences 'tub' as a cause. Therefore, they are in each other's Markov blanket because 'asia' is a parent of 'tub' in the causal structure, making 'asia' a direct cause of 'tub'.\"\n}",
+        "parsed": {
+          "variable_a": "asia",
+          "variable_b": "tub",
+          "in_markov_blanket": true,
+          "confidence": 0.9,
+          "reason": "Asia is a potential risk factor for tuberculosis, and tuberculosis is caused by the bacterium Mycobacterium tuberculosis, which can be influenced by travel history. The variable 'asia' (visit to Asia) is a risk factor for 'tub' (tuberculosis), meaning 'asia' directly influences 'tub' as a cause. Therefore, they are in each other's Markov blanket because 'asia' is a parent of 'tub' in the causal structure, making 'asia' a direct cause of 'tub'."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "asia",
+        "variable_b": "tub",
+        "run_id": 5,
+        "seed": 20261010,
+        "prompt_version": "mb-v1-blanket-membership",
+        "raw_response": "{\n    \"variable_a\": \"asia\",\n    \"variable_b\": \"tub\",\n    \"in_markov_blanket\": true,\n    \"confidence\": 0.9,\n    \"reason\": \"Asia is a potential risk factor for tuberculosis, and tuberculosis is a disease that can be caused by exposure in Asia, meaning they share a common causal pathway where visiting Asia increases the risk of tuberculosis, thus making them part of each other's Markov blanket through a shared causal mechanism.\"\n}",
+        "parsed": {
+          "variable_a": "asia",
+          "variable_b": "tub",
+          "in_markov_blanket": true,
+          "confidence": 0.9,
+          "reason": "Asia is a potential risk factor for tuberculosis, and tuberculosis is a disease that can be caused by exposure in Asia, meaning they share a common causal pathway where visiting Asia increases the risk of tuberculosis, thus making them part of each other's Markov blanket through a shared causal mechanism."
+        },
+        "parse_status": "success"
+      }
+    ],
+    "final_relation": "uncertain",
+    "final_confidence": 0.9,
+    "consistency": 1.0,
+    "relation_count": {
+      "uncertain": 5
+    },
+    "in_markov_blanket": true,
+    "positive_ratio": 1.0
+  },
+  {
+    "variable_a": "asia",
+    "variable_b": "xray",
+    "runs": [
+      {
+        "variable_a": "asia",
+        "variable_b": "xray",
+        "run_id": 1,
+        "seed": 20261022,
+        "prompt_version": "mb-v1-blanket-membership",
+        "raw_response": "{\n    \"variable_a\": \"asia\",\n    \"variable_b\": \"xray\",\n    \"in_markov_blanket\": false,\n    \"confidence\": 0.95,\n    \"reason\": \"Asia is a background factor that influences the likelihood of lung disease, but does not directly cause or share a common effect with xray. Xray is a symptom that results from lung disease, which may be caused by smoking or other factors, but there is no direct causal path or shared effect between asia and xray, and no spouses or common effects that connect them directly.\"\n}",
+        "parsed": {
+          "variable_a": "asia",
+          "variable_b": "xray",
+          "in_markov_blanket": false,
+          "confidence": 0.95,
+          "reason": "Asia is a background factor that influences the likelihood of lung disease, but does not directly cause or share a common effect with xray. Xray is a symptom that results from lung disease, which may be caused by smoking or other factors, but there is no direct causal path or shared effect between asia and xray, and no spouses or common effects that connect them directly."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "asia",
+        "variable_b": "xray",
+        "run_id": 2,
+        "seed": 20261034,
+        "prompt_version": "mb-v1-blanket-membership",
+        "raw_response": "{\n    \"variable_a\": \"asia\",\n    \"variable_b\": \"xray\",\n    \"in_markov_blanket\": false,\n    \"confidence\": 0.95,\n    \"reason\": \"Asia is a background factor that may influence lung disease, but xray is a diagnostic test that reflects the presence of lung disease. There is no direct causal link between visiting Asia and an abnormal X-ray, and they do not share a common effect or parent-child relationship. The only path between them is through lung disease (e.g., lung cancer or tuberculosis), which is a common cause, but since they are not directly connected or spouses, and do not share a common effect, they are not in each other's Markov blanket.\"\n}",
+        "parsed": {
+          "variable_a": "asia",
+          "variable_b": "xray",
+          "in_markov_blanket": false,
+          "confidence": 0.95,
+          "reason": "Asia is a background factor that may influence lung disease, but xray is a diagnostic test that reflects the presence of lung disease. There is no direct causal link between visiting Asia and an abnormal X-ray, and they do not share a common effect or parent-child relationship. The only path between them is through lung disease (e.g., lung cancer or tuberculosis), which is a common cause, but since they are not directly connected or spouses, and do not share a common effect, they are not in each other's Markov blanket."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "asia",
+        "variable_b": "xray",
+        "run_id": 3,
+        "seed": 20261034,
+        "prompt_version": "mb-v1-blanket-membership",
+        "raw_response": "{\n    \"variable_a\": \"asia\",\n    \"variable_b\": \"xray\",\n    \"in_markov_blanket\": false,\n    \"confidence\": 0.95,\n    \"reason\": \"Asia is a background factor that influences lung disease, but does not directly cause or share a common effect with xray. Xray is a symptom influenced by lung disease, not directly caused by visiting Asia. There is no direct causal path or shared effect between asia and xray, and they are not connected through a common cause or effect that would place them in each other's Markov blanket.\"\n}",
+        "parsed": {
+          "variable_a": "asia",
+          "variable_b": "xray",
+          "in_markov_blanket": false,
+          "confidence": 0.95,
+          "reason": "Asia is a background factor that influences lung disease, but does not directly cause or share a common effect with xray. Xray is a symptom influenced by lung disease, not directly caused by visiting Asia. There is no direct causal path or shared effect between asia and xray, and they are not connected through a common cause or effect that would place them in each other's Markov blanket."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "asia",
+        "variable_b": "xray",
+        "run_id": 4,
+        "seed": 20261034,
+        "prompt_version": "mb-v1-blanket-membership",
+        "raw_response": "{\n    \"variable_a\": \"asia\",\n    \"variable_b\": \"xray\",\n    \"in_markov_blanket\": false,\n    \"confidence\": 0.95,\n    \"reason\": \"Asia is a background factor that may influence lung disease, but xray is a symptom that results from lung conditions, with no direct causal link or shared effect between asia and xray; they are connected only through lung disease, which is a common cause, not a common effect or mutual influence, so they do not belong to each other's Markov blanket.\"\n}",
+        "parsed": {
+          "variable_a": "asia",
+          "variable_b": "xray",
+          "in_markov_blanket": false,
+          "confidence": 0.95,
+          "reason": "Asia is a background factor that may influence lung disease, but xray is a symptom that results from lung conditions, with no direct causal link or shared effect between asia and xray; they are connected only through lung disease, which is a common cause, not a common effect or mutual influence, so they do not belong to each other's Markov blanket."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "asia",
+        "variable_b": "xray",
+        "run_id": 5,
+        "seed": 20261034,
+        "prompt_version": "mb-v1-blanket-membership",
+        "raw_response": "{\n    \"variable_a\": \"asia\",\n    \"variable_b\": \"xray\",\n    \"in_markov_blanket\": false,\n    \"confidence\": 0.95,\n    \"reason\": \"Asia is a background factor that may influence lung disease, but xray is a diagnostic test that depends on lung disease (e.g., tuberculosis), not directly on being in Asia. There is no direct causal link or shared effect between asia and xray, and they are not connected through a common cause or effect that would place them in each other's Markov blanket.\"\n}",
+        "parsed": {
+          "variable_a": "asia",
+          "variable_b": "xray",
+          "in_markov_blanket": false,
+          "confidence": 0.95,
+          "reason": "Asia is a background factor that may influence lung disease, but xray is a diagnostic test that depends on lung disease (e.g., tuberculosis), not directly on being in Asia. There is no direct causal link or shared effect between asia and xray, and they are not connected through a common cause or effect that would place them in each other's Markov blanket."
+        },
+        "parse_status": "success"
+      }
+    ],
+    "final_relation": "uncertain",
+    "final_confidence": 0.95,
+    "consistency": 1.0,
+    "relation_count": {
+      "uncertain": 5
+    },
+    "in_markov_blanket": false,
+    "positive_ratio": 0.0
+  },
+  {
+    "variable_a": "bronc",
+    "variable_b": "dysp",
+    "runs": [
+      {
+        "variable_a": "bronc",
+        "variable_b": "dysp",
+        "run_id": 1,
+        "seed": 20261118,
+        "prompt_version": "mb-v1-blanket-membership",
+        "raw_response": "{\n    \"variable_a\": \"bronc\",\n    \"variable_b\": \"dysp\",\n    \"in_markov_blanket\": false,\n    \"confidence\": 0.95,\n    \"reason\": \"Bronchitis (bronc) and dyspnea (dysp) are not directly causally linked, nor do they share a common effect or common cause in the ASIA network structure. Dyspnea is typically caused by lung conditions like emphysema or lung cancer, while bronchitis is a separate condition that may contribute to dyspnea indirectly. However, there is no direct edge or shared effect between bronc and dysp in the network, and they do not co-occur as a common cause or effect pair.\"\n}",
+        "parsed": {
+          "variable_a": "bronc",
+          "variable_b": "dysp",
+          "in_markov_blanket": false,
+          "confidence": 0.95,
+          "reason": "Bronchitis (bronc) and dyspnea (dysp) are not directly causally linked, nor do they share a common effect or common cause in the ASIA network structure. Dyspnea is typically caused by lung conditions like emphysema or lung cancer, while bronchitis is a separate condition that may contribute to dyspnea indirectly. However, there is no direct edge or shared effect between bronc and dysp in the network, and they do not co-occur as a common cause or effect pair."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "bronc",
+        "variable_b": "dysp",
+        "run_id": 2,
+        "seed": 20261118,
+        "prompt_version": "mb-v1-blanket-membership",
+        "raw_response": "{\n    \"variable_a\": \"bronc\",\n    \"variable_b\": \"dysp\",\n    \"in_markov_blanket\": false,\n    \"confidence\": 0.95,\n    \"reason\": \"Bronchitis (bronc) and dyspnea (dysp) are not directly causally linked, nor do they share a common effect or common cause in the ASIA network. Dyspnea is primarily caused by lung conditions like emphysema or lung cancer, while bronchitis is a separate condition that may contribute to dyspnea indirectly. However, there is no direct edge or shared effect between bronc and dysp in the network structure, and neither is a parent or child of the other. Therefore, they do not belong to each other's Markov blanket.\"\n}",
+        "parsed": {
+          "variable_a": "bronc",
+          "variable_b": "dysp",
+          "in_markov_blanket": false,
+          "confidence": 0.95,
+          "reason": "Bronchitis (bronc) and dyspnea (dysp) are not directly causally linked, nor do they share a common effect or common cause in the ASIA network. Dyspnea is primarily caused by lung conditions like emphysema or lung cancer, while bronchitis is a separate condition that may contribute to dyspnea indirectly. However, there is no direct edge or shared effect between bronc and dysp in the network structure, and neither is a parent or child of the other. Therefore, they do not belong to each other's Markov blanket."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "bronc",
+        "variable_b": "dysp",
+        "run_id": 3,
+        "seed": 20261130,
+        "prompt_version": "mb-v1-blanket-membership",
+        "raw_response": "{\n    \"variable_a\": \"bronc\",\n    \"variable_b\": \"dysp\",\n    \"in_markov_blanket\": false,\n    \"confidence\": 0.95,\n    \"reason\": \"Bronchitis (bronc) and dyspnea (dysp) are not directly causally linked, nor do they share a common effect or common cause in the ASIA network. Dyspnea is typically caused by lung conditions like emphysema or lung cancer, while bronchitis is a separate condition. There is no structural path showing that they are parents, children, or spouses in the network, so they do not belong to each other's Markov blanket.\"\n}",
+        "parsed": {
+          "variable_a": "bronc",
+          "variable_b": "dysp",
+          "in_markov_blanket": false,
+          "confidence": 0.95,
+          "reason": "Bronchitis (bronc) and dyspnea (dysp) are not directly causally linked, nor do they share a common effect or common cause in the ASIA network. Dyspnea is typically caused by lung conditions like emphysema or lung cancer, while bronchitis is a separate condition. There is no structural path showing that they are parents, children, or spouses in the network, so they do not belong to each other's Markov blanket."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "bronc",
+        "variable_b": "dysp",
+        "run_id": 4,
+        "seed": 20261130,
+        "prompt_version": "mb-v1-blanket-membership",
+        "raw_response": "{\n    \"variable_a\": \"bronc\",\n    \"variable_b\": \"dysp\",\n    \"in_markov_blanket\": false,\n    \"confidence\": 0.95,\n    \"reason\": \"Bronchitis (bronc) and dyspnea (dysp) are not directly causally linked, nor do they share a common effect or common cause. Dyspnea can be caused by lung diseases such as emphysema or bronchitis, but in the ASIA network, bronc does not directly cause dysp, and dysp is not a child of bronc. There is no shared effect between bronc and dysp, and they are not spouses. Therefore, they do not belong to each other's Markov blanket.\"\n}",
+        "parsed": {
+          "variable_a": "bronc",
+          "variable_b": "dysp",
+          "in_markov_blanket": false,
+          "confidence": 0.95,
+          "reason": "Bronchitis (bronc) and dyspnea (dysp) are not directly causally linked, nor do they share a common effect or common cause. Dyspnea can be caused by lung diseases such as emphysema or bronchitis, but in the ASIA network, bronc does not directly cause dysp, and dysp is not a child of bronc. There is no shared effect between bronc and dysp, and they are not spouses. Therefore, they do not belong to each other's Markov blanket."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "bronc",
+        "variable_b": "dysp",
+        "run_id": 5,
+        "seed": 20261130,
+        "prompt_version": "mb-v1-blanket-membership",
+        "raw_response": "{\n    \"variable_a\": \"bronc\",\n    \"variable_b\": \"dysp\",\n    \"in_markov_blanket\": false,\n    \"confidence\": 0.95,\n    \"reason\": \"Bronchitis (bronc) and dyspnea (dysp) are not directly causally linked, nor do they share a common effect or common cause. Dyspnea can be caused by other variables like emphysema or lung cancer, and bronchitis is a separate condition; there is no shared child or spouse relationship between them in the ASIA network structure.\"\n}",
+        "parsed": {
+          "variable_a": "bronc",
+          "variable_b": "dysp",
+          "in_markov_blanket": false,
+          "confidence": 0.95,
+          "reason": "Bronchitis (bronc) and dyspnea (dysp) are not directly causally linked, nor do they share a common effect or common cause. Dyspnea can be caused by other variables like emphysema or lung cancer, and bronchitis is a separate condition; there is no shared child or spouse relationship between them in the ASIA network structure."
+        },
+        "parse_status": "success"
+      }
+    ],
+    "final_relation": "uncertain",
+    "final_confidence": 0.95,
+    "consistency": 1.0,
+    "relation_count": {
+      "uncertain": 5
+    },
+    "in_markov_blanket": false,
+    "positive_ratio": 0.0
+  },
+  {
+    "variable_a": "bronc",
+    "variable_b": "either",
+    "runs": [
+      {
+        "variable_a": "bronc",
+        "variable_b": "either",
+        "run_id": 1,
+        "seed": 20261118,
+        "prompt_version": "mb-v1-blanket-membership",
+        "raw_response": "{\n    \"variable_a\": \"bronc\",\n    \"variable_b\": \"either\",\n    \"in_markov_blanket\": false,\n    \"confidence\": 0.95,\n    \"reason\": \"Bronchitis (bronc) and either (tuberculosis or lung cancer) are not directly causally linked, nor do they share a common effect or common cause in the network structure. Bronc is a direct cause of symptoms like cough, while 'either' is a disjunction of two diseases, and neither is a direct child of bronc or shares a common effect with it. There is no structural path or shared effect that would place them in each other's Markov blanket.\"\n}",
+        "parsed": {
+          "variable_a": "bronc",
+          "variable_b": "either",
+          "in_markov_blanket": false,
+          "confidence": 0.95,
+          "reason": "Bronchitis (bronc) and either (tuberculosis or lung cancer) are not directly causally linked, nor do they share a common effect or common cause in the network structure. Bronc is a direct cause of symptoms like cough, while 'either' is a disjunction of two diseases, and neither is a direct child of bronc or shares a common effect with it. There is no structural path or shared effect that would place them in each other's Markov blanket."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "bronc",
+        "variable_b": "either",
+        "run_id": 2,
+        "seed": 20261118,
+        "prompt_version": "mb-v1-blanket-membership",
+        "raw_response": "{\n    \"variable_a\": \"bronc\",\n    \"variable_b\": \"either\",\n    \"in_markov_blanket\": false,\n    \"confidence\": 0.95,\n    \"reason\": \"Bronchitis (bronc) is a direct cause of symptoms like coughing and is not directly connected to either tuberculosis or lung cancer, which is a disjunction of two diseases. There is no common effect or shared parent structure between bronc and either, and neither is a parent or child of the other. Thus, they do not belong to each other's Markov blanket.\"\n}",
+        "parsed": {
+          "variable_a": "bronc",
+          "variable_b": "either",
+          "in_markov_blanket": false,
+          "confidence": 0.95,
+          "reason": "Bronchitis (bronc) is a direct cause of symptoms like coughing and is not directly connected to either tuberculosis or lung cancer, which is a disjunction of two diseases. There is no common effect or shared parent structure between bronc and either, and neither is a parent or child of the other. Thus, they do not belong to each other's Markov blanket."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "bronc",
+        "variable_b": "either",
+        "run_id": 3,
+        "seed": 20261118,
+        "prompt_version": "mb-v1-blanket-membership",
+        "raw_response": "{\n    \"variable_a\": \"bronc\",\n    \"variable_b\": \"either\",\n    \"in_markov_blanket\": false,\n    \"confidence\": 0.95,\n    \"reason\": \"Bronchitis (bronc) and either tuberculosis or lung cancer (either) are not directly connected, nor do they share a common cause or effect. Bronc is a direct cause of cough, while either is a disjunction of two diseases, with no shared children or spouses with bronc. Thus, they are not in each other's Markov blanket.\"\n}",
+        "parsed": {
+          "variable_a": "bronc",
+          "variable_b": "either",
+          "in_markov_blanket": false,
+          "confidence": 0.95,
+          "reason": "Bronchitis (bronc) and either tuberculosis or lung cancer (either) are not directly connected, nor do they share a common cause or effect. Bronc is a direct cause of cough, while either is a disjunction of two diseases, with no shared children or spouses with bronc. Thus, they are not in each other's Markov blanket."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "bronc",
+        "variable_b": "either",
+        "run_id": 4,
+        "seed": 20261118,
+        "prompt_version": "mb-v1-blanket-membership",
+        "raw_response": "{\n    \"variable_a\": \"bronc\",\n    \"variable_b\": \"either\",\n    \"in_markov_blanket\": false,\n    \"confidence\": 0.95,\n    \"reason\": \"Bronchitis (bronc) is a direct cause of cough and is not directly connected to either tuberculosis or lung cancer, and neither shares a common effect or parent-child relationship with bronc. There is no common cause or common effect between bronc and either, and they are not spouses or parents/children of each other.\"\n}",
+        "parsed": {
+          "variable_a": "bronc",
+          "variable_b": "either",
+          "in_markov_blanket": false,
+          "confidence": 0.95,
+          "reason": "Bronchitis (bronc) is a direct cause of cough and is not directly connected to either tuberculosis or lung cancer, and neither shares a common effect or parent-child relationship with bronc. There is no common cause or common effect between bronc and either, and they are not spouses or parents/children of each other."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "bronc",
+        "variable_b": "either",
+        "run_id": 5,
+        "seed": 20261118,
+        "prompt_version": "mb-v1-blanket-membership",
+        "raw_response": "{\n    \"variable_a\": \"bronc\",\n    \"variable_b\": \"either\",\n    \"in_markov_blanket\": false,\n    \"confidence\": 0.95,\n    \"reason\": \"Bronchitis (bronc) and either (tuberculosis or lung cancer) are not directly causally linked, nor do they share a common effect or mutual parents; bronc is a cause of symptoms like cough, while either represents a disease diagnosis with no direct causal or structural connection to bronc beyond the possibility of co-occurrence, which does not constitute membership in the Markov blanket.\"\n}",
+        "parsed": {
+          "variable_a": "bronc",
+          "variable_b": "either",
+          "in_markov_blanket": false,
+          "confidence": 0.95,
+          "reason": "Bronchitis (bronc) and either (tuberculosis or lung cancer) are not directly causally linked, nor do they share a common effect or mutual parents; bronc is a cause of symptoms like cough, while either represents a disease diagnosis with no direct causal or structural connection to bronc beyond the possibility of co-occurrence, which does not constitute membership in the Markov blanket."
+        },
+        "parse_status": "success"
+      }
+    ],
+    "final_relation": "uncertain",
+    "final_confidence": 0.95,
+    "consistency": 1.0,
+    "relation_count": {
+      "uncertain": 5
+    },
+    "in_markov_blanket": false,
+    "positive_ratio": 0.0
+  },
+  {
+    "variable_a": "bronc",
+    "variable_b": "xray",
+    "runs": [
+      {
+        "variable_a": "bronc",
+        "variable_b": "xray",
+        "run_id": 1,
+        "seed": 20261118,
+        "prompt_version": "mb-v1-blanket-membership",
+        "raw_response": "{\n    \"variable_a\": \"bronc\",\n    \"variable_b\": \"xray\",\n    \"in_markov_blanket\": true,\n    \"confidence\": 0.9,\n    \"reason\": \"Bronchitis (bronc) can cause an abnormal X-ray (xray), making them directly connected. Since they share a direct causal link, bronc is in the Markov blanket of xray and vice versa.\"\n}",
+        "parsed": {
+          "variable_a": "bronc",
+          "variable_b": "xray",
+          "in_markov_blanket": true,
+          "confidence": 0.9,
+          "reason": "Bronchitis (bronc) can cause an abnormal X-ray (xray), making them directly connected. Since they share a direct causal link, bronc is in the Markov blanket of xray and vice versa."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "bronc",
+        "variable_b": "xray",
+        "run_id": 2,
+        "seed": 20261118,
+        "prompt_version": "mb-v1-blanket-membership",
+        "raw_response": "{\n    \"variable_a\": \"bronc\",\n    \"variable_b\": \"xray\",\n    \"in_markov_blanket\": false,\n    \"confidence\": 0.95,\n    \"reason\": \"Bronchitis (bronc) and abnormal X-ray (xray) are not directly causally linked, nor do they share a common effect or common cause. Bronc influences other variables like pneumo, but xray is influenced by other variables such as embolism or lung cancer. There is no direct edge or shared effect between bronc and xray, and they do not belong to each other's Markov blanket.\"\n}",
+        "parsed": {
+          "variable_a": "bronc",
+          "variable_b": "xray",
+          "in_markov_blanket": false,
+          "confidence": 0.95,
+          "reason": "Bronchitis (bronc) and abnormal X-ray (xray) are not directly causally linked, nor do they share a common effect or common cause. Bronc influences other variables like pneumo, but xray is influenced by other variables such as embolism or lung cancer. There is no direct edge or shared effect between bronc and xray, and they do not belong to each other's Markov blanket."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "bronc",
+        "variable_b": "xray",
+        "run_id": 3,
+        "seed": 20261118,
+        "prompt_version": "mb-v1-blanket-membership",
+        "raw_response": "{\n    \"variable_a\": \"bronc\",\n    \"variable_b\": \"xray\",\n    \"in_markov_blanket\": false,\n    \"confidence\": 0.95,\n    \"reason\": \"Bronchitis (bronc) and abnormal X-ray (xray) do not share a common cause or effect, nor are they directly causally linked. Bronc influences other variables like emphysema or lung cancer, and xray is influenced by conditions like lung cancer or bronchitis, but they do not form a mutual Markov blanket because they are not parents, children, or spouses. There is no common effect or shared parent relationship between them that would place one in the other's Markov blanket.\"\n}",
+        "parsed": {
+          "variable_a": "bronc",
+          "variable_b": "xray",
+          "in_markov_blanket": false,
+          "confidence": 0.95,
+          "reason": "Bronchitis (bronc) and abnormal X-ray (xray) do not share a common cause or effect, nor are they directly causally linked. Bronc influences other variables like emphysema or lung cancer, and xray is influenced by conditions like lung cancer or bronchitis, but they do not form a mutual Markov blanket because they are not parents, children, or spouses. There is no common effect or shared parent relationship between them that would place one in the other's Markov blanket."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "bronc",
+        "variable_b": "xray",
+        "run_id": 4,
+        "seed": 20261118,
+        "prompt_version": "mb-v1-blanket-membership",
+        "raw_response": "{\n    \"variable_a\": \"bronc\",\n    \"variable_b\": \"xray\",\n    \"in_markov_blanket\": true,\n    \"confidence\": 0.9,\n    \"reason\": \"Bronchitis (bronc) can cause an abnormal X-ray (xray), and both are influenced by the common cause lung disease (lung). However, bronc and xray do not share a common cause in a way that forms a mutual blanket, but since bronc causes xray directly, they are in each other's Markov blanket via the parent-child relationship. Thus, bronc is a parent of xray, making it part of xray's Markov blanket, and xray is a child of bronc, so bronc is in xray's Markov blanket.\"\n}",
+        "parsed": {
+          "variable_a": "bronc",
+          "variable_b": "xray",
+          "in_markov_blanket": true,
+          "confidence": 0.9,
+          "reason": "Bronchitis (bronc) can cause an abnormal X-ray (xray), and both are influenced by the common cause lung disease (lung). However, bronc and xray do not share a common cause in a way that forms a mutual blanket, but since bronc causes xray directly, they are in each other's Markov blanket via the parent-child relationship. Thus, bronc is a parent of xray, making it part of xray's Markov blanket, and xray is a child of bronc, so bronc is in xray's Markov blanket."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "bronc",
+        "variable_b": "xray",
+        "run_id": 5,
+        "seed": 20261118,
+        "prompt_version": "mb-v1-blanket-membership",
+        "raw_response": "{\n    \"variable_a\": \"bronc\",\n    \"variable_b\": \"xray\",\n    \"in_markov_blanket\": false,\n    \"confidence\": 0.95,\n    \"reason\": \"Bronchitis (bronc) and abnormal X-ray (xray) do not share a common cause or effect, nor are they directly causally linked; bronc influences other variables like lung disease, but xray is influenced by lung disease, not directly by bronc. They are connected only through a common child (e.g., lung disease), so they are not in each other's Markov blanket.\"\n}",
+        "parsed": {
+          "variable_a": "bronc",
+          "variable_b": "xray",
+          "in_markov_blanket": false,
+          "confidence": 0.95,
+          "reason": "Bronchitis (bronc) and abnormal X-ray (xray) do not share a common cause or effect, nor are they directly causally linked; bronc influences other variables like lung disease, but xray is influenced by lung disease, not directly by bronc. They are connected only through a common child (e.g., lung disease), so they are not in each other's Markov blanket."
+        },
+        "parse_status": "success"
+      }
+    ],
+    "final_relation": "uncertain",
+    "final_confidence": 0.9299999999999999,
+    "consistency": 1.0,
+    "relation_count": {
+      "uncertain": 5
+    },
+    "in_markov_blanket": false,
+    "positive_ratio": 0.4
+  },
+  {
+    "variable_a": "either",
+    "variable_b": "dysp",
+    "runs": [
+      {
+        "variable_a": "either",
+        "variable_b": "dysp",
+        "run_id": 1,
+        "seed": 20261130,
+        "prompt_version": "mb-v1-blanket-membership",
+        "raw_response": "{\n    \"variable_a\": \"either\",\n    \"variable_b\": \"dysp\",\n    \"in_markov_blanket\": false,\n    \"confidence\": 0.95,\n    \"reason\": \"Variable 'either' represents whether the patient has tuberculosis or lung cancer, while 'dysp' is dyspnea caused by either condition. However, 'either' is not directly connected to 'dysp' as a parent or child, nor do they share a common effect or spouse relationship. Dyspnea is a child of both tuberculosis and lung cancer, so it is a child of both cases in 'either'. Thus, 'either' is not in the Markov blanket of 'dysp' because it does not have direct causal links or shared effects with 'dysp' as a parent, child, or spouse.\"\n}",
+        "parsed": {
+          "variable_a": "either",
+          "variable_b": "dysp",
+          "in_markov_blanket": false,
+          "confidence": 0.95,
+          "reason": "Variable 'either' represents whether the patient has tuberculosis or lung cancer, while 'dysp' is dyspnea caused by either condition. However, 'either' is not directly connected to 'dysp' as a parent or child, nor do they share a common effect or spouse relationship. Dyspnea is a child of both tuberculosis and lung cancer, so it is a child of both cases in 'either'. Thus, 'either' is not in the Markov blanket of 'dysp' because it does not have direct causal links or shared effects with 'dysp' as a parent, child, or spouse."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "either",
+        "variable_b": "dysp",
+        "run_id": 2,
+        "seed": 20261130,
+        "prompt_version": "mb-v1-blanket-membership",
+        "raw_response": "{\n    \"variable_a\": \"either\",\n    \"variable_b\": \"dysp\",\n    \"in_markov_blanket\": false,\n    \"confidence\": 0.95,\n    \"reason\": \"Variable 'either' represents whether the patient has tuberculosis or lung cancer, while 'dysp' represents dyspnea. Neither directly causes the other, and there is no common effect or shared parent structure between them in the ASIA network. Dyspnea is caused by lung cancer or tuberculosis, but 'either' is a disjunction of those conditions and not a direct cause of dyspnea. Therefore, they do not share a common effect or mutual influence in the Markov blanket structure.\"\n}",
+        "parsed": {
+          "variable_a": "either",
+          "variable_b": "dysp",
+          "in_markov_blanket": false,
+          "confidence": 0.95,
+          "reason": "Variable 'either' represents whether the patient has tuberculosis or lung cancer, while 'dysp' represents dyspnea. Neither directly causes the other, and there is no common effect or shared parent structure between them in the ASIA network. Dyspnea is caused by lung cancer or tuberculosis, but 'either' is a disjunction of those conditions and not a direct cause of dyspnea. Therefore, they do not share a common effect or mutual influence in the Markov blanket structure."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "either",
+        "variable_b": "dysp",
+        "run_id": 3,
+        "seed": 20261130,
+        "prompt_version": "mb-v1-blanket-membership",
+        "raw_response": "{\n    \"variable_a\": \"either\",\n    \"variable_b\": \"dysp\",\n    \"in_markov_blanket\": false,\n    \"confidence\": 0.95,\n    \"reason\": \"Variable 'either' represents whether the patient has tuberculosis or lung cancer, while 'dysp' represents dyspnea. Neither variable is a parent or child of the other, and there is no common effect or shared cause structure between them in the ASIA network. Dyspnea is caused by lung cancer or tuberculosis, but 'either' is a disjunction of the two diseases, not a direct cause of dyspnea. Therefore, they do not form a Markov blanket pair.\"\n}",
+        "parsed": {
+          "variable_a": "either",
+          "variable_b": "dysp",
+          "in_markov_blanket": false,
+          "confidence": 0.95,
+          "reason": "Variable 'either' represents whether the patient has tuberculosis or lung cancer, while 'dysp' represents dyspnea. Neither variable is a parent or child of the other, and there is no common effect or shared cause structure between them in the ASIA network. Dyspnea is caused by lung cancer or tuberculosis, but 'either' is a disjunction of the two diseases, not a direct cause of dyspnea. Therefore, they do not form a Markov blanket pair."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "either",
+        "variable_b": "dysp",
+        "run_id": 4,
+        "seed": 20261130,
+        "prompt_version": "mb-v1-blanket-membership",
+        "raw_response": "{\n    \"variable_a\": \"either\",\n    \"variable_b\": \"dysp\",\n    \"in_markov_blanket\": false,\n    \"confidence\": 0.95,\n    \"reason\": \"Variable 'either' represents whether the patient has tuberculosis or lung cancer, while 'dysp' represents dyspnea. Neither variable is a parent or child of the other, and there is no common effect or shared cause structure in the ASIA network that connects them directly. Dyspnea is a symptom of both tuberculosis and lung cancer, so they share a common cause, but this does not make them part of each other's Markov blanket. The Markov blanket requires direct influence or shared effect, but since 'either' is a disjunction of two diseases and not a direct cause of dyspnea, and dyspnea is not a child of 'either', they do not share a common effect or mutual dependency in the",
+        "parsed": null,
+        "parse_status": "failed"
+      },
+      {
+        "variable_a": "either",
+        "variable_b": "dysp",
+        "run_id": 5,
+        "seed": 20261142,
+        "prompt_version": "mb-v1-blanket-membership",
+        "raw_response": "{\n    \"variable_a\": \"either\",\n    \"variable_b\": \"dysp\",\n    \"in_markov_blanket\": false,\n    \"confidence\": 0.95,\n    \"reason\": \"Variable 'either' represents whether the patient has tuberculosis or lung cancer, while 'dysp' represents dyspnea. Neither variable is a parent or child of the other, and there is no shared effect or spouse relationship between them in the ASIA network structure. Dyspnea is caused by lung cancer or tuberculosis, so it is a common effect of both 'tuberculosis' and 'lung cancer', but 'either' is a disjunction of those two, not a direct cause or effect of dyspnea. Thus, neither A nor B shares a direct causal link or common effect, and they do not belong to each other's Markov blanket.\"\n}",
+        "parsed": {
+          "variable_a": "either",
+          "variable_b": "dysp",
+          "in_markov_blanket": false,
+          "confidence": 0.95,
+          "reason": "Variable 'either' represents whether the patient has tuberculosis or lung cancer, while 'dysp' represents dyspnea. Neither variable is a parent or child of the other, and there is no shared effect or spouse relationship between them in the ASIA network structure. Dyspnea is caused by lung cancer or tuberculosis, so it is a common effect of both 'tuberculosis' and 'lung cancer', but 'either' is a disjunction of those two, not a direct cause or effect of dyspnea. Thus, neither A nor B shares a direct causal link or common effect, and they do not belong to each other's Markov blanket."
+        },
+        "parse_status": "success"
+      }
+    ],
+    "final_relation": "uncertain",
+    "final_confidence": 0.95,
+    "consistency": 1.0,
+    "relation_count": {
+      "uncertain": 5
+    },
+    "in_markov_blanket": false,
+    "positive_ratio": 0.0
+  },
+  {
+    "variable_a": "either",
+    "variable_b": "xray",
+    "runs": [
+      {
+        "variable_a": "either",
+        "variable_b": "xray",
+        "run_id": 1,
+        "seed": 20261130,
+        "prompt_version": "mb-v1-blanket-membership",
+        "raw_response": "{\n    \"variable_a\": \"either\",\n    \"variable_b\": \"xray\",\n    \"in_markov_blanket\": false,\n    \"confidence\": 0.95,\n    \"reason\": \"Variable 'either' represents whether the patient has tuberculosis or lung cancer, while 'xray' is the result of a chest X-ray. Neither is a parent or child of the other, and they do not share a common effect or common cause in the network structure. There is no direct causal link or shared effect between having a lung disease and an abnormal X-ray that would place them in each other's Markov blanket.\"\n}",
+        "parsed": {
+          "variable_a": "either",
+          "variable_b": "xray",
+          "in_markov_blanket": false,
+          "confidence": 0.95,
+          "reason": "Variable 'either' represents whether the patient has tuberculosis or lung cancer, while 'xray' is the result of a chest X-ray. Neither is a parent or child of the other, and they do not share a common effect or common cause in the network structure. There is no direct causal link or shared effect between having a lung disease and an abnormal X-ray that would place them in each other's Markov blanket."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "either",
+        "variable_b": "xray",
+        "run_id": 2,
+        "seed": 20261130,
+        "prompt_version": "mb-v1-blanket-membership",
+        "raw_response": "{\n    \"variable_a\": \"either\",\n    \"variable_b\": \"xray\",\n    \"in_markov_blanket\": false,\n    \"confidence\": 0.95,\n    \"reason\": \"Variable 'either' represents whether the patient has tuberculosis or lung cancer, and 'xray' is the result of a chest X-ray. Neither directly causes the other, and there is no common effect or shared parent relationship between them. Lung cancer and tuberculosis may both cause abnormal X-rays, but 'either' is a disjunction over diagnoses, not a cause of the X-ray result. Thus, there is no direct causal link or shared effect between 'either' and 'xray'.\"\n}",
+        "parsed": {
+          "variable_a": "either",
+          "variable_b": "xray",
+          "in_markov_blanket": false,
+          "confidence": 0.95,
+          "reason": "Variable 'either' represents whether the patient has tuberculosis or lung cancer, and 'xray' is the result of a chest X-ray. Neither directly causes the other, and there is no common effect or shared parent relationship between them. Lung cancer and tuberculosis may both cause abnormal X-rays, but 'either' is a disjunction over diagnoses, not a cause of the X-ray result. Thus, there is no direct causal link or shared effect between 'either' and 'xray'."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "either",
+        "variable_b": "xray",
+        "run_id": 3,
+        "seed": 20261130,
+        "prompt_version": "mb-v1-blanket-membership",
+        "raw_response": "{\n    \"variable_a\": \"either\",\n    \"variable_b\": \"xray\",\n    \"in_markov_blanket\": false,\n    \"confidence\": 0.95,\n    \"reason\": \"The variable 'either' represents whether the patient has tuberculosis or lung cancer, while 'xray' is the result of a chest X-ray. Neither directly causes the other, and there is no common effect or shared parent relationship between them. Lung cancer and tuberculosis can both cause abnormal X-rays, but 'either' is a disjunction over diseases, not a direct cause of xray. Thus, xray is not in the Markov blanket of either, as there is no direct causal link or shared effect structure.\"\n}",
+        "parsed": {
+          "variable_a": "either",
+          "variable_b": "xray",
+          "in_markov_blanket": false,
+          "confidence": 0.95,
+          "reason": "The variable 'either' represents whether the patient has tuberculosis or lung cancer, while 'xray' is the result of a chest X-ray. Neither directly causes the other, and there is no common effect or shared parent relationship between them. Lung cancer and tuberculosis can both cause abnormal X-rays, but 'either' is a disjunction over diseases, not a direct cause of xray. Thus, xray is not in the Markov blanket of either, as there is no direct causal link or shared effect structure."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "either",
+        "variable_b": "xray",
+        "run_id": 4,
+        "seed": 20261130,
+        "prompt_version": "mb-v1-blanket-membership",
+        "raw_response": "{\n    \"variable_a\": \"either\",\n    \"variable_b\": \"xray\",\n    \"in_markov_blanket\": false,\n    \"confidence\": 0.95,\n    \"reason\": \"Variable 'either' indicates whether the patient has tuberculosis or lung cancer, while 'xray' is the result of a chest X-ray. Neither directly causes the other, and there is no common effect or shared parent relationship between them. Lung cancer or tuberculosis may lead to an abnormal X-ray, but 'either' is a diagnosis of disease type, not a direct cause of X-ray result. Thus, they are not in each other's Markov blanket.\"\n}",
+        "parsed": {
+          "variable_a": "either",
+          "variable_b": "xray",
+          "in_markov_blanket": false,
+          "confidence": 0.95,
+          "reason": "Variable 'either' indicates whether the patient has tuberculosis or lung cancer, while 'xray' is the result of a chest X-ray. Neither directly causes the other, and there is no common effect or shared parent relationship between them. Lung cancer or tuberculosis may lead to an abnormal X-ray, but 'either' is a diagnosis of disease type, not a direct cause of X-ray result. Thus, they are not in each other's Markov blanket."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "either",
+        "variable_b": "xray",
+        "run_id": 5,
+        "seed": 20261130,
+        "prompt_version": "mb-v1-blanket-membership",
+        "raw_response": "{\n    \"variable_a\": \"either\",\n    \"variable_b\": \"xray\",\n    \"in_markov_blanket\": false,\n    \"confidence\": 0.95,\n    \"reason\": \"Variable 'either' represents whether the patient has tuberculosis or lung cancer, while 'xray' is the result of a chest X-ray. Neither directly causes the other, and there is no common effect or shared parent relationship between them. Lung cancer and tuberculosis may both cause abnormal X-rays, but 'either' is a binary diagnosis, not a cause of X-ray results. Thus, they do not share a common effect or mutual influence in the Markov blanket structure.\"\n}",
+        "parsed": {
+          "variable_a": "either",
+          "variable_b": "xray",
+          "in_markov_blanket": false,
+          "confidence": 0.95,
+          "reason": "Variable 'either' represents whether the patient has tuberculosis or lung cancer, while 'xray' is the result of a chest X-ray. Neither directly causes the other, and there is no common effect or shared parent relationship between them. Lung cancer and tuberculosis may both cause abnormal X-rays, but 'either' is a binary diagnosis, not a cause of X-ray results. Thus, they do not share a common effect or mutual influence in the Markov blanket structure."
+        },
+        "parse_status": "success"
+      }
+    ],
+    "final_relation": "uncertain",
+    "final_confidence": 0.95,
+    "consistency": 1.0,
+    "relation_count": {
+      "uncertain": 5
+    },
+    "in_markov_blanket": false,
+    "positive_ratio": 0.0
+  },
+  {
+    "variable_a": "lung",
+    "variable_b": "bronc",
+    "runs": [
+      {
+        "variable_a": "lung",
+        "variable_b": "bronc",
+        "run_id": 1,
+        "seed": 20261094,
+        "prompt_version": "mb-v1-blanket-membership",
+        "raw_response": "{\n    \"variable_a\": \"lung\",\n    \"variable_b\": \"bronc\",\n    \"in_markov_blanket\": true,\n    \"confidence\": 0.9,\n    \"reason\": \"lung and bronc share a common cause, smokes, and both are caused by smoking, meaning they are conditionally dependent given the common cause, which is part of their Markov blanket relationship.\"\n}",
+        "parsed": {
+          "variable_a": "lung",
+          "variable_b": "bronc",
+          "in_markov_blanket": true,
+          "confidence": 0.9,
+          "reason": "lung and bronc share a common cause, smokes, and both are caused by smoking, meaning they are conditionally dependent given the common cause, which is part of their Markov blanket relationship."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "lung",
+        "variable_b": "bronc",
+        "run_id": 2,
+        "seed": 20261094,
+        "prompt_version": "mb-v1-blanket-membership",
+        "raw_response": "{\n    \"variable_a\": \"lung\",\n    \"variable_b\": \"bronc\",\n    \"in_markov_blanket\": true,\n    \"confidence\": 0.9,\n    \"reason\": \"lung and bronc are both caused by smoking, and they share a common cause (smoking), but more importantly, they are not connected only through a common cause; rather, bronc is a direct child of smoking, and lung is a direct child of smoking, meaning they share a common cause. However, the Markov blanket of a variable includes its parents, children, and spouses (other parents of its children). Since lung and bronc do not have a direct causal link, nor do they share a common effect, they are not spouses. Thus, they are not in each other's Markov blanket. Therefore, the correct answer is NO.\"\n}",
+        "parsed": {
+          "variable_a": "lung",
+          "variable_b": "bronc",
+          "in_markov_blanket": true,
+          "confidence": 0.9,
+          "reason": "lung and bronc are both caused by smoking, and they share a common cause (smoking), but more importantly, they are not connected only through a common cause; rather, bronc is a direct child of smoking, and lung is a direct child of smoking, meaning they share a common cause. However, the Markov blanket of a variable includes its parents, children, and spouses (other parents of its children). Since lung and bronc do not have a direct causal link, nor do they share a common effect, they are not spouses. Thus, they are not in each other's Markov blanket. Therefore, the correct answer is NO."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "lung",
+        "variable_b": "bronc",
+        "run_id": 3,
+        "seed": 20261094,
+        "prompt_version": "mb-v1-blanket-membership",
+        "raw_response": "{\n    \"variable_a\": \"lung\",\n    \"variable_b\": \"bronc\",\n    \"in_markov_blanket\": true,\n    \"confidence\": 0.9,\n    \"reason\": \"lung and bronc are not directly causally linked, but both can influence the common effect 'pneumonia' (as seen in the ASIA network), making them spouses in the Markov blanket due to sharing a common effect.\"\n}",
+        "parsed": {
+          "variable_a": "lung",
+          "variable_b": "bronc",
+          "in_markov_blanket": true,
+          "confidence": 0.9,
+          "reason": "lung and bronc are not directly causally linked, but both can influence the common effect 'pneumonia' (as seen in the ASIA network), making them spouses in the Markov blanket due to sharing a common effect."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "lung",
+        "variable_b": "bronc",
+        "run_id": 4,
+        "seed": 20261094,
+        "prompt_version": "mb-v1-blanket-membership",
+        "raw_response": "{\n    \"variable_a\": \"lung\",\n    \"variable_b\": \"bronc\",\n    \"in_markov_blanket\": true,\n    \"confidence\": 0.9,\n    \"reason\": \"lung and bronc are both caused by smoking, and they share a common cause (smoking), but more importantly, they are not directly connected through a chain; however, in the ASIA network, bronc is a child of smoking, and lung is also a child of smoking. Since both are caused by smoking, they share a common cause, but the Markov blanket of a variable includes its parents, children, and spouses. Bronc is not a child of lung, nor is lung a child of bronc. However, both are caused by smoking, and smoking is a common parent. But the Markov blanket of lung includes smoking (its parent), and bronc is not directly a spouse or child of lung. However, in",
+        "parsed": null,
+        "parse_status": "failed"
+      },
+      {
+        "variable_a": "lung",
+        "variable_b": "bronc",
+        "run_id": 5,
+        "seed": 20261094,
+        "prompt_version": "mb-v1-blanket-membership",
+        "raw_response": "{\n    \"variable_a\": \"lung\",\n    \"variable_b\": \"bronc\",\n    \"in_markov_blanket\": true,\n    \"confidence\": 0.9,\n    \"reason\": \"lung and bronc are both children of the common parent 'tuberculosis' in the ASIA network, meaning they share a common cause, and thus each is part of the other's Markov blanket due to their shared causal origin and the structure of the network.\"\n}",
+        "parsed": {
+          "variable_a": "lung",
+          "variable_b": "bronc",
+          "in_markov_blanket": true,
+          "confidence": 0.9,
+          "reason": "lung and bronc are both children of the common parent 'tuberculosis' in the ASIA network, meaning they share a common cause, and thus each is part of the other's Markov blanket due to their shared causal origin and the structure of the network."
+        },
+        "parse_status": "success"
+      }
+    ],
+    "final_relation": "uncertain",
+    "final_confidence": 0.9,
+    "consistency": 1.0,
+    "relation_count": {
+      "uncertain": 5
+    },
+    "in_markov_blanket": true,
+    "positive_ratio": 0.8
+  },
+  {
+    "variable_a": "lung",
+    "variable_b": "dysp",
+    "runs": [
+      {
+        "variable_a": "lung",
+        "variable_b": "dysp",
+        "run_id": 1,
+        "seed": 20261106,
+        "prompt_version": "mb-v1-blanket-membership",
+        "raw_response": "{\n    \"variable_a\": \"lung\",\n    \"variable_b\": \"dysp\",\n    \"in_markov_blanket\": true,\n    \"confidence\": 0.9,\n    \"reason\": \"Lung cancer (lung) can directly cause dyspnea (dysp), making them causally linked. Since dysp is a direct effect of lung, and lung is a direct cause of dysp, they share a direct causal relationship, which means lung is a parent of dysp and dysp is a child of lung. This direct causal link places both variables in each other's Markov blanket.\"\n}",
+        "parsed": {
+          "variable_a": "lung",
+          "variable_b": "dysp",
+          "in_markov_blanket": true,
+          "confidence": 0.9,
+          "reason": "Lung cancer (lung) can directly cause dyspnea (dysp), making them causally linked. Since dysp is a direct effect of lung, and lung is a direct cause of dysp, they share a direct causal relationship, which means lung is a parent of dysp and dysp is a child of lung. This direct causal link places both variables in each other's Markov blanket."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "lung",
+        "variable_b": "dysp",
+        "run_id": 2,
+        "seed": 20261106,
+        "prompt_version": "mb-v1-blanket-membership",
+        "raw_response": "{\n    \"variable_a\": \"lung\",\n    \"variable_b\": \"dysp\",\n    \"in_markov_blanket\": true,\n    \"confidence\": 0.9,\n    \"reason\": \"lung is a direct cause of dyspnea, so they are directly connected, making them part of each other's Markov blanket.\"\n}",
+        "parsed": {
+          "variable_a": "lung",
+          "variable_b": "dysp",
+          "in_markov_blanket": true,
+          "confidence": 0.9,
+          "reason": "lung is a direct cause of dyspnea, so they are directly connected, making them part of each other's Markov blanket."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "lung",
+        "variable_b": "dysp",
+        "run_id": 3,
+        "seed": 20261106,
+        "prompt_version": "mb-v1-blanket-membership",
+        "raw_response": "{\n    \"variable_a\": \"lung\",\n    \"variable_b\": \"dysp\",\n    \"in_markov_blanket\": true,\n    \"confidence\": 0.9,\n    \"reason\": \"Lung cancer (lung) can directly cause dyspnea (dysp), making them directly connected. Since they are directly causally linked, lung is a parent of dysp, and thus dysp is a child of lung. Therefore, lung and dysp are in each other's Markov blanket because they share a direct causal link, and no other variables are needed to explain their dependence.\"\n}",
+        "parsed": {
+          "variable_a": "lung",
+          "variable_b": "dysp",
+          "in_markov_blanket": true,
+          "confidence": 0.9,
+          "reason": "Lung cancer (lung) can directly cause dyspnea (dysp), making them directly connected. Since they are directly causally linked, lung is a parent of dysp, and thus dysp is a child of lung. Therefore, lung and dysp are in each other's Markov blanket because they share a direct causal link, and no other variables are needed to explain their dependence."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "lung",
+        "variable_b": "dysp",
+        "run_id": 4,
+        "seed": 20261106,
+        "prompt_version": "mb-v1-blanket-membership",
+        "raw_response": "{\n    \"variable_a\": \"lung\",\n    \"variable_b\": \"dysp\",\n    \"in_markov_blanket\": true,\n    \"confidence\": 0.9,\n    \"reason\": \"Lung cancer (lung) can directly cause dyspnea (dysp), making them directly connected. Since they share a direct causal link, lung is a parent of dysp, and thus dysp is a child of lung. Therefore, lung and dysp are in each other's Markov blanket due to the direct causal relationship, as dysp is a child of lung and lung is a parent of dysp.\"\n}",
+        "parsed": {
+          "variable_a": "lung",
+          "variable_b": "dysp",
+          "in_markov_blanket": true,
+          "confidence": 0.9,
+          "reason": "Lung cancer (lung) can directly cause dyspnea (dysp), making them directly connected. Since they share a direct causal link, lung is a parent of dysp, and thus dysp is a child of lung. Therefore, lung and dysp are in each other's Markov blanket due to the direct causal relationship, as dysp is a child of lung and lung is a parent of dysp."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "lung",
+        "variable_b": "dysp",
+        "run_id": 5,
+        "seed": 20261106,
+        "prompt_version": "mb-v1-blanket-membership",
+        "raw_response": "{\n    \"variable_a\": \"lung\",\n    \"variable_b\": \"dysp\",\n    \"in_markov_blanket\": true,\n    \"confidence\": 0.9,\n    \"reason\": \"Lung cancer (lung) can directly cause dyspnea (dysp), making them directly connected. Since they are directly causally linked, lung is a parent of dysp, and thus dysp is a child of lung. In the Markov blanket, a variable's children are included, so dysp is in the Markov blanket of lung. The relationship is direct and symmetric in structure, so lung is in the Markov blanket of dysp as well.\"\n}",
+        "parsed": {
+          "variable_a": "lung",
+          "variable_b": "dysp",
+          "in_markov_blanket": true,
+          "confidence": 0.9,
+          "reason": "Lung cancer (lung) can directly cause dyspnea (dysp), making them directly connected. Since they are directly causally linked, lung is a parent of dysp, and thus dysp is a child of lung. In the Markov blanket, a variable's children are included, so dysp is in the Markov blanket of lung. The relationship is direct and symmetric in structure, so lung is in the Markov blanket of dysp as well."
+        },
+        "parse_status": "success"
+      }
+    ],
+    "final_relation": "uncertain",
+    "final_confidence": 0.9,
+    "consistency": 1.0,
+    "relation_count": {
+      "uncertain": 5
+    },
+    "in_markov_blanket": true,
+    "positive_ratio": 1.0
+  },
+  {
+    "variable_a": "lung",
+    "variable_b": "either",
+    "runs": [
+      {
+        "variable_a": "lung",
+        "variable_b": "either",
+        "run_id": 1,
+        "seed": 20261094,
+        "prompt_version": "mb-v1-blanket-membership",
+        "raw_response": "{\n    \"variable_a\": \"lung\",\n    \"variable_b\": \"either\",\n    \"in_markov_blanket\": true,\n    \"confidence\": 0.9,\n    \"reason\": \"Variable 'lung' is a direct cause of 'either', as 'either' represents the presence of either tuberculosis or lung cancer, meaning lung cancer directly contributes to the occurrence of 'either'. This direct causal link places 'lung' in the Markov blanket of 'either'.\"\n}",
+        "parsed": {
+          "variable_a": "lung",
+          "variable_b": "either",
+          "in_markov_blanket": true,
+          "confidence": 0.9,
+          "reason": "Variable 'lung' is a direct cause of 'either', as 'either' represents the presence of either tuberculosis or lung cancer, meaning lung cancer directly contributes to the occurrence of 'either'. This direct causal link places 'lung' in the Markov blanket of 'either'."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "lung",
+        "variable_b": "either",
+        "run_id": 2,
+        "seed": 20261094,
+        "prompt_version": "mb-v1-blanket-membership",
+        "raw_response": "{\n    \"variable_a\": \"lung\",\n    \"variable_b\": \"either\",\n    \"in_markov_blanket\": true,\n    \"confidence\": 0.9,\n    \"reason\": \"Variable 'lung' is a direct cause of 'either', as 'either' represents the presence of either tuberculosis or lung cancer, meaning lung cancer is a direct contributing factor to the occurrence of 'either'. Since 'lung' causes 'either', and 'either' is a child of 'lung', 'lung' is in the Markov blanket of 'either'. Additionally, 'either' is a common effect of 'lung' and 'tuberculosis', so 'lung' and 'either' are directly linked through causation and shared effect structure, satisfying the condition for being in each other's Markov blanket.\"\n}",
+        "parsed": {
+          "variable_a": "lung",
+          "variable_b": "either",
+          "in_markov_blanket": true,
+          "confidence": 0.9,
+          "reason": "Variable 'lung' is a direct cause of 'either', as 'either' represents the presence of either tuberculosis or lung cancer, meaning lung cancer is a direct contributing factor to the occurrence of 'either'. Since 'lung' causes 'either', and 'either' is a child of 'lung', 'lung' is in the Markov blanket of 'either'. Additionally, 'either' is a common effect of 'lung' and 'tuberculosis', so 'lung' and 'either' are directly linked through causation and shared effect structure, satisfying the condition for being in each other's Markov blanket."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "lung",
+        "variable_b": "either",
+        "run_id": 3,
+        "seed": 20261094,
+        "prompt_version": "mb-v1-blanket-membership",
+        "raw_response": "{\n    \"variable_a\": \"lung\",\n    \"variable_b\": \"either\",\n    \"in_markov_blanket\": true,\n    \"confidence\": 0.9,\n    \"reason\": \"Variable 'lung' is a direct cause of 'either', as 'either' represents the presence of either tuberculosis or lung cancer, meaning lung cancer is a direct cause of the 'either' node. Since 'lung' is a direct cause of 'either', it is in the Markov blanket of 'either' as a parent. Additionally, 'either' is a child of 'lung', and thus 'lung' is part of the Markov blanket of 'either'.\"\n}",
+        "parsed": {
+          "variable_a": "lung",
+          "variable_b": "either",
+          "in_markov_blanket": true,
+          "confidence": 0.9,
+          "reason": "Variable 'lung' is a direct cause of 'either', as 'either' represents the presence of either tuberculosis or lung cancer, meaning lung cancer is a direct cause of the 'either' node. Since 'lung' is a direct cause of 'either', it is in the Markov blanket of 'either' as a parent. Additionally, 'either' is a child of 'lung', and thus 'lung' is part of the Markov blanket of 'either'."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "lung",
+        "variable_b": "either",
+        "run_id": 4,
+        "seed": 20261106,
+        "prompt_version": "mb-v1-blanket-membership",
+        "raw_response": "{\n    \"variable_a\": \"lung\",\n    \"variable_b\": \"either\",\n    \"in_markov_blanket\": true,\n    \"confidence\": 0.9,\n    \"reason\": \"Variable B (either) is a direct effect of variable A (lung), as lung cancer causes the patient to have either tuberculosis or lung cancer. Since B is a direct effect of A, A is in the Markov blanket of B, and B is in the Markov blanket of A due to their direct causal relationship and shared effect structure.\"\n}",
+        "parsed": {
+          "variable_a": "lung",
+          "variable_b": "either",
+          "in_markov_blanket": true,
+          "confidence": 0.9,
+          "reason": "Variable B (either) is a direct effect of variable A (lung), as lung cancer causes the patient to have either tuberculosis or lung cancer. Since B is a direct effect of A, A is in the Markov blanket of B, and B is in the Markov blanket of A due to their direct causal relationship and shared effect structure."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "lung",
+        "variable_b": "either",
+        "run_id": 5,
+        "seed": 20261106,
+        "prompt_version": "mb-v1-blanket-membership",
+        "raw_response": "{\n    \"variable_a\": \"lung\",\n    \"variable_b\": \"either\",\n    \"in_markov_blanket\": true,\n    \"confidence\": 0.9,\n    \"reason\": \"Variable B (either) includes lung cancer as one of its components, meaning lung is a direct cause of either. Since lung is a parent of either, and either is a child of lung, they are directly connected. Furthermore, because either shares a common effect with lung (as lung is one of the causes of either), the structure implies that lung is in the Markov blanket of either, and vice versa.\"\n}",
+        "parsed": {
+          "variable_a": "lung",
+          "variable_b": "either",
+          "in_markov_blanket": true,
+          "confidence": 0.9,
+          "reason": "Variable B (either) includes lung cancer as one of its components, meaning lung is a direct cause of either. Since lung is a parent of either, and either is a child of lung, they are directly connected. Furthermore, because either shares a common effect with lung (as lung is one of the causes of either), the structure implies that lung is in the Markov blanket of either, and vice versa."
+        },
+        "parse_status": "success"
+      }
+    ],
+    "final_relation": "uncertain",
+    "final_confidence": 0.9,
+    "consistency": 1.0,
+    "relation_count": {
+      "uncertain": 5
+    },
+    "in_markov_blanket": true,
+    "positive_ratio": 1.0
+  },
+  {
+    "variable_a": "lung",
+    "variable_b": "xray",
+    "runs": [
+      {
+        "variable_a": "lung",
+        "variable_b": "xray",
+        "run_id": 1,
+        "seed": 20261106,
+        "prompt_version": "mb-v1-blanket-membership",
+        "raw_response": "{\n    \"variable_a\": \"lung\",\n    \"variable_b\": \"xray\",\n    \"in_markov_blanket\": true,\n    \"confidence\": 0.9,\n    \"reason\": \"Lung cancer (lung) can cause an abnormal X-ray (xray), making them directly connected. Since xray is a child of lung, xray is in the Markov blanket of lung. Additionally, lung and xray share no common causes or effects with other variables in a way that would create a separate path, so the direct causal link ensures that knowing one tells you something about the other even after conditioning on all other variables.\"\n}",
+        "parsed": {
+          "variable_a": "lung",
+          "variable_b": "xray",
+          "in_markov_blanket": true,
+          "confidence": 0.9,
+          "reason": "Lung cancer (lung) can cause an abnormal X-ray (xray), making them directly connected. Since xray is a child of lung, xray is in the Markov blanket of lung. Additionally, lung and xray share no common causes or effects with other variables in a way that would create a separate path, so the direct causal link ensures that knowing one tells you something about the other even after conditioning on all other variables."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "lung",
+        "variable_b": "xray",
+        "run_id": 2,
+        "seed": 20261106,
+        "prompt_version": "mb-v1-blanket-membership",
+        "raw_response": "{\n    \"variable_a\": \"lung\",\n    \"variable_b\": \"xray\",\n    \"in_markov_blanket\": true,\n    \"confidence\": 0.9,\n    \"reason\": \"Lung cancer (lung) can cause an abnormal X-ray (xray), making them directly connected. Additionally, both lung cancer and xray are part of a common effect structure involving the presence of disease, meaning xray is a child of lung and also a child of other variables like tuberculosis or emphysema. However, since xray is a child of lung, and lung is a parent of xray, they are directly connected in the causal structure. The Markov blanket includes parents, children, and spouses. Since xray is a child of lung, it is in the Markov blanket of lung. Therefore, lung is in the Markov blanket of xray, and vice versa.\"\n}",
+        "parsed": {
+          "variable_a": "lung",
+          "variable_b": "xray",
+          "in_markov_blanket": true,
+          "confidence": 0.9,
+          "reason": "Lung cancer (lung) can cause an abnormal X-ray (xray), making them directly connected. Additionally, both lung cancer and xray are part of a common effect structure involving the presence of disease, meaning xray is a child of lung and also a child of other variables like tuberculosis or emphysema. However, since xray is a child of lung, and lung is a parent of xray, they are directly connected in the causal structure. The Markov blanket includes parents, children, and spouses. Since xray is a child of lung, it is in the Markov blanket of lung. Therefore, lung is in the Markov blanket of xray, and vice versa."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "lung",
+        "variable_b": "xray",
+        "run_id": 3,
+        "seed": 20261106,
+        "prompt_version": "mb-v1-blanket-membership",
+        "raw_response": "{\n    \"variable_a\": \"lung\",\n    \"variable_b\": \"xray\",\n    \"in_markov_blanket\": true,\n    \"confidence\": 0.9,\n    \"reason\": \"lung is a parent of xray, meaning lung directly causes xray, so they are in each other's Markov blanket due to the direct causal link.\"\n}",
+        "parsed": {
+          "variable_a": "lung",
+          "variable_b": "xray",
+          "in_markov_blanket": true,
+          "confidence": 0.9,
+          "reason": "lung is a parent of xray, meaning lung directly causes xray, so they are in each other's Markov blanket due to the direct causal link."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "lung",
+        "variable_b": "xray",
+        "run_id": 4,
+        "seed": 20261106,
+        "prompt_version": "mb-v1-blanket-membership",
+        "raw_response": "{\n    \"variable_a\": \"lung\",\n    \"variable_b\": \"xray\",\n    \"in_markov_blanket\": true,\n    \"confidence\": 0.9,\n    \"reason\": \"Lung cancer (lung) can cause an abnormal X-ray (xray), making them directly connected. Since xray is a child of lung, xray is in the Markov blanket of lung. Additionally, lung and xray share no common cause or effect with other variables in a way that would require indirect paths; thus, the direct causal link ensures they are in each other's Markov blanket.\"\n}",
+        "parsed": {
+          "variable_a": "lung",
+          "variable_b": "xray",
+          "in_markov_blanket": true,
+          "confidence": 0.9,
+          "reason": "Lung cancer (lung) can cause an abnormal X-ray (xray), making them directly connected. Since xray is a child of lung, xray is in the Markov blanket of lung. Additionally, lung and xray share no common cause or effect with other variables in a way that would require indirect paths; thus, the direct causal link ensures they are in each other's Markov blanket."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "lung",
+        "variable_b": "xray",
+        "run_id": 5,
+        "seed": 20261106,
+        "prompt_version": "mb-v1-blanket-membership",
+        "raw_response": "{\n    \"variable_a\": \"lung\",\n    \"variable_b\": \"xray\",\n    \"in_markov_blanket\": true,\n    \"confidence\": 0.9,\n    \"reason\": \"Lung cancer causes an abnormal X-ray result, so lung is a parent of xray. Therefore, xray is a child of lung. As a result, xray is in the Markov blanket of lung (as a child), and lung is in the Markov blanket of xray (as a parent). This direct causal link ensures mutual membership in the Markov blanket.\"\n}",
+        "parsed": {
+          "variable_a": "lung",
+          "variable_b": "xray",
+          "in_markov_blanket": true,
+          "confidence": 0.9,
+          "reason": "Lung cancer causes an abnormal X-ray result, so lung is a parent of xray. Therefore, xray is a child of lung. As a result, xray is in the Markov blanket of lung (as a child), and lung is in the Markov blanket of xray (as a parent). This direct causal link ensures mutual membership in the Markov blanket."
+        },
+        "parse_status": "success"
+      }
+    ],
+    "final_relation": "uncertain",
+    "final_confidence": 0.9,
+    "consistency": 1.0,
+    "relation_count": {
+      "uncertain": 5
+    },
+    "in_markov_blanket": true,
+    "positive_ratio": 1.0
+  },
+  {
+    "variable_a": "smoke",
+    "variable_b": "bronc",
+    "runs": [
+      {
+        "variable_a": "smoke",
+        "variable_b": "bronc",
+        "run_id": 1,
+        "seed": 20261070,
+        "prompt_version": "mb-v1-blanket-membership",
+        "raw_response": "{\n    \"variable_a\": \"smoke\",\n    \"variable_b\": \"bronc\",\n    \"in_markov_blanket\": true,\n    \"confidence\": 0.9,\n    \"reason\": \"Smoke is a direct cause of bronchitis, so they are directly connected as parent and child, which means they are in each other's Markov blanket.\"\n}",
+        "parsed": {
+          "variable_a": "smoke",
+          "variable_b": "bronc",
+          "in_markov_blanket": true,
+          "confidence": 0.9,
+          "reason": "Smoke is a direct cause of bronchitis, so they are directly connected as parent and child, which means they are in each other's Markov blanket."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "smoke",
+        "variable_b": "bronc",
+        "run_id": 2,
+        "seed": 20261070,
+        "prompt_version": "mb-v1-blanket-membership",
+        "raw_response": "{\n    \"variable_a\": \"smoke\",\n    \"variable_b\": \"bronc\",\n    \"in_markov_blanket\": true,\n    \"confidence\": 0.9,\n    \"reason\": \"smoke is a direct cause of bronc, so they are directly connected, making bronc part of the Markov blanket of smoke and smoke part of the Markov blanket of bronc.\"\n}",
+        "parsed": {
+          "variable_a": "smoke",
+          "variable_b": "bronc",
+          "in_markov_blanket": true,
+          "confidence": 0.9,
+          "reason": "smoke is a direct cause of bronc, so they are directly connected, making bronc part of the Markov blanket of smoke and smoke part of the Markov blanket of bronc."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "smoke",
+        "variable_b": "bronc",
+        "run_id": 3,
+        "seed": 20261070,
+        "prompt_version": "mb-v1-blanket-membership",
+        "raw_response": "{\n    \"variable_a\": \"smoke\",\n    \"variable_b\": \"bronc\",\n    \"in_markov_blanket\": true,\n    \"confidence\": 0.9,\n    \"reason\": \"smoke is a direct cause of bronc, so they are directly connected, making bronc part of the Markov blanket of smoke and smoke part of the Markov blanket of bronc.\"\n}",
+        "parsed": {
+          "variable_a": "smoke",
+          "variable_b": "bronc",
+          "in_markov_blanket": true,
+          "confidence": 0.9,
+          "reason": "smoke is a direct cause of bronc, so they are directly connected, making bronc part of the Markov blanket of smoke and smoke part of the Markov blanket of bronc."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "smoke",
+        "variable_b": "bronc",
+        "run_id": 4,
+        "seed": 20261070,
+        "prompt_version": "mb-v1-blanket-membership",
+        "raw_response": "{\n    \"variable_a\": \"smoke\",\n    \"variable_b\": \"bronc\",\n    \"in_markov_blanket\": true,\n    \"confidence\": 0.9,\n    \"reason\": \"Smoke is a direct cause of bronchitis, so they are directly connected, making bronchitis part of the Markov blanket of smoke and smoke part of the Markov blanket of bronchitis.\"\n}",
+        "parsed": {
+          "variable_a": "smoke",
+          "variable_b": "bronc",
+          "in_markov_blanket": true,
+          "confidence": 0.9,
+          "reason": "Smoke is a direct cause of bronchitis, so they are directly connected, making bronchitis part of the Markov blanket of smoke and smoke part of the Markov blanket of bronchitis."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "smoke",
+        "variable_b": "bronc",
+        "run_id": 5,
+        "seed": 20261082,
+        "prompt_version": "mb-v1-blanket-membership",
+        "raw_response": "{\n    \"variable_a\": \"smoke\",\n    \"variable_b\": \"bronc\",\n    \"in_markov_blanket\": true,\n    \"confidence\": 0.9,\n    \"reason\": \"Smoke is a direct cause of bronchitis, so they are directly connected, making bronc part of the Markov blanket of smoke and smoke part of the Markov blanket of bronc.\"\n}",
+        "parsed": {
+          "variable_a": "smoke",
+          "variable_b": "bronc",
+          "in_markov_blanket": true,
+          "confidence": 0.9,
+          "reason": "Smoke is a direct cause of bronchitis, so they are directly connected, making bronc part of the Markov blanket of smoke and smoke part of the Markov blanket of bronc."
+        },
+        "parse_status": "success"
+      }
+    ],
+    "final_relation": "uncertain",
+    "final_confidence": 0.9,
+    "consistency": 1.0,
+    "relation_count": {
+      "uncertain": 5
+    },
+    "in_markov_blanket": true,
+    "positive_ratio": 1.0
+  },
+  {
+    "variable_a": "smoke",
+    "variable_b": "dysp",
+    "runs": [
+      {
+        "variable_a": "smoke",
+        "variable_b": "dysp",
+        "run_id": 1,
+        "seed": 20261082,
+        "prompt_version": "mb-v1-blanket-membership",
+        "raw_response": "{\n    \"variable_a\": \"smoke\",\n    \"variable_b\": \"dysp\",\n    \"in_markov_blanket\": false,\n    \"confidence\": 0.95,\n    \"reason\": \"Smoke does not directly cause dyspnea in a way that forms a common effect or shared cause, and dyspnea is not a child of smoke nor do they share a common effect; there is no direct causal link or mutual influence in the Markov blanket structure.\"\n}",
+        "parsed": {
+          "variable_a": "smoke",
+          "variable_b": "dysp",
+          "in_markov_blanket": false,
+          "confidence": 0.95,
+          "reason": "Smoke does not directly cause dyspnea in a way that forms a common effect or shared cause, and dyspnea is not a child of smoke nor do they share a common effect; there is no direct causal link or mutual influence in the Markov blanket structure."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "smoke",
+        "variable_b": "dysp",
+        "run_id": 2,
+        "seed": 20261094,
+        "prompt_version": "mb-v1-blanket-membership",
+        "raw_response": "{\n    \"variable_a\": \"smoke\",\n    \"variable_b\": \"dysp\",\n    \"in_markov_blanket\": false,\n    \"confidence\": 0.95,\n    \"reason\": \"smoke does not directly cause dyspnea, and there is no common effect or shared parent relationship between them; dyspnea is caused by lung disease, which may be influenced by smoking, but smoke and dyspnea are not directly connected through a common cause, child, or spouse relationship in the network structure.\"\n}",
+        "parsed": {
+          "variable_a": "smoke",
+          "variable_b": "dysp",
+          "in_markov_blanket": false,
+          "confidence": 0.95,
+          "reason": "smoke does not directly cause dyspnea, and there is no common effect or shared parent relationship between them; dyspnea is caused by lung disease, which may be influenced by smoking, but smoke and dyspnea are not directly connected through a common cause, child, or spouse relationship in the network structure."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "smoke",
+        "variable_b": "dysp",
+        "run_id": 3,
+        "seed": 20261094,
+        "prompt_version": "mb-v1-blanket-membership",
+        "raw_response": "{\n    \"variable_a\": \"smoke\",\n    \"variable_b\": \"dysp\",\n    \"in_markov_blanket\": false,\n    \"confidence\": 0.95,\n    \"reason\": \"Smoke does not directly cause dyspnea, and there is no common effect or shared parent relationship between them; dyspnea is influenced by lung disease, which is influenced by smoking, but they are not directly connected or share a common cause or effect in a way that places them in each other's Markov blanket.\"\n}",
+        "parsed": {
+          "variable_a": "smoke",
+          "variable_b": "dysp",
+          "in_markov_blanket": false,
+          "confidence": 0.95,
+          "reason": "Smoke does not directly cause dyspnea, and there is no common effect or shared parent relationship between them; dyspnea is influenced by lung disease, which is influenced by smoking, but they are not directly connected or share a common cause or effect in a way that places them in each other's Markov blanket."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "smoke",
+        "variable_b": "dysp",
+        "run_id": 4,
+        "seed": 20261094,
+        "prompt_version": "mb-v1-blanket-membership",
+        "raw_response": "{\n    \"variable_a\": \"smoke\",\n    \"variable_b\": \"dysp\",\n    \"in_markov_blanket\": false,\n    \"confidence\": 0.95,\n    \"reason\": \"smoke does not directly cause dyspnea, and there is no common effect or shared parent relationship between them; dyspnea is caused by lung diseases such as lung cancer or emphysema, which may be influenced by smoking, but smoke and dyspnea are not directly or indirectly connected through a common cause or effect in a way that forms a Markov blanket relationship.\"\n}",
+        "parsed": {
+          "variable_a": "smoke",
+          "variable_b": "dysp",
+          "in_markov_blanket": false,
+          "confidence": 0.95,
+          "reason": "smoke does not directly cause dyspnea, and there is no common effect or shared parent relationship between them; dyspnea is caused by lung diseases such as lung cancer or emphysema, which may be influenced by smoking, but smoke and dyspnea are not directly or indirectly connected through a common cause or effect in a way that forms a Markov blanket relationship."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "smoke",
+        "variable_b": "dysp",
+        "run_id": 5,
+        "seed": 20261094,
+        "prompt_version": "mb-v1-blanket-membership",
+        "raw_response": "{\n    \"variable_a\": \"smoke\",\n    \"variable_b\": \"dysp\",\n    \"in_markov_blanket\": false,\n    \"confidence\": 0.95,\n    \"reason\": \"Smoke does not directly cause dyspnea, and there is no common effect or shared parent relationship between them; dyspnea is influenced by lung disease, which is a common cause with smoke, but dyspnea is not a child of smoke, nor do they share a common effect or spouse relationship.\"\n}",
+        "parsed": {
+          "variable_a": "smoke",
+          "variable_b": "dysp",
+          "in_markov_blanket": false,
+          "confidence": 0.95,
+          "reason": "Smoke does not directly cause dyspnea, and there is no common effect or shared parent relationship between them; dyspnea is influenced by lung disease, which is a common cause with smoke, but dyspnea is not a child of smoke, nor do they share a common effect or spouse relationship."
+        },
+        "parse_status": "success"
+      }
+    ],
+    "final_relation": "uncertain",
+    "final_confidence": 0.95,
+    "consistency": 1.0,
+    "relation_count": {
+      "uncertain": 5
+    },
+    "in_markov_blanket": false,
+    "positive_ratio": 0.0
+  },
+  {
+    "variable_a": "smoke",
+    "variable_b": "either",
+    "runs": [
+      {
+        "variable_a": "smoke",
+        "variable_b": "either",
+        "run_id": 1,
+        "seed": 20261082,
+        "prompt_version": "mb-v1-blanket-membership",
+        "raw_response": "{\n    \"variable_a\": \"smoke\",\n    \"variable_b\": \"either\",\n    \"in_markov_blanket\": false,\n    \"confidence\": 0.95,\n    \"reason\": \"smoke is a cause of lung cancer, and either represents the presence of tuberculosis or lung cancer. However, smoke does not directly cause tuberculosis, and there is no common effect between smoke and either that would make them mutually dependent after conditioning on all other variables. The only connection is through lung cancer, which is a child of smoke and a parent of either, but this does not place smoke in the Markov blanket of either because smoke does not share a common effect with either; instead, the relationship is a causal chain. Thus, smoke is not in the Markov blanket of either.\"\n}",
+        "parsed": {
+          "variable_a": "smoke",
+          "variable_b": "either",
+          "in_markov_blanket": false,
+          "confidence": 0.95,
+          "reason": "smoke is a cause of lung cancer, and either represents the presence of tuberculosis or lung cancer. However, smoke does not directly cause tuberculosis, and there is no common effect between smoke and either that would make them mutually dependent after conditioning on all other variables. The only connection is through lung cancer, which is a child of smoke and a parent of either, but this does not place smoke in the Markov blanket of either because smoke does not share a common effect with either; instead, the relationship is a causal chain. Thus, smoke is not in the Markov blanket of either."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "smoke",
+        "variable_b": "either",
+        "run_id": 2,
+        "seed": 20261082,
+        "prompt_version": "mb-v1-blanket-membership",
+        "raw_response": "{\n    \"variable_a\": \"smoke\",\n    \"variable_b\": \"either\",\n    \"in_markov_blanket\": false,\n    \"confidence\": 0.95,\n    \"reason\": \"smoke is a cause of lung cancer, and either represents the presence of tuberculosis or lung cancer. However, neither smoke nor lung cancer directly causes tuberculosis, and there is no common effect between smoke and either. Smoke influences lung cancer, which is one component of either, but there is no direct causal link or shared effect between smoke and either itself. The only connection is through lung cancer, which is a child of smoke, but this does not place smoke in the Markov blanket of either. The Markov blanket requires direct influence or shared effect, and since smoke does not directly cause either or share a common effect with it, it is not in the Markov blanket.\"\n}",
+        "parsed": {
+          "variable_a": "smoke",
+          "variable_b": "either",
+          "in_markov_blanket": false,
+          "confidence": 0.95,
+          "reason": "smoke is a cause of lung cancer, and either represents the presence of tuberculosis or lung cancer. However, neither smoke nor lung cancer directly causes tuberculosis, and there is no common effect between smoke and either. Smoke influences lung cancer, which is one component of either, but there is no direct causal link or shared effect between smoke and either itself. The only connection is through lung cancer, which is a child of smoke, but this does not place smoke in the Markov blanket of either. The Markov blanket requires direct influence or shared effect, and since smoke does not directly cause either or share a common effect with it, it is not in the Markov blanket."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "smoke",
+        "variable_b": "either",
+        "run_id": 3,
+        "seed": 20261082,
+        "prompt_version": "mb-v1-blanket-membership",
+        "raw_response": "{\n    \"variable_a\": \"smoke\",\n    \"variable_b\": \"either\",\n    \"in_markov_blanket\": false,\n    \"confidence\": 0.95,\n    \"reason\": \"smoke is a cause of lung cancer, and either represents the presence of tuberculosis or lung cancer. However, neither smoke nor lung cancer directly causes tuberculosis, and there is no common effect between smoke and either. Furthermore, smoke influences either only through lung cancer, which is part of either, but this is a chain, not a direct link or shared effect. Therefore, smoke and either do not share a common cause or effect, nor are they directly connected in a way that makes them part of each other's Markov blanket.\"\n}",
+        "parsed": {
+          "variable_a": "smoke",
+          "variable_b": "either",
+          "in_markov_blanket": false,
+          "confidence": 0.95,
+          "reason": "smoke is a cause of lung cancer, and either represents the presence of tuberculosis or lung cancer. However, neither smoke nor lung cancer directly causes tuberculosis, and there is no common effect between smoke and either. Furthermore, smoke influences either only through lung cancer, which is part of either, but this is a chain, not a direct link or shared effect. Therefore, smoke and either do not share a common cause or effect, nor are they directly connected in a way that makes them part of each other's Markov blanket."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "smoke",
+        "variable_b": "either",
+        "run_id": 4,
+        "seed": 20261082,
+        "prompt_version": "mb-v1-blanket-membership",
+        "raw_response": "{\n    \"variable_a\": \"smoke\",\n    \"variable_b\": \"either\",\n    \"in_markov_blanket\": false,\n    \"confidence\": 0.95,\n    \"reason\": \"smoke is a cause of lung cancer, and either represents the presence of tuberculosis or lung cancer. However, smoke does not directly cause tuberculosis, and neither smoke nor lung cancer shares a common effect with tuberculosis. Since 'either' is a disjunction of two conditions (tuberculosis or lung cancer), and smoke only influences lung cancer directly, there is no common effect or shared parent structure between smoke and either that would place them in each other's Markov blanket. The only connection is through lung cancer, which is a child of smoke, but 'either' is not a child or parent of smoke. Thus, after conditioning on all other variables, knowing whether a patient smokes does not provide information about whether they have tuberculosis or lung cancer",
+        "parsed": null,
+        "parse_status": "failed"
+      },
+      {
+        "variable_a": "smoke",
+        "variable_b": "either",
+        "run_id": 5,
+        "seed": 20261082,
+        "prompt_version": "mb-v1-blanket-membership",
+        "raw_response": "{\n    \"variable_a\": \"smoke\",\n    \"variable_b\": \"either\",\n    \"in_markov_blanket\": false,\n    \"confidence\": 0.95,\n    \"reason\": \"smoke is a cause of lung cancer, and either represents the presence of tuberculosis or lung cancer. However, smoke does not directly cause tuberculosis, and neither smoke nor lung cancer shares a common effect with tuberculosis in a way that would make either part of smoke's Markov blanket. The only connection is through lung cancer, which is a child of smoke and a parent of either. Since either includes lung cancer as a component, it is a child of lung cancer, not a spouse or parent of smoke. Thus, smoke and either are not in each other's Markov blanket because there is no shared effect or mutual dependency after conditioning on all other variables.\"\n}",
+        "parsed": {
+          "variable_a": "smoke",
+          "variable_b": "either",
+          "in_markov_blanket": false,
+          "confidence": 0.95,
+          "reason": "smoke is a cause of lung cancer, and either represents the presence of tuberculosis or lung cancer. However, smoke does not directly cause tuberculosis, and neither smoke nor lung cancer shares a common effect with tuberculosis in a way that would make either part of smoke's Markov blanket. The only connection is through lung cancer, which is a child of smoke and a parent of either. Since either includes lung cancer as a component, it is a child of lung cancer, not a spouse or parent of smoke. Thus, smoke and either are not in each other's Markov blanket because there is no shared effect or mutual dependency after conditioning on all other variables."
+        },
+        "parse_status": "success"
+      }
+    ],
+    "final_relation": "uncertain",
+    "final_confidence": 0.95,
+    "consistency": 1.0,
+    "relation_count": {
+      "uncertain": 5
+    },
+    "in_markov_blanket": false,
+    "positive_ratio": 0.0
+  },
+  {
+    "variable_a": "smoke",
+    "variable_b": "lung",
+    "runs": [
+      {
+        "variable_a": "smoke",
+        "variable_b": "lung",
+        "run_id": 1,
+        "seed": 20261070,
+        "prompt_version": "mb-v1-blanket-membership",
+        "raw_response": "{\n    \"variable_a\": \"smoke\",\n    \"variable_b\": \"lung\",\n    \"in_markov_blanket\": true,\n    \"confidence\": 0.9,\n    \"reason\": \"smoke is a direct cause of lung cancer, so they are directly connected, meaning lung is a child of smoke and thus smoke is in the Markov blanket of lung, and lung is in the Markov blanket of smoke\"\n}",
+        "parsed": {
+          "variable_a": "smoke",
+          "variable_b": "lung",
+          "in_markov_blanket": true,
+          "confidence": 0.9,
+          "reason": "smoke is a direct cause of lung cancer, so they are directly connected, meaning lung is a child of smoke and thus smoke is in the Markov blanket of lung, and lung is in the Markov blanket of smoke"
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "smoke",
+        "variable_b": "lung",
+        "run_id": 2,
+        "seed": 20261070,
+        "prompt_version": "mb-v1-blanket-membership",
+        "raw_response": "{\n    \"variable_a\": \"smoke\",\n    \"variable_b\": \"lung\",\n    \"in_markov_blanket\": true,\n    \"confidence\": 0.9,\n    \"reason\": \"smoke is a direct cause of lung cancer, so they are directly connected, making lung part of the Markov blanket of smoke and smoke part of the Markov blanket of lung.\"\n}",
+        "parsed": {
+          "variable_a": "smoke",
+          "variable_b": "lung",
+          "in_markov_blanket": true,
+          "confidence": 0.9,
+          "reason": "smoke is a direct cause of lung cancer, so they are directly connected, making lung part of the Markov blanket of smoke and smoke part of the Markov blanket of lung."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "smoke",
+        "variable_b": "lung",
+        "run_id": 3,
+        "seed": 20261070,
+        "prompt_version": "mb-v1-blanket-membership",
+        "raw_response": "{\n    \"variable_a\": \"smoke\",\n    \"variable_b\": \"lung\",\n    \"in_markov_blanket\": true,\n    \"confidence\": 0.9,\n    \"reason\": \"Smoke is a direct cause of lung cancer, so they are directly connected, making lung part of the Markov blanket of smoke and smoke part of the Markov blanket of lung.\"\n}",
+        "parsed": {
+          "variable_a": "smoke",
+          "variable_b": "lung",
+          "in_markov_blanket": true,
+          "confidence": 0.9,
+          "reason": "Smoke is a direct cause of lung cancer, so they are directly connected, making lung part of the Markov blanket of smoke and smoke part of the Markov blanket of lung."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "smoke",
+        "variable_b": "lung",
+        "run_id": 4,
+        "seed": 20261070,
+        "prompt_version": "mb-v1-blanket-membership",
+        "raw_response": "{\n    \"variable_a\": \"smoke\",\n    \"variable_b\": \"lung\",\n    \"in_markov_blanket\": true,\n    \"confidence\": 0.9,\n    \"reason\": \"Smoke is a direct cause of lung cancer, so they are directly connected, making lung part of the Markov blanket of smoke and smoke part of the Markov blanket of lung.\"\n}",
+        "parsed": {
+          "variable_a": "smoke",
+          "variable_b": "lung",
+          "in_markov_blanket": true,
+          "confidence": 0.9,
+          "reason": "Smoke is a direct cause of lung cancer, so they are directly connected, making lung part of the Markov blanket of smoke and smoke part of the Markov blanket of lung."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "smoke",
+        "variable_b": "lung",
+        "run_id": 5,
+        "seed": 20261070,
+        "prompt_version": "mb-v1-blanket-membership",
+        "raw_response": "{\n    \"variable_a\": \"smoke\",\n    \"variable_b\": \"lung\",\n    \"in_markov_blanket\": true,\n    \"confidence\": 0.9,\n    \"reason\": \"Smoke is a direct cause of lung cancer, so they are directly connected, making lung part of the Markov blanket of smoke and smoke part of the Markov blanket of lung.\"\n}",
+        "parsed": {
+          "variable_a": "smoke",
+          "variable_b": "lung",
+          "in_markov_blanket": true,
+          "confidence": 0.9,
+          "reason": "Smoke is a direct cause of lung cancer, so they are directly connected, making lung part of the Markov blanket of smoke and smoke part of the Markov blanket of lung."
+        },
+        "parse_status": "success"
+      }
+    ],
+    "final_relation": "uncertain",
+    "final_confidence": 0.9,
+    "consistency": 1.0,
+    "relation_count": {
+      "uncertain": 5
+    },
+    "in_markov_blanket": true,
+    "positive_ratio": 1.0
+  },
+  {
+    "variable_a": "smoke",
+    "variable_b": "xray",
+    "runs": [
+      {
+        "variable_a": "smoke",
+        "variable_b": "xray",
+        "run_id": 1,
+        "seed": 20261082,
+        "prompt_version": "mb-v1-blanket-membership",
+        "raw_response": "{\n    \"variable_a\": \"smoke\",\n    \"variable_b\": \"xray\",\n    \"in_markov_blanket\": false,\n    \"confidence\": 0.95,\n    \"reason\": \"smoke does not directly cause xray, and xray is not a child of smoke; instead, xray is influenced by lung disease, which is caused by smoke. However, xray and smoke do not share a common effect or have mutual parents or spouses. Since xray is not a child of smoke, nor is it a spouse (common effect) of smoke, and there is no common cause or shared effect structure between them, they are not in each other's Markov blanket.\"\n}",
+        "parsed": {
+          "variable_a": "smoke",
+          "variable_b": "xray",
+          "in_markov_blanket": false,
+          "confidence": 0.95,
+          "reason": "smoke does not directly cause xray, and xray is not a child of smoke; instead, xray is influenced by lung disease, which is caused by smoke. However, xray and smoke do not share a common effect or have mutual parents or spouses. Since xray is not a child of smoke, nor is it a spouse (common effect) of smoke, and there is no common cause or shared effect structure between them, they are not in each other's Markov blanket."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "smoke",
+        "variable_b": "xray",
+        "run_id": 2,
+        "seed": 20261082,
+        "prompt_version": "mb-v1-blanket-membership",
+        "raw_response": "{\n    \"variable_a\": \"smoke\",\n    \"variable_b\": \"xray\",\n    \"in_markov_blanket\": false,\n    \"confidence\": 0.95,\n    \"reason\": \"smoke influences lung disease, which may influence xray, but xray is not a direct child of smoke and does not share a common effect or parent relationship with smoke; they are connected only through lung disease, which is a common cause, and thus xray is not in the Markov blanket of smoke.\"\n}",
+        "parsed": {
+          "variable_a": "smoke",
+          "variable_b": "xray",
+          "in_markov_blanket": false,
+          "confidence": 0.95,
+          "reason": "smoke influences lung disease, which may influence xray, but xray is not a direct child of smoke and does not share a common effect or parent relationship with smoke; they are connected only through lung disease, which is a common cause, and thus xray is not in the Markov blanket of smoke."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "smoke",
+        "variable_b": "xray",
+        "run_id": 3,
+        "seed": 20261082,
+        "prompt_version": "mb-v1-blanket-membership",
+        "raw_response": "{\n    \"variable_a\": \"smoke\",\n    \"variable_b\": \"xray\",\n    \"in_markov_blanket\": false,\n    \"confidence\": 0.95,\n    \"reason\": \"smoke does not directly cause xray, and xray is not a child of smoke; instead, xray is a child of lung disease, and smoke is a parent of lung disease. Therefore, smoke and xray are connected only through lung disease, which is a common cause, and thus they are not in each other's Markov blanket.\"\n}",
+        "parsed": {
+          "variable_a": "smoke",
+          "variable_b": "xray",
+          "in_markov_blanket": false,
+          "confidence": 0.95,
+          "reason": "smoke does not directly cause xray, and xray is not a child of smoke; instead, xray is a child of lung disease, and smoke is a parent of lung disease. Therefore, smoke and xray are connected only through lung disease, which is a common cause, and thus they are not in each other's Markov blanket."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "smoke",
+        "variable_b": "xray",
+        "run_id": 4,
+        "seed": 20261082,
+        "prompt_version": "mb-v1-blanket-membership",
+        "raw_response": "{\n    \"variable_a\": \"smoke\",\n    \"variable_b\": \"xray\",\n    \"in_markov_blanket\": false,\n    \"confidence\": 0.95,\n    \"reason\": \"smoke does not directly cause xray, and xray is not a child of smoke. Smoke influences lung disease, which may influence xray, but xray is not a direct child of smoke and there is no shared effect between smoke and xray. Therefore, they do not share a common effect or mutual influence, and are not in each other's Markov blanket.\"\n}",
+        "parsed": {
+          "variable_a": "smoke",
+          "variable_b": "xray",
+          "in_markov_blanket": false,
+          "confidence": 0.95,
+          "reason": "smoke does not directly cause xray, and xray is not a child of smoke. Smoke influences lung disease, which may influence xray, but xray is not a direct child of smoke and there is no shared effect between smoke and xray. Therefore, they do not share a common effect or mutual influence, and are not in each other's Markov blanket."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "smoke",
+        "variable_b": "xray",
+        "run_id": 5,
+        "seed": 20261082,
+        "prompt_version": "mb-v1-blanket-membership",
+        "raw_response": "{\n    \"variable_a\": \"smoke\",\n    \"variable_b\": \"xray\",\n    \"in_markov_blanket\": false,\n    \"confidence\": 0.95,\n    \"reason\": \"smoke does not directly cause xray, and xray is not a child of smoke; instead, xray is influenced by lung disease, which is caused by smoke. However, xray and smoke do not share a common effect or have mutual parents or spouses. There is no common cause or common effect between them, and xray is not a child or parent of smoke. Therefore, they are not in each other's Markov blanket.\"\n}",
+        "parsed": {
+          "variable_a": "smoke",
+          "variable_b": "xray",
+          "in_markov_blanket": false,
+          "confidence": 0.95,
+          "reason": "smoke does not directly cause xray, and xray is not a child of smoke; instead, xray is influenced by lung disease, which is caused by smoke. However, xray and smoke do not share a common effect or have mutual parents or spouses. There is no common cause or common effect between them, and xray is not a child or parent of smoke. Therefore, they are not in each other's Markov blanket."
+        },
+        "parse_status": "success"
+      }
+    ],
+    "final_relation": "uncertain",
+    "final_confidence": 0.95,
+    "consistency": 1.0,
+    "relation_count": {
+      "uncertain": 5
+    },
+    "in_markov_blanket": false,
+    "positive_ratio": 0.0
+  },
+  {
+    "variable_a": "tub",
+    "variable_b": "bronc",
+    "runs": [
+      {
+        "variable_a": "tub",
+        "variable_b": "bronc",
+        "run_id": 1,
+        "seed": 20261046,
+        "prompt_version": "mb-v1-blanket-membership",
+        "raw_response": "{\n    \"variable_a\": \"tub\",\n    \"variable_b\": \"bronc\",\n    \"in_markov_blanket\": false,\n    \"confidence\": 0.95,\n    \"reason\": \"Tuberculosis (tub) and bronchitis (bronc) are not directly connected, nor do they share a common effect or common cause. Tub may influence lung conditions indirectly, but bronchitis is not a child or parent of tub, and there is no common effect or spouse relationship between them in the ASIA network structure.\"\n}",
+        "parsed": {
+          "variable_a": "tub",
+          "variable_b": "bronc",
+          "in_markov_blanket": false,
+          "confidence": 0.95,
+          "reason": "Tuberculosis (tub) and bronchitis (bronc) are not directly connected, nor do they share a common effect or common cause. Tub may influence lung conditions indirectly, but bronchitis is not a child or parent of tub, and there is no common effect or spouse relationship between them in the ASIA network structure."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "tub",
+        "variable_b": "bronc",
+        "run_id": 2,
+        "seed": 20261046,
+        "prompt_version": "mb-v1-blanket-membership",
+        "raw_response": "{\n    \"variable_a\": \"tub\",\n    \"variable_b\": \"bronc\",\n    \"in_markov_blanket\": false,\n    \"confidence\": 0.95,\n    \"reason\": \"Tuberculosis (tub) and bronchitis (bronc) are not directly causally connected, nor do they share a common effect or common cause in the ASIA network. Tub may influence other variables like lung cancer or cough, and bronchitis may influence cough or other symptoms, but there is no direct or indirect structural link that places them in each other's Markov blanket.\"\n}",
+        "parsed": {
+          "variable_a": "tub",
+          "variable_b": "bronc",
+          "in_markov_blanket": false,
+          "confidence": 0.95,
+          "reason": "Tuberculosis (tub) and bronchitis (bronc) are not directly causally connected, nor do they share a common effect or common cause in the ASIA network. Tub may influence other variables like lung cancer or cough, and bronchitis may influence cough or other symptoms, but there is no direct or indirect structural link that places them in each other's Markov blanket."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "tub",
+        "variable_b": "bronc",
+        "run_id": 3,
+        "seed": 20261046,
+        "prompt_version": "mb-v1-blanket-membership",
+        "raw_response": "{\n    \"variable_a\": \"tub\",\n    \"variable_b\": \"bronc\",\n    \"in_markov_blanket\": false,\n    \"confidence\": 0.95,\n    \"reason\": \"Tuberculosis (tub) and bronchitis (bronc) are not directly connected, and neither is one a parent or child of the other. There is no common effect or shared cause structure that would place them in each other's Markov blanket. Tub does not cause bronc, and bronc does not cause tub. They are not spouses (i.e., they do not share a common effect), and there is no path through other variables that creates a direct dependency after conditioning on all others.\"\n}",
+        "parsed": {
+          "variable_a": "tub",
+          "variable_b": "bronc",
+          "in_markov_blanket": false,
+          "confidence": 0.95,
+          "reason": "Tuberculosis (tub) and bronchitis (bronc) are not directly connected, and neither is one a parent or child of the other. There is no common effect or shared cause structure that would place them in each other's Markov blanket. Tub does not cause bronc, and bronc does not cause tub. They are not spouses (i.e., they do not share a common effect), and there is no path through other variables that creates a direct dependency after conditioning on all others."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "tub",
+        "variable_b": "bronc",
+        "run_id": 4,
+        "seed": 20261046,
+        "prompt_version": "mb-v1-blanket-membership",
+        "raw_response": "{\n    \"variable_a\": \"tub\",\n    \"variable_b\": \"bronc\",\n    \"in_markov_blanket\": false,\n    \"confidence\": 0.95,\n    \"reason\": \"Tuberculosis (tub) and bronchitis (bronc) are not directly causally linked, nor do they share a common effect or common cause in the ASIA network. Tub can cause lung issues indirectly, but bronchitis is not a direct child or spouse of tub. There is no shared effect or mutual influence structure that would place them in each other's Markov blanket.\"\n}",
+        "parsed": {
+          "variable_a": "tub",
+          "variable_b": "bronc",
+          "in_markov_blanket": false,
+          "confidence": 0.95,
+          "reason": "Tuberculosis (tub) and bronchitis (bronc) are not directly causally linked, nor do they share a common effect or common cause in the ASIA network. Tub can cause lung issues indirectly, but bronchitis is not a direct child or spouse of tub. There is no shared effect or mutual influence structure that would place them in each other's Markov blanket."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "tub",
+        "variable_b": "bronc",
+        "run_id": 5,
+        "seed": 20261046,
+        "prompt_version": "mb-v1-blanket-membership",
+        "raw_response": "{\n    \"variable_a\": \"tub\",\n    \"variable_b\": \"bronc\",\n    \"in_markov_blanket\": false,\n    \"confidence\": 0.95,\n    \"reason\": \"Tuberculosis (tub) and bronchitis (bronc) are not directly causally linked, and neither is one a parent or child of the other. There is no common effect between them, and they do not share spouses or common causes that would place them in each other's Markov blanket. Their influence, if any, is indirect through other variables like lung cancer or emphysema, which are not present in the direct causal path between them.\"\n}",
+        "parsed": {
+          "variable_a": "tub",
+          "variable_b": "bronc",
+          "in_markov_blanket": false,
+          "confidence": 0.95,
+          "reason": "Tuberculosis (tub) and bronchitis (bronc) are not directly causally linked, and neither is one a parent or child of the other. There is no common effect between them, and they do not share spouses or common causes that would place them in each other's Markov blanket. Their influence, if any, is indirect through other variables like lung cancer or emphysema, which are not present in the direct causal path between them."
+        },
+        "parse_status": "success"
+      }
+    ],
+    "final_relation": "uncertain",
+    "final_confidence": 0.95,
+    "consistency": 1.0,
+    "relation_count": {
+      "uncertain": 5
+    },
+    "in_markov_blanket": false,
+    "positive_ratio": 0.0
+  },
+  {
+    "variable_a": "tub",
+    "variable_b": "dysp",
+    "runs": [
+      {
+        "variable_a": "tub",
+        "variable_b": "dysp",
+        "run_id": 1,
+        "seed": 20261058,
+        "prompt_version": "mb-v1-blanket-membership",
+        "raw_response": "{\n    \"variable_a\": \"tub\",\n    \"variable_b\": \"dysp\",\n    \"in_markov_blanket\": true,\n    \"confidence\": 0.9,\n    \"reason\": \"Tuberculosis (tub) can cause dyspnea (dysp) directly, and both are linked through the common effect of respiratory symptoms, meaning they share a common causal pathway and are thus in each other's Markov blanket.\"\n}",
+        "parsed": {
+          "variable_a": "tub",
+          "variable_b": "dysp",
+          "in_markov_blanket": true,
+          "confidence": 0.9,
+          "reason": "Tuberculosis (tub) can cause dyspnea (dysp) directly, and both are linked through the common effect of respiratory symptoms, meaning they share a common causal pathway and are thus in each other's Markov blanket."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "tub",
+        "variable_b": "dysp",
+        "run_id": 2,
+        "seed": 20261058,
+        "prompt_version": "mb-v1-blanket-membership",
+        "raw_response": "{\n    \"variable_a\": \"tub\",\n    \"variable_b\": \"dysp\",\n    \"in_markov_blanket\": true,\n    \"confidence\": 0.9,\n    \"reason\": \"Tuberculosis (tub) can cause dyspnea (dysp) directly, and both are linked through the common effect of respiratory symptoms, meaning they share a common effect pathway via the symptom of breathing difficulty, making them part of each other's Markov blanket.\"\n}",
+        "parsed": {
+          "variable_a": "tub",
+          "variable_b": "dysp",
+          "in_markov_blanket": true,
+          "confidence": 0.9,
+          "reason": "Tuberculosis (tub) can cause dyspnea (dysp) directly, and both are linked through the common effect of respiratory symptoms, meaning they share a common effect pathway via the symptom of breathing difficulty, making them part of each other's Markov blanket."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "tub",
+        "variable_b": "dysp",
+        "run_id": 3,
+        "seed": 20261070,
+        "prompt_version": "mb-v1-blanket-membership",
+        "raw_response": "{\n    \"variable_a\": \"tub\",\n    \"variable_b\": \"dysp\",\n    \"in_markov_blanket\": true,\n    \"confidence\": 0.8,\n    \"reason\": \"Tuberculosis (tub) can cause dyspnea (dysp) directly, and both are linked through the common effect of respiratory symptoms, meaning they share a common effect in the network structure, making them spouses in the Markov blanket.\"\n}",
+        "parsed": {
+          "variable_a": "tub",
+          "variable_b": "dysp",
+          "in_markov_blanket": true,
+          "confidence": 0.8,
+          "reason": "Tuberculosis (tub) can cause dyspnea (dysp) directly, and both are linked through the common effect of respiratory symptoms, meaning they share a common effect in the network structure, making them spouses in the Markov blanket."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "tub",
+        "variable_b": "dysp",
+        "run_id": 4,
+        "seed": 20261070,
+        "prompt_version": "mb-v1-blanket-membership",
+        "raw_response": "{\n    \"variable_a\": \"tub\",\n    \"variable_b\": \"dysp\",\n    \"in_markov_blanket\": true,\n    \"confidence\": 0.8,\n    \"reason\": \"Tuberculosis (tub) can directly cause dyspnea (dysp) as a symptom, making them causally linked. Since they share a direct causal relationship, tub is a cause of dysp, and thus dysp is a child of tub. In the Markov blanket, a variable's children are included, so dysp is in the Markov blanket of tub. The causal structure implies direct influence, so the answer is YES.\"\n}",
+        "parsed": {
+          "variable_a": "tub",
+          "variable_b": "dysp",
+          "in_markov_blanket": true,
+          "confidence": 0.8,
+          "reason": "Tuberculosis (tub) can directly cause dyspnea (dysp) as a symptom, making them causally linked. Since they share a direct causal relationship, tub is a cause of dysp, and thus dysp is a child of tub. In the Markov blanket, a variable's children are included, so dysp is in the Markov blanket of tub. The causal structure implies direct influence, so the answer is YES."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "tub",
+        "variable_b": "dysp",
+        "run_id": 5,
+        "seed": 20261070,
+        "prompt_version": "mb-v1-blanket-membership",
+        "raw_response": "{\n    \"variable_a\": \"tub\",\n    \"variable_b\": \"dysp\",\n    \"in_markov_blanket\": true,\n    \"confidence\": 0.8,\n    \"reason\": \"Tuberculosis (tub) can cause dyspnea (dysp) directly, and both are linked through the common effect of respiratory symptoms, meaning they share a common effect in the network, which places them in each other's Markov blanket.\"\n}",
+        "parsed": {
+          "variable_a": "tub",
+          "variable_b": "dysp",
+          "in_markov_blanket": true,
+          "confidence": 0.8,
+          "reason": "Tuberculosis (tub) can cause dyspnea (dysp) directly, and both are linked through the common effect of respiratory symptoms, meaning they share a common effect in the network, which places them in each other's Markov blanket."
+        },
+        "parse_status": "success"
+      }
+    ],
+    "final_relation": "uncertain",
+    "final_confidence": 0.8400000000000001,
+    "consistency": 1.0,
+    "relation_count": {
+      "uncertain": 5
+    },
+    "in_markov_blanket": true,
+    "positive_ratio": 1.0
+  },
+  {
+    "variable_a": "tub",
+    "variable_b": "either",
+    "runs": [
+      {
+        "variable_a": "tub",
+        "variable_b": "either",
+        "run_id": 1,
+        "seed": 20261058,
+        "prompt_version": "mb-v1-blanket-membership",
+        "raw_response": "{\n    \"variable_a\": \"tub\",\n    \"variable_b\": \"either\",\n    \"in_markov_blanket\": true,\n    \"confidence\": 0.9,\n    \"reason\": \"Variable 'either' is defined as the patient having either tuberculosis or lung cancer, meaning it is directly caused by 'tub' and includes it as a component. Since 'tub' is a direct cause of 'either', and 'either' is a direct effect of 'tub', they are in each other's Markov blanket due to the causal link and the fact that 'either' is a direct effect of 'tub'.\"\n}",
+        "parsed": {
+          "variable_a": "tub",
+          "variable_b": "either",
+          "in_markov_blanket": true,
+          "confidence": 0.9,
+          "reason": "Variable 'either' is defined as the patient having either tuberculosis or lung cancer, meaning it is directly caused by 'tub' and includes it as a component. Since 'tub' is a direct cause of 'either', and 'either' is a direct effect of 'tub', they are in each other's Markov blanket due to the causal link and the fact that 'either' is a direct effect of 'tub'."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "tub",
+        "variable_b": "either",
+        "run_id": 2,
+        "seed": 20261058,
+        "prompt_version": "mb-v1-blanket-membership",
+        "raw_response": "{\n    \"variable_a\": \"tub\",\n    \"variable_b\": \"either\",\n    \"in_markov_blanket\": true,\n    \"confidence\": 0.9,\n    \"reason\": \"Variable 'tub' is a direct cause of 'either', as 'either' represents the presence of either tuberculosis or lung cancer, and 'tub' is one of the two conditions that make 'either' true. Therefore, tub is a parent of either, and thus belongs to its Markov blanket. This direct causal link means that knowing tub still provides information about either even after conditioning on all other variables.\"\n}",
+        "parsed": {
+          "variable_a": "tub",
+          "variable_b": "either",
+          "in_markov_blanket": true,
+          "confidence": 0.9,
+          "reason": "Variable 'tub' is a direct cause of 'either', as 'either' represents the presence of either tuberculosis or lung cancer, and 'tub' is one of the two conditions that make 'either' true. Therefore, tub is a parent of either, and thus belongs to its Markov blanket. This direct causal link means that knowing tub still provides information about either even after conditioning on all other variables."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "tub",
+        "variable_b": "either",
+        "run_id": 3,
+        "seed": 20261058,
+        "prompt_version": "mb-v1-blanket-membership",
+        "raw_response": "{\n    \"variable_a\": \"tub\",\n    \"variable_b\": \"either\",\n    \"in_markov_blanket\": true,\n    \"confidence\": 0.9,\n    \"reason\": \"Variable 'either' is a logical combination of 'tub' and 'lung_cancer', meaning it is true if either condition is true. Since 'tub' is one of the components that causes 'either', 'tub' is a parent of 'either'. Therefore, 'tub' is directly causally related to 'either', and thus belongs to its Markov blanket.\"\n}",
+        "parsed": {
+          "variable_a": "tub",
+          "variable_b": "either",
+          "in_markov_blanket": true,
+          "confidence": 0.9,
+          "reason": "Variable 'either' is a logical combination of 'tub' and 'lung_cancer', meaning it is true if either condition is true. Since 'tub' is one of the components that causes 'either', 'tub' is a parent of 'either'. Therefore, 'tub' is directly causally related to 'either', and thus belongs to its Markov blanket."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "tub",
+        "variable_b": "either",
+        "run_id": 4,
+        "seed": 20261058,
+        "prompt_version": "mb-v1-blanket-membership",
+        "raw_response": "{\n    \"variable_a\": \"tub\",\n    \"variable_b\": \"either\",\n    \"in_markov_blanket\": true,\n    \"confidence\": 0.9,\n    \"reason\": \"Variable 'tub' is a direct cause of 'either', as 'either' represents the presence of either tuberculosis or lung cancer, and 'tub' is one of the two conditions that make up 'either'. Therefore, tub is a direct cause of either, meaning they are in each other's Markov blanket due to direct causation.\"\n}",
+        "parsed": {
+          "variable_a": "tub",
+          "variable_b": "either",
+          "in_markov_blanket": true,
+          "confidence": 0.9,
+          "reason": "Variable 'tub' is a direct cause of 'either', as 'either' represents the presence of either tuberculosis or lung cancer, and 'tub' is one of the two conditions that make up 'either'. Therefore, tub is a direct cause of either, meaning they are in each other's Markov blanket due to direct causation."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "tub",
+        "variable_b": "either",
+        "run_id": 5,
+        "seed": 20261058,
+        "prompt_version": "mb-v1-blanket-membership",
+        "raw_response": "{\n    \"variable_a\": \"tub\",\n    \"variable_b\": \"either\",\n    \"in_markov_blanket\": true,\n    \"confidence\": 0.9,\n    \"reason\": \"Variable 'either' is defined as the patient having either tuberculosis or lung cancer, meaning it is directly caused by 'tub' and is a disjunction that includes 'tub' as one of its components. Therefore, 'tub' is a cause of 'either', and 'either' is a child of 'tub'. As a result, 'tub' is in the Markov blanket of 'either' because it is a direct parent. By definition, the Markov blanket includes parents, and since 'tub' is a parent of 'either', it belongs to its Markov blanket.\"\n}",
+        "parsed": {
+          "variable_a": "tub",
+          "variable_b": "either",
+          "in_markov_blanket": true,
+          "confidence": 0.9,
+          "reason": "Variable 'either' is defined as the patient having either tuberculosis or lung cancer, meaning it is directly caused by 'tub' and is a disjunction that includes 'tub' as one of its components. Therefore, 'tub' is a cause of 'either', and 'either' is a child of 'tub'. As a result, 'tub' is in the Markov blanket of 'either' because it is a direct parent. By definition, the Markov blanket includes parents, and since 'tub' is a parent of 'either', it belongs to its Markov blanket."
+        },
+        "parse_status": "success"
+      }
+    ],
+    "final_relation": "uncertain",
+    "final_confidence": 0.9,
+    "consistency": 1.0,
+    "relation_count": {
+      "uncertain": 5
+    },
+    "in_markov_blanket": true,
+    "positive_ratio": 1.0
+  },
+  {
+    "variable_a": "tub",
+    "variable_b": "lung",
+    "runs": [
+      {
+        "variable_a": "tub",
+        "variable_b": "lung",
+        "run_id": 1,
+        "seed": 20261046,
+        "prompt_version": "mb-v1-blanket-membership",
+        "raw_response": "{\n    \"variable_a\": \"tub\",\n    \"variable_b\": \"lung\",\n    \"in_markov_blanket\": false,\n    \"confidence\": 0.95,\n    \"reason\": \"Tuberculosis and lung cancer are distinct conditions with no direct causal links or shared common effects in the ASIA network; tub is a cause of chest pain and may influence smoking indirectly, but lung cancer has no direct or indirect connection to tuberculosis that would place them in each other's Markov blanket.\"\n}",
+        "parsed": {
+          "variable_a": "tub",
+          "variable_b": "lung",
+          "in_markov_blanket": false,
+          "confidence": 0.95,
+          "reason": "Tuberculosis and lung cancer are distinct conditions with no direct causal links or shared common effects in the ASIA network; tub is a cause of chest pain and may influence smoking indirectly, but lung cancer has no direct or indirect connection to tuberculosis that would place them in each other's Markov blanket."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "tub",
+        "variable_b": "lung",
+        "run_id": 2,
+        "seed": 20261046,
+        "prompt_version": "mb-v1-blanket-membership",
+        "raw_response": "{\n    \"variable_a\": \"tub\",\n    \"variable_b\": \"lung\",\n    \"in_markov_blanket\": false,\n    \"confidence\": 0.95,\n    \"reason\": \"Tuberculosis and lung cancer are distinct conditions with no direct causal links or shared common effects in the ASIA network; tub is not a parent, child, or spouse of lung, and they do not share a common effect or common cause structure that would place them in each other's Markov blanket.\"\n}",
+        "parsed": {
+          "variable_a": "tub",
+          "variable_b": "lung",
+          "in_markov_blanket": false,
+          "confidence": 0.95,
+          "reason": "Tuberculosis and lung cancer are distinct conditions with no direct causal links or shared common effects in the ASIA network; tub is not a parent, child, or spouse of lung, and they do not share a common effect or common cause structure that would place them in each other's Markov blanket."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "tub",
+        "variable_b": "lung",
+        "run_id": 3,
+        "seed": 20261046,
+        "prompt_version": "mb-v1-blanket-membership",
+        "raw_response": "{\n    \"variable_a\": \"tub\",\n    \"variable_b\": \"lung\",\n    \"in_markov_blanket\": false,\n    \"confidence\": 0.95,\n    \"reason\": \"Tuberculosis and lung cancer are distinct conditions with no direct causal link or shared common effect; tub is a cause of chest pain or cough, while lung is a cause of symptoms like cough, but neither is a parent, child, or spouse of the other, and they do not share a common effect or have mutual influence in the network structure.\"\n}",
+        "parsed": {
+          "variable_a": "tub",
+          "variable_b": "lung",
+          "in_markov_blanket": false,
+          "confidence": 0.95,
+          "reason": "Tuberculosis and lung cancer are distinct conditions with no direct causal link or shared common effect; tub is a cause of chest pain or cough, while lung is a cause of symptoms like cough, but neither is a parent, child, or spouse of the other, and they do not share a common effect or have mutual influence in the network structure."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "tub",
+        "variable_b": "lung",
+        "run_id": 4,
+        "seed": 20261046,
+        "prompt_version": "mb-v1-blanket-membership",
+        "raw_response": "{\n    \"variable_a\": \"tub\",\n    \"variable_b\": \"lung\",\n    \"in_markov_blanket\": false,\n    \"confidence\": 0.95,\n    \"reason\": \"Tuberculosis and lung cancer are distinct conditions with no direct causal link or shared common effect in the ASIA network; tub is a cause of cough and possibly affects other variables, while lung is caused by smoking and has no direct or indirect connection to tub that would place them in each other's Markov blanket.\"\n}",
+        "parsed": {
+          "variable_a": "tub",
+          "variable_b": "lung",
+          "in_markov_blanket": false,
+          "confidence": 0.95,
+          "reason": "Tuberculosis and lung cancer are distinct conditions with no direct causal link or shared common effect in the ASIA network; tub is a cause of cough and possibly affects other variables, while lung is caused by smoking and has no direct or indirect connection to tub that would place them in each other's Markov blanket."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "tub",
+        "variable_b": "lung",
+        "run_id": 5,
+        "seed": 20261046,
+        "prompt_version": "mb-v1-blanket-membership",
+        "raw_response": "{\n    \"variable_a\": \"tub\",\n    \"variable_b\": \"lung\",\n    \"in_markov_blanket\": false,\n    \"confidence\": 0.95,\n    \"reason\": \"Tuberculosis and lung cancer are distinct conditions with no direct causal links or shared common effects in the ASIA network; tub is not a parent, child, or spouse of lung, and there is no structural path or common effect between them.\"\n}",
+        "parsed": {
+          "variable_a": "tub",
+          "variable_b": "lung",
+          "in_markov_blanket": false,
+          "confidence": 0.95,
+          "reason": "Tuberculosis and lung cancer are distinct conditions with no direct causal links or shared common effects in the ASIA network; tub is not a parent, child, or spouse of lung, and there is no structural path or common effect between them."
+        },
+        "parse_status": "success"
+      }
+    ],
+    "final_relation": "uncertain",
+    "final_confidence": 0.95,
+    "consistency": 1.0,
+    "relation_count": {
+      "uncertain": 5
+    },
+    "in_markov_blanket": false,
+    "positive_ratio": 0.0
+  },
+  {
+    "variable_a": "tub",
+    "variable_b": "smoke",
+    "runs": [
+      {
+        "variable_a": "tub",
+        "variable_b": "smoke",
+        "run_id": 1,
+        "seed": 20261034,
+        "prompt_version": "mb-v1-blanket-membership",
+        "raw_response": "{\n    \"variable_a\": \"tub\",\n    \"variable_b\": \"smoke\",\n    \"in_markov_blanket\": false,\n    \"confidence\": 0.95,\n    \"reason\": \"tub and smoke are not directly connected, nor do they share a common effect or common cause in the ASIA network; tub is influenced by either lung cancer or bronchitis, while smoke influences lung cancer and possibly bronchitis, but there is no direct or indirect causal path that makes them part of each other's Markov blanket.\"\n}",
+        "parsed": {
+          "variable_a": "tub",
+          "variable_b": "smoke",
+          "in_markov_blanket": false,
+          "confidence": 0.95,
+          "reason": "tub and smoke are not directly connected, nor do they share a common effect or common cause in the ASIA network; tub is influenced by either lung cancer or bronchitis, while smoke influences lung cancer and possibly bronchitis, but there is no direct or indirect causal path that makes them part of each other's Markov blanket."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "tub",
+        "variable_b": "smoke",
+        "run_id": 2,
+        "seed": 20261034,
+        "prompt_version": "mb-v1-blanket-membership",
+        "raw_response": "{\n    \"variable_a\": \"tub\",\n    \"variable_b\": \"smoke\",\n    \"in_markov_blanket\": false,\n    \"confidence\": 0.95,\n    \"reason\": \"Tuberculosis and smoking are not directly connected, nor do they share a common cause or effect. Tub is caused by asia, lung, and possibly others, while smoke is a direct cause of emphysema and possibly lung cancer. There is no shared effect or mutual influence, and they do not influence each other directly or through spouses or children. Thus, they are not in each other's Markov blanket.\"\n}",
+        "parsed": {
+          "variable_a": "tub",
+          "variable_b": "smoke",
+          "in_markov_blanket": false,
+          "confidence": 0.95,
+          "reason": "Tuberculosis and smoking are not directly connected, nor do they share a common cause or effect. Tub is caused by asia, lung, and possibly others, while smoke is a direct cause of emphysema and possibly lung cancer. There is no shared effect or mutual influence, and they do not influence each other directly or through spouses or children. Thus, they are not in each other's Markov blanket."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "tub",
+        "variable_b": "smoke",
+        "run_id": 3,
+        "seed": 20261034,
+        "prompt_version": "mb-v1-blanket-membership",
+        "raw_response": "{\n    \"variable_a\": \"tub\",\n    \"variable_b\": \"smoke\",\n    \"in_markov_blanket\": false,\n    \"confidence\": 0.95,\n    \"reason\": \"Tuberculosis and smoking are not directly connected, nor do they share a common cause or effect. There is no path where one influences the other through a common effect or through spouses or children. Therefore, they are not in each other's Markov blanket.\"\n}",
+        "parsed": {
+          "variable_a": "tub",
+          "variable_b": "smoke",
+          "in_markov_blanket": false,
+          "confidence": 0.95,
+          "reason": "Tuberculosis and smoking are not directly connected, nor do they share a common cause or effect. There is no path where one influences the other through a common effect or through spouses or children. Therefore, they are not in each other's Markov blanket."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "tub",
+        "variable_b": "smoke",
+        "run_id": 4,
+        "seed": 20261046,
+        "prompt_version": "mb-v1-blanket-membership",
+        "raw_response": "{\n    \"variable_a\": \"tub\",\n    \"variable_b\": \"smoke\",\n    \"in_markov_blanket\": false,\n    \"confidence\": 0.95,\n    \"reason\": \"Tuberculosis (tub) and smoking (smoke) are not directly connected, nor do they share a common effect or common cause in the ASIA network. There is no structural path between them, and they do not influence each other or share a common effect, so neither is in the other's Markov blanket.\"\n}",
+        "parsed": {
+          "variable_a": "tub",
+          "variable_b": "smoke",
+          "in_markov_blanket": false,
+          "confidence": 0.95,
+          "reason": "Tuberculosis (tub) and smoking (smoke) are not directly connected, nor do they share a common effect or common cause in the ASIA network. There is no structural path between them, and they do not influence each other or share a common effect, so neither is in the other's Markov blanket."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "tub",
+        "variable_b": "smoke",
+        "run_id": 5,
+        "seed": 20261046,
+        "prompt_version": "mb-v1-blanket-membership",
+        "raw_response": "{\n    \"variable_a\": \"tub\",\n    \"variable_b\": \"smoke\",\n    \"in_markov_blanket\": false,\n    \"confidence\": 0.95,\n    \"reason\": \"Tuberculosis (tub) and smoking (smoke) are not directly connected, nor do they share a common effect or common cause in the ASIA network. There is no path between them that would place them in each other's Markov blanket, as they are structurally independent.\"\n}",
+        "parsed": {
+          "variable_a": "tub",
+          "variable_b": "smoke",
+          "in_markov_blanket": false,
+          "confidence": 0.95,
+          "reason": "Tuberculosis (tub) and smoking (smoke) are not directly connected, nor do they share a common effect or common cause in the ASIA network. There is no path between them that would place them in each other's Markov blanket, as they are structurally independent."
+        },
+        "parse_status": "success"
+      }
+    ],
+    "final_relation": "uncertain",
+    "final_confidence": 0.95,
+    "consistency": 1.0,
+    "relation_count": {
+      "uncertain": 5
+    },
+    "in_markov_blanket": false,
+    "positive_ratio": 0.0
+  },
+  {
+    "variable_a": "tub",
+    "variable_b": "xray",
+    "runs": [
+      {
+        "variable_a": "tub",
+        "variable_b": "xray",
+        "run_id": 1,
+        "seed": 20261058,
+        "prompt_version": "mb-v1-blanket-membership",
+        "raw_response": "{\n    \"variable_a\": \"tub\",\n    \"variable_b\": \"xray\",\n    \"in_markov_blanket\": true,\n    \"confidence\": 0.9,\n    \"reason\": \"Tuberculosis (tub) can cause an abnormal chest X-ray (xray), making them directly connected. Since xray is a child of tub, xray is in the Markov blanket of tub. Additionally, tub and xray share no common causes or effects with other variables in a way that would require indirect paths; the direct causal link means that knowing tub tells you about xray and vice versa even after conditioning on other variables, satisfying the definition of Markov blanket membership.\"\n}",
+        "parsed": {
+          "variable_a": "tub",
+          "variable_b": "xray",
+          "in_markov_blanket": true,
+          "confidence": 0.9,
+          "reason": "Tuberculosis (tub) can cause an abnormal chest X-ray (xray), making them directly connected. Since xray is a child of tub, xray is in the Markov blanket of tub. Additionally, tub and xray share no common causes or effects with other variables in a way that would require indirect paths; the direct causal link means that knowing tub tells you about xray and vice versa even after conditioning on other variables, satisfying the definition of Markov blanket membership."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "tub",
+        "variable_b": "xray",
+        "run_id": 2,
+        "seed": 20261058,
+        "prompt_version": "mb-v1-blanket-membership",
+        "raw_response": "{\n    \"variable_a\": \"tub\",\n    \"variable_b\": \"xray\",\n    \"in_markov_blanket\": true,\n    \"confidence\": 0.9,\n    \"reason\": \"Tuberculosis (tub) can cause an abnormal chest X-ray (xray), making them directly causally linked. Since xray is a child of tub, tub is a parent of xray, and thus xray is in the Markov blanket of tub. Additionally, tub and xray share no common cause or effect with other variables that would break this direct link, so the direct causal connection ensures that knowing one gives information about the other even after conditioning on all other variables.\"\n}",
+        "parsed": {
+          "variable_a": "tub",
+          "variable_b": "xray",
+          "in_markov_blanket": true,
+          "confidence": 0.9,
+          "reason": "Tuberculosis (tub) can cause an abnormal chest X-ray (xray), making them directly causally linked. Since xray is a child of tub, tub is a parent of xray, and thus xray is in the Markov blanket of tub. Additionally, tub and xray share no common cause or effect with other variables that would break this direct link, so the direct causal connection ensures that knowing one gives information about the other even after conditioning on all other variables."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "tub",
+        "variable_b": "xray",
+        "run_id": 3,
+        "seed": 20261058,
+        "prompt_version": "mb-v1-blanket-membership",
+        "raw_response": "{\n    \"variable_a\": \"tub\",\n    \"variable_b\": \"xray\",\n    \"in_markov_blanket\": true,\n    \"confidence\": 0.9,\n    \"reason\": \"Tuberculosis (tub) can cause an abnormal chest X-ray (xray), making them directly connected. Since xray is a child of tub, xray is in the Markov blanket of tub. Additionally, tub and xray share no common cause or effect with other variables, and there is no path through other variables that would remove the direct causal link. Therefore, tub is in the Markov blanket of xray due to being a parent of xray.\"\n}",
+        "parsed": {
+          "variable_a": "tub",
+          "variable_b": "xray",
+          "in_markov_blanket": true,
+          "confidence": 0.9,
+          "reason": "Tuberculosis (tub) can cause an abnormal chest X-ray (xray), making them directly connected. Since xray is a child of tub, xray is in the Markov blanket of tub. Additionally, tub and xray share no common cause or effect with other variables, and there is no path through other variables that would remove the direct causal link. Therefore, tub is in the Markov blanket of xray due to being a parent of xray."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "tub",
+        "variable_b": "xray",
+        "run_id": 4,
+        "seed": 20261058,
+        "prompt_version": "mb-v1-blanket-membership",
+        "raw_response": "{\n    \"variable_a\": \"tub\",\n    \"variable_b\": \"xray\",\n    \"in_markov_blanket\": true,\n    \"confidence\": 0.9,\n    \"reason\": \"Tuberculosis (tub) can cause an abnormal chest X-ray (xray), making them directly connected. Since xray is a child of tub, xray is in the Markov blanket of tub. Additionally, tub and xray share no common cause or effect with other variables in a way that would require indirect influence, so the direct causal link confirms their mutual inclusion in each other's Markov blanket.\"\n}",
+        "parsed": {
+          "variable_a": "tub",
+          "variable_b": "xray",
+          "in_markov_blanket": true,
+          "confidence": 0.9,
+          "reason": "Tuberculosis (tub) can cause an abnormal chest X-ray (xray), making them directly connected. Since xray is a child of tub, xray is in the Markov blanket of tub. Additionally, tub and xray share no common cause or effect with other variables in a way that would require indirect influence, so the direct causal link confirms their mutual inclusion in each other's Markov blanket."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "tub",
+        "variable_b": "xray",
+        "run_id": 5,
+        "seed": 20261058,
+        "prompt_version": "mb-v1-blanket-membership",
+        "raw_response": "{\n    \"variable_a\": \"tub\",\n    \"variable_b\": \"xray\",\n    \"in_markov_blanket\": true,\n    \"confidence\": 0.9,\n    \"reason\": \"Tuberculosis (tub) can cause an abnormal chest X-ray (xray), making them directly connected. Since xray is a child of tub, xray is in the Markov blanket of tub. Additionally, tub and xray share no common causes or effects with other variables that would break this direct link, so the relationship remains active and mutual in the Markov blanket.\"\n}",
+        "parsed": {
+          "variable_a": "tub",
+          "variable_b": "xray",
+          "in_markov_blanket": true,
+          "confidence": 0.9,
+          "reason": "Tuberculosis (tub) can cause an abnormal chest X-ray (xray), making them directly connected. Since xray is a child of tub, xray is in the Markov blanket of tub. Additionally, tub and xray share no common causes or effects with other variables that would break this direct link, so the relationship remains active and mutual in the Markov blanket."
+        },
+        "parse_status": "success"
+      }
+    ],
+    "final_relation": "uncertain",
+    "final_confidence": 0.9,
+    "consistency": 1.0,
+    "relation_count": {
+      "uncertain": 5
+    },
+    "in_markov_blanket": true,
+    "positive_ratio": 1.0
+  },
+  {
+    "variable_a": "xray",
+    "variable_b": "dysp",
+    "runs": [
+      {
+        "variable_a": "xray",
+        "variable_b": "dysp",
+        "run_id": 1,
+        "seed": 20261142,
+        "prompt_version": "mb-v1-blanket-membership",
+        "raw_response": "{\n    \"variable_a\": \"xray\",\n    \"variable_b\": \"dysp\",\n    \"in_markov_blanket\": false,\n    \"confidence\": 0.95,\n    \"reason\": \"xray and dysp are not directly connected, nor do they share a common effect or common cause; xray is a symptom of lung disease, and dysp is a symptom of lung disease, so they share a common cause (e.g., lung disease), but in a Markov blanket, only direct parents, children, or spouses are included. Since dysp is not a child or parent of xray, and xray is not a spouse of dysp (as they don't share a common effect), they are not in each other's Markov blanket.\"\n}",
+        "parsed": {
+          "variable_a": "xray",
+          "variable_b": "dysp",
+          "in_markov_blanket": false,
+          "confidence": 0.95,
+          "reason": "xray and dysp are not directly connected, nor do they share a common effect or common cause; xray is a symptom of lung disease, and dysp is a symptom of lung disease, so they share a common cause (e.g., lung disease), but in a Markov blanket, only direct parents, children, or spouses are included. Since dysp is not a child or parent of xray, and xray is not a spouse of dysp (as they don't share a common effect), they are not in each other's Markov blanket."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "xray",
+        "variable_b": "dysp",
+        "run_id": 2,
+        "seed": 20261142,
+        "prompt_version": "mb-v1-blanket-membership",
+        "raw_response": "{\n    \"variable_a\": \"xray\",\n    \"variable_b\": \"dysp\",\n    \"in_markov_blanket\": false,\n    \"confidence\": 0.95,\n    \"reason\": \"xray and dysp are not directly causally linked, nor do they share a common effect or common cause in the ASIA network structure; xray is influenced by lung disease and smoking, while dysp is influenced by lung disease and smoking as well, meaning both are effects of lung disease, so they share a common cause, but not a common effect or mutual influence, and thus neither is in each other's Markov blanket.\"\n}",
+        "parsed": {
+          "variable_a": "xray",
+          "variable_b": "dysp",
+          "in_markov_blanket": false,
+          "confidence": 0.95,
+          "reason": "xray and dysp are not directly causally linked, nor do they share a common effect or common cause in the ASIA network structure; xray is influenced by lung disease and smoking, while dysp is influenced by lung disease and smoking as well, meaning both are effects of lung disease, so they share a common cause, but not a common effect or mutual influence, and thus neither is in each other's Markov blanket."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "xray",
+        "variable_b": "dysp",
+        "run_id": 3,
+        "seed": 20261142,
+        "prompt_version": "mb-v1-blanket-membership",
+        "raw_response": "{\n    \"variable_a\": \"xray\",\n    \"variable_b\": \"dysp\",\n    \"in_markov_blanket\": false,\n    \"confidence\": 0.95,\n    \"reason\": \"xray and dysp are not directly connected, nor do they share a common cause or effect; xray is a symptom of lung disease, and dysp is a symptom of respiratory issues, but they are not causally linked or related through a common effect or shared parent in the network structure.\"\n}",
+        "parsed": {
+          "variable_a": "xray",
+          "variable_b": "dysp",
+          "in_markov_blanket": false,
+          "confidence": 0.95,
+          "reason": "xray and dysp are not directly connected, nor do they share a common cause or effect; xray is a symptom of lung disease, and dysp is a symptom of respiratory issues, but they are not causally linked or related through a common effect or shared parent in the network structure."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "xray",
+        "variable_b": "dysp",
+        "run_id": 4,
+        "seed": 20261142,
+        "prompt_version": "mb-v1-blanket-membership",
+        "raw_response": "{\n    \"variable_a\": \"xray\",\n    \"variable_b\": \"dysp\",\n    \"in_markov_blanket\": false,\n    \"confidence\": 0.95,\n    \"reason\": \"xray and dysp are not directly causally linked, nor do they share a common effect or common cause; dyspnea is not caused by or directly related to an abnormal chest X-ray in the structure of the ASIA network, and there is no common child or spouse relationship between them.\"\n}",
+        "parsed": {
+          "variable_a": "xray",
+          "variable_b": "dysp",
+          "in_markov_blanket": false,
+          "confidence": 0.95,
+          "reason": "xray and dysp are not directly causally linked, nor do they share a common effect or common cause; dyspnea is not caused by or directly related to an abnormal chest X-ray in the structure of the ASIA network, and there is no common child or spouse relationship between them."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "xray",
+        "variable_b": "dysp",
+        "run_id": 5,
+        "seed": 20261142,
+        "prompt_version": "mb-v1-blanket-membership",
+        "raw_response": "{\n    \"variable_a\": \"xray\",\n    \"variable_b\": \"dysp\",\n    \"in_markov_blanket\": false,\n    \"confidence\": 0.95,\n    \"reason\": \"xray and dysp are not directly causally connected, nor do they share a common effect or common cause; xray is a symptom of lung disease, while dysp is a symptom of respiratory issues, and neither is a parent or child of the other in the ASIA network, and they do not share a common effect or spouse relationship.\"\n}",
+        "parsed": {
+          "variable_a": "xray",
+          "variable_b": "dysp",
+          "in_markov_blanket": false,
+          "confidence": 0.95,
+          "reason": "xray and dysp are not directly causally connected, nor do they share a common effect or common cause; xray is a symptom of lung disease, while dysp is a symptom of respiratory issues, and neither is a parent or child of the other in the ASIA network, and they do not share a common effect or spouse relationship."
+        },
+        "parse_status": "success"
+      }
+    ],
+    "final_relation": "uncertain",
+    "final_confidence": 0.95,
+    "consistency": 1.0,
+    "relation_count": {
+      "uncertain": 5
+    },
+    "in_markov_blanket": false,
+    "positive_ratio": 0.0
+  }
+]

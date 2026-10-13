@@ -1,0 +1,3 @@
+"network","blanket_pairs","child_or_parent","spouse","said_edge_for_child_parent","said_noedge_for_child_parent","said_edge_for_spouse","said_noedge_for_spouse","predicted_edges","predicted_edges_in_blanket","precision_vs_blanket"
+"ASIA",20,16,4,14,2,0,4,20,8,0.4
+"CHILD",60,50,10,44,6,10,0,122,27,0.221

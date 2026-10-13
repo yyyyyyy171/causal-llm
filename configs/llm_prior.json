@@ -1,9 +1,10 @@
 {
-  "model": "Qwen/Qwen3-4B-Instruct-2507",
+  "model": "Qwen/Qwen3-8B",
   "quant": "4bit",
+  "device_map": "gpu0",
   "local_files_only": true,
   "runs": 5,
-  "batch_size": 12,
+  "batch_size": 1,
   "temperature": 0.7,
   "top_p": 0.9,
   "max_new_tokens": 192,
@@ -11,9 +12,11 @@
   "modes": ["real", "anon"],
   "networks": ["ASIA", "CHILD", "INSURANCE", "ALARM", "HAILFINDER"],
   "notes": {
-    "model": "文档要求本地 4B-8B 开源模型。本机是 RTX 3060 Laptop 6GB，实测只能跑 Qwen3-4B-Instruct-2507 的 4bit；换成 8B 需要 4090 或 WSL2。",
+    "model": "文档周 5 明确要求用本地 8B 模型（'4bit 的 8B 模型即可'）。实测 Qwen/Qwen3-8B 4bit 在本机 6GB 显卡上可以跑：加载 33 秒、显存 6002 MiB、约 48 秒/条。之前擅自降级成 4B 是错的。注意缓存里这个 8B 是基座模型（非 Instruct），JSON 遵循度不如 4B-Instruct，需要在结果里核对解析成功率。",
+    "device_map": "gpu0 表示全部放 0 号卡。4bit 不支持分层到 CPU，所以不能用 auto：auto 判定装不下会直接报错。",
+    "batch_size": "8B 一次只能生成 1 条（显存已到 6002 MiB，没有余量做批处理）。",
+    "speed": "按 48 秒/条估算：ASIA 140 条约 1.9 小时；CHILD 950 条约 12.7 小时；INSURANCE 1755 条约 23 小时；ALARM 3330 条约 44 小时；HAILFINDER 7700 条约 102 小时。大网络必须用共用的 4090，或只对相关变量对采样。",
     "runs": "每对变量采样 5 次，取多数投票；一致性（consistency）写进结果表。",
-    "batch_size": "12 在 6GB 上稳定。若出现显存不足，先降到 8，再降到 4。",
     "base_seed": "每一次采样的种子 = base_seed + 批次起点，保证可复现。"
   }
 }

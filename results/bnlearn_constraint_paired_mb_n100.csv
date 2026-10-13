@@ -1,0 +1,9 @@
+"network","budget","variant","repeats","baseline_f1","variant_f1","mean_delta","sd_delta","wins","wilcox_p"
+"ASIA","matched","prior-blacklist",30,0.5576,0.3679,-0.1897,0.1175,"0/30",0
+"ASIA","matched","prior-thresh",30,0.5576,0.5624,0.0047,0.0365,"10/30",0.3543
+"ASIA","matched","prior-whitelist",30,0.5576,0.5167,-0.041,0.1454,"11/30",0.268
+"ASIA","matched","random-blacklist",30,0.5576,0.3372,-0.2204,0.1627,"3/30",0
+"ASIA","alpha0.05","prior-blacklist",30,0.5002,0.3132,-0.187,0.0941,"0/30",0
+"ASIA","alpha0.05","prior-thresh",30,0.5002,0.5114,0.0112,0.0482,"13/30",0.0986
+"ASIA","alpha0.05","prior-whitelist",30,0.5002,0.5054,0.0052,0.1288,"13/30",0.9313
+"ASIA","alpha0.05","random-blacklist",30,0.5002,0.2372,-0.2629,0.1525,"1/30",0

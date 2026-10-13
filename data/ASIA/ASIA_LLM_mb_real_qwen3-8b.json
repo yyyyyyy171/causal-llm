@@ -1,0 +1,32 @@
+[
+  {
+    "variable_a": "asia",
+    "variable_b": "tub",
+    "runs": [
+      {
+        "variable_a": "asia",
+        "variable_b": "tub",
+        "run_id": 1,
+        "seed": 20261010,
+        "prompt_version": "mb-v1-blanket-membership",
+        "raw_response": "{\n    \"variable_a\": \"asia\",\n    \"variable_b\": \"tub\",\n    \"in_markov_blanket\": true,\n    \"confidence\": 0.9,\n    \"reason\": \"asia is a parent of tub, meaning it directly influences the probability of tuberculosis, so it is part of the Markov blanket.\"\n}",
+        "parsed": {
+          "variable_a": "asia",
+          "variable_b": "tub",
+          "in_markov_blanket": true,
+          "confidence": 0.9,
+          "reason": "asia is a parent of tub, meaning it directly influences the probability of tuberculosis, so it is part of the Markov blanket."
+        },
+        "parse_status": "success"
+      }
+    ],
+    "final_relation": "uncertain",
+    "final_confidence": 0.9,
+    "consistency": 1.0,
+    "relation_count": {
+      "uncertain": 1
+    },
+    "in_markov_blanket": true,
+    "positive_ratio": 1.0
+  }
+]

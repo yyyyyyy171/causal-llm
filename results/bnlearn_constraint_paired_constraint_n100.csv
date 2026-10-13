@@ -1,0 +1,17 @@
+"network","budget","variant","repeats","baseline_f1","variant_f1","mean_delta","sd_delta","wins","wilcox_p"
+"ASIA","matched","prior-blacklist",30,0.5576,0.5224,-0.0353,0.0474,"0/30",2e-04
+"ASIA","matched","prior-thresh",30,0.5576,0.5453,-0.0124,0.035,"2/30",0.0605
+"ASIA","matched","prior-whitelist",30,0.5576,0.6208,0.0632,0.1454,"18/30",0.0683
+"ASIA","matched","random-blacklist",30,0.5576,0.454,-0.1036,0.0908,"2/30",0
+"ASIA","alpha0.05","prior-blacklist",30,0.5002,0.4857,-0.0145,0.0463,"3/30",0.3047
+"ASIA","alpha0.05","prior-thresh",30,0.5002,0.4982,-0.0019,0.0412,"8/30",0.9952
+"ASIA","alpha0.05","prior-whitelist",30,0.5002,0.5206,0.0205,0.1288,"14/30",0.4247
+"ASIA","alpha0.05","random-blacklist",30,0.5002,0.3616,-0.1386,0.1038,"1/30",0
+"CHILD","matched","prior-blacklist",30,0.6079,0.5774,-0.0305,0.0325,"2/30",0
+"CHILD","matched","prior-thresh",30,0.6079,0.6038,-0.0041,0.0238,"9/30",0.9081
+"CHILD","matched","prior-whitelist",30,0.6079,0.4254,-0.1825,0.0468,"0/30",0
+"CHILD","matched","random-blacklist",30,0.6079,0.4535,-0.1544,0.0719,"0/30",0
+"CHILD","alpha0.05","prior-blacklist",30,0.5927,0.5727,-0.02,0.0299,"6/30",7e-04
+"CHILD","alpha0.05","prior-thresh",30,0.5927,0.5924,-2e-04,0.0245,"10/30",0.7638
+"CHILD","alpha0.05","prior-whitelist",30,0.5927,0.3288,-0.2639,0.05,"0/30",0
+"CHILD","alpha0.05","random-blacklist",30,0.5927,0.4433,-0.1494,0.0706,"0/30",0

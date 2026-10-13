@@ -51,6 +51,7 @@ def load_model(
     quant: str = "8bit",
     max_memory: dict | None = None,
     local_files_only: bool = True,
+    device_map="auto",
 ):
     """
     加载本地语言模型。
@@ -79,7 +80,7 @@ def load_model(
 
     kwargs = {
         "quantization_config": _quant_config(quant, max_memory),
-        "device_map": "auto",
+        "device_map": device_map,
         "trust_remote_code": True,
         "local_files_only": local_files_only,
     }

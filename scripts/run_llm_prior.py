@@ -34,13 +34,34 @@ sys.path.insert(0, str(PROJECT_ROOT))
 
 from src.llm_prior.inference import generate_batch  # noqa: E402
 from src.llm_prior.model import MODEL_NAME_4B, load_model  # noqa: E402
-from src.llm_prior.prompt import PROMPT_VERSION, build_causal_prompt  # noqa: E402
+from src.llm_prior.prompt import (  # noqa: E402
+    MB_PROMPT_VERSION,
+    PROMPT_VERSION,
+    build_causal_prompt,
+    build_markov_blanket_prompt,
+)
 from src.llm_prior.var_semantics import load_variables  # noqa: E402
 from src.common.config import load_config  # noqa: E402
 from src.common.run_log import finish_run, start_run  # noqa: E402
 
 
 DATA_ROOT = PROJECT_ROOT / "data"
+
+
+def model_suffix(model_name: str, default_model: str) -> str:
+    """
+    缓存与结果文件名里的模型标识。
+
+    同一个网络用不同规模的模型跑出来的先验必须分开存放，否则 8B 会直接
+    命中 4B 留下的缓存。默认模型不加后缀，保证已有结果不被改名。
+    """
+
+    if model_name == default_model:
+        return ""
+    import re
+
+    tag = re.sub(r"[^a-z0-9]+", "-", model_name.split("/")[-1].lower()).strip("-")
+    return f"_{tag}"
 
 
 # ============================================================
@@ -88,28 +109,30 @@ def normalize_relation(parsed: dict | None) -> str:
     return relation if relation in allowed else "uncertain"
 
 
-def run_direct_edge(parsed: dict | None) -> bool:
+def run_positive(parsed: dict | None) -> bool:
     """
-    单次生成里"是否直接相连"的判断。
+    单次生成里的"肯定"判断。
 
-    优先用模型自己填的 direct_edge 字段；旧格式没有这个字段时，
-    用 relation 推导，保证老结果也能聚合。
+    task=direction 时是"是否直接相连"；task=mb 时是"是否在马尔可夫毯里"。
+    优先用模型自己填的布尔字段（in_markov_blanket / direct_edge），
+    没有时用 relation 推导，保证不同 Prompt 版本的结果都能聚合。
     """
 
     if not parsed:
         return False
 
-    if "direct_edge" in parsed:
-        value = parsed["direct_edge"]
-        if isinstance(value, bool):
-            return value
-        if isinstance(value, str):
-            return value.strip().lower() in ("true", "yes", "1")
+    for field in ("in_markov_blanket", "direct_edge"):
+        if field in parsed:
+            value = parsed[field]
+            if isinstance(value, bool):
+                return value
+            if isinstance(value, str):
+                return value.strip().lower() in ("true", "yes", "1")
 
     return normalize_relation(parsed) in ("A_to_B", "B_to_A")
 
 
-def aggregate(runs: list[dict]) -> dict:
+def aggregate(runs: list[dict], task: str = "direction") -> dict:
     """
     多数投票 + 一致性。
 
@@ -125,10 +148,10 @@ def aggregate(runs: list[dict]) -> dict:
 
     final_relation = max(counts, key=counts.get)
 
-    # "是否直接相连"单独投一次票：这个信号后面给融合方法当边约束用
-    edge_votes = [run_direct_edge(r.get("parsed")) for r in runs]
+    # "肯定/否定"单独投一次票：这个信号给融合方法当搜索约束用
+    edge_votes = [run_positive(r.get("parsed")) for r in runs]
     n_edge = sum(1 for v in edge_votes if v)
-    direct_edge = n_edge * 2 > len(edge_votes)
+    positive = n_edge * 2 > len(edge_votes)
 
     confidences = [
         float(r["parsed"].get("confidence", 0.0))
@@ -140,14 +163,26 @@ def aggregate(runs: list[dict]) -> dict:
         sum(confidences) / len(confidences) if confidences else 0.0
     )
 
-    return {
+    result = {
         "final_relation": final_relation,
         "final_confidence": final_confidence,
         "consistency": counts[final_relation] / max(1, len(relations)),
         "relation_count": counts,
-        "direct_edge": direct_edge,
-        "edge_ratio": n_edge / max(1, len(edge_votes)),
     }
+
+    if task == "mb":
+        result["in_markov_blanket"] = positive
+        result["positive_ratio"] = n_edge / max(1, len(edge_votes))
+        # relation_count 对毯成员任务没有意义，改成记录赞成/反对票数更清楚
+        result["relation_count"] = {
+            "in_blanket": n_edge,
+            "not_in_blanket": len(edge_votes) - n_edge,
+        }
+    else:
+        result["direct_edge"] = positive
+        result["edge_ratio"] = n_edge / max(1, len(edge_votes))
+
+    return result
 
 
 def pair_list(network: str) -> list[tuple[str, str]]:
@@ -171,12 +206,19 @@ def save_json(path: Path, obj) -> None:
 # 缓存
 # ============================================================
 
-def cache_path(network: str, mode: str) -> Path:
-    return DATA_ROOT / network / "llm_cache" / f"{mode}.jsonl"
+def cache_path(network: str, mode: str, task: str = "direction",
+               suffix: str = "") -> Path:
+    # 方向任务沿用原来的文件名，避免让已有缓存失效；
+    # 马尔可夫毯任务用 mb_ 前缀单独存。
+    name = f"{mode}.jsonl" if task == "direction" else f"{task}_{mode}.jsonl"
+    if suffix:
+        name = f"{name[:-6]}{suffix}.jsonl"
+    return DATA_ROOT / network / "llm_cache" / name
 
 
-def load_cache(network: str, mode: str) -> dict[tuple[str, str, int], dict]:
-    path = cache_path(network, mode)
+def load_cache(network: str, mode: str, task: str, expected_version: str,
+               suffix: str = ""):
+    path = cache_path(network, mode, task, suffix)
     done: dict[tuple[str, str, int], dict] = {}
 
     if not path.exists():
@@ -192,7 +234,7 @@ def load_cache(network: str, mode: str) -> dict[tuple[str, str, int], dict]:
             except json.JSONDecodeError:
                 continue
             # 只认当前 prompt 版本的缓存，旧版本的记录直接忽略
-            if record.get("prompt_version") != PROMPT_VERSION:
+            if record.get("prompt_version") != expected_version:
                 continue
             key = (record["variable_a"], record["variable_b"], record["run_id"])
             done[key] = record
@@ -200,8 +242,9 @@ def load_cache(network: str, mode: str) -> dict[tuple[str, str, int], dict]:
     return done
 
 
-def append_cache(network: str, mode: str, record: dict) -> None:
-    path = cache_path(network, mode)
+def append_cache(network: str, mode: str, task: str, record: dict,
+                 suffix: str = "") -> None:
+    path = cache_path(network, mode, task, suffix)
     path.parent.mkdir(parents=True, exist_ok=True)
     with open(path, "a", encoding="utf-8") as handle:
         handle.write(json.dumps(record, ensure_ascii=False) + "\n")
@@ -221,8 +264,19 @@ def run_mode(
 ) -> None:
 
     anonymous = mode == "anon"
+    task = args.task
+    suffix = model_suffix(args.model, MODEL_NAME_4B)
 
-    cache = load_cache(network, mode)
+    prompt_version = MB_PROMPT_VERSION if task == "mb" else PROMPT_VERSION
+
+    def build_prompt(a: str, b: str) -> str:
+        if task == "mb":
+            return build_markov_blanket_prompt(
+                a, b, network=network, anonymous=anonymous
+            )
+        return build_causal_prompt(a, b, network=network, anonymous=anonymous)
+
+    cache = load_cache(network, mode, task, prompt_version, suffix)
     print(f"[{network}/{mode}] 缓存中已有 {len(cache)} 次生成记录")
 
     results: dict[tuple[str, str], dict] = {}
@@ -255,10 +309,7 @@ def run_mode(
 
         batch = todo[start:start + args.batch_size]
 
-        prompts = [
-            build_causal_prompt(a, b, network=network, anonymous=anonymous)
-            for (a, b, _run) in batch
-        ]
+        prompts = [build_prompt(a, b) for (a, b, _run) in batch]
 
         seed = args.base_seed + start
         set_seed(seed)
@@ -282,13 +333,13 @@ def run_mode(
                 "variable_b": b,
                 "run_id": run_id,
                 "seed": seed,
-                "prompt_version": PROMPT_VERSION,
+                "prompt_version": prompt_version,
                 "raw_response": raw,
                 "parsed": parsed,
                 "parse_status": "success" if parsed else "failed",
             }
 
-            append_cache(network, mode, record)
+            append_cache(network, mode, task, record, suffix)
 
             entry = results.setdefault(
                 (a, b), {"variable_a": a, "variable_b": b, "runs": []}
@@ -315,7 +366,7 @@ def run_mode(
 
     for (a, b), entry in sorted(results.items()):
         runs = sorted(entry["runs"], key=lambda r: r["run_id"])
-        aggregated = aggregate(runs)
+        aggregated = aggregate(runs, task=task)
         final.append(
             {
                 "variable_a": a,
@@ -325,23 +376,42 @@ def run_mode(
             }
         )
 
-    out_json = DATA_ROOT / network / f"{network}_LLM_prior_{mode}.json"
+    prefix = "LLM_prior" if task == "direction" else "LLM_mb"
+    out_json = DATA_ROOT / network / f"{network}_{prefix}_{mode}{suffix}.json"
     save_json(out_json, final)
 
-    out_csv = DATA_ROOT / network / f"{network}_LLM_prior_{mode}_summary.csv"
-    with open(out_csv, "w", encoding="utf-8") as handle:
-        handle.write(
+    out_csv = DATA_ROOT / network / f"{network}_{prefix}_{mode}{suffix}_summary.csv"
+
+    if task == "mb":
+        header = (
+            "variable_a,variable_b,in_markov_blanket,positive_ratio,"
+            "consistency,final_confidence,relation_count\n"
+        )
+        def fields(item):
+            return (
+                f"{item['variable_a']},{item['variable_b']},"
+                f"{item['in_markov_blanket']},{item['positive_ratio']:.3f},"
+                f"{item['consistency']:.3f},{item['final_confidence']:.3f},"
+                f"\"{json.dumps(item['relation_count'], ensure_ascii=False)}\"\n"
+            )
+    else:
+        header = (
             "variable_a,variable_b,direct_edge,edge_ratio,"
             "final_relation,consistency,final_confidence,relation_count\n"
         )
-        for item in final:
-            handle.write(
+        def fields(item):
+            return (
                 f"{item['variable_a']},{item['variable_b']},"
                 f"{item['direct_edge']},{item['edge_ratio']:.3f},"
                 f"{item['final_relation']},{item['consistency']:.3f},"
                 f"{item['final_confidence']:.3f},"
                 f"\"{json.dumps(item['relation_count'], ensure_ascii=False)}\"\n"
             )
+
+    with open(out_csv, "w", encoding="utf-8") as handle:
+        handle.write(header)
+        for item in final:
+            handle.write(fields(item))
 
     print(f"[{network}/{mode}] 完成 {len(final)} 对 -> {out_json.name}")
     print(f"[{network}/{mode}] 汇总表 -> {out_csv.name}")
@@ -371,6 +441,10 @@ def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--config", default=pre_args.config)
     parser.add_argument(
+        "--task", default="direction", choices=("direction", "mb"),
+        help="direction=问因果方向；mb=问是否同属马尔可夫毯",
+    )
+    parser.add_argument(
         "--network", default=(cfg.get("networks") or ["ALARM"])[0]
     )
     parser.add_argument(
@@ -392,6 +466,10 @@ def main() -> int:
     )
     parser.add_argument("--model", default=cfg.get("model", MODEL_NAME_4B))
     parser.add_argument("--quant", default=cfg.get("quant", "4bit"))
+    parser.add_argument(
+        "--device-map", default="auto", choices=("auto", "gpu0"),
+        help="auto=按显存自动分层；gpu0=全部放 0 号卡（4bit 不支持 CPU 卸载时用）",
+    )
     parser.add_argument(
         "--temperature", type=float, default=float(cfg.get("temperature", 0.7))
     )
@@ -429,6 +507,7 @@ def main() -> int:
         model_name=args.model,
         quant=args.quant,
         local_files_only=True,
+        device_map={"": 0} if args.device_map == "gpu0" else "auto",
     )
 
     for mode in modes:

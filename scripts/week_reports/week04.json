@@ -1,0 +1,44 @@
+{
+  "title": "第 4 周产出：样本量–恢复质量曲线",
+  "subtitle": "选题二 · 语言模型先验引导的因果特征选择",
+  "out": "E:\\汇报\\周产出\\第04周_样本量-恢复质量曲线.docx",
+  "sections": [
+    {
+      "type": "para",
+      "text": "文档对第 4 周的要求：在 5 个 bnlearn 网络上运行 IAMB 和 HITON-MB，测不同样本量（100 / 500 / 1000 / 5000）下马尔可夫毯的恢复 F1。产出：“样本量–恢复质量”曲线。"
+    },
+    {"type": "heading", "text": "一、结果总表"},
+    {
+      "type": "para",
+      "text": "评测口径：对每个目标变量恢复出的马尔可夫毯与真值比较，算 Precision / Recall / F1，再对全部目标取平均。网络为 ALARM、ASIA、CHILD、HAILFINDER、INSURANCE。"
+    },
+    {
+      "type": "csv_table",
+      "path": "results/BN_baseline_summary.csv",
+      "columns": ["network", "sample_size", "IAMB_P", "IAMB_R", "IAMB_F1", "HITONMB_P", "HITONMB_R", "HITONMB_F1"],
+      "sort_by": ["network", "sample_size"],
+      "round": 4
+    },
+    {"type": "heading", "text": "二、曲线"},
+    {"type": "image", "path": "results/BN_F1_sample_size_curve.png", "width_inches": 6.2},
+    {"type": "heading", "text": "三、观察"},
+    {
+      "type": "bullets",
+      "items": [
+        "样本量从 100 涨到 500 是收益最大的一段：多数网络在这一段提升 10–30 个百分点（ALARM 上 HITON-MB 从 0.305 到 0.735）。",
+        "1000 之后收益趋于平缓，部分网格甚至回落（CHILD 上 IAMB 由 0.859 掉到 0.759），说明小样本下的噪声与算法本身的剪枝策略共同影响结果。",
+        "两个算法的强弱随网络变化：ALARM 上 HITON-MB 在 n≥500 明显更强（0.735/0.861），而 HAILFINDER 上 IAMB 全面领先（0.520 对 0.174）。也就是说没有“一个算法通吃”。",
+        "HAILFINDER 与 INSURANCE 在小样本下最难（n=100 时 HITON-MB 的 F1 只有 0.174 与 0.332）——这正是第 6–7 周验证性实验要重点看的区间。"
+      ]
+    },
+    {"type": "heading", "text": "四、实现一致性验证（补充）"},
+    {
+      "type": "bullets",
+      "items": [
+        "IAMB 用 bnlearn 5.2.1（参考实现）复跑：20 个网络×样本量组合里 14 个与 MATLAB 结果逐位相同，其余差异集中在 n=100 与 INSURANCE（检验统计量不同），最大差 −0.030。",
+        "HITON-MB 因为 bnlearn 5.2.1 已移除该算法，改在 R 里按 Causal-Learner 的 MATLAB 参考逐行重建（R/hiton_mb.R）；重建版与本仓库 MATLAB 基线的平均绝对差 |ΔF1| = 0.0037，ASIA 四个样本量全部逐位相同。",
+        "也就是说，本周这张表与曲线有两套独立实现支撑，后续把语言模型先验注入条件独立检验时，改动的影响可以被精确度量。"
+      ]
+    }
+  ]
+}

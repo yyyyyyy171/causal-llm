@@ -1,0 +1,13 @@
+"network","sample_size","method","variant","precision","recall","f1","f1_std","mean_mb_size"
+"ASIA",100,"IAMB","baseline",0.7875,0.4658,0.5588,0.1134,1.23
+"ASIA",100,"IAMB","prior-thresh",0.7417,0.5158,0.5821,0.1552,1.45
+"ASIA",100,"IAMB","random-thresh",0.7042,0.4992,0.5596,0.1393,1.48
+"ASIA",500,"IAMB","baseline",0.8875,0.7208,0.7789,0.0705,1.75
+"ASIA",500,"IAMB","prior-thresh",0.8625,0.7125,0.7623,0.0651,1.8
+"ASIA",500,"IAMB","random-thresh",0.8792,0.7208,0.7756,0.0728,1.77
+"CHILD",100,"IAMB","baseline",0.83,0.5472,0.6024,0.0635,1.45
+"CHILD",100,"IAMB","prior-thresh",0.7883,0.5587,0.5989,0.0605,1.64
+"CHILD",100,"IAMB","random-thresh",0.8017,0.5595,0.5954,0.0527,1.66
+"CHILD",500,"IAMB","baseline",0.8333,0.7872,0.7493,0.0285,2.36
+"CHILD",500,"IAMB","prior-thresh",0.7867,0.7742,0.7196,0.0235,2.49
+"CHILD",500,"IAMB","random-thresh",0.795,0.7883,0.7286,0.0363,2.47

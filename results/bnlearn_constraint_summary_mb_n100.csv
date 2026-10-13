@@ -1,0 +1,11 @@
+"network","variant","budget","precision","recall","f1","f1_std","mean_selected"
+"ASIA","baseline","alpha0.05",0.7444,0.4076,0.5002,0.1288,1.17
+"ASIA","prior-blacklist","alpha0.05",0.5688,0.2228,0.3132,0.0568,0.93
+"ASIA","prior-thresh","alpha0.05",0.7271,0.4285,0.5114,0.1296,1.24
+"ASIA","prior-whitelist","alpha0.05",0.55,0.5083,0.5054,0,2.5
+"ASIA","random-blacklist","alpha0.05",0.3979,0.186,0.2372,0.122,0.73
+"ASIA","baseline","matched",0.5576,0.5576,0.5576,0.1454,2.5
+"ASIA","prior-blacklist","matched",0.3679,0.3679,0.3679,0.0562,2.5
+"ASIA","prior-thresh","matched",0.5624,0.5624,0.5624,0.1441,2.5
+"ASIA","prior-whitelist","matched",0.5167,0.5167,0.5167,0,2.5
+"ASIA","random-blacklist","matched",0.3372,0.3372,0.3372,0.0982,2.5
