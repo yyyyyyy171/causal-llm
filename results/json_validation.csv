@@ -1,0 +1,7 @@
+file,task,file_parses,records,runs,parse_failures,records_missing_fields,runs_missing_fields,answers_missing_fields,note
+data\ASIA\ASIA_LLM_mb_real.json,mb,True,28,140,3,0,0,0,
+data\ASIA\ASIA_LLM_mb_real_qwen3-8b.json,mb,True,1,1,0,0,0,0,
+data\ASIA\ASIA_LLM_prior_anon.json,direction,True,28,140,0,0,0,0,
+data\ASIA\ASIA_LLM_prior_real.json,direction,True,28,140,1,0,0,0,
+data\CHILD\CHILD_LLM_prior_anon.json,direction,True,190,950,0,0,0,0,
+data\CHILD\CHILD_LLM_prior_real.json,direction,True,190,950,3,0,0,0,

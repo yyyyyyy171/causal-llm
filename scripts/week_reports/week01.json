@@ -80,5 +80,41 @@
       "type": "para",
       "text": "本机能力对照：RTX 3060 Laptop 6GB。8B 4bit 能加载但长跑会退化（实测 1.75 小时/条），ASIA 一个提问方式按正常速度约 1.9 小时，CHILD 约 12.7 小时，INSURANCE 约 23 小时，ALARM 约 44 小时，HAILFINDER 约 102 小时——大网络必须用共用的 4090，这是文档假设的前提。"
     }
+    ,
+    {"type": "heading", "text": "七、第一周验收自查表（逐项核对）"},
+    {
+      "type": "table",
+      "header": ["自查项", "状态", "证据"],
+      "rows": [
+        ["1. Git 个人分支与提交记录", "完成", "分支 yyyyyyy171/topic2；提交 eced6ec（首次）与 70df5f1（DAG 真值）；git log --oneline --decorate 可查"],
+        ["2. README.md", "完成", "README.md 含目录结构、环境、工具与版本、一键复现（步骤→脚本→产出→耗时对照表）、实验规范、编码约定、主要发现速览、已知限制"],
+        ["3. Transformers 模型推理", "完成", "logs/run_llm_prior_*.log 记录命令行、配置、git 提交、Python 与显卡；产物 data/CHILD/CHILD_LLM_prior_real.json（190 对 × 5 次采样）"],
+        ["4. vLLM 模型推理", "未完成", "原生 Windows 无发行版（实测 pip download --platform win_amd64 返回 from versions: none）；官方要求 compute capability ≥ 7.5 且点名支持 T4。需 WSL2 或 T4/4090"],
+        ["5. JSON 输出验收", "完成", "scripts/validate_json_output.py + results/json_validation.csv：6 个文件、2321 次采样、解析失败 7 条（0.30%）、字段缺失 0 处；失败记录保留原始输出"],
+        ["6. 实验配置与日志", "完成", "configs/ 三个配置文件；src/common/run_log.py 把命令行、配置、git 提交、环境、显卡写进日志头部，耗时与退出码写进尾部"],
+        ["7. 4090 使用约定", "完成", "docs/4090使用约定.md：排期表、nvidia-smi 检查命令、缓存与断点续跑规则、tmux 与 Windows 替代做法、本机与 T4 实测数据"],
+        ["8. SSH 与 tmux", "部分完成", "ssh 客户端已随系统安装（C:\\Windows\\System32\\OpenSSH\\ssh.exe）；tmux 在 Windows 原生不存在，需 WSL2；尚无服务器账号，先做原理与命令练习"]
+      ]
+    },
+    {
+      "type": "para",
+      "text": "小结：8 项中 6 项完成、1 项未完成（vLLM）、1 项部分完成（SSH 与 tmux）。"
+    },
+    {"type": "heading", "text": "八、五条最终验收标准的达成情况"},
+    {
+      "type": "table",
+      "header": ["验收标准", "状态", "说明"],
+      "rows": [
+        ["1 能搭环境", "达成", "两个 conda 环境分工写在 README；R 与 MATLAB 的位置与用途一并记录"],
+        ["2 能跑模型（Transformers 与 vLLM 各一次）", "两条中完成一条", "Transformers 已跑通 4B 与 8B；vLLM 受平台限制未完成，需 WSL2 或 T4"],
+        ["3 能处理结果", "达成", "模型按约定字段输出 JSON，Python 解析后落盘，并有独立校验脚本与校验结果"],
+        ["4 能管理实验", "达成", "配置、日志、随机种子、缓存、断点续跑各自解决什么，README 与使用约定里逐条说明"],
+        ["5 能复现并解释", "达成", "README 的“一键复现”章节给出逐步命令；scripts/reproduce_all.ps1 一条命令重建 results/ 下的表"]
+      ]
+    },
+    {
+      "type": "para",
+      "text": "待补：vLLM 那条需要 WSL2 或免费 T4（两者都已确认可行），属于本周唯一实质缺口；SSH/tmux 需要拿到远程机器账号后才能实操。"
+    }
   ]
 }
