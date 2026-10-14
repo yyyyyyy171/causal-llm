@@ -67,6 +67,10 @@ alphas <- as.numeric(strsplit(
 # 0（默认）表示全部变量，ASIA / CHILD / INSURANCE 都用全量。
 target_limit <- as.integer(get_arg("max-targets", "0"))
 
+# 每跑完几次重复落一次盘（默认 1 = 每次都落）。
+# 大网络单次重复要几分钟，落盘本身是秒级以内，所以默认每轮都写最稳妥。
+checkpoint_every <- as.integer(get_arg("checkpoint-every", "1"))
+
 # ---------------------------------------------------------------------------
 # Prior
 # ---------------------------------------------------------------------------
@@ -148,6 +152,95 @@ score_set <- function(predicted, truth) {
 # ---------------------------------------------------------------------------
 
 detail <- data.frame()
+
+# ---------------------------------------------------------------------------
+# 落盘：把当前已经跑出来的结果写成三张表
+# ---------------------------------------------------------------------------
+#
+# 为什么做成函数并在循环里调用：之前是所有网络、所有重复都跑完才写一次文件，
+# 于是任何一次中断（掉电、手滑、要腾出机器、会话被回收）都意味着几小时的算力
+# 全部作废 —— ALARM 与 HAILFINDER 单轮就是几十分钟量级。
+# 现在每跑完一次重复就落盘一次，中断后 results/ 下至少是"跑到哪算哪"的表。
+#
+# 开销很小：明细表每行 8 个数，几千到几万行；汇总与配对检验是对已算好的
+# 明细做分组，秒级以内。用 --checkpoint-every=N 可以调稀。
+
+dir.create(sprintf("%s/results", project_root), showWarnings = FALSE)
+
+write_outputs <- function(detail, print_tables = FALSE) {
+
+  detail_path <- sprintf("%s/results/fusion_both_detail_%s.csv", project_root, tag)
+  write.csv(detail, detail_path, row.names = FALSE)
+
+  if (nrow(detail) == 0) return(invisible(NULL))
+
+  keys <- unique(detail[, c("network", "sample_size", "method", "variant", "budget")])
+  rows <- data.frame()
+  paired <- data.frame()
+
+  for (i in seq_len(nrow(keys))) {
+    key <- keys[i, ]
+    block <- detail[
+      detail$network == key$network & detail$sample_size == key$sample_size &
+      detail$method == key$method & detail$variant == key$variant &
+      detail$budget == key$budget, ]
+
+    per_repeat <- aggregate(f1 ~ repeat_index, block, mean)
+
+    rows <- rbind(rows, data.frame(
+      network = key$network, sample_size = key$sample_size,
+      method = key$method, variant = key$variant, budget = key$budget,
+      precision = round(mean(block$precision), 4),
+      recall = round(mean(block$recall), 4),
+      f1 = round(mean(block$f1), 4),
+      f1_std = round(sd(per_repeat$f1), 4),
+      mean_selected = round(mean(block$n_selected), 2)
+    ))
+
+    if (key$variant != "baseline") {
+      base <- aggregate(
+        f1 ~ repeat_index,
+        detail[detail$network == key$network &
+               detail$sample_size == key$sample_size &
+               detail$method == key$method &
+               detail$variant == "baseline" &
+               detail$budget == key$budget, ],
+        mean
+      )
+      merged <- merge(per_repeat, base, by = "repeat_index",
+                      suffixes = c("_v", "_b"))
+      delta <- merged$f1_v - merged$f1_b
+      p <- tryCatch(suppressWarnings(wilcox.test(delta)$p.value),
+                    error = function(e) NA)
+      paired <- rbind(paired, data.frame(
+        network = key$network, sample_size = key$sample_size,
+        method = key$method, variant = key$variant, budget = key$budget,
+        baseline_f1 = round(mean(merged$f1_b), 4),
+        variant_f1 = round(mean(merged$f1_v), 4),
+        mean_delta = round(mean(delta), 4),
+        wins = sprintf("%d/%d", sum(delta > 0), length(delta)),
+        wilcox_p = round(p, 4)
+      ))
+    }
+  }
+
+  rows <- rows[order(rows$network, rows$sample_size, rows$method, rows$budget,
+                     rows$variant), ]
+  write.csv(rows, sprintf("%s/results/fusion_both_summary_%s.csv", project_root, tag),
+            row.names = FALSE)
+  write.csv(paired,
+            sprintf("%s/results/fusion_both_paired_%s.csv", project_root, tag),
+            row.names = FALSE)
+
+  if (print_tables) {
+    cat("\n")
+    print(rows, row.names = FALSE)
+    cat("\npaired vs baseline:\n")
+    print(paired, row.names = FALSE)
+  }
+
+  invisible(list(summary = rows, paired = paired))
+}
 
 for (network in networks) {
 
@@ -365,81 +458,17 @@ for (network in networks) {
         cat(sprintf("  %s n=%d repeat %d/%d done\n",
                     network, size, repeat_index, repeats))
       }
+
+      # 每跑完一次重复就落盘，中断了也不会全丢（见 write_outputs 的说明）
+      if (repeat_index %% checkpoint_every == 0) {
+        write_outputs(detail)
+      }
     }
   }
 }
 
-dir.create(sprintf("%s/results", project_root), showWarnings = FALSE)
-write.csv(
-  detail,
-  sprintf("%s/results/fusion_both_detail_%s.csv", project_root, tag),
-  row.names = FALSE
-)
-
 # ---------------------------------------------------------------------------
-# Summary: mean over targets and repeats, plus a paired test against baseline
+# 全部跑完：再写一次（这次把表打印到控制台）
 # ---------------------------------------------------------------------------
 
-keys <- unique(detail[, c("network", "sample_size", "method", "variant", "budget")])
-rows <- data.frame()
-paired <- data.frame()
-
-for (i in seq_len(nrow(keys))) {
-  key <- keys[i, ]
-  block <- detail[
-    detail$network == key$network & detail$sample_size == key$sample_size &
-    detail$method == key$method & detail$variant == key$variant &
-    detail$budget == key$budget, ]
-
-  per_repeat <- aggregate(f1 ~ repeat_index, block, mean)
-
-  rows <- rbind(rows, data.frame(
-    network = key$network, sample_size = key$sample_size,
-    method = key$method, variant = key$variant, budget = key$budget,
-    precision = round(mean(block$precision), 4),
-    recall = round(mean(block$recall), 4),
-    f1 = round(mean(block$f1), 4),
-    f1_std = round(sd(per_repeat$f1), 4),
-    mean_selected = round(mean(block$n_selected), 2)
-  ))
-
-  if (key$variant != "baseline") {
-    base <- aggregate(
-      f1 ~ repeat_index,
-      detail[detail$network == key$network &
-             detail$sample_size == key$sample_size &
-             detail$method == key$method &
-             detail$variant == "baseline" &
-             detail$budget == key$budget, ],
-      mean
-    )
-    merged <- merge(
-      per_repeat, base, by = "repeat_index", suffixes = c("_v", "_b")
-    )
-    delta <- merged$f1_v - merged$f1_b
-    p <- tryCatch(suppressWarnings(wilcox.test(delta)$p.value),
-                  error = function(e) NA)
-    paired <- rbind(paired, data.frame(
-      network = key$network, sample_size = key$sample_size,
-      method = key$method, variant = key$variant, budget = key$budget,
-      baseline_f1 = round(mean(merged$f1_b), 4),
-      variant_f1 = round(mean(merged$f1_v), 4),
-      mean_delta = round(mean(delta), 4),
-      wins = sprintf("%d/%d", sum(delta > 0), length(delta)),
-      wilcox_p = round(p, 4)
-    ))
-  }
-}
-
-rows <- rows[order(rows$network, rows$sample_size, rows$method, rows$budget,
-                   rows$variant), ]
-write.csv(rows, sprintf("%s/results/fusion_both_summary_%s.csv", project_root, tag),
-          row.names = FALSE)
-write.csv(paired,
-          sprintf("%s/results/fusion_both_paired_%s.csv", project_root, tag),
-          row.names = FALSE)
-
-cat("\n")
-print(rows, row.names = FALSE)
-cat("\npaired vs baseline:\n")
-print(paired, row.names = FALSE)
+write_outputs(detail, print_tables = TRUE)
