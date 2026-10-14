@@ -27,17 +27,25 @@ def python_source(cell_source: str) -> str:
     """
     把单元格里的 shell 魔法（!cmd）与行魔法（%pip）换成占位语句，
     这样剩下的部分才能当纯 Python 编译。缩进保持不变。
+
+    只把**行首**的 ! 和 % 当作魔法。
+    踩过的坑：`% (type(error).__name__, detail)` 这种跨行的百分号格式化，
+    左端缩进后以 % 开头，如果按“去掉缩进后以 % 开头”来判定，就会被误当成
+    IPython 行魔法替换掉，于是报一个假的语法错误（"'(' was never closed"）。
     """
 
     lines = []
-    for line in cell_source.splitlines():
+    suspicious = []
+    for index, line in enumerate(cell_source.splitlines(), start=1):
         stripped = line.lstrip()
-        if stripped.startswith("!") or stripped.startswith("%"):
+        if line.startswith("!") or line.startswith("%"):
             indent = line[: len(line) - len(stripped)]
             lines.append(f"{indent}pass  # shell magic")
         else:
+            if stripped.startswith("!") or stripped.startswith("%"):
+                suspicious.append(index)
             lines.append(line)
-    return "\n".join(lines)
+    return "\n".join(lines), suspicious
 
 
 def main() -> int:
@@ -47,18 +55,24 @@ def main() -> int:
     print(f"notebook: {NOTEBOOK.name}，单元格 {len(cells)} 个")
 
     problems = []
+    warnings = []
     code_cells = 0
 
     for index, cell in enumerate(cells, start=1):
         if cell["cell_type"] != "code":
             continue
         code_cells += 1
-        source = python_source("".join(cell.get("source", [])))
+        source, suspicious = python_source("".join(cell.get("source", [])))
         try:
             compile(source, f"<cell {index}>", "exec")
         except SyntaxError as error:
             problems.append(
                 f"第 {index} 格语法错误：{error.msg}（第 {error.lineno} 行）"
+            )
+        for line_number in suspicious:
+            warnings.append(
+                f"第 {index} 格第 {line_number} 行以 %/! 开头但带缩进，"
+                f"已按普通 Python 处理：确认它是取模/取反运算，而不是行魔法"
             )
 
     print(f"代码格 {code_cells} 个，编译失败 {len(problems)} 个")
@@ -83,6 +97,10 @@ def main() -> int:
             problems.append(f"缺少必要写法：{name}")
 
     print()
+    if warnings:
+        print("提醒（不算失败）：")
+        for item in warnings:
+            print("  -", item)
     if problems:
         print("发现问题：")
         for item in problems:
