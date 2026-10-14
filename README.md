@@ -30,15 +30,16 @@ Colab 的免费 T4（16GB）官方支持 vLLM，是跑大网络先验的推荐�
 
 ```powershell
 cd E:\Causal-LLM
-git remote add origin https://github.com/<用户名>/causal-llm.git
+git remote add origin https://github.com/yyyyyyy171/causal-llm.git
 git push -u origin yyyyyyy171/topic2
 ```
 
 然后在 Colab 里：
 
 1. 左侧密钥面板配 `HF_TOKEN`（可选，避免下载限速）与 `GIT_TOKEN`（写权限，用于回传结果）；
-2. 打开 `notebooks/colab_prior.ipynb`，运行时类型选 **T4 GPU**；
-3. 改第 1 格的仓库地址与分支，然后从上到下运行。
+2. 直接从这里打开 notebook（不用上传文件）：
+   `https://colab.research.google.com/github/yyyyyyy171/causal-llm/blob/yyyyyyy171/topic2/notebooks/colab_prior.ipynb`
+3. 运行时类型选 **T4 GPU**，第 1 格的仓库地址已填好，从上到下运行即可。
 
 环境由 `scripts/setup_colab.sh` 一键搭建，它做三件事：建隔离虚拟环境（避开 Colab
 预装包冲突）、固定 vLLM 版本、**在驱动低于 580 时自动把 torch 换成 CUDA 12.1 版**
