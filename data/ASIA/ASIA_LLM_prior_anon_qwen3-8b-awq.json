@@ -1,0 +1,3054 @@
+[
+  {
+    "variable_a": "asia",
+    "variable_b": "bronc",
+    "runs": [
+      {
+        "variable_a": "asia",
+        "variable_b": "bronc",
+        "run_id": 1,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V01\",\n    \"variable_b\": \"V02\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"The meaning of the variables is hidden, so there is no basis to infer a direct causal connection between them.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V01",
+          "variable_b": "V02",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "The meaning of the variables is hidden, so there is no basis to infer a direct causal connection between them."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "asia",
+        "variable_b": "bronc",
+        "run_id": 2,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V01\",\n    \"variable_b\": \"V02\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"The meaning of the variables is hidden, so there is no basis to infer a direct causal connection between them.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V01",
+          "variable_b": "V02",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "The meaning of the variables is hidden, so there is no basis to infer a direct causal connection between them."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "asia",
+        "variable_b": "bronc",
+        "run_id": 3,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V01\",\n    \"variable_b\": \"V02\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"The meaning of the variables is hidden, so there is no basis to infer a direct causal connection between them.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V01",
+          "variable_b": "V02",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "The meaning of the variables is hidden, so there is no basis to infer a direct causal connection between them."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "asia",
+        "variable_b": "bronc",
+        "run_id": 4,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V01\",\n    \"variable_b\": \"V02\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"The meaning of the variables is hidden, so there is no basis to infer a direct causal connection between them.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V01",
+          "variable_b": "V02",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "The meaning of the variables is hidden, so there is no basis to infer a direct causal connection between them."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "asia",
+        "variable_b": "bronc",
+        "run_id": 5,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V01\",\n    \"variable_b\": \"V02\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"The meaning of the variables is hidden, so there is no basis to infer a direct causal connection between them.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V01",
+          "variable_b": "V02",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "The meaning of the variables is hidden, so there is no basis to infer a direct causal connection between them."
+        },
+        "parse_status": "success"
+      }
+    ],
+    "final_relation": "no_direct_edge",
+    "final_confidence": 0.95,
+    "consistency": 1.0,
+    "relation_count": {
+      "no_direct_edge": 5
+    },
+    "direct_edge": false,
+    "edge_ratio": 0.0
+  },
+  {
+    "variable_a": "asia",
+    "variable_b": "dysp",
+    "runs": [
+      {
+        "variable_a": "asia",
+        "variable_b": "dysp",
+        "run_id": 1,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V01\",\n    \"variable_b\": \"V03\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V01",
+          "variable_b": "V03",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "asia",
+        "variable_b": "dysp",
+        "run_id": 2,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V01\",\n    \"variable_b\": \"V03\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V01",
+          "variable_b": "V03",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "asia",
+        "variable_b": "dysp",
+        "run_id": 3,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V01\",\n    \"variable_b\": \"V03\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V01",
+          "variable_b": "V03",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "asia",
+        "variable_b": "dysp",
+        "run_id": 4,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V01\",\n    \"variable_b\": \"V03\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V01",
+          "variable_b": "V03",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "asia",
+        "variable_b": "dysp",
+        "run_id": 5,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V01\",\n    \"variable_b\": \"V03\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V01",
+          "variable_b": "V03",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them."
+        },
+        "parse_status": "success"
+      }
+    ],
+    "final_relation": "no_direct_edge",
+    "final_confidence": 0.95,
+    "consistency": 1.0,
+    "relation_count": {
+      "no_direct_edge": 5
+    },
+    "direct_edge": false,
+    "edge_ratio": 0.0
+  },
+  {
+    "variable_a": "asia",
+    "variable_b": "either",
+    "runs": [
+      {
+        "variable_a": "asia",
+        "variable_b": "either",
+        "run_id": 1,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V01\",\n    \"variable_b\": \"V04\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V01",
+          "variable_b": "V04",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "asia",
+        "variable_b": "either",
+        "run_id": 2,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V01\",\n    \"variable_b\": \"V04\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V01",
+          "variable_b": "V04",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "asia",
+        "variable_b": "either",
+        "run_id": 3,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V01\",\n    \"variable_b\": \"V04\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V01",
+          "variable_b": "V04",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "asia",
+        "variable_b": "either",
+        "run_id": 4,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V01\",\n    \"variable_b\": \"V04\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V01",
+          "variable_b": "V04",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "asia",
+        "variable_b": "either",
+        "run_id": 5,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V01\",\n    \"variable_b\": \"V04\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V01",
+          "variable_b": "V04",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them."
+        },
+        "parse_status": "success"
+      }
+    ],
+    "final_relation": "no_direct_edge",
+    "final_confidence": 0.95,
+    "consistency": 1.0,
+    "relation_count": {
+      "no_direct_edge": 5
+    },
+    "direct_edge": false,
+    "edge_ratio": 0.0
+  },
+  {
+    "variable_a": "asia",
+    "variable_b": "lung",
+    "runs": [
+      {
+        "variable_a": "asia",
+        "variable_b": "lung",
+        "run_id": 1,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V01\",\n    \"variable_b\": \"V05\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V01",
+          "variable_b": "V05",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "asia",
+        "variable_b": "lung",
+        "run_id": 2,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V01\",\n    \"variable_b\": \"V05\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V01",
+          "variable_b": "V05",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "asia",
+        "variable_b": "lung",
+        "run_id": 3,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V01\",\n    \"variable_b\": \"V05\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V01",
+          "variable_b": "V05",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "asia",
+        "variable_b": "lung",
+        "run_id": 4,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V01\",\n    \"variable_b\": \"V05\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V01",
+          "variable_b": "V05",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "asia",
+        "variable_b": "lung",
+        "run_id": 5,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V01\",\n    \"variable_b\": \"V05\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V01",
+          "variable_b": "V05",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them."
+        },
+        "parse_status": "success"
+      }
+    ],
+    "final_relation": "no_direct_edge",
+    "final_confidence": 0.95,
+    "consistency": 1.0,
+    "relation_count": {
+      "no_direct_edge": 5
+    },
+    "direct_edge": false,
+    "edge_ratio": 0.0
+  },
+  {
+    "variable_a": "asia",
+    "variable_b": "smoke",
+    "runs": [
+      {
+        "variable_a": "asia",
+        "variable_b": "smoke",
+        "run_id": 1,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V01\",\n    \"variable_b\": \"V06\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V01",
+          "variable_b": "V06",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "asia",
+        "variable_b": "smoke",
+        "run_id": 2,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V01\",\n    \"variable_b\": \"V06\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V01",
+          "variable_b": "V06",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "asia",
+        "variable_b": "smoke",
+        "run_id": 3,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V01\",\n    \"variable_b\": \"V06\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V01",
+          "variable_b": "V06",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "asia",
+        "variable_b": "smoke",
+        "run_id": 4,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V01\",\n    \"variable_b\": \"V06\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V01",
+          "variable_b": "V06",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "asia",
+        "variable_b": "smoke",
+        "run_id": 5,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V01\",\n    \"variable_b\": \"V06\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V01",
+          "variable_b": "V06",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them."
+        },
+        "parse_status": "success"
+      }
+    ],
+    "final_relation": "no_direct_edge",
+    "final_confidence": 0.95,
+    "consistency": 1.0,
+    "relation_count": {
+      "no_direct_edge": 5
+    },
+    "direct_edge": false,
+    "edge_ratio": 0.0
+  },
+  {
+    "variable_a": "asia",
+    "variable_b": "tub",
+    "runs": [
+      {
+        "variable_a": "asia",
+        "variable_b": "tub",
+        "run_id": 1,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V01\",\n    \"variable_b\": \"V07\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V01",
+          "variable_b": "V07",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "asia",
+        "variable_b": "tub",
+        "run_id": 2,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V01\",\n    \"variable_b\": \"V07\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V01",
+          "variable_b": "V07",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "asia",
+        "variable_b": "tub",
+        "run_id": 3,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V01\",\n    \"variable_b\": \"V07\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V01",
+          "variable_b": "V07",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "asia",
+        "variable_b": "tub",
+        "run_id": 4,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V01\",\n    \"variable_b\": \"V07\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V01",
+          "variable_b": "V07",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "asia",
+        "variable_b": "tub",
+        "run_id": 5,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V01\",\n    \"variable_b\": \"V07\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V01",
+          "variable_b": "V07",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them."
+        },
+        "parse_status": "success"
+      }
+    ],
+    "final_relation": "no_direct_edge",
+    "final_confidence": 0.95,
+    "consistency": 1.0,
+    "relation_count": {
+      "no_direct_edge": 5
+    },
+    "direct_edge": false,
+    "edge_ratio": 0.0
+  },
+  {
+    "variable_a": "asia",
+    "variable_b": "xray",
+    "runs": [
+      {
+        "variable_a": "asia",
+        "variable_b": "xray",
+        "run_id": 1,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V01\",\n    \"variable_b\": \"V08\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V01",
+          "variable_b": "V08",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "asia",
+        "variable_b": "xray",
+        "run_id": 2,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V01\",\n    \"variable_b\": \"V08\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V01",
+          "variable_b": "V08",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "asia",
+        "variable_b": "xray",
+        "run_id": 3,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V01\",\n    \"variable_b\": \"V08\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V01",
+          "variable_b": "V08",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "asia",
+        "variable_b": "xray",
+        "run_id": 4,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V01\",\n    \"variable_b\": \"V08\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V01",
+          "variable_b": "V08",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "asia",
+        "variable_b": "xray",
+        "run_id": 5,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V01\",\n    \"variable_b\": \"V08\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V01",
+          "variable_b": "V08",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them."
+        },
+        "parse_status": "success"
+      }
+    ],
+    "final_relation": "no_direct_edge",
+    "final_confidence": 0.95,
+    "consistency": 1.0,
+    "relation_count": {
+      "no_direct_edge": 5
+    },
+    "direct_edge": false,
+    "edge_ratio": 0.0
+  },
+  {
+    "variable_a": "bronc",
+    "variable_b": "dysp",
+    "runs": [
+      {
+        "variable_a": "bronc",
+        "variable_b": "dysp",
+        "run_id": 1,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V02\",\n    \"variable_b\": \"V03\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"There is no semantic or contextual information provided to infer a direct causal relationship between V02 and V03.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V02",
+          "variable_b": "V03",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "There is no semantic or contextual information provided to infer a direct causal relationship between V02 and V03."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "bronc",
+        "variable_b": "dysp",
+        "run_id": 2,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V02\",\n    \"variable_b\": \"V03\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"There is no semantic or contextual information provided to infer a direct causal relationship between V02 and V03.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V02",
+          "variable_b": "V03",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "There is no semantic or contextual information provided to infer a direct causal relationship between V02 and V03."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "bronc",
+        "variable_b": "dysp",
+        "run_id": 3,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V02\",\n    \"variable_b\": \"V03\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"There is no semantic or contextual information provided to infer a direct causal relationship between V02 and V03.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V02",
+          "variable_b": "V03",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "There is no semantic or contextual information provided to infer a direct causal relationship between V02 and V03."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "bronc",
+        "variable_b": "dysp",
+        "run_id": 4,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V02\",\n    \"variable_b\": \"V03\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"There is no semantic or contextual information provided to infer a direct causal relationship between V02 and V03.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V02",
+          "variable_b": "V03",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "There is no semantic or contextual information provided to infer a direct causal relationship between V02 and V03."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "bronc",
+        "variable_b": "dysp",
+        "run_id": 5,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V02\",\n    \"variable_b\": \"V03\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"There is no semantic or contextual information provided to infer a direct causal relationship between V02 and V03.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V02",
+          "variable_b": "V03",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "There is no semantic or contextual information provided to infer a direct causal relationship between V02 and V03."
+        },
+        "parse_status": "success"
+      }
+    ],
+    "final_relation": "no_direct_edge",
+    "final_confidence": 0.95,
+    "consistency": 1.0,
+    "relation_count": {
+      "no_direct_edge": 5
+    },
+    "direct_edge": false,
+    "edge_ratio": 0.0
+  },
+  {
+    "variable_a": "bronc",
+    "variable_b": "either",
+    "runs": [
+      {
+        "variable_a": "bronc",
+        "variable_b": "either",
+        "run_id": 1,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V02\",\n    \"variable_b\": \"V04\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V02",
+          "variable_b": "V04",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "bronc",
+        "variable_b": "either",
+        "run_id": 2,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V02\",\n    \"variable_b\": \"V04\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V02",
+          "variable_b": "V04",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "bronc",
+        "variable_b": "either",
+        "run_id": 3,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V02\",\n    \"variable_b\": \"V04\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V02",
+          "variable_b": "V04",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "bronc",
+        "variable_b": "either",
+        "run_id": 4,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V02\",\n    \"variable_b\": \"V04\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V02",
+          "variable_b": "V04",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "bronc",
+        "variable_b": "either",
+        "run_id": 5,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V02\",\n    \"variable_b\": \"V04\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V02",
+          "variable_b": "V04",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them."
+        },
+        "parse_status": "success"
+      }
+    ],
+    "final_relation": "no_direct_edge",
+    "final_confidence": 0.95,
+    "consistency": 1.0,
+    "relation_count": {
+      "no_direct_edge": 5
+    },
+    "direct_edge": false,
+    "edge_ratio": 0.0
+  },
+  {
+    "variable_a": "bronc",
+    "variable_b": "xray",
+    "runs": [
+      {
+        "variable_a": "bronc",
+        "variable_b": "xray",
+        "run_id": 1,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V02\",\n    \"variable_b\": \"V08\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"The variables are anonymized and their meanings are hidden, so there is no basis to infer a direct causal connection.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V02",
+          "variable_b": "V08",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "The variables are anonymized and their meanings are hidden, so there is no basis to infer a direct causal connection."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "bronc",
+        "variable_b": "xray",
+        "run_id": 2,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V02\",\n    \"variable_b\": \"V08\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V02",
+          "variable_b": "V08",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "bronc",
+        "variable_b": "xray",
+        "run_id": 3,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V02\",\n    \"variable_b\": \"V08\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"The variables are anonymized and their meanings are hidden, so there is no basis to infer a direct causal connection.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V02",
+          "variable_b": "V08",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "The variables are anonymized and their meanings are hidden, so there is no basis to infer a direct causal connection."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "bronc",
+        "variable_b": "xray",
+        "run_id": 4,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V02\",\n    \"variable_b\": \"V08\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"The variables are anonymized and their meanings are hidden, so there is no basis to infer a direct causal connection.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V02",
+          "variable_b": "V08",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "The variables are anonymized and their meanings are hidden, so there is no basis to infer a direct causal connection."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "bronc",
+        "variable_b": "xray",
+        "run_id": 5,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V02\",\n    \"variable_b\": \"V08\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"The variables are anonymized and their meanings are hidden, so there is no basis to infer a direct causal connection.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V02",
+          "variable_b": "V08",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "The variables are anonymized and their meanings are hidden, so there is no basis to infer a direct causal connection."
+        },
+        "parse_status": "success"
+      }
+    ],
+    "final_relation": "no_direct_edge",
+    "final_confidence": 0.95,
+    "consistency": 1.0,
+    "relation_count": {
+      "no_direct_edge": 5
+    },
+    "direct_edge": false,
+    "edge_ratio": 0.0
+  },
+  {
+    "variable_a": "either",
+    "variable_b": "dysp",
+    "runs": [
+      {
+        "variable_a": "either",
+        "variable_b": "dysp",
+        "run_id": 1,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V04\",\n    \"variable_b\": \"V03\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"The meaning of the variables is hidden, so there is no basis to infer a direct causal connection between them.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V04",
+          "variable_b": "V03",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "The meaning of the variables is hidden, so there is no basis to infer a direct causal connection between them."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "either",
+        "variable_b": "dysp",
+        "run_id": 2,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V04\",\n    \"variable_b\": \"V03\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"The meaning of the variables is hidden, so there is no basis to infer a direct causal connection between them.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V04",
+          "variable_b": "V03",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "The meaning of the variables is hidden, so there is no basis to infer a direct causal connection between them."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "either",
+        "variable_b": "dysp",
+        "run_id": 3,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V04\",\n    \"variable_b\": \"V03\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"The meaning of the variables is hidden, so there is no basis to infer a direct causal connection between them.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V04",
+          "variable_b": "V03",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "The meaning of the variables is hidden, so there is no basis to infer a direct causal connection between them."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "either",
+        "variable_b": "dysp",
+        "run_id": 4,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V04\",\n    \"variable_b\": \"V03\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"The meaning of the variables is hidden, so there is no basis to infer a direct causal connection between them.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V04",
+          "variable_b": "V03",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "The meaning of the variables is hidden, so there is no basis to infer a direct causal connection between them."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "either",
+        "variable_b": "dysp",
+        "run_id": 5,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V04\",\n    \"variable_b\": \"V03\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"The meaning of the variables is hidden, so there is no basis to infer a direct causal connection between them.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V04",
+          "variable_b": "V03",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "The meaning of the variables is hidden, so there is no basis to infer a direct causal connection between them."
+        },
+        "parse_status": "success"
+      }
+    ],
+    "final_relation": "no_direct_edge",
+    "final_confidence": 0.95,
+    "consistency": 1.0,
+    "relation_count": {
+      "no_direct_edge": 5
+    },
+    "direct_edge": false,
+    "edge_ratio": 0.0
+  },
+  {
+    "variable_a": "either",
+    "variable_b": "xray",
+    "runs": [
+      {
+        "variable_a": "either",
+        "variable_b": "xray",
+        "run_id": 1,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V04\",\n    \"variable_b\": \"V08\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V04",
+          "variable_b": "V08",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "either",
+        "variable_b": "xray",
+        "run_id": 2,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V04\",\n    \"variable_b\": \"V08\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V04",
+          "variable_b": "V08",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "either",
+        "variable_b": "xray",
+        "run_id": 3,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V04\",\n    \"variable_b\": \"V08\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V04",
+          "variable_b": "V08",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "either",
+        "variable_b": "xray",
+        "run_id": 4,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V04\",\n    \"variable_b\": \"V08\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V04",
+          "variable_b": "V08",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "either",
+        "variable_b": "xray",
+        "run_id": 5,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V04\",\n    \"variable_b\": \"V08\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V04",
+          "variable_b": "V08",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them."
+        },
+        "parse_status": "success"
+      }
+    ],
+    "final_relation": "no_direct_edge",
+    "final_confidence": 0.95,
+    "consistency": 1.0,
+    "relation_count": {
+      "no_direct_edge": 5
+    },
+    "direct_edge": false,
+    "edge_ratio": 0.0
+  },
+  {
+    "variable_a": "lung",
+    "variable_b": "bronc",
+    "runs": [
+      {
+        "variable_a": "lung",
+        "variable_b": "bronc",
+        "run_id": 1,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V05\",\n    \"variable_b\": \"V02\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V05",
+          "variable_b": "V02",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "lung",
+        "variable_b": "bronc",
+        "run_id": 2,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V05\",\n    \"variable_b\": \"V02\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V05",
+          "variable_b": "V02",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "lung",
+        "variable_b": "bronc",
+        "run_id": 3,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V05\",\n    \"variable_b\": \"V02\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V05",
+          "variable_b": "V02",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "lung",
+        "variable_b": "bronc",
+        "run_id": 4,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V05\",\n    \"variable_b\": \"V02\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V05",
+          "variable_b": "V02",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "lung",
+        "variable_b": "bronc",
+        "run_id": 5,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V05\",\n    \"variable_b\": \"V02\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V05",
+          "variable_b": "V02",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them."
+        },
+        "parse_status": "success"
+      }
+    ],
+    "final_relation": "no_direct_edge",
+    "final_confidence": 0.95,
+    "consistency": 1.0,
+    "relation_count": {
+      "no_direct_edge": 5
+    },
+    "direct_edge": false,
+    "edge_ratio": 0.0
+  },
+  {
+    "variable_a": "lung",
+    "variable_b": "dysp",
+    "runs": [
+      {
+        "variable_a": "lung",
+        "variable_b": "dysp",
+        "run_id": 1,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V05\",\n    \"variable_b\": \"V03\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V05",
+          "variable_b": "V03",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "lung",
+        "variable_b": "dysp",
+        "run_id": 2,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V05\",\n    \"variable_b\": \"V03\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V05",
+          "variable_b": "V03",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "lung",
+        "variable_b": "dysp",
+        "run_id": 3,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V05\",\n    \"variable_b\": \"V03\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V05",
+          "variable_b": "V03",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "lung",
+        "variable_b": "dysp",
+        "run_id": 4,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V05\",\n    \"variable_b\": \"V03\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V05",
+          "variable_b": "V03",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "lung",
+        "variable_b": "dysp",
+        "run_id": 5,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V05\",\n    \"variable_b\": \"V03\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V05",
+          "variable_b": "V03",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them."
+        },
+        "parse_status": "success"
+      }
+    ],
+    "final_relation": "no_direct_edge",
+    "final_confidence": 0.95,
+    "consistency": 1.0,
+    "relation_count": {
+      "no_direct_edge": 5
+    },
+    "direct_edge": false,
+    "edge_ratio": 0.0
+  },
+  {
+    "variable_a": "lung",
+    "variable_b": "either",
+    "runs": [
+      {
+        "variable_a": "lung",
+        "variable_b": "either",
+        "run_id": 1,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V05\",\n    \"variable_b\": \"V04\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V05",
+          "variable_b": "V04",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "lung",
+        "variable_b": "either",
+        "run_id": 2,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V05\",\n    \"variable_b\": \"V04\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V05",
+          "variable_b": "V04",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "lung",
+        "variable_b": "either",
+        "run_id": 3,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V05\",\n    \"variable_b\": \"V04\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V05",
+          "variable_b": "V04",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "lung",
+        "variable_b": "either",
+        "run_id": 4,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V05\",\n    \"variable_b\": \"V04\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V05",
+          "variable_b": "V04",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "lung",
+        "variable_b": "either",
+        "run_id": 5,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V05\",\n    \"variable_b\": \"V04\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V05",
+          "variable_b": "V04",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them."
+        },
+        "parse_status": "success"
+      }
+    ],
+    "final_relation": "no_direct_edge",
+    "final_confidence": 0.95,
+    "consistency": 1.0,
+    "relation_count": {
+      "no_direct_edge": 5
+    },
+    "direct_edge": false,
+    "edge_ratio": 0.0
+  },
+  {
+    "variable_a": "lung",
+    "variable_b": "xray",
+    "runs": [
+      {
+        "variable_a": "lung",
+        "variable_b": "xray",
+        "run_id": 1,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V05\",\n    \"variable_b\": \"V08\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"The anonymized variables lack semantic context, making it impossible to determine a direct causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V05",
+          "variable_b": "V08",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "The anonymized variables lack semantic context, making it impossible to determine a direct causal relationship."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "lung",
+        "variable_b": "xray",
+        "run_id": 2,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V05\",\n    \"variable_b\": \"V08\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"The anonymized variables lack semantic context, making it impossible to determine a direct causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V05",
+          "variable_b": "V08",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "The anonymized variables lack semantic context, making it impossible to determine a direct causal relationship."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "lung",
+        "variable_b": "xray",
+        "run_id": 3,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V05\",\n    \"variable_b\": \"V08\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"The anonymized variables lack semantic context, making it impossible to determine a direct causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V05",
+          "variable_b": "V08",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "The anonymized variables lack semantic context, making it impossible to determine a direct causal relationship."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "lung",
+        "variable_b": "xray",
+        "run_id": 4,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V05\",\n    \"variable_b\": \"V08\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"The anonymized variables lack semantic context, making it impossible to determine a direct causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V05",
+          "variable_b": "V08",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "The anonymized variables lack semantic context, making it impossible to determine a direct causal relationship."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "lung",
+        "variable_b": "xray",
+        "run_id": 5,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V05\",\n    \"variable_b\": \"V08\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"The anonymized variables lack semantic context, making it impossible to determine a direct causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V05",
+          "variable_b": "V08",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "The anonymized variables lack semantic context, making it impossible to determine a direct causal relationship."
+        },
+        "parse_status": "success"
+      }
+    ],
+    "final_relation": "no_direct_edge",
+    "final_confidence": 0.95,
+    "consistency": 1.0,
+    "relation_count": {
+      "no_direct_edge": 5
+    },
+    "direct_edge": false,
+    "edge_ratio": 0.0
+  },
+  {
+    "variable_a": "smoke",
+    "variable_b": "bronc",
+    "runs": [
+      {
+        "variable_a": "smoke",
+        "variable_b": "bronc",
+        "run_id": 1,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V06\",\n    \"variable_b\": \"V02\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V06",
+          "variable_b": "V02",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "smoke",
+        "variable_b": "bronc",
+        "run_id": 2,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V06\",\n    \"variable_b\": \"V02\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V06",
+          "variable_b": "V02",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "smoke",
+        "variable_b": "bronc",
+        "run_id": 3,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V06\",\n    \"variable_b\": \"V02\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V06",
+          "variable_b": "V02",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "smoke",
+        "variable_b": "bronc",
+        "run_id": 4,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V06\",\n    \"variable_b\": \"V02\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V06",
+          "variable_b": "V02",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "smoke",
+        "variable_b": "bronc",
+        "run_id": 5,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V06\",\n    \"variable_b\": \"V02\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V06",
+          "variable_b": "V02",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them."
+        },
+        "parse_status": "success"
+      }
+    ],
+    "final_relation": "no_direct_edge",
+    "final_confidence": 0.95,
+    "consistency": 1.0,
+    "relation_count": {
+      "no_direct_edge": 5
+    },
+    "direct_edge": false,
+    "edge_ratio": 0.0
+  },
+  {
+    "variable_a": "smoke",
+    "variable_b": "dysp",
+    "runs": [
+      {
+        "variable_a": "smoke",
+        "variable_b": "dysp",
+        "run_id": 1,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V06\",\n    \"variable_b\": \"V03\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V06",
+          "variable_b": "V03",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "smoke",
+        "variable_b": "dysp",
+        "run_id": 2,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V06\",\n    \"variable_b\": \"V03\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V06",
+          "variable_b": "V03",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "smoke",
+        "variable_b": "dysp",
+        "run_id": 3,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V06\",\n    \"variable_b\": \"V03\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V06",
+          "variable_b": "V03",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "smoke",
+        "variable_b": "dysp",
+        "run_id": 4,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V06\",\n    \"variable_b\": \"V03\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V06",
+          "variable_b": "V03",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "smoke",
+        "variable_b": "dysp",
+        "run_id": 5,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V06\",\n    \"variable_b\": \"V03\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V06",
+          "variable_b": "V03",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them."
+        },
+        "parse_status": "success"
+      }
+    ],
+    "final_relation": "no_direct_edge",
+    "final_confidence": 0.95,
+    "consistency": 1.0,
+    "relation_count": {
+      "no_direct_edge": 5
+    },
+    "direct_edge": false,
+    "edge_ratio": 0.0
+  },
+  {
+    "variable_a": "smoke",
+    "variable_b": "either",
+    "runs": [
+      {
+        "variable_a": "smoke",
+        "variable_b": "either",
+        "run_id": 1,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V06\",\n    \"variable_b\": \"V04\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"The variables are anonymized and their meanings are hidden, so there is no basis to infer a direct causal connection.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V06",
+          "variable_b": "V04",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "The variables are anonymized and their meanings are hidden, so there is no basis to infer a direct causal connection."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "smoke",
+        "variable_b": "either",
+        "run_id": 2,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V06\",\n    \"variable_b\": \"V04\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"The variables are anonymized and their meanings are hidden, so there is no basis to infer a direct causal connection.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V06",
+          "variable_b": "V04",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "The variables are anonymized and their meanings are hidden, so there is no basis to infer a direct causal connection."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "smoke",
+        "variable_b": "either",
+        "run_id": 3,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V06\",\n    \"variable_b\": \"V04\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"The variables are anonymized and their meanings are hidden, so there is no basis to infer a direct causal connection.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V06",
+          "variable_b": "V04",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "The variables are anonymized and their meanings are hidden, so there is no basis to infer a direct causal connection."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "smoke",
+        "variable_b": "either",
+        "run_id": 4,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V06\",\n    \"variable_b\": \"V04\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"The variables are anonymized and their meanings are hidden, so there is no basis to infer a direct causal connection.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V06",
+          "variable_b": "V04",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "The variables are anonymized and their meanings are hidden, so there is no basis to infer a direct causal connection."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "smoke",
+        "variable_b": "either",
+        "run_id": 5,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V06\",\n    \"variable_b\": \"V04\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"The variables are anonymized and their meanings are hidden, so there is no basis to infer a direct causal connection.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V06",
+          "variable_b": "V04",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "The variables are anonymized and their meanings are hidden, so there is no basis to infer a direct causal connection."
+        },
+        "parse_status": "success"
+      }
+    ],
+    "final_relation": "no_direct_edge",
+    "final_confidence": 0.95,
+    "consistency": 1.0,
+    "relation_count": {
+      "no_direct_edge": 5
+    },
+    "direct_edge": false,
+    "edge_ratio": 0.0
+  },
+  {
+    "variable_a": "smoke",
+    "variable_b": "lung",
+    "runs": [
+      {
+        "variable_a": "smoke",
+        "variable_b": "lung",
+        "run_id": 1,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V06\",\n    \"variable_b\": \"V05\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"The variables are anonymized and their meanings are hidden, so there is no basis to infer a direct causal connection.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V06",
+          "variable_b": "V05",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "The variables are anonymized and their meanings are hidden, so there is no basis to infer a direct causal connection."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "smoke",
+        "variable_b": "lung",
+        "run_id": 2,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V06\",\n    \"variable_b\": \"V05\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"The variables are anonymized and their meanings are hidden, so there is no basis to infer a direct causal connection.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V06",
+          "variable_b": "V05",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "The variables are anonymized and their meanings are hidden, so there is no basis to infer a direct causal connection."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "smoke",
+        "variable_b": "lung",
+        "run_id": 3,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V06\",\n    \"variable_b\": \"V05\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"The variables are anonymized and their meanings are hidden, so there is no basis to infer a direct causal connection.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V06",
+          "variable_b": "V05",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "The variables are anonymized and their meanings are hidden, so there is no basis to infer a direct causal connection."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "smoke",
+        "variable_b": "lung",
+        "run_id": 4,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V06\",\n    \"variable_b\": \"V05\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"The variables are anonymized and their meanings are hidden, so there is no basis to infer a direct causal connection.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V06",
+          "variable_b": "V05",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "The variables are anonymized and their meanings are hidden, so there is no basis to infer a direct causal connection."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "smoke",
+        "variable_b": "lung",
+        "run_id": 5,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V06\",\n    \"variable_b\": \"V05\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"The variables are anonymized and their meanings are hidden, so there is no basis to infer a direct causal connection.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V06",
+          "variable_b": "V05",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "The variables are anonymized and their meanings are hidden, so there is no basis to infer a direct causal connection."
+        },
+        "parse_status": "success"
+      }
+    ],
+    "final_relation": "no_direct_edge",
+    "final_confidence": 0.95,
+    "consistency": 1.0,
+    "relation_count": {
+      "no_direct_edge": 5
+    },
+    "direct_edge": false,
+    "edge_ratio": 0.0
+  },
+  {
+    "variable_a": "smoke",
+    "variable_b": "xray",
+    "runs": [
+      {
+        "variable_a": "smoke",
+        "variable_b": "xray",
+        "run_id": 1,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V06\",\n    \"variable_b\": \"V08\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"The variables are anonymized and their meanings are hidden, so there is no basis to infer a direct causal connection.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V06",
+          "variable_b": "V08",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "The variables are anonymized and their meanings are hidden, so there is no basis to infer a direct causal connection."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "smoke",
+        "variable_b": "xray",
+        "run_id": 2,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V06\",\n    \"variable_b\": \"V08\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"The variables are anonymized and their meanings are hidden, so there is no basis to infer a direct causal connection.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V06",
+          "variable_b": "V08",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "The variables are anonymized and their meanings are hidden, so there is no basis to infer a direct causal connection."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "smoke",
+        "variable_b": "xray",
+        "run_id": 3,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V06\",\n    \"variable_b\": \"V08\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"The variables are anonymized and their meanings are hidden, so there is no basis to infer a direct causal connection.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V06",
+          "variable_b": "V08",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "The variables are anonymized and their meanings are hidden, so there is no basis to infer a direct causal connection."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "smoke",
+        "variable_b": "xray",
+        "run_id": 4,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V06\",\n    \"variable_b\": \"V08\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"The variables are anonymized and their meanings are hidden, so there is no basis to infer a direct causal connection.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V06",
+          "variable_b": "V08",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "The variables are anonymized and their meanings are hidden, so there is no basis to infer a direct causal connection."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "smoke",
+        "variable_b": "xray",
+        "run_id": 5,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V06\",\n    \"variable_b\": \"V08\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"The variables are anonymized and their meanings are hidden, so there is no basis to infer a direct causal connection.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V06",
+          "variable_b": "V08",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "The variables are anonymized and their meanings are hidden, so there is no basis to infer a direct causal connection."
+        },
+        "parse_status": "success"
+      }
+    ],
+    "final_relation": "no_direct_edge",
+    "final_confidence": 0.95,
+    "consistency": 1.0,
+    "relation_count": {
+      "no_direct_edge": 5
+    },
+    "direct_edge": false,
+    "edge_ratio": 0.0
+  },
+  {
+    "variable_a": "tub",
+    "variable_b": "bronc",
+    "runs": [
+      {
+        "variable_a": "tub",
+        "variable_b": "bronc",
+        "run_id": 1,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V07\",\n    \"variable_b\": \"V02\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V07",
+          "variable_b": "V02",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "tub",
+        "variable_b": "bronc",
+        "run_id": 2,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V07\",\n    \"variable_b\": \"V02\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V07",
+          "variable_b": "V02",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "tub",
+        "variable_b": "bronc",
+        "run_id": 3,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V07\",\n    \"variable_b\": \"V02\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V07",
+          "variable_b": "V02",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "tub",
+        "variable_b": "bronc",
+        "run_id": 4,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V07\",\n    \"variable_b\": \"V02\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V07",
+          "variable_b": "V02",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "tub",
+        "variable_b": "bronc",
+        "run_id": 5,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V07\",\n    \"variable_b\": \"V02\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V07",
+          "variable_b": "V02",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them."
+        },
+        "parse_status": "success"
+      }
+    ],
+    "final_relation": "no_direct_edge",
+    "final_confidence": 0.95,
+    "consistency": 1.0,
+    "relation_count": {
+      "no_direct_edge": 5
+    },
+    "direct_edge": false,
+    "edge_ratio": 0.0
+  },
+  {
+    "variable_a": "tub",
+    "variable_b": "dysp",
+    "runs": [
+      {
+        "variable_a": "tub",
+        "variable_b": "dysp",
+        "run_id": 1,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V07\",\n    \"variable_b\": \"V03\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V07",
+          "variable_b": "V03",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "tub",
+        "variable_b": "dysp",
+        "run_id": 2,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V07\",\n    \"variable_b\": \"V03\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V07",
+          "variable_b": "V03",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "tub",
+        "variable_b": "dysp",
+        "run_id": 3,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V07\",\n    \"variable_b\": \"V03\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V07",
+          "variable_b": "V03",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "tub",
+        "variable_b": "dysp",
+        "run_id": 4,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V07\",\n    \"variable_b\": \"V03\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V07",
+          "variable_b": "V03",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "tub",
+        "variable_b": "dysp",
+        "run_id": 5,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V07\",\n    \"variable_b\": \"V03\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V07",
+          "variable_b": "V03",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them."
+        },
+        "parse_status": "success"
+      }
+    ],
+    "final_relation": "no_direct_edge",
+    "final_confidence": 0.95,
+    "consistency": 1.0,
+    "relation_count": {
+      "no_direct_edge": 5
+    },
+    "direct_edge": false,
+    "edge_ratio": 0.0
+  },
+  {
+    "variable_a": "tub",
+    "variable_b": "either",
+    "runs": [
+      {
+        "variable_a": "tub",
+        "variable_b": "either",
+        "run_id": 1,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V07\",\n    \"variable_b\": \"V04\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V07",
+          "variable_b": "V04",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "tub",
+        "variable_b": "either",
+        "run_id": 2,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V07\",\n    \"variable_b\": \"V04\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V07",
+          "variable_b": "V04",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "tub",
+        "variable_b": "either",
+        "run_id": 3,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V07\",\n    \"variable_b\": \"V04\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V07",
+          "variable_b": "V04",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "tub",
+        "variable_b": "either",
+        "run_id": 4,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V07\",\n    \"variable_b\": \"V04\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V07",
+          "variable_b": "V04",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "tub",
+        "variable_b": "either",
+        "run_id": 5,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V07\",\n    \"variable_b\": \"V04\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V07",
+          "variable_b": "V04",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "The meaning of the variables is hidden, so there is no basis to infer a direct causal relationship between them."
+        },
+        "parse_status": "success"
+      }
+    ],
+    "final_relation": "no_direct_edge",
+    "final_confidence": 0.95,
+    "consistency": 1.0,
+    "relation_count": {
+      "no_direct_edge": 5
+    },
+    "direct_edge": false,
+    "edge_ratio": 0.0
+  },
+  {
+    "variable_a": "tub",
+    "variable_b": "lung",
+    "runs": [
+      {
+        "variable_a": "tub",
+        "variable_b": "lung",
+        "run_id": 1,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V07\",\n    \"variable_b\": \"V05\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"The variables are anonymized and their meanings are hidden, so there is no basis to infer a direct causal connection.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V07",
+          "variable_b": "V05",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "The variables are anonymized and their meanings are hidden, so there is no basis to infer a direct causal connection."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "tub",
+        "variable_b": "lung",
+        "run_id": 2,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V07\",\n    \"variable_b\": \"V05\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"The variables are anonymized and their meanings are hidden, so there is no basis to infer a direct causal connection.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V07",
+          "variable_b": "V05",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "The variables are anonymized and their meanings are hidden, so there is no basis to infer a direct causal connection."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "tub",
+        "variable_b": "lung",
+        "run_id": 3,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V07\",\n    \"variable_b\": \"V05\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"The variables are anonymized and their meanings are hidden, so there is no basis to infer a direct causal connection.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V07",
+          "variable_b": "V05",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "The variables are anonymized and their meanings are hidden, so there is no basis to infer a direct causal connection."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "tub",
+        "variable_b": "lung",
+        "run_id": 4,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V07\",\n    \"variable_b\": \"V05\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"The variables are anonymized and their meanings are hidden, so there is no basis to infer a direct causal connection.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V07",
+          "variable_b": "V05",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "The variables are anonymized and their meanings are hidden, so there is no basis to infer a direct causal connection."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "tub",
+        "variable_b": "lung",
+        "run_id": 5,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V07\",\n    \"variable_b\": \"V05\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"The variables are anonymized and their meanings are hidden, so there is no basis to infer a direct causal connection.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V07",
+          "variable_b": "V05",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "The variables are anonymized and their meanings are hidden, so there is no basis to infer a direct causal connection."
+        },
+        "parse_status": "success"
+      }
+    ],
+    "final_relation": "no_direct_edge",
+    "final_confidence": 0.95,
+    "consistency": 1.0,
+    "relation_count": {
+      "no_direct_edge": 5
+    },
+    "direct_edge": false,
+    "edge_ratio": 0.0
+  },
+  {
+    "variable_a": "tub",
+    "variable_b": "smoke",
+    "runs": [
+      {
+        "variable_a": "tub",
+        "variable_b": "smoke",
+        "run_id": 1,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V07\",\n    \"variable_b\": \"V06\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"The variables are anonymized and their meanings are hidden, so there is no basis to infer a direct causal connection.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V07",
+          "variable_b": "V06",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "The variables are anonymized and their meanings are hidden, so there is no basis to infer a direct causal connection."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "tub",
+        "variable_b": "smoke",
+        "run_id": 2,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V07\",\n    \"variable_b\": \"V06\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"The variables are anonymized and their meanings are hidden, so there is no basis to infer a direct causal connection.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V07",
+          "variable_b": "V06",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "The variables are anonymized and their meanings are hidden, so there is no basis to infer a direct causal connection."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "tub",
+        "variable_b": "smoke",
+        "run_id": 3,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V07\",\n    \"variable_b\": \"V06\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"The variables are anonymized and their meanings are hidden, so there is no basis to infer a direct causal connection.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V07",
+          "variable_b": "V06",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "The variables are anonymized and their meanings are hidden, so there is no basis to infer a direct causal connection."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "tub",
+        "variable_b": "smoke",
+        "run_id": 4,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V07\",\n    \"variable_b\": \"V06\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"The variables are anonymized and their meanings are hidden, so there is no basis to infer a direct causal connection.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V07",
+          "variable_b": "V06",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "The variables are anonymized and their meanings are hidden, so there is no basis to infer a direct causal connection."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "tub",
+        "variable_b": "smoke",
+        "run_id": 5,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V07\",\n    \"variable_b\": \"V06\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"The variables are anonymized and their meanings are hidden, so there is no basis to infer a direct causal connection.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V07",
+          "variable_b": "V06",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "The variables are anonymized and their meanings are hidden, so there is no basis to infer a direct causal connection."
+        },
+        "parse_status": "success"
+      }
+    ],
+    "final_relation": "no_direct_edge",
+    "final_confidence": 0.95,
+    "consistency": 1.0,
+    "relation_count": {
+      "no_direct_edge": 5
+    },
+    "direct_edge": false,
+    "edge_ratio": 0.0
+  },
+  {
+    "variable_a": "tub",
+    "variable_b": "xray",
+    "runs": [
+      {
+        "variable_a": "tub",
+        "variable_b": "xray",
+        "run_id": 1,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V07\",\n    \"variable_b\": \"V08\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"The variables are anonymized and their meanings are hidden, so there is no basis to infer a direct causal connection.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V07",
+          "variable_b": "V08",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "The variables are anonymized and their meanings are hidden, so there is no basis to infer a direct causal connection."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "tub",
+        "variable_b": "xray",
+        "run_id": 2,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V07\",\n    \"variable_b\": \"V08\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"The variables are anonymized and their meanings are hidden, so there is no basis to infer a direct causal connection.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V07",
+          "variable_b": "V08",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "The variables are anonymized and their meanings are hidden, so there is no basis to infer a direct causal connection."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "tub",
+        "variable_b": "xray",
+        "run_id": 3,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V07\",\n    \"variable_b\": \"V08\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"The variables are anonymized and their meanings are hidden, so there is no basis to infer a direct causal connection.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V07",
+          "variable_b": "V08",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "The variables are anonymized and their meanings are hidden, so there is no basis to infer a direct causal connection."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "tub",
+        "variable_b": "xray",
+        "run_id": 4,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V07\",\n    \"variable_b\": \"V08\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"The variables are anonymized and their meanings are hidden, so there is no basis to infer a direct causal connection.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V07",
+          "variable_b": "V08",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "The variables are anonymized and their meanings are hidden, so there is no basis to infer a direct causal connection."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "tub",
+        "variable_b": "xray",
+        "run_id": 5,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V07\",\n    \"variable_b\": \"V08\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"The variables are anonymized and their meanings are hidden, so there is no basis to infer a direct causal connection.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V07",
+          "variable_b": "V08",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "The variables are anonymized and their meanings are hidden, so there is no basis to infer a direct causal connection."
+        },
+        "parse_status": "success"
+      }
+    ],
+    "final_relation": "no_direct_edge",
+    "final_confidence": 0.95,
+    "consistency": 1.0,
+    "relation_count": {
+      "no_direct_edge": 5
+    },
+    "direct_edge": false,
+    "edge_ratio": 0.0
+  },
+  {
+    "variable_a": "xray",
+    "variable_b": "dysp",
+    "runs": [
+      {
+        "variable_a": "xray",
+        "variable_b": "dysp",
+        "run_id": 1,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V08\",\n    \"variable_b\": \"V03\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"The variables are anonymized and their meanings are hidden, so there is no basis to infer a direct causal connection.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V08",
+          "variable_b": "V03",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "The variables are anonymized and their meanings are hidden, so there is no basis to infer a direct causal connection."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "xray",
+        "variable_b": "dysp",
+        "run_id": 2,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V08\",\n    \"variable_b\": \"V03\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"The variables are anonymized and their meanings are hidden, so there is no basis to infer a direct causal connection.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V08",
+          "variable_b": "V03",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "The variables are anonymized and their meanings are hidden, so there is no basis to infer a direct causal connection."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "xray",
+        "variable_b": "dysp",
+        "run_id": 3,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V08\",\n    \"variable_b\": \"V03\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"The variables are anonymized and their meanings are hidden, so there is no basis to infer a direct causal connection.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V08",
+          "variable_b": "V03",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "The variables are anonymized and their meanings are hidden, so there is no basis to infer a direct causal connection."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "xray",
+        "variable_b": "dysp",
+        "run_id": 4,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V08\",\n    \"variable_b\": \"V03\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"The variables are anonymized and their meanings are hidden, so there is no basis to infer a direct causal connection.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V08",
+          "variable_b": "V03",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "The variables are anonymized and their meanings are hidden, so there is no basis to infer a direct causal connection."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "xray",
+        "variable_b": "dysp",
+        "run_id": 5,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V08\",\n    \"variable_b\": \"V03\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"The variables are anonymized and their meanings are hidden, so there is no basis to infer a direct causal connection.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V08",
+          "variable_b": "V03",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "The variables are anonymized and their meanings are hidden, so there is no basis to infer a direct causal connection."
+        },
+        "parse_status": "success"
+      }
+    ],
+    "final_relation": "no_direct_edge",
+    "final_confidence": 0.95,
+    "consistency": 1.0,
+    "relation_count": {
+      "no_direct_edge": 5
+    },
+    "direct_edge": false,
+    "edge_ratio": 0.0
+  }
+]

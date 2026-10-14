@@ -1,0 +1,3055 @@
+[
+  {
+    "variable_a": "asia",
+    "variable_b": "bronc",
+    "runs": [
+      {
+        "variable_a": "asia",
+        "variable_b": "bronc",
+        "run_id": 1,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"asia\",\n    \"variable_b\": \"bronc\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"Visiting Asia (asia) is a risk factor for lung diseases, which may lead to bronchitis (bronc), but the model does not explicitly represent a direct causal link between the two variables.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "asia",
+          "variable_b": "bronc",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "Visiting Asia (asia) is a risk factor for lung diseases, which may lead to bronchitis (bronc), but the model does not explicitly represent a direct causal link between the two variables."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "asia",
+        "variable_b": "bronc",
+        "run_id": 2,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"asia\",\n    \"variable_b\": \"bronc\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"Visiting Asia (asia) is a risk factor for lung diseases, which may lead to bronchitis (bronc), but the model does not explicitly represent a direct causal link between the two variables.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "asia",
+          "variable_b": "bronc",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "Visiting Asia (asia) is a risk factor for lung diseases, which may lead to bronchitis (bronc), but the model does not explicitly represent a direct causal link between the two variables."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "asia",
+        "variable_b": "bronc",
+        "run_id": 3,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"asia\",\n    \"variable_b\": \"bronc\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"Visiting Asia (asia) is a risk factor for lung diseases, which may lead to bronchitis (bronc), but the model does not explicitly represent a direct causal link between the two variables.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "asia",
+          "variable_b": "bronc",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "Visiting Asia (asia) is a risk factor for lung diseases, which may lead to bronchitis (bronc), but the model does not explicitly represent a direct causal link between the two variables."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "asia",
+        "variable_b": "bronc",
+        "run_id": 4,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"asia\",\n    \"variable_b\": \"bronc\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"Visiting Asia (asia) is a risk factor for lung diseases, which may lead to bronchitis (bronc), but the model does not explicitly represent a direct causal link between the two variables.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "asia",
+          "variable_b": "bronc",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "Visiting Asia (asia) is a risk factor for lung diseases, which may lead to bronchitis (bronc), but the model does not explicitly represent a direct causal link between the two variables."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "asia",
+        "variable_b": "bronc",
+        "run_id": 5,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"asia\",\n    \"variable_b\": \"bronc\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"Visiting Asia (asia) is a risk factor for lung diseases, which may lead to bronchitis (bronc), but the model does not explicitly represent a direct causal link between the two variables.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "asia",
+          "variable_b": "bronc",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "Visiting Asia (asia) is a risk factor for lung diseases, which may lead to bronchitis (bronc), but the model does not explicitly represent a direct causal link between the two variables."
+        },
+        "parse_status": "success"
+      }
+    ],
+    "final_relation": "no_direct_edge",
+    "final_confidence": 0.95,
+    "consistency": 1.0,
+    "relation_count": {
+      "no_direct_edge": 5
+    },
+    "direct_edge": false,
+    "edge_ratio": 0.0
+  },
+  {
+    "variable_a": "asia",
+    "variable_b": "dysp",
+    "runs": [
+      {
+        "variable_a": "asia",
+        "variable_b": "dysp",
+        "run_id": 1,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"asia\",\n    \"variable_b\": \"dysp\",\n    \"direct_edge\": true,\n    \"relation\": \"A_to_B\",\n    \"confidence\": 0.9,\n    \"reason\": \"Visiting Asia (asia) can directly influence the likelihood of dyspnea (dysp) due to potential exposure to environmental factors or pathogens associated with Asian regions.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "asia",
+          "variable_b": "dysp",
+          "direct_edge": true,
+          "relation": "A_to_B",
+          "confidence": 0.9,
+          "reason": "Visiting Asia (asia) can directly influence the likelihood of dyspnea (dysp) due to potential exposure to environmental factors or pathogens associated with Asian regions."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "asia",
+        "variable_b": "dysp",
+        "run_id": 2,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"asia\",\n    \"variable_b\": \"dysp\",\n    \"direct_edge\": true,\n    \"relation\": \"A_to_B\",\n    \"confidence\": 0.9,\n    \"reason\": \"Visiting Asia (asia) can directly influence the likelihood of dyspnea (dysp) due to potential exposure to environmental factors or pathogens associated with Asian regions.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "asia",
+          "variable_b": "dysp",
+          "direct_edge": true,
+          "relation": "A_to_B",
+          "confidence": 0.9,
+          "reason": "Visiting Asia (asia) can directly influence the likelihood of dyspnea (dysp) due to potential exposure to environmental factors or pathogens associated with Asian regions."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "asia",
+        "variable_b": "dysp",
+        "run_id": 3,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"asia\",\n    \"variable_b\": \"dysp\",\n    \"direct_edge\": true,\n    \"relation\": \"A_to_B\",\n    \"confidence\": 0.9,\n    \"reason\": \"Visiting Asia (asia) can directly influence the likelihood of dyspnea (dysp) due to potential exposure to environmental factors or pathogens associated with Asian regions.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "asia",
+          "variable_b": "dysp",
+          "direct_edge": true,
+          "relation": "A_to_B",
+          "confidence": 0.9,
+          "reason": "Visiting Asia (asia) can directly influence the likelihood of dyspnea (dysp) due to potential exposure to environmental factors or pathogens associated with Asian regions."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "asia",
+        "variable_b": "dysp",
+        "run_id": 4,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"asia\",\n    \"variable_b\": \"dysp\",\n    \"direct_edge\": true,\n    \"relation\": \"A_to_B\",\n    \"confidence\": 0.9,\n    \"reason\": \"Visiting Asia (asia) can directly influence the likelihood of dyspnea (dysp) due to potential exposure to environmental factors or pathogens associated with Asian regions.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "asia",
+          "variable_b": "dysp",
+          "direct_edge": true,
+          "relation": "A_to_B",
+          "confidence": 0.9,
+          "reason": "Visiting Asia (asia) can directly influence the likelihood of dyspnea (dysp) due to potential exposure to environmental factors or pathogens associated with Asian regions."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "asia",
+        "variable_b": "dysp",
+        "run_id": 5,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"asia\",\n    \"variable_b\": \"dysp\",\n    \"direct_edge\": true,\n    \"relation\": \"A_to_B\",\n    \"confidence\": 0.9,\n    \"reason\": \"Visiting Asia (asia) can directly influence the likelihood of dyspnea (dysp) due to potential exposure to environmental factors or pathogens associated with Asian regions.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "asia",
+          "variable_b": "dysp",
+          "direct_edge": true,
+          "relation": "A_to_B",
+          "confidence": 0.9,
+          "reason": "Visiting Asia (asia) can directly influence the likelihood of dyspnea (dysp) due to potential exposure to environmental factors or pathogens associated with Asian regions."
+        },
+        "parse_status": "success"
+      }
+    ],
+    "final_relation": "A_to_B",
+    "final_confidence": 0.9,
+    "consistency": 1.0,
+    "relation_count": {
+      "A_to_B": 5
+    },
+    "direct_edge": true,
+    "edge_ratio": 1.0
+  },
+  {
+    "variable_a": "asia",
+    "variable_b": "either",
+    "runs": [
+      {
+        "variable_a": "asia",
+        "variable_b": "either",
+        "run_id": 1,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"asia\",\n    \"variable_b\": \"either\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"Visiting Asia (asia) is a risk factor for tuberculosis, which is one of the two diseases in 'either'. However, 'either' represents a disjunction of two diseases, not a direct effect of 'asia'. Thus, there is no direct causal link between 'asia' and 'either' in the model.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "asia",
+          "variable_b": "either",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "Visiting Asia (asia) is a risk factor for tuberculosis, which is one of the two diseases in 'either'. However, 'either' represents a disjunction of two diseases, not a direct effect of 'asia'. Thus, there is no direct causal link between 'asia' and 'either' in the model."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "asia",
+        "variable_b": "either",
+        "run_id": 2,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"asia\",\n    \"variable_b\": \"either\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"Visiting Asia (asia) is a risk factor for tuberculosis, which is one of the two diseases in 'either'. However, 'either' represents a disjunction of two diseases, not a direct effect of 'asia'. Thus, there is no direct causal link between 'asia' and 'either' in the model.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "asia",
+          "variable_b": "either",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "Visiting Asia (asia) is a risk factor for tuberculosis, which is one of the two diseases in 'either'. However, 'either' represents a disjunction of two diseases, not a direct effect of 'asia'. Thus, there is no direct causal link between 'asia' and 'either' in the model."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "asia",
+        "variable_b": "either",
+        "run_id": 3,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"asia\",\n    \"variable_b\": \"either\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"Visiting Asia (asia) is a risk factor for tuberculosis, which is one of the two diseases in 'either'. However, 'either' represents a disjunction of two diseases, not a direct effect of 'asia'. Thus, there is no direct causal link between 'asia' and 'either' in the model.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "asia",
+          "variable_b": "either",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "Visiting Asia (asia) is a risk factor for tuberculosis, which is one of the two diseases in 'either'. However, 'either' represents a disjunction of two diseases, not a direct effect of 'asia'. Thus, there is no direct causal link between 'asia' and 'either' in the model."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "asia",
+        "variable_b": "either",
+        "run_id": 4,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"asia\",\n    \"variable_b\": \"either\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"Visiting Asia (asia) is a risk factor for tuberculosis, which is one of the two diseases in 'either'. However, 'either' represents a disjunction of two diseases, not a direct effect of 'asia'. Thus, there is no direct causal link between 'asia' and 'either' in the model.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "asia",
+          "variable_b": "either",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "Visiting Asia (asia) is a risk factor for tuberculosis, which is one of the two diseases in 'either'. However, 'either' represents a disjunction of two diseases, not a direct effect of 'asia'. Thus, there is no direct causal link between 'asia' and 'either' in the model."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "asia",
+        "variable_b": "either",
+        "run_id": 5,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"asia\",\n    \"variable_b\": \"either\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"Visiting Asia (asia) is a risk factor for tuberculosis, which is one of the two diseases in 'either'. However, 'either' represents a disjunction of two diseases, not a direct effect of 'asia'. Thus, there is no direct causal link between 'asia' and 'either' in the model.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "asia",
+          "variable_b": "either",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "Visiting Asia (asia) is a risk factor for tuberculosis, which is one of the two diseases in 'either'. However, 'either' represents a disjunction of two diseases, not a direct effect of 'asia'. Thus, there is no direct causal link between 'asia' and 'either' in the model."
+        },
+        "parse_status": "success"
+      }
+    ],
+    "final_relation": "no_direct_edge",
+    "final_confidence": 0.95,
+    "consistency": 1.0,
+    "relation_count": {
+      "no_direct_edge": 5
+    },
+    "direct_edge": false,
+    "edge_ratio": 0.0
+  },
+  {
+    "variable_a": "asia",
+    "variable_b": "lung",
+    "runs": [
+      {
+        "variable_a": "asia",
+        "variable_b": "lung",
+        "run_id": 1,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"asia\",\n    \"variable_b\": \"lung\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"Visiting Asia is a risk factor for lung cancer, but the model represents this as an indirect influence through other variables like tuberculosis or bronchitis, not a direct causal link between Asia visit and lung cancer.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "asia",
+          "variable_b": "lung",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "Visiting Asia is a risk factor for lung cancer, but the model represents this as an indirect influence through other variables like tuberculosis or bronchitis, not a direct causal link between Asia visit and lung cancer."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "asia",
+        "variable_b": "lung",
+        "run_id": 2,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"asia\",\n    \"variable_b\": \"lung\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"Visiting Asia is a risk factor for lung cancer, but the model represents this as an indirect influence through other variables like tuberculosis or bronchitis, not a direct causal link between Asia visit and lung cancer.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "asia",
+          "variable_b": "lung",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "Visiting Asia is a risk factor for lung cancer, but the model represents this as an indirect influence through other variables like tuberculosis or bronchitis, not a direct causal link between Asia visit and lung cancer."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "asia",
+        "variable_b": "lung",
+        "run_id": 3,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"asia\",\n    \"variable_b\": \"lung\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"Visiting Asia is a risk factor for lung cancer, but the model represents this as an indirect influence through other variables like tuberculosis or bronchitis, not a direct causal link between Asia visit and lung cancer.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "asia",
+          "variable_b": "lung",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "Visiting Asia is a risk factor for lung cancer, but the model represents this as an indirect influence through other variables like tuberculosis or bronchitis, not a direct causal link between Asia visit and lung cancer."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "asia",
+        "variable_b": "lung",
+        "run_id": 4,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"asia\",\n    \"variable_b\": \"lung\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"Visiting Asia is a risk factor for lung cancer, but the model represents this as an indirect influence through other variables like tuberculosis or bronchitis, not a direct causal link between Asia visit and lung cancer.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "asia",
+          "variable_b": "lung",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "Visiting Asia is a risk factor for lung cancer, but the model represents this as an indirect influence through other variables like tuberculosis or bronchitis, not a direct causal link between Asia visit and lung cancer."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "asia",
+        "variable_b": "lung",
+        "run_id": 5,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"asia\",\n    \"variable_b\": \"lung\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"Visiting Asia is a risk factor for lung cancer, but the model represents this as an indirect influence through other variables like tuberculosis or bronchitis, not a direct causal link between Asia visit and lung cancer.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "asia",
+          "variable_b": "lung",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "Visiting Asia is a risk factor for lung cancer, but the model represents this as an indirect influence through other variables like tuberculosis or bronchitis, not a direct causal link between Asia visit and lung cancer."
+        },
+        "parse_status": "success"
+      }
+    ],
+    "final_relation": "no_direct_edge",
+    "final_confidence": 0.95,
+    "consistency": 1.0,
+    "relation_count": {
+      "no_direct_edge": 5
+    },
+    "direct_edge": false,
+    "edge_ratio": 0.0
+  },
+  {
+    "variable_a": "asia",
+    "variable_b": "smoke",
+    "runs": [
+      {
+        "variable_a": "asia",
+        "variable_b": "smoke",
+        "run_id": 1,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"asia\",\n    \"variable_b\": \"smoke\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"The variables 'asia' and 'smoke' represent independent risk factors for lung disease, but there is no direct causal relationship between visiting Asia and smoking. They may be correlated through their shared effect on lung health, but they are not directly connected.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "asia",
+          "variable_b": "smoke",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "The variables 'asia' and 'smoke' represent independent risk factors for lung disease, but there is no direct causal relationship between visiting Asia and smoking. They may be correlated through their shared effect on lung health, but they are not directly connected."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "asia",
+        "variable_b": "smoke",
+        "run_id": 2,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"asia\",\n    \"variable_b\": \"smoke\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"The variables 'asia' and 'smoke' represent independent risk factors for lung disease, but there is no direct causal relationship between visiting Asia and smoking. They may be correlated through their shared effect on lung health, but they are not directly connected.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "asia",
+          "variable_b": "smoke",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "The variables 'asia' and 'smoke' represent independent risk factors for lung disease, but there is no direct causal relationship between visiting Asia and smoking. They may be correlated through their shared effect on lung health, but they are not directly connected."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "asia",
+        "variable_b": "smoke",
+        "run_id": 3,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"asia\",\n    \"variable_b\": \"smoke\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"The variables 'asia' and 'smoke' represent independent risk factors for lung disease, but there is no direct causal relationship between visiting Asia and smoking. They may be correlated through their shared effect on lung health, but they are not directly connected.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "asia",
+          "variable_b": "smoke",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "The variables 'asia' and 'smoke' represent independent risk factors for lung disease, but there is no direct causal relationship between visiting Asia and smoking. They may be correlated through their shared effect on lung health, but they are not directly connected."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "asia",
+        "variable_b": "smoke",
+        "run_id": 4,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"asia\",\n    \"variable_b\": \"smoke\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"The variables 'asia' and 'smoke' represent independent risk factors for lung disease, but there is no direct causal relationship between visiting Asia and smoking. They may be correlated through their shared effect on lung health, but they are not directly connected.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "asia",
+          "variable_b": "smoke",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "The variables 'asia' and 'smoke' represent independent risk factors for lung disease, but there is no direct causal relationship between visiting Asia and smoking. They may be correlated through their shared effect on lung health, but they are not directly connected."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "asia",
+        "variable_b": "smoke",
+        "run_id": 5,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"asia\",\n    \"variable_b\": \"smoke\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"The variables 'asia' and 'smoke' represent independent risk factors for lung disease, but there is no direct causal relationship between visiting Asia and smoking. They may be correlated through their shared effect on lung health, but they are not directly connected.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "asia",
+          "variable_b": "smoke",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "The variables 'asia' and 'smoke' represent independent risk factors for lung disease, but there is no direct causal relationship between visiting Asia and smoking. They may be correlated through their shared effect on lung health, but they are not directly connected."
+        },
+        "parse_status": "success"
+      }
+    ],
+    "final_relation": "no_direct_edge",
+    "final_confidence": 0.95,
+    "consistency": 1.0,
+    "relation_count": {
+      "no_direct_edge": 5
+    },
+    "direct_edge": false,
+    "edge_ratio": 0.0
+  },
+  {
+    "variable_a": "asia",
+    "variable_b": "tub",
+    "runs": [
+      {
+        "variable_a": "asia",
+        "variable_b": "tub",
+        "run_id": 1,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"asia\",\n    \"variable_b\": \"tub\",\n    \"direct_edge\": true,\n    \"relation\": \"A_to_B\",\n    \"confidence\": 0.85,\n    \"reason\": \"Visiting Asia (asia) is a known risk factor for tuberculosis (tub), implying a direct causal influence.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "asia",
+          "variable_b": "tub",
+          "direct_edge": true,
+          "relation": "A_to_B",
+          "confidence": 0.85,
+          "reason": "Visiting Asia (asia) is a known risk factor for tuberculosis (tub), implying a direct causal influence."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "asia",
+        "variable_b": "tub",
+        "run_id": 2,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"asia\",\n    \"variable_b\": \"tub\",\n    \"direct_edge\": true,\n    \"relation\": \"A_to_B\",\n    \"confidence\": 0.85,\n    \"reason\": \"Visiting Asia (asia) is a known risk factor for tuberculosis (tub), implying a direct causal influence from asia to tub.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "asia",
+          "variable_b": "tub",
+          "direct_edge": true,
+          "relation": "A_to_B",
+          "confidence": 0.85,
+          "reason": "Visiting Asia (asia) is a known risk factor for tuberculosis (tub), implying a direct causal influence from asia to tub."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "asia",
+        "variable_b": "tub",
+        "run_id": 3,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"asia\",\n    \"variable_b\": \"tub\",\n    \"direct_edge\": true,\n    \"relation\": \"A_to_B\",\n    \"confidence\": 0.85,\n    \"reason\": \"Visiting Asia (asia) is a known risk factor for tuberculosis (tub), implying a direct causal influence from asia to tub.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "asia",
+          "variable_b": "tub",
+          "direct_edge": true,
+          "relation": "A_to_B",
+          "confidence": 0.85,
+          "reason": "Visiting Asia (asia) is a known risk factor for tuberculosis (tub), implying a direct causal influence from asia to tub."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "asia",
+        "variable_b": "tub",
+        "run_id": 4,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"asia\",\n    \"variable_b\": \"tub\",\n    \"direct_edge\": true,\n    \"relation\": \"A_to_B\",\n    \"confidence\": 0.85,\n    \"reason\": \"Visiting Asia (asia) is a known risk factor for tuberculosis (tub), implying a direct causal influence from asia to tub.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "asia",
+          "variable_b": "tub",
+          "direct_edge": true,
+          "relation": "A_to_B",
+          "confidence": 0.85,
+          "reason": "Visiting Asia (asia) is a known risk factor for tuberculosis (tub), implying a direct causal influence from asia to tub."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "asia",
+        "variable_b": "tub",
+        "run_id": 5,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"asia\",\n    \"variable_b\": \"tub\",\n    \"direct_edge\": true,\n    \"relation\": \"A_to_B\",\n    \"confidence\": 0.85,\n    \"reason\": \"Visiting Asia (asia) is a known risk factor for tuberculosis (tub), implying a direct causal influence from asia to tub.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "asia",
+          "variable_b": "tub",
+          "direct_edge": true,
+          "relation": "A_to_B",
+          "confidence": 0.85,
+          "reason": "Visiting Asia (asia) is a known risk factor for tuberculosis (tub), implying a direct causal influence from asia to tub."
+        },
+        "parse_status": "success"
+      }
+    ],
+    "final_relation": "A_to_B",
+    "final_confidence": 0.85,
+    "consistency": 1.0,
+    "relation_count": {
+      "A_to_B": 5
+    },
+    "direct_edge": true,
+    "edge_ratio": 1.0
+  },
+  {
+    "variable_a": "asia",
+    "variable_b": "xray",
+    "runs": [
+      {
+        "variable_a": "asia",
+        "variable_b": "xray",
+        "run_id": 1,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"asia\",\n    \"variable_b\": \"xray\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"The variable 'asia' refers to recent travel to Asia, which is a risk factor for certain lung diseases. The variable 'xray' refers to the result of a chest X-ray. While travel to Asia may influence the likelihood of lung disease, which in turn could affect the X-ray result, there is no direct causal link between travel to Asia and the X-ray result itself. The X-ray result is more directly influenced by the presence of lung diseases, which are the intermediate variables.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "asia",
+          "variable_b": "xray",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "The variable 'asia' refers to recent travel to Asia, which is a risk factor for certain lung diseases. The variable 'xray' refers to the result of a chest X-ray. While travel to Asia may influence the likelihood of lung disease, which in turn could affect the X-ray result, there is no direct causal link between travel to Asia and the X-ray result itself. The X-ray result is more directly influenced by the presence of lung diseases, which are the intermediate variables."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "asia",
+        "variable_b": "xray",
+        "run_id": 2,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"asia\",\n    \"variable_b\": \"xray\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"The variable 'asia' refers to recent travel to Asia, which is a risk factor for certain lung diseases. The variable 'xray' refers to the result of a chest X-ray. While travel to Asia may influence the likelihood of lung disease, which in turn could affect the X-ray result, there is no direct causal link between travel to Asia and the X-ray result itself. The X-ray result is more directly influenced by the presence of lung diseases, which are the intermediate variables.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "asia",
+          "variable_b": "xray",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "The variable 'asia' refers to recent travel to Asia, which is a risk factor for certain lung diseases. The variable 'xray' refers to the result of a chest X-ray. While travel to Asia may influence the likelihood of lung disease, which in turn could affect the X-ray result, there is no direct causal link between travel to Asia and the X-ray result itself. The X-ray result is more directly influenced by the presence of lung diseases, which are the intermediate variables."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "asia",
+        "variable_b": "xray",
+        "run_id": 3,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"asia\",\n    \"variable_b\": \"xray\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"The variable 'asia' refers to recent travel to Asia, which is a risk factor for certain lung diseases. The variable 'xray' refers to the result of a chest X-ray. While travel to Asia may influence the likelihood of lung disease, which in turn could affect the X-ray result, there is no direct causal link between travel to Asia and the X-ray result itself. The X-ray result is more directly influenced by the presence of lung diseases, which are the intermediate variables.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "asia",
+          "variable_b": "xray",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "The variable 'asia' refers to recent travel to Asia, which is a risk factor for certain lung diseases. The variable 'xray' refers to the result of a chest X-ray. While travel to Asia may influence the likelihood of lung disease, which in turn could affect the X-ray result, there is no direct causal link between travel to Asia and the X-ray result itself. The X-ray result is more directly influenced by the presence of lung diseases, which are the intermediate variables."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "asia",
+        "variable_b": "xray",
+        "run_id": 4,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"asia\",\n    \"variable_b\": \"xray\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"The variable 'asia' refers to recent travel to Asia, which is a risk factor for certain lung diseases. The variable 'xray' refers to the result of a chest X-ray. While travel to Asia may influence the likelihood of lung disease, which in turn could affect the X-ray result, there is no direct causal link between travel to Asia and the X-ray result itself. The X-ray result is more directly influenced by the presence of lung diseases, which are the intermediate variables.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "asia",
+          "variable_b": "xray",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "The variable 'asia' refers to recent travel to Asia, which is a risk factor for certain lung diseases. The variable 'xray' refers to the result of a chest X-ray. While travel to Asia may influence the likelihood of lung disease, which in turn could affect the X-ray result, there is no direct causal link between travel to Asia and the X-ray result itself. The X-ray result is more directly influenced by the presence of lung diseases, which are the intermediate variables."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "asia",
+        "variable_b": "xray",
+        "run_id": 5,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"asia\",\n    \"variable_b\": \"xray\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"The variable 'asia' refers to recent travel to Asia, which is a risk factor for certain lung diseases. The variable 'xray' refers to the result of a chest X-ray. While travel to Asia may influence the likelihood of lung disease, which in turn could affect the X-ray result, there is no direct causal link between travel to Asia and the X-ray result itself. The X-ray result is more directly influenced by the presence of lung diseases, which are the intermediate variables.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "asia",
+          "variable_b": "xray",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "The variable 'asia' refers to recent travel to Asia, which is a risk factor for certain lung diseases. The variable 'xray' refers to the result of a chest X-ray. While travel to Asia may influence the likelihood of lung disease, which in turn could affect the X-ray result, there is no direct causal link between travel to Asia and the X-ray result itself. The X-ray result is more directly influenced by the presence of lung diseases, which are the intermediate variables."
+        },
+        "parse_status": "success"
+      }
+    ],
+    "final_relation": "no_direct_edge",
+    "final_confidence": 0.95,
+    "consistency": 1.0,
+    "relation_count": {
+      "no_direct_edge": 5
+    },
+    "direct_edge": false,
+    "edge_ratio": 0.0
+  },
+  {
+    "variable_a": "bronc",
+    "variable_b": "dysp",
+    "runs": [
+      {
+        "variable_a": "bronc",
+        "variable_b": "dysp",
+        "run_id": 1,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"bronc\",\n    \"variable_b\": \"dysp\",\n    \"direct_edge\": true,\n    \"relation\": \"A_to_B\",\n    \"confidence\": 0.9,\n    \"reason\": \"Bronchitis (bronc) can directly cause dyspnea (dysp) as a symptom, indicating a direct causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "bronc",
+          "variable_b": "dysp",
+          "direct_edge": true,
+          "relation": "A_to_B",
+          "confidence": 0.9,
+          "reason": "Bronchitis (bronc) can directly cause dyspnea (dysp) as a symptom, indicating a direct causal relationship."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "bronc",
+        "variable_b": "dysp",
+        "run_id": 2,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"bronc\",\n    \"variable_b\": \"dysp\",\n    \"direct_edge\": true,\n    \"relation\": \"A_to_B\",\n    \"confidence\": 0.9,\n    \"reason\": \"Bronchitis (bronc) can directly cause dyspnea (dysp) as a symptom, indicating a direct causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "bronc",
+          "variable_b": "dysp",
+          "direct_edge": true,
+          "relation": "A_to_B",
+          "confidence": 0.9,
+          "reason": "Bronchitis (bronc) can directly cause dyspnea (dysp) as a symptom, indicating a direct causal relationship."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "bronc",
+        "variable_b": "dysp",
+        "run_id": 3,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"bronc\",\n    \"variable_b\": \"dysp\",\n    \"direct_edge\": true,\n    \"relation\": \"A_to_B\",\n    \"confidence\": 0.9,\n    \"reason\": \"Bronchitis (bronc) can directly cause dyspnea (dysp) as a symptom, indicating a direct causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "bronc",
+          "variable_b": "dysp",
+          "direct_edge": true,
+          "relation": "A_to_B",
+          "confidence": 0.9,
+          "reason": "Bronchitis (bronc) can directly cause dyspnea (dysp) as a symptom, indicating a direct causal relationship."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "bronc",
+        "variable_b": "dysp",
+        "run_id": 4,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"bronc\",\n    \"variable_b\": \"dysp\",\n    \"direct_edge\": true,\n    \"relation\": \"A_to_B\",\n    \"confidence\": 0.9,\n    \"reason\": \"Bronchitis (bronc) can directly cause dyspnea (dysp) as a symptom, indicating a direct causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "bronc",
+          "variable_b": "dysp",
+          "direct_edge": true,
+          "relation": "A_to_B",
+          "confidence": 0.9,
+          "reason": "Bronchitis (bronc) can directly cause dyspnea (dysp) as a symptom, indicating a direct causal relationship."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "bronc",
+        "variable_b": "dysp",
+        "run_id": 5,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"bronc\",\n    \"variable_b\": \"dysp\",\n    \"direct_edge\": true,\n    \"relation\": \"A_to_B\",\n    \"confidence\": 0.9,\n    \"reason\": \"Bronchitis (bronc) can directly cause dyspnea (dysp) as a symptom, indicating a direct causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "bronc",
+          "variable_b": "dysp",
+          "direct_edge": true,
+          "relation": "A_to_B",
+          "confidence": 0.9,
+          "reason": "Bronchitis (bronc) can directly cause dyspnea (dysp) as a symptom, indicating a direct causal relationship."
+        },
+        "parse_status": "success"
+      }
+    ],
+    "final_relation": "A_to_B",
+    "final_confidence": 0.9,
+    "consistency": 1.0,
+    "relation_count": {
+      "A_to_B": 5
+    },
+    "direct_edge": true,
+    "edge_ratio": 1.0
+  },
+  {
+    "variable_a": "bronc",
+    "variable_b": "either",
+    "runs": [
+      {
+        "variable_a": "bronc",
+        "variable_b": "either",
+        "run_id": 1,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"bronc\",\n    \"variable_b\": \"either\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"Bronchitis and either tuberculosis or lung cancer are both symptoms or conditions that can have overlapping causes or be influenced by common factors like smoking or infection, but the model does not explicitly represent a direct causal relationship between them.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "bronc",
+          "variable_b": "either",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "Bronchitis and either tuberculosis or lung cancer are both symptoms or conditions that can have overlapping causes or be influenced by common factors like smoking or infection, but the model does not explicitly represent a direct causal relationship between them."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "bronc",
+        "variable_b": "either",
+        "run_id": 2,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"bronc\",\n    \"variable_b\": \"either\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"Bronchitis and either tuberculosis or lung cancer are both symptoms or conditions that can have overlapping causes or be influenced by common factors like smoking or infection, but the model does not explicitly represent a direct causal relationship between them.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "bronc",
+          "variable_b": "either",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "Bronchitis and either tuberculosis or lung cancer are both symptoms or conditions that can have overlapping causes or be influenced by common factors like smoking or infection, but the model does not explicitly represent a direct causal relationship between them."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "bronc",
+        "variable_b": "either",
+        "run_id": 3,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"bronc\",\n    \"variable_b\": \"either\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"Bronchitis and either tuberculosis or lung cancer are both symptoms or conditions that can have overlapping causes or be influenced by common factors like smoking or infection, but the model does not explicitly represent a direct causal relationship between them.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "bronc",
+          "variable_b": "either",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "Bronchitis and either tuberculosis or lung cancer are both symptoms or conditions that can have overlapping causes or be influenced by common factors like smoking or infection, but the model does not explicitly represent a direct causal relationship between them."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "bronc",
+        "variable_b": "either",
+        "run_id": 4,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"bronc\",\n    \"variable_b\": \"either\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"Bronchitis and either tuberculosis or lung cancer are both symptoms or conditions that can have overlapping causes or be influenced by common factors like smoking or infection, but the model does not explicitly represent a direct causal relationship between them.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "bronc",
+          "variable_b": "either",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "Bronchitis and either tuberculosis or lung cancer are both symptoms or conditions that can have overlapping causes or be influenced by common factors like smoking or infection, but the model does not explicitly represent a direct causal relationship between them."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "bronc",
+        "variable_b": "either",
+        "run_id": 5,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"bronc\",\n    \"variable_b\": \"either\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"Bronchitis and either tuberculosis or lung cancer are both symptoms or conditions that can have overlapping causes or be influenced by common factors like smoking or infection, but the model does not explicitly represent a direct causal relationship between them.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "bronc",
+          "variable_b": "either",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "Bronchitis and either tuberculosis or lung cancer are both symptoms or conditions that can have overlapping causes or be influenced by common factors like smoking or infection, but the model does not explicitly represent a direct causal relationship between them."
+        },
+        "parse_status": "success"
+      }
+    ],
+    "final_relation": "no_direct_edge",
+    "final_confidence": 0.95,
+    "consistency": 1.0,
+    "relation_count": {
+      "no_direct_edge": 5
+    },
+    "direct_edge": false,
+    "edge_ratio": 0.0
+  },
+  {
+    "variable_a": "bronc",
+    "variable_b": "xray",
+    "runs": [
+      {
+        "variable_a": "bronc",
+        "variable_b": "xray",
+        "run_id": 1,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"bronc\",\n    \"variable_b\": \"xray\",\n    \"direct_edge\": true,\n    \"relation\": \"A_to_B\",\n    \"confidence\": 0.85,\n    \"reason\": \"Bronchitis can directly affect the chest X-ray result, as inflammation in the bronchi may lead to an abnormal X-ray finding.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "bronc",
+          "variable_b": "xray",
+          "direct_edge": true,
+          "relation": "A_to_B",
+          "confidence": 0.85,
+          "reason": "Bronchitis can directly affect the chest X-ray result, as inflammation in the bronchi may lead to an abnormal X-ray finding."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "bronc",
+        "variable_b": "xray",
+        "run_id": 2,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"bronc\",\n    \"variable_b\": \"xray\",\n    \"direct_edge\": true,\n    \"relation\": \"A_to_B\",\n    \"confidence\": 0.85,\n    \"reason\": \"Bronchitis can directly affect the chest X-ray result, as inflammation in the bronchi may lead to an abnormal X-ray finding.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "bronc",
+          "variable_b": "xray",
+          "direct_edge": true,
+          "relation": "A_to_B",
+          "confidence": 0.85,
+          "reason": "Bronchitis can directly affect the chest X-ray result, as inflammation in the bronchi may lead to an abnormal X-ray finding."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "bronc",
+        "variable_b": "xray",
+        "run_id": 3,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"bronc\",\n    \"variable_b\": \"xray\",\n    \"direct_edge\": true,\n    \"relation\": \"A_to_B\",\n    \"confidence\": 0.85,\n    \"reason\": \"Bronchitis can directly affect the chest X-ray result, as inflammation in the bronchi may lead to an abnormal X-ray finding.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "bronc",
+          "variable_b": "xray",
+          "direct_edge": true,
+          "relation": "A_to_B",
+          "confidence": 0.85,
+          "reason": "Bronchitis can directly affect the chest X-ray result, as inflammation in the bronchi may lead to an abnormal X-ray finding."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "bronc",
+        "variable_b": "xray",
+        "run_id": 4,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"bronc\",\n    \"variable_b\": \"xray\",\n    \"direct_edge\": true,\n    \"relation\": \"A_to_B\",\n    \"confidence\": 0.85,\n    \"reason\": \"Bronchitis can directly affect the chest X-ray result, as inflammation in the bronchi may lead to an abnormal X-ray finding.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "bronc",
+          "variable_b": "xray",
+          "direct_edge": true,
+          "relation": "A_to_B",
+          "confidence": 0.85,
+          "reason": "Bronchitis can directly affect the chest X-ray result, as inflammation in the bronchi may lead to an abnormal X-ray finding."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "bronc",
+        "variable_b": "xray",
+        "run_id": 5,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"bronc\",\n    \"variable_b\": \"xray\",\n    \"direct_edge\": true,\n    \"relation\": \"A_to_B\",\n    \"confidence\": 0.85,\n    \"reason\": \"Bronchitis can directly affect the chest X-ray result, as inflammation in the bronchi may lead to an abnormal X-ray finding.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "bronc",
+          "variable_b": "xray",
+          "direct_edge": true,
+          "relation": "A_to_B",
+          "confidence": 0.85,
+          "reason": "Bronchitis can directly affect the chest X-ray result, as inflammation in the bronchi may lead to an abnormal X-ray finding."
+        },
+        "parse_status": "success"
+      }
+    ],
+    "final_relation": "A_to_B",
+    "final_confidence": 0.85,
+    "consistency": 1.0,
+    "relation_count": {
+      "A_to_B": 5
+    },
+    "direct_edge": true,
+    "edge_ratio": 1.0
+  },
+  {
+    "variable_a": "either",
+    "variable_b": "dysp",
+    "runs": [
+      {
+        "variable_a": "either",
+        "variable_b": "dysp",
+        "run_id": 1,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"either\",\n    \"variable_b\": \"dysp\",\n    \"direct_edge\": true,\n    \"relation\": \"A_to_B\",\n    \"confidence\": 0.9,\n    \"reason\": \"The presence of either tuberculosis or lung cancer (either) can directly cause dyspnea (dysp), as both are known to lead to breathing difficulties.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "either",
+          "variable_b": "dysp",
+          "direct_edge": true,
+          "relation": "A_to_B",
+          "confidence": 0.9,
+          "reason": "The presence of either tuberculosis or lung cancer (either) can directly cause dyspnea (dysp), as both are known to lead to breathing difficulties."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "either",
+        "variable_b": "dysp",
+        "run_id": 2,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"either\",\n    \"variable_b\": \"dysp\",\n    \"direct_edge\": true,\n    \"relation\": \"A_to_B\",\n    \"confidence\": 0.9,\n    \"reason\": \"The presence of either tuberculosis or lung cancer (either) can directly cause dyspnea (dysp), as both are known to lead to breathing difficulties.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "either",
+          "variable_b": "dysp",
+          "direct_edge": true,
+          "relation": "A_to_B",
+          "confidence": 0.9,
+          "reason": "The presence of either tuberculosis or lung cancer (either) can directly cause dyspnea (dysp), as both are known to lead to breathing difficulties."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "either",
+        "variable_b": "dysp",
+        "run_id": 3,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"either\",\n    \"variable_b\": \"dysp\",\n    \"direct_edge\": true,\n    \"relation\": \"A_to_B\",\n    \"confidence\": 0.9,\n    \"reason\": \"The presence of either tuberculosis or lung cancer (either) can directly cause dyspnea (dysp), as both are known to lead to breathing difficulties.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "either",
+          "variable_b": "dysp",
+          "direct_edge": true,
+          "relation": "A_to_B",
+          "confidence": 0.9,
+          "reason": "The presence of either tuberculosis or lung cancer (either) can directly cause dyspnea (dysp), as both are known to lead to breathing difficulties."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "either",
+        "variable_b": "dysp",
+        "run_id": 4,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"either\",\n    \"variable_b\": \"dysp\",\n    \"direct_edge\": true,\n    \"relation\": \"A_to_B\",\n    \"confidence\": 0.9,\n    \"reason\": \"The presence of either tuberculosis or lung cancer (either) can directly cause dyspnea (dysp), as both are known to lead to breathing difficulties.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "either",
+          "variable_b": "dysp",
+          "direct_edge": true,
+          "relation": "A_to_B",
+          "confidence": 0.9,
+          "reason": "The presence of either tuberculosis or lung cancer (either) can directly cause dyspnea (dysp), as both are known to lead to breathing difficulties."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "either",
+        "variable_b": "dysp",
+        "run_id": 5,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"either\",\n    \"variable_b\": \"dysp\",\n    \"direct_edge\": true,\n    \"relation\": \"A_to_B\",\n    \"confidence\": 0.9,\n    \"reason\": \"The presence of either tuberculosis or lung cancer (either) can directly cause dyspnea (dysp), as both are known to lead to breathing difficulties.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "either",
+          "variable_b": "dysp",
+          "direct_edge": true,
+          "relation": "A_to_B",
+          "confidence": 0.9,
+          "reason": "The presence of either tuberculosis or lung cancer (either) can directly cause dyspnea (dysp), as both are known to lead to breathing difficulties."
+        },
+        "parse_status": "success"
+      }
+    ],
+    "final_relation": "A_to_B",
+    "final_confidence": 0.9,
+    "consistency": 1.0,
+    "relation_count": {
+      "A_to_B": 5
+    },
+    "direct_edge": true,
+    "edge_ratio": 1.0
+  },
+  {
+    "variable_a": "either",
+    "variable_b": "xray",
+    "runs": [
+      {
+        "variable_a": "either",
+        "variable_b": "xray",
+        "run_id": 1,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"either\",\n    \"variable_b\": \"xray\",\n    \"direct_edge\": true,\n    \"relation\": \"A_to_B\",\n    \"confidence\": 0.85,\n    \"reason\": \"The presence of either tuberculosis or lung cancer (variable A) directly influences the likelihood of an abnormal chest X-ray result (variable B).\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "either",
+          "variable_b": "xray",
+          "direct_edge": true,
+          "relation": "A_to_B",
+          "confidence": 0.85,
+          "reason": "The presence of either tuberculosis or lung cancer (variable A) directly influences the likelihood of an abnormal chest X-ray result (variable B)."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "either",
+        "variable_b": "xray",
+        "run_id": 2,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"either\",\n    \"variable_b\": \"xray\",\n    \"direct_edge\": true,\n    \"relation\": \"A_to_B\",\n    \"confidence\": 0.85,\n    \"reason\": \"The presence of either tuberculosis or lung cancer (variable A) directly influences the likelihood of an abnormal chest X-ray result (variable B).\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "either",
+          "variable_b": "xray",
+          "direct_edge": true,
+          "relation": "A_to_B",
+          "confidence": 0.85,
+          "reason": "The presence of either tuberculosis or lung cancer (variable A) directly influences the likelihood of an abnormal chest X-ray result (variable B)."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "either",
+        "variable_b": "xray",
+        "run_id": 3,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"either\",\n    \"variable_b\": \"xray\",\n    \"direct_edge\": true,\n    \"relation\": \"A_to_B\",\n    \"confidence\": 0.85,\n    \"reason\": \"The presence of either tuberculosis or lung cancer (variable A) directly influences the likelihood of an abnormal chest X-ray result (variable B).\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "either",
+          "variable_b": "xray",
+          "direct_edge": true,
+          "relation": "A_to_B",
+          "confidence": 0.85,
+          "reason": "The presence of either tuberculosis or lung cancer (variable A) directly influences the likelihood of an abnormal chest X-ray result (variable B)."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "either",
+        "variable_b": "xray",
+        "run_id": 4,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"either\",\n    \"variable_b\": \"xray\",\n    \"direct_edge\": true,\n    \"relation\": \"A_to_B\",\n    \"confidence\": 0.85,\n    \"reason\": \"The presence of either tuberculosis or lung cancer (variable A) directly influences the likelihood of an abnormal chest X-ray result (variable B).\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "either",
+          "variable_b": "xray",
+          "direct_edge": true,
+          "relation": "A_to_B",
+          "confidence": 0.85,
+          "reason": "The presence of either tuberculosis or lung cancer (variable A) directly influences the likelihood of an abnormal chest X-ray result (variable B)."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "either",
+        "variable_b": "xray",
+        "run_id": 5,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"either\",\n    \"variable_b\": \"xray\",\n    \"direct_edge\": true,\n    \"relation\": \"A_to_B\",\n    \"confidence\": 0.85,\n    \"reason\": \"The presence of either tuberculosis or lung cancer (variable A) directly influences the likelihood of an abnormal chest X-ray result (variable B).\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "either",
+          "variable_b": "xray",
+          "direct_edge": true,
+          "relation": "A_to_B",
+          "confidence": 0.85,
+          "reason": "The presence of either tuberculosis or lung cancer (variable A) directly influences the likelihood of an abnormal chest X-ray result (variable B)."
+        },
+        "parse_status": "success"
+      }
+    ],
+    "final_relation": "A_to_B",
+    "final_confidence": 0.85,
+    "consistency": 1.0,
+    "relation_count": {
+      "A_to_B": 5
+    },
+    "direct_edge": true,
+    "edge_ratio": 1.0
+  },
+  {
+    "variable_a": "lung",
+    "variable_b": "bronc",
+    "runs": [
+      {
+        "variable_a": "lung",
+        "variable_b": "bronc",
+        "run_id": 1,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"lung\",\n    \"variable_b\": \"bronc\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"Lung cancer and bronchitis are both symptoms or conditions that can be caused by common factors like smoking or environmental exposure, but they are not directly causally linked in the absence of an intermediate variable.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "lung",
+          "variable_b": "bronc",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "Lung cancer and bronchitis are both symptoms or conditions that can be caused by common factors like smoking or environmental exposure, but they are not directly causally linked in the absence of an intermediate variable."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "lung",
+        "variable_b": "bronc",
+        "run_id": 2,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"lung\",\n    \"variable_b\": \"bronc\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"Lung cancer and bronchitis are both symptoms or conditions that can be caused by common factors like smoking or environmental exposure, but they are not directly causally linked in the absence of an intermediate variable.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "lung",
+          "variable_b": "bronc",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "Lung cancer and bronchitis are both symptoms or conditions that can be caused by common factors like smoking or environmental exposure, but they are not directly causally linked in the absence of an intermediate variable."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "lung",
+        "variable_b": "bronc",
+        "run_id": 3,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"lung\",\n    \"variable_b\": \"bronc\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"Lung cancer and bronchitis are both symptoms or conditions that can be caused by common factors like smoking or environmental exposure, but they are not directly causally linked in the absence of an intermediate variable.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "lung",
+          "variable_b": "bronc",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "Lung cancer and bronchitis are both symptoms or conditions that can be caused by common factors like smoking or environmental exposure, but they are not directly causally linked in the absence of an intermediate variable."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "lung",
+        "variable_b": "bronc",
+        "run_id": 4,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"lung\",\n    \"variable_b\": \"bronc\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"Lung cancer and bronchitis are both symptoms or conditions that can be caused by common factors like smoking or environmental exposure, but they are not directly causally linked in the absence of an intermediate variable.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "lung",
+          "variable_b": "bronc",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "Lung cancer and bronchitis are both symptoms or conditions that can be caused by common factors like smoking or environmental exposure, but they are not directly causally linked in the absence of an intermediate variable."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "lung",
+        "variable_b": "bronc",
+        "run_id": 5,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"lung\",\n    \"variable_b\": \"bronc\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"Lung cancer and bronchitis are both symptoms or conditions that can be caused by common factors like smoking or environmental exposure, but they are not directly causally linked in the absence of an intermediate variable.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "lung",
+          "variable_b": "bronc",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "Lung cancer and bronchitis are both symptoms or conditions that can be caused by common factors like smoking or environmental exposure, but they are not directly causally linked in the absence of an intermediate variable."
+        },
+        "parse_status": "success"
+      }
+    ],
+    "final_relation": "no_direct_edge",
+    "final_confidence": 0.95,
+    "consistency": 1.0,
+    "relation_count": {
+      "no_direct_edge": 5
+    },
+    "direct_edge": false,
+    "edge_ratio": 0.0
+  },
+  {
+    "variable_a": "lung",
+    "variable_b": "dysp",
+    "runs": [
+      {
+        "variable_a": "lung",
+        "variable_b": "dysp",
+        "run_id": 1,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"lung\",\n    \"variable_b\": \"dysp\",\n    \"direct_edge\": true,\n    \"relation\": \"A_to_B\",\n    \"confidence\": 0.9,\n    \"reason\": \"Lung cancer can directly cause dyspnea as a symptom, indicating a direct causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "lung",
+          "variable_b": "dysp",
+          "direct_edge": true,
+          "relation": "A_to_B",
+          "confidence": 0.9,
+          "reason": "Lung cancer can directly cause dyspnea as a symptom, indicating a direct causal relationship."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "lung",
+        "variable_b": "dysp",
+        "run_id": 2,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"lung\",\n    \"variable_b\": \"dysp\",\n    \"direct_edge\": true,\n    \"relation\": \"A_to_B\",\n    \"confidence\": 0.9,\n    \"reason\": \"Lung cancer can directly cause dyspnea as a symptom, indicating a direct causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "lung",
+          "variable_b": "dysp",
+          "direct_edge": true,
+          "relation": "A_to_B",
+          "confidence": 0.9,
+          "reason": "Lung cancer can directly cause dyspnea as a symptom, indicating a direct causal relationship."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "lung",
+        "variable_b": "dysp",
+        "run_id": 3,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"lung\",\n    \"variable_b\": \"dysp\",\n    \"direct_edge\": true,\n    \"relation\": \"A_to_B\",\n    \"confidence\": 0.9,\n    \"reason\": \"Lung cancer can directly cause dyspnea as a symptom, indicating a direct causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "lung",
+          "variable_b": "dysp",
+          "direct_edge": true,
+          "relation": "A_to_B",
+          "confidence": 0.9,
+          "reason": "Lung cancer can directly cause dyspnea as a symptom, indicating a direct causal relationship."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "lung",
+        "variable_b": "dysp",
+        "run_id": 4,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"lung\",\n    \"variable_b\": \"dysp\",\n    \"direct_edge\": true,\n    \"relation\": \"A_to_B\",\n    \"confidence\": 0.9,\n    \"reason\": \"Lung cancer can directly cause dyspnea as a symptom, indicating a direct causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "lung",
+          "variable_b": "dysp",
+          "direct_edge": true,
+          "relation": "A_to_B",
+          "confidence": 0.9,
+          "reason": "Lung cancer can directly cause dyspnea as a symptom, indicating a direct causal relationship."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "lung",
+        "variable_b": "dysp",
+        "run_id": 5,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"lung\",\n    \"variable_b\": \"dysp\",\n    \"direct_edge\": true,\n    \"relation\": \"A_to_B\",\n    \"confidence\": 0.9,\n    \"reason\": \"Lung cancer can directly cause dyspnea as a symptom, indicating a direct causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "lung",
+          "variable_b": "dysp",
+          "direct_edge": true,
+          "relation": "A_to_B",
+          "confidence": 0.9,
+          "reason": "Lung cancer can directly cause dyspnea as a symptom, indicating a direct causal relationship."
+        },
+        "parse_status": "success"
+      }
+    ],
+    "final_relation": "A_to_B",
+    "final_confidence": 0.9,
+    "consistency": 1.0,
+    "relation_count": {
+      "A_to_B": 5
+    },
+    "direct_edge": true,
+    "edge_ratio": 1.0
+  },
+  {
+    "variable_a": "lung",
+    "variable_b": "either",
+    "runs": [
+      {
+        "variable_a": "lung",
+        "variable_b": "either",
+        "run_id": 1,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"lung\",\n    \"variable_b\": \"either\",\n    \"direct_edge\": true,\n    \"relation\": \"B_to_A\",\n    \"confidence\": 0.9,\n    \"reason\": \"The presence of lung cancer directly influences the likelihood of the patient having either tuberculosis or lung cancer, as lung cancer is one of the two options in the 'either' variable.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "lung",
+          "variable_b": "either",
+          "direct_edge": true,
+          "relation": "B_to_A",
+          "confidence": 0.9,
+          "reason": "The presence of lung cancer directly influences the likelihood of the patient having either tuberculosis or lung cancer, as lung cancer is one of the two options in the 'either' variable."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "lung",
+        "variable_b": "either",
+        "run_id": 2,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"lung\",\n    \"variable_b\": \"either\",\n    \"direct_edge\": true,\n    \"relation\": \"B_to_A\",\n    \"confidence\": 0.9,\n    \"reason\": \"The presence of lung cancer directly influences the likelihood of the patient having either tuberculosis or lung cancer, as lung cancer is one of the two options in the 'either' variable.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "lung",
+          "variable_b": "either",
+          "direct_edge": true,
+          "relation": "B_to_A",
+          "confidence": 0.9,
+          "reason": "The presence of lung cancer directly influences the likelihood of the patient having either tuberculosis or lung cancer, as lung cancer is one of the two options in the 'either' variable."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "lung",
+        "variable_b": "either",
+        "run_id": 3,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"lung\",\n    \"variable_b\": \"either\",\n    \"direct_edge\": true,\n    \"relation\": \"B_to_A\",\n    \"confidence\": 0.9,\n    \"reason\": \"The presence of lung cancer directly influences the likelihood of the patient having either tuberculosis or lung cancer, as lung cancer is one of the two options in the 'either' variable.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "lung",
+          "variable_b": "either",
+          "direct_edge": true,
+          "relation": "B_to_A",
+          "confidence": 0.9,
+          "reason": "The presence of lung cancer directly influences the likelihood of the patient having either tuberculosis or lung cancer, as lung cancer is one of the two options in the 'either' variable."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "lung",
+        "variable_b": "either",
+        "run_id": 4,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"lung\",\n    \"variable_b\": \"either\",\n    \"direct_edge\": true,\n    \"relation\": \"B_to_A\",\n    \"confidence\": 0.9,\n    \"reason\": \"The presence of lung cancer directly influences the likelihood of the patient having either tuberculosis or lung cancer, as lung cancer is one of the two options in the 'either' variable.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "lung",
+          "variable_b": "either",
+          "direct_edge": true,
+          "relation": "B_to_A",
+          "confidence": 0.9,
+          "reason": "The presence of lung cancer directly influences the likelihood of the patient having either tuberculosis or lung cancer, as lung cancer is one of the two options in the 'either' variable."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "lung",
+        "variable_b": "either",
+        "run_id": 5,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"lung\",\n    \"variable_b\": \"either\",\n    \"direct_edge\": true,\n    \"relation\": \"B_to_A\",\n    \"confidence\": 0.9,\n    \"reason\": \"The presence of lung cancer directly influences the likelihood of the patient having either tuberculosis or lung cancer, as lung cancer is one of the two options in the 'either' variable.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "lung",
+          "variable_b": "either",
+          "direct_edge": true,
+          "relation": "B_to_A",
+          "confidence": 0.9,
+          "reason": "The presence of lung cancer directly influences the likelihood of the patient having either tuberculosis or lung cancer, as lung cancer is one of the two options in the 'either' variable."
+        },
+        "parse_status": "success"
+      }
+    ],
+    "final_relation": "B_to_A",
+    "final_confidence": 0.9,
+    "consistency": 1.0,
+    "relation_count": {
+      "B_to_A": 5
+    },
+    "direct_edge": true,
+    "edge_ratio": 1.0
+  },
+  {
+    "variable_a": "lung",
+    "variable_b": "xray",
+    "runs": [
+      {
+        "variable_a": "lung",
+        "variable_b": "xray",
+        "run_id": 1,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"lung\",\n    \"variable_b\": \"xray\",\n    \"direct_edge\": true,\n    \"relation\": \"A_to_B\",\n    \"confidence\": 0.9,\n    \"reason\": \"Lung cancer can directly cause an abnormal chest X-ray result, as the presence of cancer can alter the appearance of the lungs on imaging.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "lung",
+          "variable_b": "xray",
+          "direct_edge": true,
+          "relation": "A_to_B",
+          "confidence": 0.9,
+          "reason": "Lung cancer can directly cause an abnormal chest X-ray result, as the presence of cancer can alter the appearance of the lungs on imaging."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "lung",
+        "variable_b": "xray",
+        "run_id": 2,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"lung\",\n    \"variable_b\": \"xray\",\n    \"direct_edge\": true,\n    \"relation\": \"A_to_B\",\n    \"confidence\": 0.9,\n    \"reason\": \"Lung cancer can directly cause an abnormal chest X-ray result, as the presence of cancer can alter the appearance of the lungs on imaging.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "lung",
+          "variable_b": "xray",
+          "direct_edge": true,
+          "relation": "A_to_B",
+          "confidence": 0.9,
+          "reason": "Lung cancer can directly cause an abnormal chest X-ray result, as the presence of cancer can alter the appearance of the lungs on imaging."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "lung",
+        "variable_b": "xray",
+        "run_id": 3,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"lung\",\n    \"variable_b\": \"xray\",\n    \"direct_edge\": true,\n    \"relation\": \"A_to_B\",\n    \"confidence\": 0.9,\n    \"reason\": \"Lung cancer can directly cause an abnormal chest X-ray result, as the presence of cancer can alter the appearance of the lungs on imaging.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "lung",
+          "variable_b": "xray",
+          "direct_edge": true,
+          "relation": "A_to_B",
+          "confidence": 0.9,
+          "reason": "Lung cancer can directly cause an abnormal chest X-ray result, as the presence of cancer can alter the appearance of the lungs on imaging."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "lung",
+        "variable_b": "xray",
+        "run_id": 4,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"lung\",\n    \"variable_b\": \"xray\",\n    \"direct_edge\": true,\n    \"relation\": \"A_to_B\",\n    \"confidence\": 0.9,\n    \"reason\": \"Lung cancer can directly cause an abnormal chest X-ray result, as the presence of cancer can alter the appearance of the lungs on imaging.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "lung",
+          "variable_b": "xray",
+          "direct_edge": true,
+          "relation": "A_to_B",
+          "confidence": 0.9,
+          "reason": "Lung cancer can directly cause an abnormal chest X-ray result, as the presence of cancer can alter the appearance of the lungs on imaging."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "lung",
+        "variable_b": "xray",
+        "run_id": 5,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"lung\",\n    \"variable_b\": \"xray\",\n    \"direct_edge\": true,\n    \"relation\": \"A_to_B\",\n    \"confidence\": 0.9,\n    \"reason\": \"Lung cancer can directly cause an abnormal chest X-ray result, as the presence of cancer can alter the appearance of the lungs on imaging.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "lung",
+          "variable_b": "xray",
+          "direct_edge": true,
+          "relation": "A_to_B",
+          "confidence": 0.9,
+          "reason": "Lung cancer can directly cause an abnormal chest X-ray result, as the presence of cancer can alter the appearance of the lungs on imaging."
+        },
+        "parse_status": "success"
+      }
+    ],
+    "final_relation": "A_to_B",
+    "final_confidence": 0.9,
+    "consistency": 1.0,
+    "relation_count": {
+      "A_to_B": 5
+    },
+    "direct_edge": true,
+    "edge_ratio": 1.0
+  },
+  {
+    "variable_a": "smoke",
+    "variable_b": "bronc",
+    "runs": [
+      {
+        "variable_a": "smoke",
+        "variable_b": "bronc",
+        "run_id": 1,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"smoke\",\n    \"variable_b\": \"bronc\",\n    \"direct_edge\": true,\n    \"relation\": \"A_to_B\",\n    \"confidence\": 0.8,\n    \"reason\": \"Smoking is a known risk factor for bronchitis, so the variable 'smoke' directly influences the variable 'bronc'.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "smoke",
+          "variable_b": "bronc",
+          "direct_edge": true,
+          "relation": "A_to_B",
+          "confidence": 0.8,
+          "reason": "Smoking is a known risk factor for bronchitis, so the variable 'smoke' directly influences the variable 'bronc'."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "smoke",
+        "variable_b": "bronc",
+        "run_id": 2,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"smoke\",\n    \"variable_b\": \"bronc\",\n    \"direct_edge\": true,\n    \"relation\": \"A_to_B\",\n    \"confidence\": 0.8,\n    \"reason\": \"Smoking is a known risk factor for bronchitis, so the variable 'smoke' directly influences the variable 'bronc'.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "smoke",
+          "variable_b": "bronc",
+          "direct_edge": true,
+          "relation": "A_to_B",
+          "confidence": 0.8,
+          "reason": "Smoking is a known risk factor for bronchitis, so the variable 'smoke' directly influences the variable 'bronc'."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "smoke",
+        "variable_b": "bronc",
+        "run_id": 3,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"smoke\",\n    \"variable_b\": \"bronc\",\n    \"direct_edge\": true,\n    \"relation\": \"A_to_B\",\n    \"confidence\": 0.8,\n    \"reason\": \"Smoking is a known risk factor for bronchitis, so the variable 'smoke' directly influences the variable 'bronc'.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "smoke",
+          "variable_b": "bronc",
+          "direct_edge": true,
+          "relation": "A_to_B",
+          "confidence": 0.8,
+          "reason": "Smoking is a known risk factor for bronchitis, so the variable 'smoke' directly influences the variable 'bronc'."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "smoke",
+        "variable_b": "bronc",
+        "run_id": 4,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"smoke\",\n    \"variable_b\": \"bronc\",\n    \"direct_edge\": true,\n    \"relation\": \"A_to_B\",\n    \"confidence\": 0.8,\n    \"reason\": \"Smoking is a known risk factor for bronchitis, so the variable 'smoke' directly influences the variable 'bronc'.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "smoke",
+          "variable_b": "bronc",
+          "direct_edge": true,
+          "relation": "A_to_B",
+          "confidence": 0.8,
+          "reason": "Smoking is a known risk factor for bronchitis, so the variable 'smoke' directly influences the variable 'bronc'."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "smoke",
+        "variable_b": "bronc",
+        "run_id": 5,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"smoke\",\n    \"variable_b\": \"bronc\",\n    \"direct_edge\": true,\n    \"relation\": \"A_to_B\",\n    \"confidence\": 0.8,\n    \"reason\": \"Smoking is a known risk factor for bronchitis, so the variable 'smoke' directly influences the variable 'bronc'.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "smoke",
+          "variable_b": "bronc",
+          "direct_edge": true,
+          "relation": "A_to_B",
+          "confidence": 0.8,
+          "reason": "Smoking is a known risk factor for bronchitis, so the variable 'smoke' directly influences the variable 'bronc'."
+        },
+        "parse_status": "success"
+      }
+    ],
+    "final_relation": "A_to_B",
+    "final_confidence": 0.8,
+    "consistency": 1.0,
+    "relation_count": {
+      "A_to_B": 5
+    },
+    "direct_edge": true,
+    "edge_ratio": 1.0
+  },
+  {
+    "variable_a": "smoke",
+    "variable_b": "dysp",
+    "runs": [
+      {
+        "variable_a": "smoke",
+        "variable_b": "dysp",
+        "run_id": 1,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"smoke\",\n    \"variable_b\": \"dysp\",\n    \"direct_edge\": true,\n    \"relation\": \"A_to_B\",\n    \"confidence\": 0.85,\n    \"reason\": \"Smoking is a known risk factor for respiratory issues, including dyspnea, so smoking directly influences the likelihood of dyspnea.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "smoke",
+          "variable_b": "dysp",
+          "direct_edge": true,
+          "relation": "A_to_B",
+          "confidence": 0.85,
+          "reason": "Smoking is a known risk factor for respiratory issues, including dyspnea, so smoking directly influences the likelihood of dyspnea."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "smoke",
+        "variable_b": "dysp",
+        "run_id": 2,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"smoke\",\n    \"variable_b\": \"dysp\",\n    \"direct_edge\": true,\n    \"relation\": \"A_to_B\",\n    \"confidence\": 0.85,\n    \"reason\": \"Smoking is a known risk factor for respiratory issues, including dyspnea, so smoking directly influences the likelihood of dyspnea.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "smoke",
+          "variable_b": "dysp",
+          "direct_edge": true,
+          "relation": "A_to_B",
+          "confidence": 0.85,
+          "reason": "Smoking is a known risk factor for respiratory issues, including dyspnea, so smoking directly influences the likelihood of dyspnea."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "smoke",
+        "variable_b": "dysp",
+        "run_id": 3,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"smoke\",\n    \"variable_b\": \"dysp\",\n    \"direct_edge\": true,\n    \"relation\": \"A_to_B\",\n    \"confidence\": 0.85,\n    \"reason\": \"Smoking is a known risk factor for respiratory issues, including dyspnea, so smoking directly influences the likelihood of dyspnea.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "smoke",
+          "variable_b": "dysp",
+          "direct_edge": true,
+          "relation": "A_to_B",
+          "confidence": 0.85,
+          "reason": "Smoking is a known risk factor for respiratory issues, including dyspnea, so smoking directly influences the likelihood of dyspnea."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "smoke",
+        "variable_b": "dysp",
+        "run_id": 4,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"smoke\",\n    \"variable_b\": \"dysp\",\n    \"direct_edge\": true,\n    \"relation\": \"A_to_B\",\n    \"confidence\": 0.85,\n    \"reason\": \"Smoking is a known risk factor for respiratory issues, including dyspnea, so smoking directly influences the likelihood of dyspnea.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "smoke",
+          "variable_b": "dysp",
+          "direct_edge": true,
+          "relation": "A_to_B",
+          "confidence": 0.85,
+          "reason": "Smoking is a known risk factor for respiratory issues, including dyspnea, so smoking directly influences the likelihood of dyspnea."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "smoke",
+        "variable_b": "dysp",
+        "run_id": 5,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"smoke\",\n    \"variable_b\": \"dysp\",\n    \"direct_edge\": true,\n    \"relation\": \"A_to_B\",\n    \"confidence\": 0.85,\n    \"reason\": \"Smoking is a known risk factor for respiratory issues, including dyspnea, so smoking directly influences the likelihood of dyspnea.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "smoke",
+          "variable_b": "dysp",
+          "direct_edge": true,
+          "relation": "A_to_B",
+          "confidence": 0.85,
+          "reason": "Smoking is a known risk factor for respiratory issues, including dyspnea, so smoking directly influences the likelihood of dyspnea."
+        },
+        "parse_status": "success"
+      }
+    ],
+    "final_relation": "A_to_B",
+    "final_confidence": 0.85,
+    "consistency": 1.0,
+    "relation_count": {
+      "A_to_B": 5
+    },
+    "direct_edge": true,
+    "edge_ratio": 1.0
+  },
+  {
+    "variable_a": "smoke",
+    "variable_b": "either",
+    "runs": [
+      {
+        "variable_a": "smoke",
+        "variable_b": "either",
+        "run_id": 1,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"smoke\",\n    \"variable_b\": \"either\",\n    \"direct_edge\": true,\n    \"relation\": \"A_to_B\",\n    \"confidence\": 0.8,\n    \"reason\": \"Smoking is a known risk factor for both tuberculosis and lung cancer, so it directly influences the likelihood of the patient having either of these diseases.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "smoke",
+          "variable_b": "either",
+          "direct_edge": true,
+          "relation": "A_to_B",
+          "confidence": 0.8,
+          "reason": "Smoking is a known risk factor for both tuberculosis and lung cancer, so it directly influences the likelihood of the patient having either of these diseases."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "smoke",
+        "variable_b": "either",
+        "run_id": 2,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"smoke\",\n    \"variable_b\": \"either\",\n    \"direct_edge\": true,\n    \"relation\": \"A_to_B\",\n    \"confidence\": 0.8,\n    \"reason\": \"Smoking is a known risk factor for both tuberculosis and lung cancer, so it directly influences the likelihood of the patient having either of these diseases.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "smoke",
+          "variable_b": "either",
+          "direct_edge": true,
+          "relation": "A_to_B",
+          "confidence": 0.8,
+          "reason": "Smoking is a known risk factor for both tuberculosis and lung cancer, so it directly influences the likelihood of the patient having either of these diseases."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "smoke",
+        "variable_b": "either",
+        "run_id": 3,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"smoke\",\n    \"variable_b\": \"either\",\n    \"direct_edge\": true,\n    \"relation\": \"A_to_B\",\n    \"confidence\": 0.8,\n    \"reason\": \"Smoking is a known risk factor for both tuberculosis and lung cancer, so it directly influences the likelihood of the patient having either of these diseases.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "smoke",
+          "variable_b": "either",
+          "direct_edge": true,
+          "relation": "A_to_B",
+          "confidence": 0.8,
+          "reason": "Smoking is a known risk factor for both tuberculosis and lung cancer, so it directly influences the likelihood of the patient having either of these diseases."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "smoke",
+        "variable_b": "either",
+        "run_id": 4,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"smoke\",\n    \"variable_b\": \"either\",\n    \"direct_edge\": true,\n    \"relation\": \"A_to_B\",\n    \"confidence\": 0.8,\n    \"reason\": \"Smoking is a known risk factor for both tuberculosis and lung cancer, so it directly influences the likelihood of the patient having either of these diseases.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "smoke",
+          "variable_b": "either",
+          "direct_edge": true,
+          "relation": "A_to_B",
+          "confidence": 0.8,
+          "reason": "Smoking is a known risk factor for both tuberculosis and lung cancer, so it directly influences the likelihood of the patient having either of these diseases."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "smoke",
+        "variable_b": "either",
+        "run_id": 5,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"smoke\",\n    \"variable_b\": \"either\",\n    \"direct_edge\": true,\n    \"relation\": \"A_to_B\",\n    \"confidence\": 0.8,\n    \"reason\": \"Smoking is a known risk factor for both tuberculosis and lung cancer, so it directly influences the likelihood of the patient having either of these diseases.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "smoke",
+          "variable_b": "either",
+          "direct_edge": true,
+          "relation": "A_to_B",
+          "confidence": 0.8,
+          "reason": "Smoking is a known risk factor for both tuberculosis and lung cancer, so it directly influences the likelihood of the patient having either of these diseases."
+        },
+        "parse_status": "success"
+      }
+    ],
+    "final_relation": "A_to_B",
+    "final_confidence": 0.8,
+    "consistency": 1.0,
+    "relation_count": {
+      "A_to_B": 5
+    },
+    "direct_edge": true,
+    "edge_ratio": 1.0
+  },
+  {
+    "variable_a": "smoke",
+    "variable_b": "lung",
+    "runs": [
+      {
+        "variable_a": "smoke",
+        "variable_b": "lung",
+        "run_id": 1,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"smoke\",\n    \"variable_b\": \"lung\",\n    \"direct_edge\": true,\n    \"relation\": \"A_to_B\",\n    \"confidence\": 0.9,\n    \"reason\": \"Smoking is a known risk factor for lung cancer, so the variable 'smoke' directly influences the variable 'lung' in the model.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "smoke",
+          "variable_b": "lung",
+          "direct_edge": true,
+          "relation": "A_to_B",
+          "confidence": 0.9,
+          "reason": "Smoking is a known risk factor for lung cancer, so the variable 'smoke' directly influences the variable 'lung' in the model."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "smoke",
+        "variable_b": "lung",
+        "run_id": 2,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"smoke\",\n    \"variable_b\": \"lung\",\n    \"direct_edge\": true,\n    \"relation\": \"A_to_B\",\n    \"confidence\": 0.9,\n    \"reason\": \"Smoking is a known risk factor for lung cancer, so the variable 'smoke' directly influences the likelihood of 'lung' cancer.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "smoke",
+          "variable_b": "lung",
+          "direct_edge": true,
+          "relation": "A_to_B",
+          "confidence": 0.9,
+          "reason": "Smoking is a known risk factor for lung cancer, so the variable 'smoke' directly influences the likelihood of 'lung' cancer."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "smoke",
+        "variable_b": "lung",
+        "run_id": 3,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"smoke\",\n    \"variable_b\": \"lung\",\n    \"direct_edge\": true,\n    \"relation\": \"A_to_B\",\n    \"confidence\": 0.9,\n    \"reason\": \"Smoking is a known risk factor for lung cancer, so the variable 'smoke' directly influences the likelihood of 'lung' cancer.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "smoke",
+          "variable_b": "lung",
+          "direct_edge": true,
+          "relation": "A_to_B",
+          "confidence": 0.9,
+          "reason": "Smoking is a known risk factor for lung cancer, so the variable 'smoke' directly influences the likelihood of 'lung' cancer."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "smoke",
+        "variable_b": "lung",
+        "run_id": 4,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"smoke\",\n    \"variable_b\": \"lung\",\n    \"direct_edge\": true,\n    \"relation\": \"A_to_B\",\n    \"confidence\": 0.9,\n    \"reason\": \"Smoking is a known risk factor for lung cancer, so the variable 'smoke' directly influences the likelihood of 'lung' cancer.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "smoke",
+          "variable_b": "lung",
+          "direct_edge": true,
+          "relation": "A_to_B",
+          "confidence": 0.9,
+          "reason": "Smoking is a known risk factor for lung cancer, so the variable 'smoke' directly influences the likelihood of 'lung' cancer."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "smoke",
+        "variable_b": "lung",
+        "run_id": 5,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"smoke\",\n    \"variable_b\": \"lung\",\n    \"direct_edge\": true,\n    \"relation\": \"A_to_B\",\n    \"confidence\": 0.9,\n    \"reason\": \"Smoking is a known risk factor for lung cancer, so the variable 'smoke' directly influences the likelihood of 'lung' cancer.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "smoke",
+          "variable_b": "lung",
+          "direct_edge": true,
+          "relation": "A_to_B",
+          "confidence": 0.9,
+          "reason": "Smoking is a known risk factor for lung cancer, so the variable 'smoke' directly influences the likelihood of 'lung' cancer."
+        },
+        "parse_status": "success"
+      }
+    ],
+    "final_relation": "A_to_B",
+    "final_confidence": 0.9,
+    "consistency": 1.0,
+    "relation_count": {
+      "A_to_B": 5
+    },
+    "direct_edge": true,
+    "edge_ratio": 1.0
+  },
+  {
+    "variable_a": "smoke",
+    "variable_b": "xray",
+    "runs": [
+      {
+        "variable_a": "smoke",
+        "variable_b": "xray",
+        "run_id": 1,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"smoke\",\n    \"variable_b\": \"xray\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"Smoking is a risk factor that can lead to lung disease, which in turn can cause an abnormal chest X-ray. However, smoking does not directly influence the X-ray result without an intervening variable like lung disease.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "smoke",
+          "variable_b": "xray",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "Smoking is a risk factor that can lead to lung disease, which in turn can cause an abnormal chest X-ray. However, smoking does not directly influence the X-ray result without an intervening variable like lung disease."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "smoke",
+        "variable_b": "xray",
+        "run_id": 2,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"smoke\",\n    \"variable_b\": \"xray\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"Smoking is a risk factor that can lead to lung disease, which in turn can cause an abnormal chest X-ray. However, smoking does not directly influence the X-ray result without an intervening variable like lung disease.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "smoke",
+          "variable_b": "xray",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "Smoking is a risk factor that can lead to lung disease, which in turn can cause an abnormal chest X-ray. However, smoking does not directly influence the X-ray result without an intervening variable like lung disease."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "smoke",
+        "variable_b": "xray",
+        "run_id": 3,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"smoke\",\n    \"variable_b\": \"xray\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"Smoking is a risk factor that can lead to lung disease, which in turn can cause an abnormal chest X-ray. However, smoking does not directly influence the X-ray result without an intervening variable like lung disease.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "smoke",
+          "variable_b": "xray",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "Smoking is a risk factor that can lead to lung disease, which in turn can cause an abnormal chest X-ray. However, smoking does not directly influence the X-ray result without an intervening variable like lung disease."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "smoke",
+        "variable_b": "xray",
+        "run_id": 4,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"smoke\",\n    \"variable_b\": \"xray\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"Smoking is a risk factor that can lead to lung disease, which in turn can cause an abnormal chest X-ray. However, smoking does not directly influence the X-ray result without an intervening variable like lung disease.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "smoke",
+          "variable_b": "xray",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "Smoking is a risk factor that can lead to lung disease, which in turn can cause an abnormal chest X-ray. However, smoking does not directly influence the X-ray result without an intervening variable like lung disease."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "smoke",
+        "variable_b": "xray",
+        "run_id": 5,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"smoke\",\n    \"variable_b\": \"xray\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"Smoking is a risk factor that can lead to lung disease, which in turn can cause an abnormal chest X-ray. However, smoking does not directly influence the X-ray result without an intervening variable like lung disease.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "smoke",
+          "variable_b": "xray",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "Smoking is a risk factor that can lead to lung disease, which in turn can cause an abnormal chest X-ray. However, smoking does not directly influence the X-ray result without an intervening variable like lung disease."
+        },
+        "parse_status": "success"
+      }
+    ],
+    "final_relation": "no_direct_edge",
+    "final_confidence": 0.95,
+    "consistency": 1.0,
+    "relation_count": {
+      "no_direct_edge": 5
+    },
+    "direct_edge": false,
+    "edge_ratio": 0.0
+  },
+  {
+    "variable_a": "tub",
+    "variable_b": "bronc",
+    "runs": [
+      {
+        "variable_a": "tub",
+        "variable_b": "bronc",
+        "run_id": 1,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"tub\",\n    \"variable_b\": \"bronc\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"Tuberculosis and bronchitis are both lung conditions, but the model does not indicate a direct causal or direct influence between them. They may be related through common causes or shared effects, but there is no direct edge between them.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "tub",
+          "variable_b": "bronc",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "Tuberculosis and bronchitis are both lung conditions, but the model does not indicate a direct causal or direct influence between them. They may be related through common causes or shared effects, but there is no direct edge between them."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "tub",
+        "variable_b": "bronc",
+        "run_id": 2,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"tub\",\n    \"variable_b\": \"bronc\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"Tuberculosis and bronchitis are both lung conditions, but the model does not indicate a direct causal or direct influence between them. They may be related through common causes or shared effects, but there is no direct edge between them.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "tub",
+          "variable_b": "bronc",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "Tuberculosis and bronchitis are both lung conditions, but the model does not indicate a direct causal or direct influence between them. They may be related through common causes or shared effects, but there is no direct edge between them."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "tub",
+        "variable_b": "bronc",
+        "run_id": 3,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"tub\",\n    \"variable_b\": \"bronc\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"Tuberculosis and bronchitis are both lung conditions, but the model does not indicate a direct causal or direct influence between them. They may be related through common causes or shared effects, but there is no direct edge between them.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "tub",
+          "variable_b": "bronc",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "Tuberculosis and bronchitis are both lung conditions, but the model does not indicate a direct causal or direct influence between them. They may be related through common causes or shared effects, but there is no direct edge between them."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "tub",
+        "variable_b": "bronc",
+        "run_id": 4,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"tub\",\n    \"variable_b\": \"bronc\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"Tuberculosis and bronchitis are both lung conditions, but the model does not indicate a direct causal or direct influence between them. They may be related through common causes or shared effects, but there is no direct edge between them.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "tub",
+          "variable_b": "bronc",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "Tuberculosis and bronchitis are both lung conditions, but the model does not indicate a direct causal or direct influence between them. They may be related through common causes or shared effects, but there is no direct edge between them."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "tub",
+        "variable_b": "bronc",
+        "run_id": 5,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"tub\",\n    \"variable_b\": \"bronc\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"Tuberculosis and bronchitis are both lung conditions, but the model does not indicate a direct causal or direct influence between them. They may be related through common causes or shared effects, but there is no direct edge between them.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "tub",
+          "variable_b": "bronc",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "Tuberculosis and bronchitis are both lung conditions, but the model does not indicate a direct causal or direct influence between them. They may be related through common causes or shared effects, but there is no direct edge between them."
+        },
+        "parse_status": "success"
+      }
+    ],
+    "final_relation": "no_direct_edge",
+    "final_confidence": 0.95,
+    "consistency": 1.0,
+    "relation_count": {
+      "no_direct_edge": 5
+    },
+    "direct_edge": false,
+    "edge_ratio": 0.0
+  },
+  {
+    "variable_a": "tub",
+    "variable_b": "dysp",
+    "runs": [
+      {
+        "variable_a": "tub",
+        "variable_b": "dysp",
+        "run_id": 1,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"tub\",\n    \"variable_b\": \"dysp\",\n    \"direct_edge\": true,\n    \"relation\": \"A_to_B\",\n    \"confidence\": 0.9,\n    \"reason\": \"Tuberculosis can directly cause dyspnea as a symptom, so there is a direct causal influence from tub to dysp.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "tub",
+          "variable_b": "dysp",
+          "direct_edge": true,
+          "relation": "A_to_B",
+          "confidence": 0.9,
+          "reason": "Tuberculosis can directly cause dyspnea as a symptom, so there is a direct causal influence from tub to dysp."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "tub",
+        "variable_b": "dysp",
+        "run_id": 2,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"tub\",\n    \"variable_b\": \"dysp\",\n    \"direct_edge\": true,\n    \"relation\": \"A_to_B\",\n    \"confidence\": 0.9,\n    \"reason\": \"Tuberculosis can directly cause dyspnea as a symptom, so there is a direct causal influence from tub to dysp.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "tub",
+          "variable_b": "dysp",
+          "direct_edge": true,
+          "relation": "A_to_B",
+          "confidence": 0.9,
+          "reason": "Tuberculosis can directly cause dyspnea as a symptom, so there is a direct causal influence from tub to dysp."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "tub",
+        "variable_b": "dysp",
+        "run_id": 3,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"tub\",\n    \"variable_b\": \"dysp\",\n    \"direct_edge\": true,\n    \"relation\": \"A_to_B\",\n    \"confidence\": 0.9,\n    \"reason\": \"Tuberculosis can directly cause dyspnea as a symptom, so there is a direct causal influence from tub to dysp.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "tub",
+          "variable_b": "dysp",
+          "direct_edge": true,
+          "relation": "A_to_B",
+          "confidence": 0.9,
+          "reason": "Tuberculosis can directly cause dyspnea as a symptom, so there is a direct causal influence from tub to dysp."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "tub",
+        "variable_b": "dysp",
+        "run_id": 4,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"tub\",\n    \"variable_b\": \"dysp\",\n    \"direct_edge\": true,\n    \"relation\": \"A_to_B\",\n    \"confidence\": 0.9,\n    \"reason\": \"Tuberculosis can directly cause dyspnea as a symptom, so there is a direct causal influence from tub to dysp.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "tub",
+          "variable_b": "dysp",
+          "direct_edge": true,
+          "relation": "A_to_B",
+          "confidence": 0.9,
+          "reason": "Tuberculosis can directly cause dyspnea as a symptom, so there is a direct causal influence from tub to dysp."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "tub",
+        "variable_b": "dysp",
+        "run_id": 5,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"tub\",\n    \"variable_b\": \"dysp\",\n    \"direct_edge\": true,\n    \"relation\": \"A_to_B\",\n    \"confidence\": 0.9,\n    \"reason\": \"Tuberculosis can directly cause dyspnea as a symptom, so there is a direct causal influence from tub to dysp.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "tub",
+          "variable_b": "dysp",
+          "direct_edge": true,
+          "relation": "A_to_B",
+          "confidence": 0.9,
+          "reason": "Tuberculosis can directly cause dyspnea as a symptom, so there is a direct causal influence from tub to dysp."
+        },
+        "parse_status": "success"
+      }
+    ],
+    "final_relation": "A_to_B",
+    "final_confidence": 0.9,
+    "consistency": 1.0,
+    "relation_count": {
+      "A_to_B": 5
+    },
+    "direct_edge": true,
+    "edge_ratio": 1.0
+  },
+  {
+    "variable_a": "tub",
+    "variable_b": "either",
+    "runs": [
+      {
+        "variable_a": "tub",
+        "variable_b": "either",
+        "run_id": 1,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"tub\",\n    \"variable_b\": \"either\",\n    \"direct_edge\": true,\n    \"relation\": \"A_to_B\",\n    \"confidence\": 0.9,\n    \"reason\": \"Tuberculosis directly contributes to the condition of having either tuberculosis or lung cancer, making 'tub' a direct cause of 'either'.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "tub",
+          "variable_b": "either",
+          "direct_edge": true,
+          "relation": "A_to_B",
+          "confidence": 0.9,
+          "reason": "Tuberculosis directly contributes to the condition of having either tuberculosis or lung cancer, making 'tub' a direct cause of 'either'."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "tub",
+        "variable_b": "either",
+        "run_id": 2,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"tub\",\n    \"variable_b\": \"either\",\n    \"direct_edge\": true,\n    \"relation\": \"A_to_B\",\n    \"confidence\": 0.9,\n    \"reason\": \"Tuberculosis directly contributes to the condition of having either tuberculosis or lung cancer, making 'tub' a direct cause of 'either'.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "tub",
+          "variable_b": "either",
+          "direct_edge": true,
+          "relation": "A_to_B",
+          "confidence": 0.9,
+          "reason": "Tuberculosis directly contributes to the condition of having either tuberculosis or lung cancer, making 'tub' a direct cause of 'either'."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "tub",
+        "variable_b": "either",
+        "run_id": 3,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"tub\",\n    \"variable_b\": \"either\",\n    \"direct_edge\": true,\n    \"relation\": \"A_to_B\",\n    \"confidence\": 0.9,\n    \"reason\": \"Tuberculosis directly contributes to the condition of having either tuberculosis or lung cancer, making 'tub' a direct cause of 'either'.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "tub",
+          "variable_b": "either",
+          "direct_edge": true,
+          "relation": "A_to_B",
+          "confidence": 0.9,
+          "reason": "Tuberculosis directly contributes to the condition of having either tuberculosis or lung cancer, making 'tub' a direct cause of 'either'."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "tub",
+        "variable_b": "either",
+        "run_id": 4,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"tub\",\n    \"variable_b\": \"either\",\n    \"direct_edge\": true,\n    \"relation\": \"A_to_B\",\n    \"confidence\": 0.9,\n    \"reason\": \"Tuberculosis directly contributes to the condition of having either tuberculosis or lung cancer, making 'tub' a direct cause of 'either'.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "tub",
+          "variable_b": "either",
+          "direct_edge": true,
+          "relation": "A_to_B",
+          "confidence": 0.9,
+          "reason": "Tuberculosis directly contributes to the condition of having either tuberculosis or lung cancer, making 'tub' a direct cause of 'either'."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "tub",
+        "variable_b": "either",
+        "run_id": 5,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"tub\",\n    \"variable_b\": \"either\",\n    \"direct_edge\": true,\n    \"relation\": \"A_to_B\",\n    \"confidence\": 0.9,\n    \"reason\": \"Tuberculosis directly contributes to the condition of having either tuberculosis or lung cancer, making 'tub' a direct cause of 'either'.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "tub",
+          "variable_b": "either",
+          "direct_edge": true,
+          "relation": "A_to_B",
+          "confidence": 0.9,
+          "reason": "Tuberculosis directly contributes to the condition of having either tuberculosis or lung cancer, making 'tub' a direct cause of 'either'."
+        },
+        "parse_status": "success"
+      }
+    ],
+    "final_relation": "A_to_B",
+    "final_confidence": 0.9,
+    "consistency": 1.0,
+    "relation_count": {
+      "A_to_B": 5
+    },
+    "direct_edge": true,
+    "edge_ratio": 1.0
+  },
+  {
+    "variable_a": "tub",
+    "variable_b": "lung",
+    "runs": [
+      {
+        "variable_a": "tub",
+        "variable_b": "lung",
+        "run_id": 1,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"tub\",\n    \"variable_b\": \"lung\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"Tuberculosis and lung cancer are both diseases that can affect the lungs, but they are distinct conditions with different causes and mechanisms. The model does not explicitly represent a direct causal relationship between them.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "tub",
+          "variable_b": "lung",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "Tuberculosis and lung cancer are both diseases that can affect the lungs, but they are distinct conditions with different causes and mechanisms. The model does not explicitly represent a direct causal relationship between them."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "tub",
+        "variable_b": "lung",
+        "run_id": 2,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"tub\",\n    \"variable_b\": \"lung\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"Tuberculosis and lung cancer are both diseases that can affect the lungs, but they are distinct conditions with different causes and mechanisms. The model does not explicitly represent a direct causal relationship between them.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "tub",
+          "variable_b": "lung",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "Tuberculosis and lung cancer are both diseases that can affect the lungs, but they are distinct conditions with different causes and mechanisms. The model does not explicitly represent a direct causal relationship between them."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "tub",
+        "variable_b": "lung",
+        "run_id": 3,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"tub\",\n    \"variable_b\": \"lung\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"Tuberculosis and lung cancer are both diseases that can affect the lungs, but they are distinct conditions with different causes and mechanisms. The model does not explicitly represent a direct causal relationship between them.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "tub",
+          "variable_b": "lung",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "Tuberculosis and lung cancer are both diseases that can affect the lungs, but they are distinct conditions with different causes and mechanisms. The model does not explicitly represent a direct causal relationship between them."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "tub",
+        "variable_b": "lung",
+        "run_id": 4,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"tub\",\n    \"variable_b\": \"lung\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"Tuberculosis and lung cancer are both diseases that can affect the lungs, but they are distinct conditions with different causes and mechanisms. The model does not explicitly represent a direct causal relationship between them.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "tub",
+          "variable_b": "lung",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "Tuberculosis and lung cancer are both diseases that can affect the lungs, but they are distinct conditions with different causes and mechanisms. The model does not explicitly represent a direct causal relationship between them."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "tub",
+        "variable_b": "lung",
+        "run_id": 5,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"tub\",\n    \"variable_b\": \"lung\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"Tuberculosis and lung cancer are both diseases that can affect the lungs, but they are distinct conditions with different causes and mechanisms. The model does not explicitly represent a direct causal relationship between them.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "tub",
+          "variable_b": "lung",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "Tuberculosis and lung cancer are both diseases that can affect the lungs, but they are distinct conditions with different causes and mechanisms. The model does not explicitly represent a direct causal relationship between them."
+        },
+        "parse_status": "success"
+      }
+    ],
+    "final_relation": "no_direct_edge",
+    "final_confidence": 0.95,
+    "consistency": 1.0,
+    "relation_count": {
+      "no_direct_edge": 5
+    },
+    "direct_edge": false,
+    "edge_ratio": 0.0
+  },
+  {
+    "variable_a": "tub",
+    "variable_b": "smoke",
+    "runs": [
+      {
+        "variable_a": "tub",
+        "variable_b": "smoke",
+        "run_id": 1,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"tub\",\n    \"variable_b\": \"smoke\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"Tuberculosis and smoking are both risk factors for lung disease, but they are not directly causally related. Smoking does not directly cause tuberculosis, nor does tuberculosis directly cause smoking. They are both influenced by other factors like genetic predisposition or environmental exposure.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "tub",
+          "variable_b": "smoke",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "Tuberculosis and smoking are both risk factors for lung disease, but they are not directly causally related. Smoking does not directly cause tuberculosis, nor does tuberculosis directly cause smoking. They are both influenced by other factors like genetic predisposition or environmental exposure."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "tub",
+        "variable_b": "smoke",
+        "run_id": 2,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"tub\",\n    \"variable_b\": \"smoke\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"Tuberculosis and smoking are both risk factors for lung disease, but they are not directly causally related. Smoking does not directly cause tuberculosis, nor does tuberculosis directly cause smoking. They are both influenced by other factors like genetic predisposition or environmental exposure.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "tub",
+          "variable_b": "smoke",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "Tuberculosis and smoking are both risk factors for lung disease, but they are not directly causally related. Smoking does not directly cause tuberculosis, nor does tuberculosis directly cause smoking. They are both influenced by other factors like genetic predisposition or environmental exposure."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "tub",
+        "variable_b": "smoke",
+        "run_id": 3,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"tub\",\n    \"variable_b\": \"smoke\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"Tuberculosis and smoking are both risk factors for lung disease, but they are not directly causally related. Smoking does not directly cause tuberculosis, nor does tuberculosis directly cause smoking. They are both influenced by other factors like genetic predisposition or environmental exposure.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "tub",
+          "variable_b": "smoke",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "Tuberculosis and smoking are both risk factors for lung disease, but they are not directly causally related. Smoking does not directly cause tuberculosis, nor does tuberculosis directly cause smoking. They are both influenced by other factors like genetic predisposition or environmental exposure."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "tub",
+        "variable_b": "smoke",
+        "run_id": 4,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"tub\",\n    \"variable_b\": \"smoke\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"Tuberculosis and smoking are both risk factors for lung disease, but they are not directly causally related. Smoking does not directly cause tuberculosis, nor does tuberculosis directly cause smoking. They are both influenced by other factors like genetic predisposition or environmental exposure.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "tub",
+          "variable_b": "smoke",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "Tuberculosis and smoking are both risk factors for lung disease, but they are not directly causally related. Smoking does not directly cause tuberculosis, nor does tuberculosis directly cause smoking. They are both influenced by other factors like genetic predisposition or environmental exposure."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "tub",
+        "variable_b": "smoke",
+        "run_id": 5,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"tub\",\n    \"variable_b\": \"smoke\",\n    \"direct_edge\": false,\n    \"relation\": \"no_direct_edge\",\n    \"confidence\": 0.95,\n    \"reason\": \"Tuberculosis and smoking are both risk factors for lung disease, but they are not directly causally related. Smoking does not directly cause tuberculosis, nor does tuberculosis directly cause smoking. They are both influenced by other factors like genetic predisposition or environmental exposure.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "tub",
+          "variable_b": "smoke",
+          "direct_edge": false,
+          "relation": "no_direct_edge",
+          "confidence": 0.95,
+          "reason": "Tuberculosis and smoking are both risk factors for lung disease, but they are not directly causally related. Smoking does not directly cause tuberculosis, nor does tuberculosis directly cause smoking. They are both influenced by other factors like genetic predisposition or environmental exposure."
+        },
+        "parse_status": "success"
+      }
+    ],
+    "final_relation": "no_direct_edge",
+    "final_confidence": 0.95,
+    "consistency": 1.0,
+    "relation_count": {
+      "no_direct_edge": 5
+    },
+    "direct_edge": false,
+    "edge_ratio": 0.0
+  },
+  {
+    "variable_a": "tub",
+    "variable_b": "xray",
+    "runs": [
+      {
+        "variable_a": "tub",
+        "variable_b": "xray",
+        "run_id": 1,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"tub\",\n    \"variable_b\": \"xray\",\n    \"direct_edge\": true,\n    \"relation\": \"A_to_B\",\n    \"confidence\": 0.9,\n    \"reason\": \"Tuberculosis can directly cause an abnormal chest X-ray result, as the disease affects the lungs and is detectable through imaging.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "tub",
+          "variable_b": "xray",
+          "direct_edge": true,
+          "relation": "A_to_B",
+          "confidence": 0.9,
+          "reason": "Tuberculosis can directly cause an abnormal chest X-ray result, as the disease affects the lungs and is detectable through imaging."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "tub",
+        "variable_b": "xray",
+        "run_id": 2,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"tub\",\n    \"variable_b\": \"xray\",\n    \"direct_edge\": true,\n    \"relation\": \"A_to_B\",\n    \"confidence\": 0.9,\n    \"reason\": \"Tuberculosis can directly cause an abnormal chest X-ray result, as the disease affects the lungs and is detectable through imaging.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "tub",
+          "variable_b": "xray",
+          "direct_edge": true,
+          "relation": "A_to_B",
+          "confidence": 0.9,
+          "reason": "Tuberculosis can directly cause an abnormal chest X-ray result, as the disease affects the lungs and is detectable through imaging."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "tub",
+        "variable_b": "xray",
+        "run_id": 3,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"tub\",\n    \"variable_b\": \"xray\",\n    \"direct_edge\": true,\n    \"relation\": \"A_to_B\",\n    \"confidence\": 0.9,\n    \"reason\": \"Tuberculosis can directly cause an abnormal chest X-ray result, as the disease affects the lungs and is detectable through imaging.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "tub",
+          "variable_b": "xray",
+          "direct_edge": true,
+          "relation": "A_to_B",
+          "confidence": 0.9,
+          "reason": "Tuberculosis can directly cause an abnormal chest X-ray result, as the disease affects the lungs and is detectable through imaging."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "tub",
+        "variable_b": "xray",
+        "run_id": 4,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"tub\",\n    \"variable_b\": \"xray\",\n    \"direct_edge\": true,\n    \"relation\": \"A_to_B\",\n    \"confidence\": 0.9,\n    \"reason\": \"Tuberculosis can directly cause an abnormal chest X-ray result, as the disease affects the lungs and is detectable through imaging.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "tub",
+          "variable_b": "xray",
+          "direct_edge": true,
+          "relation": "A_to_B",
+          "confidence": 0.9,
+          "reason": "Tuberculosis can directly cause an abnormal chest X-ray result, as the disease affects the lungs and is detectable through imaging."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "tub",
+        "variable_b": "xray",
+        "run_id": 5,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"tub\",\n    \"variable_b\": \"xray\",\n    \"direct_edge\": true,\n    \"relation\": \"A_to_B\",\n    \"confidence\": 0.9,\n    \"reason\": \"Tuberculosis can directly cause an abnormal chest X-ray result, as the disease affects the lungs and is detectable through imaging.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "tub",
+          "variable_b": "xray",
+          "direct_edge": true,
+          "relation": "A_to_B",
+          "confidence": 0.9,
+          "reason": "Tuberculosis can directly cause an abnormal chest X-ray result, as the disease affects the lungs and is detectable through imaging."
+        },
+        "parse_status": "success"
+      }
+    ],
+    "final_relation": "A_to_B",
+    "final_confidence": 0.9,
+    "consistency": 1.0,
+    "relation_count": {
+      "A_to_B": 5
+    },
+    "direct_edge": true,
+    "edge_ratio": 1.0
+  },
+  {
+    "variable_a": "xray",
+    "variable_b": "dysp",
+    "runs": [
+      {
+        "variable_a": "xray",
+        "variable_b": "dysp",
+        "run_id": 1,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"xray\",\n    \"variable_b\": \"dysp\",\n    \"direct_edge\": true,\n    \"relation\": \"A_to_B\",\n    \"confidence\": 0.9,\n    \"reason\": \"An abnormal chest X-ray (xray) can directly indicate the presence of a condition that causes dyspnea (dysp), such as lung disease, making xray a direct cause of dysp.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "xray",
+          "variable_b": "dysp",
+          "direct_edge": true,
+          "relation": "A_to_B",
+          "confidence": 0.9,
+          "reason": "An abnormal chest X-ray (xray) can directly indicate the presence of a condition that causes dyspnea (dysp), such as lung disease, making xray a direct cause of dysp."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "xray",
+        "variable_b": "dysp",
+        "run_id": 2,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"xray\",\n    \"variable_b\": \"dysp\",\n    \"direct_edge\": true,\n    \"relation\": \"B_to_A\",\n    \"confidence\": 0.9,\n    \"reason\": \"Dyspnea (difficulty in breathing) can cause an abnormal chest X-ray result, as breathing difficulties may lead to visible abnormalities on imaging.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "xray",
+          "variable_b": "dysp",
+          "direct_edge": true,
+          "relation": "B_to_A",
+          "confidence": 0.9,
+          "reason": "Dyspnea (difficulty in breathing) can cause an abnormal chest X-ray result, as breathing difficulties may lead to visible abnormalities on imaging."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "xray",
+        "variable_b": "dysp",
+        "run_id": 3,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"xray\",\n    \"variable_b\": \"dysp\",\n    \"direct_edge\": true,\n    \"relation\": \"B_to_A\",\n    \"confidence\": 0.9,\n    \"reason\": \"Dyspnea (difficulty in breathing) can cause an abnormal chest X-ray result, as breathing difficulties may lead to visible abnormalities on imaging.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "xray",
+          "variable_b": "dysp",
+          "direct_edge": true,
+          "relation": "B_to_A",
+          "confidence": 0.9,
+          "reason": "Dyspnea (difficulty in breathing) can cause an abnormal chest X-ray result, as breathing difficulties may lead to visible abnormalities on imaging."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "xray",
+        "variable_b": "dysp",
+        "run_id": 4,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"xray\",\n    \"variable_b\": \"dysp\",\n    \"direct_edge\": true,\n    \"relation\": \"B_to_A\",\n    \"confidence\": 0.9,\n    \"reason\": \"Dyspnea (difficulty in breathing) can cause an abnormal chest X-ray result, as breathing difficulties may lead to visible abnormalities on imaging.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "xray",
+          "variable_b": "dysp",
+          "direct_edge": true,
+          "relation": "B_to_A",
+          "confidence": 0.9,
+          "reason": "Dyspnea (difficulty in breathing) can cause an abnormal chest X-ray result, as breathing difficulties may lead to visible abnormalities on imaging."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "xray",
+        "variable_b": "dysp",
+        "run_id": 5,
+        "seed": 20261010,
+        "prompt_version": "v3-no-invented-mediators#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"xray\",\n    \"variable_b\": \"dysp\",\n    \"direct_edge\": true,\n    \"relation\": \"B_to_A\",\n    \"confidence\": 0.9,\n    \"reason\": \"Dyspnea (difficulty in breathing) can cause an abnormal chest X-ray result, as breathing difficulties may lead to visible abnormalities on imaging.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "xray",
+          "variable_b": "dysp",
+          "direct_edge": true,
+          "relation": "B_to_A",
+          "confidence": 0.9,
+          "reason": "Dyspnea (difficulty in breathing) can cause an abnormal chest X-ray result, as breathing difficulties may lead to visible abnormalities on imaging."
+        },
+        "parse_status": "success"
+      }
+    ],
+    "final_relation": "B_to_A",
+    "final_confidence": 0.9,
+    "consistency": 0.8,
+    "relation_count": {
+      "A_to_B": 1,
+      "B_to_A": 4
+    },
+    "direct_edge": true,
+    "edge_ratio": 1.0
+  }
+]
