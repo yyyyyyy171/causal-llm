@@ -18,8 +18,23 @@ project_root <- Sys.getenv(
   "CAUSAL_LLM_ROOT",
   if (dir.exists("E:/Causal-LLM")) "E:/Causal-LLM" else normalizePath(".")
 )
-networks <- c("ASIA", "CHILD", "INSURANCE", "ALARM", "HAILFINDER")
-mode <- "real"
+args <- commandArgs(trailingOnly = TRUE)
+
+get_arg <- function(name, default) {
+  hit <- grep(paste0("^--", name, "="), args, value = TRUE)
+  if (length(hit) == 0) return(default)
+  sub(paste0("^--", name, "="), "", hit[1])
+}
+
+networks <- strsplit(
+  get_arg("networks", "ASIA,CHILD,INSURANCE,ALARM,HAILFINDER"), ","
+)[[1]]
+mode <- get_arg("mode", "real")
+# 先验来自哪个模型：8B 的结果文件名带后缀（如 _qwen3-8b-awq），
+# 留空读的是旧的无后缀文件。不加这个开关就会拿 4B 的先验去解释 8B 的结论。
+model_tag <- get_arg("model-tag", "")
+suffix <- if (nzchar(model_tag)) paste0("_", model_tag) else ""
+out_name <- get_arg("out", sprintf("prior_vs_spouses_%s%s.csv", mode, suffix))
 
 rows <- data.frame()
 
@@ -32,7 +47,8 @@ for (network in networks) {
     "%s/data/%s/%s_dag_edges.csv", project_root, network, network
   )
   prior_path <- sprintf(
-    "%s/data/%s/%s_LLM_prior_%s_summary.csv", project_root, network, network, mode
+    "%s/data/%s/%s_LLM_prior_%s%s_summary.csv",
+    project_root, network, network, mode, suffix
   )
 
   if (!file.exists(truth_path) || !file.exists(dag_path)) {
@@ -135,8 +151,8 @@ for (network in networks) {
 if (nrow(rows) > 0) {
   write.csv(
     rows,
-    sprintf("%s/results/prior_vs_spouses_%s.csv", project_root, mode),
+    sprintf("%s/results/%s", project_root, out_name),
     row.names = FALSE
   )
-  cat(sprintf("\nwritten: results/prior_vs_spouses_%s.csv\n", mode))
+  cat(sprintf("\nwritten: results/%s\n", out_name))
 }
