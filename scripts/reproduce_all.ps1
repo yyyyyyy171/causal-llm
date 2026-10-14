@@ -90,7 +90,25 @@ if (-not $SkipSlow) {
         -Action { & $Rscript --vanilla scripts\run_fusion_both.R --networks=ASIA,CHILD --sizes=100,500 --repeats=30 --tag=both_nreal }
 }
 
-Invoke-Step -Name "9. 生成周产出文档（7 份）" -Key "report" `
+Invoke-Step -Name "9. 8B 先验的评测与融合（需要 Colab 产出的 _qwen3-8b-awq 先验）" -Key "prior8b" `
+    -Output "results/llm_prior_eval_qwen3-8b-awq.csv、results/fusion_both_*_8b.csv" `
+    -Action {
+        $prior8b = Get-ChildItem "data\*\*_LLM_prior_*_qwen3-8b-awq_summary.csv" -ErrorAction SilentlyContinue
+        if (-not $prior8b) {
+            Write-Host "还没有 8B 先验（Colab 尚未回传），跳过。" -ForegroundColor Yellow
+            return
+        }
+        $networks = ($prior8b | ForEach-Object { $_.Directory.Name } | Sort-Object -Unique) -join ","
+        Write-Host "已有的 8B 先验网络: $networks"
+        & $Python scripts\eval_llm_prior.py --networks $networks --modes real,anon `
+            --model-tag qwen3-8b-awq --out llm_prior_eval_qwen3-8b-awq.csv
+        & $Rscript --vanilla scripts\run_fusion_both.R --networks=$networks --sizes=100,500 `
+            --repeats=30 --mode=real --model-tag=qwen3-8b-awq --tag=8b_real
+        & $Rscript --vanilla scripts\run_fusion_both.R --networks=$networks --sizes=100,500 `
+            --repeats=30 --mode=anon --model-tag=qwen3-8b-awq --tag=8b_anon
+    }
+
+Invoke-Step -Name "10. 生成周产出文档（7 份）" -Key "report" `
     -Output "E:\汇报\周产出\*.docx" `
     -Action {
         foreach ($week in @("week01", "week02", "week03", "week04", "week05", "week06_07", "week08_10")) {
