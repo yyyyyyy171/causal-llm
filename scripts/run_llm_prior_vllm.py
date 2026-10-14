@@ -48,47 +48,59 @@ from src.llm_prior.prompt import MB_PROMPT_VERSION, PROMPT_VERSION  # noqa: E402
 
 def build_sampling_params(SamplingParams, **wanted):
     """
-    只传当前版本 vLLM 真正支持的字段。
+    构造采样参数，并对"生成长度"做强制校验。
 
-    vLLM 的参数名在版本之间变动过，这里按签名过滤。但**生成长度这一项绝不静默降级**：
-    名字找不到就直接报错，构造完还要自证数值真的生效——因为一旦被丢掉，
-    vLLM 会用默认的 max_tokens=16，输出被截断成半截 JSON，
-    而表面上"没有任何报错"，非常难查（我们就这样浪费了一轮）。
+    踩过的坑：这个版本的 SamplingParams.__init__ 签名是 `(self, *args, **kwargs)`，
+    内部按字段名校验（类似 pydantic 包装）。所以**不能靠 inspect.signature 过滤参数**
+    ——它查不到任何字段名，会把 max_tokens / temperature / top_p 全部丢掉，
+    一切回退到默认值（max_tokens=16），输出被截断成半截 JSON 却没有报错。
+
+    正确做法是"试 + 自证"：逐个候选名尝试构造，成功的那个再把值读回来核对，
+    确认真的生效才返回；全都失败就报错，绝不静默降级。
     """
 
-    supported = inspect.signature(SamplingParams.__init__).parameters
-
     length_keys = ("max_tokens", "max_new_tokens", "max_output_tokens")
-    length_key = next((key for key in length_keys if key in supported), None)
-
-    if length_key is None:
-        raise ValueError(
-            "在当前 vLLM 的 SamplingParams 里找不到最大生成长度的参数名；"
-            "支持的参数有：" + ", ".join(sorted(supported))
-        )
-
     requested_length = wanted.pop("max_new_tokens")
-    wanted[length_key] = requested_length
 
-    accepted = {key: value for key, value in wanted.items() if key in supported}
-    dropped = sorted(set(wanted) - set(accepted))
+    errors = []
 
-    if dropped:
-        print(f"  注意：当前 vLLM 不支持这些采样参数，已忽略 {dropped}")
+    for key in length_keys:
 
-    params = SamplingParams(**accepted)
+        try:
+            params = SamplingParams(**{**wanted, key: requested_length})
+        except Exception as error:          # 字段名不被接受
+            errors.append(f"{key}: {type(error).__name__}: {error}")
+            continue
 
-    # 自证：对象里的生成长度必须等于我们要求的值，否则立刻失败
-    actual_length = getattr(params, length_key, None)
-    if actual_length != requested_length:
-        raise ValueError(
-            f"生成长度没有生效：请求 {requested_length}，"
-            f"实际 {actual_length}（参数名 {length_key}）"
-        )
+        actual = _read_field(params, key)
 
-    print(f"  生成长度已确认生效：{length_key} = {actual_length}")
+        if actual == requested_length:
+            print(f"  生成长度已确认生效：{key} = {actual}")
+            return params
 
-    return params
+        errors.append(f"{key}: 构造成功但值未生效（读回 {actual!r}）")
+
+    raise ValueError(
+        "无法让生成长度生效，试过的参数名与结果：\n  " + "\n  ".join(errors)
+    )
+
+
+def _read_field(params, name):
+    """把字段值读回来：普通属性、pydantic 模型的 dump 都试一遍。"""
+
+    value = getattr(params, name, None)
+    if value is not None:
+        return value
+
+    for method in ("model_dump", "dict"):
+        dump = getattr(params, method, None)
+        if callable(dump):
+            try:
+                return dump().get(name)
+            except Exception:  # noqa: BLE001
+                pass
+
+    return None
 
 
 def params_fingerprint(params) -> str:
