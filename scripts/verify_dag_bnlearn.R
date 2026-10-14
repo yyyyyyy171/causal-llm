@@ -14,9 +14,15 @@
 networks <- c("ASIA", "CHILD", "INSURANCE", "HAILFINDER")
 ok <- TRUE
 
+# Repository root: works both on this Windows machine and on Colab.
+project_root <- Sys.getenv(
+  "CAUSAL_LLM_ROOT",
+  if (dir.exists("E:/Causal-LLM")) "E:/Causal-LLM" else normalizePath(".")
+)
+
 for (n in networks) {
 
-  path <- sprintf("E:/Causal-LLM/data/%s/%s.rds", n, n)
+  path <- sprintf("%s/data/%s/%s.rds", project_root, n, n)
 
   if (!file.exists(path)) {
     cat(sprintf("%s: missing %s\n", n, path))
@@ -33,7 +39,7 @@ for (n in networks) {
   }))
 
   exported <- read.csv(
-    sprintf("E:/Causal-LLM/data/%s/%s_dag_edges.csv", n, n),
+    sprintf("%s/data/%s/%s_dag_edges.csv", project_root, n, n),
     stringsAsFactors = FALSE
   )
 

@@ -16,7 +16,12 @@ get_arg <- function(name, default) {
   sub(paste0("^--", name, "="), "", hit[1])
 }
 
-project_root <- "E:/Causal-LLM"
+# 仓库根目录：本机 Windows 与 Colab/Linux 都能用。
+# 优先环境变量 CAUSAL_LLM_ROOT；否则本机的 E:/Causal-LLM；再否则用当前工作目录。
+project_root <- Sys.getenv(
+  "CAUSAL_LLM_ROOT",
+  if (dir.exists("E:/Causal-LLM")) "E:/Causal-LLM" else normalizePath(".")
+)
 networks <- strsplit(get_arg("networks", "ASIA"), ",")[[1]]
 modes <- strsplit(get_arg("modes", "real"), ",")[[1]]
 

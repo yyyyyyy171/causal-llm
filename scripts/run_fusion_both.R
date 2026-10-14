@@ -29,7 +29,12 @@ get_arg <- function(name, default) {
   sub(paste0("^--", name, "="), "", hit[1])
 }
 
-project_root <- "E:/Causal-LLM"
+# 仓库根目录：本机 Windows 与 Colab/Linux 都能用。
+# 优先环境变量 CAUSAL_LLM_ROOT；否则本机的 E:/Causal-LLM；再否则用当前工作目录。
+project_root <- Sys.getenv(
+  "CAUSAL_LLM_ROOT",
+  if (dir.exists("E:/Causal-LLM")) "E:/Causal-LLM" else normalizePath(".")
+)
 source(sprintf("%s/R/hiton_mb.R", project_root))
 suppressPackageStartupMessages(library(bnlearn))
 
@@ -48,6 +53,14 @@ tag <- get_arg("tag", sprintf("both_n%s", mode))
 alphas <- as.numeric(strsplit(
   get_arg("alphas", "1e-06,1e-04,0.001,0.01,0.05,0.2"), ","
 )[[1]])
+
+# 目标变量子集。
+#
+# 代价随变量数爆炸：每个重复要对每个目标各跑一遍 IAMB 与 HITON-MB，
+# HAILFINDER 有 56 个变量，全量跑是几十小时。
+# 这里的子集由固定种子抽出而不是人工挑选：可复现，也不会挑好看的变量。
+# 0（默认）表示全部变量，ASIA / CHILD / INSURANCE 都用全量。
+target_limit <- as.integer(get_arg("max-targets", "0"))
 
 # ---------------------------------------------------------------------------
 # Prior
@@ -161,6 +174,18 @@ for (network in networks) {
     if (is.null(prior_real)) 0 else length(prior_real)
   ))
 
+  if (target_limit > 0 && target_limit < length(labels)) {
+    set.seed(seed)
+    target_indices <- sort(sample(seq_along(labels), target_limit))
+    cat(sprintf(
+      "  只跑 %d/%d 个目标变量（种子 %d 固定抽取）：%s\n",
+      length(target_indices), length(labels), seed,
+      paste(labels[target_indices], collapse = ", ")
+    ))
+  } else {
+    target_indices <- seq_along(labels)
+  }
+
   for (size in sizes) {
     for (repeat_index in seq_len(repeats)) {
 
@@ -205,7 +230,7 @@ for (network in networks) {
         scores <- variants[[variant]]$scores
         use_prior <- variants[[variant]]$use
 
-        for (target_index in seq_along(labels)) {
+        for (target_index in target_indices) {
 
           target_name <- labels[target_index]
           true_set <- labels[which(truth[target_index, ] > 0)]
