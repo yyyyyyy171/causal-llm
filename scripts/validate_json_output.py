@@ -169,15 +169,30 @@ def main() -> int:
     no_structural = not any(
         row["records_missing_fields"] or row["runs_missing_fields"] for row in rows
     )
+
+    # 解析失败率也要设闸门。之前只看"文件能否解析"，导致某次 8B 生成
+    # 100% 解析失败时这里仍然报"通过"——那显然是模型/提示词的问题，必须暴露。
+    failure_rate = total_failures / max(1, total_runs)
+    MAX_PARSE_FAILURE = 0.10
+
+    if failure_rate > MAX_PARSE_FAILURE:
+        print(
+            f"警告：解析失败率 {failure_rate * 100:.2f}% 超过上限 "
+            f"{MAX_PARSE_FAILURE * 100:.0f}%，说明模型的输出格式有问题，"
+            f"请抽查缓存里的 raw_response"
+        )
+
+    ok = all_parse and no_structural and failure_rate <= MAX_PARSE_FAILURE
+
     print("结论：" + (
         "结构化输出校验通过（解析失败的记录均已在缓存中保留原始输出）"
-        if all_parse and no_structural
-        else "存在结构性问题，见上表"
+        if ok
+        else "不通过：见上面的问题与警告"
     ))
     print(f"产出：{out_path.relative_to(PROJECT_ROOT)}")
 
-    finish_run(0 if (all_parse and no_structural) else 1)
-    return 0 if (all_parse and no_structural) else 1
+    finish_run(0 if ok else 1)
+    return 0 if ok else 1
 
 
 if __name__ == "__main__":

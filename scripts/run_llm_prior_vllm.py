@@ -80,14 +80,21 @@ def main() -> int:
     parser.add_argument("--limit", type=int, default=0)
     parser.add_argument("--sample", type=int, default=0)
     parser.add_argument("--model", default="Qwen/Qwen3-8B-AWQ")
-    parser.add_argument("--max-new-tokens", type=int, default=192)
     parser.add_argument("--temperature", type=float, default=0.7)
     parser.add_argument("--top-p", type=float, default=0.9)
     parser.add_argument("--base-seed", type=int, default=20261010)
+    parser.add_argument(
+        "--thinking", default="off", choices=("off", "on"),
+        help="Qwen3 的思考模式。我们只要 JSON，默认关闭（off），避免推理占满输出长度",
+    )
     parser.add_argument("--requests-per-call", type=int, default=256,
                         help="一次 llm.chat 提交多少条请求（由调度器批处理）")
     parser.add_argument("--max-model-len", type=int, default=2048)
     parser.add_argument("--gpu-memory-utilization", type=float, default=0.90)
+    parser.add_argument(
+        "--max-new-tokens", type=int, default=384,
+        help="单次生成上限。原值 192 在思考模式下不够，且要留足 JSON 长度",
+    )
     parser.add_argument(
         "--enforce-eager", action="store_true",
         help="关闭 CUDA 图捕获。T4（Turing）上引擎初始化失败时先试这个",
@@ -137,6 +144,19 @@ def main() -> int:
 
     tokenizer = llm.get_tokenizer()
 
+    # chat_template_kwargs 用于关闭 Qwen3 的思考模式；不同 vLLM 版本是否支持
+    # 需要通过签名判断，避免直接传参报 TypeError。
+    chat_kwargs = {}
+    chat_parameters = inspect.signature(llm.chat).parameters
+    if "chat_template_kwargs" in chat_parameters:
+        chat_kwargs["chat_template_kwargs"] = {
+            "enable_thinking": args.thinking == "on"
+        }
+        print(f"思考模式：{args.thinking}（chat_template_kwargs 已启用）")
+    else:
+        print("注意：当前 vLLM 的 llm.chat 不接受 chat_template_kwargs，"
+              "思考模式无法在此关闭")
+
     modes = ("real", "anon") if args.mode == "both" else (args.mode,)
     suffix = model_suffix(args.model, cfg.get("model", "Qwen/Qwen3-8B"))
     prompt_version = MB_PROMPT_VERSION if args.task == "mb" else PROMPT_VERSION
@@ -185,16 +205,29 @@ def main() -> int:
                 seed=seed,
             )
 
+            if start == 0:
+                # 打印第一次实际生效的采样参数：如果 max_tokens 被过滤掉了，
+                # 这里会显示 vLLM 的默认值（很小），正是输出被截断的原因。
+                effective = {
+                    key: getattr(sampling, key, None)
+                    for key in ("max_tokens", "temperature", "top_p", "seed", "n")
+                }
+                print(f"  首次采样的生效参数: {effective}")
+
             conversations = [
                 [{"role": "user", "content": build_prompt(a, b)}]
                 for (a, b, _run) in chunk
             ]
 
-            outputs = llm.chat(conversations, sampling, use_tqdm=False)
+            outputs = llm.chat(conversations, sampling, use_tqdm=False, **chat_kwargs)
 
             for (a, b, run_id), request_output in zip(chunk, outputs):
 
                 raw = request_output.outputs[0].text if request_output.outputs else ""
+                finish_reason = (
+                    request_output.outputs[0].finish_reason
+                    if request_output.outputs else "empty"
+                )
                 parsed = extract_json(raw)
 
                 record = {
@@ -204,6 +237,7 @@ def main() -> int:
                     "seed": seed,
                     "prompt_version": prompt_version,
                     "raw_response": raw,
+                    "finish_reason": finish_reason,
                     "parsed": parsed,
                     "parse_status": "success" if parsed else "failed",
                 }
@@ -219,6 +253,18 @@ def main() -> int:
             remaining = (total - done) / rate if rate > 0 else 0.0
             print(f"  {done}/{total} 完成（{rate:.2f} 次/秒，预计剩余 {remaining/60:.1f} 分钟）",
                   flush=True)
+
+        # 汇总本轮的结束原因：length 说明被长度截断（上限太小），
+        # stop 说明模型自己停了（通常是模板/思考模式的问题）。
+        reasons = [
+            run.get("finish_reason")
+            for entry in results.values()
+            for run in entry["runs"]
+        ]
+        summary = {}
+        for reason in reasons:
+            summary[reason] = summary.get(reason, 0) + 1
+        print(f"[{args.network}/{mode}] finish_reason 统计: {summary}")
 
         final = []
         for (a, b), entry in sorted(results.items()):
