@@ -53,11 +53,15 @@ alphas <- as.numeric(strsplit(
 # Prior
 # ---------------------------------------------------------------------------
 
-load_prior <- function(network) {
-  path <- sprintf(
+prior_path <- function(network) {
+  sprintf(
     "%s/data/%s/%s_LLM_prior_%s%s_summary.csv", project_root, network, network, mode,
     if (nzchar(model_tag)) paste0("_", model_tag) else ""
   )
+}
+
+load_prior <- function(network) {
+  path <- prior_path(network)
   if (!file.exists(path)) return(NULL)
   table <- read.csv(path, stringsAsFactors = FALSE)
   scores <- list()
@@ -138,6 +142,20 @@ for (network in networks) {
   colnames(full_raw) <- labels
 
   prior_real <- load_prior(network)
+
+  # 没有先验文件时必须立刻停下来。
+  # 之前这里是静默继续：prior 变体全部退化成 baseline，跑出来的表看起来像
+  # “先验没有效果”，其实是文件根本没找到。这种降级比报错有害得多。
+  if (is.null(prior_real)) {
+    stop(sprintf(
+      paste0("找不到 %s 的先验文件，拒绝用空先验跑融合。\n",
+             "  期望路径: %s\n",
+             "  当前 --mode=%s，--model-tag='%s'\n",
+             "  先跑 Colab（或本机）生成先验；文件名后缀要跟 --model-tag 完全一致。"),
+      network, prior_path(network), mode, model_tag
+    ), call. = FALSE)
+  }
+
   cat(sprintf(
     "%s: %d variables, prior pairs = %d\n", network, ncol(full_raw),
     if (is.null(prior_real)) 0 else length(prior_real)
