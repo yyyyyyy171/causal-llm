@@ -50,15 +50,25 @@ def build_sampling_params(SamplingParams, **wanted):
     """
     只传当前版本 vLLM 真正支持的字段。
 
-    vLLM 的参数名在版本之间变动过（例如 seed、max_tokens 与 max_new_tokens），
-    这里按签名过滤，避免换一个 Colab 镜像就报 TypeError。
+    vLLM 的参数名在版本之间变动过，这里按签名过滤。但**生成长度这一项绝不静默降级**：
+    名字找不到就直接报错，构造完还要自证数值真的生效——因为一旦被丢掉，
+    vLLM 会用默认的 max_tokens=16，输出被截断成半截 JSON，
+    而表面上"没有任何报错"，非常难查（我们就这样浪费了一轮）。
     """
 
     supported = inspect.signature(SamplingParams.__init__).parameters
 
-    # 新旧命名兼容：优先 max_tokens，其次 max_new_tokens
-    if "max_new_tokens" in wanted and "max_tokens" in supported:
-        wanted["max_tokens"] = wanted.pop("max_new_tokens")
+    length_keys = ("max_tokens", "max_new_tokens", "max_output_tokens")
+    length_key = next((key for key in length_keys if key in supported), None)
+
+    if length_key is None:
+        raise ValueError(
+            "在当前 vLLM 的 SamplingParams 里找不到最大生成长度的参数名；"
+            "支持的参数有：" + ", ".join(sorted(supported))
+        )
+
+    requested_length = wanted.pop("max_new_tokens")
+    wanted[length_key] = requested_length
 
     accepted = {key: value for key, value in wanted.items() if key in supported}
     dropped = sorted(set(wanted) - set(accepted))
@@ -66,7 +76,36 @@ def build_sampling_params(SamplingParams, **wanted):
     if dropped:
         print(f"  注意：当前 vLLM 不支持这些采样参数，已忽略 {dropped}")
 
-    return SamplingParams(**accepted)
+    params = SamplingParams(**accepted)
+
+    # 自证：对象里的生成长度必须等于我们要求的值，否则立刻失败
+    actual_length = getattr(params, length_key, None)
+    if actual_length != requested_length:
+        raise ValueError(
+            f"生成长度没有生效：请求 {requested_length}，"
+            f"实际 {actual_length}（参数名 {length_key}）"
+        )
+
+    print(f"  生成长度已确认生效：{length_key} = {actual_length}")
+
+    return params
+
+
+def params_fingerprint(params) -> str:
+    """
+    用**生效后**的采样参数算一个短指纹，写进缓存键。
+
+    为什么必须用"生效后"的值：我们踩过一次坑——请求 max_tokens=384，
+    但参数名不被这个 vLLM 版本接受、被丢掉了，实际生效的是默认值 16，
+    输出被截断成半截 JSON。如果指纹只看"请求的参数"，两次算出来一样，
+    旧缓存会被复用，问题就会被悄悄藏起来。用生效值算指纹，参数一变缓存自动失效。
+    """
+
+    import hashlib
+
+    fields = ("max_tokens", "max_new_tokens", "max_output_tokens", "temperature", "top_p")
+    parts = [f"{name}={getattr(params, name)}" for name in fields if hasattr(params, name)]
+    return hashlib.sha1("|".join(parts).encode("utf-8")).hexdigest()[:12]
 
 
 def main() -> int:
@@ -144,6 +183,19 @@ def main() -> int:
 
     tokenizer = llm.get_tokenizer()
 
+    # 先构造一次采样参数：既确认生成长度真的生效（不生效就直接报错），
+    # 也用生效值算出缓存指纹，保证参数变化时旧缓存自动失效。
+    probe = build_sampling_params(
+        SamplingParams,
+        temperature=args.temperature,
+        top_p=args.top_p,
+        max_new_tokens=args.max_new_tokens,
+        n=1,
+        seed=args.base_seed,
+    )
+    fingerprint = params_fingerprint(probe)
+    print(f"采样参数指纹: {fingerprint}")
+
     # chat_template_kwargs 用于关闭 Qwen3 的思考模式；不同 vLLM 版本是否支持
     # 需要通过签名判断，避免直接传参报 TypeError。
     chat_kwargs = {}
@@ -160,6 +212,8 @@ def main() -> int:
     modes = ("real", "anon") if args.mode == "both" else (args.mode,)
     suffix = model_suffix(args.model, cfg.get("model", "Qwen/Qwen3-8B"))
     prompt_version = MB_PROMPT_VERSION if args.task == "mb" else PROMPT_VERSION
+    # 缓存键 = 提示词版本 + 生效参数指纹：任一处变化，旧缓存自动失效
+    cache_version = f"{prompt_version}#{fingerprint}"
 
     for mode in modes:
 
@@ -170,7 +224,7 @@ def main() -> int:
                 return build_markov_blanket_prompt(a, b, network=args.network, anonymous=anonymous)
             return build_causal_prompt(a, b, network=args.network, anonymous=anonymous)
 
-        cache = load_cache(args.network, mode, args.task, prompt_version, suffix)
+        cache = load_cache(args.network, mode, args.task, cache_version, suffix)
         print(f"[{args.network}/{mode}] 缓存中已有 {len(cache)} 次生成")
 
         results: dict = {}
@@ -235,7 +289,8 @@ def main() -> int:
                     "variable_b": b,
                     "run_id": run_id,
                     "seed": seed,
-                    "prompt_version": prompt_version,
+                    "prompt_version": cache_version,
+                    "settings_fingerprint": fingerprint,
                     "raw_response": raw,
                     "finish_reason": finish_reason,
                     "parsed": parsed,
