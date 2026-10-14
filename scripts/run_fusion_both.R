@@ -48,6 +48,11 @@ seed <- as.integer(get_arg("seed", "20261012"))
 mode <- get_arg("mode", "real")
 # 先验来自哪个模型：8B 的结果文件名带 _qwen3-8b 后缀，留空则是 4B 的旧结果。
 model_tag <- get_arg("model-tag", "")
+# 先验用哪种提问方式生成的：
+#   direction = 问“有没有直接边”（文件名前缀 LLM_prior）
+#   mb        = 直接问“是否在马尔可夫毯里”（文件名前缀 LLM_mb）
+# 两者语义不同，前者要翻译成邻接信号，后者本身就是要用的对象。
+prior_task <- get_arg("prior-task", "direction")
 tag <- get_arg("tag", sprintf("both_n%s", mode))
 
 alphas <- as.numeric(strsplit(
@@ -68,7 +73,8 @@ target_limit <- as.integer(get_arg("max-targets", "0"))
 
 prior_path <- function(network) {
   sprintf(
-    "%s/data/%s/%s_LLM_prior_%s%s_summary.csv", project_root, network, network, mode,
+    "%s/data/%s/%s_%s_%s%s_summary.csv", project_root, network, network,
+    if (prior_task == "mb") "LLM_mb" else "LLM_prior", mode,
     if (nzchar(model_tag)) paste0("_", model_tag) else ""
   )
 }
@@ -83,11 +89,17 @@ load_prior <- function(network) {
     confidence <- suppressWarnings(as.numeric(table$final_confidence[i]))
     if (is.na(confidence)) confidence <- 0
     confidence <- min(max(confidence, 0), 1)
-    relation <- as.character(table$final_relation[i])
-    direct <- tolower(as.character(table$direct_edge[i])) == "true"
-    score <- if (direct || relation %in% c("A_to_B", "B_to_A")) confidence
-             else if (relation == "no_direct_edge") -confidence
-             else 0
+    if (prior_task == "mb") {
+      # mb 版先验直接回答毯成员资格，正是算法需要的东西，不用再翻译
+      in_mb <- tolower(as.character(table$in_markov_blanket[i])) == "true"
+      score <- if (in_mb) confidence else -confidence
+    } else {
+      relation <- as.character(table$final_relation[i])
+      direct <- tolower(as.character(table$direct_edge[i])) == "true"
+      score <- if (direct || relation %in% c("A_to_B", "B_to_A")) confidence
+               else if (relation == "no_direct_edge") -confidence
+               else 0
+    }
     scores[[paste(sort(c(a, b)), collapse = "|")]] <- score
   }
   scores
@@ -163,14 +175,15 @@ for (network in networks) {
     stop(sprintf(
       paste0("找不到 %s 的先验文件，拒绝用空先验跑融合。\n",
              "  期望路径: %s\n",
-             "  当前 --mode=%s，--model-tag='%s'\n",
+             "  当前 --mode=%s，--prior-task=%s，--model-tag='%s'\n",
              "  先跑 Colab（或本机）生成先验；文件名后缀要跟 --model-tag 完全一致。"),
-      network, prior_path(network), mode, model_tag
+      network, prior_path(network), mode, prior_task, model_tag
     ), call. = FALSE)
   }
 
   cat(sprintf(
-    "%s: %d variables, prior pairs = %d\n", network, ncol(full_raw),
+    "%s: %d variables, prior(%s) pairs = %d\n", network, ncol(full_raw),
+    prior_task,
     if (is.null(prior_real)) 0 else length(prior_real)
   ))
 
