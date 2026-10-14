@@ -40,10 +40,13 @@ def load_dag(network: str, variables: list[str]):
     return arcs
 
 
-def read_prior(network: str, mode: str):
+def read_prior(network: str, mode: str, model_tag: str = ""):
+    # model_tag 用于区分不同模型跑出的先验：8B 的结果文件名带 _qwen3-8b 后缀，
+    # 不区分的话会误读成 4B 的旧结果。
+    suffix = f"_{model_tag}" if model_tag else ""
     path = (
         PROJECT_ROOT / "data" / network
-        / f"{network}_LLM_prior_{mode}_summary.csv"
+        / f"{network}_LLM_prior_{mode}{suffix}_summary.csv"
     )
     if not path.exists():
         return None
@@ -52,9 +55,10 @@ def read_prior(network: str, mode: str):
         return list(csv.DictReader(handle))
 
 
-def evaluate(network: str, mode: str, dag_edges, verbose: bool = True) -> dict:
+def evaluate(network: str, mode: str, dag_edges, verbose: bool = True,
+             model_tag: str = "") -> dict:
 
-    rows = read_prior(network, mode)
+    rows = read_prior(network, mode, model_tag)
     if rows is None:
         return {}
 
@@ -140,6 +144,10 @@ def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--networks", default="ASIA,ALARM")
     parser.add_argument("--modes", default="real,anon")
+    parser.add_argument(
+        "--model-tag", default="",
+        help="先验的模型后缀，例如 qwen3-8b；留空读取不带后缀的文件",
+    )
     parser.add_argument("--out", default="")
 
     args = parser.parse_args()
@@ -159,7 +167,7 @@ def main() -> int:
             continue
 
         for mode in [x.strip() for x in args.modes.split(",") if x.strip()]:
-            result = evaluate(network, mode, dag_edges)
+            result = evaluate(network, mode, dag_edges, model_tag=args.model_tag)
             if result:
                 results.append(result)
             else:

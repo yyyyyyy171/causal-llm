@@ -38,3 +38,6 @@ results/*_smoke*
 # MATLAB 的偏好设置目录：用 -batch 调用时若工作目录被当成 prefdir 根，
 # 会在仓库里生成 MathWorks/ 一堆二进制状态文件，与实验无关。
 MathWorks/
+
+# 上传到 Google Drive 的打包文件，由脚本生成，不进版本库
+causal-llm-bundle.zip

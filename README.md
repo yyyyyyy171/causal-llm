@@ -18,6 +18,39 @@ src/             llm_prior（语言模型先验）、mb（马尔可夫毯发现�
 
 ## 环境
 
+### 在 Google Colab（免费 T4）上跑语言模型
+
+本机是 Windows + 6GB 显卡：vLLM 没有 Windows 发行版，8B 长跑又会因显存分页退化。
+Colab 的免费 T4（16GB）官方支持 vLLM，是跑大网络先验的推荐路径。
+
+**仓库通过 git 同步，不打压缩包**——每次改动只需 Colab 里 `git pull`，
+结果与缓存也随提交回到仓库，导师和同组同学都能看到。
+
+一次性准备（本机执行）：
+
+```powershell
+cd E:\Causal-LLM
+git remote add origin https://github.com/<用户名>/causal-llm.git
+git push -u origin yyyyyyy171/topic2
+```
+
+然后在 Colab 里：
+
+1. 左侧密钥面板配 `HF_TOKEN`（可选，避免下载限速）与 `GIT_TOKEN`（写权限，用于回传结果）；
+2. 打开 `notebooks/colab_prior.ipynb`，运行时类型选 **T4 GPU**；
+3. 改第 1 格的仓库地址与分支，然后从上到下运行。
+
+环境由 `scripts/setup_colab.sh` 一键搭建，它做三件事：建隔离虚拟环境（避开 Colab
+预装包冲突）、固定 vLLM 版本、**在驱动低于 580 时自动把 torch 换成 CUDA 12.1 版**
+（CUDA 13 的 torch 需要驱动 ≥580，Colab 的 T4 常常达不到，这是 vLLM 报
+`Engine core initialization failed` 的常见原因）。
+
+推理用的是 `scripts/run_llm_prior_vllm.py`：缓存格式、断点续跑、聚合方式与本机的
+transformers 版完全一致，两条路径的产物可以互相续跑。
+
+离线备选：没有 git 访问条件时，用 `scripts/make_transfer_bundle.ps1` 打一个
+约 1.5MB 的 zip，再把 notebook 第 3 格换成手动解压（脚本里已兼容两种布局）。
+
 两个 conda 环境分工明确，不要混用：
 
 | 环境 | 用途 | 关键包 |

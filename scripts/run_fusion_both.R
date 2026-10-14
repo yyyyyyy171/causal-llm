@@ -41,6 +41,8 @@ alpha <- as.numeric(get_arg("alpha", "0.05"))
 max_k <- as.integer(get_arg("max-k", "3"))
 seed <- as.integer(get_arg("seed", "20261012"))
 mode <- get_arg("mode", "real")
+# 先验来自哪个模型：8B 的结果文件名带 _qwen3-8b 后缀，留空则是 4B 的旧结果。
+model_tag <- get_arg("model-tag", "")
 tag <- get_arg("tag", sprintf("both_n%s", mode))
 
 alphas <- as.numeric(strsplit(
@@ -53,7 +55,8 @@ alphas <- as.numeric(strsplit(
 
 load_prior <- function(network) {
   path <- sprintf(
-    "%s/data/%s/%s_LLM_prior_%s_summary.csv", project_root, network, network, mode
+    "%s/data/%s/%s_LLM_prior_%s%s_summary.csv", project_root, network, network, mode,
+    if (nzchar(model_tag)) paste0("_", model_tag) else ""
   )
   if (!file.exists(path)) return(NULL)
   table <- read.csv(path, stringsAsFactors = FALSE)

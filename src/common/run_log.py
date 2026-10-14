@@ -35,7 +35,20 @@ _state: dict = {"log_path": None, "started": None, "finished": False}
 
 
 class _Tee:
-    """把写操作同时转发给多个流。"""
+    """
+    把写操作同时转发给多个流。
+
+    这个类会替换 sys.stdout / sys.stderr，所以必须把底层真实流的常见接口
+    一并代理过去，尤其是 fileno()：
+
+    vLLM 启动引擎子进程时要取 stdout 的文件描述符，如果我们只实现
+    write / flush，它会抛 `AttributeError: '_Tee' object has no attribute
+    'fileno'`，而外层只报出 "Engine core initialization failed"，
+    排查时极易误判成 CUDA、驱动或 CUDA 图捕获的问题（我们就这样绕了半天）。
+
+    因此这里代理 fileno / isatty / encoding / errors / buffer 等接口，
+    让日志包装对调用方透明。
+    """
 
     def __init__(self, *streams):
         self.streams = streams
@@ -49,6 +62,10 @@ class _Tee:
                 pass
         return len(data)
 
+    def writelines(self, lines):
+        for line in lines:
+            self.write(line)
+
     def flush(self):
         for stream in self.streams:
             try:
@@ -56,12 +73,68 @@ class _Tee:
             except Exception:  # noqa: BLE001
                 pass
 
+    # ------------------------------------------------------------
+    # 以下接口一律代理到第一个能响应的底层流
+    # ------------------------------------------------------------
+
+    def fileno(self) -> int:
+        for stream in self.streams:
+            try:
+                return stream.fileno()
+            except Exception:  # noqa: BLE001
+                continue
+        raise OSError("_Tee: 底层流没有可用的文件描述符")
+
     def isatty(self) -> bool:
+        for stream in self.streams:
+            try:
+                if stream.isatty():
+                    return True
+            except Exception:  # noqa: BLE001
+                continue
         return False
 
     @property
     def encoding(self):
+        for stream in self.streams:
+            value = getattr(stream, "encoding", None)
+            if value:
+                return value
         return "utf-8"
+
+    @property
+    def errors(self):
+        for stream in self.streams:
+            value = getattr(stream, "errors", None)
+            if value:
+                return value
+        return "replace"
+
+    @property
+    def buffer(self):
+        for stream in self.streams:
+            value = getattr(stream, "buffer", None)
+            if value is not None:
+                return value
+        raise AttributeError("_Tee: 底层流没有 buffer")
+
+    @property
+    def closed(self) -> bool:
+        return False
+
+    def writable(self) -> bool:
+        return True
+
+    def readable(self) -> bool:
+        return False
+
+    def seekable(self) -> bool:
+        return False
+
+    def close(self) -> None:
+        # 故意什么都不做：某些库（vLLM / multiprocessing）会在子进程里关闭 stdout，
+        # 如果跟着关掉日志文件句柄，后续的日志写入就静默丢失了。
+        pass
 
 
 def _git_revision() -> str:
