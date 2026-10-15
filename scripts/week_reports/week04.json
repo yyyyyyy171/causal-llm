@@ -35,8 +35,8 @@
     {
       "type": "bullets",
       "items": [
-        "IAMB 用 bnlearn 5.2.1（参考实现）复跑：20 个网络×样本量组合里 14 个与 MATLAB 结果逐位相同，其余差异集中在 n=100 与 INSURANCE（检验统计量不同），最大差 −0.030。",
-        "HITON-MB 因为 bnlearn 5.2.1 已移除该算法，改在 R 里按 Causal-Learner 的 MATLAB 参考逐行重建（R/hiton_mb.R）；重建版与本仓库 MATLAB 基线的平均绝对差 |ΔF1| = 0.0037，ASIA 四个样本量全部逐位相同。",
+        "IAMB 用 bnlearn 5.2.1（参考实现）复跑：20 个网络×样本量网格里 15 个与 MATLAB 结果在小数点后四位一致（真实差异在 1e-5 量级，来自两套实现的浮点细节，所以不能写成“逐位相同”），5 个不一致、集中在 n=100 与 INSURANCE（检验统计量不同），最大负差 −0.033（ASIA n=100）。这条对照由 scripts/compare_iamb_with_matlab.py 一条命令复现，脚本会把一致组数与最大负差直接打出来。",
+        "HITON-MB：bnlearn 5.2.1 确实已移除该算法（实测 exists(\"hiton.mb\") 为 FALSE），因此改在 R 里按 Causal-Learner 的 MATLAB 参考逐行重建（R/hiton_mb.R）。重建版在 ASIA、CHILD、INSURANCE 共 12 个网格上与仓库里的 MATLAB 基线对照：平均绝对差 |ΔF1| = 0.0025，其中 ASIA 四个样本量逐位相同，最大差 0.0151（INSURANCE n=500）。对照结果见 results/hiton_baseline_vs_matlab_hiton.csv。",
         "也就是说，本周这张表与曲线有两套独立实现支撑，后续把语言模型先验注入条件独立检验时，改动的影响可以被精确度量。"
       ]
     }

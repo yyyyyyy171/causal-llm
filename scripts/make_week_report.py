@@ -61,8 +61,13 @@ def read_csv_table(spec: dict):
                     number = float(value)
                 except (TypeError, ValueError):
                     continue
-                # 整数值（样本量、计数、边数）保持原样，避免出现 100.0000
-                if number == int(number):
+                # 只在“原文本来就是整数写法”时保持整数（样本量、计数、边数），
+                # 免得出现 100.0000。
+                # 原文写的是 0.0 / 1.0 时必须按位数格式化：否则会被压成 0 和 1，
+                # 在一张 0 到 1 的指标表里看起来像另一回事（曾经就是这样，
+                # 1.000 的准确率显示成 1，0.000 显示成 0）。
+                raw = str(value)
+                if ("." not in raw) and ("e" not in raw.lower()):
                     row[key] = str(int(number))
                 else:
                     row[key] = f"{number:.{digits}f}"
