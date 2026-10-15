@@ -1,0 +1,3054 @@
+[
+  {
+    "variable_a": "asia",
+    "variable_b": "bronc",
+    "runs": [
+      {
+        "variable_a": "asia",
+        "variable_b": "bronc",
+        "run_id": 1,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"asia\",\n    \"variable_b\": \"bronc\",\n    \"in_markov_blanket\": true,\n    \"role_of_a\": \"parent\",\n    \"confidence\": 0.9,\n    \"reason\": \"Visiting Asia (asia) can directly cause bronchitis (bronc) due to exposure to environmental factors.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "asia",
+          "variable_b": "bronc",
+          "in_markov_blanket": true,
+          "role_of_a": "parent",
+          "confidence": 0.9,
+          "reason": "Visiting Asia (asia) can directly cause bronchitis (bronc) due to exposure to environmental factors."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "asia",
+        "variable_b": "bronc",
+        "run_id": 2,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"asia\",\n    \"variable_b\": \"bronc\",\n    \"in_markov_blanket\": true,\n    \"role_of_a\": \"parent\",\n    \"confidence\": 0.9,\n    \"reason\": \"Visiting Asia (asia) can directly cause bronchitis (bronc) due to exposure to environmental factors.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "asia",
+          "variable_b": "bronc",
+          "in_markov_blanket": true,
+          "role_of_a": "parent",
+          "confidence": 0.9,
+          "reason": "Visiting Asia (asia) can directly cause bronchitis (bronc) due to exposure to environmental factors."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "asia",
+        "variable_b": "bronc",
+        "run_id": 3,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"asia\",\n    \"variable_b\": \"bronc\",\n    \"in_markov_blanket\": true,\n    \"role_of_a\": \"parent\",\n    \"confidence\": 0.9,\n    \"reason\": \"Visiting Asia (asia) can directly cause bronchitis (bronc) due to exposure to environmental factors.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "asia",
+          "variable_b": "bronc",
+          "in_markov_blanket": true,
+          "role_of_a": "parent",
+          "confidence": 0.9,
+          "reason": "Visiting Asia (asia) can directly cause bronchitis (bronc) due to exposure to environmental factors."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "asia",
+        "variable_b": "bronc",
+        "run_id": 4,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"asia\",\n    \"variable_b\": \"bronc\",\n    \"in_markov_blanket\": true,\n    \"role_of_a\": \"parent\",\n    \"confidence\": 0.9,\n    \"reason\": \"Visiting Asia (asia) can directly cause bronchitis (bronc) due to exposure to environmental factors.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "asia",
+          "variable_b": "bronc",
+          "in_markov_blanket": true,
+          "role_of_a": "parent",
+          "confidence": 0.9,
+          "reason": "Visiting Asia (asia) can directly cause bronchitis (bronc) due to exposure to environmental factors."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "asia",
+        "variable_b": "bronc",
+        "run_id": 5,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"asia\",\n    \"variable_b\": \"bronc\",\n    \"in_markov_blanket\": true,\n    \"role_of_a\": \"parent\",\n    \"confidence\": 0.9,\n    \"reason\": \"Visiting Asia (asia) can directly cause bronchitis (bronc) due to exposure to environmental factors.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "asia",
+          "variable_b": "bronc",
+          "in_markov_blanket": true,
+          "role_of_a": "parent",
+          "confidence": 0.9,
+          "reason": "Visiting Asia (asia) can directly cause bronchitis (bronc) due to exposure to environmental factors."
+        },
+        "parse_status": "success"
+      }
+    ],
+    "final_role": "parent",
+    "in_markov_blanket": true,
+    "positive_ratio": 1.0,
+    "final_confidence": 0.9,
+    "consistency": 1.0,
+    "relation_count": {
+      "parent": 5
+    }
+  },
+  {
+    "variable_a": "asia",
+    "variable_b": "dysp",
+    "runs": [
+      {
+        "variable_a": "asia",
+        "variable_b": "dysp",
+        "run_id": 1,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"asia\",\n    \"variable_b\": \"dysp\",\n    \"in_markov_blanket\": true,\n    \"role_of_a\": \"parent\",\n    \"confidence\": 0.9,\n    \"reason\": \"Visiting Asia (asia) can directly cause dyspnea (dysp) as a potential risk factor for lung diseases.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "asia",
+          "variable_b": "dysp",
+          "in_markov_blanket": true,
+          "role_of_a": "parent",
+          "confidence": 0.9,
+          "reason": "Visiting Asia (asia) can directly cause dyspnea (dysp) as a potential risk factor for lung diseases."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "asia",
+        "variable_b": "dysp",
+        "run_id": 2,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"asia\",\n    \"variable_b\": \"dysp\",\n    \"in_markov_blanket\": true,\n    \"role_of_a\": \"parent\",\n    \"confidence\": 0.9,\n    \"reason\": \"Visiting Asia (asia) can directly cause dyspnea (dysp) as a potential risk factor for lung diseases.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "asia",
+          "variable_b": "dysp",
+          "in_markov_blanket": true,
+          "role_of_a": "parent",
+          "confidence": 0.9,
+          "reason": "Visiting Asia (asia) can directly cause dyspnea (dysp) as a potential risk factor for lung diseases."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "asia",
+        "variable_b": "dysp",
+        "run_id": 3,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"asia\",\n    \"variable_b\": \"dysp\",\n    \"in_markov_blanket\": true,\n    \"role_of_a\": \"parent\",\n    \"confidence\": 0.9,\n    \"reason\": \"Visiting Asia (asia) can directly cause dyspnea (dysp) as a potential risk factor for lung diseases.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "asia",
+          "variable_b": "dysp",
+          "in_markov_blanket": true,
+          "role_of_a": "parent",
+          "confidence": 0.9,
+          "reason": "Visiting Asia (asia) can directly cause dyspnea (dysp) as a potential risk factor for lung diseases."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "asia",
+        "variable_b": "dysp",
+        "run_id": 4,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"asia\",\n    \"variable_b\": \"dysp\",\n    \"in_markov_blanket\": true,\n    \"role_of_a\": \"parent\",\n    \"confidence\": 0.9,\n    \"reason\": \"Visiting Asia (asia) can directly cause dyspnea (dysp) as a potential risk factor for lung diseases.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "asia",
+          "variable_b": "dysp",
+          "in_markov_blanket": true,
+          "role_of_a": "parent",
+          "confidence": 0.9,
+          "reason": "Visiting Asia (asia) can directly cause dyspnea (dysp) as a potential risk factor for lung diseases."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "asia",
+        "variable_b": "dysp",
+        "run_id": 5,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"asia\",\n    \"variable_b\": \"dysp\",\n    \"in_markov_blanket\": true,\n    \"role_of_a\": \"parent\",\n    \"confidence\": 0.9,\n    \"reason\": \"Visiting Asia (asia) can directly cause dyspnea (dysp) as a potential risk factor for lung diseases.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "asia",
+          "variable_b": "dysp",
+          "in_markov_blanket": true,
+          "role_of_a": "parent",
+          "confidence": 0.9,
+          "reason": "Visiting Asia (asia) can directly cause dyspnea (dysp) as a potential risk factor for lung diseases."
+        },
+        "parse_status": "success"
+      }
+    ],
+    "final_role": "parent",
+    "in_markov_blanket": true,
+    "positive_ratio": 1.0,
+    "final_confidence": 0.9,
+    "consistency": 1.0,
+    "relation_count": {
+      "parent": 5
+    }
+  },
+  {
+    "variable_a": "asia",
+    "variable_b": "either",
+    "runs": [
+      {
+        "variable_a": "asia",
+        "variable_b": "either",
+        "run_id": 1,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"asia\",\n    \"variable_b\": \"either\",\n    \"in_markov_blanket\": true,\n    \"role_of_a\": \"parent\",\n    \"confidence\": 0.95,\n    \"reason\": \"Visiting Asia (asia) is a known risk factor for tuberculosis, which is one of the two conditions in 'either'. Therefore, 'asia' directly influences 'either' and is its parent.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "asia",
+          "variable_b": "either",
+          "in_markov_blanket": true,
+          "role_of_a": "parent",
+          "confidence": 0.95,
+          "reason": "Visiting Asia (asia) is a known risk factor for tuberculosis, which is one of the two conditions in 'either'. Therefore, 'asia' directly influences 'either' and is its parent."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "asia",
+        "variable_b": "either",
+        "run_id": 2,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"asia\",\n    \"variable_b\": \"either\",\n    \"in_markov_blanket\": true,\n    \"role_of_a\": \"parent\",\n    \"confidence\": 0.95,\n    \"reason\": \"Visiting Asia (asia) is a known risk factor for tuberculosis, which is one of the two conditions in 'either'. Therefore, 'asia' directly influences 'either' and is its parent.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "asia",
+          "variable_b": "either",
+          "in_markov_blanket": true,
+          "role_of_a": "parent",
+          "confidence": 0.95,
+          "reason": "Visiting Asia (asia) is a known risk factor for tuberculosis, which is one of the two conditions in 'either'. Therefore, 'asia' directly influences 'either' and is its parent."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "asia",
+        "variable_b": "either",
+        "run_id": 3,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"asia\",\n    \"variable_b\": \"either\",\n    \"in_markov_blanket\": true,\n    \"role_of_a\": \"parent\",\n    \"confidence\": 0.95,\n    \"reason\": \"Visiting Asia (asia) is a known risk factor for tuberculosis, which is one of the two conditions in 'either'. Therefore, 'asia' directly influences 'either' and is its parent.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "asia",
+          "variable_b": "either",
+          "in_markov_blanket": true,
+          "role_of_a": "parent",
+          "confidence": 0.95,
+          "reason": "Visiting Asia (asia) is a known risk factor for tuberculosis, which is one of the two conditions in 'either'. Therefore, 'asia' directly influences 'either' and is its parent."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "asia",
+        "variable_b": "either",
+        "run_id": 4,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"asia\",\n    \"variable_b\": \"either\",\n    \"in_markov_blanket\": true,\n    \"role_of_a\": \"parent\",\n    \"confidence\": 0.95,\n    \"reason\": \"Visiting Asia (asia) is a known risk factor for tuberculosis, which is one of the two conditions in 'either'. Therefore, 'asia' directly influences 'either' and is its parent.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "asia",
+          "variable_b": "either",
+          "in_markov_blanket": true,
+          "role_of_a": "parent",
+          "confidence": 0.95,
+          "reason": "Visiting Asia (asia) is a known risk factor for tuberculosis, which is one of the two conditions in 'either'. Therefore, 'asia' directly influences 'either' and is its parent."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "asia",
+        "variable_b": "either",
+        "run_id": 5,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"asia\",\n    \"variable_b\": \"either\",\n    \"in_markov_blanket\": true,\n    \"role_of_a\": \"parent\",\n    \"confidence\": 0.95,\n    \"reason\": \"Visiting Asia (asia) is a known risk factor for tuberculosis, which is one of the two conditions in 'either'. Therefore, 'asia' directly influences 'either' and is its parent.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "asia",
+          "variable_b": "either",
+          "in_markov_blanket": true,
+          "role_of_a": "parent",
+          "confidence": 0.95,
+          "reason": "Visiting Asia (asia) is a known risk factor for tuberculosis, which is one of the two conditions in 'either'. Therefore, 'asia' directly influences 'either' and is its parent."
+        },
+        "parse_status": "success"
+      }
+    ],
+    "final_role": "parent",
+    "in_markov_blanket": true,
+    "positive_ratio": 1.0,
+    "final_confidence": 0.95,
+    "consistency": 1.0,
+    "relation_count": {
+      "parent": 5
+    }
+  },
+  {
+    "variable_a": "asia",
+    "variable_b": "lung",
+    "runs": [
+      {
+        "variable_a": "asia",
+        "variable_b": "lung",
+        "run_id": 1,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"asia\",\n    \"variable_b\": \"lung\",\n    \"in_markov_blanket\": true,\n    \"role_of_a\": \"parent\",\n    \"confidence\": 0.95,\n    \"reason\": \"Visiting Asia (asia) is a known risk factor for lung cancer (lung), so asia directly causes lung.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "asia",
+          "variable_b": "lung",
+          "in_markov_blanket": true,
+          "role_of_a": "parent",
+          "confidence": 0.95,
+          "reason": "Visiting Asia (asia) is a known risk factor for lung cancer (lung), so asia directly causes lung."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "asia",
+        "variable_b": "lung",
+        "run_id": 2,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"asia\",\n    \"variable_b\": \"lung\",\n    \"in_markov_blanket\": true,\n    \"role_of_a\": \"parent\",\n    \"confidence\": 0.95,\n    \"reason\": \"Visiting Asia (asia) is a known risk factor for lung cancer (lung), so asia directly causes lung.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "asia",
+          "variable_b": "lung",
+          "in_markov_blanket": true,
+          "role_of_a": "parent",
+          "confidence": 0.95,
+          "reason": "Visiting Asia (asia) is a known risk factor for lung cancer (lung), so asia directly causes lung."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "asia",
+        "variable_b": "lung",
+        "run_id": 3,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"asia\",\n    \"variable_b\": \"lung\",\n    \"in_markov_blanket\": true,\n    \"role_of_a\": \"parent\",\n    \"confidence\": 0.95,\n    \"reason\": \"Visiting Asia (asia) is a known risk factor for lung cancer (lung), so asia directly causes lung.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "asia",
+          "variable_b": "lung",
+          "in_markov_blanket": true,
+          "role_of_a": "parent",
+          "confidence": 0.95,
+          "reason": "Visiting Asia (asia) is a known risk factor for lung cancer (lung), so asia directly causes lung."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "asia",
+        "variable_b": "lung",
+        "run_id": 4,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"asia\",\n    \"variable_b\": \"lung\",\n    \"in_markov_blanket\": true,\n    \"role_of_a\": \"parent\",\n    \"confidence\": 0.95,\n    \"reason\": \"Visiting Asia (asia) is a known risk factor for lung cancer (lung), so asia directly causes lung.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "asia",
+          "variable_b": "lung",
+          "in_markov_blanket": true,
+          "role_of_a": "parent",
+          "confidence": 0.95,
+          "reason": "Visiting Asia (asia) is a known risk factor for lung cancer (lung), so asia directly causes lung."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "asia",
+        "variable_b": "lung",
+        "run_id": 5,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"asia\",\n    \"variable_b\": \"lung\",\n    \"in_markov_blanket\": true,\n    \"role_of_a\": \"parent\",\n    \"confidence\": 0.95,\n    \"reason\": \"Visiting Asia (asia) is a known risk factor for lung cancer (lung), so asia directly causes lung.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "asia",
+          "variable_b": "lung",
+          "in_markov_blanket": true,
+          "role_of_a": "parent",
+          "confidence": 0.95,
+          "reason": "Visiting Asia (asia) is a known risk factor for lung cancer (lung), so asia directly causes lung."
+        },
+        "parse_status": "success"
+      }
+    ],
+    "final_role": "parent",
+    "in_markov_blanket": true,
+    "positive_ratio": 1.0,
+    "final_confidence": 0.95,
+    "consistency": 1.0,
+    "relation_count": {
+      "parent": 5
+    }
+  },
+  {
+    "variable_a": "asia",
+    "variable_b": "smoke",
+    "runs": [
+      {
+        "variable_a": "asia",
+        "variable_b": "smoke",
+        "run_id": 1,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"asia\",\n    \"variable_b\": \"smoke\",\n    \"in_markov_blanket\": true,\n    \"role_of_a\": \"parent\",\n    \"confidence\": 0.9,\n    \"reason\": \"Visiting Asia (asia) can directly influence the likelihood of lung disease, which may be related to smoking (smoke).\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "asia",
+          "variable_b": "smoke",
+          "in_markov_blanket": true,
+          "role_of_a": "parent",
+          "confidence": 0.9,
+          "reason": "Visiting Asia (asia) can directly influence the likelihood of lung disease, which may be related to smoking (smoke)."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "asia",
+        "variable_b": "smoke",
+        "run_id": 2,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"asia\",\n    \"variable_b\": \"smoke\",\n    \"in_markov_blanket\": true,\n    \"role_of_a\": \"parent\",\n    \"confidence\": 0.9,\n    \"reason\": \"Visiting Asia (asia) can directly influence the likelihood of lung disease, which may be related to smoking (smoke).\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "asia",
+          "variable_b": "smoke",
+          "in_markov_blanket": true,
+          "role_of_a": "parent",
+          "confidence": 0.9,
+          "reason": "Visiting Asia (asia) can directly influence the likelihood of lung disease, which may be related to smoking (smoke)."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "asia",
+        "variable_b": "smoke",
+        "run_id": 3,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"asia\",\n    \"variable_b\": \"smoke\",\n    \"in_markov_blanket\": true,\n    \"role_of_a\": \"parent\",\n    \"confidence\": 0.9,\n    \"reason\": \"Visiting Asia (asia) can directly influence the likelihood of lung disease, which may be related to smoking (smoke).\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "asia",
+          "variable_b": "smoke",
+          "in_markov_blanket": true,
+          "role_of_a": "parent",
+          "confidence": 0.9,
+          "reason": "Visiting Asia (asia) can directly influence the likelihood of lung disease, which may be related to smoking (smoke)."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "asia",
+        "variable_b": "smoke",
+        "run_id": 4,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"asia\",\n    \"variable_b\": \"smoke\",\n    \"in_markov_blanket\": true,\n    \"role_of_a\": \"parent\",\n    \"confidence\": 0.9,\n    \"reason\": \"Visiting Asia (asia) can directly influence the likelihood of lung disease, which may be related to smoking (smoke).\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "asia",
+          "variable_b": "smoke",
+          "in_markov_blanket": true,
+          "role_of_a": "parent",
+          "confidence": 0.9,
+          "reason": "Visiting Asia (asia) can directly influence the likelihood of lung disease, which may be related to smoking (smoke)."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "asia",
+        "variable_b": "smoke",
+        "run_id": 5,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"asia\",\n    \"variable_b\": \"smoke\",\n    \"in_markov_blanket\": true,\n    \"role_of_a\": \"parent\",\n    \"confidence\": 0.9,\n    \"reason\": \"Visiting Asia (asia) can directly influence the likelihood of lung disease, which may be related to smoking (smoke).\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "asia",
+          "variable_b": "smoke",
+          "in_markov_blanket": true,
+          "role_of_a": "parent",
+          "confidence": 0.9,
+          "reason": "Visiting Asia (asia) can directly influence the likelihood of lung disease, which may be related to smoking (smoke)."
+        },
+        "parse_status": "success"
+      }
+    ],
+    "final_role": "parent",
+    "in_markov_blanket": true,
+    "positive_ratio": 1.0,
+    "final_confidence": 0.9,
+    "consistency": 1.0,
+    "relation_count": {
+      "parent": 5
+    }
+  },
+  {
+    "variable_a": "asia",
+    "variable_b": "tub",
+    "runs": [
+      {
+        "variable_a": "asia",
+        "variable_b": "tub",
+        "run_id": 1,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"asia\",\n    \"variable_b\": \"tub\",\n    \"in_markov_blanket\": true,\n    \"role_of_a\": \"parent\",\n    \"confidence\": 0.95,\n    \"reason\": \"Visiting Asia (asia) is a known risk factor for tuberculosis (tub), so asia directly causes tub.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "asia",
+          "variable_b": "tub",
+          "in_markov_blanket": true,
+          "role_of_a": "parent",
+          "confidence": 0.95,
+          "reason": "Visiting Asia (asia) is a known risk factor for tuberculosis (tub), so asia directly causes tub."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "asia",
+        "variable_b": "tub",
+        "run_id": 2,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"asia\",\n    \"variable_b\": \"tub\",\n    \"in_markov_blanket\": true,\n    \"role_of_a\": \"parent\",\n    \"confidence\": 0.95,\n    \"reason\": \"Visiting Asia (asia) is a known risk factor for tuberculosis (tub), so asia directly causes tub.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "asia",
+          "variable_b": "tub",
+          "in_markov_blanket": true,
+          "role_of_a": "parent",
+          "confidence": 0.95,
+          "reason": "Visiting Asia (asia) is a known risk factor for tuberculosis (tub), so asia directly causes tub."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "asia",
+        "variable_b": "tub",
+        "run_id": 3,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"asia\",\n    \"variable_b\": \"tub\",\n    \"in_markov_blanket\": true,\n    \"role_of_a\": \"parent\",\n    \"confidence\": 0.95,\n    \"reason\": \"Visiting Asia (asia) is a known risk factor for tuberculosis (tub), so asia directly causes tub.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "asia",
+          "variable_b": "tub",
+          "in_markov_blanket": true,
+          "role_of_a": "parent",
+          "confidence": 0.95,
+          "reason": "Visiting Asia (asia) is a known risk factor for tuberculosis (tub), so asia directly causes tub."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "asia",
+        "variable_b": "tub",
+        "run_id": 4,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"asia\",\n    \"variable_b\": \"tub\",\n    \"in_markov_blanket\": true,\n    \"role_of_a\": \"parent\",\n    \"confidence\": 0.95,\n    \"reason\": \"Visiting Asia (asia) is a known risk factor for tuberculosis (tub), so asia directly causes tub.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "asia",
+          "variable_b": "tub",
+          "in_markov_blanket": true,
+          "role_of_a": "parent",
+          "confidence": 0.95,
+          "reason": "Visiting Asia (asia) is a known risk factor for tuberculosis (tub), so asia directly causes tub."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "asia",
+        "variable_b": "tub",
+        "run_id": 5,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"asia\",\n    \"variable_b\": \"tub\",\n    \"in_markov_blanket\": true,\n    \"role_of_a\": \"parent\",\n    \"confidence\": 0.95,\n    \"reason\": \"Visiting Asia (asia) is a known risk factor for tuberculosis (tub), so asia directly causes tub.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "asia",
+          "variable_b": "tub",
+          "in_markov_blanket": true,
+          "role_of_a": "parent",
+          "confidence": 0.95,
+          "reason": "Visiting Asia (asia) is a known risk factor for tuberculosis (tub), so asia directly causes tub."
+        },
+        "parse_status": "success"
+      }
+    ],
+    "final_role": "parent",
+    "in_markov_blanket": true,
+    "positive_ratio": 1.0,
+    "final_confidence": 0.95,
+    "consistency": 1.0,
+    "relation_count": {
+      "parent": 5
+    }
+  },
+  {
+    "variable_a": "asia",
+    "variable_b": "xray",
+    "runs": [
+      {
+        "variable_a": "asia",
+        "variable_b": "xray",
+        "run_id": 1,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"asia\",\n    \"variable_b\": \"xray\",\n    \"in_markov_blanket\": true,\n    \"role_of_a\": \"parent\",\n    \"confidence\": 0.95,\n    \"reason\": \"Visiting Asia (asia) is a direct cause of an abnormal chest X-ray (xray) in the context of lung disease diagnosis.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "asia",
+          "variable_b": "xray",
+          "in_markov_blanket": true,
+          "role_of_a": "parent",
+          "confidence": 0.95,
+          "reason": "Visiting Asia (asia) is a direct cause of an abnormal chest X-ray (xray) in the context of lung disease diagnosis."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "asia",
+        "variable_b": "xray",
+        "run_id": 2,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"asia\",\n    \"variable_b\": \"xray\",\n    \"in_markov_blanket\": true,\n    \"role_of_a\": \"parent\",\n    \"confidence\": 0.95,\n    \"reason\": \"Visiting Asia (asia) is a direct cause of an abnormal chest X-ray (xray) in the context of lung disease diagnosis.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "asia",
+          "variable_b": "xray",
+          "in_markov_blanket": true,
+          "role_of_a": "parent",
+          "confidence": 0.95,
+          "reason": "Visiting Asia (asia) is a direct cause of an abnormal chest X-ray (xray) in the context of lung disease diagnosis."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "asia",
+        "variable_b": "xray",
+        "run_id": 3,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"asia\",\n    \"variable_b\": \"xray\",\n    \"in_markov_blanket\": true,\n    \"role_of_a\": \"parent\",\n    \"confidence\": 0.95,\n    \"reason\": \"Visiting Asia (asia) is a direct cause of an abnormal chest X-ray (xray) in the context of lung disease diagnosis.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "asia",
+          "variable_b": "xray",
+          "in_markov_blanket": true,
+          "role_of_a": "parent",
+          "confidence": 0.95,
+          "reason": "Visiting Asia (asia) is a direct cause of an abnormal chest X-ray (xray) in the context of lung disease diagnosis."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "asia",
+        "variable_b": "xray",
+        "run_id": 4,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"asia\",\n    \"variable_b\": \"xray\",\n    \"in_markov_blanket\": true,\n    \"role_of_a\": \"parent\",\n    \"confidence\": 0.95,\n    \"reason\": \"Visiting Asia (asia) is a direct cause of an abnormal chest X-ray (xray) in the context of lung disease diagnosis.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "asia",
+          "variable_b": "xray",
+          "in_markov_blanket": true,
+          "role_of_a": "parent",
+          "confidence": 0.95,
+          "reason": "Visiting Asia (asia) is a direct cause of an abnormal chest X-ray (xray) in the context of lung disease diagnosis."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "asia",
+        "variable_b": "xray",
+        "run_id": 5,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"asia\",\n    \"variable_b\": \"xray\",\n    \"in_markov_blanket\": true,\n    \"role_of_a\": \"parent\",\n    \"confidence\": 0.95,\n    \"reason\": \"Visiting Asia (asia) is a direct cause of an abnormal chest X-ray (xray) in the context of lung disease diagnosis.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "asia",
+          "variable_b": "xray",
+          "in_markov_blanket": true,
+          "role_of_a": "parent",
+          "confidence": 0.95,
+          "reason": "Visiting Asia (asia) is a direct cause of an abnormal chest X-ray (xray) in the context of lung disease diagnosis."
+        },
+        "parse_status": "success"
+      }
+    ],
+    "final_role": "parent",
+    "in_markov_blanket": true,
+    "positive_ratio": 1.0,
+    "final_confidence": 0.95,
+    "consistency": 1.0,
+    "relation_count": {
+      "parent": 5
+    }
+  },
+  {
+    "variable_a": "bronc",
+    "variable_b": "dysp",
+    "runs": [
+      {
+        "variable_a": "bronc",
+        "variable_b": "dysp",
+        "run_id": 1,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"bronc\",\n    \"variable_b\": \"dysp\",\n    \"in_markov_blanket\": true,\n    \"role_of_a\": \"parent\",\n    \"confidence\": 0.9,\n    \"reason\": \"Bronchitis (bronc) can directly cause dyspnea (dysp) as a symptom, making bronc a parent of dysp.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "bronc",
+          "variable_b": "dysp",
+          "in_markov_blanket": true,
+          "role_of_a": "parent",
+          "confidence": 0.9,
+          "reason": "Bronchitis (bronc) can directly cause dyspnea (dysp) as a symptom, making bronc a parent of dysp."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "bronc",
+        "variable_b": "dysp",
+        "run_id": 2,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"bronc\",\n    \"variable_b\": \"dysp\",\n    \"in_markov_blanket\": true,\n    \"role_of_a\": \"parent\",\n    \"confidence\": 0.9,\n    \"reason\": \"Bronchitis (bronc) can directly cause dyspnea (dysp) as a symptom, making bronc a parent of dysp.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "bronc",
+          "variable_b": "dysp",
+          "in_markov_blanket": true,
+          "role_of_a": "parent",
+          "confidence": 0.9,
+          "reason": "Bronchitis (bronc) can directly cause dyspnea (dysp) as a symptom, making bronc a parent of dysp."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "bronc",
+        "variable_b": "dysp",
+        "run_id": 3,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"bronc\",\n    \"variable_b\": \"dysp\",\n    \"in_markov_blanket\": true,\n    \"role_of_a\": \"parent\",\n    \"confidence\": 0.9,\n    \"reason\": \"Bronchitis (bronc) can directly cause dyspnea (dysp) as a symptom, making bronc a parent of dysp.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "bronc",
+          "variable_b": "dysp",
+          "in_markov_blanket": true,
+          "role_of_a": "parent",
+          "confidence": 0.9,
+          "reason": "Bronchitis (bronc) can directly cause dyspnea (dysp) as a symptom, making bronc a parent of dysp."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "bronc",
+        "variable_b": "dysp",
+        "run_id": 4,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"bronc\",\n    \"variable_b\": \"dysp\",\n    \"in_markov_blanket\": true,\n    \"role_of_a\": \"parent\",\n    \"confidence\": 0.9,\n    \"reason\": \"Bronchitis (bronc) can directly cause dyspnea (dysp) as a symptom, making bronc a parent of dysp.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "bronc",
+          "variable_b": "dysp",
+          "in_markov_blanket": true,
+          "role_of_a": "parent",
+          "confidence": 0.9,
+          "reason": "Bronchitis (bronc) can directly cause dyspnea (dysp) as a symptom, making bronc a parent of dysp."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "bronc",
+        "variable_b": "dysp",
+        "run_id": 5,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"bronc\",\n    \"variable_b\": \"dysp\",\n    \"in_markov_blanket\": true,\n    \"role_of_a\": \"parent\",\n    \"confidence\": 0.9,\n    \"reason\": \"Bronchitis (bronc) can directly cause dyspnea (dysp) as a symptom, making bronc a parent of dysp.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "bronc",
+          "variable_b": "dysp",
+          "in_markov_blanket": true,
+          "role_of_a": "parent",
+          "confidence": 0.9,
+          "reason": "Bronchitis (bronc) can directly cause dyspnea (dysp) as a symptom, making bronc a parent of dysp."
+        },
+        "parse_status": "success"
+      }
+    ],
+    "final_role": "parent",
+    "in_markov_blanket": true,
+    "positive_ratio": 1.0,
+    "final_confidence": 0.9,
+    "consistency": 1.0,
+    "relation_count": {
+      "parent": 5
+    }
+  },
+  {
+    "variable_a": "bronc",
+    "variable_b": "either",
+    "runs": [
+      {
+        "variable_a": "bronc",
+        "variable_b": "either",
+        "run_id": 1,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"bronc\",\n    \"variable_b\": \"either\",\n    \"in_markov_blanket\": true,\n    \"role_of_a\": \"spouse\",\n    \"confidence\": 0.9,\n    \"reason\": \"Bronchitis (bronc) and either tuberculosis or lung cancer (either) both contribute to the common effect of lung disease, making them spouses.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "bronc",
+          "variable_b": "either",
+          "in_markov_blanket": true,
+          "role_of_a": "spouse",
+          "confidence": 0.9,
+          "reason": "Bronchitis (bronc) and either tuberculosis or lung cancer (either) both contribute to the common effect of lung disease, making them spouses."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "bronc",
+        "variable_b": "either",
+        "run_id": 2,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"bronc\",\n    \"variable_b\": \"either\",\n    \"in_markov_blanket\": true,\n    \"role_of_a\": \"spouse\",\n    \"confidence\": 0.9,\n    \"reason\": \"Bronchitis (bronc) and either tuberculosis or lung cancer (either) both contribute to the common effect of lung disease, making them spouses.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "bronc",
+          "variable_b": "either",
+          "in_markov_blanket": true,
+          "role_of_a": "spouse",
+          "confidence": 0.9,
+          "reason": "Bronchitis (bronc) and either tuberculosis or lung cancer (either) both contribute to the common effect of lung disease, making them spouses."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "bronc",
+        "variable_b": "either",
+        "run_id": 3,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"bronc\",\n    \"variable_b\": \"either\",\n    \"in_markov_blanket\": true,\n    \"role_of_a\": \"spouse\",\n    \"confidence\": 0.9,\n    \"reason\": \"Bronchitis (bronc) and either tuberculosis or lung cancer (either) both contribute to the common effect of lung disease, making them spouses.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "bronc",
+          "variable_b": "either",
+          "in_markov_blanket": true,
+          "role_of_a": "spouse",
+          "confidence": 0.9,
+          "reason": "Bronchitis (bronc) and either tuberculosis or lung cancer (either) both contribute to the common effect of lung disease, making them spouses."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "bronc",
+        "variable_b": "either",
+        "run_id": 4,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"bronc\",\n    \"variable_b\": \"either\",\n    \"in_markov_blanket\": true,\n    \"role_of_a\": \"spouse\",\n    \"confidence\": 0.9,\n    \"reason\": \"Bronchitis (bronc) and either tuberculosis or lung cancer (either) both contribute to the common effect of lung disease, making them spouses.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "bronc",
+          "variable_b": "either",
+          "in_markov_blanket": true,
+          "role_of_a": "spouse",
+          "confidence": 0.9,
+          "reason": "Bronchitis (bronc) and either tuberculosis or lung cancer (either) both contribute to the common effect of lung disease, making them spouses."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "bronc",
+        "variable_b": "either",
+        "run_id": 5,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"bronc\",\n    \"variable_b\": \"either\",\n    \"in_markov_blanket\": true,\n    \"role_of_a\": \"spouse\",\n    \"confidence\": 0.9,\n    \"reason\": \"Bronchitis (bronc) and either tuberculosis or lung cancer (either) both contribute to the common effect of lung disease, making them spouses.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "bronc",
+          "variable_b": "either",
+          "in_markov_blanket": true,
+          "role_of_a": "spouse",
+          "confidence": 0.9,
+          "reason": "Bronchitis (bronc) and either tuberculosis or lung cancer (either) both contribute to the common effect of lung disease, making them spouses."
+        },
+        "parse_status": "success"
+      }
+    ],
+    "final_role": "spouse",
+    "in_markov_blanket": true,
+    "positive_ratio": 1.0,
+    "final_confidence": 0.9,
+    "consistency": 1.0,
+    "relation_count": {
+      "spouse": 5
+    }
+  },
+  {
+    "variable_a": "bronc",
+    "variable_b": "xray",
+    "runs": [
+      {
+        "variable_a": "bronc",
+        "variable_b": "xray",
+        "run_id": 1,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"bronc\",\n    \"variable_b\": \"xray\",\n    \"in_markov_blanket\": true,\n    \"role_of_a\": \"parent\",\n    \"confidence\": 0.9,\n    \"reason\": \"Bronchitis (bronc) can directly cause an abnormal chest X-ray (xray) as bronchitis is a known lung condition that may lead to abnormal X-ray results.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "bronc",
+          "variable_b": "xray",
+          "in_markov_blanket": true,
+          "role_of_a": "parent",
+          "confidence": 0.9,
+          "reason": "Bronchitis (bronc) can directly cause an abnormal chest X-ray (xray) as bronchitis is a known lung condition that may lead to abnormal X-ray results."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "bronc",
+        "variable_b": "xray",
+        "run_id": 2,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"bronc\",\n    \"variable_b\": \"xray\",\n    \"in_markov_blanket\": true,\n    \"role_of_a\": \"parent\",\n    \"confidence\": 0.9,\n    \"reason\": \"Bronchitis (bronc) can directly cause an abnormal chest X-ray (xray) as bronchitis is a known lung condition that may lead to abnormal X-ray results.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "bronc",
+          "variable_b": "xray",
+          "in_markov_blanket": true,
+          "role_of_a": "parent",
+          "confidence": 0.9,
+          "reason": "Bronchitis (bronc) can directly cause an abnormal chest X-ray (xray) as bronchitis is a known lung condition that may lead to abnormal X-ray results."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "bronc",
+        "variable_b": "xray",
+        "run_id": 3,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"bronc\",\n    \"variable_b\": \"xray\",\n    \"in_markov_blanket\": true,\n    \"role_of_a\": \"parent\",\n    \"confidence\": 0.9,\n    \"reason\": \"Bronchitis (bronc) can directly cause an abnormal chest X-ray (xray) as bronchitis is a known lung condition that may lead to abnormal X-ray results.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "bronc",
+          "variable_b": "xray",
+          "in_markov_blanket": true,
+          "role_of_a": "parent",
+          "confidence": 0.9,
+          "reason": "Bronchitis (bronc) can directly cause an abnormal chest X-ray (xray) as bronchitis is a known lung condition that may lead to abnormal X-ray results."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "bronc",
+        "variable_b": "xray",
+        "run_id": 4,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"bronc\",\n    \"variable_b\": \"xray\",\n    \"in_markov_blanket\": true,\n    \"role_of_a\": \"parent\",\n    \"confidence\": 0.9,\n    \"reason\": \"Bronchitis (bronc) can directly cause an abnormal chest X-ray (xray) as bronchitis is a known lung condition that may lead to abnormal X-ray results.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "bronc",
+          "variable_b": "xray",
+          "in_markov_blanket": true,
+          "role_of_a": "parent",
+          "confidence": 0.9,
+          "reason": "Bronchitis (bronc) can directly cause an abnormal chest X-ray (xray) as bronchitis is a known lung condition that may lead to abnormal X-ray results."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "bronc",
+        "variable_b": "xray",
+        "run_id": 5,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"bronc\",\n    \"variable_b\": \"xray\",\n    \"in_markov_blanket\": true,\n    \"role_of_a\": \"parent\",\n    \"confidence\": 0.9,\n    \"reason\": \"Bronchitis (bronc) can directly cause an abnormal chest X-ray (xray) as bronchitis is a known lung condition that may lead to abnormal X-ray results.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "bronc",
+          "variable_b": "xray",
+          "in_markov_blanket": true,
+          "role_of_a": "parent",
+          "confidence": 0.9,
+          "reason": "Bronchitis (bronc) can directly cause an abnormal chest X-ray (xray) as bronchitis is a known lung condition that may lead to abnormal X-ray results."
+        },
+        "parse_status": "success"
+      }
+    ],
+    "final_role": "parent",
+    "in_markov_blanket": true,
+    "positive_ratio": 1.0,
+    "final_confidence": 0.9,
+    "consistency": 1.0,
+    "relation_count": {
+      "parent": 5
+    }
+  },
+  {
+    "variable_a": "either",
+    "variable_b": "dysp",
+    "runs": [
+      {
+        "variable_a": "either",
+        "variable_b": "dysp",
+        "run_id": 1,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"either\",\n    \"variable_b\": \"dysp\",\n    \"in_markov_blanket\": true,\n    \"role_of_a\": \"parent\",\n    \"confidence\": 0.95,\n    \"reason\": \"Either (tuberculosis or lung cancer) can directly cause dyspnea, making 'either' a parent of 'dysp'.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "either",
+          "variable_b": "dysp",
+          "in_markov_blanket": true,
+          "role_of_a": "parent",
+          "confidence": 0.95,
+          "reason": "Either (tuberculosis or lung cancer) can directly cause dyspnea, making 'either' a parent of 'dysp'."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "either",
+        "variable_b": "dysp",
+        "run_id": 2,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"either\",\n    \"variable_b\": \"dysp\",\n    \"in_markov_blanket\": true,\n    \"role_of_a\": \"parent\",\n    \"confidence\": 0.95,\n    \"reason\": \"Either (tuberculosis or lung cancer) can directly cause dyspnea, making 'either' a parent of 'dysp'.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "either",
+          "variable_b": "dysp",
+          "in_markov_blanket": true,
+          "role_of_a": "parent",
+          "confidence": 0.95,
+          "reason": "Either (tuberculosis or lung cancer) can directly cause dyspnea, making 'either' a parent of 'dysp'."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "either",
+        "variable_b": "dysp",
+        "run_id": 3,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"either\",\n    \"variable_b\": \"dysp\",\n    \"in_markov_blanket\": true,\n    \"role_of_a\": \"parent\",\n    \"confidence\": 0.95,\n    \"reason\": \"Either (tuberculosis or lung cancer) can directly cause dyspnea, making 'either' a parent of 'dysp'.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "either",
+          "variable_b": "dysp",
+          "in_markov_blanket": true,
+          "role_of_a": "parent",
+          "confidence": 0.95,
+          "reason": "Either (tuberculosis or lung cancer) can directly cause dyspnea, making 'either' a parent of 'dysp'."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "either",
+        "variable_b": "dysp",
+        "run_id": 4,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"either\",\n    \"variable_b\": \"dysp\",\n    \"in_markov_blanket\": true,\n    \"role_of_a\": \"parent\",\n    \"confidence\": 0.95,\n    \"reason\": \"Either (tuberculosis or lung cancer) can directly cause dyspnea, making 'either' a parent of 'dysp'.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "either",
+          "variable_b": "dysp",
+          "in_markov_blanket": true,
+          "role_of_a": "parent",
+          "confidence": 0.95,
+          "reason": "Either (tuberculosis or lung cancer) can directly cause dyspnea, making 'either' a parent of 'dysp'."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "either",
+        "variable_b": "dysp",
+        "run_id": 5,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"either\",\n    \"variable_b\": \"dysp\",\n    \"in_markov_blanket\": true,\n    \"role_of_a\": \"parent\",\n    \"confidence\": 0.95,\n    \"reason\": \"Either (tuberculosis or lung cancer) can directly cause dyspnea, making 'either' a parent of 'dysp'.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "either",
+          "variable_b": "dysp",
+          "in_markov_blanket": true,
+          "role_of_a": "parent",
+          "confidence": 0.95,
+          "reason": "Either (tuberculosis or lung cancer) can directly cause dyspnea, making 'either' a parent of 'dysp'."
+        },
+        "parse_status": "success"
+      }
+    ],
+    "final_role": "parent",
+    "in_markov_blanket": true,
+    "positive_ratio": 1.0,
+    "final_confidence": 0.95,
+    "consistency": 1.0,
+    "relation_count": {
+      "parent": 5
+    }
+  },
+  {
+    "variable_a": "either",
+    "variable_b": "xray",
+    "runs": [
+      {
+        "variable_a": "either",
+        "variable_b": "xray",
+        "run_id": 1,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"either\",\n    \"variable_b\": \"xray\",\n    \"in_markov_blanket\": true,\n    \"role_of_a\": \"parent\",\n    \"confidence\": 0.95,\n    \"reason\": \"The variable 'either' represents the presence of tuberculosis or lung cancer, which directly influences the X-ray result (abnormal or normal). Therefore, 'either' is a parent of 'xray'.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "either",
+          "variable_b": "xray",
+          "in_markov_blanket": true,
+          "role_of_a": "parent",
+          "confidence": 0.95,
+          "reason": "The variable 'either' represents the presence of tuberculosis or lung cancer, which directly influences the X-ray result (abnormal or normal). Therefore, 'either' is a parent of 'xray'."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "either",
+        "variable_b": "xray",
+        "run_id": 2,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"either\",\n    \"variable_b\": \"xray\",\n    \"in_markov_blanket\": true,\n    \"role_of_a\": \"parent\",\n    \"confidence\": 0.95,\n    \"reason\": \"The variable 'either' represents the presence of tuberculosis or lung cancer, which directly influences the X-ray result (abnormal or normal). Therefore, 'either' is a parent of 'xray'.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "either",
+          "variable_b": "xray",
+          "in_markov_blanket": true,
+          "role_of_a": "parent",
+          "confidence": 0.95,
+          "reason": "The variable 'either' represents the presence of tuberculosis or lung cancer, which directly influences the X-ray result (abnormal or normal). Therefore, 'either' is a parent of 'xray'."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "either",
+        "variable_b": "xray",
+        "run_id": 3,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"either\",\n    \"variable_b\": \"xray\",\n    \"in_markov_blanket\": true,\n    \"role_of_a\": \"parent\",\n    \"confidence\": 0.95,\n    \"reason\": \"The variable 'either' represents the presence of tuberculosis or lung cancer, which directly influences the X-ray result (abnormal or normal). Therefore, 'either' is a parent of 'xray'.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "either",
+          "variable_b": "xray",
+          "in_markov_blanket": true,
+          "role_of_a": "parent",
+          "confidence": 0.95,
+          "reason": "The variable 'either' represents the presence of tuberculosis or lung cancer, which directly influences the X-ray result (abnormal or normal). Therefore, 'either' is a parent of 'xray'."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "either",
+        "variable_b": "xray",
+        "run_id": 4,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"either\",\n    \"variable_b\": \"xray\",\n    \"in_markov_blanket\": true,\n    \"role_of_a\": \"parent\",\n    \"confidence\": 0.95,\n    \"reason\": \"The variable 'either' represents the presence of tuberculosis or lung cancer, which directly influences the X-ray result (abnormal or normal). Therefore, 'either' is a parent of 'xray'.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "either",
+          "variable_b": "xray",
+          "in_markov_blanket": true,
+          "role_of_a": "parent",
+          "confidence": 0.95,
+          "reason": "The variable 'either' represents the presence of tuberculosis or lung cancer, which directly influences the X-ray result (abnormal or normal). Therefore, 'either' is a parent of 'xray'."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "either",
+        "variable_b": "xray",
+        "run_id": 5,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"either\",\n    \"variable_b\": \"xray\",\n    \"in_markov_blanket\": true,\n    \"role_of_a\": \"parent\",\n    \"confidence\": 0.95,\n    \"reason\": \"The variable 'either' represents the presence of tuberculosis or lung cancer, which directly influences the X-ray result (abnormal or normal). Therefore, 'either' is a parent of 'xray'.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "either",
+          "variable_b": "xray",
+          "in_markov_blanket": true,
+          "role_of_a": "parent",
+          "confidence": 0.95,
+          "reason": "The variable 'either' represents the presence of tuberculosis or lung cancer, which directly influences the X-ray result (abnormal or normal). Therefore, 'either' is a parent of 'xray'."
+        },
+        "parse_status": "success"
+      }
+    ],
+    "final_role": "parent",
+    "in_markov_blanket": true,
+    "positive_ratio": 1.0,
+    "final_confidence": 0.95,
+    "consistency": 1.0,
+    "relation_count": {
+      "parent": 5
+    }
+  },
+  {
+    "variable_a": "lung",
+    "variable_b": "bronc",
+    "runs": [
+      {
+        "variable_a": "lung",
+        "variable_b": "bronc",
+        "run_id": 1,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"lung\",\n    \"variable_b\": \"bronc\",\n    \"in_markov_blanket\": true,\n    \"role_of_a\": \"spouse\",\n    \"confidence\": 0.9,\n    \"reason\": \"Lung cancer and bronchitis are both causes of dyspnea, making them spouses.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "lung",
+          "variable_b": "bronc",
+          "in_markov_blanket": true,
+          "role_of_a": "spouse",
+          "confidence": 0.9,
+          "reason": "Lung cancer and bronchitis are both causes of dyspnea, making them spouses."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "lung",
+        "variable_b": "bronc",
+        "run_id": 2,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"lung\",\n    \"variable_b\": \"bronc\",\n    \"in_markov_blanket\": true,\n    \"role_of_a\": \"spouse\",\n    \"confidence\": 0.9,\n    \"reason\": \"Lung cancer and bronchitis are both causes of dyspnea, making them spouses.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "lung",
+          "variable_b": "bronc",
+          "in_markov_blanket": true,
+          "role_of_a": "spouse",
+          "confidence": 0.9,
+          "reason": "Lung cancer and bronchitis are both causes of dyspnea, making them spouses."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "lung",
+        "variable_b": "bronc",
+        "run_id": 3,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"lung\",\n    \"variable_b\": \"bronc\",\n    \"in_markov_blanket\": true,\n    \"role_of_a\": \"spouse\",\n    \"confidence\": 0.9,\n    \"reason\": \"Lung cancer and bronchitis are both causes of dyspnea, making them spouses.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "lung",
+          "variable_b": "bronc",
+          "in_markov_blanket": true,
+          "role_of_a": "spouse",
+          "confidence": 0.9,
+          "reason": "Lung cancer and bronchitis are both causes of dyspnea, making them spouses."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "lung",
+        "variable_b": "bronc",
+        "run_id": 4,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"lung\",\n    \"variable_b\": \"bronc\",\n    \"in_markov_blanket\": true,\n    \"role_of_a\": \"spouse\",\n    \"confidence\": 0.9,\n    \"reason\": \"Lung cancer and bronchitis are both causes of dyspnea, making them spouses.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "lung",
+          "variable_b": "bronc",
+          "in_markov_blanket": true,
+          "role_of_a": "spouse",
+          "confidence": 0.9,
+          "reason": "Lung cancer and bronchitis are both causes of dyspnea, making them spouses."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "lung",
+        "variable_b": "bronc",
+        "run_id": 5,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"lung\",\n    \"variable_b\": \"bronc\",\n    \"in_markov_blanket\": true,\n    \"role_of_a\": \"spouse\",\n    \"confidence\": 0.9,\n    \"reason\": \"Lung cancer and bronchitis are both causes of dyspnea, making them spouses.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "lung",
+          "variable_b": "bronc",
+          "in_markov_blanket": true,
+          "role_of_a": "spouse",
+          "confidence": 0.9,
+          "reason": "Lung cancer and bronchitis are both causes of dyspnea, making them spouses."
+        },
+        "parse_status": "success"
+      }
+    ],
+    "final_role": "spouse",
+    "in_markov_blanket": true,
+    "positive_ratio": 1.0,
+    "final_confidence": 0.9,
+    "consistency": 1.0,
+    "relation_count": {
+      "spouse": 5
+    }
+  },
+  {
+    "variable_a": "lung",
+    "variable_b": "dysp",
+    "runs": [
+      {
+        "variable_a": "lung",
+        "variable_b": "dysp",
+        "run_id": 1,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"lung\",\n    \"variable_b\": \"dysp\",\n    \"in_markov_blanket\": true,\n    \"role_of_a\": \"parent\",\n    \"confidence\": 0.95,\n    \"reason\": \"Lung cancer can directly cause dyspnea, making 'lung' a parent of 'dysp' in the causal structure.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "lung",
+          "variable_b": "dysp",
+          "in_markov_blanket": true,
+          "role_of_a": "parent",
+          "confidence": 0.95,
+          "reason": "Lung cancer can directly cause dyspnea, making 'lung' a parent of 'dysp' in the causal structure."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "lung",
+        "variable_b": "dysp",
+        "run_id": 2,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"lung\",\n    \"variable_b\": \"dysp\",\n    \"in_markov_blanket\": true,\n    \"role_of_a\": \"parent\",\n    \"confidence\": 0.95,\n    \"reason\": \"Lung cancer can directly cause dyspnea, making 'lung' a parent of 'dysp' in the causal structure.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "lung",
+          "variable_b": "dysp",
+          "in_markov_blanket": true,
+          "role_of_a": "parent",
+          "confidence": 0.95,
+          "reason": "Lung cancer can directly cause dyspnea, making 'lung' a parent of 'dysp' in the causal structure."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "lung",
+        "variable_b": "dysp",
+        "run_id": 3,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"lung\",\n    \"variable_b\": \"dysp\",\n    \"in_markov_blanket\": true,\n    \"role_of_a\": \"parent\",\n    \"confidence\": 0.95,\n    \"reason\": \"Lung cancer can directly cause dyspnea, making 'lung' a parent of 'dysp' in the causal structure.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "lung",
+          "variable_b": "dysp",
+          "in_markov_blanket": true,
+          "role_of_a": "parent",
+          "confidence": 0.95,
+          "reason": "Lung cancer can directly cause dyspnea, making 'lung' a parent of 'dysp' in the causal structure."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "lung",
+        "variable_b": "dysp",
+        "run_id": 4,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"lung\",\n    \"variable_b\": \"dysp\",\n    \"in_markov_blanket\": true,\n    \"role_of_a\": \"parent\",\n    \"confidence\": 0.95,\n    \"reason\": \"Lung cancer can directly cause dyspnea, making 'lung' a parent of 'dysp' in the causal structure.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "lung",
+          "variable_b": "dysp",
+          "in_markov_blanket": true,
+          "role_of_a": "parent",
+          "confidence": 0.95,
+          "reason": "Lung cancer can directly cause dyspnea, making 'lung' a parent of 'dysp' in the causal structure."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "lung",
+        "variable_b": "dysp",
+        "run_id": 5,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"lung\",\n    \"variable_b\": \"dysp\",\n    \"in_markov_blanket\": true,\n    \"role_of_a\": \"parent\",\n    \"confidence\": 0.95,\n    \"reason\": \"Lung cancer can directly cause dyspnea, making 'lung' a parent of 'dysp' in the causal structure.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "lung",
+          "variable_b": "dysp",
+          "in_markov_blanket": true,
+          "role_of_a": "parent",
+          "confidence": 0.95,
+          "reason": "Lung cancer can directly cause dyspnea, making 'lung' a parent of 'dysp' in the causal structure."
+        },
+        "parse_status": "success"
+      }
+    ],
+    "final_role": "parent",
+    "in_markov_blanket": true,
+    "positive_ratio": 1.0,
+    "final_confidence": 0.95,
+    "consistency": 1.0,
+    "relation_count": {
+      "parent": 5
+    }
+  },
+  {
+    "variable_a": "lung",
+    "variable_b": "either",
+    "runs": [
+      {
+        "variable_a": "lung",
+        "variable_b": "either",
+        "run_id": 1,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"lung\",\n    \"variable_b\": \"either\",\n    \"in_markov_blanket\": true,\n    \"role_of_a\": \"parent\",\n    \"confidence\": 0.95,\n    \"reason\": \"Lung cancer directly causes the patient to have either tuberculosis or lung cancer.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "lung",
+          "variable_b": "either",
+          "in_markov_blanket": true,
+          "role_of_a": "parent",
+          "confidence": 0.95,
+          "reason": "Lung cancer directly causes the patient to have either tuberculosis or lung cancer."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "lung",
+        "variable_b": "either",
+        "run_id": 2,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"lung\",\n    \"variable_b\": \"either\",\n    \"in_markov_blanket\": true,\n    \"role_of_a\": \"parent\",\n    \"confidence\": 0.95,\n    \"reason\": \"Lung cancer directly causes the patient to have either tuberculosis or lung cancer.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "lung",
+          "variable_b": "either",
+          "in_markov_blanket": true,
+          "role_of_a": "parent",
+          "confidence": 0.95,
+          "reason": "Lung cancer directly causes the patient to have either tuberculosis or lung cancer."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "lung",
+        "variable_b": "either",
+        "run_id": 3,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"lung\",\n    \"variable_b\": \"either\",\n    \"in_markov_blanket\": true,\n    \"role_of_a\": \"parent\",\n    \"confidence\": 0.95,\n    \"reason\": \"Lung cancer directly causes the patient to have either tuberculosis or lung cancer.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "lung",
+          "variable_b": "either",
+          "in_markov_blanket": true,
+          "role_of_a": "parent",
+          "confidence": 0.95,
+          "reason": "Lung cancer directly causes the patient to have either tuberculosis or lung cancer."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "lung",
+        "variable_b": "either",
+        "run_id": 4,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"lung\",\n    \"variable_b\": \"either\",\n    \"in_markov_blanket\": true,\n    \"role_of_a\": \"parent\",\n    \"confidence\": 0.95,\n    \"reason\": \"Lung cancer directly causes the patient to have either tuberculosis or lung cancer.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "lung",
+          "variable_b": "either",
+          "in_markov_blanket": true,
+          "role_of_a": "parent",
+          "confidence": 0.95,
+          "reason": "Lung cancer directly causes the patient to have either tuberculosis or lung cancer."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "lung",
+        "variable_b": "either",
+        "run_id": 5,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"lung\",\n    \"variable_b\": \"either\",\n    \"in_markov_blanket\": true,\n    \"role_of_a\": \"parent\",\n    \"confidence\": 0.95,\n    \"reason\": \"Lung cancer directly causes the patient to have either tuberculosis or lung cancer.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "lung",
+          "variable_b": "either",
+          "in_markov_blanket": true,
+          "role_of_a": "parent",
+          "confidence": 0.95,
+          "reason": "Lung cancer directly causes the patient to have either tuberculosis or lung cancer."
+        },
+        "parse_status": "success"
+      }
+    ],
+    "final_role": "parent",
+    "in_markov_blanket": true,
+    "positive_ratio": 1.0,
+    "final_confidence": 0.95,
+    "consistency": 1.0,
+    "relation_count": {
+      "parent": 5
+    }
+  },
+  {
+    "variable_a": "lung",
+    "variable_b": "xray",
+    "runs": [
+      {
+        "variable_a": "lung",
+        "variable_b": "xray",
+        "run_id": 1,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"lung\",\n    \"variable_b\": \"xray\",\n    \"in_markov_blanket\": true,\n    \"role_of_a\": \"parent\",\n    \"confidence\": 0.95,\n    \"reason\": \"Lung cancer can directly cause an abnormal chest X-ray result, so lung is a parent of xray.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "lung",
+          "variable_b": "xray",
+          "in_markov_blanket": true,
+          "role_of_a": "parent",
+          "confidence": 0.95,
+          "reason": "Lung cancer can directly cause an abnormal chest X-ray result, so lung is a parent of xray."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "lung",
+        "variable_b": "xray",
+        "run_id": 2,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"lung\",\n    \"variable_b\": \"xray\",\n    \"in_markov_blanket\": true,\n    \"role_of_a\": \"parent\",\n    \"confidence\": 0.95,\n    \"reason\": \"Lung cancer can directly cause an abnormal chest X-ray result, so lung is a parent of xray.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "lung",
+          "variable_b": "xray",
+          "in_markov_blanket": true,
+          "role_of_a": "parent",
+          "confidence": 0.95,
+          "reason": "Lung cancer can directly cause an abnormal chest X-ray result, so lung is a parent of xray."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "lung",
+        "variable_b": "xray",
+        "run_id": 3,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"lung\",\n    \"variable_b\": \"xray\",\n    \"in_markov_blanket\": true,\n    \"role_of_a\": \"parent\",\n    \"confidence\": 0.95,\n    \"reason\": \"Lung cancer can directly cause an abnormal chest X-ray result, so lung is a parent of xray.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "lung",
+          "variable_b": "xray",
+          "in_markov_blanket": true,
+          "role_of_a": "parent",
+          "confidence": 0.95,
+          "reason": "Lung cancer can directly cause an abnormal chest X-ray result, so lung is a parent of xray."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "lung",
+        "variable_b": "xray",
+        "run_id": 4,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"lung\",\n    \"variable_b\": \"xray\",\n    \"in_markov_blanket\": true,\n    \"role_of_a\": \"parent\",\n    \"confidence\": 0.95,\n    \"reason\": \"Lung cancer can directly cause an abnormal chest X-ray result, so lung is a parent of xray.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "lung",
+          "variable_b": "xray",
+          "in_markov_blanket": true,
+          "role_of_a": "parent",
+          "confidence": 0.95,
+          "reason": "Lung cancer can directly cause an abnormal chest X-ray result, so lung is a parent of xray."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "lung",
+        "variable_b": "xray",
+        "run_id": 5,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"lung\",\n    \"variable_b\": \"xray\",\n    \"in_markov_blanket\": true,\n    \"role_of_a\": \"parent\",\n    \"confidence\": 0.95,\n    \"reason\": \"Lung cancer can directly cause an abnormal chest X-ray result, so lung is a parent of xray.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "lung",
+          "variable_b": "xray",
+          "in_markov_blanket": true,
+          "role_of_a": "parent",
+          "confidence": 0.95,
+          "reason": "Lung cancer can directly cause an abnormal chest X-ray result, so lung is a parent of xray."
+        },
+        "parse_status": "success"
+      }
+    ],
+    "final_role": "parent",
+    "in_markov_blanket": true,
+    "positive_ratio": 1.0,
+    "final_confidence": 0.95,
+    "consistency": 1.0,
+    "relation_count": {
+      "parent": 5
+    }
+  },
+  {
+    "variable_a": "smoke",
+    "variable_b": "bronc",
+    "runs": [
+      {
+        "variable_a": "smoke",
+        "variable_b": "bronc",
+        "run_id": 1,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"smoke\",\n    \"variable_b\": \"bronc\",\n    \"in_markov_blanket\": true,\n    \"role_of_a\": \"parent\",\n    \"confidence\": 0.95,\n    \"reason\": \"Smoking is a direct cause of bronchitis, so 'smoke' is a parent of 'bronc'.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "smoke",
+          "variable_b": "bronc",
+          "in_markov_blanket": true,
+          "role_of_a": "parent",
+          "confidence": 0.95,
+          "reason": "Smoking is a direct cause of bronchitis, so 'smoke' is a parent of 'bronc'."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "smoke",
+        "variable_b": "bronc",
+        "run_id": 2,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"smoke\",\n    \"variable_b\": \"bronc\",\n    \"in_markov_blanket\": true,\n    \"role_of_a\": \"parent\",\n    \"confidence\": 0.95,\n    \"reason\": \"Smoking is a direct cause of bronchitis, so 'smoke' is a parent of 'bronc'.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "smoke",
+          "variable_b": "bronc",
+          "in_markov_blanket": true,
+          "role_of_a": "parent",
+          "confidence": 0.95,
+          "reason": "Smoking is a direct cause of bronchitis, so 'smoke' is a parent of 'bronc'."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "smoke",
+        "variable_b": "bronc",
+        "run_id": 3,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"smoke\",\n    \"variable_b\": \"bronc\",\n    \"in_markov_blanket\": true,\n    \"role_of_a\": \"parent\",\n    \"confidence\": 0.95,\n    \"reason\": \"Smoking is a direct cause of bronchitis, so 'smoke' is a parent of 'bronc'.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "smoke",
+          "variable_b": "bronc",
+          "in_markov_blanket": true,
+          "role_of_a": "parent",
+          "confidence": 0.95,
+          "reason": "Smoking is a direct cause of bronchitis, so 'smoke' is a parent of 'bronc'."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "smoke",
+        "variable_b": "bronc",
+        "run_id": 4,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"smoke\",\n    \"variable_b\": \"bronc\",\n    \"in_markov_blanket\": true,\n    \"role_of_a\": \"parent\",\n    \"confidence\": 0.95,\n    \"reason\": \"Smoking is a direct cause of bronchitis, so 'smoke' is a parent of 'bronc'.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "smoke",
+          "variable_b": "bronc",
+          "in_markov_blanket": true,
+          "role_of_a": "parent",
+          "confidence": 0.95,
+          "reason": "Smoking is a direct cause of bronchitis, so 'smoke' is a parent of 'bronc'."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "smoke",
+        "variable_b": "bronc",
+        "run_id": 5,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"smoke\",\n    \"variable_b\": \"bronc\",\n    \"in_markov_blanket\": true,\n    \"role_of_a\": \"parent\",\n    \"confidence\": 0.95,\n    \"reason\": \"Smoking is a direct cause of bronchitis, so 'smoke' is a parent of 'bronc'.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "smoke",
+          "variable_b": "bronc",
+          "in_markov_blanket": true,
+          "role_of_a": "parent",
+          "confidence": 0.95,
+          "reason": "Smoking is a direct cause of bronchitis, so 'smoke' is a parent of 'bronc'."
+        },
+        "parse_status": "success"
+      }
+    ],
+    "final_role": "parent",
+    "in_markov_blanket": true,
+    "positive_ratio": 1.0,
+    "final_confidence": 0.95,
+    "consistency": 1.0,
+    "relation_count": {
+      "parent": 5
+    }
+  },
+  {
+    "variable_a": "smoke",
+    "variable_b": "dysp",
+    "runs": [
+      {
+        "variable_a": "smoke",
+        "variable_b": "dysp",
+        "run_id": 1,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"smoke\",\n    \"variable_b\": \"dysp\",\n    \"in_markov_blanket\": true,\n    \"role_of_a\": \"parent\",\n    \"confidence\": 0.95,\n    \"reason\": \"Smoking is a direct cause of dyspnea, so 'smoke' is a parent of 'dysp'.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "smoke",
+          "variable_b": "dysp",
+          "in_markov_blanket": true,
+          "role_of_a": "parent",
+          "confidence": 0.95,
+          "reason": "Smoking is a direct cause of dyspnea, so 'smoke' is a parent of 'dysp'."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "smoke",
+        "variable_b": "dysp",
+        "run_id": 2,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"smoke\",\n    \"variable_b\": \"dysp\",\n    \"in_markov_blanket\": true,\n    \"role_of_a\": \"parent\",\n    \"confidence\": 0.95,\n    \"reason\": \"Smoking is a direct cause of dyspnea, so 'smoke' is a parent of 'dysp'.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "smoke",
+          "variable_b": "dysp",
+          "in_markov_blanket": true,
+          "role_of_a": "parent",
+          "confidence": 0.95,
+          "reason": "Smoking is a direct cause of dyspnea, so 'smoke' is a parent of 'dysp'."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "smoke",
+        "variable_b": "dysp",
+        "run_id": 3,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"smoke\",\n    \"variable_b\": \"dysp\",\n    \"in_markov_blanket\": true,\n    \"role_of_a\": \"parent\",\n    \"confidence\": 0.95,\n    \"reason\": \"Smoking is a direct cause of dyspnea, so 'smoke' is a parent of 'dysp'.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "smoke",
+          "variable_b": "dysp",
+          "in_markov_blanket": true,
+          "role_of_a": "parent",
+          "confidence": 0.95,
+          "reason": "Smoking is a direct cause of dyspnea, so 'smoke' is a parent of 'dysp'."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "smoke",
+        "variable_b": "dysp",
+        "run_id": 4,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"smoke\",\n    \"variable_b\": \"dysp\",\n    \"in_markov_blanket\": true,\n    \"role_of_a\": \"parent\",\n    \"confidence\": 0.95,\n    \"reason\": \"Smoking is a direct cause of dyspnea, so 'smoke' is a parent of 'dysp'.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "smoke",
+          "variable_b": "dysp",
+          "in_markov_blanket": true,
+          "role_of_a": "parent",
+          "confidence": 0.95,
+          "reason": "Smoking is a direct cause of dyspnea, so 'smoke' is a parent of 'dysp'."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "smoke",
+        "variable_b": "dysp",
+        "run_id": 5,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"smoke\",\n    \"variable_b\": \"dysp\",\n    \"in_markov_blanket\": true,\n    \"role_of_a\": \"parent\",\n    \"confidence\": 0.95,\n    \"reason\": \"Smoking is a direct cause of dyspnea, so 'smoke' is a parent of 'dysp'.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "smoke",
+          "variable_b": "dysp",
+          "in_markov_blanket": true,
+          "role_of_a": "parent",
+          "confidence": 0.95,
+          "reason": "Smoking is a direct cause of dyspnea, so 'smoke' is a parent of 'dysp'."
+        },
+        "parse_status": "success"
+      }
+    ],
+    "final_role": "parent",
+    "in_markov_blanket": true,
+    "positive_ratio": 1.0,
+    "final_confidence": 0.95,
+    "consistency": 1.0,
+    "relation_count": {
+      "parent": 5
+    }
+  },
+  {
+    "variable_a": "smoke",
+    "variable_b": "either",
+    "runs": [
+      {
+        "variable_a": "smoke",
+        "variable_b": "either",
+        "run_id": 1,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"smoke\",\n    \"variable_b\": \"either\",\n    \"in_markov_blanket\": true,\n    \"role_of_a\": \"parent\",\n    \"confidence\": 0.9,\n    \"reason\": \"Smoking is a known risk factor for both tuberculosis and lung cancer, so it directly influences the likelihood of either condition.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "smoke",
+          "variable_b": "either",
+          "in_markov_blanket": true,
+          "role_of_a": "parent",
+          "confidence": 0.9,
+          "reason": "Smoking is a known risk factor for both tuberculosis and lung cancer, so it directly influences the likelihood of either condition."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "smoke",
+        "variable_b": "either",
+        "run_id": 2,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"smoke\",\n    \"variable_b\": \"either\",\n    \"in_markov_blanket\": true,\n    \"role_of_a\": \"parent\",\n    \"confidence\": 0.9,\n    \"reason\": \"Smoking is a known risk factor for both tuberculosis and lung cancer, so it directly influences the likelihood of either condition.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "smoke",
+          "variable_b": "either",
+          "in_markov_blanket": true,
+          "role_of_a": "parent",
+          "confidence": 0.9,
+          "reason": "Smoking is a known risk factor for both tuberculosis and lung cancer, so it directly influences the likelihood of either condition."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "smoke",
+        "variable_b": "either",
+        "run_id": 3,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"smoke\",\n    \"variable_b\": \"either\",\n    \"in_markov_blanket\": true,\n    \"role_of_a\": \"parent\",\n    \"confidence\": 0.9,\n    \"reason\": \"Smoking is a known risk factor for both tuberculosis and lung cancer, so it directly influences the likelihood of either condition.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "smoke",
+          "variable_b": "either",
+          "in_markov_blanket": true,
+          "role_of_a": "parent",
+          "confidence": 0.9,
+          "reason": "Smoking is a known risk factor for both tuberculosis and lung cancer, so it directly influences the likelihood of either condition."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "smoke",
+        "variable_b": "either",
+        "run_id": 4,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"smoke\",\n    \"variable_b\": \"either\",\n    \"in_markov_blanket\": true,\n    \"role_of_a\": \"parent\",\n    \"confidence\": 0.9,\n    \"reason\": \"Smoking is a known risk factor for both tuberculosis and lung cancer, so it directly influences the likelihood of either condition.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "smoke",
+          "variable_b": "either",
+          "in_markov_blanket": true,
+          "role_of_a": "parent",
+          "confidence": 0.9,
+          "reason": "Smoking is a known risk factor for both tuberculosis and lung cancer, so it directly influences the likelihood of either condition."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "smoke",
+        "variable_b": "either",
+        "run_id": 5,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"smoke\",\n    \"variable_b\": \"either\",\n    \"in_markov_blanket\": true,\n    \"role_of_a\": \"parent\",\n    \"confidence\": 0.9,\n    \"reason\": \"Smoking is a known risk factor for both tuberculosis and lung cancer, so it directly influences the likelihood of either condition.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "smoke",
+          "variable_b": "either",
+          "in_markov_blanket": true,
+          "role_of_a": "parent",
+          "confidence": 0.9,
+          "reason": "Smoking is a known risk factor for both tuberculosis and lung cancer, so it directly influences the likelihood of either condition."
+        },
+        "parse_status": "success"
+      }
+    ],
+    "final_role": "parent",
+    "in_markov_blanket": true,
+    "positive_ratio": 1.0,
+    "final_confidence": 0.9,
+    "consistency": 1.0,
+    "relation_count": {
+      "parent": 5
+    }
+  },
+  {
+    "variable_a": "smoke",
+    "variable_b": "lung",
+    "runs": [
+      {
+        "variable_a": "smoke",
+        "variable_b": "lung",
+        "run_id": 1,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"smoke\",\n    \"variable_b\": \"lung\",\n    \"in_markov_blanket\": true,\n    \"role_of_a\": \"parent\",\n    \"confidence\": 0.95,\n    \"reason\": \"Smoking is a direct cause of lung cancer, so 'smoke' is a parent of 'lung'.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "smoke",
+          "variable_b": "lung",
+          "in_markov_blanket": true,
+          "role_of_a": "parent",
+          "confidence": 0.95,
+          "reason": "Smoking is a direct cause of lung cancer, so 'smoke' is a parent of 'lung'."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "smoke",
+        "variable_b": "lung",
+        "run_id": 2,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"smoke\",\n    \"variable_b\": \"lung\",\n    \"in_markov_blanket\": true,\n    \"role_of_a\": \"parent\",\n    \"confidence\": 0.95,\n    \"reason\": \"Smoking is a direct cause of lung cancer, so 'smoke' is a parent of 'lung'.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "smoke",
+          "variable_b": "lung",
+          "in_markov_blanket": true,
+          "role_of_a": "parent",
+          "confidence": 0.95,
+          "reason": "Smoking is a direct cause of lung cancer, so 'smoke' is a parent of 'lung'."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "smoke",
+        "variable_b": "lung",
+        "run_id": 3,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"smoke\",\n    \"variable_b\": \"lung\",\n    \"in_markov_blanket\": true,\n    \"role_of_a\": \"parent\",\n    \"confidence\": 0.95,\n    \"reason\": \"Smoking is a direct cause of lung cancer, so 'smoke' is a parent of 'lung'.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "smoke",
+          "variable_b": "lung",
+          "in_markov_blanket": true,
+          "role_of_a": "parent",
+          "confidence": 0.95,
+          "reason": "Smoking is a direct cause of lung cancer, so 'smoke' is a parent of 'lung'."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "smoke",
+        "variable_b": "lung",
+        "run_id": 4,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"smoke\",\n    \"variable_b\": \"lung\",\n    \"in_markov_blanket\": true,\n    \"role_of_a\": \"parent\",\n    \"confidence\": 0.95,\n    \"reason\": \"Smoking is a direct cause of lung cancer, so 'smoke' is a parent of 'lung'.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "smoke",
+          "variable_b": "lung",
+          "in_markov_blanket": true,
+          "role_of_a": "parent",
+          "confidence": 0.95,
+          "reason": "Smoking is a direct cause of lung cancer, so 'smoke' is a parent of 'lung'."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "smoke",
+        "variable_b": "lung",
+        "run_id": 5,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"smoke\",\n    \"variable_b\": \"lung\",\n    \"in_markov_blanket\": true,\n    \"role_of_a\": \"parent\",\n    \"confidence\": 0.95,\n    \"reason\": \"Smoking is a direct cause of lung cancer, so 'smoke' is a parent of 'lung'.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "smoke",
+          "variable_b": "lung",
+          "in_markov_blanket": true,
+          "role_of_a": "parent",
+          "confidence": 0.95,
+          "reason": "Smoking is a direct cause of lung cancer, so 'smoke' is a parent of 'lung'."
+        },
+        "parse_status": "success"
+      }
+    ],
+    "final_role": "parent",
+    "in_markov_blanket": true,
+    "positive_ratio": 1.0,
+    "final_confidence": 0.95,
+    "consistency": 1.0,
+    "relation_count": {
+      "parent": 5
+    }
+  },
+  {
+    "variable_a": "smoke",
+    "variable_b": "xray",
+    "runs": [
+      {
+        "variable_a": "smoke",
+        "variable_b": "xray",
+        "run_id": 1,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"smoke\",\n    \"variable_b\": \"xray\",\n    \"in_markov_blanket\": true,\n    \"role_of_a\": \"parent\",\n    \"confidence\": 0.95,\n    \"reason\": \"Smoking is a known risk factor for lung diseases, which can lead to abnormal chest X-ray results.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "smoke",
+          "variable_b": "xray",
+          "in_markov_blanket": true,
+          "role_of_a": "parent",
+          "confidence": 0.95,
+          "reason": "Smoking is a known risk factor for lung diseases, which can lead to abnormal chest X-ray results."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "smoke",
+        "variable_b": "xray",
+        "run_id": 2,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"smoke\",\n    \"variable_b\": \"xray\",\n    \"in_markov_blanket\": true,\n    \"role_of_a\": \"parent\",\n    \"confidence\": 0.95,\n    \"reason\": \"Smoking is a known risk factor for lung diseases, which can lead to abnormal chest X-ray results.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "smoke",
+          "variable_b": "xray",
+          "in_markov_blanket": true,
+          "role_of_a": "parent",
+          "confidence": 0.95,
+          "reason": "Smoking is a known risk factor for lung diseases, which can lead to abnormal chest X-ray results."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "smoke",
+        "variable_b": "xray",
+        "run_id": 3,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"smoke\",\n    \"variable_b\": \"xray\",\n    \"in_markov_blanket\": true,\n    \"role_of_a\": \"parent\",\n    \"confidence\": 0.95,\n    \"reason\": \"Smoking is a known risk factor for lung diseases, which can lead to abnormal chest X-ray results.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "smoke",
+          "variable_b": "xray",
+          "in_markov_blanket": true,
+          "role_of_a": "parent",
+          "confidence": 0.95,
+          "reason": "Smoking is a known risk factor for lung diseases, which can lead to abnormal chest X-ray results."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "smoke",
+        "variable_b": "xray",
+        "run_id": 4,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"smoke\",\n    \"variable_b\": \"xray\",\n    \"in_markov_blanket\": true,\n    \"role_of_a\": \"parent\",\n    \"confidence\": 0.95,\n    \"reason\": \"Smoking is a known risk factor for lung diseases, which can lead to abnormal chest X-ray results.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "smoke",
+          "variable_b": "xray",
+          "in_markov_blanket": true,
+          "role_of_a": "parent",
+          "confidence": 0.95,
+          "reason": "Smoking is a known risk factor for lung diseases, which can lead to abnormal chest X-ray results."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "smoke",
+        "variable_b": "xray",
+        "run_id": 5,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"smoke\",\n    \"variable_b\": \"xray\",\n    \"in_markov_blanket\": true,\n    \"role_of_a\": \"parent\",\n    \"confidence\": 0.95,\n    \"reason\": \"Smoking is a known risk factor for lung diseases, which can lead to abnormal chest X-ray results.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "smoke",
+          "variable_b": "xray",
+          "in_markov_blanket": true,
+          "role_of_a": "parent",
+          "confidence": 0.95,
+          "reason": "Smoking is a known risk factor for lung diseases, which can lead to abnormal chest X-ray results."
+        },
+        "parse_status": "success"
+      }
+    ],
+    "final_role": "parent",
+    "in_markov_blanket": true,
+    "positive_ratio": 1.0,
+    "final_confidence": 0.95,
+    "consistency": 1.0,
+    "relation_count": {
+      "parent": 5
+    }
+  },
+  {
+    "variable_a": "tub",
+    "variable_b": "bronc",
+    "runs": [
+      {
+        "variable_a": "tub",
+        "variable_b": "bronc",
+        "run_id": 1,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"tub\",\n    \"variable_b\": \"bronc\",\n    \"in_markov_blanket\": true,\n    \"role_of_a\": \"spouse\",\n    \"confidence\": 0.9,\n    \"reason\": \"Tuberculosis and bronchitis are both causes of lung disease, which makes them spouses as they share a common effect.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "tub",
+          "variable_b": "bronc",
+          "in_markov_blanket": true,
+          "role_of_a": "spouse",
+          "confidence": 0.9,
+          "reason": "Tuberculosis and bronchitis are both causes of lung disease, which makes them spouses as they share a common effect."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "tub",
+        "variable_b": "bronc",
+        "run_id": 2,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"tub\",\n    \"variable_b\": \"bronc\",\n    \"in_markov_blanket\": true,\n    \"role_of_a\": \"spouse\",\n    \"confidence\": 0.9,\n    \"reason\": \"Tuberculosis and bronchitis are both causes of lung disease, which makes them spouses as they share a common effect.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "tub",
+          "variable_b": "bronc",
+          "in_markov_blanket": true,
+          "role_of_a": "spouse",
+          "confidence": 0.9,
+          "reason": "Tuberculosis and bronchitis are both causes of lung disease, which makes them spouses as they share a common effect."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "tub",
+        "variable_b": "bronc",
+        "run_id": 3,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"tub\",\n    \"variable_b\": \"bronc\",\n    \"in_markov_blanket\": true,\n    \"role_of_a\": \"spouse\",\n    \"confidence\": 0.9,\n    \"reason\": \"Tuberculosis and bronchitis are both causes of lung disease, which makes them spouses as they share a common effect.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "tub",
+          "variable_b": "bronc",
+          "in_markov_blanket": true,
+          "role_of_a": "spouse",
+          "confidence": 0.9,
+          "reason": "Tuberculosis and bronchitis are both causes of lung disease, which makes them spouses as they share a common effect."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "tub",
+        "variable_b": "bronc",
+        "run_id": 4,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"tub\",\n    \"variable_b\": \"bronc\",\n    \"in_markov_blanket\": true,\n    \"role_of_a\": \"spouse\",\n    \"confidence\": 0.9,\n    \"reason\": \"Tuberculosis and bronchitis are both causes of lung disease, which makes them spouses as they share a common effect.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "tub",
+          "variable_b": "bronc",
+          "in_markov_blanket": true,
+          "role_of_a": "spouse",
+          "confidence": 0.9,
+          "reason": "Tuberculosis and bronchitis are both causes of lung disease, which makes them spouses as they share a common effect."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "tub",
+        "variable_b": "bronc",
+        "run_id": 5,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"tub\",\n    \"variable_b\": \"bronc\",\n    \"in_markov_blanket\": true,\n    \"role_of_a\": \"spouse\",\n    \"confidence\": 0.9,\n    \"reason\": \"Tuberculosis and bronchitis are both causes of lung disease, which makes them spouses as they share a common effect.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "tub",
+          "variable_b": "bronc",
+          "in_markov_blanket": true,
+          "role_of_a": "spouse",
+          "confidence": 0.9,
+          "reason": "Tuberculosis and bronchitis are both causes of lung disease, which makes them spouses as they share a common effect."
+        },
+        "parse_status": "success"
+      }
+    ],
+    "final_role": "spouse",
+    "in_markov_blanket": true,
+    "positive_ratio": 1.0,
+    "final_confidence": 0.9,
+    "consistency": 1.0,
+    "relation_count": {
+      "spouse": 5
+    }
+  },
+  {
+    "variable_a": "tub",
+    "variable_b": "dysp",
+    "runs": [
+      {
+        "variable_a": "tub",
+        "variable_b": "dysp",
+        "run_id": 1,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"tub\",\n    \"variable_b\": \"dysp\",\n    \"in_markov_blanket\": true,\n    \"role_of_a\": \"parent\",\n    \"confidence\": 0.95,\n    \"reason\": \"Tuberculosis (tub) is a known cause of dyspnea (dysp), so tub directly causes dysp, making it a parent in the Bayesian network.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "tub",
+          "variable_b": "dysp",
+          "in_markov_blanket": true,
+          "role_of_a": "parent",
+          "confidence": 0.95,
+          "reason": "Tuberculosis (tub) is a known cause of dyspnea (dysp), so tub directly causes dysp, making it a parent in the Bayesian network."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "tub",
+        "variable_b": "dysp",
+        "run_id": 2,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"tub\",\n    \"variable_b\": \"dysp\",\n    \"in_markov_blanket\": true,\n    \"role_of_a\": \"parent\",\n    \"confidence\": 0.95,\n    \"reason\": \"Tuberculosis (tub) is a known cause of dyspnea (dysp), so tub directly causes dysp, making it a parent in the Bayesian network.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "tub",
+          "variable_b": "dysp",
+          "in_markov_blanket": true,
+          "role_of_a": "parent",
+          "confidence": 0.95,
+          "reason": "Tuberculosis (tub) is a known cause of dyspnea (dysp), so tub directly causes dysp, making it a parent in the Bayesian network."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "tub",
+        "variable_b": "dysp",
+        "run_id": 3,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"tub\",\n    \"variable_b\": \"dysp\",\n    \"in_markov_blanket\": true,\n    \"role_of_a\": \"parent\",\n    \"confidence\": 0.95,\n    \"reason\": \"Tuberculosis (tub) is a known cause of dyspnea (dysp), so tub directly causes dysp, making it a parent in the Bayesian network.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "tub",
+          "variable_b": "dysp",
+          "in_markov_blanket": true,
+          "role_of_a": "parent",
+          "confidence": 0.95,
+          "reason": "Tuberculosis (tub) is a known cause of dyspnea (dysp), so tub directly causes dysp, making it a parent in the Bayesian network."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "tub",
+        "variable_b": "dysp",
+        "run_id": 4,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"tub\",\n    \"variable_b\": \"dysp\",\n    \"in_markov_blanket\": true,\n    \"role_of_a\": \"parent\",\n    \"confidence\": 0.95,\n    \"reason\": \"Tuberculosis (tub) is a known cause of dyspnea (dysp), so tub directly causes dysp, making it a parent in the Bayesian network.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "tub",
+          "variable_b": "dysp",
+          "in_markov_blanket": true,
+          "role_of_a": "parent",
+          "confidence": 0.95,
+          "reason": "Tuberculosis (tub) is a known cause of dyspnea (dysp), so tub directly causes dysp, making it a parent in the Bayesian network."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "tub",
+        "variable_b": "dysp",
+        "run_id": 5,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"tub\",\n    \"variable_b\": \"dysp\",\n    \"in_markov_blanket\": true,\n    \"role_of_a\": \"parent\",\n    \"confidence\": 0.95,\n    \"reason\": \"Tuberculosis (tub) is a known cause of dyspnea (dysp), so tub directly causes dysp, making it a parent in the Bayesian network.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "tub",
+          "variable_b": "dysp",
+          "in_markov_blanket": true,
+          "role_of_a": "parent",
+          "confidence": 0.95,
+          "reason": "Tuberculosis (tub) is a known cause of dyspnea (dysp), so tub directly causes dysp, making it a parent in the Bayesian network."
+        },
+        "parse_status": "success"
+      }
+    ],
+    "final_role": "parent",
+    "in_markov_blanket": true,
+    "positive_ratio": 1.0,
+    "final_confidence": 0.95,
+    "consistency": 1.0,
+    "relation_count": {
+      "parent": 5
+    }
+  },
+  {
+    "variable_a": "tub",
+    "variable_b": "either",
+    "runs": [
+      {
+        "variable_a": "tub",
+        "variable_b": "either",
+        "run_id": 1,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"tub\",\n    \"variable_b\": \"either\",\n    \"in_markov_blanket\": true,\n    \"role_of_a\": \"parent\",\n    \"confidence\": 0.95,\n    \"reason\": \"tuberculosis directly causes the patient to have either tuberculosis or lung cancer.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "tub",
+          "variable_b": "either",
+          "in_markov_blanket": true,
+          "role_of_a": "parent",
+          "confidence": 0.95,
+          "reason": "tuberculosis directly causes the patient to have either tuberculosis or lung cancer."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "tub",
+        "variable_b": "either",
+        "run_id": 2,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"tub\",\n    \"variable_b\": \"either\",\n    \"in_markov_blanket\": true,\n    \"role_of_a\": \"parent\",\n    \"confidence\": 0.95,\n    \"reason\": \"tuberculosis directly causes the patient to have either tuberculosis or lung cancer.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "tub",
+          "variable_b": "either",
+          "in_markov_blanket": true,
+          "role_of_a": "parent",
+          "confidence": 0.95,
+          "reason": "tuberculosis directly causes the patient to have either tuberculosis or lung cancer."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "tub",
+        "variable_b": "either",
+        "run_id": 3,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"tub\",\n    \"variable_b\": \"either\",\n    \"in_markov_blanket\": true,\n    \"role_of_a\": \"parent\",\n    \"confidence\": 0.95,\n    \"reason\": \"tuberculosis directly causes the patient to have either tuberculosis or lung cancer.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "tub",
+          "variable_b": "either",
+          "in_markov_blanket": true,
+          "role_of_a": "parent",
+          "confidence": 0.95,
+          "reason": "tuberculosis directly causes the patient to have either tuberculosis or lung cancer."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "tub",
+        "variable_b": "either",
+        "run_id": 4,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"tub\",\n    \"variable_b\": \"either\",\n    \"in_markov_blanket\": true,\n    \"role_of_a\": \"parent\",\n    \"confidence\": 0.95,\n    \"reason\": \"tuberculosis directly causes the patient to have either tuberculosis or lung cancer.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "tub",
+          "variable_b": "either",
+          "in_markov_blanket": true,
+          "role_of_a": "parent",
+          "confidence": 0.95,
+          "reason": "tuberculosis directly causes the patient to have either tuberculosis or lung cancer."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "tub",
+        "variable_b": "either",
+        "run_id": 5,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"tub\",\n    \"variable_b\": \"either\",\n    \"in_markov_blanket\": true,\n    \"role_of_a\": \"parent\",\n    \"confidence\": 0.95,\n    \"reason\": \"tuberculosis directly causes the patient to have either tuberculosis or lung cancer.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "tub",
+          "variable_b": "either",
+          "in_markov_blanket": true,
+          "role_of_a": "parent",
+          "confidence": 0.95,
+          "reason": "tuberculosis directly causes the patient to have either tuberculosis or lung cancer."
+        },
+        "parse_status": "success"
+      }
+    ],
+    "final_role": "parent",
+    "in_markov_blanket": true,
+    "positive_ratio": 1.0,
+    "final_confidence": 0.95,
+    "consistency": 1.0,
+    "relation_count": {
+      "parent": 5
+    }
+  },
+  {
+    "variable_a": "tub",
+    "variable_b": "lung",
+    "runs": [
+      {
+        "variable_a": "tub",
+        "variable_b": "lung",
+        "run_id": 1,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"tub\",\n    \"variable_b\": \"lung\",\n    \"in_markov_blanket\": true,\n    \"role_of_a\": \"spouse\",\n    \"confidence\": 0.9,\n    \"reason\": \"Tuberculosis and lung cancer are both causes of lung imaging abnormalities, making them spouses.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "tub",
+          "variable_b": "lung",
+          "in_markov_blanket": true,
+          "role_of_a": "spouse",
+          "confidence": 0.9,
+          "reason": "Tuberculosis and lung cancer are both causes of lung imaging abnormalities, making them spouses."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "tub",
+        "variable_b": "lung",
+        "run_id": 2,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"tub\",\n    \"variable_b\": \"lung\",\n    \"in_markov_blanket\": true,\n    \"role_of_a\": \"spouse\",\n    \"confidence\": 0.9,\n    \"reason\": \"Tuberculosis and lung cancer are both causes of lung imaging abnormalities, making them spouses.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "tub",
+          "variable_b": "lung",
+          "in_markov_blanket": true,
+          "role_of_a": "spouse",
+          "confidence": 0.9,
+          "reason": "Tuberculosis and lung cancer are both causes of lung imaging abnormalities, making them spouses."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "tub",
+        "variable_b": "lung",
+        "run_id": 3,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"tub\",\n    \"variable_b\": \"lung\",\n    \"in_markov_blanket\": true,\n    \"role_of_a\": \"spouse\",\n    \"confidence\": 0.9,\n    \"reason\": \"Tuberculosis and lung cancer are both causes of lung imaging abnormalities, making them spouses.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "tub",
+          "variable_b": "lung",
+          "in_markov_blanket": true,
+          "role_of_a": "spouse",
+          "confidence": 0.9,
+          "reason": "Tuberculosis and lung cancer are both causes of lung imaging abnormalities, making them spouses."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "tub",
+        "variable_b": "lung",
+        "run_id": 4,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"tub\",\n    \"variable_b\": \"lung\",\n    \"in_markov_blanket\": true,\n    \"role_of_a\": \"spouse\",\n    \"confidence\": 0.9,\n    \"reason\": \"Tuberculosis and lung cancer are both causes of lung imaging abnormalities, making them spouses.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "tub",
+          "variable_b": "lung",
+          "in_markov_blanket": true,
+          "role_of_a": "spouse",
+          "confidence": 0.9,
+          "reason": "Tuberculosis and lung cancer are both causes of lung imaging abnormalities, making them spouses."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "tub",
+        "variable_b": "lung",
+        "run_id": 5,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"tub\",\n    \"variable_b\": \"lung\",\n    \"in_markov_blanket\": true,\n    \"role_of_a\": \"spouse\",\n    \"confidence\": 0.9,\n    \"reason\": \"Tuberculosis and lung cancer are both causes of lung imaging abnormalities, making them spouses.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "tub",
+          "variable_b": "lung",
+          "in_markov_blanket": true,
+          "role_of_a": "spouse",
+          "confidence": 0.9,
+          "reason": "Tuberculosis and lung cancer are both causes of lung imaging abnormalities, making them spouses."
+        },
+        "parse_status": "success"
+      }
+    ],
+    "final_role": "spouse",
+    "in_markov_blanket": true,
+    "positive_ratio": 1.0,
+    "final_confidence": 0.9,
+    "consistency": 1.0,
+    "relation_count": {
+      "spouse": 5
+    }
+  },
+  {
+    "variable_a": "tub",
+    "variable_b": "smoke",
+    "runs": [
+      {
+        "variable_a": "tub",
+        "variable_b": "smoke",
+        "run_id": 1,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"tub\",\n    \"variable_b\": \"smoke\",\n    \"in_markov_blanket\": true,\n    \"role_of_a\": \"spouse\",\n    \"confidence\": 0.9,\n    \"reason\": \"Tuberculosis and smoking are both causes of lung cancer, making them spouses as they share a common effect.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "tub",
+          "variable_b": "smoke",
+          "in_markov_blanket": true,
+          "role_of_a": "spouse",
+          "confidence": 0.9,
+          "reason": "Tuberculosis and smoking are both causes of lung cancer, making them spouses as they share a common effect."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "tub",
+        "variable_b": "smoke",
+        "run_id": 2,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"tub\",\n    \"variable_b\": \"smoke\",\n    \"in_markov_blanket\": true,\n    \"role_of_a\": \"spouse\",\n    \"confidence\": 0.9,\n    \"reason\": \"Tuberculosis and smoking are both causes of lung cancer, making them spouses as they share a common effect.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "tub",
+          "variable_b": "smoke",
+          "in_markov_blanket": true,
+          "role_of_a": "spouse",
+          "confidence": 0.9,
+          "reason": "Tuberculosis and smoking are both causes of lung cancer, making them spouses as they share a common effect."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "tub",
+        "variable_b": "smoke",
+        "run_id": 3,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"tub\",\n    \"variable_b\": \"smoke\",\n    \"in_markov_blanket\": true,\n    \"role_of_a\": \"spouse\",\n    \"confidence\": 0.9,\n    \"reason\": \"Tuberculosis and smoking are both causes of lung cancer, making them spouses as they share a common effect.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "tub",
+          "variable_b": "smoke",
+          "in_markov_blanket": true,
+          "role_of_a": "spouse",
+          "confidence": 0.9,
+          "reason": "Tuberculosis and smoking are both causes of lung cancer, making them spouses as they share a common effect."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "tub",
+        "variable_b": "smoke",
+        "run_id": 4,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"tub\",\n    \"variable_b\": \"smoke\",\n    \"in_markov_blanket\": true,\n    \"role_of_a\": \"spouse\",\n    \"confidence\": 0.9,\n    \"reason\": \"Tuberculosis and smoking are both causes of lung cancer, making them spouses as they share a common effect.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "tub",
+          "variable_b": "smoke",
+          "in_markov_blanket": true,
+          "role_of_a": "spouse",
+          "confidence": 0.9,
+          "reason": "Tuberculosis and smoking are both causes of lung cancer, making them spouses as they share a common effect."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "tub",
+        "variable_b": "smoke",
+        "run_id": 5,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"tub\",\n    \"variable_b\": \"smoke\",\n    \"in_markov_blanket\": true,\n    \"role_of_a\": \"spouse\",\n    \"confidence\": 0.9,\n    \"reason\": \"Tuberculosis and smoking are both causes of lung cancer, making them spouses as they share a common effect.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "tub",
+          "variable_b": "smoke",
+          "in_markov_blanket": true,
+          "role_of_a": "spouse",
+          "confidence": 0.9,
+          "reason": "Tuberculosis and smoking are both causes of lung cancer, making them spouses as they share a common effect."
+        },
+        "parse_status": "success"
+      }
+    ],
+    "final_role": "spouse",
+    "in_markov_blanket": true,
+    "positive_ratio": 1.0,
+    "final_confidence": 0.9,
+    "consistency": 1.0,
+    "relation_count": {
+      "spouse": 5
+    }
+  },
+  {
+    "variable_a": "tub",
+    "variable_b": "xray",
+    "runs": [
+      {
+        "variable_a": "tub",
+        "variable_b": "xray",
+        "run_id": 1,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"tub\",\n    \"variable_b\": \"xray\",\n    \"in_markov_blanket\": true,\n    \"role_of_a\": \"parent\",\n    \"confidence\": 0.95,\n    \"reason\": \"Tuberculosis (tub) directly causes an abnormal chest X-ray result (xray), making tub a parent of xray.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "tub",
+          "variable_b": "xray",
+          "in_markov_blanket": true,
+          "role_of_a": "parent",
+          "confidence": 0.95,
+          "reason": "Tuberculosis (tub) directly causes an abnormal chest X-ray result (xray), making tub a parent of xray."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "tub",
+        "variable_b": "xray",
+        "run_id": 2,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"tub\",\n    \"variable_b\": \"xray\",\n    \"in_markov_blanket\": true,\n    \"role_of_a\": \"parent\",\n    \"confidence\": 0.95,\n    \"reason\": \"Tuberculosis (tub) directly causes an abnormal chest X-ray result (xray), making tub a parent of xray.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "tub",
+          "variable_b": "xray",
+          "in_markov_blanket": true,
+          "role_of_a": "parent",
+          "confidence": 0.95,
+          "reason": "Tuberculosis (tub) directly causes an abnormal chest X-ray result (xray), making tub a parent of xray."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "tub",
+        "variable_b": "xray",
+        "run_id": 3,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"tub\",\n    \"variable_b\": \"xray\",\n    \"in_markov_blanket\": true,\n    \"role_of_a\": \"parent\",\n    \"confidence\": 0.95,\n    \"reason\": \"Tuberculosis (tub) directly causes an abnormal chest X-ray result (xray), making tub a parent of xray.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "tub",
+          "variable_b": "xray",
+          "in_markov_blanket": true,
+          "role_of_a": "parent",
+          "confidence": 0.95,
+          "reason": "Tuberculosis (tub) directly causes an abnormal chest X-ray result (xray), making tub a parent of xray."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "tub",
+        "variable_b": "xray",
+        "run_id": 4,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"tub\",\n    \"variable_b\": \"xray\",\n    \"in_markov_blanket\": true,\n    \"role_of_a\": \"parent\",\n    \"confidence\": 0.95,\n    \"reason\": \"Tuberculosis (tub) directly causes an abnormal chest X-ray result (xray), making tub a parent of xray.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "tub",
+          "variable_b": "xray",
+          "in_markov_blanket": true,
+          "role_of_a": "parent",
+          "confidence": 0.95,
+          "reason": "Tuberculosis (tub) directly causes an abnormal chest X-ray result (xray), making tub a parent of xray."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "tub",
+        "variable_b": "xray",
+        "run_id": 5,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"tub\",\n    \"variable_b\": \"xray\",\n    \"in_markov_blanket\": true,\n    \"role_of_a\": \"parent\",\n    \"confidence\": 0.95,\n    \"reason\": \"Tuberculosis (tub) directly causes an abnormal chest X-ray result (xray), making tub a parent of xray.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "tub",
+          "variable_b": "xray",
+          "in_markov_blanket": true,
+          "role_of_a": "parent",
+          "confidence": 0.95,
+          "reason": "Tuberculosis (tub) directly causes an abnormal chest X-ray result (xray), making tub a parent of xray."
+        },
+        "parse_status": "success"
+      }
+    ],
+    "final_role": "parent",
+    "in_markov_blanket": true,
+    "positive_ratio": 1.0,
+    "final_confidence": 0.95,
+    "consistency": 1.0,
+    "relation_count": {
+      "parent": 5
+    }
+  },
+  {
+    "variable_a": "xray",
+    "variable_b": "dysp",
+    "runs": [
+      {
+        "variable_a": "xray",
+        "variable_b": "dysp",
+        "run_id": 1,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"xray\",\n    \"variable_b\": \"dysp\",\n    \"in_markov_blanket\": true,\n    \"role_of_a\": \"spouse\",\n    \"confidence\": 0.9,\n    \"reason\": \"xray and dysp both influence tuberculosis, making them spouses.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "xray",
+          "variable_b": "dysp",
+          "in_markov_blanket": true,
+          "role_of_a": "spouse",
+          "confidence": 0.9,
+          "reason": "xray and dysp both influence tuberculosis, making them spouses."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "xray",
+        "variable_b": "dysp",
+        "run_id": 2,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"xray\",\n    \"variable_b\": \"dysp\",\n    \"in_markov_blanket\": true,\n    \"role_of_a\": \"spouse\",\n    \"confidence\": 0.9,\n    \"reason\": \"xray and dysp both influence tuberculosis, making them spouses.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "xray",
+          "variable_b": "dysp",
+          "in_markov_blanket": true,
+          "role_of_a": "spouse",
+          "confidence": 0.9,
+          "reason": "xray and dysp both influence tuberculosis, making them spouses."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "xray",
+        "variable_b": "dysp",
+        "run_id": 3,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"xray\",\n    \"variable_b\": \"dysp\",\n    \"in_markov_blanket\": true,\n    \"role_of_a\": \"spouse\",\n    \"confidence\": 0.9,\n    \"reason\": \"xray and dysp both influence tuberculosis, making them spouses.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "xray",
+          "variable_b": "dysp",
+          "in_markov_blanket": true,
+          "role_of_a": "spouse",
+          "confidence": 0.9,
+          "reason": "xray and dysp both influence tuberculosis, making them spouses."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "xray",
+        "variable_b": "dysp",
+        "run_id": 4,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"xray\",\n    \"variable_b\": \"dysp\",\n    \"in_markov_blanket\": true,\n    \"role_of_a\": \"spouse\",\n    \"confidence\": 0.9,\n    \"reason\": \"xray and dysp both influence tuberculosis, making them spouses.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "xray",
+          "variable_b": "dysp",
+          "in_markov_blanket": true,
+          "role_of_a": "spouse",
+          "confidence": 0.9,
+          "reason": "xray and dysp both influence tuberculosis, making them spouses."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "xray",
+        "variable_b": "dysp",
+        "run_id": 5,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"xray\",\n    \"variable_b\": \"dysp\",\n    \"in_markov_blanket\": true,\n    \"role_of_a\": \"spouse\",\n    \"confidence\": 0.9,\n    \"reason\": \"xray and dysp both influence tuberculosis, making them spouses.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "xray",
+          "variable_b": "dysp",
+          "in_markov_blanket": true,
+          "role_of_a": "spouse",
+          "confidence": 0.9,
+          "reason": "xray and dysp both influence tuberculosis, making them spouses."
+        },
+        "parse_status": "success"
+      }
+    ],
+    "final_role": "spouse",
+    "in_markov_blanket": true,
+    "positive_ratio": 1.0,
+    "final_confidence": 0.9,
+    "consistency": 1.0,
+    "relation_count": {
+      "spouse": 5
+    }
+  }
+]
