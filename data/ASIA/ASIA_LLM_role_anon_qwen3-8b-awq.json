@@ -1,0 +1,3054 @@
+[
+  {
+    "variable_a": "asia",
+    "variable_b": "bronc",
+    "runs": [
+      {
+        "variable_a": "asia",
+        "variable_b": "bronc",
+        "run_id": 1,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V01\",\n    \"variable_b\": \"V02\",\n    \"in_markov_blanket\": false,\n    \"role_of_a\": \"uncertain\",\n    \"confidence\": 0.5,\n    \"reason\": \"The names and meanings of both variables are hidden, so it is impossible to determine their causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V01",
+          "variable_b": "V02",
+          "in_markov_blanket": false,
+          "role_of_a": "uncertain",
+          "confidence": 0.5,
+          "reason": "The names and meanings of both variables are hidden, so it is impossible to determine their causal relationship."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "asia",
+        "variable_b": "bronc",
+        "run_id": 2,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V01\",\n    \"variable_b\": \"V02\",\n    \"in_markov_blanket\": false,\n    \"role_of_a\": \"uncertain\",\n    \"confidence\": 0.5,\n    \"reason\": \"The names and meanings of both variables are hidden, so it is impossible to determine their causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V01",
+          "variable_b": "V02",
+          "in_markov_blanket": false,
+          "role_of_a": "uncertain",
+          "confidence": 0.5,
+          "reason": "The names and meanings of both variables are hidden, so it is impossible to determine their causal relationship."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "asia",
+        "variable_b": "bronc",
+        "run_id": 3,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V01\",\n    \"variable_b\": \"V02\",\n    \"in_markov_blanket\": false,\n    \"role_of_a\": \"uncertain\",\n    \"confidence\": 0.5,\n    \"reason\": \"The names and meanings of both variables are hidden, so it is impossible to determine their causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V01",
+          "variable_b": "V02",
+          "in_markov_blanket": false,
+          "role_of_a": "uncertain",
+          "confidence": 0.5,
+          "reason": "The names and meanings of both variables are hidden, so it is impossible to determine their causal relationship."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "asia",
+        "variable_b": "bronc",
+        "run_id": 4,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V01\",\n    \"variable_b\": \"V02\",\n    \"in_markov_blanket\": false,\n    \"role_of_a\": \"uncertain\",\n    \"confidence\": 0.5,\n    \"reason\": \"The names and meanings of both variables are hidden, so it is impossible to determine their causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V01",
+          "variable_b": "V02",
+          "in_markov_blanket": false,
+          "role_of_a": "uncertain",
+          "confidence": 0.5,
+          "reason": "The names and meanings of both variables are hidden, so it is impossible to determine their causal relationship."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "asia",
+        "variable_b": "bronc",
+        "run_id": 5,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V01\",\n    \"variable_b\": \"V02\",\n    \"in_markov_blanket\": false,\n    \"role_of_a\": \"uncertain\",\n    \"confidence\": 0.5,\n    \"reason\": \"The names and meanings of both variables are hidden, so it is impossible to determine their causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V01",
+          "variable_b": "V02",
+          "in_markov_blanket": false,
+          "role_of_a": "uncertain",
+          "confidence": 0.5,
+          "reason": "The names and meanings of both variables are hidden, so it is impossible to determine their causal relationship."
+        },
+        "parse_status": "success"
+      }
+    ],
+    "final_role": "uncertain",
+    "in_markov_blanket": false,
+    "positive_ratio": 0.0,
+    "final_confidence": 0.5,
+    "consistency": 1.0,
+    "relation_count": {
+      "uncertain": 5
+    }
+  },
+  {
+    "variable_a": "asia",
+    "variable_b": "dysp",
+    "runs": [
+      {
+        "variable_a": "asia",
+        "variable_b": "dysp",
+        "run_id": 1,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V01\",\n    \"variable_b\": \"V03\",\n    \"in_markov_blanket\": false,\n    \"role_of_a\": \"uncertain\",\n    \"confidence\": 0.5,\n    \"reason\": \"The names and meanings of both variables are hidden, making it impossible to determine their causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V01",
+          "variable_b": "V03",
+          "in_markov_blanket": false,
+          "role_of_a": "uncertain",
+          "confidence": 0.5,
+          "reason": "The names and meanings of both variables are hidden, making it impossible to determine their causal relationship."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "asia",
+        "variable_b": "dysp",
+        "run_id": 2,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V01\",\n    \"variable_b\": \"V03\",\n    \"in_markov_blanket\": false,\n    \"role_of_a\": \"uncertain\",\n    \"confidence\": 0.5,\n    \"reason\": \"The names and meanings of both variables are hidden, making it impossible to determine their causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V01",
+          "variable_b": "V03",
+          "in_markov_blanket": false,
+          "role_of_a": "uncertain",
+          "confidence": 0.5,
+          "reason": "The names and meanings of both variables are hidden, making it impossible to determine their causal relationship."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "asia",
+        "variable_b": "dysp",
+        "run_id": 3,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V01\",\n    \"variable_b\": \"V03\",\n    \"in_markov_blanket\": false,\n    \"role_of_a\": \"uncertain\",\n    \"confidence\": 0.5,\n    \"reason\": \"The names and meanings of both variables are hidden, making it impossible to determine their causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V01",
+          "variable_b": "V03",
+          "in_markov_blanket": false,
+          "role_of_a": "uncertain",
+          "confidence": 0.5,
+          "reason": "The names and meanings of both variables are hidden, making it impossible to determine their causal relationship."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "asia",
+        "variable_b": "dysp",
+        "run_id": 4,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V01\",\n    \"variable_b\": \"V03\",\n    \"in_markov_blanket\": false,\n    \"role_of_a\": \"uncertain\",\n    \"confidence\": 0.5,\n    \"reason\": \"The names and meanings of both variables are hidden, making it impossible to determine their causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V01",
+          "variable_b": "V03",
+          "in_markov_blanket": false,
+          "role_of_a": "uncertain",
+          "confidence": 0.5,
+          "reason": "The names and meanings of both variables are hidden, making it impossible to determine their causal relationship."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "asia",
+        "variable_b": "dysp",
+        "run_id": 5,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V01\",\n    \"variable_b\": \"V03\",\n    \"in_markov_blanket\": false,\n    \"role_of_a\": \"uncertain\",\n    \"confidence\": 0.5,\n    \"reason\": \"The names and meanings of both variables are hidden, making it impossible to determine their causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V01",
+          "variable_b": "V03",
+          "in_markov_blanket": false,
+          "role_of_a": "uncertain",
+          "confidence": 0.5,
+          "reason": "The names and meanings of both variables are hidden, making it impossible to determine their causal relationship."
+        },
+        "parse_status": "success"
+      }
+    ],
+    "final_role": "uncertain",
+    "in_markov_blanket": false,
+    "positive_ratio": 0.0,
+    "final_confidence": 0.5,
+    "consistency": 1.0,
+    "relation_count": {
+      "uncertain": 5
+    }
+  },
+  {
+    "variable_a": "asia",
+    "variable_b": "either",
+    "runs": [
+      {
+        "variable_a": "asia",
+        "variable_b": "either",
+        "run_id": 1,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V01\",\n    \"variable_b\": \"V04\",\n    \"in_markov_blanket\": false,\n    \"role_of_a\": \"uncertain\",\n    \"confidence\": 0.5,\n    \"reason\": \"The names and meanings of both variables are hidden, making it impossible to determine their causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V01",
+          "variable_b": "V04",
+          "in_markov_blanket": false,
+          "role_of_a": "uncertain",
+          "confidence": 0.5,
+          "reason": "The names and meanings of both variables are hidden, making it impossible to determine their causal relationship."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "asia",
+        "variable_b": "either",
+        "run_id": 2,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V01\",\n    \"variable_b\": \"V04\",\n    \"in_markov_blanket\": false,\n    \"role_of_a\": \"uncertain\",\n    \"confidence\": 0.5,\n    \"reason\": \"The names and meanings of both variables are hidden, making it impossible to determine their causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V01",
+          "variable_b": "V04",
+          "in_markov_blanket": false,
+          "role_of_a": "uncertain",
+          "confidence": 0.5,
+          "reason": "The names and meanings of both variables are hidden, making it impossible to determine their causal relationship."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "asia",
+        "variable_b": "either",
+        "run_id": 3,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V01\",\n    \"variable_b\": \"V04\",\n    \"in_markov_blanket\": false,\n    \"role_of_a\": \"uncertain\",\n    \"confidence\": 0.5,\n    \"reason\": \"The names and meanings of both variables are hidden, making it impossible to determine their causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V01",
+          "variable_b": "V04",
+          "in_markov_blanket": false,
+          "role_of_a": "uncertain",
+          "confidence": 0.5,
+          "reason": "The names and meanings of both variables are hidden, making it impossible to determine their causal relationship."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "asia",
+        "variable_b": "either",
+        "run_id": 4,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V01\",\n    \"variable_b\": \"V04\",\n    \"in_markov_blanket\": false,\n    \"role_of_a\": \"uncertain\",\n    \"confidence\": 0.5,\n    \"reason\": \"The names and meanings of both variables are hidden, making it impossible to determine their causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V01",
+          "variable_b": "V04",
+          "in_markov_blanket": false,
+          "role_of_a": "uncertain",
+          "confidence": 0.5,
+          "reason": "The names and meanings of both variables are hidden, making it impossible to determine their causal relationship."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "asia",
+        "variable_b": "either",
+        "run_id": 5,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V01\",\n    \"variable_b\": \"V04\",\n    \"in_markov_blanket\": false,\n    \"role_of_a\": \"uncertain\",\n    \"confidence\": 0.5,\n    \"reason\": \"The names and meanings of both variables are hidden, making it impossible to determine their causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V01",
+          "variable_b": "V04",
+          "in_markov_blanket": false,
+          "role_of_a": "uncertain",
+          "confidence": 0.5,
+          "reason": "The names and meanings of both variables are hidden, making it impossible to determine their causal relationship."
+        },
+        "parse_status": "success"
+      }
+    ],
+    "final_role": "uncertain",
+    "in_markov_blanket": false,
+    "positive_ratio": 0.0,
+    "final_confidence": 0.5,
+    "consistency": 1.0,
+    "relation_count": {
+      "uncertain": 5
+    }
+  },
+  {
+    "variable_a": "asia",
+    "variable_b": "lung",
+    "runs": [
+      {
+        "variable_a": "asia",
+        "variable_b": "lung",
+        "run_id": 1,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V01\",\n    \"variable_b\": \"V05\",\n    \"in_markov_blanket\": false,\n    \"role_of_a\": \"uncertain\",\n    \"confidence\": 0.5,\n    \"reason\": \"The names and meanings of both variables are hidden, making it impossible to determine their causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V01",
+          "variable_b": "V05",
+          "in_markov_blanket": false,
+          "role_of_a": "uncertain",
+          "confidence": 0.5,
+          "reason": "The names and meanings of both variables are hidden, making it impossible to determine their causal relationship."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "asia",
+        "variable_b": "lung",
+        "run_id": 2,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V01\",\n    \"variable_b\": \"V05\",\n    \"in_markov_blanket\": false,\n    \"role_of_a\": \"uncertain\",\n    \"confidence\": 0.5,\n    \"reason\": \"The names and meanings of both variables are hidden, making it impossible to determine their causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V01",
+          "variable_b": "V05",
+          "in_markov_blanket": false,
+          "role_of_a": "uncertain",
+          "confidence": 0.5,
+          "reason": "The names and meanings of both variables are hidden, making it impossible to determine their causal relationship."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "asia",
+        "variable_b": "lung",
+        "run_id": 3,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V01\",\n    \"variable_b\": \"V05\",\n    \"in_markov_blanket\": false,\n    \"role_of_a\": \"uncertain\",\n    \"confidence\": 0.5,\n    \"reason\": \"The names and meanings of both variables are hidden, making it impossible to determine their causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V01",
+          "variable_b": "V05",
+          "in_markov_blanket": false,
+          "role_of_a": "uncertain",
+          "confidence": 0.5,
+          "reason": "The names and meanings of both variables are hidden, making it impossible to determine their causal relationship."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "asia",
+        "variable_b": "lung",
+        "run_id": 4,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V01\",\n    \"variable_b\": \"V05\",\n    \"in_markov_blanket\": false,\n    \"role_of_a\": \"uncertain\",\n    \"confidence\": 0.5,\n    \"reason\": \"The names and meanings of both variables are hidden, making it impossible to determine their causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V01",
+          "variable_b": "V05",
+          "in_markov_blanket": false,
+          "role_of_a": "uncertain",
+          "confidence": 0.5,
+          "reason": "The names and meanings of both variables are hidden, making it impossible to determine their causal relationship."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "asia",
+        "variable_b": "lung",
+        "run_id": 5,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V01\",\n    \"variable_b\": \"V05\",\n    \"in_markov_blanket\": false,\n    \"role_of_a\": \"uncertain\",\n    \"confidence\": 0.5,\n    \"reason\": \"The names and meanings of both variables are hidden, making it impossible to determine their causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V01",
+          "variable_b": "V05",
+          "in_markov_blanket": false,
+          "role_of_a": "uncertain",
+          "confidence": 0.5,
+          "reason": "The names and meanings of both variables are hidden, making it impossible to determine their causal relationship."
+        },
+        "parse_status": "success"
+      }
+    ],
+    "final_role": "uncertain",
+    "in_markov_blanket": false,
+    "positive_ratio": 0.0,
+    "final_confidence": 0.5,
+    "consistency": 1.0,
+    "relation_count": {
+      "uncertain": 5
+    }
+  },
+  {
+    "variable_a": "asia",
+    "variable_b": "smoke",
+    "runs": [
+      {
+        "variable_a": "asia",
+        "variable_b": "smoke",
+        "run_id": 1,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V01\",\n    \"variable_b\": \"V06\",\n    \"in_markov_blanket\": false,\n    \"role_of_a\": \"uncertain\",\n    \"confidence\": 0.5,\n    \"reason\": \"The names and meanings of both variables are hidden, making it impossible to determine their causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V01",
+          "variable_b": "V06",
+          "in_markov_blanket": false,
+          "role_of_a": "uncertain",
+          "confidence": 0.5,
+          "reason": "The names and meanings of both variables are hidden, making it impossible to determine their causal relationship."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "asia",
+        "variable_b": "smoke",
+        "run_id": 2,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V01\",\n    \"variable_b\": \"V06\",\n    \"in_markov_blanket\": false,\n    \"role_of_a\": \"uncertain\",\n    \"confidence\": 0.5,\n    \"reason\": \"The names and meanings of both variables are hidden, making it impossible to determine their causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V01",
+          "variable_b": "V06",
+          "in_markov_blanket": false,
+          "role_of_a": "uncertain",
+          "confidence": 0.5,
+          "reason": "The names and meanings of both variables are hidden, making it impossible to determine their causal relationship."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "asia",
+        "variable_b": "smoke",
+        "run_id": 3,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V01\",\n    \"variable_b\": \"V06\",\n    \"in_markov_blanket\": false,\n    \"role_of_a\": \"uncertain\",\n    \"confidence\": 0.5,\n    \"reason\": \"The names and meanings of both variables are hidden, making it impossible to determine their causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V01",
+          "variable_b": "V06",
+          "in_markov_blanket": false,
+          "role_of_a": "uncertain",
+          "confidence": 0.5,
+          "reason": "The names and meanings of both variables are hidden, making it impossible to determine their causal relationship."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "asia",
+        "variable_b": "smoke",
+        "run_id": 4,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V01\",\n    \"variable_b\": \"V06\",\n    \"in_markov_blanket\": false,\n    \"role_of_a\": \"uncertain\",\n    \"confidence\": 0.5,\n    \"reason\": \"The names and meanings of both variables are hidden, making it impossible to determine their causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V01",
+          "variable_b": "V06",
+          "in_markov_blanket": false,
+          "role_of_a": "uncertain",
+          "confidence": 0.5,
+          "reason": "The names and meanings of both variables are hidden, making it impossible to determine their causal relationship."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "asia",
+        "variable_b": "smoke",
+        "run_id": 5,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V01\",\n    \"variable_b\": \"V06\",\n    \"in_markov_blanket\": false,\n    \"role_of_a\": \"uncertain\",\n    \"confidence\": 0.5,\n    \"reason\": \"The names and meanings of both variables are hidden, making it impossible to determine their causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V01",
+          "variable_b": "V06",
+          "in_markov_blanket": false,
+          "role_of_a": "uncertain",
+          "confidence": 0.5,
+          "reason": "The names and meanings of both variables are hidden, making it impossible to determine their causal relationship."
+        },
+        "parse_status": "success"
+      }
+    ],
+    "final_role": "uncertain",
+    "in_markov_blanket": false,
+    "positive_ratio": 0.0,
+    "final_confidence": 0.5,
+    "consistency": 1.0,
+    "relation_count": {
+      "uncertain": 5
+    }
+  },
+  {
+    "variable_a": "asia",
+    "variable_b": "tub",
+    "runs": [
+      {
+        "variable_a": "asia",
+        "variable_b": "tub",
+        "run_id": 1,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V01\",\n    \"variable_b\": \"V07\",\n    \"in_markov_blanket\": false,\n    \"role_of_a\": \"uncertain\",\n    \"confidence\": 0.5,\n    \"reason\": \"The names and meanings of both variables are hidden, making it impossible to determine their causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V01",
+          "variable_b": "V07",
+          "in_markov_blanket": false,
+          "role_of_a": "uncertain",
+          "confidence": 0.5,
+          "reason": "The names and meanings of both variables are hidden, making it impossible to determine their causal relationship."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "asia",
+        "variable_b": "tub",
+        "run_id": 2,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V01\",\n    \"variable_b\": \"V07\",\n    \"in_markov_blanket\": false,\n    \"role_of_a\": \"uncertain\",\n    \"confidence\": 0.5,\n    \"reason\": \"The names and meanings of both variables are hidden, making it impossible to determine their causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V01",
+          "variable_b": "V07",
+          "in_markov_blanket": false,
+          "role_of_a": "uncertain",
+          "confidence": 0.5,
+          "reason": "The names and meanings of both variables are hidden, making it impossible to determine their causal relationship."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "asia",
+        "variable_b": "tub",
+        "run_id": 3,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V01\",\n    \"variable_b\": \"V07\",\n    \"in_markov_blanket\": false,\n    \"role_of_a\": \"uncertain\",\n    \"confidence\": 0.5,\n    \"reason\": \"The names and meanings of both variables are hidden, making it impossible to determine their causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V01",
+          "variable_b": "V07",
+          "in_markov_blanket": false,
+          "role_of_a": "uncertain",
+          "confidence": 0.5,
+          "reason": "The names and meanings of both variables are hidden, making it impossible to determine their causal relationship."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "asia",
+        "variable_b": "tub",
+        "run_id": 4,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V01\",\n    \"variable_b\": \"V07\",\n    \"in_markov_blanket\": false,\n    \"role_of_a\": \"uncertain\",\n    \"confidence\": 0.5,\n    \"reason\": \"The names and meanings of both variables are hidden, making it impossible to determine their causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V01",
+          "variable_b": "V07",
+          "in_markov_blanket": false,
+          "role_of_a": "uncertain",
+          "confidence": 0.5,
+          "reason": "The names and meanings of both variables are hidden, making it impossible to determine their causal relationship."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "asia",
+        "variable_b": "tub",
+        "run_id": 5,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V01\",\n    \"variable_b\": \"V07\",\n    \"in_markov_blanket\": false,\n    \"role_of_a\": \"uncertain\",\n    \"confidence\": 0.5,\n    \"reason\": \"The names and meanings of both variables are hidden, making it impossible to determine their causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V01",
+          "variable_b": "V07",
+          "in_markov_blanket": false,
+          "role_of_a": "uncertain",
+          "confidence": 0.5,
+          "reason": "The names and meanings of both variables are hidden, making it impossible to determine their causal relationship."
+        },
+        "parse_status": "success"
+      }
+    ],
+    "final_role": "uncertain",
+    "in_markov_blanket": false,
+    "positive_ratio": 0.0,
+    "final_confidence": 0.5,
+    "consistency": 1.0,
+    "relation_count": {
+      "uncertain": 5
+    }
+  },
+  {
+    "variable_a": "asia",
+    "variable_b": "xray",
+    "runs": [
+      {
+        "variable_a": "asia",
+        "variable_b": "xray",
+        "run_id": 1,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V01\",\n    \"variable_b\": \"V08\",\n    \"in_markov_blanket\": false,\n    \"role_of_a\": \"uncertain\",\n    \"confidence\": 0.5,\n    \"reason\": \"The names and meanings of both variables are hidden, making it impossible to determine their causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V01",
+          "variable_b": "V08",
+          "in_markov_blanket": false,
+          "role_of_a": "uncertain",
+          "confidence": 0.5,
+          "reason": "The names and meanings of both variables are hidden, making it impossible to determine their causal relationship."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "asia",
+        "variable_b": "xray",
+        "run_id": 2,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V01\",\n    \"variable_b\": \"V08\",\n    \"in_markov_blanket\": false,\n    \"role_of_a\": \"uncertain\",\n    \"confidence\": 0.5,\n    \"reason\": \"The names and meanings of both variables are hidden, making it impossible to determine their causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V01",
+          "variable_b": "V08",
+          "in_markov_blanket": false,
+          "role_of_a": "uncertain",
+          "confidence": 0.5,
+          "reason": "The names and meanings of both variables are hidden, making it impossible to determine their causal relationship."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "asia",
+        "variable_b": "xray",
+        "run_id": 3,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V01\",\n    \"variable_b\": \"V08\",\n    \"in_markov_blanket\": false,\n    \"role_of_a\": \"uncertain\",\n    \"confidence\": 0.5,\n    \"reason\": \"The names and meanings of both variables are hidden, making it impossible to determine their causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V01",
+          "variable_b": "V08",
+          "in_markov_blanket": false,
+          "role_of_a": "uncertain",
+          "confidence": 0.5,
+          "reason": "The names and meanings of both variables are hidden, making it impossible to determine their causal relationship."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "asia",
+        "variable_b": "xray",
+        "run_id": 4,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V01\",\n    \"variable_b\": \"V08\",\n    \"in_markov_blanket\": false,\n    \"role_of_a\": \"uncertain\",\n    \"confidence\": 0.5,\n    \"reason\": \"The names and meanings of both variables are hidden, making it impossible to determine their causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V01",
+          "variable_b": "V08",
+          "in_markov_blanket": false,
+          "role_of_a": "uncertain",
+          "confidence": 0.5,
+          "reason": "The names and meanings of both variables are hidden, making it impossible to determine their causal relationship."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "asia",
+        "variable_b": "xray",
+        "run_id": 5,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V01\",\n    \"variable_b\": \"V08\",\n    \"in_markov_blanket\": false,\n    \"role_of_a\": \"uncertain\",\n    \"confidence\": 0.5,\n    \"reason\": \"The names and meanings of both variables are hidden, making it impossible to determine their causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V01",
+          "variable_b": "V08",
+          "in_markov_blanket": false,
+          "role_of_a": "uncertain",
+          "confidence": 0.5,
+          "reason": "The names and meanings of both variables are hidden, making it impossible to determine their causal relationship."
+        },
+        "parse_status": "success"
+      }
+    ],
+    "final_role": "uncertain",
+    "in_markov_blanket": false,
+    "positive_ratio": 0.0,
+    "final_confidence": 0.5,
+    "consistency": 1.0,
+    "relation_count": {
+      "uncertain": 5
+    }
+  },
+  {
+    "variable_a": "bronc",
+    "variable_b": "dysp",
+    "runs": [
+      {
+        "variable_a": "bronc",
+        "variable_b": "dysp",
+        "run_id": 1,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V02\",\n    \"variable_b\": \"V03\",\n    \"in_markov_blanket\": false,\n    \"role_of_a\": \"uncertain\",\n    \"confidence\": 0.5,\n    \"reason\": \"The names and meanings of both variables are hidden, so it is impossible to determine their causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V02",
+          "variable_b": "V03",
+          "in_markov_blanket": false,
+          "role_of_a": "uncertain",
+          "confidence": 0.5,
+          "reason": "The names and meanings of both variables are hidden, so it is impossible to determine their causal relationship."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "bronc",
+        "variable_b": "dysp",
+        "run_id": 2,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V02\",\n    \"variable_b\": \"V03\",\n    \"in_markov_blanket\": false,\n    \"role_of_a\": \"uncertain\",\n    \"confidence\": 0.5,\n    \"reason\": \"The names and meanings of both variables are hidden, so it is impossible to determine their causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V02",
+          "variable_b": "V03",
+          "in_markov_blanket": false,
+          "role_of_a": "uncertain",
+          "confidence": 0.5,
+          "reason": "The names and meanings of both variables are hidden, so it is impossible to determine their causal relationship."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "bronc",
+        "variable_b": "dysp",
+        "run_id": 3,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V02\",\n    \"variable_b\": \"V03\",\n    \"in_markov_blanket\": false,\n    \"role_of_a\": \"uncertain\",\n    \"confidence\": 0.5,\n    \"reason\": \"The names and meanings of both variables are hidden, so it is impossible to determine their causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V02",
+          "variable_b": "V03",
+          "in_markov_blanket": false,
+          "role_of_a": "uncertain",
+          "confidence": 0.5,
+          "reason": "The names and meanings of both variables are hidden, so it is impossible to determine their causal relationship."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "bronc",
+        "variable_b": "dysp",
+        "run_id": 4,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V02\",\n    \"variable_b\": \"V03\",\n    \"in_markov_blanket\": false,\n    \"role_of_a\": \"uncertain\",\n    \"confidence\": 0.5,\n    \"reason\": \"The names and meanings of both variables are hidden, so it is impossible to determine their causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V02",
+          "variable_b": "V03",
+          "in_markov_blanket": false,
+          "role_of_a": "uncertain",
+          "confidence": 0.5,
+          "reason": "The names and meanings of both variables are hidden, so it is impossible to determine their causal relationship."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "bronc",
+        "variable_b": "dysp",
+        "run_id": 5,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V02\",\n    \"variable_b\": \"V03\",\n    \"in_markov_blanket\": false,\n    \"role_of_a\": \"uncertain\",\n    \"confidence\": 0.5,\n    \"reason\": \"The names and meanings of both variables are hidden, so it is impossible to determine their causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V02",
+          "variable_b": "V03",
+          "in_markov_blanket": false,
+          "role_of_a": "uncertain",
+          "confidence": 0.5,
+          "reason": "The names and meanings of both variables are hidden, so it is impossible to determine their causal relationship."
+        },
+        "parse_status": "success"
+      }
+    ],
+    "final_role": "uncertain",
+    "in_markov_blanket": false,
+    "positive_ratio": 0.0,
+    "final_confidence": 0.5,
+    "consistency": 1.0,
+    "relation_count": {
+      "uncertain": 5
+    }
+  },
+  {
+    "variable_a": "bronc",
+    "variable_b": "either",
+    "runs": [
+      {
+        "variable_a": "bronc",
+        "variable_b": "either",
+        "run_id": 1,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V02\",\n    \"variable_b\": \"V04\",\n    \"in_markov_blanket\": false,\n    \"role_of_a\": \"uncertain\",\n    \"confidence\": 0.5,\n    \"reason\": \"The names and meanings of both variables are hidden, making it impossible to determine their causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V02",
+          "variable_b": "V04",
+          "in_markov_blanket": false,
+          "role_of_a": "uncertain",
+          "confidence": 0.5,
+          "reason": "The names and meanings of both variables are hidden, making it impossible to determine their causal relationship."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "bronc",
+        "variable_b": "either",
+        "run_id": 2,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V02\",\n    \"variable_b\": \"V04\",\n    \"in_markov_blanket\": false,\n    \"role_of_a\": \"uncertain\",\n    \"confidence\": 0.5,\n    \"reason\": \"The names and meanings of both variables are hidden, making it impossible to determine their causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V02",
+          "variable_b": "V04",
+          "in_markov_blanket": false,
+          "role_of_a": "uncertain",
+          "confidence": 0.5,
+          "reason": "The names and meanings of both variables are hidden, making it impossible to determine their causal relationship."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "bronc",
+        "variable_b": "either",
+        "run_id": 3,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V02\",\n    \"variable_b\": \"V04\",\n    \"in_markov_blanket\": false,\n    \"role_of_a\": \"uncertain\",\n    \"confidence\": 0.5,\n    \"reason\": \"The names and meanings of both variables are hidden, making it impossible to determine their causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V02",
+          "variable_b": "V04",
+          "in_markov_blanket": false,
+          "role_of_a": "uncertain",
+          "confidence": 0.5,
+          "reason": "The names and meanings of both variables are hidden, making it impossible to determine their causal relationship."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "bronc",
+        "variable_b": "either",
+        "run_id": 4,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V02\",\n    \"variable_b\": \"V04\",\n    \"in_markov_blanket\": false,\n    \"role_of_a\": \"uncertain\",\n    \"confidence\": 0.5,\n    \"reason\": \"The names and meanings of both variables are hidden, making it impossible to determine their causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V02",
+          "variable_b": "V04",
+          "in_markov_blanket": false,
+          "role_of_a": "uncertain",
+          "confidence": 0.5,
+          "reason": "The names and meanings of both variables are hidden, making it impossible to determine their causal relationship."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "bronc",
+        "variable_b": "either",
+        "run_id": 5,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V02\",\n    \"variable_b\": \"V04\",\n    \"in_markov_blanket\": false,\n    \"role_of_a\": \"uncertain\",\n    \"confidence\": 0.5,\n    \"reason\": \"The names and meanings of both variables are hidden, making it impossible to determine their causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V02",
+          "variable_b": "V04",
+          "in_markov_blanket": false,
+          "role_of_a": "uncertain",
+          "confidence": 0.5,
+          "reason": "The names and meanings of both variables are hidden, making it impossible to determine their causal relationship."
+        },
+        "parse_status": "success"
+      }
+    ],
+    "final_role": "uncertain",
+    "in_markov_blanket": false,
+    "positive_ratio": 0.0,
+    "final_confidence": 0.5,
+    "consistency": 1.0,
+    "relation_count": {
+      "uncertain": 5
+    }
+  },
+  {
+    "variable_a": "bronc",
+    "variable_b": "xray",
+    "runs": [
+      {
+        "variable_a": "bronc",
+        "variable_b": "xray",
+        "run_id": 1,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V02\",\n    \"variable_b\": \"V08\",\n    \"in_markov_blanket\": false,\n    \"role_of_a\": \"uncertain\",\n    \"confidence\": 0.5,\n    \"reason\": \"The names and meanings of both variables are hidden, making it impossible to determine their causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V02",
+          "variable_b": "V08",
+          "in_markov_blanket": false,
+          "role_of_a": "uncertain",
+          "confidence": 0.5,
+          "reason": "The names and meanings of both variables are hidden, making it impossible to determine their causal relationship."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "bronc",
+        "variable_b": "xray",
+        "run_id": 2,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V02\",\n    \"variable_b\": \"V08\",\n    \"in_markov_blanket\": false,\n    \"role_of_a\": \"uncertain\",\n    \"confidence\": 0.5,\n    \"reason\": \"The names and meanings of both variables are hidden, making it impossible to determine their causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V02",
+          "variable_b": "V08",
+          "in_markov_blanket": false,
+          "role_of_a": "uncertain",
+          "confidence": 0.5,
+          "reason": "The names and meanings of both variables are hidden, making it impossible to determine their causal relationship."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "bronc",
+        "variable_b": "xray",
+        "run_id": 3,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V02\",\n    \"variable_b\": \"V08\",\n    \"in_markov_blanket\": false,\n    \"role_of_a\": \"uncertain\",\n    \"confidence\": 0.5,\n    \"reason\": \"The names and meanings of both variables are hidden, making it impossible to determine their causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V02",
+          "variable_b": "V08",
+          "in_markov_blanket": false,
+          "role_of_a": "uncertain",
+          "confidence": 0.5,
+          "reason": "The names and meanings of both variables are hidden, making it impossible to determine their causal relationship."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "bronc",
+        "variable_b": "xray",
+        "run_id": 4,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V02\",\n    \"variable_b\": \"V08\",\n    \"in_markov_blanket\": false,\n    \"role_of_a\": \"uncertain\",\n    \"confidence\": 0.5,\n    \"reason\": \"The names and meanings of both variables are hidden, making it impossible to determine their causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V02",
+          "variable_b": "V08",
+          "in_markov_blanket": false,
+          "role_of_a": "uncertain",
+          "confidence": 0.5,
+          "reason": "The names and meanings of both variables are hidden, making it impossible to determine their causal relationship."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "bronc",
+        "variable_b": "xray",
+        "run_id": 5,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V02\",\n    \"variable_b\": \"V08\",\n    \"in_markov_blanket\": false,\n    \"role_of_a\": \"uncertain\",\n    \"confidence\": 0.5,\n    \"reason\": \"The names and meanings of both variables are hidden, making it impossible to determine their causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V02",
+          "variable_b": "V08",
+          "in_markov_blanket": false,
+          "role_of_a": "uncertain",
+          "confidence": 0.5,
+          "reason": "The names and meanings of both variables are hidden, making it impossible to determine their causal relationship."
+        },
+        "parse_status": "success"
+      }
+    ],
+    "final_role": "uncertain",
+    "in_markov_blanket": false,
+    "positive_ratio": 0.0,
+    "final_confidence": 0.5,
+    "consistency": 1.0,
+    "relation_count": {
+      "uncertain": 5
+    }
+  },
+  {
+    "variable_a": "either",
+    "variable_b": "dysp",
+    "runs": [
+      {
+        "variable_a": "either",
+        "variable_b": "dysp",
+        "run_id": 1,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V04\",\n    \"variable_b\": \"V03\",\n    \"in_markov_blanket\": false,\n    \"role_of_a\": \"uncertain\",\n    \"confidence\": 0.5,\n    \"reason\": \"The names and meanings of both variables are hidden, making it impossible to determine their causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V04",
+          "variable_b": "V03",
+          "in_markov_blanket": false,
+          "role_of_a": "uncertain",
+          "confidence": 0.5,
+          "reason": "The names and meanings of both variables are hidden, making it impossible to determine their causal relationship."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "either",
+        "variable_b": "dysp",
+        "run_id": 2,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V04\",\n    \"variable_b\": \"V03\",\n    \"in_markov_blanket\": false,\n    \"role_of_a\": \"uncertain\",\n    \"confidence\": 0.5,\n    \"reason\": \"The names and meanings of both variables are hidden, making it impossible to determine their causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V04",
+          "variable_b": "V03",
+          "in_markov_blanket": false,
+          "role_of_a": "uncertain",
+          "confidence": 0.5,
+          "reason": "The names and meanings of both variables are hidden, making it impossible to determine their causal relationship."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "either",
+        "variable_b": "dysp",
+        "run_id": 3,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V04\",\n    \"variable_b\": \"V03\",\n    \"in_markov_blanket\": false,\n    \"role_of_a\": \"uncertain\",\n    \"confidence\": 0.5,\n    \"reason\": \"The names and meanings of both variables are hidden, making it impossible to determine their causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V04",
+          "variable_b": "V03",
+          "in_markov_blanket": false,
+          "role_of_a": "uncertain",
+          "confidence": 0.5,
+          "reason": "The names and meanings of both variables are hidden, making it impossible to determine their causal relationship."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "either",
+        "variable_b": "dysp",
+        "run_id": 4,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V04\",\n    \"variable_b\": \"V03\",\n    \"in_markov_blanket\": false,\n    \"role_of_a\": \"uncertain\",\n    \"confidence\": 0.5,\n    \"reason\": \"The names and meanings of both variables are hidden, making it impossible to determine their causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V04",
+          "variable_b": "V03",
+          "in_markov_blanket": false,
+          "role_of_a": "uncertain",
+          "confidence": 0.5,
+          "reason": "The names and meanings of both variables are hidden, making it impossible to determine their causal relationship."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "either",
+        "variable_b": "dysp",
+        "run_id": 5,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V04\",\n    \"variable_b\": \"V03\",\n    \"in_markov_blanket\": false,\n    \"role_of_a\": \"uncertain\",\n    \"confidence\": 0.5,\n    \"reason\": \"The names and meanings of both variables are hidden, making it impossible to determine their causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V04",
+          "variable_b": "V03",
+          "in_markov_blanket": false,
+          "role_of_a": "uncertain",
+          "confidence": 0.5,
+          "reason": "The names and meanings of both variables are hidden, making it impossible to determine their causal relationship."
+        },
+        "parse_status": "success"
+      }
+    ],
+    "final_role": "uncertain",
+    "in_markov_blanket": false,
+    "positive_ratio": 0.0,
+    "final_confidence": 0.5,
+    "consistency": 1.0,
+    "relation_count": {
+      "uncertain": 5
+    }
+  },
+  {
+    "variable_a": "either",
+    "variable_b": "xray",
+    "runs": [
+      {
+        "variable_a": "either",
+        "variable_b": "xray",
+        "run_id": 1,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V04\",\n    \"variable_b\": \"V08\",\n    \"in_markov_blanket\": false,\n    \"role_of_a\": \"uncertain\",\n    \"confidence\": 0.5,\n    \"reason\": \"The names and meanings of both variables are hidden, making it impossible to determine their causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V04",
+          "variable_b": "V08",
+          "in_markov_blanket": false,
+          "role_of_a": "uncertain",
+          "confidence": 0.5,
+          "reason": "The names and meanings of both variables are hidden, making it impossible to determine their causal relationship."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "either",
+        "variable_b": "xray",
+        "run_id": 2,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V04\",\n    \"variable_b\": \"V08\",\n    \"in_markov_blanket\": false,\n    \"role_of_a\": \"uncertain\",\n    \"confidence\": 0.5,\n    \"reason\": \"The names and meanings of both variables are hidden, making it impossible to determine their causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V04",
+          "variable_b": "V08",
+          "in_markov_blanket": false,
+          "role_of_a": "uncertain",
+          "confidence": 0.5,
+          "reason": "The names and meanings of both variables are hidden, making it impossible to determine their causal relationship."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "either",
+        "variable_b": "xray",
+        "run_id": 3,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V04\",\n    \"variable_b\": \"V08\",\n    \"in_markov_blanket\": false,\n    \"role_of_a\": \"uncertain\",\n    \"confidence\": 0.5,\n    \"reason\": \"The names and meanings of both variables are hidden, making it impossible to determine their causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V04",
+          "variable_b": "V08",
+          "in_markov_blanket": false,
+          "role_of_a": "uncertain",
+          "confidence": 0.5,
+          "reason": "The names and meanings of both variables are hidden, making it impossible to determine their causal relationship."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "either",
+        "variable_b": "xray",
+        "run_id": 4,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V04\",\n    \"variable_b\": \"V08\",\n    \"in_markov_blanket\": false,\n    \"role_of_a\": \"uncertain\",\n    \"confidence\": 0.5,\n    \"reason\": \"The names and meanings of both variables are hidden, making it impossible to determine their causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V04",
+          "variable_b": "V08",
+          "in_markov_blanket": false,
+          "role_of_a": "uncertain",
+          "confidence": 0.5,
+          "reason": "The names and meanings of both variables are hidden, making it impossible to determine their causal relationship."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "either",
+        "variable_b": "xray",
+        "run_id": 5,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V04\",\n    \"variable_b\": \"V08\",\n    \"in_markov_blanket\": false,\n    \"role_of_a\": \"uncertain\",\n    \"confidence\": 0.5,\n    \"reason\": \"The names and meanings of both variables are hidden, making it impossible to determine their causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V04",
+          "variable_b": "V08",
+          "in_markov_blanket": false,
+          "role_of_a": "uncertain",
+          "confidence": 0.5,
+          "reason": "The names and meanings of both variables are hidden, making it impossible to determine their causal relationship."
+        },
+        "parse_status": "success"
+      }
+    ],
+    "final_role": "uncertain",
+    "in_markov_blanket": false,
+    "positive_ratio": 0.0,
+    "final_confidence": 0.5,
+    "consistency": 1.0,
+    "relation_count": {
+      "uncertain": 5
+    }
+  },
+  {
+    "variable_a": "lung",
+    "variable_b": "bronc",
+    "runs": [
+      {
+        "variable_a": "lung",
+        "variable_b": "bronc",
+        "run_id": 1,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V05\",\n    \"variable_b\": \"V02\",\n    \"in_markov_blanket\": false,\n    \"role_of_a\": \"uncertain\",\n    \"confidence\": 0.5,\n    \"reason\": \"The names and meanings of both variables are hidden, making it impossible to determine their causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V05",
+          "variable_b": "V02",
+          "in_markov_blanket": false,
+          "role_of_a": "uncertain",
+          "confidence": 0.5,
+          "reason": "The names and meanings of both variables are hidden, making it impossible to determine their causal relationship."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "lung",
+        "variable_b": "bronc",
+        "run_id": 2,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V05\",\n    \"variable_b\": \"V02\",\n    \"in_markov_blanket\": false,\n    \"role_of_a\": \"uncertain\",\n    \"confidence\": 0.5,\n    \"reason\": \"The names and meanings of both variables are hidden, making it impossible to determine their causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V05",
+          "variable_b": "V02",
+          "in_markov_blanket": false,
+          "role_of_a": "uncertain",
+          "confidence": 0.5,
+          "reason": "The names and meanings of both variables are hidden, making it impossible to determine their causal relationship."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "lung",
+        "variable_b": "bronc",
+        "run_id": 3,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V05\",\n    \"variable_b\": \"V02\",\n    \"in_markov_blanket\": false,\n    \"role_of_a\": \"uncertain\",\n    \"confidence\": 0.5,\n    \"reason\": \"The names and meanings of both variables are hidden, making it impossible to determine their causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V05",
+          "variable_b": "V02",
+          "in_markov_blanket": false,
+          "role_of_a": "uncertain",
+          "confidence": 0.5,
+          "reason": "The names and meanings of both variables are hidden, making it impossible to determine their causal relationship."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "lung",
+        "variable_b": "bronc",
+        "run_id": 4,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V05\",\n    \"variable_b\": \"V02\",\n    \"in_markov_blanket\": false,\n    \"role_of_a\": \"uncertain\",\n    \"confidence\": 0.5,\n    \"reason\": \"The names and meanings of both variables are hidden, making it impossible to determine their causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V05",
+          "variable_b": "V02",
+          "in_markov_blanket": false,
+          "role_of_a": "uncertain",
+          "confidence": 0.5,
+          "reason": "The names and meanings of both variables are hidden, making it impossible to determine their causal relationship."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "lung",
+        "variable_b": "bronc",
+        "run_id": 5,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V05\",\n    \"variable_b\": \"V02\",\n    \"in_markov_blanket\": false,\n    \"role_of_a\": \"uncertain\",\n    \"confidence\": 0.5,\n    \"reason\": \"The names and meanings of both variables are hidden, making it impossible to determine their causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V05",
+          "variable_b": "V02",
+          "in_markov_blanket": false,
+          "role_of_a": "uncertain",
+          "confidence": 0.5,
+          "reason": "The names and meanings of both variables are hidden, making it impossible to determine their causal relationship."
+        },
+        "parse_status": "success"
+      }
+    ],
+    "final_role": "uncertain",
+    "in_markov_blanket": false,
+    "positive_ratio": 0.0,
+    "final_confidence": 0.5,
+    "consistency": 1.0,
+    "relation_count": {
+      "uncertain": 5
+    }
+  },
+  {
+    "variable_a": "lung",
+    "variable_b": "dysp",
+    "runs": [
+      {
+        "variable_a": "lung",
+        "variable_b": "dysp",
+        "run_id": 1,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V05\",\n    \"variable_b\": \"V03\",\n    \"in_markov_blanket\": false,\n    \"role_of_a\": \"uncertain\",\n    \"confidence\": 0.5,\n    \"reason\": \"The names and meanings of both variables are hidden, making it impossible to determine their causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V05",
+          "variable_b": "V03",
+          "in_markov_blanket": false,
+          "role_of_a": "uncertain",
+          "confidence": 0.5,
+          "reason": "The names and meanings of both variables are hidden, making it impossible to determine their causal relationship."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "lung",
+        "variable_b": "dysp",
+        "run_id": 2,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V05\",\n    \"variable_b\": \"V03\",\n    \"in_markov_blanket\": false,\n    \"role_of_a\": \"uncertain\",\n    \"confidence\": 0.5,\n    \"reason\": \"The names and meanings of both variables are hidden, making it impossible to determine their causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V05",
+          "variable_b": "V03",
+          "in_markov_blanket": false,
+          "role_of_a": "uncertain",
+          "confidence": 0.5,
+          "reason": "The names and meanings of both variables are hidden, making it impossible to determine their causal relationship."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "lung",
+        "variable_b": "dysp",
+        "run_id": 3,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V05\",\n    \"variable_b\": \"V03\",\n    \"in_markov_blanket\": false,\n    \"role_of_a\": \"uncertain\",\n    \"confidence\": 0.5,\n    \"reason\": \"The names and meanings of both variables are hidden, making it impossible to determine their causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V05",
+          "variable_b": "V03",
+          "in_markov_blanket": false,
+          "role_of_a": "uncertain",
+          "confidence": 0.5,
+          "reason": "The names and meanings of both variables are hidden, making it impossible to determine their causal relationship."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "lung",
+        "variable_b": "dysp",
+        "run_id": 4,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V05\",\n    \"variable_b\": \"V03\",\n    \"in_markov_blanket\": false,\n    \"role_of_a\": \"uncertain\",\n    \"confidence\": 0.5,\n    \"reason\": \"The names and meanings of both variables are hidden, making it impossible to determine their causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V05",
+          "variable_b": "V03",
+          "in_markov_blanket": false,
+          "role_of_a": "uncertain",
+          "confidence": 0.5,
+          "reason": "The names and meanings of both variables are hidden, making it impossible to determine their causal relationship."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "lung",
+        "variable_b": "dysp",
+        "run_id": 5,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V05\",\n    \"variable_b\": \"V03\",\n    \"in_markov_blanket\": false,\n    \"role_of_a\": \"uncertain\",\n    \"confidence\": 0.5,\n    \"reason\": \"The names and meanings of both variables are hidden, making it impossible to determine their causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V05",
+          "variable_b": "V03",
+          "in_markov_blanket": false,
+          "role_of_a": "uncertain",
+          "confidence": 0.5,
+          "reason": "The names and meanings of both variables are hidden, making it impossible to determine their causal relationship."
+        },
+        "parse_status": "success"
+      }
+    ],
+    "final_role": "uncertain",
+    "in_markov_blanket": false,
+    "positive_ratio": 0.0,
+    "final_confidence": 0.5,
+    "consistency": 1.0,
+    "relation_count": {
+      "uncertain": 5
+    }
+  },
+  {
+    "variable_a": "lung",
+    "variable_b": "either",
+    "runs": [
+      {
+        "variable_a": "lung",
+        "variable_b": "either",
+        "run_id": 1,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V05\",\n    \"variable_b\": \"V04\",\n    \"in_markov_blanket\": false,\n    \"role_of_a\": \"uncertain\",\n    \"confidence\": 0.5,\n    \"reason\": \"The names and meanings of both variables are hidden, making it impossible to determine their causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V05",
+          "variable_b": "V04",
+          "in_markov_blanket": false,
+          "role_of_a": "uncertain",
+          "confidence": 0.5,
+          "reason": "The names and meanings of both variables are hidden, making it impossible to determine their causal relationship."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "lung",
+        "variable_b": "either",
+        "run_id": 2,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V05\",\n    \"variable_b\": \"V04\",\n    \"in_markov_blanket\": false,\n    \"role_of_a\": \"uncertain\",\n    \"confidence\": 0.5,\n    \"reason\": \"The names and meanings of both variables are hidden, making it impossible to determine their causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V05",
+          "variable_b": "V04",
+          "in_markov_blanket": false,
+          "role_of_a": "uncertain",
+          "confidence": 0.5,
+          "reason": "The names and meanings of both variables are hidden, making it impossible to determine their causal relationship."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "lung",
+        "variable_b": "either",
+        "run_id": 3,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V05\",\n    \"variable_b\": \"V04\",\n    \"in_markov_blanket\": false,\n    \"role_of_a\": \"uncertain\",\n    \"confidence\": 0.5,\n    \"reason\": \"The names and meanings of both variables are hidden, making it impossible to determine their causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V05",
+          "variable_b": "V04",
+          "in_markov_blanket": false,
+          "role_of_a": "uncertain",
+          "confidence": 0.5,
+          "reason": "The names and meanings of both variables are hidden, making it impossible to determine their causal relationship."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "lung",
+        "variable_b": "either",
+        "run_id": 4,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V05\",\n    \"variable_b\": \"V04\",\n    \"in_markov_blanket\": false,\n    \"role_of_a\": \"uncertain\",\n    \"confidence\": 0.5,\n    \"reason\": \"The names and meanings of both variables are hidden, making it impossible to determine their causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V05",
+          "variable_b": "V04",
+          "in_markov_blanket": false,
+          "role_of_a": "uncertain",
+          "confidence": 0.5,
+          "reason": "The names and meanings of both variables are hidden, making it impossible to determine their causal relationship."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "lung",
+        "variable_b": "either",
+        "run_id": 5,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V05\",\n    \"variable_b\": \"V04\",\n    \"in_markov_blanket\": false,\n    \"role_of_a\": \"uncertain\",\n    \"confidence\": 0.5,\n    \"reason\": \"The names and meanings of both variables are hidden, making it impossible to determine their causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V05",
+          "variable_b": "V04",
+          "in_markov_blanket": false,
+          "role_of_a": "uncertain",
+          "confidence": 0.5,
+          "reason": "The names and meanings of both variables are hidden, making it impossible to determine their causal relationship."
+        },
+        "parse_status": "success"
+      }
+    ],
+    "final_role": "uncertain",
+    "in_markov_blanket": false,
+    "positive_ratio": 0.0,
+    "final_confidence": 0.5,
+    "consistency": 1.0,
+    "relation_count": {
+      "uncertain": 5
+    }
+  },
+  {
+    "variable_a": "lung",
+    "variable_b": "xray",
+    "runs": [
+      {
+        "variable_a": "lung",
+        "variable_b": "xray",
+        "run_id": 1,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V05\",\n    \"variable_b\": \"V08\",\n    \"in_markov_blanket\": false,\n    \"role_of_a\": \"uncertain\",\n    \"confidence\": 0.5,\n    \"reason\": \"The names and meanings of both variables are hidden, making it impossible to determine their causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V05",
+          "variable_b": "V08",
+          "in_markov_blanket": false,
+          "role_of_a": "uncertain",
+          "confidence": 0.5,
+          "reason": "The names and meanings of both variables are hidden, making it impossible to determine their causal relationship."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "lung",
+        "variable_b": "xray",
+        "run_id": 2,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V05\",\n    \"variable_b\": \"V08\",\n    \"in_markov_blanket\": false,\n    \"role_of_a\": \"uncertain\",\n    \"confidence\": 0.5,\n    \"reason\": \"The names and meanings of both variables are hidden, making it impossible to determine their causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V05",
+          "variable_b": "V08",
+          "in_markov_blanket": false,
+          "role_of_a": "uncertain",
+          "confidence": 0.5,
+          "reason": "The names and meanings of both variables are hidden, making it impossible to determine their causal relationship."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "lung",
+        "variable_b": "xray",
+        "run_id": 3,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V05\",\n    \"variable_b\": \"V08\",\n    \"in_markov_blanket\": false,\n    \"role_of_a\": \"uncertain\",\n    \"confidence\": 0.5,\n    \"reason\": \"The names and meanings of both variables are hidden, making it impossible to determine their causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V05",
+          "variable_b": "V08",
+          "in_markov_blanket": false,
+          "role_of_a": "uncertain",
+          "confidence": 0.5,
+          "reason": "The names and meanings of both variables are hidden, making it impossible to determine their causal relationship."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "lung",
+        "variable_b": "xray",
+        "run_id": 4,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V05\",\n    \"variable_b\": \"V08\",\n    \"in_markov_blanket\": false,\n    \"role_of_a\": \"uncertain\",\n    \"confidence\": 0.5,\n    \"reason\": \"The names and meanings of both variables are hidden, making it impossible to determine their causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V05",
+          "variable_b": "V08",
+          "in_markov_blanket": false,
+          "role_of_a": "uncertain",
+          "confidence": 0.5,
+          "reason": "The names and meanings of both variables are hidden, making it impossible to determine their causal relationship."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "lung",
+        "variable_b": "xray",
+        "run_id": 5,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V05\",\n    \"variable_b\": \"V08\",\n    \"in_markov_blanket\": false,\n    \"role_of_a\": \"uncertain\",\n    \"confidence\": 0.5,\n    \"reason\": \"The names and meanings of both variables are hidden, making it impossible to determine their causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V05",
+          "variable_b": "V08",
+          "in_markov_blanket": false,
+          "role_of_a": "uncertain",
+          "confidence": 0.5,
+          "reason": "The names and meanings of both variables are hidden, making it impossible to determine their causal relationship."
+        },
+        "parse_status": "success"
+      }
+    ],
+    "final_role": "uncertain",
+    "in_markov_blanket": false,
+    "positive_ratio": 0.0,
+    "final_confidence": 0.5,
+    "consistency": 1.0,
+    "relation_count": {
+      "uncertain": 5
+    }
+  },
+  {
+    "variable_a": "smoke",
+    "variable_b": "bronc",
+    "runs": [
+      {
+        "variable_a": "smoke",
+        "variable_b": "bronc",
+        "run_id": 1,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V06\",\n    \"variable_b\": \"V02\",\n    \"in_markov_blanket\": false,\n    \"role_of_a\": \"uncertain\",\n    \"confidence\": 0.5,\n    \"reason\": \"The names and meanings of both variables are hidden, making it impossible to determine their causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V06",
+          "variable_b": "V02",
+          "in_markov_blanket": false,
+          "role_of_a": "uncertain",
+          "confidence": 0.5,
+          "reason": "The names and meanings of both variables are hidden, making it impossible to determine their causal relationship."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "smoke",
+        "variable_b": "bronc",
+        "run_id": 2,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V06\",\n    \"variable_b\": \"V02\",\n    \"in_markov_blanket\": false,\n    \"role_of_a\": \"uncertain\",\n    \"confidence\": 0.5,\n    \"reason\": \"The names and meanings of both variables are hidden, making it impossible to determine their causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V06",
+          "variable_b": "V02",
+          "in_markov_blanket": false,
+          "role_of_a": "uncertain",
+          "confidence": 0.5,
+          "reason": "The names and meanings of both variables are hidden, making it impossible to determine their causal relationship."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "smoke",
+        "variable_b": "bronc",
+        "run_id": 3,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V06\",\n    \"variable_b\": \"V02\",\n    \"in_markov_blanket\": false,\n    \"role_of_a\": \"uncertain\",\n    \"confidence\": 0.5,\n    \"reason\": \"The names and meanings of both variables are hidden, making it impossible to determine their causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V06",
+          "variable_b": "V02",
+          "in_markov_blanket": false,
+          "role_of_a": "uncertain",
+          "confidence": 0.5,
+          "reason": "The names and meanings of both variables are hidden, making it impossible to determine their causal relationship."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "smoke",
+        "variable_b": "bronc",
+        "run_id": 4,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V06\",\n    \"variable_b\": \"V02\",\n    \"in_markov_blanket\": false,\n    \"role_of_a\": \"uncertain\",\n    \"confidence\": 0.5,\n    \"reason\": \"The names and meanings of both variables are hidden, making it impossible to determine their causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V06",
+          "variable_b": "V02",
+          "in_markov_blanket": false,
+          "role_of_a": "uncertain",
+          "confidence": 0.5,
+          "reason": "The names and meanings of both variables are hidden, making it impossible to determine their causal relationship."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "smoke",
+        "variable_b": "bronc",
+        "run_id": 5,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V06\",\n    \"variable_b\": \"V02\",\n    \"in_markov_blanket\": false,\n    \"role_of_a\": \"uncertain\",\n    \"confidence\": 0.5,\n    \"reason\": \"The names and meanings of both variables are hidden, making it impossible to determine their causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V06",
+          "variable_b": "V02",
+          "in_markov_blanket": false,
+          "role_of_a": "uncertain",
+          "confidence": 0.5,
+          "reason": "The names and meanings of both variables are hidden, making it impossible to determine their causal relationship."
+        },
+        "parse_status": "success"
+      }
+    ],
+    "final_role": "uncertain",
+    "in_markov_blanket": false,
+    "positive_ratio": 0.0,
+    "final_confidence": 0.5,
+    "consistency": 1.0,
+    "relation_count": {
+      "uncertain": 5
+    }
+  },
+  {
+    "variable_a": "smoke",
+    "variable_b": "dysp",
+    "runs": [
+      {
+        "variable_a": "smoke",
+        "variable_b": "dysp",
+        "run_id": 1,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V06\",\n    \"variable_b\": \"V03\",\n    \"in_markov_blanket\": false,\n    \"role_of_a\": \"uncertain\",\n    \"confidence\": 0.5,\n    \"reason\": \"The names and meanings of both variables are hidden, making it impossible to determine their causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V06",
+          "variable_b": "V03",
+          "in_markov_blanket": false,
+          "role_of_a": "uncertain",
+          "confidence": 0.5,
+          "reason": "The names and meanings of both variables are hidden, making it impossible to determine their causal relationship."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "smoke",
+        "variable_b": "dysp",
+        "run_id": 2,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V06\",\n    \"variable_b\": \"V03\",\n    \"in_markov_blanket\": false,\n    \"role_of_a\": \"uncertain\",\n    \"confidence\": 0.5,\n    \"reason\": \"The names and meanings of both variables are hidden, making it impossible to determine their causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V06",
+          "variable_b": "V03",
+          "in_markov_blanket": false,
+          "role_of_a": "uncertain",
+          "confidence": 0.5,
+          "reason": "The names and meanings of both variables are hidden, making it impossible to determine their causal relationship."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "smoke",
+        "variable_b": "dysp",
+        "run_id": 3,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V06\",\n    \"variable_b\": \"V03\",\n    \"in_markov_blanket\": false,\n    \"role_of_a\": \"uncertain\",\n    \"confidence\": 0.5,\n    \"reason\": \"The names and meanings of both variables are hidden, making it impossible to determine their causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V06",
+          "variable_b": "V03",
+          "in_markov_blanket": false,
+          "role_of_a": "uncertain",
+          "confidence": 0.5,
+          "reason": "The names and meanings of both variables are hidden, making it impossible to determine their causal relationship."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "smoke",
+        "variable_b": "dysp",
+        "run_id": 4,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V06\",\n    \"variable_b\": \"V03\",\n    \"in_markov_blanket\": false,\n    \"role_of_a\": \"uncertain\",\n    \"confidence\": 0.5,\n    \"reason\": \"The names and meanings of both variables are hidden, making it impossible to determine their causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V06",
+          "variable_b": "V03",
+          "in_markov_blanket": false,
+          "role_of_a": "uncertain",
+          "confidence": 0.5,
+          "reason": "The names and meanings of both variables are hidden, making it impossible to determine their causal relationship."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "smoke",
+        "variable_b": "dysp",
+        "run_id": 5,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V06\",\n    \"variable_b\": \"V03\",\n    \"in_markov_blanket\": false,\n    \"role_of_a\": \"uncertain\",\n    \"confidence\": 0.5,\n    \"reason\": \"The names and meanings of both variables are hidden, making it impossible to determine their causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V06",
+          "variable_b": "V03",
+          "in_markov_blanket": false,
+          "role_of_a": "uncertain",
+          "confidence": 0.5,
+          "reason": "The names and meanings of both variables are hidden, making it impossible to determine their causal relationship."
+        },
+        "parse_status": "success"
+      }
+    ],
+    "final_role": "uncertain",
+    "in_markov_blanket": false,
+    "positive_ratio": 0.0,
+    "final_confidence": 0.5,
+    "consistency": 1.0,
+    "relation_count": {
+      "uncertain": 5
+    }
+  },
+  {
+    "variable_a": "smoke",
+    "variable_b": "either",
+    "runs": [
+      {
+        "variable_a": "smoke",
+        "variable_b": "either",
+        "run_id": 1,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V06\",\n    \"variable_b\": \"V04\",\n    \"in_markov_blanket\": false,\n    \"role_of_a\": \"uncertain\",\n    \"confidence\": 0.5,\n    \"reason\": \"The names and meanings of both variables are hidden, making it impossible to determine their causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V06",
+          "variable_b": "V04",
+          "in_markov_blanket": false,
+          "role_of_a": "uncertain",
+          "confidence": 0.5,
+          "reason": "The names and meanings of both variables are hidden, making it impossible to determine their causal relationship."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "smoke",
+        "variable_b": "either",
+        "run_id": 2,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V06\",\n    \"variable_b\": \"V04\",\n    \"in_markov_blanket\": false,\n    \"role_of_a\": \"uncertain\",\n    \"confidence\": 0.5,\n    \"reason\": \"The names and meanings of both variables are hidden, making it impossible to determine their causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V06",
+          "variable_b": "V04",
+          "in_markov_blanket": false,
+          "role_of_a": "uncertain",
+          "confidence": 0.5,
+          "reason": "The names and meanings of both variables are hidden, making it impossible to determine their causal relationship."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "smoke",
+        "variable_b": "either",
+        "run_id": 3,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V06\",\n    \"variable_b\": \"V04\",\n    \"in_markov_blanket\": false,\n    \"role_of_a\": \"uncertain\",\n    \"confidence\": 0.5,\n    \"reason\": \"The names and meanings of both variables are hidden, making it impossible to determine their causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V06",
+          "variable_b": "V04",
+          "in_markov_blanket": false,
+          "role_of_a": "uncertain",
+          "confidence": 0.5,
+          "reason": "The names and meanings of both variables are hidden, making it impossible to determine their causal relationship."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "smoke",
+        "variable_b": "either",
+        "run_id": 4,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V06\",\n    \"variable_b\": \"V04\",\n    \"in_markov_blanket\": false,\n    \"role_of_a\": \"uncertain\",\n    \"confidence\": 0.5,\n    \"reason\": \"The names and meanings of both variables are hidden, making it impossible to determine their causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V06",
+          "variable_b": "V04",
+          "in_markov_blanket": false,
+          "role_of_a": "uncertain",
+          "confidence": 0.5,
+          "reason": "The names and meanings of both variables are hidden, making it impossible to determine their causal relationship."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "smoke",
+        "variable_b": "either",
+        "run_id": 5,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V06\",\n    \"variable_b\": \"V04\",\n    \"in_markov_blanket\": false,\n    \"role_of_a\": \"uncertain\",\n    \"confidence\": 0.5,\n    \"reason\": \"The names and meanings of both variables are hidden, making it impossible to determine their causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V06",
+          "variable_b": "V04",
+          "in_markov_blanket": false,
+          "role_of_a": "uncertain",
+          "confidence": 0.5,
+          "reason": "The names and meanings of both variables are hidden, making it impossible to determine their causal relationship."
+        },
+        "parse_status": "success"
+      }
+    ],
+    "final_role": "uncertain",
+    "in_markov_blanket": false,
+    "positive_ratio": 0.0,
+    "final_confidence": 0.5,
+    "consistency": 1.0,
+    "relation_count": {
+      "uncertain": 5
+    }
+  },
+  {
+    "variable_a": "smoke",
+    "variable_b": "lung",
+    "runs": [
+      {
+        "variable_a": "smoke",
+        "variable_b": "lung",
+        "run_id": 1,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V06\",\n    \"variable_b\": \"V05\",\n    \"in_markov_blanket\": false,\n    \"role_of_a\": \"uncertain\",\n    \"confidence\": 0.5,\n    \"reason\": \"The names and meanings of both variables are hidden, making it impossible to determine their causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V06",
+          "variable_b": "V05",
+          "in_markov_blanket": false,
+          "role_of_a": "uncertain",
+          "confidence": 0.5,
+          "reason": "The names and meanings of both variables are hidden, making it impossible to determine their causal relationship."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "smoke",
+        "variable_b": "lung",
+        "run_id": 2,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V06\",\n    \"variable_b\": \"V05\",\n    \"in_markov_blanket\": false,\n    \"role_of_a\": \"uncertain\",\n    \"confidence\": 0.5,\n    \"reason\": \"The names and meanings of both variables are hidden, making it impossible to determine their causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V06",
+          "variable_b": "V05",
+          "in_markov_blanket": false,
+          "role_of_a": "uncertain",
+          "confidence": 0.5,
+          "reason": "The names and meanings of both variables are hidden, making it impossible to determine their causal relationship."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "smoke",
+        "variable_b": "lung",
+        "run_id": 3,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V06\",\n    \"variable_b\": \"V05\",\n    \"in_markov_blanket\": false,\n    \"role_of_a\": \"uncertain\",\n    \"confidence\": 0.5,\n    \"reason\": \"The names and meanings of both variables are hidden, making it impossible to determine their causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V06",
+          "variable_b": "V05",
+          "in_markov_blanket": false,
+          "role_of_a": "uncertain",
+          "confidence": 0.5,
+          "reason": "The names and meanings of both variables are hidden, making it impossible to determine their causal relationship."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "smoke",
+        "variable_b": "lung",
+        "run_id": 4,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V06\",\n    \"variable_b\": \"V05\",\n    \"in_markov_blanket\": false,\n    \"role_of_a\": \"uncertain\",\n    \"confidence\": 0.5,\n    \"reason\": \"The names and meanings of both variables are hidden, making it impossible to determine their causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V06",
+          "variable_b": "V05",
+          "in_markov_blanket": false,
+          "role_of_a": "uncertain",
+          "confidence": 0.5,
+          "reason": "The names and meanings of both variables are hidden, making it impossible to determine their causal relationship."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "smoke",
+        "variable_b": "lung",
+        "run_id": 5,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V06\",\n    \"variable_b\": \"V05\",\n    \"in_markov_blanket\": false,\n    \"role_of_a\": \"uncertain\",\n    \"confidence\": 0.5,\n    \"reason\": \"The names and meanings of both variables are hidden, making it impossible to determine their causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V06",
+          "variable_b": "V05",
+          "in_markov_blanket": false,
+          "role_of_a": "uncertain",
+          "confidence": 0.5,
+          "reason": "The names and meanings of both variables are hidden, making it impossible to determine their causal relationship."
+        },
+        "parse_status": "success"
+      }
+    ],
+    "final_role": "uncertain",
+    "in_markov_blanket": false,
+    "positive_ratio": 0.0,
+    "final_confidence": 0.5,
+    "consistency": 1.0,
+    "relation_count": {
+      "uncertain": 5
+    }
+  },
+  {
+    "variable_a": "smoke",
+    "variable_b": "xray",
+    "runs": [
+      {
+        "variable_a": "smoke",
+        "variable_b": "xray",
+        "run_id": 1,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V06\",\n    \"variable_b\": \"V08\",\n    \"in_markov_blanket\": false,\n    \"role_of_a\": \"uncertain\",\n    \"confidence\": 0.5,\n    \"reason\": \"The names and meanings of both variables are hidden, making it impossible to determine their causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V06",
+          "variable_b": "V08",
+          "in_markov_blanket": false,
+          "role_of_a": "uncertain",
+          "confidence": 0.5,
+          "reason": "The names and meanings of both variables are hidden, making it impossible to determine their causal relationship."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "smoke",
+        "variable_b": "xray",
+        "run_id": 2,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V06\",\n    \"variable_b\": \"V08\",\n    \"in_markov_blanket\": false,\n    \"role_of_a\": \"uncertain\",\n    \"confidence\": 0.5,\n    \"reason\": \"The names and meanings of both variables are hidden, making it impossible to determine their causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V06",
+          "variable_b": "V08",
+          "in_markov_blanket": false,
+          "role_of_a": "uncertain",
+          "confidence": 0.5,
+          "reason": "The names and meanings of both variables are hidden, making it impossible to determine their causal relationship."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "smoke",
+        "variable_b": "xray",
+        "run_id": 3,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V06\",\n    \"variable_b\": \"V08\",\n    \"in_markov_blanket\": false,\n    \"role_of_a\": \"uncertain\",\n    \"confidence\": 0.5,\n    \"reason\": \"The names and meanings of both variables are hidden, making it impossible to determine their causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V06",
+          "variable_b": "V08",
+          "in_markov_blanket": false,
+          "role_of_a": "uncertain",
+          "confidence": 0.5,
+          "reason": "The names and meanings of both variables are hidden, making it impossible to determine their causal relationship."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "smoke",
+        "variable_b": "xray",
+        "run_id": 4,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V06\",\n    \"variable_b\": \"V08\",\n    \"in_markov_blanket\": false,\n    \"role_of_a\": \"uncertain\",\n    \"confidence\": 0.5,\n    \"reason\": \"The names and meanings of both variables are hidden, making it impossible to determine their causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V06",
+          "variable_b": "V08",
+          "in_markov_blanket": false,
+          "role_of_a": "uncertain",
+          "confidence": 0.5,
+          "reason": "The names and meanings of both variables are hidden, making it impossible to determine their causal relationship."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "smoke",
+        "variable_b": "xray",
+        "run_id": 5,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V06\",\n    \"variable_b\": \"V08\",\n    \"in_markov_blanket\": false,\n    \"role_of_a\": \"uncertain\",\n    \"confidence\": 0.5,\n    \"reason\": \"The names and meanings of both variables are hidden, making it impossible to determine their causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V06",
+          "variable_b": "V08",
+          "in_markov_blanket": false,
+          "role_of_a": "uncertain",
+          "confidence": 0.5,
+          "reason": "The names and meanings of both variables are hidden, making it impossible to determine their causal relationship."
+        },
+        "parse_status": "success"
+      }
+    ],
+    "final_role": "uncertain",
+    "in_markov_blanket": false,
+    "positive_ratio": 0.0,
+    "final_confidence": 0.5,
+    "consistency": 1.0,
+    "relation_count": {
+      "uncertain": 5
+    }
+  },
+  {
+    "variable_a": "tub",
+    "variable_b": "bronc",
+    "runs": [
+      {
+        "variable_a": "tub",
+        "variable_b": "bronc",
+        "run_id": 1,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V07\",\n    \"variable_b\": \"V02\",\n    \"in_markov_blanket\": false,\n    \"role_of_a\": \"uncertain\",\n    \"confidence\": 0.5,\n    \"reason\": \"The names and meanings of both variables are hidden, making it impossible to determine their causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V07",
+          "variable_b": "V02",
+          "in_markov_blanket": false,
+          "role_of_a": "uncertain",
+          "confidence": 0.5,
+          "reason": "The names and meanings of both variables are hidden, making it impossible to determine their causal relationship."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "tub",
+        "variable_b": "bronc",
+        "run_id": 2,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V07\",\n    \"variable_b\": \"V02\",\n    \"in_markov_blanket\": false,\n    \"role_of_a\": \"uncertain\",\n    \"confidence\": 0.5,\n    \"reason\": \"The names and meanings of both variables are hidden, making it impossible to determine their causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V07",
+          "variable_b": "V02",
+          "in_markov_blanket": false,
+          "role_of_a": "uncertain",
+          "confidence": 0.5,
+          "reason": "The names and meanings of both variables are hidden, making it impossible to determine their causal relationship."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "tub",
+        "variable_b": "bronc",
+        "run_id": 3,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V07\",\n    \"variable_b\": \"V02\",\n    \"in_markov_blanket\": false,\n    \"role_of_a\": \"uncertain\",\n    \"confidence\": 0.5,\n    \"reason\": \"The names and meanings of both variables are hidden, making it impossible to determine their causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V07",
+          "variable_b": "V02",
+          "in_markov_blanket": false,
+          "role_of_a": "uncertain",
+          "confidence": 0.5,
+          "reason": "The names and meanings of both variables are hidden, making it impossible to determine their causal relationship."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "tub",
+        "variable_b": "bronc",
+        "run_id": 4,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V07\",\n    \"variable_b\": \"V02\",\n    \"in_markov_blanket\": false,\n    \"role_of_a\": \"uncertain\",\n    \"confidence\": 0.5,\n    \"reason\": \"The names and meanings of both variables are hidden, making it impossible to determine their causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V07",
+          "variable_b": "V02",
+          "in_markov_blanket": false,
+          "role_of_a": "uncertain",
+          "confidence": 0.5,
+          "reason": "The names and meanings of both variables are hidden, making it impossible to determine their causal relationship."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "tub",
+        "variable_b": "bronc",
+        "run_id": 5,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V07\",\n    \"variable_b\": \"V02\",\n    \"in_markov_blanket\": false,\n    \"role_of_a\": \"uncertain\",\n    \"confidence\": 0.5,\n    \"reason\": \"The names and meanings of both variables are hidden, making it impossible to determine their causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V07",
+          "variable_b": "V02",
+          "in_markov_blanket": false,
+          "role_of_a": "uncertain",
+          "confidence": 0.5,
+          "reason": "The names and meanings of both variables are hidden, making it impossible to determine their causal relationship."
+        },
+        "parse_status": "success"
+      }
+    ],
+    "final_role": "uncertain",
+    "in_markov_blanket": false,
+    "positive_ratio": 0.0,
+    "final_confidence": 0.5,
+    "consistency": 1.0,
+    "relation_count": {
+      "uncertain": 5
+    }
+  },
+  {
+    "variable_a": "tub",
+    "variable_b": "dysp",
+    "runs": [
+      {
+        "variable_a": "tub",
+        "variable_b": "dysp",
+        "run_id": 1,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V07\",\n    \"variable_b\": \"V03\",\n    \"in_markov_blanket\": false,\n    \"role_of_a\": \"uncertain\",\n    \"confidence\": 0.5,\n    \"reason\": \"The names and meanings of both variables are hidden, making it impossible to determine their causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V07",
+          "variable_b": "V03",
+          "in_markov_blanket": false,
+          "role_of_a": "uncertain",
+          "confidence": 0.5,
+          "reason": "The names and meanings of both variables are hidden, making it impossible to determine their causal relationship."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "tub",
+        "variable_b": "dysp",
+        "run_id": 2,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V07\",\n    \"variable_b\": \"V03\",\n    \"in_markov_blanket\": false,\n    \"role_of_a\": \"uncertain\",\n    \"confidence\": 0.5,\n    \"reason\": \"The names and meanings of both variables are hidden, making it impossible to determine their causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V07",
+          "variable_b": "V03",
+          "in_markov_blanket": false,
+          "role_of_a": "uncertain",
+          "confidence": 0.5,
+          "reason": "The names and meanings of both variables are hidden, making it impossible to determine their causal relationship."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "tub",
+        "variable_b": "dysp",
+        "run_id": 3,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V07\",\n    \"variable_b\": \"V03\",\n    \"in_markov_blanket\": false,\n    \"role_of_a\": \"uncertain\",\n    \"confidence\": 0.5,\n    \"reason\": \"The names and meanings of both variables are hidden, making it impossible to determine their causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V07",
+          "variable_b": "V03",
+          "in_markov_blanket": false,
+          "role_of_a": "uncertain",
+          "confidence": 0.5,
+          "reason": "The names and meanings of both variables are hidden, making it impossible to determine their causal relationship."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "tub",
+        "variable_b": "dysp",
+        "run_id": 4,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V07\",\n    \"variable_b\": \"V03\",\n    \"in_markov_blanket\": false,\n    \"role_of_a\": \"uncertain\",\n    \"confidence\": 0.5,\n    \"reason\": \"The names and meanings of both variables are hidden, making it impossible to determine their causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V07",
+          "variable_b": "V03",
+          "in_markov_blanket": false,
+          "role_of_a": "uncertain",
+          "confidence": 0.5,
+          "reason": "The names and meanings of both variables are hidden, making it impossible to determine their causal relationship."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "tub",
+        "variable_b": "dysp",
+        "run_id": 5,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V07\",\n    \"variable_b\": \"V03\",\n    \"in_markov_blanket\": false,\n    \"role_of_a\": \"uncertain\",\n    \"confidence\": 0.5,\n    \"reason\": \"The names and meanings of both variables are hidden, making it impossible to determine their causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V07",
+          "variable_b": "V03",
+          "in_markov_blanket": false,
+          "role_of_a": "uncertain",
+          "confidence": 0.5,
+          "reason": "The names and meanings of both variables are hidden, making it impossible to determine their causal relationship."
+        },
+        "parse_status": "success"
+      }
+    ],
+    "final_role": "uncertain",
+    "in_markov_blanket": false,
+    "positive_ratio": 0.0,
+    "final_confidence": 0.5,
+    "consistency": 1.0,
+    "relation_count": {
+      "uncertain": 5
+    }
+  },
+  {
+    "variable_a": "tub",
+    "variable_b": "either",
+    "runs": [
+      {
+        "variable_a": "tub",
+        "variable_b": "either",
+        "run_id": 1,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V07\",\n    \"variable_b\": \"V04\",\n    \"in_markov_blanket\": false,\n    \"role_of_a\": \"uncertain\",\n    \"confidence\": 0.5,\n    \"reason\": \"The names and meanings of both variables are hidden, making it impossible to determine their causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V07",
+          "variable_b": "V04",
+          "in_markov_blanket": false,
+          "role_of_a": "uncertain",
+          "confidence": 0.5,
+          "reason": "The names and meanings of both variables are hidden, making it impossible to determine their causal relationship."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "tub",
+        "variable_b": "either",
+        "run_id": 2,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V07\",\n    \"variable_b\": \"V04\",\n    \"in_markov_blanket\": false,\n    \"role_of_a\": \"uncertain\",\n    \"confidence\": 0.5,\n    \"reason\": \"The names and meanings of both variables are hidden, making it impossible to determine their causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V07",
+          "variable_b": "V04",
+          "in_markov_blanket": false,
+          "role_of_a": "uncertain",
+          "confidence": 0.5,
+          "reason": "The names and meanings of both variables are hidden, making it impossible to determine their causal relationship."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "tub",
+        "variable_b": "either",
+        "run_id": 3,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V07\",\n    \"variable_b\": \"V04\",\n    \"in_markov_blanket\": false,\n    \"role_of_a\": \"uncertain\",\n    \"confidence\": 0.5,\n    \"reason\": \"The names and meanings of both variables are hidden, making it impossible to determine their causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V07",
+          "variable_b": "V04",
+          "in_markov_blanket": false,
+          "role_of_a": "uncertain",
+          "confidence": 0.5,
+          "reason": "The names and meanings of both variables are hidden, making it impossible to determine their causal relationship."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "tub",
+        "variable_b": "either",
+        "run_id": 4,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V07\",\n    \"variable_b\": \"V04\",\n    \"in_markov_blanket\": false,\n    \"role_of_a\": \"uncertain\",\n    \"confidence\": 0.5,\n    \"reason\": \"The names and meanings of both variables are hidden, making it impossible to determine their causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V07",
+          "variable_b": "V04",
+          "in_markov_blanket": false,
+          "role_of_a": "uncertain",
+          "confidence": 0.5,
+          "reason": "The names and meanings of both variables are hidden, making it impossible to determine their causal relationship."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "tub",
+        "variable_b": "either",
+        "run_id": 5,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V07\",\n    \"variable_b\": \"V04\",\n    \"in_markov_blanket\": false,\n    \"role_of_a\": \"uncertain\",\n    \"confidence\": 0.5,\n    \"reason\": \"The names and meanings of both variables are hidden, making it impossible to determine their causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V07",
+          "variable_b": "V04",
+          "in_markov_blanket": false,
+          "role_of_a": "uncertain",
+          "confidence": 0.5,
+          "reason": "The names and meanings of both variables are hidden, making it impossible to determine their causal relationship."
+        },
+        "parse_status": "success"
+      }
+    ],
+    "final_role": "uncertain",
+    "in_markov_blanket": false,
+    "positive_ratio": 0.0,
+    "final_confidence": 0.5,
+    "consistency": 1.0,
+    "relation_count": {
+      "uncertain": 5
+    }
+  },
+  {
+    "variable_a": "tub",
+    "variable_b": "lung",
+    "runs": [
+      {
+        "variable_a": "tub",
+        "variable_b": "lung",
+        "run_id": 1,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V07\",\n    \"variable_b\": \"V05\",\n    \"in_markov_blanket\": false,\n    \"role_of_a\": \"uncertain\",\n    \"confidence\": 0.5,\n    \"reason\": \"The names and meanings of both variables are hidden, making it impossible to determine their causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V07",
+          "variable_b": "V05",
+          "in_markov_blanket": false,
+          "role_of_a": "uncertain",
+          "confidence": 0.5,
+          "reason": "The names and meanings of both variables are hidden, making it impossible to determine their causal relationship."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "tub",
+        "variable_b": "lung",
+        "run_id": 2,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V07\",\n    \"variable_b\": \"V05\",\n    \"in_markov_blanket\": false,\n    \"role_of_a\": \"uncertain\",\n    \"confidence\": 0.5,\n    \"reason\": \"The names and meanings of both variables are hidden, making it impossible to determine their causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V07",
+          "variable_b": "V05",
+          "in_markov_blanket": false,
+          "role_of_a": "uncertain",
+          "confidence": 0.5,
+          "reason": "The names and meanings of both variables are hidden, making it impossible to determine their causal relationship."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "tub",
+        "variable_b": "lung",
+        "run_id": 3,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V07\",\n    \"variable_b\": \"V05\",\n    \"in_markov_blanket\": false,\n    \"role_of_a\": \"uncertain\",\n    \"confidence\": 0.5,\n    \"reason\": \"The names and meanings of both variables are hidden, making it impossible to determine their causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V07",
+          "variable_b": "V05",
+          "in_markov_blanket": false,
+          "role_of_a": "uncertain",
+          "confidence": 0.5,
+          "reason": "The names and meanings of both variables are hidden, making it impossible to determine their causal relationship."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "tub",
+        "variable_b": "lung",
+        "run_id": 4,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V07\",\n    \"variable_b\": \"V05\",\n    \"in_markov_blanket\": false,\n    \"role_of_a\": \"uncertain\",\n    \"confidence\": 0.5,\n    \"reason\": \"The names and meanings of both variables are hidden, making it impossible to determine their causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V07",
+          "variable_b": "V05",
+          "in_markov_blanket": false,
+          "role_of_a": "uncertain",
+          "confidence": 0.5,
+          "reason": "The names and meanings of both variables are hidden, making it impossible to determine their causal relationship."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "tub",
+        "variable_b": "lung",
+        "run_id": 5,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V07\",\n    \"variable_b\": \"V05\",\n    \"in_markov_blanket\": false,\n    \"role_of_a\": \"uncertain\",\n    \"confidence\": 0.5,\n    \"reason\": \"The names and meanings of both variables are hidden, making it impossible to determine their causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V07",
+          "variable_b": "V05",
+          "in_markov_blanket": false,
+          "role_of_a": "uncertain",
+          "confidence": 0.5,
+          "reason": "The names and meanings of both variables are hidden, making it impossible to determine their causal relationship."
+        },
+        "parse_status": "success"
+      }
+    ],
+    "final_role": "uncertain",
+    "in_markov_blanket": false,
+    "positive_ratio": 0.0,
+    "final_confidence": 0.5,
+    "consistency": 1.0,
+    "relation_count": {
+      "uncertain": 5
+    }
+  },
+  {
+    "variable_a": "tub",
+    "variable_b": "smoke",
+    "runs": [
+      {
+        "variable_a": "tub",
+        "variable_b": "smoke",
+        "run_id": 1,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V07\",\n    \"variable_b\": \"V06\",\n    \"in_markov_blanket\": false,\n    \"role_of_a\": \"uncertain\",\n    \"confidence\": 0.5,\n    \"reason\": \"The names and meanings of both variables are hidden, making it impossible to determine their causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V07",
+          "variable_b": "V06",
+          "in_markov_blanket": false,
+          "role_of_a": "uncertain",
+          "confidence": 0.5,
+          "reason": "The names and meanings of both variables are hidden, making it impossible to determine their causal relationship."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "tub",
+        "variable_b": "smoke",
+        "run_id": 2,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V07\",\n    \"variable_b\": \"V06\",\n    \"in_markov_blanket\": false,\n    \"role_of_a\": \"uncertain\",\n    \"confidence\": 0.5,\n    \"reason\": \"The names and meanings of both variables are hidden, making it impossible to determine their causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V07",
+          "variable_b": "V06",
+          "in_markov_blanket": false,
+          "role_of_a": "uncertain",
+          "confidence": 0.5,
+          "reason": "The names and meanings of both variables are hidden, making it impossible to determine their causal relationship."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "tub",
+        "variable_b": "smoke",
+        "run_id": 3,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V07\",\n    \"variable_b\": \"V06\",\n    \"in_markov_blanket\": false,\n    \"role_of_a\": \"uncertain\",\n    \"confidence\": 0.5,\n    \"reason\": \"The names and meanings of both variables are hidden, making it impossible to determine their causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V07",
+          "variable_b": "V06",
+          "in_markov_blanket": false,
+          "role_of_a": "uncertain",
+          "confidence": 0.5,
+          "reason": "The names and meanings of both variables are hidden, making it impossible to determine their causal relationship."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "tub",
+        "variable_b": "smoke",
+        "run_id": 4,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V07\",\n    \"variable_b\": \"V06\",\n    \"in_markov_blanket\": false,\n    \"role_of_a\": \"uncertain\",\n    \"confidence\": 0.5,\n    \"reason\": \"The names and meanings of both variables are hidden, making it impossible to determine their causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V07",
+          "variable_b": "V06",
+          "in_markov_blanket": false,
+          "role_of_a": "uncertain",
+          "confidence": 0.5,
+          "reason": "The names and meanings of both variables are hidden, making it impossible to determine their causal relationship."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "tub",
+        "variable_b": "smoke",
+        "run_id": 5,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V07\",\n    \"variable_b\": \"V06\",\n    \"in_markov_blanket\": false,\n    \"role_of_a\": \"uncertain\",\n    \"confidence\": 0.5,\n    \"reason\": \"The names and meanings of both variables are hidden, making it impossible to determine their causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V07",
+          "variable_b": "V06",
+          "in_markov_blanket": false,
+          "role_of_a": "uncertain",
+          "confidence": 0.5,
+          "reason": "The names and meanings of both variables are hidden, making it impossible to determine their causal relationship."
+        },
+        "parse_status": "success"
+      }
+    ],
+    "final_role": "uncertain",
+    "in_markov_blanket": false,
+    "positive_ratio": 0.0,
+    "final_confidence": 0.5,
+    "consistency": 1.0,
+    "relation_count": {
+      "uncertain": 5
+    }
+  },
+  {
+    "variable_a": "tub",
+    "variable_b": "xray",
+    "runs": [
+      {
+        "variable_a": "tub",
+        "variable_b": "xray",
+        "run_id": 1,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V07\",\n    \"variable_b\": \"V08\",\n    \"in_markov_blanket\": false,\n    \"role_of_a\": \"none\",\n    \"confidence\": 0.95,\n    \"reason\": \"The names and meanings of both variables are hidden, so there is no basis to determine their causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V07",
+          "variable_b": "V08",
+          "in_markov_blanket": false,
+          "role_of_a": "none",
+          "confidence": 0.95,
+          "reason": "The names and meanings of both variables are hidden, so there is no basis to determine their causal relationship."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "tub",
+        "variable_b": "xray",
+        "run_id": 2,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V07\",\n    \"variable_b\": \"V08\",\n    \"in_markov_blanket\": false,\n    \"role_of_a\": \"none\",\n    \"confidence\": 0.95,\n    \"reason\": \"The names and meanings of both variables are hidden, so there is no basis to determine their causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V07",
+          "variable_b": "V08",
+          "in_markov_blanket": false,
+          "role_of_a": "none",
+          "confidence": 0.95,
+          "reason": "The names and meanings of both variables are hidden, so there is no basis to determine their causal relationship."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "tub",
+        "variable_b": "xray",
+        "run_id": 3,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V07\",\n    \"variable_b\": \"V08\",\n    \"in_markov_blanket\": false,\n    \"role_of_a\": \"none\",\n    \"confidence\": 0.95,\n    \"reason\": \"The names and meanings of both variables are hidden, so there is no basis to determine their causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V07",
+          "variable_b": "V08",
+          "in_markov_blanket": false,
+          "role_of_a": "none",
+          "confidence": 0.95,
+          "reason": "The names and meanings of both variables are hidden, so there is no basis to determine their causal relationship."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "tub",
+        "variable_b": "xray",
+        "run_id": 4,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V07\",\n    \"variable_b\": \"V08\",\n    \"in_markov_blanket\": false,\n    \"role_of_a\": \"none\",\n    \"confidence\": 0.95,\n    \"reason\": \"The names and meanings of both variables are hidden, so there is no basis to determine their causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V07",
+          "variable_b": "V08",
+          "in_markov_blanket": false,
+          "role_of_a": "none",
+          "confidence": 0.95,
+          "reason": "The names and meanings of both variables are hidden, so there is no basis to determine their causal relationship."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "tub",
+        "variable_b": "xray",
+        "run_id": 5,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V07\",\n    \"variable_b\": \"V08\",\n    \"in_markov_blanket\": false,\n    \"role_of_a\": \"none\",\n    \"confidence\": 0.95,\n    \"reason\": \"The names and meanings of both variables are hidden, so there is no basis to determine their causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V07",
+          "variable_b": "V08",
+          "in_markov_blanket": false,
+          "role_of_a": "none",
+          "confidence": 0.95,
+          "reason": "The names and meanings of both variables are hidden, so there is no basis to determine their causal relationship."
+        },
+        "parse_status": "success"
+      }
+    ],
+    "final_role": "none",
+    "in_markov_blanket": false,
+    "positive_ratio": 0.0,
+    "final_confidence": 0.95,
+    "consistency": 1.0,
+    "relation_count": {
+      "none": 5
+    }
+  },
+  {
+    "variable_a": "xray",
+    "variable_b": "dysp",
+    "runs": [
+      {
+        "variable_a": "xray",
+        "variable_b": "dysp",
+        "run_id": 1,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V08\",\n    \"variable_b\": \"V03\",\n    \"in_markov_blanket\": false,\n    \"role_of_a\": \"uncertain\",\n    \"confidence\": 0.5,\n    \"reason\": \"The names and meanings of both variables are hidden, making it impossible to determine their causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V08",
+          "variable_b": "V03",
+          "in_markov_blanket": false,
+          "role_of_a": "uncertain",
+          "confidence": 0.5,
+          "reason": "The names and meanings of both variables are hidden, making it impossible to determine their causal relationship."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "xray",
+        "variable_b": "dysp",
+        "run_id": 2,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V08\",\n    \"variable_b\": \"V03\",\n    \"in_markov_blanket\": false,\n    \"role_of_a\": \"uncertain\",\n    \"confidence\": 0.5,\n    \"reason\": \"The names and meanings of both variables are hidden, making it impossible to determine their causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V08",
+          "variable_b": "V03",
+          "in_markov_blanket": false,
+          "role_of_a": "uncertain",
+          "confidence": 0.5,
+          "reason": "The names and meanings of both variables are hidden, making it impossible to determine their causal relationship."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "xray",
+        "variable_b": "dysp",
+        "run_id": 3,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V08\",\n    \"variable_b\": \"V03\",\n    \"in_markov_blanket\": false,\n    \"role_of_a\": \"uncertain\",\n    \"confidence\": 0.5,\n    \"reason\": \"The names and meanings of both variables are hidden, making it impossible to determine their causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V08",
+          "variable_b": "V03",
+          "in_markov_blanket": false,
+          "role_of_a": "uncertain",
+          "confidence": 0.5,
+          "reason": "The names and meanings of both variables are hidden, making it impossible to determine their causal relationship."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "xray",
+        "variable_b": "dysp",
+        "run_id": 4,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V08\",\n    \"variable_b\": \"V03\",\n    \"in_markov_blanket\": false,\n    \"role_of_a\": \"uncertain\",\n    \"confidence\": 0.5,\n    \"reason\": \"The names and meanings of both variables are hidden, making it impossible to determine their causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V08",
+          "variable_b": "V03",
+          "in_markov_blanket": false,
+          "role_of_a": "uncertain",
+          "confidence": 0.5,
+          "reason": "The names and meanings of both variables are hidden, making it impossible to determine their causal relationship."
+        },
+        "parse_status": "success"
+      },
+      {
+        "variable_a": "xray",
+        "variable_b": "dysp",
+        "run_id": 5,
+        "seed": 20261010,
+        "prompt_version": "role-v1-parent-child-spouse#537427e278c0",
+        "settings_fingerprint": "537427e278c0",
+        "raw_response": "{\n    \"variable_a\": \"V08\",\n    \"variable_b\": \"V03\",\n    \"in_markov_blanket\": false,\n    \"role_of_a\": \"uncertain\",\n    \"confidence\": 0.5,\n    \"reason\": \"The names and meanings of both variables are hidden, making it impossible to determine their causal relationship.\"\n}",
+        "finish_reason": "stop",
+        "parsed": {
+          "variable_a": "V08",
+          "variable_b": "V03",
+          "in_markov_blanket": false,
+          "role_of_a": "uncertain",
+          "confidence": 0.5,
+          "reason": "The names and meanings of both variables are hidden, making it impossible to determine their causal relationship."
+        },
+        "parse_status": "success"
+      }
+    ],
+    "final_role": "uncertain",
+    "in_markov_blanket": false,
+    "positive_ratio": 0.0,
+    "final_confidence": 0.5,
+    "consistency": 1.0,
+    "relation_count": {
+      "uncertain": 5
+    }
+  }
+]
