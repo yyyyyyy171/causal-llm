@@ -43,6 +43,7 @@ from run_llm_prior import (  # noqa: E402
     model_suffix,
     pair_list,
     save_json,
+    write_summary_csv,
 )
 from src.llm_prior.prompt import (  # noqa: E402
     MB_PROMPT_VERSION,
@@ -354,29 +355,10 @@ def main() -> int:
         out_json = DATA_ROOT / args.network / f"{args.network}_{prefix}_{mode}{suffix}.json"
         save_json(out_json, final)
 
-        if args.task == "mb":
-            header = ("variable_a,variable_b,in_markov_blanket,positive_ratio,"
-                      "consistency,final_confidence,relation_count\n")
-            def line(item):
-                return (f"{item['variable_a']},{item['variable_b']},"
-                        f"{item['in_markov_blanket']},{item['positive_ratio']:.3f},"
-                        f"{item['consistency']:.3f},{item['final_confidence']:.3f},"
-                        f"\"{item['relation_count']}\"\n")
-        else:
-            header = ("variable_a,variable_b,direct_edge,edge_ratio,"
-                      "final_relation,consistency,final_confidence,relation_count\n")
-            def line(item):
-                return (f"{item['variable_a']},{item['variable_b']},"
-                        f"{item['direct_edge']},{item['edge_ratio']:.3f},"
-                        f"{item['final_relation']},{item['consistency']:.3f},"
-                        f"{item['final_confidence']:.3f},"
-                        f"\"{item['relation_count']}\"\n")
-
         out_csv = DATA_ROOT / args.network / f"{args.network}_{prefix}_{mode}{suffix}_summary.csv"
-        with open(out_csv, "w", encoding="utf-8") as handle:
-            handle.write(header)
-            for item in final:
-                handle.write(line(item))
+        # 表头与行格式由 summary_csv() 统一提供，两个推理脚本共用同一份实现。
+        # 原先这里另写了一份，加 role 任务时漏改，结果跑到写表这一步 KeyError。
+        write_summary_csv(out_csv, args.task, final)
 
         print(f"[{args.network}/{mode}] 完成 {len(final)} 对 -> {out_json.name}、{out_csv.name}")
 

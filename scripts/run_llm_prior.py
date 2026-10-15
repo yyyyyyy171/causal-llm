@@ -290,6 +290,61 @@ def save_json(path: Path, obj) -> None:
     tmp.replace(path)
 
 
+def summary_csv(task: str) -> tuple[str, str]:
+    """
+    汇总表的表头与一行格式器，按 task 返回。
+
+    为什么抽出来：这段逻辑原先在 transformers 版与 vLLM 版里各写了一份，
+    结果加 role 任务时只改了其中一份，另一份在运行到写表时直接 KeyError
+    （去取 role 聚合里根本不存在的 direct_edge），白跑一整轮生成。
+    两份实现必须只有一份，重复的代价已经付过一次了。
+    """
+
+    if task == "role":
+        header = ("variable_a,variable_b,final_role,in_markov_blanket,positive_ratio,"
+                  "consistency,final_confidence,relation_count\n")
+
+        def line(item):
+            return (f"{item['variable_a']},{item['variable_b']},"
+                    f"{item['final_role']},{item['in_markov_blanket']},"
+                    f"{item['positive_ratio']:.3f},"
+                    f"{item['consistency']:.3f},{item['final_confidence']:.3f},"
+                    f"\"{json.dumps(item['relation_count'], ensure_ascii=False)}\"\n")
+
+    elif task == "mb":
+        header = ("variable_a,variable_b,in_markov_blanket,positive_ratio,"
+                  "consistency,final_confidence,relation_count\n")
+
+        def line(item):
+            return (f"{item['variable_a']},{item['variable_b']},"
+                    f"{item['in_markov_blanket']},{item['positive_ratio']:.3f},"
+                    f"{item['consistency']:.3f},{item['final_confidence']:.3f},"
+                    f"\"{json.dumps(item['relation_count'], ensure_ascii=False)}\"\n")
+
+    else:
+        header = ("variable_a,variable_b,direct_edge,edge_ratio,"
+                  "final_relation,consistency,final_confidence,relation_count\n")
+
+        def line(item):
+            return (f"{item['variable_a']},{item['variable_b']},"
+                    f"{item['direct_edge']},{item['edge_ratio']:.3f},"
+                    f"{item['final_relation']},{item['consistency']:.3f},"
+                    f"{item['final_confidence']:.3f},"
+                    f"\"{json.dumps(item['relation_count'], ensure_ascii=False)}\"\n")
+
+    return header, line
+
+
+def write_summary_csv(path: Path, task: str, final: list[dict]) -> None:
+    """把聚合结果写成汇总 CSV。两个推理脚本共用这一份，避免再次走散。"""
+
+    header, line = summary_csv(task)
+    with open(path, "w", encoding="utf-8") as handle:
+        handle.write(header)
+        for item in final:
+            handle.write(line(item))
+
+
 # ============================================================
 # 缓存
 # ============================================================
@@ -476,50 +531,8 @@ def run_mode(
     save_json(out_json, final)
 
     out_csv = DATA_ROOT / network / f"{network}_{prefix}_{mode}{suffix}_summary.csv"
-
-    if task == "role":
-        header = (
-            "variable_a,variable_b,final_role,in_markov_blanket,positive_ratio,"
-            "consistency,final_confidence,relation_count\n"
-        )
-        def fields(item):
-            return (
-                f"{item['variable_a']},{item['variable_b']},"
-                f"{item['final_role']},{item['in_markov_blanket']},"
-                f"{item['positive_ratio']:.3f},"
-                f"{item['consistency']:.3f},{item['final_confidence']:.3f},"
-                f"\"{json.dumps(item['relation_count'], ensure_ascii=False)}\"\n"
-            )
-    elif task == "mb":
-        header = (
-            "variable_a,variable_b,in_markov_blanket,positive_ratio,"
-            "consistency,final_confidence,relation_count\n"
-        )
-        def fields(item):
-            return (
-                f"{item['variable_a']},{item['variable_b']},"
-                f"{item['in_markov_blanket']},{item['positive_ratio']:.3f},"
-                f"{item['consistency']:.3f},{item['final_confidence']:.3f},"
-                f"\"{json.dumps(item['relation_count'], ensure_ascii=False)}\"\n"
-            )
-    else:
-        header = (
-            "variable_a,variable_b,direct_edge,edge_ratio,"
-            "final_relation,consistency,final_confidence,relation_count\n"
-        )
-        def fields(item):
-            return (
-                f"{item['variable_a']},{item['variable_b']},"
-                f"{item['direct_edge']},{item['edge_ratio']:.3f},"
-                f"{item['final_relation']},{item['consistency']:.3f},"
-                f"{item['final_confidence']:.3f},"
-                f"\"{json.dumps(item['relation_count'], ensure_ascii=False)}\"\n"
-            )
-
-    with open(out_csv, "w", encoding="utf-8") as handle:
-        handle.write(header)
-        for item in final:
-            handle.write(fields(item))
+    # 表头与行格式由 summary_csv() 统一提供，两个推理脚本共用同一份实现
+    write_summary_csv(out_csv, task, final)
 
     print(f"[{network}/{mode}] 完成 {len(final)} 对 -> {out_json.name}")
     print(f"[{network}/{mode}] 汇总表 -> {out_csv.name}")
