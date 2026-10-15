@@ -38,6 +38,19 @@ echo "驱动主版本: $DRIVER_MAJOR"
 echo
 echo "===== 2) 建立隔离虚拟环境 ====="
 if [ ! -x "$PY" ]; then
+    # 上一次建到一半失败会留下一个"看起来存在、其实不可用"的目录，
+    # 直接重建会撞上各种奇怪错误，所以先清掉。
+    # 删之前先确认这个路径是我们自己的虚拟环境目录，不是什么奇怪的值。
+    case "$VENV" in
+        ""|"/"|"/content"|"/content/")
+            echo "VENV 的取值不安全，拒绝删除：'$VENV'"
+            exit 2
+            ;;
+    esac
+    if [ -d "$VENV" ]; then
+        echo "$VENV 存在但不是可用的虚拟环境（上次可能建到一半失败），先删掉重建"
+        rm -rf -- "$VENV"
+    fi
     pip install -q -U virtualenv
     python -m virtualenv -q "$VENV"
     echo "已创建 $VENV"
