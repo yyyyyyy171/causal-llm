@@ -14,6 +14,15 @@
 
 set -euo pipefail
 
+# Kaggle 的基础镜像会把 PYTHONPATH 指向系统 site-packages，这个变量会渗进
+# 我们新建的隔离环境里，有两个后果：
+#   1) 启动时 sitecustomize 报 "No module named 'wrapt'"（只是噪音，非致命）；
+#   2) 更要紧的是 PYTHONPATH 在 sys.path 里排在 venv 的 site-packages 之前，
+#      于是 venv 里实际可能用到系统的 numpy / torch，而不是刚装的那些 ——
+#      我们固定版本的整个意义就没了（踩过一次 torch 版本对不上的坑）。
+# 所以这里直接清掉，让虚拟环境真的隔离。
+unset PYTHONPATH
+
 VENV="${VENV:-/content/venv}"
 VLLM_VERSION="0.31.0"
 FORCE_CU121=0
