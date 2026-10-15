@@ -14,14 +14,24 @@
 
 set -euo pipefail
 
-# Kaggle 的基础镜像会把 PYTHONPATH 指向系统 site-packages，这个变量会渗进
-# 我们新建的隔离环境里，有两个后果：
-#   1) 启动时 sitecustomize 报 "No module named 'wrapt'"（只是噪音，非致命）；
-#   2) 更要紧的是 PYTHONPATH 在 sys.path 里排在 venv 的 site-packages 之前，
-#      于是 venv 里实际可能用到系统的 numpy / torch，而不是刚装的那些 ——
-#      我们固定版本的整个意义就没了（踩过一次 torch 版本对不上的坑）。
-# 所以这里直接清掉，让虚拟环境真的隔离。
+# 清掉 PYTHONPATH：Kaggle 上它指向 /kaggle/lib/kagglegym 与 /kaggle/lib，
+# Colab 上也常被注入一些目录。我们一个都不需要，留着只会让"环境到底是哪一套"
+# 变得说不清。清掉之后虚拟环境才是真正自洽的。
 unset PYTHONPATH
+
+# 关于下面这条反复出现的报错，先说明白，免得每次都被它误导：
+#
+#     Error in sitecustomize; ... ModuleNotFoundError: No module named 'wrapt'
+#
+# 来源不是 PYTHONPATH（曾经这么以为，查过之后是错的），而是 Kaggle 自己放在
+# **标准库目录**里的 /usr/lib/python3.13/sitecustomize.py —— 标准库目录对任何
+# venv 都在 sys.path 上，所以它必然跟着进虚拟环境；它 import wrapt，而新环境里
+# 没有 wrapt，于是启动时报这一句。
+#
+# 它是噪音，不是故障：site.py 会捕获这个异常并继续，而且 venv 的 sys.path 仍然
+# 只有自己的 site-packages 加标准库（已实测打印确认），torch/numpy 不会被系统的
+# 版本顶掉。这里刻意**不**为了消除这句话去 pip install wrapt——那等于为了让
+# Kaggle 的钩子跑起来而改我们的环境，没有必要。
 
 VENV="${VENV:-/content/venv}"
 VLLM_VERSION="0.31.0"
