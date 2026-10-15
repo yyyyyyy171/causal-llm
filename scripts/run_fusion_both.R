@@ -51,7 +51,9 @@ model_tag <- get_arg("model-tag", "")
 # 先验用哪种提问方式生成的：
 #   direction = 问“有没有直接边”（文件名前缀 LLM_prior）
 #   mb        = 直接问“是否在马尔可夫毯里”（文件名前缀 LLM_mb）
-# 两者语义不同，前者要翻译成邻接信号，后者本身就是要用的对象。
+#   role      = 直接问“A 相对 B 是父/子/配偶”（文件名前缀 LLM_role）
+# 三者语义不同：direction 要先翻译成邻接信号，mb 与 role 本身就是要用的对象，
+# 其中 role 还会把配偶作为正面答案保留下来。
 prior_task <- get_arg("prior-task", "direction")
 tag <- get_arg("tag", sprintf("both_n%s", mode))
 
@@ -71,6 +73,19 @@ target_limit <- as.integer(get_arg("max-targets", "0"))
 # 大网络单次重复要几分钟，落盘本身是秒级以内，所以默认每轮都写最稳妥。
 checkpoint_every <- as.integer(get_arg("checkpoint-every", "1"))
 
+# 第四组对照：不用任何先验内容，只把显著性阈值整体收紧一档。
+#
+# 为什么需要它：先验进入算法的方式是把 p 值乘以 exp(-beta * score)，
+# 也就是逐对改动有效阈值。如果观察到的提升其实只是"阈值动了一下"，
+# 那么一个不带任何语义、只做全局阈值改动的对照组应当能复现同样的提升。
+#
+# 取值方式：在脚本已有的 alpha 路径上往前挪一格（0.05 -> 0.01），
+# 这样它不是拍脑袋定的数，也和先验那种"收紧"方向一致；
+# 需要别的值可以显式指定 --alpha-only=<数值>。
+alpha_index <- which.min(abs(log(alphas) - log(alpha)))
+alpha_only_default <- alphas[max(1, alpha_index - 1)]
+alpha_only_value <- as.numeric(get_arg("alpha-only", alpha_only_default))
+
 # ---------------------------------------------------------------------------
 # Prior
 # ---------------------------------------------------------------------------
@@ -78,7 +93,7 @@ checkpoint_every <- as.integer(get_arg("checkpoint-every", "1"))
 prior_path <- function(network) {
   sprintf(
     "%s/data/%s/%s_%s_%s%s_summary.csv", project_root, network, network,
-    if (prior_task == "mb") "LLM_mb" else "LLM_prior", mode,
+    switch(prior_task, mb = "LLM_mb", role = "LLM_role", "LLM_prior"), mode,
     if (nzchar(model_tag)) paste0("_", model_tag) else ""
   )
 }
@@ -93,7 +108,19 @@ load_prior <- function(network) {
     confidence <- suppressWarnings(as.numeric(table$final_confidence[i]))
     if (is.na(confidence)) confidence <- 0
     confidence <- min(max(confidence, 0), 1)
-    if (prior_task == "mb") {
+    if (prior_task == "role") {
+      # 角色版：parent / child / spouse 三者都是"在毯内"，是正面信号；
+      # "none" 才是负面；"uncertain" 记 0（不表态，不给分也不扣分）。
+      # 这样配偶不会再因为"没有直接边"而被当成负分 —— 那正是旧问法的病根。
+      role <- tolower(as.character(table$final_role[i]))
+      if (role %in% c("parent", "child", "spouse")) {
+        score <- confidence
+      } else if (role == "none") {
+        score <- -confidence
+      } else {
+        score <- 0
+      }
+    } else if (prior_task == "mb") {
       # mb 版先验直接回答毯成员资格，正是算法需要的东西，不用再翻译
       in_mb <- tolower(as.character(table$in_markov_blanket[i])) == "true"
       score <- if (in_mb) confidence else -confidence
@@ -194,17 +221,25 @@ write_outputs <- function(detail, print_tables = FALSE) {
       recall = round(mean(block$recall), 4),
       f1 = round(mean(block$f1), 4),
       f1_std = round(sd(per_repeat$f1), 4),
+      f1_min = round(min(per_repeat$f1), 4),
+      f1_max = round(max(per_repeat$f1), 4),
+      recall_adj = round(mean(block$recall_adj, na.rm = TRUE), 4),
+      recall_spouse = round(mean(block$recall_spouse, na.rm = TRUE), 4),
       mean_selected = round(mean(block$n_selected), 2)
     ))
 
     if (key$variant != "baseline") {
+
+      baseline_block <- detail[
+        detail$network == key$network &
+        detail$sample_size == key$sample_size &
+        detail$method == key$method &
+        detail$variant == "baseline" &
+        detail$budget == key$budget, ]
+
       base <- aggregate(
         f1 ~ repeat_index,
-        detail[detail$network == key$network &
-               detail$sample_size == key$sample_size &
-               detail$method == key$method &
-               detail$variant == "baseline" &
-               detail$budget == key$budget, ],
+        baseline_block,
         mean
       )
       merged <- merge(per_repeat, base, by = "repeat_index",
@@ -212,14 +247,53 @@ write_outputs <- function(detail, print_tables = FALSE) {
       delta <- merged$f1_v - merged$f1_b
       p <- tryCatch(suppressWarnings(wilcox.test(delta)$p.value),
                     error = function(e) NA)
+
+      # 父/子与配偶分开做配对检验。
+      # 这是专门用来回答"先验会不会误伤配偶节点"的：只报总 F1 的话，
+      # "帮了父/子"与"伤了配偶"两件事会互相抵消，看起来像"没效果"。
+      paired_metric <- function(column) {
+        variant_per_repeat <- aggregate(
+          block[[column]], list(repeat_index = block$repeat_index),
+          mean, na.rm = TRUE
+        )
+        baseline_per_repeat <- aggregate(
+          baseline_block[[column]],
+          list(repeat_index = baseline_block$repeat_index),
+          mean, na.rm = TRUE
+        )
+        merged_metric <- merge(variant_per_repeat, baseline_per_repeat,
+                               by = "repeat_index")
+        difference <- merged_metric$x.x - merged_metric$x.y
+        list(
+          baseline = mean(merged_metric$x.y, na.rm = TRUE),
+          variant = mean(merged_metric$x.x, na.rm = TRUE),
+          delta = mean(difference, na.rm = TRUE),
+          p = tryCatch(
+            suppressWarnings(wilcox.test(difference)$p.value),
+            error = function(e) NA
+          )
+        )
+      }
+
+      spouse <- paired_metric("recall_spouse")
+      adjacent_metric <- paired_metric("recall_adj")
+
       paired <- rbind(paired, data.frame(
         network = key$network, sample_size = key$sample_size,
         method = key$method, variant = key$variant, budget = key$budget,
         baseline_f1 = round(mean(merged$f1_b), 4),
         variant_f1 = round(mean(merged$f1_v), 4),
         mean_delta = round(mean(delta), 4),
+        delta_sd = round(sd(delta), 4),
         wins = sprintf("%d/%d", sum(delta > 0), length(delta)),
-        wilcox_p = round(p, 4)
+        wilcox_p = round(p, 4),
+        adj_baseline = round(adjacent_metric$baseline, 4),
+        adj_variant = round(adjacent_metric$variant, 4),
+        adj_delta = round(adjacent_metric$delta, 4),
+        spouse_baseline = round(spouse$baseline, 4),
+        spouse_variant = round(spouse$variant, 4),
+        spouse_delta = round(spouse$delta, 4),
+        spouse_p = round(spouse$p, 4)
       ))
     }
   }
@@ -258,6 +332,18 @@ for (network in networks) {
     header = TRUE, sep = "\t", nrows = 1, check.names = FALSE
   ))
   colnames(full_raw) <- labels
+
+  # DAG 邻接关系：用来把真实毯内成员拆成"父/子"与"配偶"两组。
+  # 为什么需要：旧问法把配偶判成"没有直接边"，而融合算法把"没有直接边"
+  # 当作负分，于是配偶会被系统性地推出毯子。只看总 F1 的话，
+  # "帮了父/子、伤了配偶"会被平均掉，必须分开量。
+  dag <- read.csv(
+    sprintf("%s/data/%s/%s_dag_edges.csv", project_root, network, network),
+    stringsAsFactors = FALSE
+  )
+  adjacent <- function(a, b) {
+    any((dag$parent == a & dag$child == b) | (dag$parent == b & dag$child == a))
+  }
 
   prior_real <- load_prior(network)
 
@@ -325,22 +411,36 @@ for (network in networks) {
       shuffled <- shuffle_scores(prior_real, seed + 1000 + repeat_index)
       shuffled_centered <- center_scores(shuffled)
 
+      # 四组对照，其余参数（beta / 重复数 / 抽样种子 / 目标集合）完全一致：
+      #   baseline      纯数据，不注入任何先验
+      #   prior-thresh  真实 LLM 先验，逐对缩放 p 值
+      #   random-thresh 把先验分数在同网络内打乱，作为"任意扰动"的对照
+      #   alpha-only    不含任何先验内容，只做等量的全局阈值改动
       variants <- list(
-        baseline = list(scores = NULL, use = FALSE),
-        "prior-thresh" = list(scores = prior_centered, use = TRUE),
-        "random-thresh" = list(scores = shuffled_centered, use = TRUE)
+        baseline = list(scores = NULL, use = FALSE, alpha = alpha),
+        "prior-thresh" = list(scores = prior_centered, use = TRUE, alpha = alpha),
+        "random-thresh" = list(scores = shuffled_centered, use = TRUE, alpha = alpha),
+        "alpha-only" = list(scores = NULL, use = FALSE, alpha = alpha_only_value)
       )
 
       for (variant in names(variants)) {
 
         scores <- variants[[variant]]$scores
         use_prior <- variants[[variant]]$use
+        # 这一组自己的显著性水平（alpha-only 与其余三组不同）
+        variant_alpha <- variants[[variant]]$alpha
 
         for (target_index in target_indices) {
 
           target_name <- labels[target_index]
           true_set <- labels[which(truth[target_index, ] > 0)]
           k <- max(1, length(true_set))
+
+          # 把真实毯内成员拆成"父/子"（在 DAG 里相邻）与"配偶"（不相邻）
+          adj_set <- true_set[
+            vapply(true_set, function(m) adjacent(target_name, m), logical(1))
+          ]
+          spouse_set <- setdiff(true_set, adj_set)
 
           # ============================================================
           # IAMB through bnlearn
@@ -421,7 +521,7 @@ for (network in networks) {
               for (name in found) {
                 if (is.infinite(entry[[name]])) entry[[name]] <- alpha_value
               }
-              if (abs(alpha_value - alpha) < 1e-12) raw_set <- found
+              if (abs(alpha_value - variant_alpha) < 1e-12) raw_set <- found
             }
 
             ranking <- labels[order(entry[labels], labels)]
@@ -429,6 +529,12 @@ for (network in networks) {
 
             raw_metrics <- score_set(raw_set, true_set)
             matched_metrics <- score_set(top_k, true_set)
+
+            # 分开量父/子与配偶的召回率：总 F1 会把"帮了父/子、伤了配偶"平均掉
+            recall_of <- function(found, members) {
+              if (length(members) == 0) return(NA_real_)
+              length(intersect(found, members)) / length(members)
+            }
 
             detail <- rbind(detail,
               data.frame(
@@ -438,6 +544,8 @@ for (network in networks) {
                 precision = raw_metrics[["precision"]],
                 recall = raw_metrics[["recall"]],
                 f1 = raw_metrics[["f1"]],
+                recall_adj = recall_of(raw_set, adj_set),
+                recall_spouse = recall_of(raw_set, spouse_set),
                 n_selected = length(raw_set)
               ),
               data.frame(
@@ -447,6 +555,8 @@ for (network in networks) {
                 precision = matched_metrics[["precision"]],
                 recall = matched_metrics[["recall"]],
                 f1 = matched_metrics[["f1"]],
+                recall_adj = recall_of(top_k, adj_set),
+                recall_spouse = recall_of(top_k, spouse_set),
                 n_selected = length(top_k)
               )
             )

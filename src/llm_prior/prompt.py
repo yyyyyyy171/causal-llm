@@ -46,6 +46,30 @@ PROMPT_VERSION = "v3-no-invented-mediators"
 # 也就是"B 是否在 A 的马尔可夫毯里"——直接对准任务的对象。
 MB_PROMPT_VERSION = "mb-v1-blanket-membership"
 
+# 第三次提问方式：直接问角色。
+#
+# 为什么还要再换一次：前两版都只在问"有没有直接边"或"在不在毯内"，
+# 而融合算法把"没有直接边"当成负分处理（见 docs/先验进入算法的路径.md）。
+# 配偶在 DAG 里本来就不相邻，对"有没有直接边"这个问题标准答案就是"没有"，
+# 于是模型答得越对（就邻接而言），配偶被推出毯子的力量越大。
+#
+# 这一版把配偶变成**正面答案**：父 / 子 / 配偶三者都算"在毯内"，
+# 只有"都不算"才是负分。并且明确允许"不确定"，不强迫模型在名字无信息时瞎猜。
+ROLE_PROMPT_VERSION = "role-v1-parent-child-spouse"
+
+
+ALLOWED_ROLES = ("parent", "child", "spouse", "none", "uncertain")
+
+
+FORMAT_EXAMPLE_ROLE = """{
+    "variable_a": "NAME_A",
+    "variable_b": "NAME_B",
+    "in_markov_blanket": true,
+    "role_of_a": "parent",
+    "confidence": 0.75,
+    "reason": "one sentence"
+}"""
+
 
 FORMAT_EXAMPLE_MB = """{
     "variable_a": "NAME_A",
@@ -281,6 +305,128 @@ illustration: replace every field with your own answer, and use the real
 variable names {name_a} and {name_b}.
 
 {FORMAT_EXAMPLE_MB}
+"""
+
+    return prompt
+
+
+def build_role_prompt(
+    variable_a: str,
+    variable_b: str,
+    network: str = "ALARM",
+    anonymous: bool = False,
+) -> str:
+    """
+    直接询问"A 相对于 B 扮演什么角色"的 Prompt。
+
+    与 build_causal_prompt 的关键区别：那里"有没有直接边"只有"是/否"两个出口，
+    配偶只能落在"否"上，而融合算法把"否"当成负分。这里把配偶变成**正面答案**，
+    父 / 子 / 配偶三者都算"在毯内"，只有"都不是"才是负分。
+
+    同时明确允许"不确定"：变量名确实没有信息时（例如匿名编号），
+    模型应当照实回答，而不是为了给个答案而猜——猜出来的先验比没有先验更糟。
+    """
+
+    if anonymous:
+
+        mapping = anonymous_names(network)
+        name_a = mapping.get(variable_a, "V??")
+        name_b = mapping.get(variable_b, "V??")
+
+        setting = (
+            "You are analyzing a probabilistic graphical model.\n"
+            "The variables have been anonymized: their real names and\n"
+            "meanings are hidden from you. You only know the two labels."
+        )
+
+        meaning_a = "hidden"
+        meaning_b = "hidden"
+
+    else:
+
+        name_a = variable_a
+        name_b = variable_b
+
+        setting = (
+            "You are analyzing the following Bayesian network:\n"
+            f"{NETWORK_DOMAIN.get(network, network)}."
+        )
+
+        meaning_a = variable_meaning(network, variable_a)
+        meaning_b = variable_meaning(network, variable_b)
+
+    prompt = f"""
+You are a causal analysis assistant.
+
+{setting}
+
+Your task is to provide a semantic causal prior for two variables.
+This is NOT statistical causal discovery: you must answer from the
+meaning of the variables alone, never from data.
+
+Background. The Markov blanket of a variable is the smallest set of
+variables that makes it independent of everything else. It contains
+exactly three kinds of variables:
+
+  * its parents, which cause it directly;
+  * its children, which it causes directly;
+  * its spouses: the other parents of its children, which share a common
+    effect with it and are NOT connected to it by an edge.
+
+So a pair can belong to each other's Markov blanket while having NO
+direct edge between them. Keep that in mind: the two questions below are
+not the same question.
+
+Answer these two questions.
+
+Question 1: are A and B in each other's Markov blanket at all?
+Answer with the boolean field "in_markov_blanket".
+
+Question 2: which role does A play relative to B?
+Choose exactly one value for "role_of_a":
+
+  "parent"     A causes B directly (A -> B)
+  "child"      B causes A directly (B -> A)
+  "spouse"     neither causes the other, but they share a common child
+  "none"       A is neither a parent, a child, nor a spouse of B, so they
+               are not in each other's Markov blanket
+  "uncertain"  the names and meanings given above genuinely do not let
+               you decide
+
+Rules:
+
+1. Answer only from the meaning of the variables. Never use a dataset,
+   a published graph, or remembered experimental results.
+2. "spouse" is a POSITIVE answer, not a rejection. Two variables that
+   both cause the same effect are spouses. Do not answer "none" merely
+   because there is no direct edge between them.
+3. Do not invent intermediate variables. If A plausibly influences the
+   state of B and the mechanism has no variable of its own in the model,
+   that is still "parent" (or "child" in the other direction).
+4. "confidence" must be a number between 0 and 1, expressing how sure
+   you are about the role you chose. Do not output 0 unless you truly
+   have no information at all.
+5. "in_markov_blanket" must be true exactly when the role is "parent",
+   "child" or "spouse", and false when the role is "none" or "uncertain".
+6. Use "uncertain" honestly when the names carry no usable information —
+   for example when both variables are anonymised labels. Do NOT guess
+   just to avoid answering "uncertain"; a guessed prior is worse than an
+   honest abstention.
+7. Output ONLY valid JSON, with no markdown and no extra text.
+
+Variable A:
+Name: {name_a}
+Meaning: {meaning_a}
+
+Variable B:
+Name: {name_b}
+Meaning: {meaning_b}
+
+Return exactly this JSON structure. The example values below are only a
+format illustration: replace every field with your own answer, and use
+the real variable names {name_a} and {name_b}.
+
+{FORMAT_EXAMPLE_ROLE}
 """
 
     return prompt

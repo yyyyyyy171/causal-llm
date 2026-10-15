@@ -37,8 +37,10 @@ from src.llm_prior.model import MODEL_NAME_4B, load_model  # noqa: E402
 from src.llm_prior.prompt import (  # noqa: E402
     MB_PROMPT_VERSION,
     PROMPT_VERSION,
+    ROLE_PROMPT_VERSION,
     build_causal_prompt,
     build_markov_blanket_prompt,
+    build_role_prompt,
 )
 from src.llm_prior.var_semantics import load_variables  # noqa: E402
 from src.common.config import load_config  # noqa: E402
@@ -132,6 +134,89 @@ def run_positive(parsed: dict | None) -> bool:
     return normalize_relation(parsed) in ("A_to_B", "B_to_A")
 
 
+def normalize_role(parsed: dict | None) -> str:
+    """
+    把角色版的解析结果压成 5 种角色之一。
+
+    parent / child / spouse 都是**正面**答案（三者都在马尔可夫毯内），
+    none 与 uncertain 是负面。这里刻意把 spouse 与 none 分开：
+    上一版 Prompt 只有"有没有直接边"两个出口，配偶只能落到"没有"上，
+    而融合算法把"没有"当负分，等于系统性惩罚正确地识别出来的配偶。
+    """
+
+    if not parsed:
+        return "uncertain"
+
+    role = str(parsed.get("role_of_a", "")).strip().lower()
+
+    if role in ("parent", "child", "spouse", "none", "uncertain"):
+        return role
+
+    # 模型没填 role_of_a 时，退回用布尔字段与关系字段推断，保证兼容
+    if "in_markov_blanket" in parsed:
+        value = parsed["in_markov_blanket"]
+        positive = value if isinstance(value, bool) else str(value).strip().lower() in ("true", "yes", "1")
+        if not positive:
+            return "none"
+
+    relation = normalize_relation(parsed)
+    if relation == "A_to_B":
+        return "parent"
+    if relation == "B_to_A":
+        return "child"
+    if relation == "no_direct_edge":
+        return "spouse"
+
+    return "uncertain"
+
+
+ROLE_POSITIVE = ("parent", "child", "spouse")
+
+
+def aggregate_role(runs: list[dict]) -> dict:
+    """
+    角色版的多数投票。
+
+    产出里同时给三样东西：
+      final_role        —— 5 类里的多数意见（parent / child / spouse / none / uncertain）
+      in_markov_blanket —— 多数意见是否落在"在毯内"的三类里
+      positive_ratio    —— 5 次里有多少次答的是"在毯内"（不管具体是哪一类）
+
+    为什么要分开：融合算法只用"在不在毯内"这一个比特，
+    但论文里需要说清楚模型到底答了什么，所以具体角色必须留下来。
+    """
+
+    roles = [normalize_role(r.get("parsed")) for r in runs]
+    counts: dict[str, int] = {}
+    for role in roles:
+        counts[role] = counts.get(role, 0) + 1
+
+    final_role = max(counts, key=counts.get)
+
+    # 平票且"不确定"在平票里时，保守选"不确定"，
+    # 免得胜负由字典顺序随机决定，把一个猜出来的角色当成稳定结论。
+    tied = [role for role, n in counts.items() if n == counts[final_role]]
+    if len(tied) > 1 and "uncertain" in tied:
+        final_role = "uncertain"
+
+    confidences = [
+        float(r["parsed"].get("confidence", 0.0))
+        for r in runs
+        if r.get("parsed") and normalize_role(r["parsed"]) == final_role
+    ]
+
+    n_positive = sum(1 for role in roles if role in ROLE_POSITIVE)
+
+    return {
+        "final_role": final_role,
+        "in_markov_blanket": final_role in ROLE_POSITIVE,
+        "positive_ratio": n_positive / max(1, len(roles)),
+        "final_confidence": sum(confidences) / len(confidences) if confidences else 0.0,
+        "consistency": counts[final_role] / max(1, len(roles)),
+        "relation_count": counts,
+    }
+
+
 def aggregate(runs: list[dict], task: str = "direction") -> dict:
     """
     多数投票 + 一致性。
@@ -139,6 +224,9 @@ def aggregate(runs: list[dict], task: str = "direction") -> dict:
     consistency = 得票最多的关系占比；
     只有 5 次全部一致（consistency=1.0）才算"稳定先验"。
     """
+
+    if task == "role":
+        return aggregate_role(runs)
 
     relations = [normalize_relation(r.get("parsed")) for r in runs]
     counts: dict[str, int] = {}
@@ -267,11 +355,18 @@ def run_mode(
     task = args.task
     suffix = model_suffix(args.model, MODEL_NAME_4B)
 
-    prompt_version = MB_PROMPT_VERSION if task == "mb" else PROMPT_VERSION
+    prompt_version = {
+        "mb": MB_PROMPT_VERSION,
+        "role": ROLE_PROMPT_VERSION,
+    }.get(task, PROMPT_VERSION)
 
     def build_prompt(a: str, b: str) -> str:
         if task == "mb":
             return build_markov_blanket_prompt(
+                a, b, network=network, anonymous=anonymous
+            )
+        if task == "role":
+            return build_role_prompt(
                 a, b, network=network, anonymous=anonymous
             )
         return build_causal_prompt(a, b, network=network, anonymous=anonymous)
@@ -376,13 +471,26 @@ def run_mode(
             }
         )
 
-    prefix = "LLM_prior" if task == "direction" else "LLM_mb"
+    prefix = {"mb": "LLM_mb", "role": "LLM_role"}.get(task, "LLM_prior")
     out_json = DATA_ROOT / network / f"{network}_{prefix}_{mode}{suffix}.json"
     save_json(out_json, final)
 
     out_csv = DATA_ROOT / network / f"{network}_{prefix}_{mode}{suffix}_summary.csv"
 
-    if task == "mb":
+    if task == "role":
+        header = (
+            "variable_a,variable_b,final_role,in_markov_blanket,positive_ratio,"
+            "consistency,final_confidence,relation_count\n"
+        )
+        def fields(item):
+            return (
+                f"{item['variable_a']},{item['variable_b']},"
+                f"{item['final_role']},{item['in_markov_blanket']},"
+                f"{item['positive_ratio']:.3f},"
+                f"{item['consistency']:.3f},{item['final_confidence']:.3f},"
+                f"\"{json.dumps(item['relation_count'], ensure_ascii=False)}\"\n"
+            )
+    elif task == "mb":
         header = (
             "variable_a,variable_b,in_markov_blanket,positive_ratio,"
             "consistency,final_confidence,relation_count\n"
@@ -441,7 +549,7 @@ def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--config", default=pre_args.config)
     parser.add_argument(
-        "--task", default="direction", choices=("direction", "mb"),
+        "--task", default="direction", choices=("direction", "mb", "role"),
         help="direction=问因果方向；mb=问是否同属马尔可夫毯",
     )
     parser.add_argument(

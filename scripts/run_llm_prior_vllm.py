@@ -37,13 +37,18 @@ from run_llm_prior import (  # noqa: E402
     append_cache,
     build_causal_prompt,
     build_markov_blanket_prompt,
+    build_role_prompt,
     extract_json,
     load_cache,
     model_suffix,
     pair_list,
     save_json,
 )
-from src.llm_prior.prompt import MB_PROMPT_VERSION, PROMPT_VERSION  # noqa: E402
+from src.llm_prior.prompt import (  # noqa: E402
+    MB_PROMPT_VERSION,
+    PROMPT_VERSION,
+    ROLE_PROMPT_VERSION,
+)
 
 
 def build_sampling_params(SamplingParams, **wanted):
@@ -126,7 +131,8 @@ def main() -> int:
     parser.add_argument("--config", default="llm_prior")
     parser.add_argument("--network", default="ASIA")
     parser.add_argument("--mode", default="real", choices=("real", "anon", "both"))
-    parser.add_argument("--task", default="direction", choices=("direction", "mb"))
+    parser.add_argument("--task", default="direction",
+                        choices=("direction", "mb", "role"))
     parser.add_argument("--runs", type=int, default=5)
     parser.add_argument("--limit", type=int, default=0)
     parser.add_argument("--sample", type=int, default=0)
@@ -223,7 +229,10 @@ def main() -> int:
 
     modes = ("real", "anon") if args.mode == "both" else (args.mode,)
     suffix = model_suffix(args.model, cfg.get("model", "Qwen/Qwen3-8B"))
-    prompt_version = MB_PROMPT_VERSION if args.task == "mb" else PROMPT_VERSION
+    prompt_version = {
+        "mb": MB_PROMPT_VERSION,
+        "role": ROLE_PROMPT_VERSION,
+    }.get(args.task, PROMPT_VERSION)
     # 缓存键 = 提示词版本 + 生效参数指纹：任一处变化，旧缓存自动失效
     cache_version = f"{prompt_version}#{fingerprint}"
 
@@ -234,6 +243,8 @@ def main() -> int:
         def build_prompt(a: str, b: str) -> str:
             if args.task == "mb":
                 return build_markov_blanket_prompt(a, b, network=args.network, anonymous=anonymous)
+            if args.task == "role":
+                return build_role_prompt(a, b, network=args.network, anonymous=anonymous)
             return build_causal_prompt(a, b, network=args.network, anonymous=anonymous)
 
         cache = load_cache(args.network, mode, args.task, cache_version, suffix)
@@ -339,7 +350,7 @@ def main() -> int:
             final.append({"variable_a": a, "variable_b": b, "runs": runs,
                           **aggregate(runs, task=args.task)})
 
-        prefix = "LLM_prior" if args.task == "direction" else "LLM_mb"
+        prefix = {"mb": "LLM_mb", "role": "LLM_role"}.get(args.task, "LLM_prior")
         out_json = DATA_ROOT / args.network / f"{args.network}_{prefix}_{mode}{suffix}.json"
         save_json(out_json, final)
 
