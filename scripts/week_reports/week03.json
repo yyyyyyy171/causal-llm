@@ -69,6 +69,8 @@
       "rows": [
         ["HITON: A Novel Markov Blanket Algorithm for Optimal Variable Selection", "AMIA Annual Symposium Proceedings, 2003（原文 PDF 已核）", "识别 MB(T) 在实践中很难：既有方法或不可靠（无限样本也未必返回正确 MB），或所需样本量对 MB 大小呈指数级，或需诱导完整贝叶斯网络而无法扩展到多变量", "HITON-PC + HITON-MB：在“局部最小”的条件集上做条件独立检验，而不以整个 MB 为条件；小样本下无法排除的非 MB 变量交给最后的 wrapper 阶段", "五个差异很大的生物医学任务：药物发现的生物活性预测、心律失常临床诊断、书目文本分类、基因表达肺癌诊断、蛋白质组学前列腺癌检测", "按任务分别选取的当时最好算法（state-of-the-art）", "结论依赖条件独立检验本身正确（忠实性 + 足够样本）；仍需 wrapper 阶段剔除残余变量；五个任务的基线各自定制，横向可比性有限。原文报告平均分类性能 87.1% 对基线 86.1%，平均变量数 32.3 对基线 4540", "本选题把它作为“纯数据因果特征选择”的基线算法（HITON-MB），并用语言模型先验去影响它的条件独立检验"],
         ["Interleaved Incremental Association Markov Blanket as a Potential Feature Selection Method for Improving Accuracy in Near-Infrared Spectroscopic Analysis", "Talanta, 2017（DOI 10.1016/j.talanta.2017.09.039，原文 PDF 已核）", "IAMB 选出的变量可能冗余甚至误导：IAMB 需要不必要的大量学习数据才能识别 MB", "inter-IAMB：把 grow 与 shrink 阶段交错，立即剔除无效候选以压住 MB 规模；并嵌入基于似然比（LR）的条件独立检验，以适配“变量多、样本少”的光谱数据", "柴油、汽油、蚀刻液三类样本的近红外（NIR）光谱", "用 IAMB 选出的变量、以及全部变量；下游用 MLR 或 PLS 确定样本性质", "单一模态的应用研究（NIR 光谱）；条件独立检验仍从数据估计，样本量约束并未消除；评估样本量很小", "它揭示了 IAMB 的样本量缺陷并给出交错式改进，与本选题引入外部语义先验的切入点互补，也是“小样本下 MB 方法易退化”的旁证"],
+        ["Benchmarking Distribution Shift in Tabular Data with TableShift", "NeurIPS 2023 Datasets & Benchmarks Track（原文 PDF 已核）", "表格数据在分布偏移下的鲁棒性研究不足：图像与文本已有成熟基准，表格却只有 IID 基准，没有面向偏移的", "TableShift：15 个二分类任务、每个任务配一个自然偏移，覆盖金融/教育/公共政策/医疗/公民参与；提供统一 API 与评测协议，并对多种表格模型与鲁棒学习方法做大规模对比", "15 个二分类表格任务，数据来源多样，各自带自然偏移", "当时最好的多种表格模型（含树模型与深度模型），以及鲁棒学习与域泛化方法", "全部任务是二分类、且不含真实因果图，因此无法据它直接判定“哪些特征是因果的”；各任务的偏移类型不同，结论未必可迁移；部分数据集需要签数据使用协议。原文三条结论：ID 与 OOD 准确率呈线性关系；域鲁棒方法能缩小偏移差距但会牺牲 ID 准确率；偏移差距与标签分布偏移强相关", "本选题验证性实验的第二部分与周 11–12 主结果表直接建立在它之上：用它比较“因果特征选择选出的特征”与“按预测力选出的特征”从分布内到分布外的性能下降幅度"],
+        ["Causal inference using invariant prediction: identification and confidence intervals（ICP）", "正式发表于 JRSS-B 2016（本 PDF 为 2024-05-24 的 arXiv 版本，出处待核对）", "因果模型的预测在干预或环境变化下保持稳定，非因果模型则可能严重出错；能否利用这种不变性反推因果变量", "收集在所有环境/干预下预测准确度都保持不变的那些模型，因果模型以高概率属于该集合，由此给出因果关系的有效置信区间；并在结构方程模型下给出可识别性的充分条件", "多组实验设置（各种干预），包含大规模基因扰动实验等", "初始筛选可用平方根 Lasso、Lasso 或 boosting（交叉验证选惩罚参数）；论文与这类回归式筛选对照", "需要多环境或干预数据，真实场景常常拿不到；可识别性依赖结构方程模型下的充分条件，假设较强；需在变量子集上搜索，成本随变量数增长（论文亦讨论了模型误设下的稳健性）", "本选题研究定义里“步骤 3 稳健性验证”（在多个环境上检验所选特征与目标的关系是否稳定）正是这一思想的应用；区别在于我们只用它做验证与筛选，并不直接做效应估计"],
         ["Causality-based Feature Selection: Methods and Evaluations", "ACM Computing Surveys（待核对：Zotero 记为 2019，正式卷期为 2020）", "因果特征选择方法缺少统一评测", "系统整理约束式/评分式方法与 CausalFS 工具箱，在基准网络上评测", "待补（未拿到原文）", "待补（未拿到原文）", "待补（未拿到原文）", "提供本选题的基线算法（IAMB、HITON-MB）与评测口径"],
         ["Causal Feature Selection With Efficient Spouses Discovery", "IEEE Trans. Big Data 2023", "传统因果特征选择在发现 spouses 时效率低、易受噪声影响", "改进 spouses 发现并做剪枝，提出 CFS 框架", "待补（未拿到原文）", "待补（未拿到原文）", "待补（未拿到原文）", "本选题用语言模型先验替代纯统计的 spouses 发现，可与之对照"],
         ["An Introduction to Causal Discovery", "Swiss Journal of Economics and Statistics 2024", "因果发现与结构学习入门综述", "从 d-分离、马尔可夫等价讲到 PC、GES 等算法", "无（方法综述）", "无", "入门性质，不含新方法或实验", "本选题的概念基础与算法背景"],
@@ -87,17 +89,19 @@
       "header": ["计划指定的必读论文", "是否已拿到原文", "是否已进对比表"],
       "rows": [
         ["HITON（Aliferis 等，2003）", "有，已读", "已进表，六字段完整"],
+        ["TableShift（Gardner 等，2023）", "有，已读", "已进表，六字段完整"],
+        ["Invariant Causal Prediction（Peters 等，2016）", "有，已读（arXiv 版本）", "已进表，六字段完整"],
+        ["inter-IAMB 应用（Chang 等，2017，Talanta）", "有，已读", "已进表，六字段完整"],
         ["IAMB 原始论文（Tsamardinos 等）", "没有", "未进表"],
-        ["Invariant Causal Prediction（Peters 等，2016）", "没有", "未进表"],
         ["Causal Reasoning and Large Language Models（Kıcıman 等，2024）", "附了但未落到磁盘", "未进表"],
-        ["TableShift（Gardner 等，2023）", "附了但未落到磁盘", "未进表"],
         ["Causality-based Feature Selection 综述（Yu 等）", "附了但未落到磁盘", "已进表，数据/基线/弱点三格待补"],
+        ["Feature Selection: A Data Perspective（Li 等，2018）", "附了但未落到磁盘", "未进表（属第 2 周指定资料）"],
         ["另找 2–3 篇 2025 年后“语言模型辅助因果发现”的工作", "没有", "未进表"]
       ]
     },
     {
       "type": "para",
-      "text": "结论：第 3 周仍只能算部分达标。表结构与两个完整行已经就位，剩下的缺格是“材料问题”而非“工作问题”——把上表里标注“未拿到原文”的 PDF 补齐，我就按原文把对应行填成同样完整的六字段。"
+      "text": "结论：第 3 周仍只能算部分达标。计划必读的六篇里，HITON、TableShift、ICP 三篇已按原文填成完整六字段，加上 inter-IAMB 应用那篇共四行；仍缺 IAMB 原始论文与 Kıcıman 两篇，Yu 综述虽已进表但数据/基线/弱点三格待补。剩下的缺口是“材料问题”而非“工作问题”——把对应 PDF 补齐即可按原文填成同样完整的行。"
     }
   ]
 }
