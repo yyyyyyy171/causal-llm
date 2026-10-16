@@ -86,19 +86,43 @@ def _sort_key(value):
         return (1, str(value))
 
 
+def fill_paragraph(paragraph, text):
+    """
+    把 `**强调**` 渲染成真正的粗体。
+
+    为什么要有这一步：规格文件里一直用 **...** 标重点，但 Word 不会自己解释
+    Markdown，结果是星号原样显示在文档里（四个周报都有这个问题）。
+    与其把标记删掉、丢掉重点，不如在这里把它变成真正的加粗。
+    按 ** 切分后，奇数段就是被强调的部分。
+    """
+
+    for index, chunk in enumerate(str(text).split("**")):
+        if not chunk:
+            continue
+        run = paragraph.add_run(chunk)
+        if index % 2 == 1:
+            run.bold = True
+
+
+def add_paragraph(document, text, style=None):
+    paragraph = document.add_paragraph(style=style)
+    fill_paragraph(paragraph, text)
+    return paragraph
+
+
 def add_table(document, header, rows):
     table = document.add_table(rows=1, cols=len(header))
     table.style = "Table Grid"
 
     for cell, text in zip(table.rows[0].cells, header):
-        cell.text = str(text)
+        fill_paragraph(cell.paragraphs[0], text)
         for run in cell.paragraphs[0].runs:
             run.bold = True
 
     for row in rows:
         cells = table.add_row().cells
         for cell, text in zip(cells, row):
-            cell.text = str(text)
+            fill_paragraph(cell.paragraphs[0], text)
 
     return table
 
@@ -129,11 +153,11 @@ def build(spec: dict, out_path: Path) -> None:
             document.add_heading(section["text"], level=2)
 
         elif kind == "para":
-            document.add_paragraph(section["text"])
+            add_paragraph(document, section["text"])
 
         elif kind == "bullets":
             for item in section["items"]:
-                document.add_paragraph(item, style="List Bullet")
+                add_paragraph(document, item, style="List Bullet")
 
         elif kind == "table":
             add_table(document, section["header"], section["rows"])
