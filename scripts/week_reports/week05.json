@@ -7,7 +7,10 @@
       "type": "para",
       "text": "文档对第 5 周的要求：让本地 8B 模型判断变量对之间的因果方向；真实变量名和匿名变量名各跑一遍，每对采样 5 次；精读论文。产出：真实方向判断准确率表，对比表。三部分均已完成：模型实验用文档指定的 4bit 8B（Qwen3-8B-AWQ），覆盖全部 5 个 bnlearn 网络、共 27,750 次生成；论文对比表见第 3 周产出文档；“再找 2–3 篇 2025 年以后语言模型辅助因果发现的工作”已补上两篇（CausalChat 2025、L2D-CD 2025），详见第四节。因此本周按计划验收可以判定为达标。"
     },
-    {"type": "heading", "text": "一、方法"},
+    {
+      "type": "heading",
+      "text": "一、方法"
+    },
     {
       "type": "bullets",
       "items": [
@@ -18,7 +21,10 @@
         "匿名模式：变量名换成 V01、V02 这样的编号，同时不提供任何含义与领域信息，用于检验“起作用的是语义知识，还是模型对经典因果图的记忆”。"
       ]
     },
-    {"type": "heading", "text": "二、方向判断准确率表"},
+    {
+      "type": "heading",
+      "text": "二、方向判断准确率表"
+    },
     {
       "type": "para",
       "text": "5 个网络 × 2 种变量名模式 × 每对 5 次采样，合计 27,750 次生成，JSON 解析率 100%，结束原因全部是模型自行停止（stop），没有一次被长度截断。字段含义：pairs 变量对总数、true_edges 真实有向边数、edge_* 边判别指标、direction_* 方向判断、未决 指模型答“不确定”或“没有直接边”的真实边。"
@@ -26,7 +32,21 @@
     {
       "type": "csv_table",
       "path": "results/llm_prior_eval_qwen3-8b-awq.csv",
-      "columns": ["network", "mode", "pairs", "true_edges", "edge_precision", "edge_recall", "edge_f1", "direction_correct", "direction_attempted", "direction_undecided", "direction_accuracy", "direction_coverage", "mean_consistency"],
+      "columns": [
+        "network",
+        "mode",
+        "pairs",
+        "true_edges",
+        "edge_precision",
+        "edge_recall",
+        "edge_f1",
+        "direction_correct",
+        "direction_attempted",
+        "direction_undecided",
+        "direction_accuracy",
+        "direction_coverage",
+        "mean_consistency"
+      ],
       "round": 3
     },
     {
@@ -37,7 +57,10 @@
       "type": "para",
       "text": "读法二：匿名那几行（mode = anon）的 edge_* 与 direction_* 全是 0，这里的 0 表示“没有任何可判的边或方向”，不是“判断错了”——模型在匿名下对所有变量对都答“没有直接边”，其真实含义写在 direction_undecided 那一列（8 / 25 / 52 / 46 / 66，正好等于各网络的真实边总数）。"
     },
-    {"type": "heading", "text": "三、观察"},
+    {
+      "type": "heading",
+      "text": "三、观察"
+    },
     {
       "type": "bullets",
       "items": [
@@ -52,7 +75,10 @@
         "一个必须写进论文的发现：邻接先验与马尔可夫毯任务存在系统性错配。马尔可夫毯 = 父/子 + 配偶，而配偶在 DAG 里并不相邻，模型对配偶的回答在不同网络上方向相反（详见第五节）。"
       ]
     },
-    {"type": "heading", "text": "四、进度与论文"},
+    {
+      "type": "heading",
+      "text": "四、进度与论文"
+    },
     {
       "type": "bullets",
       "items": [
@@ -62,7 +88,10 @@
         "这两篇里 L2D-CD 尤其值得注意，因为它正面处理了我们观测到的现象。它的出发点就是“专家（LLM）的可靠性随领域与具体查询显著变化，既有的软约束方法没有考虑这种差异”；做法是用 learning-to-defer 学一个延迟函数，对每一对变量决定是听数据还是听专家，并报告它优于数据与专家各自单独使用。对照我们的实测：模型对配偶的回答在 ASIA 是 0/4、在 CHILD 是 10/10——专家可靠性确实随网络变号，一条固定规则无法适配。"
       ]
     },
-    {"type": "heading", "text": "五、先验与马尔可夫毯的错配诊断"},
+    {
+      "type": "heading",
+      "text": "五、先验与马尔可夫毯的错配诊断"
+    },
     {
       "type": "para",
       "text": "把每个目标变量的真实毯内成员分成两组：父/子（在 DAG 里相邻）与配偶（不相邻），再看模型对每组答“有直接边”的比例。这张表解释了为什么不能把“有没有直接边”当作马尔可夫毯任务的先验。"
@@ -70,7 +99,14 @@
     {
       "type": "csv_table",
       "path": "results/prior_vs_spouses_real_qwen3-8b-awq.csv",
-      "columns": ["network", "child_or_parent", "said_edge_for_child_parent", "spouse", "said_edge_for_spouse", "precision_vs_blanket"],
+      "columns": [
+        "network",
+        "child_or_parent",
+        "said_edge_for_child_parent",
+        "spouse",
+        "said_edge_for_spouse",
+        "precision_vs_blanket"
+      ],
       "round": 3
     },
     {
@@ -79,6 +115,18 @@
         "对配偶这个问题的答案，在不同网络上方向是相反的：ASIA 上模型对 4 个配偶全部答“没有直接边”（对邻接问题正确、对毯任务错误），CHILD 上却对 10 个配偶全部答“有直接边”（对邻接问题错误、对毯任务反而正确）。同一条规则不可能同时适配两个网络，用邻接先验驱动马尔可夫毯恢复，收益会被两边的错误互相抵消。",
         "模型答“有边”的集合严重过宽：HAILFINDER 声称 668 条边，其中只有 60 条真的是毯内对（precision_vs_blanket = 0.090）；ASIA 声称 17 条，其中 8 条是真（0.471）。",
         "这条诊断是下周调整方法的依据：文档步骤 1 要的是“判断因果方向”，而下游任务是马尔可夫毯恢复，两者不是同一个对象。直接换成询问“B 是否在 A 的马尔可夫毯里”是一种对准任务的改法，将在后续周次作为对比实验报告。"
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "六、后续工作（本周未完成，明确列出）"
+    },
+    {
+      "type": "bullets",
+      "items": [
+        "对照一（拆分匿名结论）：现有一档匿名对照把变量名称、领域含义、可能触发记忆的线索三者一起移除，因此无法区分“模型读懂了语义”与“模型背过经典因果网络”。需要再加一档：把变量名换成语义等价、但不出现在任何公开因果网络里的编造名称——语义保留、记忆线索切断。这一档尚未做。",
+        "对照二（替换融合规则）：本选题目前用的是“先验与数据冲突时以数据为准”这条固定规则；2025 年的 L2D-CD 给出的做法是学一个延迟函数，对每一对变量决定听数据还是听专家，其出发点正是“专家可靠性随领域与具体查询显著变化”。这一条也尚未做，但已有明确的对照设计。",
+        "两条都属于方法层面的下一步，不是本周的验收项；写在这里是为了让评审能区分“本周已完成”与“已识别但未做”。"
       ]
     }
   ]
