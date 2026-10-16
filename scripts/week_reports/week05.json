@@ -90,7 +90,19 @@
     },
     {
       "type": "heading",
-      "text": "五、先验与马尔可夫毯的错配诊断"
+      "text": "五、论文对比表（本选题相关）"
+    },
+    {
+      "type": "para",
+      "text": "计划对第 5 周的产出要求是「真实方向判断准确率表，对比表」，因此这里把论文对比表一并列出。它与第 3 周产出文档中的是同一张表：共用 scripts/week_reports/tables/paper_comparison.json 一个数据源，两周的文档都由脚本生成，不会出现两份内容各自漂移的情况。字段为计划要求的六项（问题、方法、数据、基线、弱点、与本选题的区别），共 15 行。"
+    },
+    {
+      "type": "table_include",
+      "path": "scripts/week_reports/tables/paper_comparison.json"
+    },
+    {
+      "type": "heading",
+      "text": "六、先验与马尔可夫毯的错配诊断"
     },
     {
       "type": "para",
@@ -119,7 +131,7 @@
     },
     {
       "type": "heading",
-      "text": "六、后续工作（本周未完成，明确列出）"
+      "text": "七、后续工作（本周未完成，明确列出）"
     },
     {
       "type": "bullets",

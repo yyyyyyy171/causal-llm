@@ -15,6 +15,7 @@ results/ 下的 CSV，让表格数据永远来自真实实验结果，而不是�
     {"type": "table",    "header": [...], "rows": [[...], ...]}
     {"type": "csv_table","path": "results/xxx.csv", "columns": [...],
                          "filter": {"col": "value"}, "sort_by": "col"}
+    {"type": "table_include", "path": "scripts/week_reports/tables/xxx.json"}
     {"type": "image",    "path": "results/xxx.png", "width_inches": 6.0}
 """
 
@@ -166,6 +167,18 @@ def build(spec: dict, out_path: Path) -> None:
             header, rows = read_csv_table(section)
             if not rows:
                 document.add_paragraph(f"（{section['path']} 暂无数据）")
+                continue
+            add_table(document, header, rows)
+
+        elif kind == "table_include":
+            # 同一张表要在多份周报里出现时用这个，避免复制成两份各自漂移。
+            # 被引用的 JSON 形如 {"header": [...], "rows": [[...], ...]}。
+            spec_path = resolve(section["path"])
+            payload = json.loads(spec_path.read_text(encoding="utf-8"))
+            header = payload["header"]
+            rows = payload["rows"]
+            if not rows:
+                document.add_paragraph(f"（{section['path']} 暂无内容）")
                 continue
             add_table(document, header, rows)
 
