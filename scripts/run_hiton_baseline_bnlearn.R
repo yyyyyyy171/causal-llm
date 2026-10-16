@@ -148,11 +148,44 @@ write.csv(
 # Compare with the MATLAB baseline already in the repository
 # ---------------------------------------------------------------------------
 
-matlab_path <- sprintf("%s/results/HITONMB_4networks_summary.csv", project_root)
+# MATLAB 参考基线：先用汇总文件，缺哪个网络就去找该网络自己的文件。
+#
+# ALARM 一直没进对照表，就是因为 results/HITONMB_4networks_summary.csv 里
+# 根本没有它（那份文件只有 ASIA / CHILD / INSURANCE / HAILFINDER），
+# 而 ALARM 的结果在 data/ALARM/ALARM_HITONMB_summary.csv。
+# 少了这一步，跨网络交叉验证最多只能覆盖 4 个网络。
+load_matlab_reference <- function(networks) {
 
-if (file.exists(matlab_path)) {
-  matlab <- read.csv(matlab_path, stringsAsFactors = FALSE)
-  matlab$method <- NULL
+  pieces <- list()
+
+  summary_path <- sprintf("%s/results/HITONMB_4networks_summary.csv", project_root)
+  if (file.exists(summary_path)) {
+    pieces[[length(pieces) + 1]] <- read.csv(summary_path, stringsAsFactors = FALSE)
+  }
+
+  for (network in networks) {
+    per_network <- sprintf(
+      "%s/data/%s/%s_HITONMB_summary.csv", project_root, network, network
+    )
+    if (file.exists(per_network)) {
+      block <- read.csv(per_network, stringsAsFactors = FALSE)
+      block$network <- network
+      pieces[[length(pieces) + 1]] <- block
+    }
+  }
+
+  if (length(pieces) == 0) return(NULL)
+
+  columns <- c("network", "sample_size", "Precision", "Recall", "F1")
+  reference <- do.call(rbind, lapply(pieces, function(piece) piece[, columns]))
+
+  # 同一网络同时出现在两处时保留先出现的（汇总文件优先）
+  reference[!duplicated(reference[, c("network", "sample_size")]), ]
+}
+
+matlab <- load_matlab_reference(networks)
+
+if (!is.null(matlab)) {
   comparison <- merge(
     rows[, c("network", "sample_size", "f1", "precision", "recall")],
     matlab[, c("network", "sample_size", "F1", "Precision", "Recall")],
@@ -170,7 +203,7 @@ if (file.exists(matlab_path)) {
     "\nmean |delta F1| = %.4f\n", mean(abs(comparison$delta_f1))
   ))
 } else {
-  cat("(no MATLAB baseline file found)\n")
+  cat("(no MATLAB baseline files found)\n")
 }
 
 cat(sprintf("\nwritten: results/hiton_baseline_%s.csv\n", tag))

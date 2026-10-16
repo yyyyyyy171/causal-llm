@@ -119,6 +119,15 @@ def evaluate(network: str, mode: str, dag_edges, verbose: bool = True,
         "direction_correct": direction_correct,
         "direction_attempted": direction_attempted,
         "direction_undecided": direction_undecided,
+        # 方向覆盖率 = 模型愿意给方向的真实边 / 全部真实边。
+        #
+        # 为什么必须和准确率一起报：direction_accuracy 的分母只是"它愿意答的那部分"，
+        # 单独看会让人以为模型对全部真实边都判对了。例如 HAILFINDER 的 43/43 = 1.000
+        # 指的是它给方向的 43 条全对，而该网络真实边共 66 条 —— 覆盖率 43/66 = 0.652。
+        # 三个数放在一起才是完整结论：覆盖率低说明它回避，准确率高说明它不回避时很准。
+        "direction_coverage": (
+            direction_attempted / len(dag_edges) if dag_edges else 0.0
+        ),
         "direction_accuracy": (
             direction_correct / direction_attempted
             if direction_attempted else 0.0
@@ -132,6 +141,7 @@ def evaluate(network: str, mode: str, dag_edges, verbose: bool = True,
             f"edgeP={precision:.3f} edgeR={recall:.3f} edgeF1={f1:.3f} "
             f"dirAcc={result['direction_accuracy']:.3f}"
             f"({direction_correct}/{direction_attempted},"
+            f" 覆盖率 {result['direction_coverage']:.3f},"
             f" 未决 {direction_undecided}) "
             f"cons={result['mean_consistency']:.3f}"
         )
