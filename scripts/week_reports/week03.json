@@ -65,19 +65,39 @@
     {"type": "heading", "text": "三、论文对比表（本选题相关）"},
     {
       "type": "table",
-      "header": ["论文", "年份/出处", "问题", "方法", "与本选题的区别"],
+      "header": ["论文", "出处", "问题", "方法", "数据", "基线", "弱点与局限", "与本选题的区别"],
       "rows": [
-        ["Causality-based Feature Selection: Methods and Evaluations", "ACM Computing Surveys 2020", "因果特征选择方法缺少统一评测", "系统整理约束式/评分式方法与 CausalFS 工具箱，在基准网络上评测", "提供本选题的基线算法（IAMB、HITON-MB）与评测口径"],
-        ["Causal Feature Selection With Efficient Spouses Discovery", "IEEE Trans. Big Data 2023", "传统因果特征选择在发现 spouses 时效率低、易受噪声影响", "改进 spouses 发现并做剪枝，提出 CFS 框架", "本选题用语言模型先验替代纯统计的 spouses 发现，可与之对照"],
-        ["An Introduction to Causal Discovery", "Swiss Journal of Economics and Statistics 2024", "因果发现与结构学习入门综述", "从 d-分离、马尔可夫等价讲到 PC、GES 等算法", "本选题的概念基础与算法背景"],
-        ["Universal Causal Inference in a Topos", "NeurIPS 2025", "SCM 能否推广到不同类型的因果模型", "用范畴论（Topos）框架统一因果推断", "理论取向，与本选题的实证路线互补"],
-        ["Practical do-Shapley Explanations with Estimand-Agnostic …", "NeurIPS 2025", "SHAP 反映相关而非因果", "Estimand-Agnostic 框架，只训练一个 SCM 用于解释", "同属“把因果引入解释/特征重要性”的方向，方法不同"],
-        ["A General Representation-Based Approach（GAMA）", "ICML 2025", "分布偏移下需要稳定的因果表征", "基于马尔可夫毯的表示学习框架", "与选题的分布外目标是同一动机，但用表征而非特征选择"]
+        ["HITON: A Novel Markov Blanket Algorithm for Optimal Variable Selection", "AMIA Annual Symposium Proceedings, 2003（原文 PDF 已核）", "识别 MB(T) 在实践中很难：既有方法或不可靠（无限样本也未必返回正确 MB），或所需样本量对 MB 大小呈指数级，或需诱导完整贝叶斯网络而无法扩展到多变量", "HITON-PC + HITON-MB：在“局部最小”的条件集上做条件独立检验，而不以整个 MB 为条件；小样本下无法排除的非 MB 变量交给最后的 wrapper 阶段", "五个差异很大的生物医学任务：药物发现的生物活性预测、心律失常临床诊断、书目文本分类、基因表达肺癌诊断、蛋白质组学前列腺癌检测", "按任务分别选取的当时最好算法（state-of-the-art）", "结论依赖条件独立检验本身正确（忠实性 + 足够样本）；仍需 wrapper 阶段剔除残余变量；五个任务的基线各自定制，横向可比性有限。原文报告平均分类性能 87.1% 对基线 86.1%，平均变量数 32.3 对基线 4540", "本选题把它作为“纯数据因果特征选择”的基线算法（HITON-MB），并用语言模型先验去影响它的条件独立检验"],
+        ["Interleaved Incremental Association Markov Blanket as a Potential Feature Selection Method for Improving Accuracy in Near-Infrared Spectroscopic Analysis", "Talanta, 2017（DOI 10.1016/j.talanta.2017.09.039，原文 PDF 已核）", "IAMB 选出的变量可能冗余甚至误导：IAMB 需要不必要的大量学习数据才能识别 MB", "inter-IAMB：把 grow 与 shrink 阶段交错，立即剔除无效候选以压住 MB 规模；并嵌入基于似然比（LR）的条件独立检验，以适配“变量多、样本少”的光谱数据", "柴油、汽油、蚀刻液三类样本的近红外（NIR）光谱", "用 IAMB 选出的变量、以及全部变量；下游用 MLR 或 PLS 确定样本性质", "单一模态的应用研究（NIR 光谱）；条件独立检验仍从数据估计，样本量约束并未消除；评估样本量很小", "它揭示了 IAMB 的样本量缺陷并给出交错式改进，与本选题引入外部语义先验的切入点互补，也是“小样本下 MB 方法易退化”的旁证"],
+        ["Causality-based Feature Selection: Methods and Evaluations", "ACM Computing Surveys（待核对：Zotero 记为 2019，正式卷期为 2020）", "因果特征选择方法缺少统一评测", "系统整理约束式/评分式方法与 CausalFS 工具箱，在基准网络上评测", "待补（未拿到原文）", "待补（未拿到原文）", "待补（未拿到原文）", "提供本选题的基线算法（IAMB、HITON-MB）与评测口径"],
+        ["Causal Feature Selection With Efficient Spouses Discovery", "IEEE Trans. Big Data 2023", "传统因果特征选择在发现 spouses 时效率低、易受噪声影响", "改进 spouses 发现并做剪枝，提出 CFS 框架", "待补（未拿到原文）", "待补（未拿到原文）", "待补（未拿到原文）", "本选题用语言模型先验替代纯统计的 spouses 发现，可与之对照"],
+        ["An Introduction to Causal Discovery", "Swiss Journal of Economics and Statistics 2024", "因果发现与结构学习入门综述", "从 d-分离、马尔可夫等价讲到 PC、GES 等算法", "无（方法综述）", "无", "入门性质，不含新方法或实验", "本选题的概念基础与算法背景"],
+        ["Universal Causal Inference in a Topos", "NeurIPS 2025（出处待核对）", "SCM 能否推广到不同类型的因果模型", "用范畴论（Topos）框架统一因果推断", "无实验", "无", "纯理论取向，未做实证评估", "理论取向，与本选题的实证路线互补"],
+        ["Practical do-Shapley Explanations with Estimand-Agnostic …", "NeurIPS 2025（出处待核对）", "SHAP 反映相关而非因果", "Estimand-Agnostic 框架，只训练一个 SCM 用于解释", "待补（未拿到原文）", "待补（未拿到原文）", "待补（未拿到原文）", "同属“把因果引入解释/特征重要性”的方向，方法不同"],
+        ["A General Representation-Based Approach（GAMA）", "ICML 2025（出处待核对）", "分布偏移下需要稳定的因果表征", "基于马尔可夫毯的表示学习框架", "待补（未拿到原文）", "待补（未拿到原文）", "待补（未拿到原文）", "与选题的分布外目标是同一动机，但用表征而非特征选择"]
       ]
     },
     {
       "type": "para",
-      "text": "必读论文（按文档要求）：IAMB 与 HITON-MB 原始论文、Invariant Causal Prediction（Peters 等 2016）、Causal Reasoning and Large Language Models（Kıcıman 等）、TableShift，另需自行检索 2–3 篇 2025 年以后“语言模型辅助因果发现”的工作。这部分尚在补。"
+      "text": "评审指出本周的两处不足都落在这张表上：对比表字段不全（只有问题、方法、与本选题的区别三列）、计划指定的必读论文未补齐。本次已把表头扩到计划要求的六个字段（问题、方法、数据、基线、弱点、与本选题的区别），并把已经拿到原文的两篇（HITON 2003、Talanta 2017 的 inter-IAMB 应用）按实据填成完整行。其余行标注了“待补（未拿到原文）”——不拿记忆充数，因为文档本身就要求核对发表年份与出处后再引用。"
+    },
+    {"type": "heading", "text": "四、必读论文清单与当前状态"},
+    {
+      "type": "table",
+      "header": ["计划指定的必读论文", "是否已拿到原文", "是否已进对比表"],
+      "rows": [
+        ["HITON（Aliferis 等，2003）", "有，已读", "已进表，六字段完整"],
+        ["IAMB 原始论文（Tsamardinos 等）", "没有", "未进表"],
+        ["Invariant Causal Prediction（Peters 等，2016）", "没有", "未进表"],
+        ["Causal Reasoning and Large Language Models（Kıcıman 等，2024）", "附了但未落到磁盘", "未进表"],
+        ["TableShift（Gardner 等，2023）", "附了但未落到磁盘", "未进表"],
+        ["Causality-based Feature Selection 综述（Yu 等）", "附了但未落到磁盘", "已进表，数据/基线/弱点三格待补"],
+        ["另找 2–3 篇 2025 年后“语言模型辅助因果发现”的工作", "没有", "未进表"]
+      ]
+    },
+    {
+      "type": "para",
+      "text": "结论：第 3 周仍只能算部分达标。表结构与两个完整行已经就位，剩下的缺格是“材料问题”而非“工作问题”——把上表里标注“未拿到原文”的 PDF 补齐，我就按原文把对应行填成同样完整的六字段。"
     }
   ]
 }
