@@ -12,6 +12,7 @@ gamma = 0 时就是纯数据的经典算法，作为基线。
 
 from __future__ import annotations
 
+import statistics
 from itertools import combinations
 
 
@@ -39,19 +40,46 @@ def _subset_independent(ci, target, y, candidates, max_k, cap=12):
     return False
 
 
-def _pick_next(ci, target, candidates, current, prior, gamma):
-    """按关联强度（可加先验加成）挑下一个进入 MB 的变量。"""
+def _pick_next(ci, target, candidates, current, prior, gamma, normalize=False):
+    """
+    按关联强度（可加先验加成）挑下一个进入 MB 的变量。
 
-    def score(y):
-        association = ci.association(target, y, tuple(current))
-        if gamma:
-            association += gamma * ci.score(target, y)
-        return association
+    normalize=True 时把先验分数换算到"当前候选集的关联强度尺度"上：
 
-    return max(candidates, key=score)
+        S(y) = A(y) + gamma * P(y) * scale,   scale = 当前候选集 A 的中位数
+
+    为什么需要它：A 是 -log10(p)，量级 0~10；先验分数在 [-1, 1]。
+    不归一化时 gamma=1.5 对排序几乎没有影响，先验等于没接上。
+    归一化后 gamma 才有"一个最大置信度的先验，相当于挪动一个中位关联强度"
+    这样可解释的含义，并且不会因为不同网络、不同搜索阶段 A 的量级不同
+    而让先验的实际权重剧烈变化。
+
+    先验分数的正负号与相对大小保持不变——它本来就在 [-1, 1]，
+    再做一次标准化只会破坏"正=倾向在毯内、负=倾向不在"的含义。
+    """
+
+    if not gamma:
+        return max(candidates, key=lambda y: ci.association(target, y, tuple(current)))
+
+    associations = {y: ci.association(target, y, tuple(current)) for y in candidates}
+
+    if normalize:
+        scale = statistics.median(associations.values())
+        if not scale > 0:            # 全部 p≈1 时中位数为 0，先验无参照尺度
+            scale = max(associations.values()) or 1.0
+        return max(
+            candidates,
+            key=lambda y: associations[y] + gamma * ci.score(target, y) * scale,
+        )
+
+    return max(
+        candidates,
+        key=lambda y: associations[y] + gamma * ci.score(target, y),
+    )
 
 
-def iamb(ci, target, n_vars, max_k=3, prior=None, gamma=0.0):
+def iamb(ci, target, n_vars, max_k=3, prior=None, gamma=0.0,
+         normalize=False, allowed=None, trace=None):
     """
     IAMB：增量式关联马尔可夫毯。
 
@@ -59,14 +87,23 @@ def iamb(ci, target, n_vars, max_k=3, prior=None, gamma=0.0):
     """
 
     mb = []
-    remaining = set(range(n_vars)) - {target}
+    pool = range(n_vars) if allowed is None else allowed
+    remaining = set(pool) - {target}
 
     while remaining:
 
-        y = _pick_next(ci, target, remaining, mb, prior, gamma)
+        y = _pick_next(ci, target, remaining, mb, prior, gamma, normalize)
 
         if ci.independent(target, y, tuple(mb)):
             break
+
+        if trace is not None:
+            trace.append({
+                "chosen": y,
+                "candidate_count": len(remaining),
+                "p_value": ci.raw_p_value(target, y, tuple(mb)),
+                "mb_before": sorted(mb),
+            })
 
         mb.append(y)
         remaining.discard(y)
