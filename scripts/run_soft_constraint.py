@@ -21,6 +21,7 @@ from __future__ import annotations
 
 import argparse
 import csv
+import hashlib
 import sys
 from pathlib import Path
 
@@ -103,6 +104,20 @@ def shuffle_prior(prior: dict, seed: int) -> dict:
     rng = np.random.default_rng(seed)
     values = list(rng.permutation([prior[k] for k in keys]))
     return dict(zip(keys, values))
+
+
+def digest(values) -> str:
+    """给"本次重复用的数据"和"先验分值多重集"各留一个指纹，便于事后审计。"""
+
+    text = ",".join(str(int(v)) for v in values)
+    return hashlib.sha1(text.encode("utf-8")).hexdigest()[:12]
+
+
+def sample_digest(sample) -> str:
+    """样本指纹：按行按列拼成文本再取 sha1，跨进程稳定。"""
+
+    text = "\n".join("\t".join(str(v) for v in row) for row in sample)
+    return hashlib.sha1(text.encode("utf-8")).hexdigest()[:12]
 
 
 def score_target(predicted: set, truth: set):
@@ -196,6 +211,8 @@ def main() -> int:
         for repeat in range(1, repeats + 1):
 
             sample = subsample(data, args.size, args.seed + repeat)
+            sample_hash = sample_digest(sample)
+            prior_hash = digest(sorted(prior.values()))
             results = {}
 
             # 关卡 1：gamma=0 与"完全没有先验"必须逐位一致（含搜索轨迹）
@@ -243,6 +260,7 @@ def main() -> int:
                 detail_rows.append({
                     "network": network, "sample_size": args.size, "repeat": repeat,
                     "variant": variant, "gamma": args.gamma,
+                    "sample_hash": sample_hash, "prior_values_hash": prior_hash,
                     **{key: mean_of(payload["per_target"], key) for key in METRICS},
                     "n_ci_tests": payload["n_ci_tests"],
                     "excluded_total": payload["excluded_total"],
