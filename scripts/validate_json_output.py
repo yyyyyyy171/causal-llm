@@ -37,12 +37,19 @@ RECORD_FIELDS = {
         "variable_a", "variable_b", "runs",
         "in_markov_blanket", "final_confidence", "consistency",
     ],
+    # role 版：父/子/配偶 + none + 弃权 uncertain，记录层面 final_role 是多数投票结果。
+    "role": [
+        "variable_a", "variable_b", "runs",
+        "final_role", "final_confidence", "consistency",
+    ],
 }
 
 RUN_FIELDS = ["run_id", "raw_response", "parsed", "parse_status"]
 
 
 def task_of(path: Path) -> str:
+    if "_LLM_role_" in path.name:
+        return "role"
     return "mb" if "_LLM_mb_" in path.name else "direction"
 
 
@@ -52,7 +59,8 @@ def check_file(path: Path) -> dict:
     required = RECORD_FIELDS[task]
 
     row = {
-        "file": str(path.relative_to(PROJECT_ROOT)),
+        # 统一用 / 分隔，避免同一份结果在 Windows 与 Linux 上产生无意义的差异。
+        "file": path.relative_to(PROJECT_ROOT).as_posix(),
         "task": task,
         "file_parses": False,
         "records": 0,
@@ -99,6 +107,10 @@ def check_file(path: Path) -> dict:
                 row["answers_missing_fields"] += 1
             if task == "mb" and "in_markov_blanket" not in parsed:
                 row["answers_missing_fields"] += 1
+            if task == "role" and not (
+                "role_of_a" in parsed or "in_markov_blanket" in parsed
+            ):
+                row["answers_missing_fields"] += 1
 
     return row
 
@@ -111,6 +123,7 @@ def main() -> int:
     found = sorted(
         list(DATA_ROOT.glob("*/*_LLM_prior_*.json"))
         + list(DATA_ROOT.glob("*/*_LLM_mb_*.json"))
+        + list(DATA_ROOT.glob("*/*_LLM_role_*.json"))
     )
 
     # 早期实验留下的是旧格式（比如 *_progress.json），字段与新管道不同，
