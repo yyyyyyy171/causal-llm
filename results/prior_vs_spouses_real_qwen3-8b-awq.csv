@@ -1,0 +1,6 @@
+"network","blanket_pairs","child_or_parent","spouse","said_edge_for_child_parent","said_noedge_for_child_parent","said_edge_for_spouse","said_noedge_for_spouse","predicted_edges","predicted_edges_in_blanket","precision_vs_blanket"
+"ASIA",20,16,4,16,0,0,4,17,8,0.471
+"CHILD",60,50,10,44,6,10,0,127,27,0.213
+"INSURANCE",140,104,36,40,64,10,26,86,26,0.302
+"ALARM",130,92,38,76,16,26,12,284,53,0.187
+"HAILFINDER",198,132,66,86,46,34,32,668,60,0.09

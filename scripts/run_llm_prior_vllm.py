@@ -37,13 +37,19 @@ from run_llm_prior import (  # noqa: E402
     append_cache,
     build_causal_prompt,
     build_markov_blanket_prompt,
+    build_role_prompt,
     extract_json,
     load_cache,
     model_suffix,
     pair_list,
     save_json,
+    write_summary_csv,
 )
-from src.llm_prior.prompt import MB_PROMPT_VERSION, PROMPT_VERSION  # noqa: E402
+from src.llm_prior.prompt import (  # noqa: E402
+    MB_PROMPT_VERSION,
+    PROMPT_VERSION,
+    ROLE_PROMPT_VERSION,
+)
 
 
 def build_sampling_params(SamplingParams, **wanted):
@@ -126,7 +132,8 @@ def main() -> int:
     parser.add_argument("--config", default="llm_prior")
     parser.add_argument("--network", default="ASIA")
     parser.add_argument("--mode", default="real", choices=("real", "anon", "both"))
-    parser.add_argument("--task", default="direction", choices=("direction", "mb"))
+    parser.add_argument("--task", default="direction",
+                        choices=("direction", "mb", "role"))
     parser.add_argument("--runs", type=int, default=5)
     parser.add_argument("--limit", type=int, default=0)
     parser.add_argument("--sample", type=int, default=0)
@@ -223,7 +230,10 @@ def main() -> int:
 
     modes = ("real", "anon") if args.mode == "both" else (args.mode,)
     suffix = model_suffix(args.model, cfg.get("model", "Qwen/Qwen3-8B"))
-    prompt_version = MB_PROMPT_VERSION if args.task == "mb" else PROMPT_VERSION
+    prompt_version = {
+        "mb": MB_PROMPT_VERSION,
+        "role": ROLE_PROMPT_VERSION,
+    }.get(args.task, PROMPT_VERSION)
     # 缓存键 = 提示词版本 + 生效参数指纹：任一处变化，旧缓存自动失效
     cache_version = f"{prompt_version}#{fingerprint}"
 
@@ -234,6 +244,8 @@ def main() -> int:
         def build_prompt(a: str, b: str) -> str:
             if args.task == "mb":
                 return build_markov_blanket_prompt(a, b, network=args.network, anonymous=anonymous)
+            if args.task == "role":
+                return build_role_prompt(a, b, network=args.network, anonymous=anonymous)
             return build_causal_prompt(a, b, network=args.network, anonymous=anonymous)
 
         cache = load_cache(args.network, mode, args.task, cache_version, suffix)
@@ -339,33 +351,14 @@ def main() -> int:
             final.append({"variable_a": a, "variable_b": b, "runs": runs,
                           **aggregate(runs, task=args.task)})
 
-        prefix = "LLM_prior" if args.task == "direction" else "LLM_mb"
+        prefix = {"mb": "LLM_mb", "role": "LLM_role"}.get(args.task, "LLM_prior")
         out_json = DATA_ROOT / args.network / f"{args.network}_{prefix}_{mode}{suffix}.json"
         save_json(out_json, final)
 
-        if args.task == "mb":
-            header = ("variable_a,variable_b,in_markov_blanket,positive_ratio,"
-                      "consistency,final_confidence,relation_count\n")
-            def line(item):
-                return (f"{item['variable_a']},{item['variable_b']},"
-                        f"{item['in_markov_blanket']},{item['positive_ratio']:.3f},"
-                        f"{item['consistency']:.3f},{item['final_confidence']:.3f},"
-                        f"\"{item['relation_count']}\"\n")
-        else:
-            header = ("variable_a,variable_b,direct_edge,edge_ratio,"
-                      "final_relation,consistency,final_confidence,relation_count\n")
-            def line(item):
-                return (f"{item['variable_a']},{item['variable_b']},"
-                        f"{item['direct_edge']},{item['edge_ratio']:.3f},"
-                        f"{item['final_relation']},{item['consistency']:.3f},"
-                        f"{item['final_confidence']:.3f},"
-                        f"\"{item['relation_count']}\"\n")
-
         out_csv = DATA_ROOT / args.network / f"{args.network}_{prefix}_{mode}{suffix}_summary.csv"
-        with open(out_csv, "w", encoding="utf-8") as handle:
-            handle.write(header)
-            for item in final:
-                handle.write(line(item))
+        # 表头与行格式由 summary_csv() 统一提供，两个推理脚本共用同一份实现。
+        # 原先这里另写了一份，加 role 任务时漏改，结果跑到写表这一步 KeyError。
+        write_summary_csv(out_csv, args.task, final)
 
         print(f"[{args.network}/{mode}] 完成 {len(final)} 对 -> {out_json.name}、{out_csv.name}")
 

@@ -14,6 +14,25 @@
 
 set -euo pipefail
 
+# 清掉 PYTHONPATH：Kaggle 上它指向 /kaggle/lib/kagglegym 与 /kaggle/lib，
+# Colab 上也常被注入一些目录。我们一个都不需要，留着只会让"环境到底是哪一套"
+# 变得说不清。清掉之后虚拟环境才是真正自洽的。
+unset PYTHONPATH
+
+# 关于下面这条反复出现的报错，先说明白，免得每次都被它误导：
+#
+#     Error in sitecustomize; ... ModuleNotFoundError: No module named 'wrapt'
+#
+# 来源不是 PYTHONPATH（曾经这么以为，查过之后是错的），而是 Kaggle 自己放在
+# **标准库目录**里的 /usr/lib/python3.13/sitecustomize.py —— 标准库目录对任何
+# venv 都在 sys.path 上，所以它必然跟着进虚拟环境；它 import wrapt，而新环境里
+# 没有 wrapt，于是启动时报这一句。
+#
+# 它是噪音，不是故障：site.py 会捕获这个异常并继续，而且 venv 的 sys.path 仍然
+# 只有自己的 site-packages 加标准库（已实测打印确认），torch/numpy 不会被系统的
+# 版本顶掉。这里刻意**不**为了消除这句话去 pip install wrapt——那等于为了让
+# Kaggle 的钩子跑起来而改我们的环境，没有必要。
+
 VENV="${VENV:-/content/venv}"
 VLLM_VERSION="0.31.0"
 FORCE_CU121=0
@@ -38,6 +57,19 @@ echo "驱动主版本: $DRIVER_MAJOR"
 echo
 echo "===== 2) 建立隔离虚拟环境 ====="
 if [ ! -x "$PY" ]; then
+    # 上一次建到一半失败会留下一个"看起来存在、其实不可用"的目录，
+    # 直接重建会撞上各种奇怪错误，所以先清掉。
+    # 删之前先确认这个路径是我们自己的虚拟环境目录，不是什么奇怪的值。
+    case "$VENV" in
+        ""|"/"|"/content"|"/content/")
+            echo "VENV 的取值不安全，拒绝删除：'$VENV'"
+            exit 2
+            ;;
+    esac
+    if [ -d "$VENV" ]; then
+        echo "$VENV 存在但不是可用的虚拟环境（上次可能建到一半失败），先删掉重建"
+        rm -rf -- "$VENV"
+    fi
     pip install -q -U virtualenv
     python -m virtualenv -q "$VENV"
     echo "已创建 $VENV"
