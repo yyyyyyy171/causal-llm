@@ -45,21 +45,33 @@ SPLITS = ["train", "validation", "id_test", "ood_test"]
 
 
 def load_dataset(name: str):
-    """导入并加载一个 TableShift 数据集。导入失败时给出可操作的提示。"""
+    """导入并加载一个 TableShift 数据集。
 
+    为什么写得这么绕：Kaggle 上 `import tableshift` 会连带导入 models 里的
+    ray / torch，缺一个依赖就直接失败；而数据集本身只需要 datasets 子包。
+    所以先试包级入口，失败再退到子包；两个入口都兼容"需要 download=True"的版本。
+    """
+
+    error_note = ""
     try:
         from tableshift import get_dataset
-    except ImportError as error:
-        raise SystemExit(
-            "没有安装 tableshift。请在**独立的**环境里装它，不要装进本项目现有环境：\n"
-            "  1) git clone https://github.com/mlfoundations/tableshift\n"
-            "  2) cd tableshift && conda env create -f environment.yml\n"
-            "  3) conda activate tableshift\n"
-            "  4) 再运行本脚本\n"
-            f"（原始报错：{error}）"
-        )
+    except Exception as error:                      # noqa: BLE001
+        error_note = f"{type(error).__name__}: {error}"
+        try:
+            from tableshift.datasets import get_dataset
+        except Exception as inner:                  # noqa: BLE001
+            raise SystemExit(
+                "没有可用的 tableshift 包。在 Kaggle 上按这个顺序试：\n"
+                "  1) git clone https://github.com/mlfoundations/tableshift\n"
+                "  2) pip install -q -e ./tableshift --no-deps\n"
+                "  3) 仍然报缺依赖时，按报错补装（常见是 ray、gdown、requests）\n"
+                f"（包级导入失败：{error_note}；子包导入失败：{type(inner).__name__}: {inner}）"
+            )
 
-    return get_dataset(name)
+    try:
+        return get_dataset(name, download=True)
+    except TypeError:
+        return get_dataset(name)
 
 
 def describe(name: str) -> dict:
