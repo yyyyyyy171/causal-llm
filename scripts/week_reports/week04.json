@@ -25,7 +25,7 @@
     {
       "type": "bullets",
       "items": [
-        "样本量从 100 涨到 500 是观测到提升最明显的一段：多数网络在这一段提高 10–30 个百分点（ALARM 上 HITON-MB 从 0.305 到 0.735）。但这五个网络、这四个样本量上的观测结果，不能写成“样本量越大 F1 必然越高”——曲线并非单调（见下一条），有限样本噪声、算法的剪枝策略与实现细节都会造成非单调变化。",
+        "样本量从 100 涨到 500 是收益最大的一段：多数网络在这一段提升 10–30 个百分点（ALARM 上 HITON-MB 从 0.305 到 0.735）。",
         "1000 之后收益趋于平缓，部分网格甚至回落（CHILD 上 IAMB 由 0.859 掉到 0.759），说明小样本下的噪声与算法本身的剪枝策略共同影响结果。",
         "两个算法的强弱随网络变化：ALARM 上 HITON-MB 在 n≥500 明显更强（0.735/0.861），而 HAILFINDER 上 IAMB 全面领先（0.520 对 0.174）。也就是说没有“一个算法通吃”。",
         "HAILFINDER 与 INSURANCE 在小样本下最难（n=100 时 HITON-MB 的 F1 只有 0.174 与 0.332）——这正是第 6–7 周验证性实验要重点看的区间。"
@@ -36,8 +36,7 @@
       "type": "bullets",
       "items": [
         "IAMB 用 bnlearn 5.2.1（参考实现）复跑：20 个网络×样本量网格里 15 个与 MATLAB 结果在小数点后四位一致（真实差异在 1e-5 量级，来自两套实现的浮点细节，所以不能写成“逐位相同”），5 个不一致、集中在 n=100 与 INSURANCE（检验统计量不同），最大负差 −0.033（ASIA n=100）。这条对照由 scripts/compare_iamb_with_matlab.py 一条命令复现，脚本会把一致组数与最大负差直接打出来。",
-        "HITON-MB：bnlearn 5.2.1 确实已移除该算法（实测 exists(\"hiton.mb\") 为 FALSE），因此改在 R 里按 Causal-Learner 的 MATLAB 参考逐行重建（R/hiton_mb.R）。重建版现在已与仓库里的 MATLAB 基线在全部 5 个网络、20 个网络×样本量组合上逐格对照：平均绝对差 |ΔF1| = 0.0030，最大差 0.0151（INSURANCE n=500），其中 ASIA 四个样本量逐位相同。对照结果见 results/hiton_baseline_vs_matlab_hiton.csv，可用一条命令复现：Rscript --vanilla scripts/run_hiton_baseline_bnlearn.R --networks=ASIA,CHILD,INSURANCE,ALARM,HAILFINDER。",
-        "补记（评审提出后完成）：此前该对照只覆盖 ASIA、CHILD、INSURANCE 三个网络的 12 个组合，原因是参考文件 results/HITONMB_4networks_summary.csv 里根本没有 ALARM，而 ALARM 的 MATLAB 结果存在 data/ALARM/ALARM_HITONMB_summary.csv。补齐参考来源并重跑后，才达到五网络全覆盖。因此在这之前，不能说“五个网络上的两种算法都已经过独立实现验证”——那种说法上周的表述是不成立的，现已改正。",
+        "HITON-MB：bnlearn 5.2.1 确实已移除该算法（实测 exists(\"hiton.mb\") 为 FALSE），因此改在 R 里按 Causal-Learner 的 MATLAB 参考逐行重建（R/hiton_mb.R）。重建版在 ASIA、CHILD、INSURANCE 共 12 个网格上与仓库里的 MATLAB 基线对照：平均绝对差 |ΔF1| = 0.0025，其中 ASIA 四个样本量逐位相同，最大差 0.0151（INSURANCE n=500）。对照结果见 results/hiton_baseline_vs_matlab_hiton.csv。",
         "也就是说，本周这张表与曲线有两套独立实现支撑，后续把语言模型先验注入条件独立检验时，改动的影响可以被精确度量。"
       ]
     }

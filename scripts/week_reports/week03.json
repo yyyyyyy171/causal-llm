@@ -7,14 +7,8 @@
       "type": "para",
       "text": "文档对第 3 周的要求：学期因果图、混杂、中介、对撞、后门准则的基本概念；每人精读本选题的 3 篇论文并填对比表。产出：每人 10 分钟报告；一页因果概念小结（用自己的话，各举一个例子）。"
     },
-    {
-      "type": "heading",
-      "text": "一、一页因果概念小结（用自己的话）"
-    },
-    {
-      "type": "heading",
-      "text": "1. 因果图与 d-分离"
-    },
+    {"type": "heading", "text": "一、一页因果概念小结（用自己的话）"},
+    {"type": "heading", "text": "1. 因果图与 d-分离"},
     {
       "type": "para",
       "text": "因果图把“谁直接影响谁”画成箭头。d-分离是判断“两个变量在给定某些变量后还有没有关系”的规则：只要这两个变量之间的**所有**路径都被挡住，它们就条件独立。挡路径有三种方式——路径中间有个链条 A→B→C，控制住 B 就断开了；路径有个共同原因 A←B→C，控制住 B 也断开了；但如果路径中间是个对撞 A→B←C，**不控制 B 时**路径本来就是通的，反而控制 B 会把它打开。"
@@ -23,10 +17,7 @@
       "type": "para",
       "text": "例子（ALARM 网络）：HYPOVOLEMIA（低血容量）→ LVEDVOLUME（左心室舒张末期容积）→ STROKEVOLUME（每搏输出量）。这两者之间的关系被 LVEDVOLUME 传递，一旦固定 LVEDVOLUME 的取值，低血容量就不再提供每搏输出量的额外信息。"
     },
-    {
-      "type": "heading",
-      "text": "2. 混杂"
-    },
+    {"type": "heading", "text": "2. 混杂"},
     {
       "type": "para",
       "text": "混杂是“共同原因”造成的问题：有一个变量同时影响 A 和 B，于是 A 与 B 看起来相关，但这不是 A 引起 B。要估计 A 对 B 的影响，必须把它控制住，否则把虚假相关当成了因果。"
@@ -35,10 +26,7 @@
       "type": "para",
       "text": "例子（INSURANCE 网络）：DrivingSkill（驾驶技术）同时影响 DrivQuality（驾驶质量）和 Accident（是否出事故）。如果只看 DrivQuality 与 Accident 的相关性，会把“技术差导致驾驶质量差、技术差也导致事故多”误读成“驾驶质量差导致事故”。控制 DrivingSkill 后才能看清。"
     },
-    {
-      "type": "heading",
-      "text": "3. 中介"
-    },
+    {"type": "heading", "text": "3. 中介"},
     {
       "type": "para",
       "text": "中介是因果链的中间环节：A 通过 M 影响 B。控制 M 会把 A 对 B 的影响“截断”一部分，于是估计出的是直接效应而不是总效应。估计总效应时**不应该**控制中介。"
@@ -47,10 +35,7 @@
       "type": "para",
       "text": "例子（ALARM 网络）：PULMEMBOLUS（肺栓塞）→ SHUNT（肺内分流）→ PVSAT（肺静脉血氧饱和度）。要问“肺栓塞对血氧的整体影响”，就不能控制 SHUNT，否则会把通过分流起作用的那部分效果抹掉。"
     },
-    {
-      "type": "heading",
-      "text": "4. 对撞"
-    },
+    {"type": "heading", "text": "4. 对撞"},
     {
       "type": "para",
       "text": "对撞是“共同结果”：A 和 B 都影响 C。A 与 B 本来无关，但**一旦控制 C**，反而在 A 与 B 之间制造出虚假相关。这是“坏控制变量”最反直觉的一类：控制了对撞，等于凭空造出一条关系。"
@@ -59,10 +44,7 @@
       "type": "para",
       "text": "例子（ASIA 网络）：tub（肺结核）与 lung（肺癌）都指向 either（“肺结核或肺癌”这个检查结果）。tub 与 lung 本身互不影响，但在 either 已知的条件下，两者会呈现负相关——已知“其中之一成立”，排除一个就提高了另一个的可能性。"
     },
-    {
-      "type": "heading",
-      "text": "5. 后门准则"
-    },
+    {"type": "heading", "text": "5. 后门准则"},
     {
       "type": "para",
       "text": "后门准则给出“该控制哪些变量”的可操作判据：要估计 A 对 B 的因果效应，需要找一组变量，把 A→B 之外所有带箭头的入边都挡住（也就是堵住从 B 后门进入 A 的路径），同时不控制 A 的后代。满足这个条件的集合就叫调整集。它把“该控制什么”从经验判断变成了图上的可检验条件。"
@@ -71,10 +53,7 @@
       "type": "para",
       "text": "例子（INSURANCE 网络）：估计 SocioEcon（社会经济状况）对 Accident（事故）的影响时，Age、RiskAversion、VehicleYear 等都通过 SocioEcon 起作用，它们构成后门路径；把这条路径上的变量控制住，剩下的才是 SocioEcon 自身的效应。"
     },
-    {
-      "type": "heading",
-      "text": "二、与本选题的关系"
-    },
+    {"type": "heading", "text": "二、与本选题的关系"},
     {
       "type": "bullets",
       "items": [
@@ -83,95 +62,22 @@
         "“相关不等于因果”在选题二里的具体形态是：语言模型答“两者有关系”，但这既可能是直接因果、也可能是链条或共同原因。这就是为什么用“有没有直接边”的提问会与马尔可夫毯任务错配。"
       ]
     },
-    {
-      "type": "heading",
-      "text": "三、论文对比表（本选题相关）"
-    },
-    {
-      "type": "table_include",
-      "path": "scripts/week_reports/tables/paper_comparison.json"
-    },
-    {
-      "type": "para",
-      "text": "表头已扩到计划要求的六个字段（问题、方法、数据、基线、弱点、与本选题的区别），计划指定的必读论文也全部补齐。**关于每一行的取证深度，这里如实说明，避免把“读过摘要”写成“完成全文精读”**：标注“已核对正文”的行（IAMB、HITON、TableShift、Kıcıman、CausalChat、L2D-CD、Intro to Causal Discovery、Topos），除摘要与引言外，还核对了正文中方法、实验与局限性章节里的具体表述——格子里的数据集选取标准、所选基线、以及带引号的原话均出自这些章节。标注“已核对摘要与引言”的行（ICP、Yu 综述、CFS、inter-IAMB 应用、do-Shapley、GAMA、Li 综述），目前只核对了首页与引言，其数据、基线与局限三格来自摘要与引言层面的信息，尚未逐节通读。后一组需要继续补读才能与前一组同等定稿；这不是掩饰，而是把取证深度标出来，便于评审区分“已成稿”与“待补读”。"
-    },
-    {
-      "type": "heading",
-      "text": "四、必读论文清单与当前状态"
-    },
+    {"type": "heading", "text": "三、论文对比表（本选题相关）"},
     {
       "type": "table",
-      "header": [
-        "计划指定的必读论文",
-        "是否已拿到原文",
-        "是否已进对比表"
-      ],
+      "header": ["论文", "年份/出处", "问题", "方法", "与本选题的区别"],
       "rows": [
-        [
-          "HITON（Aliferis 等，2003）",
-          "有，已读",
-          "已进表，六字段完整"
-        ],
-        [
-          "TableShift（Gardner 等，2023）",
-          "有，已读",
-          "已进表，六字段完整"
-        ],
-        [
-          "Invariant Causal Prediction（Peters 等，2016）",
-          "有，已读（arXiv 版本）",
-          "已进表，六字段完整"
-        ],
-        [
-          "Causal Reasoning and LLMs（Kıcıman 等，2024）",
-          "有，已读",
-          "已进表，六字段完整"
-        ],
-        [
-          "Causality-based Feature Selection 综述（Yu 等）",
-          "有，已读",
-          "已进表，六字段完整"
-        ],
-        [
-          "inter-IAMB 应用（Chang 等，2017，Talanta）",
-          "有，已读",
-          "已进表，六字段完整"
-        ],
-        [
-          "CFS 配偶发现（Ling 等，2023）",
-          "有，已读",
-          "已进表，六字段完整"
-        ],
-        [
-          "do-Shapley（Parafita 等）",
-          "有，已读",
-          "已进表，六字段完整"
-        ],
-        [
-          "GAMA（Ng 等，2025）",
-          "有，已读",
-          "已进表，六字段完整"
-        ],
-        [
-          "Feature Selection: A Data Perspective（Li 等，2018）",
-          "有，已读",
-          "已进表，六字段完整（第 2 周指定资料）"
-        ],
-        [
-          "IAMB 原始论文（Tsamardinos 等）",
-          "有，已读",
-          "已进表，六字段完整"
-        ],
-        [
-          "另找 2–3 篇 2025 年后“语言模型辅助因果发现”的工作",
-          "有 2 篇，已读",
-          "已进表：CausalChat（2025）、L2D-CD（2025）"
-        ]
+        ["Causality-based Feature Selection: Methods and Evaluations", "ACM Computing Surveys 2020", "因果特征选择方法缺少统一评测", "系统整理约束式/评分式方法与 CausalFS 工具箱，在基准网络上评测", "提供本选题的基线算法（IAMB、HITON-MB）与评测口径"],
+        ["Causal Feature Selection With Efficient Spouses Discovery", "IEEE Trans. Big Data 2023", "传统因果特征选择在发现 spouses 时效率低、易受噪声影响", "改进 spouses 发现并做剪枝，提出 CFS 框架", "本选题用语言模型先验替代纯统计的 spouses 发现，可与之对照"],
+        ["An Introduction to Causal Discovery", "Swiss Journal of Economics and Statistics 2024", "因果发现与结构学习入门综述", "从 d-分离、马尔可夫等价讲到 PC、GES 等算法", "本选题的概念基础与算法背景"],
+        ["Universal Causal Inference in a Topos", "NeurIPS 2025", "SCM 能否推广到不同类型的因果模型", "用范畴论（Topos）框架统一因果推断", "理论取向，与本选题的实证路线互补"],
+        ["Practical do-Shapley Explanations with Estimand-Agnostic …", "NeurIPS 2025", "SHAP 反映相关而非因果", "Estimand-Agnostic 框架，只训练一个 SCM 用于解释", "同属“把因果引入解释/特征重要性”的方向，方法不同"],
+        ["A General Representation-Based Approach（GAMA）", "ICML 2025", "分布偏移下需要稳定的因果表征", "基于马尔可夫毯的表示学习框架", "与选题的分布外目标是同一动机，但用表征而非特征选择"]
       ]
     },
     {
       "type": "para",
-      "text": "结论：评审指出的第 3 周两处不足现已全部补齐。① 对比表字段已扩到计划要求的六个（问题、方法、数据、基线、弱点、与本选题的区别），全部 15 行均按原文填成完整记录，没有“待补”格子；② 计划指定的必读论文（IAMB 原始论文、HITON、ICP、Kıcıman、TableShift）五篇已全部拿到原文并进表，另外“再找 2–3 篇 2025 年以后语言模型辅助因果发现的工作”也已补上两篇（CausalChat 2025、L2D-CD 2025）。因此第 3 周可从“部分达标”判定为达标。"
+      "text": "必读论文（按文档要求）：IAMB 与 HITON-MB 原始论文、Invariant Causal Prediction（Peters 等 2016）、Causal Reasoning and Large Language Models（Kıcıman 等）、TableShift，另需自行检索 2–3 篇 2025 年以后“语言模型辅助因果发现”的工作。这部分尚在补。"
     }
   ]
 }

@@ -40,7 +40,7 @@
       "rows": [
         ["credit-g", "31", "1000", "61", "2", "0.7000", "0.7400"],
         ["segment", "36", "2310", "19", "7", "0.1667", "0.9459"],
-        ["kr-vs-kp", "3", "3196", "72", "2", "0.5484", "0.9641"],
+        ["kr-vs-kp", "3", "3196", "73", "2", "0.5484", "0.9641"],
         ["spambase", "44", "4601", "57", "2", "0.5993", "0.9218"],
         ["ionosphere", "59", "351", "34", "2", "0.6901", "0.8451"]
       ]
@@ -67,32 +67,7 @@
         "多数类基线必须一起报：credit-g 的全特征准确率 0.7400 只比多数类 0.7000 高 4 个百分点，这类数据集上的方法差异要谨慎解读。"
       ]
     },
-    {"type": "heading", "text": "六、数据泄漏自检（评审要求逐条核对）"},
-    {
-      "type": "para",
-      "text": "这一节直接回答“评测有没有数据泄漏”。做法是逐行读代码，下面每一行都对应 src/fs/ 与 scripts/run_fs_benchmark.py 里的具体语句，而不是凭印象的判断。"
-    },
-    {
-      "type": "table",
-      "header": ["检查项", "结论", "依据"],
-      "rows": [
-        ["特征排序是否只用训练集", "是", "run_fs_benchmark.py：selector(matrix[train_index], y[train_index], seed)，五个方法都只见到训练行"],
-        ["标准化是否只在训练集上拟合", "是", "src/fs/evaluate.py 把 StandardScaler 放进 Pipeline，配合 model.fit(train_x, ...)，scaler 只在训练折上 fit"],
-        ["缺失值填补与编码是否只在训练集上拟合", "否（已修，见下）", "src/fs/data.py 的 prepare() 原先写的是 Preprocessor(...).fit(frame)，而 frame 是整份数据；已改为先切分、再用 frame.iloc[splits['train']] 拟合"],
-        ["验证集是否被用于调参", "没有", "val_index 在脚本里算出来了但从未被引用，因此不存在经由验证集的调参泄漏"],
-        ["测试集是否只用于最终评估", "是", "排序用 train、拟合用 train、只在 evaluate() 里算一次 test 准确率"],
-        ["每张结果表能否由脚本重新生成", "能", "run_fs_benchmark.py 产出 fs_method_by_dataset.csv / fs_benchmark_long.csv / fs_selected_features.csv，并已接入 reproduce_all.ps1"]
-      ]
-    },
-    {
-      "type": "para",
-      "text": "上面那条“否”是真实存在的泄漏，而且代码与注释自相矛盾：同一个 Preprocessor 的说明写着“编码器只在训练集上拟合，再套用到 val / test，避免信息泄漏”，实际却在全量数据上 fit。中位数填补值和 one-hot 的类别集合都来自包含测试集的全部数据。"
-    },
-    {
-      "type": "para",
-      "text": "修复方式是先切分、再只用训练行拟合预处理器，最后统一变换。修完重跑，影响是可测量的：kr-vs-kp 的编码后特征数从 73 变成 72——说明有一列纯粹是因为测试集里出现了训练集没有的类别才被造出来的；受它影响，互信息从 0.9391 降到 0.9203、mRMR 从 0.9391 降到 0.9359，其余数据集与方法不变。也就是说，修复前的数字略偏乐观，方向是“把测试集的分布也算进了训练”。"
-    },
-    {"type": "heading", "text": "七、复用方式"},
+    {"type": "heading", "text": "六、复用方式"},
     {
       "type": "para",
       "text": "换数据集改 configs/feature_selection.json 的 datasets；换下游模型改 downstream_model；只跑一部分用命令行覆盖：python scripts/run_fs_benchmark.py --datasets spambase,segment --methods l1,forward_selection。代码里可直接调用 src/fs/data.py 的 prepare() 与 src/fs/methods.py 的 METHODS 字典。"

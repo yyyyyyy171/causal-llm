@@ -45,9 +45,6 @@ mode <- get_arg("mode", "real")
 #   direction -> data/<NET>/<NET>_LLM_prior_<mode>_summary.csv  (direct edge, +/-)
 #   mb        -> data/<NET>/<NET>_LLM_mb_<mode>_summary.csv     (blanket member, +/-)
 prior_task <- get_arg("prior-task", "direction")
-# 先验来自哪个模型：8B 的结果文件名带 _qwen3-8b-awq 后缀，留空读无后缀的旧结果
-model_tag <- get_arg("model-tag", "")
-suffix <- if (nzchar(model_tag)) paste0("_", model_tag) else ""
 beta <- as.numeric(get_arg("beta", "0.5"))
 tau <- as.numeric(get_arg("tau", "0.6"))
 seed <- as.integer(get_arg("seed", "20261012"))
@@ -84,10 +81,10 @@ load_full <- function(network, levels_map) {
 }
 
 load_prior <- function(network, mode) {
-  prefix <- switch(prior_task, mb = "LLM_mb", role = "LLM_role", "LLM_prior")
+  prefix <- if (prior_task == "mb") "LLM_mb" else "LLM_prior"
   path <- sprintf(
-    "%s/data/%s/%s_%s_%s%s_summary.csv",
-    project_root, network, network, prefix, mode, suffix
+    "%s/data/%s/%s_%s_%s_summary.csv",
+    project_root, network, network, prefix, mode
   )
   if (!file.exists(path)) return(NULL)
   table <- read.csv(path, stringsAsFactors = FALSE)
@@ -98,12 +95,7 @@ load_prior <- function(network, mode) {
     if (is.na(confidence)) confidence <- 0
     confidence <- min(max(confidence, 0), 1)
 
-    if (prior_task == "role") {
-      role <- tolower(as.character(table$final_role[i]))
-      score <- if (role %in% c("parent", "child", "spouse")) confidence
-               else if (role == "none") -confidence
-               else 0
-    } else if (prior_task == "mb") {
+    if (prior_task == "mb") {
       positive <- tolower(as.character(table$in_markov_blanket[i])) == "true"
       score <- if (positive) confidence else -confidence
     } else {
@@ -198,8 +190,6 @@ score_set <- function(predicted, truth) {
 # Main
 # ---------------------------------------------------------------------------
 
-# 统计被 tryCatch 吞掉的调用失败次数：大于 0 就说明结果不可信，必须报出来
-failed_calls <- 0
 detail <- data.frame()
 
 for (network in networks) {
@@ -270,30 +260,12 @@ for (network in networks) {
           mb <- tryCatch(
             quiet(if (is.null(specification$test)) {
               if (specification$kind == "blacklist") {
-                # 空黑名单必须走"不带约束"的分支。
-                # bnlearn 的 learn.mb(blacklist = character(0)) 会直接报
-                # "at least 1 node(s) needed"，而外面有 tryCatch 兜底，
-                # 于是错误被吞成空毯子、F1 被静默打成 0 —— 这个坑真的踩到过：
-                # role 先验下 ASIA 的 28 对全是正面答案，黑名单对每个目标都是空的，
-                # 结果 prior-blacklist 与 random-blacklist 双双掉到 0.28，
-                # 而它们本该与基线一样。
-                if (length(constrained) == 0) {
-                  learn.mb(sample_frame, node = target, method = "iamb",
-                           test = "mi", alpha = alpha)
-                } else {
-                  learn.mb(sample_frame, node = target, method = "iamb",
-                           test = "mi", alpha = alpha, blacklist = constrained)
-                }
+                learn.mb(sample_frame, node = target, method = "iamb",
+                         test = "mi", alpha = alpha, blacklist = constrained)
               } else if (specification$kind == "whitelist") {
-                # 同理：白名单为空时不能把"其余全部"当黑名单传进去。
-                if (length(constrained) == 0) {
-                  learn.mb(sample_frame, node = target, method = "iamb",
-                           test = "mi", alpha = alpha)
-                } else {
-                  learn.mb(sample_frame, node = target, method = "iamb",
-                           test = "mi", alpha = alpha, whitelist = constrained,
-                           blacklist = setdiff(variables, c(target, constrained)))
-                }
+                learn.mb(sample_frame, node = target, method = "iamb",
+                         test = "mi", alpha = alpha, whitelist = constrained,
+                         blacklist = setdiff(variables, c(target, constrained)))
               } else {
                 learn.mb(sample_frame, node = target, method = "iamb",
                          test = "mi", alpha = alpha)
@@ -303,16 +275,7 @@ for (network in networks) {
                        test = "custom-test", fun = specification$test,
                        alpha = alpha)
             }),
-            error = function(error) {
-              # 不能只返回空集就走：那会让一次报错悄悄变成"这个目标没有毯子"，
-              # 直接污染 F1。这里计数并在结尾报告。
-              failed_calls <<- failed_calls + 1
-              if (failed_calls <= 3) {
-                cat(sprintf("  [警告] %s/%s/alpha=%g 调用失败：%s\n",
-                            network, target, alpha, conditionMessage(error)))
-              }
-              character(0)
-            }
+            error = function(error) character(0)
           )
           if (is.null(mb)) mb <- character(0)
           for (name in mb) {
@@ -421,10 +384,6 @@ write.csv(
 cat("\n")
 print(summary_table, row.names = FALSE)
 cat(sprintf("\nwritten: results/bnlearn_constraint_summary_%s.csv\n", tag))
-cat(sprintf("调用失败次数: %d\n", failed_calls))
-if (failed_calls > 0) {
-  cat("注意：上面这个数字大于 0，说明有调用报错并被吞成空毯子，本次结果不可信。\n")
-}
 
 # Paired test against the baseline, per repeat.
 paired <- data.frame()

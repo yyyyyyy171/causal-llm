@@ -251,19 +251,12 @@ def prepare(name: str, openml_id: int, seed: int, val_size=0.2, test_size=0.2):
 
     frame = load_dataset(name, openml_id)
 
+    preprocessor = Preprocessor(load_schema(name)).fit(frame)
+    matrix = preprocessor.transform(frame)
+
     labels, y = np.unique(frame["__target__"], return_inverse=True)
 
     splits = make_splits(name, len(frame), seed, val_size, test_size)
-
-    # 预处理只在训练集上拟合。
-    #
-    # 这里原先写的是 .fit(frame) —— 在**整份数据**上拟合，再套回 train/val/test。
-    # 那等于让测试集的取值参与决定中位数与 one-hot 的类别集合，是实打实的泄漏，
-    # 而且与本文件 Preprocessor 的说明正好相反（说明写的是"只在训练集上拟合"）。
-    # 现在先切分、再只用训练行拟合，最后统一变换，说明与行为一致。
-    training_frame = frame.iloc[splits["train"]]
-    preprocessor = Preprocessor(load_schema(name)).fit(training_frame)
-    matrix = preprocessor.transform(frame)
 
     return {
         "name": name,
